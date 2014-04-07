@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 07/04/2014 08:55:14 a.m.
+Fecha y hora de generación: 07/04/2014 09:17:46 a.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 39
 
- * Líneas de código VB: 2471
+ * Líneas de código VB: 2477
 
 Detalle
 =======
@@ -18,8 +18,8 @@ Detalle
 Hojas:
  [CA_Consola]
  [CA_Servicios]
- [Captura]
- [TablaCliente]
+ [Captura] - Protegida
+ [TablaCliente] - Protegida
  [Calculos]
  [Fechas]
  [Configuración de Tablas]
@@ -102,7 +102,7 @@ Contenido:
 [C13] \Macro a ejecutar\
 [C14] \CambiaMarcaIxe\
 
-[Captura]
+[Captura] - Hoja Protegida - Se desprotegió sin contraseña.
 [B6] \Datos del crédito\
 [B7] \Fecha cotización (dd/m/aaaa)\
 [B8] \Valor factura con I.V.A.:\
@@ -308,7 +308,7 @@ Contenido:
 [AZ19] \Suma Iva estimado\
 [BA19] \Suma Pago\
 
-[TablaCliente]
+[TablaCliente] - Hoja Protegida - Se desprotegió sin contraseña.
 [A6] \Valor factura:\
 [A7] \Enganche:\
 [A8] \Crédito por Auto:\
@@ -45806,7 +45806,7 @@ End Sub
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Tools] 346 líneas de código.
+[Tools] 348 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   _______          _.
 '  |__   __|        | |
@@ -46100,15 +46100,17 @@ Sub Imprimir()
 ' Macro grabada el 15/03/2013 por MAGM
     ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True
 End Sub
-Private Sub Auto_Open()
 
-    'Debug.Print "RUTINA AUTO_OPEN()"
+'Regresa los valores de captura en la carátula a los valores iniciales
+Sub InicializaCaptura()
+
+    PrintDebug "InicializaCaptura()"
 
     Worksheets(SHEET_CAPTURA).Unprotect
     Worksheets(SHEET_TABLA_CLIENTE).Unprotect
     
+    Worksheets(SHEET_CAPTURA).Select
     Application.EnableEvents = False
-    Range("D7").Select
     Range("D7").FormulaR1C1 = Range("E7")
     Range("D8").FormulaR1C1 = "150000"
     Range("D10").FormulaR1C1 = "Física"
@@ -46671,7 +46673,7 @@ ValidaPorcentajeMinimoEnganche_Error:
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 194 líneas de código.
+[EventHandlers] 198 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -46842,7 +46844,8 @@ ErrHan:
 End Sub
 
 Sub Evento_Open_Libro()
-
+    If ModoDeMantenimiento Then Exit Sub
+    
     PrintResalta "Ejecutando acciones iniciales."
     
     If ActiveWorkbook.ReadOnly Then
@@ -46864,6 +46867,9 @@ Sub Evento_Open_Libro()
     
     Application.ScreenUpdating = True
     Application.Calculation = xlCalculationAutomatic
+    
+    PrintDebug " - Inicializando valores de captura - "
+    InicializaCaptura
     
     PrintDebug " - Fin de acciones iniciales - "
 End Sub
@@ -48393,5 +48399,5 @@ Option Explicit
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 37 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 39 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
