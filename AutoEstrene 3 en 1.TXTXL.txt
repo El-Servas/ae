@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 07/04/2014 10:53:43 a.m.
+Fecha y hora de generación: 07/04/2014 11:26:02 a.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 38
 
- * Líneas de código VB: 2479
+ * Líneas de código VB: 2480
 
 Detalle
 =======
@@ -183,7 +183,7 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Condición del automóvil" Mensaje:"Por favor elije la condición del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D15] (SELECCION_MODELO) \2014\
+[D15] (SELECCION_MODELO) \2015\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_MODELO)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Modelo" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Modelo" Mensaje:"Por favor elije el modelo del automóvil" Estilo:Grave ] 
@@ -199,7 +199,7 @@ Contenido:
  DataValidation: Lista. [Fuente:"=OFFSET(QUERY_AUTOS,0,0,CONTEO_AUTOS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"Por favor elije el tipo del automóvil" Estilo:Grave ] 
- OmitirBlancos:True DatoActualEsVálido:False 
+ OmitirBlancos:True DatoActualEsVálido:True 
 
 [D18] (CapturaPorcentajeEnganche) \0.2\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"=PorcentajeMinimoEnganche" Formula2:"=PorcentajeMaximoEnganche" ]
@@ -44802,9 +44802,15 @@ Financiar\
 [N4] \ \
 [O4] \Conteo de Autos\
 [C.Seminuevos]
-[O5] (CONTEO_AUTOS) \2\
+[O5] (CONTEO_AUTOS) \8\
 [O7] (QUERY_AUTOS) \- = Seleccione una opción = -\
-[O8] \FL-360\
+[O8] \ILX\
+[O9] \MDX\
+[O10] \RDX\
+[O11] \RL\
+[O12] \TL\
+[O13] \TSX\
+[O14] \ZDX\
 
 [C. Seguros]
 [A1] \Catálogos de Seguros\
@@ -45123,13 +45129,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$19:$Z$78
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$19:$AB$78
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$19:$AB$78
- [CAT!_Actual] =CAT!26:26
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!26:26
- [T_Merger!_Actual] =T_Merger!26:26
- [T_SeguroAnual!_Actual] =T_SeguroAnual!26:26
- [T_SoloAuto!_Actual] =T_SoloAuto!26:26
- [T_VidaAnual!_Actual] =T_VidaAnual!26:26
- [T_VidaMulti!_Actual] =T_VidaMulti!26:26
+ [CAT!_Actual] =CAT!17:17
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!17:17
+ [T_Merger!_Actual] =T_Merger!17:17
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!17:17
+ [T_SoloAuto!_Actual] =T_SoloAuto!17:17
+ [T_VidaAnual!_Actual] =T_VidaAnual!17:17
+ [T_VidaMulti!_Actual] =T_VidaMulti!17:17
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$19:$J$78
  [T_Merger!_Amortizacion] =T_Merger!$J$19:$J$78
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$19:$J$78
@@ -45138,13 +45144,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$19:$J$78
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$19:$J$78
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$19:$A$78
- [Fechas!_Anterior] =Fechas!25:25
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!25:25
- [T_Merger!_Anterior] =T_Merger!25:25
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!25:25
- [T_SoloAuto!_Anterior] =T_SoloAuto!25:25
- [T_VidaAnual!_Anterior] =T_VidaAnual!25:25
- [T_VidaMulti!_Anterior] =T_VidaMulti!25:25
+ [Fechas!_Anterior] =Fechas!16:16
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!16:16
+ [T_Merger!_Anterior] =T_Merger!16:16
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!16:16
+ [T_SoloAuto!_Anterior] =T_SoloAuto!16:16
+ [T_VidaAnual!_Anterior] =T_VidaAnual!16:16
+ [T_VidaMulti!_Anterior] =T_VidaMulti!16:16
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$19:$Z$78
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$19:$Z$78
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$19:$Z$78
@@ -46678,7 +46684,7 @@ ValidaPorcentajeMinimoEnganche_Error:
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 202 líneas de código.
+[EventHandlers] 203 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -46853,6 +46859,11 @@ ErrHan:
 End Sub
 
 Sub Evento_Open_Libro()
+    
+    PrintDebug "- Funcionalidad ADO."
+    'TestADO
+    SetUpAdo
+    
     If ModoDeMantenimiento Then Exit Sub
     
     PrintResalta "Ejecutando acciones iniciales."
@@ -46869,10 +46880,6 @@ Sub Evento_Open_Libro()
     
     PrintDebug "- Revisando constantes de debug."
     CheckDebugConstantsStatus
-    
-    PrintDebug "- Prueba de funciones ADO."
-    'TestADO
-    SetUpAdo
     
     Application.ScreenUpdating = True
     Application.Calculation = xlCalculationAutomatic
@@ -48402,5 +48409,5 @@ Option Explicit
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 38 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 37 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
