@@ -1,16 +1,16 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 07/04/2014 09:17:46 a.m.
+Fecha y hora de generación: 07/04/2014 09:29:05 a.m.
 
 Resumen
 =======
 
- * Hojas: 23
+ * Hojas: 22
 
  * Nombres Definidos: 613
 
- * Módulos de Visual Basic: 39
+ * Módulos de Visual Basic: 38
 
- * Líneas de código VB: 2477
+ * Líneas de código VB: 2475
 
 Detalle
 =======
@@ -18,8 +18,8 @@ Detalle
 Hojas:
  [CA_Consola]
  [CA_Servicios]
- [Captura] - Protegida
- [TablaCliente] - Protegida
+ [Captura]
+ [TablaCliente]
  [Calculos]
  [Fechas]
  [Configuración de Tablas]
@@ -38,7 +38,6 @@ Hojas:
  [C. Seguros]
  [C. Tasas]
  [LogDeCierres]
- [Hoja1]
 
 Contenido:
 [CA_Consola]
@@ -102,7 +101,7 @@ Contenido:
 [C13] \Macro a ejecutar\
 [C14] \CambiaMarcaIxe\
 
-[Captura] - Hoja Protegida - Se desprotegió sin contraseña.
+[Captura]
 [B6] \Datos del crédito\
 [B7] \Fecha cotización (dd/m/aaaa)\
 [B8] \Valor factura con I.V.A.:\
@@ -308,7 +307,7 @@ Contenido:
 [AZ19] \Suma Iva estimado\
 [BA19] \Suma Pago\
 
-[TablaCliente] - Hoja Protegida - Se desprotegió sin contraseña.
+[TablaCliente]
 [A6] \Valor factura:\
 [A7] \Enganche:\
 [A8] \Crédito por Auto:\
@@ -45094,17 +45093,6 @@ Financiar\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
 [D5] \UltimaCelda en captura y tablacliente\
 [D6] \Actualizar catálogo de autos de 485 a 584 registros\
-[D8] \150000\
-[D10] \Física\
-[LogDeCierres]
-[D11] \Aguascalientes\
-[D14] \Nuevo\
-[D16] \Acura\
-[D17] \ILX\
-[D21] \0.025\
-[D22] \Anual Financiado\
-
-[Hoja1]
 
 Nombres:
  [_35__de_Enganche] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$E$14
@@ -45118,13 +45106,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$19:$Z$78
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$19:$AB$78
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$19:$AB$78
- [CAT!_Actual] =CAT!7:7
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!7:7
- [T_Merger!_Actual] =T_Merger!7:7
- [T_SeguroAnual!_Actual] =T_SeguroAnual!7:7
- [T_SoloAuto!_Actual] =T_SoloAuto!7:7
- [T_VidaAnual!_Actual] =T_VidaAnual!7:7
- [T_VidaMulti!_Actual] =T_VidaMulti!7:7
+ [CAT!_Actual] =CAT!1:1
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!1:1
+ [T_Merger!_Actual] =T_Merger!1:1
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!1:1
+ [T_SoloAuto!_Actual] =T_SoloAuto!1:1
+ [T_VidaAnual!_Actual] =T_VidaAnual!1:1
+ [T_VidaMulti!_Actual] =T_VidaMulti!1:1
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$19:$J$78
  [T_Merger!_Amortizacion] =T_Merger!$J$19:$J$78
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$19:$J$78
@@ -45133,13 +45121,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$19:$J$78
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$19:$J$78
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$19:$A$78
- [Fechas!_Anterior] =Fechas!6:6
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!6:6
- [T_Merger!_Anterior] =T_Merger!6:6
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!6:6
- [T_SoloAuto!_Anterior] =T_SoloAuto!6:6
- [T_VidaAnual!_Anterior] =T_VidaAnual!6:6
- [T_VidaMulti!_Anterior] =T_VidaMulti!6:6
+ [Fechas!_Anterior] =Fechas!65536:65536
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!65536:65536
+ [T_Merger!_Anterior] =T_Merger!65536:65536
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!65536:65536
+ [T_SoloAuto!_Anterior] =T_SoloAuto!65536:65536
+ [T_VidaAnual!_Anterior] =T_VidaAnual!65536:65536
+ [T_VidaMulti!_Anterior] =T_VidaMulti!65536:65536
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$19:$Z$78
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$19:$Z$78
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$19:$Z$78
@@ -45762,7 +45750,6 @@ Módulos VBA:
  [CA_LogCierres_X] Tipo: 1
  [CA_PseudoCierre_X] Tipo: 1
  [Hoja1] Tipo: 100
- [Hoja2] Tipo: 100
 
 Codigo:
 [ThisWorkbook] 13 líneas de código.
@@ -45875,7 +45862,7 @@ End Sub
 '==================================================================================
 Function AjustaFilasTablaPagos(RangoIDsTablaCliente, RangoNumPagos, MaxNoPagos)
 PrintDebug " - Ejecutando AjustaFilasTablaPagos() con " & [RangoNumPagos]
-Worksheets(SHEET_TABLA_CLIENTE).Unprotect
+DesprotegerHoja Worksheets(SHEET_TABLA_CLIENTE)
     'Mostramos todas las filas
     [RangoIDsTablaCliente].EntireRow.Hidden = False
     
@@ -45884,7 +45871,7 @@ Worksheets(SHEET_TABLA_CLIENTE).Unprotect
             [RangoIDsTablaCliente], _
             [RangoIDsTablaCliente].Offset([RangoNumPagos], 0) _
         ).EntireRow.Hidden = True
-Worksheets(SHEET_TABLA_CLIENTE).Protect
+ProtegerHoja Worksheets(SHEET_TABLA_CLIENTE)
 End Function
 
 '---------------------------------------------------------------------------------------
@@ -46106,8 +46093,8 @@ Sub InicializaCaptura()
 
     PrintDebug "InicializaCaptura()"
 
-    Worksheets(SHEET_CAPTURA).Unprotect
-    Worksheets(SHEET_TABLA_CLIENTE).Unprotect
+    DesprotegerHoja Worksheets(SHEET_CAPTURA)
+    DesprotegerHoja Worksheets(SHEET_TABLA_CLIENTE)
     
     Worksheets(SHEET_CAPTURA).Select
     Application.EnableEvents = False
@@ -46124,8 +46111,8 @@ Sub InicializaCaptura()
     Application.EnableEvents = True
     Range("D22").FormulaR1C1 = "Anual Financiado"
     
-    Worksheets(SHEET_CAPTURA).Protect
-    Worksheets(SHEET_TABLA_CLIENTE).Protect
+    ProtegerHoja Worksheets(SHEET_CAPTURA)
+    ProtegerHoja Worksheets(SHEET_TABLA_CLIENTE)
 End Sub
 
 Sub Limpia_tabla()
@@ -46705,8 +46692,8 @@ On Error GoTo ErrHan
     BackupScreenUpdating = Application.ScreenUpdating: Application.ScreenUpdating = False
     
     'Desprotegemos las hojas que necesitan moverse.
-    Worksheets(SHEET_CAPTURA).Unprotect
-    Worksheets(SHEET_TABLA_CLIENTE).Unprotect
+    DesprotegerHoja Worksheets(SHEET_CAPTURA)
+    DesprotegerHoja Worksheets(SHEET_TABLA_CLIENTE)
     
     BackupCalculation = Application.Calculation
     If CALCULO_RAPIDO Then
@@ -46791,8 +46778,8 @@ On Error GoTo ErrHan
     End If
     
     'Dejamos las hojas nuevamente protegidas
-    Worksheets(SHEET_CAPTURA).Protect
-    Worksheets(SHEET_TABLA_CLIENTE).Protect
+    ProtegerHoja Worksheets(SHEET_CAPTURA)
+    ProtegerHoja Worksheets(SHEET_TABLA_CLIENTE)
     
 
 ErrHan:
@@ -48392,12 +48379,6 @@ Option Explicit
 
 \\\--- END OF MODULE ---
 
-[Hoja2] 2 líneas de código.
-///--- BEGINNING OF MODULE ---
-Option Explicit
 
-\\\--- END OF MODULE ---
-
-
-** Fin del proceso de exportación. Proceso realizado en 39 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 38 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
