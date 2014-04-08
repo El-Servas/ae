@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 08/04/2014 08:22:35 a.m.
+Fecha y hora de generación: 08/04/2014 08:56:02 a.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 38
 
- * Líneas de código VB: 2482
+ * Líneas de código VB: 2417
 
 Detalle
 =======
@@ -21,16 +21,16 @@ Hojas:
  [Captura]
  [TablaCliente]
  [Calculos]
- [Fechas] - Escondida
- [Configuración de Tablas] - Escondida
- [T_Merger] - Escondida
- [T_AutoYSeguroMulti] - Escondida
- [T_SeguroAnual] - Escondida
- [T_SoloAuto] - Escondida
- [T_VidaMulti] - Escondida
- [T_VidaAnual] - Escondida
- [T_RenovVidaAnual] - Escondida
- [CAT] - Escondida
+ [Fechas]
+ [Configuración de Tablas]
+ [T_Merger]
+ [T_AutoYSeguroMulti]
+ [T_SeguroAnual]
+ [T_SoloAuto]
+ [T_VidaMulti]
+ [T_VidaAnual]
+ [T_RenovVidaAnual]
+ [CAT]
  [C. Comunes]
  [C. Estados]
  [C. Auto]
@@ -102,211 +102,210 @@ Contenido:
 [C14] \CambiaMarcaIxe\
 
 [Captura]
-[B6] \Datos del crédito\
-[B7] \Fecha cotización (dd/m/aaaa)\
-[B8] \Valor factura con I.V.A.:\
-[B10] \Tipo Persona\
-[B11] \Estado\
-[B14] \Condición del automóvil:\
-[B15] \Modelo del vehículo:\
-[B16] \Marca:\
-[B17] \Automóvil\
-[B18] \Porcentaje de enganche:\
-[B19] \Monto de enganche:\
-[B21] \Comisión por apertura\
-[B22] \Seguro Banorte:\
-[B23] \Coberturas Adicionales de Seguro:\
-[B24] \Cobertura Adicional Auto Sustituto\
-[B25] \Cobertura Adicional Incremento en Responsabilidad Civil\
-[B26] \Cobertura Adicional Indemnización a Valor Factura\
-[B27] \Cobertura Adicional Servicio Premium\
-[B28] \Condiciones del Crédito\
-[B29] \Enganche:\
-[B30] \* Seguro Banorte:\
-[B31] \Comisión por apertura:\
-[B32] \Aportación Adicional:\
-[B33] \Pago a la firma del contrato:\
-[B35] \Crédito por el Automóvil:\
+[B4] \Datos del crédito\
+[B5] \Fecha cotización (dd/m/aaaa)\
+[B6] \Valor factura con I.V.A.:\
+[B7] \Tipo Persona\
+[B8] \Estado\
+[B9] \Condición del automóvil:\
+[B10] \Modelo del vehículo:\
+[B11] \Marca:\
+[B12] \Automóvil\
+[B13] \Porcentaje de enganche:\
+[B14] \Monto de enganche:\
+[B15] \Comisión por apertura\
+[B16] \Seguro Banorte:\
+[B17] \Coberturas Adicionales de Seguro:\
+[B18] \Cobertura Adicional Auto Sustituto\
+[B19] \Cobertura Adicional Incremento en Responsabilidad Civil\
+[B20] \Cobertura Adicional Indemnización a Valor Factura\
+[B21] \Cobertura Adicional Servicio Premium\
+[B22] \Condiciones del Crédito\
+[B23] \Enganche:\
+[B24] \* Seguro Banorte:\
+[B25] \Comisión por apertura:\
+[B26] \Aportación Adicional:\
+[B27] \Pago a la firma del contrato:\
+[B29] \Crédito por el Automóvil:\
 [Captura]
-[B36] \* Crédito por el Seguro Banorte:\
-[B37] \Monto a Financiar:\
-[B38] \Pago Mensual Estimado con I.V.A. Incluido\
-[B39] \Plazo\
-[B40] \=IF(Calculos!K17="","",Calculos!K17)\
-[B41] \=IF(Calculos!K18="","",Calculos!K18)\
-[B42] \=IF(Calculos!K19="","",Calculos!K19)\
-[B43] \=IF(Calculos!K20="","",Calculos!K20)\
-[B44] \=IF(Calculos!K21="","",Calculos!K21)\
-[B46] \=LEYENDA_DIAS_INTERESES_PRIMER_PAGO\
-[B47] \=+Leyenda.Seguro.1\
-[B48] \=+Leyenda_coberturas_adicionales_cotizacion\
-[B49] \=IF(CondicionAutoEsNuevo?,Leyenda_CAT_fijo_autos_nuevos,IF(CondicionAutoEsSeminuevo?,Leyenda_CAT_fijo_autos_seminuevos,""))\
-[B54] \Para mayor información, llámanos sin costo al 01 (800) BANORTE, 01 (800) 226 6783 ó visita nuestra página:\
-[B55] \www.banorte.com\
-[B56] \Nota: La presente información es únicamente para efectos ilustrativos y no representa ningún ofrecimiento formal por parte de Grupo Financiero Banorte. Las condiciones están sujetas a cambio. El CAT es para fines informativos y de comparación exclusivamente.\
+[B30] \* Crédito por el Seguro Banorte:\
+[B31] \Monto a Financiar:\
+[B32] \Pago Mensual Estimado con I.V.A. Incluido\
+[B33] \Plazo\
+[B34] \=IF(Calculos!K17="","",Calculos!K17)\
+[B35] \=IF(Calculos!K18="","",Calculos!K18)\
+[B36] \=IF(Calculos!K19="","",Calculos!K19)\
+[B37] \=IF(Calculos!K20="","",Calculos!K20)\
+[B38] \=IF(Calculos!K21="","",Calculos!K21)\
+[B40] \=LEYENDA_DIAS_INTERESES_PRIMER_PAGO\
+[B41] \=+Leyenda.Seguro.1\
+[B42] \=+Leyenda_coberturas_adicionales_cotizacion\
+[B43] \=IF(CondicionAutoEsNuevo?,Leyenda_CAT_fijo_autos_nuevos,IF(CondicionAutoEsSeminuevo?,Leyenda_CAT_fijo_autos_seminuevos,""))\
+[B48] \Para mayor información, llámanos sin costo al 01 (800) BANORTE, 01 (800) 226 6783 ó visita nuestra página:\
+[B49] \www.banorte.com\
+[B50] \Nota: La presente información es únicamente para efectos ilustrativos y no representa ningún ofrecimiento formal por parte de Grupo Financiero Banorte. Las condiciones están sujetas a cambio. El CAT es para fines informativos y de comparación exclusivamente.\
 [C3] \=IF(ID_CONDICION_AUTO=1,"Simulador Autos Nuevos",IF(ID_CONDICION_AUTO=2,"Simulador Autos Seminuevos",""))\
-[C39] \Tasa\
-[C40] \=IF(Calculos!L17="","",Calculos!L17)\
-[C41] \=IF(Calculos!L18="","",Calculos!L18)\
-[C42] \=IF(Calculos!L19="","",Calculos!L19)\
-[C43] \=IF(Calculos!L20="","",Calculos!L20)\
-[C44] \=IF(Calculos!L21="","",Calculos!L21)\
-[D7] (CapturaFechaCotizacion) \08/04/2014\
+[C33] \Tasa\
+[C34] \=IF(Calculos!L17="","",Calculos!L17)\
+[C35] \=IF(Calculos!L18="","",Calculos!L18)\
+[C36] \=IF(Calculos!L19="","",Calculos!L19)\
+[C37] \=IF(Calculos!L20="","",Calculos!L20)\
+[C38] \=IF(Calculos!L21="","",Calculos!L21)\
+[D5] (CapturaFechaCotizacion) \08/04/2014\
  DataValidation: Fecha. [Operador:"Mayor que" Formula1:"01/01/2013" ]
  Mensaje=[Mostrar:True Titulo:"Fecha" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Fecha" Mensaje:"Por favor ingresa una fecha valida" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D8] (CapturaValorFactura) \150000\
- DataValidation: Decimal. [Operador:"Mayor que" Formula1:"=I8" ]
+[D6] (CapturaValorFactura) \150000\
+ DataValidation: Decimal. [Operador:"Mayor que" Formula1:"=J6" ]
  Mensaje=[Mostrar:True Titulo:"Valor Factura" Mensaje:"De contado incluyendo I.V.A." ] 
  Advertencia=[Mostrar:True Titulo:"Valor Factura" Mensaje:"Por favor ingresa una cantidad mayor" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
 [Captura]
-[D10] (SELECCION_TIPO_PERSONA) \Física\
+[D7] (SELECCION_TIPO_PERSONA) \Física\
  DataValidation: Lista. [Fuente:"=COMBO_TIPO_PERSONA" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Tipo de Persona" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Tipo de Persona" Mensaje:"Por favor elije el tipo de personalidad jurídica" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D11] (SELECCION_ESTADO) \Aguascalientes\
+[D8] (SELECCION_ESTADO) \Aguascalientes\
  DataValidation: Lista. [Fuente:"=COMBO_ESTADO" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Estado" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Estado" Mensaje:"Por favor elije el estado que corresponda" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D14] (SELECCION_CONDICION_AUTO) \Nuevo\
+[D9] (SELECCION_CONDICION_AUTO) \Nuevo\
  DataValidation: Lista. [Fuente:"=COMBO_CONDICION_AUTO" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Condición del automóvil" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Condición del automóvil" Mensaje:"Por favor elije la condición del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D15] (SELECCION_MODELO) \2014\
+[D10] (SELECCION_MODELO) \2014\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_MODELO)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Modelo" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Modelo" Mensaje:"Por favor elije el modelo del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D16] (SELECCION_MARCA) \Acura\
+[D11] (SELECCION_MARCA) \Acura\
  DataValidation: Lista. [Fuente:"=OFFSET(QUERY_MARCAS,0,0,CONTEO_MARCAS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Marca" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Marca del automóvil" Mensaje:"Por favor elije la marca del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D17] (SELECCION_AUTO) \ILX\
+[D12] (SELECCION_AUTO) \ILX\
  DataValidation: Lista. [Fuente:"=OFFSET(QUERY_AUTOS,0,0,CONTEO_AUTOS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"Por favor elije el tipo del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:False 
 
-[D18] (CapturaPorcentajeEnganche) \0.2\
+[D13] (CapturaPorcentajeEnganche) \0.2\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"=PorcentajeMinimoEnganche" Formula2:"=PorcentajeMaximoEnganche" ]
  Mensaje=[Mostrar:True Titulo:"Enganche" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Enganche" Mensaje:"Un enganche menor requiere autorización especial./Recuerda que el monto mínimo a financiar es de $25,000.00" Estilo:Advertencia ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D19] (CapturaMontoEnganche) \=CapturaPorcentajeEnganche * CapturaValorFactura\
+[D14] (CapturaMontoEnganche) \=CapturaPorcentajeEnganche * CapturaValorFactura\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"= CapturaValorFactura * PorcentajeMinimoEnganche" Formula2:"= Monto_máximo_enganche" ]
  Mensaje=[Mostrar:True Titulo:"$ Enganche" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"$ Enganche" Mensaje:"Un enganche menor requiere autorización especial./Recuerda que el monto mínimo a financiar es de $25,000.00" Estilo:Advertencia ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D21] (CapturaPorcentajeComisionApertura) \0.025\
+[D15] (CapturaPorcentajeComisionApertura) \0.025\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"0.025" Formula2:"1" ]
  Mensaje=[Mostrar:True Titulo:"Comisión por apertura" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Comisión por apertura" Mensaje:"Una comisión por apertura menor requiere autorización especial" Estilo:Advertencia ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D22] (SELECCION_CALCULO_SEGURO) \Anual Financiado\
+[D16] (SELECCION_CALCULO_SEGURO) \Anual Financiado\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_SEGURO)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Tipo de Seguro" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Tipo de Seguro" Mensaje:"Por favor elije el tipo de seguro" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D24] (SELECCION_AUTO_SUST) \No\
+[D18] (SELECCION_AUTO_SUST) \Si\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_AUTO_SUBSTITUTO)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Auto Sustituto" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Auto Sustituto" Mensaje:"Selección no válida" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D25] (SELECCION_INCREMENTO_RC) \No\
+[D19] (SELECCION_INCREMENTO_RC) \No\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_INCREMENTO_RC)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Incremento en RC" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Incremento en RC" Mensaje:"Selección no válida" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D26] (SELECCION_INDEMN_AÑO1) \No\
+[D20] (SELECCION_INDEMN_AÑO1) \No\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_Indem_Valor_Factura)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Indemnización valor factura" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Indemnización valor factura" Mensaje:"Selección no válida" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D27] (SELECCION_SERVICIO_PREMIUM) \No\
+[D21] (SELECCION_SERVICIO_PREMIUM) \Si\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_SERVICIO_PREMIUM)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D29] \=MontoEnganche\
-[D30] \=MontoSeguroDeContado\
-[D31] \=MontoComisionPorAperturaConIva\
-[D32] \=AportacionAdicional\
-[D33] \=+D31+D30+D29\
-[D35] \=MontoFinanciarAuto\
-[D36] \=MontoFinanciarSeguros\
-[D37] \=MontoFinanciarTotal\
-[D39] \   Monto\
-[D40] \=IF(Calculos!M17="","",Calculos!M17)\
-[D41] \=IF(Calculos!M18="","",Calculos!M18)\
+[D23] \=MontoEnganche\
+[D24] \=MontoSeguroDeContado\
+[D25] \=MontoComisionPorAperturaConIva\
+[D26] \=AportacionAdicional\
+[D27] \=+D25+D24+D23\
+[D29] \=MontoFinanciarAuto\
+[D30] \=MontoFinanciarSeguros\
+[D31] \=MontoFinanciarTotal\
+[D33] \   Monto\
+[D34] \=IF(Calculos!M17="","",Calculos!M17)\
+[D35] \=IF(Calculos!M18="","",Calculos!M18)\
 [Captura]
-[D42] \=IF(Calculos!M19="","",Calculos!M19)\
-[D43] \=IF(Calculos!M20="","",Calculos!M20)\
-[D44] \=IF(Calculos!M21="","",Calculos!M21)\
-[D60] \=TasaInteres\
-[E7] \=TODAY()\
-[E12] \=ID_AUTO\
-[F7] \Frecuencia\
-[F8] \Aportación Adicional\
-[F18] \Mínimos:\
-[G7] (SELECCION_FRECUENCIA) \Mensual\
+[D36] \=IF(Calculos!M19="","",Calculos!M19)\
+[D37] \=IF(Calculos!M20="","",Calculos!M20)\
+[D38] \=IF(Calculos!M21="","",Calculos!M21)\
+[D54] \=TasaInteres\
+[F5] \=TODAY()\
+[G5] \Frecuencia\
+[G6] \Aportación Adicional\
+[G13] \Mínimos:\
+[H5] (SELECCION_FRECUENCIA) \Mensual\
  DataValidation: Lista. [Fuente:"=COMBO_FRECUENCIA" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[G8] (CapturaAportacionAdicional) \0\
-[G18] \=PorcentajeMinimoEnganche\
-[G19] \=CapturaValorFactura*PorcentajeMinimoEnganche\
-[I7] \Valor Factura Mínimo\
-[I8] (Valor_Factura_Mínimo) \=IF(CondicionAutoEsNuevo?,Valor_Factura_Mínimo_Nuevos,IF(CondicionAutoEsSeminuevo?,Valor_Factura_Mínimo_Seminuevos))\
-[I18] (Porcentaje_máximo_enganche) \=+PorcentajeMaximoEnganche\
-[I19] (Monto_máximo_enganche) \=+CapturaValorFactura*Porcentaje_máximo_enganche\
-[J7] \Valor Factura Mínimo Nuevos\
-[J8] (Valor_Factura_Mínimo_Nuevos) \31250\
-[K7] \Valor Factura Mínimo Seminuevos\
-[K8] (Valor_Factura_Mínimo_Seminuevos) \33333.33\
-[Q65] \=IF(ISERROR(Q66), 0, Q66)\
-[AI19] \Plazo\
-[AJ19] \Tipo de aportación a Capital\
-[AK19] \PA_Mes1\
+[H6] (CapturaAportacionAdicional) \0\
+[H13] \=PorcentajeMinimoEnganche\
+[H14] \=CapturaValorFactura*PorcentajeMinimoEnganche\
+[J5] \Valor Factura Mínimo\
+[J6] (Valor_Factura_Mínimo) \=IF(CondicionAutoEsNuevo?,Valor_Factura_Mínimo_Nuevos,IF(CondicionAutoEsSeminuevo?,Valor_Factura_Mínimo_Seminuevos))\
+[J13] (Porcentaje_máximo_enganche) \=+PorcentajeMaximoEnganche\
+[J14] (Monto_máximo_enganche) \=+CapturaValorFactura*Porcentaje_máximo_enganche\
+[K5] \Valor Factura Mínimo Nuevos\
+[K6] (Valor_Factura_Mínimo_Nuevos) \31250\
+[L5] \Valor Factura Mínimo Seminuevos\
+[L6] (Valor_Factura_Mínimo_Seminuevos) \33333.33\
+[R59] \=IF(ISERROR(R60), 0, R60)\
+[AJ14] \Plazo\
+[AK14] \Tipo de aportación a Capital\
+[AL14] \PA_Mes1\
+[AM14] \PA_Monto1\
 [Captura]
-[AL19] \PA_Monto1\
-[AM19] \PA_Mes2\
-[AN19] \PA_Monto2\
-[AO19] \PA_Mes3\
-[AP19] \PA_Monto3\
-[AQ19] \PA_Mes4\
-[AR19] \PA_Monto4\
-[AS19] \Fecha primer pago\
-[AT19] \CAT Sin IVA\
-[AU19] \Reducción de plazo en meses\
-[AV19] \Plazo estimado\
-[AW19] \Suma aportación a capital \
-[AX19] \Suma Pagos anticipados\
-[AY19] \Suma Intereses\
-[AZ19] \Suma Iva estimado\
-[BA19] \Suma Pago\
+[AN14] \PA_Mes2\
+[AO14] \PA_Monto2\
+[AP14] \PA_Mes3\
+[AQ14] \PA_Monto3\
+[AR14] \PA_Mes4\
+[AS14] \PA_Monto4\
+[AT14] \Fecha primer pago\
+[AU14] \CAT Sin IVA\
+[AV14] \Reducción de plazo en meses\
+[AW14] \Plazo estimado\
+[AX14] \Suma aportación a capital \
+[AY14] \Suma Pagos anticipados\
+[AZ14] \Suma Intereses\
+[BA14] \Suma Iva estimado\
+[BB14] \Suma Pago\
 
 [TablaCliente]
 [A6] \Valor factura:\
@@ -931,16 +930,16 @@ Contenido:
 [I76] \=T_Merger!T76\
 [I77] \=T_Merger!T77\
 [I78] \=T_Merger!T78\
-[K3] \=Captura!AI19\
-[K4] \=Captura!AI20\
-[L3] \=Captura!AJ19\
-[L4] \=Captura!AJ20\
-[M3] \=Captura!AK19\
+[K3] \=Captura!AJ14\
+[K4] \=Captura!#REF!\
+[L3] \=Captura!AK14\
+[L4] \=Captura!#REF!\
+[M3] \=Captura!AL14\
 [M4] \2\
 [M5] \5\
 [M6] \8\
 [M7] \11\
-[N3] \=Captura!AL19\
+[N3] \=Captura!AM14\
 [N4] \0\
 [TablaCliente]
 [N5] \0\
@@ -1526,12 +1525,12 @@ Contenido:
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \11572.72\
-[M18] \6560.72\
-[M19] \4904.46\
+[M17] \11643.32\
+[M18] \6631.33\
+[M19] \4975.06\
 [Calculos]
-[M20] \4086.98\
-[M21] \3719.27\
+[M20] \4157.59\
+[M21] \3790.49\
 
 [Fechas]
 [A1] \Fechas de pago y días de intereses (AutoEstrene Mensual)\
@@ -44850,9 +44849,29 @@ Financiar\
 [N4] \ \
 [O4] \Conteo de Autos\
 [C.Seminuevos]
-[O5] (CONTEO_AUTOS) \2\
+[O5] (CONTEO_AUTOS) \22\
 [O7] (QUERY_AUTOS) \- = Seleccione una opción = -\
-[O8] \FL-360\
+[O8] \A1\
+[O9] \A3\
+[O10] \A4\
+[O11] \A5\
+[O12] \A6\
+[O13] \A7\
+[O14] \A8\
+[O15] \Allroad Quattro\
+[O16] \Q3\
+[O17] \Q5\
+[O18] \Q7\
+[O19] \R8\
+[O20] \R8 Spyder\
+[O21] \RS4\
+[O22] \RS5\
+[O23] \S3\
+[O24] \S4\
+[O25] \S5\
+[O26] \S6\
+[O27] \S8\
+[O28] \TT\
 
 [C. Seguros]
 [A1] \Catálogos de Seguros\
@@ -45171,13 +45190,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$19:$Z$78
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$19:$AB$78
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$19:$AB$78
- [CAT!_Actual] =CAT!1:1
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!1:1
- [T_Merger!_Actual] =T_Merger!1:1
- [T_SeguroAnual!_Actual] =T_SeguroAnual!1:1
- [T_SoloAuto!_Actual] =T_SoloAuto!1:1
- [T_VidaAnual!_Actual] =T_VidaAnual!1:1
- [T_VidaMulti!_Actual] =T_VidaMulti!1:1
+ [CAT!_Actual] =CAT!16:16
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!16:16
+ [T_Merger!_Actual] =T_Merger!16:16
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!16:16
+ [T_SoloAuto!_Actual] =T_SoloAuto!16:16
+ [T_VidaAnual!_Actual] =T_VidaAnual!16:16
+ [T_VidaMulti!_Actual] =T_VidaMulti!16:16
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$19:$J$78
  [T_Merger!_Amortizacion] =T_Merger!$J$19:$J$78
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$19:$J$78
@@ -45186,13 +45205,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$19:$J$78
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$19:$J$78
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$19:$A$78
- [Fechas!_Anterior] =Fechas!65536:65536
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!65536:65536
- [T_Merger!_Anterior] =T_Merger!65536:65536
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!65536:65536
- [T_SoloAuto!_Anterior] =T_SoloAuto!65536:65536
- [T_VidaAnual!_Anterior] =T_VidaAnual!65536:65536
- [T_VidaMulti!_Anterior] =T_VidaMulti!65536:65536
+ [Fechas!_Anterior] =Fechas!15:15
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!15:15
+ [T_Merger!_Anterior] =T_Merger!15:15
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!15:15
+ [T_SoloAuto!_Anterior] =T_SoloAuto!15:15
+ [T_VidaAnual!_Anterior] =T_VidaAnual!15:15
+ [T_VidaMulti!_Anterior] =T_VidaMulti!15:15
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$19:$Z$78
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$19:$Z$78
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$19:$Z$78
@@ -45408,15 +45427,15 @@ Nombres:
  [CA_Consola!CA.UsarContraseñaEnHojas] =CA_Consola!$D$19
  [CA_Consola!CA.Version] =CA_Consola!$K$2
  [Calculo_IndemnVF] =Calculos!$G$75
- [CAPTURA_COBERTURAS_ADICIONALES] =Captura!$B$24:$D$27
- [CapturaAportacionAdicional] =Captura!$G$8
- [CapturaFechaCotizacion] =Captura!$D$7
- [CapturaMontoEnganche] =Captura!$D$19
- [CapturaPorcentajeComisionApertura] =Captura!$D$21
- [CapturaPorcentajeEnganche] =Captura!$D$18
- [CapturaValorFactura] =Captura!$D$8
+ [CAPTURA_COBERTURAS_ADICIONALES] =Captura!$B$17:$D$21
+ [CapturaAportacionAdicional] =Captura!$H$6
+ [CapturaFechaCotizacion] =Captura!$D$5
+ [CapturaMontoEnganche] =Captura!$D$14
+ [CapturaPorcentajeComisionApertura] =Captura!$D$15
+ [CapturaPorcentajeEnganche] =Captura!$D$13
+ [CapturaValorFactura] =Captura!$D$6
  [CAT!CAT] =CAT!$N$10
- [CeldasCapturaEnganche] =Captura!$D$18:$D$19
+ [CeldasCapturaEnganche] =Captura!$D$13:$D$14
  [COMBO_ABONO_ANTICIPADO] ='C. Comunes'!$B$37:$B$38
  [COMBO_AUTO] ='C. Auto'!$B$15:$B$555
  [COMBO_CONDICION_AUTO] ='C. Auto'!$J$5:$J$6
@@ -45527,7 +45546,7 @@ Nombres:
  [ID_SERVICIO_PREMIUM] =Calculos!$C$17
  [ID_TIPO_AUTO] =Calculos!$F$27
  [ID_TIPO_PERSONA] =Calculos!$C$7
- [INPUT_CELLS] =Captura!$D$7:$D$8,Captura!$D$10:$D$11,Captura!$D$14:$D$22,Captura!$D$24:$D$26,Captura!$D$18:$D$19,Captura!$D$21
+ [INPUT_CELLS] =Captura!$D$5:$D$16,Captura!$D$18:$D$21
  [T_AutoYSeguroMulti!Iva.Intereses] =T_AutoYSeguroMulti!$C$20
  [T_Merger!Iva.Intereses] =T_Merger!$C$19
  [T_SeguroAnual!Iva.Intereses] =T_SeguroAnual!$C$20
@@ -45572,7 +45591,7 @@ Nombres:
  [T_AutoYSeguroMulti!Monto.Financiar.Ciclico] =T_AutoYSeguroMulti!$C$16
  [T_SeguroAnual!Monto.Financiar.Ciclico] =T_SeguroAnual!$C$16
  [T_RenovVidaAnual!Monto.Renovacion] =T_RenovVidaAnual!$C$16
- [Monto_máximo_enganche] =Captura!$I$19
+ [Monto_máximo_enganche] =Captura!$J$14
  [Monto_Mínimo_a_Financiar] =Calculos!$H$120
  [MontoAnticipoAuto] =Calculos!$F$119
  [MontoComisionPorAperturaConIva] =Calculos!$F$125
@@ -45656,7 +45675,7 @@ Nombres:
  [PlazoSeguroAnual] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Plazo'!$B$11
  [Porcentaje_Base] =Calculos!$G$63
  [Porcentaje_Cuota_Base_Vida] =Calculos!$F$100
- [Porcentaje_máximo_enganche] =Captura!$I$18
+ [Porcentaje_máximo_enganche] =Captura!$J$13
  [PorcentajeAnticipoAuto] =Calculos!$F$127
  [PorcentajeEnganche] =Calculos!$F$44
  [PorcentajeMaximoEnganche] =Calculos!$H$10
@@ -45664,7 +45683,7 @@ Nombres:
  [PrimaDaños] =Calculos!$F$91
  [PrimaTotalSeguros] =Calculos!$F$108
  [PrimaVida] =Calculos!$F$105
- [Captura!Print_Area] =Captura!$B$3:$D$59
+ [Captura!Print_Area] =Captura!$B$3:$D$53
  [TablaCliente!Print_Area] =TablaCliente!$A$3:$I$85
  [QUERY_AUTOS] =C.Seminuevos!$O$7
  [QUERY_MARCAS] =C.Seminuevos!$M$7
@@ -45712,20 +45731,20 @@ Nombres:
  [SeguroEsFinanciado?] =Calculos!$F$49
  [SeguroEsMultianual?] =Calculos!$F$50
  [Seleccion_Abono_Anticipado] =TablaCliente!$C$10
- [SELECCION_AUTO] =Captura!$D$17
- [SELECCION_AUTO_SUST] =Captura!$D$24
- [SELECCION_CALCULO_SEGURO] =Captura!$D$22
- [SELECCION_CONDICION_AUTO] =Captura!$D$14
- [SELECCION_ESTADO] =Captura!$D$11
- [SELECCION_FRECUENCIA] =Captura!$G$7
- [SELECCION_INCREMENTO_RC] =Captura!$D$25
- [SELECCION_INDEMN_AÑO1] =Captura!$D$26
+ [SELECCION_AUTO] =Captura!$D$12
+ [SELECCION_AUTO_SUST] =Captura!$D$18
+ [SELECCION_CALCULO_SEGURO] =Captura!$D$16
+ [SELECCION_CONDICION_AUTO] =Captura!$D$9
+ [SELECCION_ESTADO] =Captura!$D$8
+ [SELECCION_FRECUENCIA] =Captura!$H$5
+ [SELECCION_INCREMENTO_RC] =Captura!$D$19
+ [SELECCION_INDEMN_AÑO1] =Captura!$D$20
  [SELECCION_IVA] ='C. Comunes'!$G$24
- [SELECCION_MARCA] =Captura!$D$16
- [SELECCION_MODELO] =Captura!$D$15
+ [SELECCION_MARCA] =Captura!$D$11
+ [SELECCION_MODELO] =Captura!$D$10
  [SELECCION_PLAZO] =TablaCliente!$C$9
- [SELECCION_SERVICIO_PREMIUM] =Captura!$D$27
- [SELECCION_TIPO_PERSONA] =Captura!$D$10
+ [SELECCION_SERVICIO_PREMIUM] =Captura!$D$21
+ [SELECCION_TIPO_PERSONA] =Captura!$D$7
  [T_AutoYSeguroMulti!Tabla.Ciclica.Anual?] =T_AutoYSeguroMulti!$C$34
  [T_SeguroAnual!Tabla.Ciclica.Anual?] =T_SeguroAnual!$C$34
  [T_SoloAuto!Tabla.Ciclica.Anual?] =T_SoloAuto!$C$30
@@ -45768,12 +45787,12 @@ Nombres:
  [CAT!Total.Egresos.CAT] =CAT!$C$10
  [CAT!Total.Flujo.Cero.CAT] =CAT!$C$19
  [CAT!Total.Ingresos.CAT] =CAT!$C$17
- [Captura!UltimaCelda] =Captura!$H$206
+ [Captura!UltimaCelda] =Captura!$E$200
  [TablaCliente!UltimaCelda] =TablaCliente!$J$86
  [Valor_Factura] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$I$8
- [Valor_Factura_Mínimo] =Captura!$I$8
- [Valor_Factura_Mínimo_Nuevos] =Captura!$J$8
- [Valor_Factura_Mínimo_Seminuevos] =Captura!$K$8
+ [Valor_Factura_Mínimo] =Captura!$J$6
+ [Valor_Factura_Mínimo_Nuevos] =Captura!$K$6
+ [Valor_Factura_Mínimo_Seminuevos] =Captura!$L$6
  [ValorFactura] =Calculos!$F$42
  [VB_STARTING_CELL] =Calculos!$K$17:$N$21
  [Vehículo] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$591
@@ -45866,7 +45885,7 @@ End Sub
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Tools] 348 líneas de código.
+[Tools] 323 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   _______          _.
 '  |__   __|        | |
@@ -46030,31 +46049,6 @@ Sub CheckDebugConstantsStatus()
     If MensajeDeConstantes <> "" Then Call MsgBox(MensajeDeConstantes, vbOKOnly + vbInformation, APP_NAME)
 End Sub
 
-
-'---------------------------------------------------------------------------------------
-' Procedure : TestADO
-' Author    : +
-' Date      : 14/08/2012
-' Purpose   : Hace un query usando ADO. Reporta si ocurre un error.
-'---------------------------------------------------------------------------------------
-Public Sub TestADO()
-On Error GoTo TestADO_Error
-
-Rs = RunQueryGetRS("Select * from " + RANGO_CATALOGO_NUEVOS)
-PrintDebug "Prueba ADO exitosa"
-
-#If PRINT_DEBUG_MESSAGES Then
-    Call MsgBox("Prueba de funciones de ADO exitosa.", vbInformation, APP_NAME)
-#End If
-
-On Error GoTo 0
-Exit Sub
-
-TestADO_Error:
-Call MsgBox("Ocurrió un error probando las funciones de ADO." & vbCrLf & _
-    "El simulador NO funcionará correctamente.", vbCritical, APP_NAME)
-End Sub
-
 '=======================================================================================
 ' Procedure : TraduceFormulas
 ' Author    : +
@@ -46171,18 +46165,18 @@ Sub InicializaCaptura()
     
     Worksheets(SHEET_CAPTURA).Select
     Application.EnableEvents = False
-    Range("D7").FormulaR1C1 = Range("E7")
-    Range("D8").FormulaR1C1 = "150000"
-    Range("D10").FormulaR1C1 = "Física"
-    Range("D11").FormulaR1C1 = "Aguascalientes"
+    Range("CapturaFechaCotizacion").FormulaR1C1 = Date
+    Range("CapturaValorFactura").FormulaR1C1 = "150000"
+    Range("SELECCION_TIPO_PERSONA").FormulaR1C1 = "Física"
+    Range("SELECCION_ESTADO").FormulaR1C1 = "Aguascalientes"
     Application.EnableEvents = True
-    Range("D14").FormulaR1C1 = "Nuevo"
+    Range("SELECCION_CONDICION_AUTO").FormulaR1C1 = "Nuevo"
     Application.EnableEvents = False
-    Range("D16").FormulaR1C1 = "Acura"
-    Range("D17").FormulaR1C1 = "ILX"
-    Range("D21").FormulaR1C1 = "2.5%"
+    Range("SELECCION_MARCA").FormulaR1C1 = "Acura"
+    Range("SELECCION_AUTO").FormulaR1C1 = "ILX"
+    Range("CapturaPorcentajeComisionApertura").FormulaR1C1 = "2.5%"
     Application.EnableEvents = True
-    Range("D22").FormulaR1C1 = "Anual Financiado"
+    Range("SELECCION_CALCULO_SEGURO").FormulaR1C1 = "Anual Financiado"
     
     ProtegerHoja Worksheets(SHEET_CAPTURA)
     ProtegerHoja Worksheets(SHEET_TABLA_CLIENTE)
@@ -46401,7 +46395,7 @@ End Function
 
 \\\--- END OF MODULE ---
 
-[ADO] 182 líneas de código.
+[ADO] 205 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '               _.
 '      /\      | |
@@ -46544,7 +46538,7 @@ Function SetADOProvider() As String
     For ix = 0 To UBound(Providers, 1)
         ProviderName = Providers(ix, 0)
         ProviderCS = Providers(ix, 1)
-        'Debug.Print "Ciclo [" & ProviderName & "]"
+        PrintDebug "Ciclo [" & ProviderName & "]"
         If Not ProviderFound And ProviderWorks(ProviderCS) Then
             Provider = ProviderCS
             ProviderFound = True
@@ -46552,7 +46546,7 @@ Function SetADOProvider() As String
         Else
             If Err.Number <> 0 Then
                 'Cachamos el error y lo desechamos. Probamos el siguiente Provider.
-                Debug.Print "Error probando proveedor [" & ProviderName & "]:" & Err.Description
+                PrintDebug "Error probando proveedor [" & ProviderName & "]:" & Err.Description
                 Err.Clear
             End If
         End If
@@ -46564,9 +46558,8 @@ Function SetADOProvider() As String
         Err.Raise vbObjectError + 1, , "No se pudo determinar un proveedor para ADO."
     Else
         SetADOProvider = Provider
-        'Debug.Print "Provider: " & Provider
+        PrintDebug "Provider: " & Provider
     End If
-    
 End Function
 
 '====================================================================================================
@@ -46584,6 +46577,30 @@ Function ProviderWorks(cn) As Boolean
     End If
     'Si hubo error, lo dejamos burbujear, para cacharlo en la caller.
 End Function
+
+'---------------------------------------------------------------------------------------
+' Procedure : TestADO
+' Author    : +
+' Date      : 14/08/2012
+' Purpose   : Hace un query usando ADO. Reporta si ocurre un error.
+'---------------------------------------------------------------------------------------
+Public Sub TestADO()
+    On Error GoTo TestADO_Error
+    
+    Rs = RunQueryGetRS("Select * from " + RANGO_CATALOGO_NUEVOS)
+    PrintDebug "Prueba ADO exitosa"
+    
+    #If PRINT_DEBUG_MESSAGES Then
+        Call MsgBox("Prueba de funciones de ADO exitosa.", vbInformation, APP_NAME)
+    #End If
+    
+    On Error GoTo 0
+Exit Sub
+TestADO_Error:
+    Call MsgBox("Ocurrió un error probando las funciones de ADO." & vbCrLf & _
+        "El simulador NO funcionará correctamente.", vbCritical, APP_NAME)
+End Sub
+
 
 \\\--- END OF MODULE ---
 
@@ -47042,139 +47059,76 @@ Option Explicit
 
 \\\--- END OF MODULE ---
 
-[NuevasMacros] 134 líneas de código.
+[NuevasMacros] 71 líneas de código.
 ///--- BEGINNING OF MODULE ---
+'NuevasMacros
+'Se agregó el módulo para contener rutinas que tienen que ver con la interacción del usuario con el simulador.
+
 Option Explicit
 
-
-
-'=======================================================================================
-' Procedure : CambioEnNuevosSeminuevos
-' Author    : +
-' Date      : 15/03/2013
-' Purpose   : Se ejecuta cuando se cambia Nuevos <-> Seminuevos.
-' Recibe de parámetro una bandera que especifica si el auto es Nuevo o no.
-'=======================================================================================
+'Se ejecuta cuando se cambia Nuevos <-> Seminuevos.
+'Recibe de parámetro una bandera que especifica si el auto es Nuevo o no.
 Public Sub CambioEnNuevosSeminuevos(EsAutoNuevo As Boolean)
-On Error GoTo CambioEnNuevosSeminuevos_Error
+    On Error GoTo CambioEnNuevosSeminuevos_Error
 
-'------------------------------------------------------------------------------------------
-' Código aquí
-'------------------------------------------------------------------------------------------
-
-PrintDebug "Se ejecuta CambioEnNuevosSeminuevos()"
-
-'Primero Mostramos o Escondemos las coberturas
-If EsAutoNuevo Then
-    '------------------------------------------------------------------------------------------
-    PrintDebug "Es Auto Nuevo."
-    MuestraCoberturasAdicionales
+    PrintDebug "Se ejecuta CambioEnNuevosSeminuevos()"
+    If EsAutoNuevo Then 'Mostramos o Escondemos las coberturas según corresponda.
+        PrintDebug "Es Auto Nuevo."
+        MuestraCoberturasAdicionales
+    Else
+        PrintDebug "Es Auto Seminuevo."
+        EscondeCoberturasAdicionales
+    End If
     
-Else
-    '------------------------------------------------------------------------------------------
-    PrintDebug "Es Auto Seminuevo."
-    EscondeCoberturasAdicionales
+    LinkRequisitosAlFrente (EsAutoNuevo) 'Traemos el link de requisitos al frente.
     
-End If
-
-'Luego traemos el link de requisitos al frente.
-LinkRequisitosAlFrente (EsAutoNuevo)
-
-'------------------------------------------------------------------------------------------
-
-
-On Error GoTo 0
-Exit Sub
-
+    On Error GoTo 0
+    Exit Sub
 CambioEnNuevosSeminuevos_Error:
     PrintError "CambioEnNuevosSeminuevos"
 End Sub
 
-
-
-'=======================================================================================
-' Procedure : EscondeCoberturasAdicionales
-' Author    : +
-' Date      : 15/03/2013
-' Purpose   : Esconde las filas en la catátula que contienen las opciones de Coberturas Adicionales
-'=======================================================================================
+'Esconde las filas en la catátula que contienen las opciones de Coberturas Adicionales
 Public Sub EscondeCoberturasAdicionales()
-
-On Error GoTo EscondeCoberturasAdicionales_Error
-
-'------------------------------------------------------------------------------------------
-' Código aquí
-'------------------------------------------------------------------------------------------
-
-PrintDebug "Escondiendo las Coberturas Adicionales en carátula"
-Worksheets(SHEET_CAPTURA).Range("CAPTURA_COBERTURAS_ADICIONALES").EntireRow.Hidden = True
-
-'------------------------------------------------------------------------------------------
+    On Error GoTo EscondeCoberturasAdicionales_Error
     
+    PrintDebug "Escondiendo las Coberturas Adicionales en carátula"
+    Worksheets(SHEET_CAPTURA).Range("CAPTURA_COBERTURAS_ADICIONALES").EntireRow.Hidden = True
 
-On Error GoTo 0
-Exit Sub
-
+    On Error GoTo 0
+    Exit Sub
 EscondeCoberturasAdicionales_Error:
     PrintError "EscondeCoberturasAdicionales"
 End Sub
 
-'=======================================================================================
-' Procedure : MuestraCoberturasAdicionales
-' Author    : +
-' Date      : 15/03/2013
-' Purpose   : Muestra las filas en la catátula que contienen las opciones de Coberturas Adicionales
-'=======================================================================================
+'Muestra las filas en la catátula que contienen las opciones de Coberturas Adicionales
 Public Sub MuestraCoberturasAdicionales()
-
-On Error GoTo MuestraCoberturasAdicionales_Error
-
-'------------------------------------------------------------------------------------------
-' Código aquí
-'------------------------------------------------------------------------------------------
-
-PrintDebug "Mostrando las Coberturas Adicionales en carátula"
-Worksheets(SHEET_CAPTURA).Range("CAPTURA_COBERTURAS_ADICIONALES").EntireRow.Hidden = False
-
-'------------------------------------------------------------------------------------------
-
-On Error GoTo 0
-Exit Sub
-
+    On Error GoTo MuestraCoberturasAdicionales_Error
+    
+    PrintDebug "Mostrando las Coberturas Adicionales en carátula"
+    Worksheets(SHEET_CAPTURA).Range("CAPTURA_COBERTURAS_ADICIONALES").EntireRow.Hidden = False
+    
+    On Error GoTo 0
+    Exit Sub
 MuestraCoberturasAdicionales_Error:
     PrintError "MuestraCoberturasAdicionales"
 End Sub
 
-
-
-
-'=======================================================================================
-' Procedure : LinkRequisitosAlFrente
-' Author    : +
-' Date      : 15/03/2013
-' Purpose   :
-'=======================================================================================
+'Trae al frente las shapes que contienen el link a los requisitos según sea Nuevos o Seminuevos.
 Public Sub LinkRequisitosAlFrente(EsAutoNuevo As Boolean)
-
-On Error GoTo LinkRequisitosAlFrente_Error
-
-If EsAutoNuevo Then
-    'La hoja de Captura tiene DOS botones, los que hay que traer al frente.
-    ActiveSheet.Shapes.Range(Array("ShapeLinkNuevosTop", "ShapeLinkNuevos")).ZOrder msoBringToFront
-    'La hoja de Tabla Cliente sólo tiene uno.
-    Worksheets(SHEET_TABLA_CLIENTE).Shapes.Range(Array("ShapeLinkNuevos")).ZOrder msoBringToFront
+    On Error GoTo LinkRequisitosAlFrente_Error
     
-Else
-    'La hoja de Captura tiene DOS botones, los que hay que traer al frente.
-    ActiveSheet.Shapes.Range(Array("ShapeLinkSeminuevosTop", "ShapeLinkSeminuevos")).ZOrder msoBringToFront
-    'La hoja de Tabla Cliente sólo tiene uno.
-    Worksheets(SHEET_TABLA_CLIENTE).Shapes.Range(Array("ShapeLinkSeminuevos")).ZOrder msoBringToFront
-
-End If
-
-On Error GoTo 0
-Exit Sub
-
+    'La hoja de Captura tiene dos botones y Tabla Cliente sólo uno.
+    If EsAutoNuevo Then
+        Worksheets(SHEET_CAPTURA).Shapes.Range(Array("ShapeLinkNuevosTop", "ShapeLinkNuevos")).ZOrder msoBringToFront
+        Worksheets(SHEET_TABLA_CLIENTE).Shapes.Range(Array("ShapeLinkNuevos")).ZOrder msoBringToFront
+    Else
+        Worksheets(SHEET_CAPTURA).Shapes.Range(Array("ShapeLinkSeminuevosTop", "ShapeLinkSeminuevos")).ZOrder msoBringToFront
+        Worksheets(SHEET_TABLA_CLIENTE).Shapes.Range(Array("ShapeLinkSeminuevos")).ZOrder msoBringToFront
+    End If
+    
+    On Error GoTo 0
+    Exit Sub
 LinkRequisitosAlFrente_Error:
     PrintError "LinkRequisitosAlFrente"
 End Sub
