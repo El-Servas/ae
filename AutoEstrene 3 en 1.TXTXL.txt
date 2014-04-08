@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 07/04/2014 01:23:57 p.m.
+Fecha y hora de generación: 08/04/2014 08:22:35 a.m.
 
 Resumen
 =======
 
  * Hojas: 22
 
- * Nombres Definidos: 620
+ * Nombres Definidos: 622
 
  * Módulos de Visual Basic: 38
 
@@ -120,38 +120,38 @@ Contenido:
 [B25] \Cobertura Adicional Incremento en Responsabilidad Civil\
 [B26] \Cobertura Adicional Indemnización a Valor Factura\
 [B27] \Cobertura Adicional Servicio Premium\
-[B29] \Condiciones del Crédito\
-[B30] \Enganche:\
-[B31] \* Seguro Banorte:\
-[B32] \Comisión por apertura:\
-[B33] \Aportación Adicional:\
-[B34] \Pago a la firma del contrato:\
-[B36] \Crédito por el Automóvil:\
+[B28] \Condiciones del Crédito\
+[B29] \Enganche:\
+[B30] \* Seguro Banorte:\
+[B31] \Comisión por apertura:\
+[B32] \Aportación Adicional:\
+[B33] \Pago a la firma del contrato:\
+[B35] \Crédito por el Automóvil:\
 [Captura]
-[B37] \* Crédito por el Seguro Banorte:\
-[B38] \Monto a Financiar:\
-[B39] \Pago Mensual Estimado con I.V.A. Incluido\
-[B40] \Plazo\
-[B41] \=IF(Calculos!K17="","",Calculos!K17)\
-[B42] \=IF(Calculos!K18="","",Calculos!K18)\
-[B43] \=IF(Calculos!K19="","",Calculos!K19)\
-[B44] \=IF(Calculos!K20="","",Calculos!K20)\
-[B45] \=IF(Calculos!K21="","",Calculos!K21)\
-[B47] \=LEYENDA_DIAS_INTERESES_PRIMER_PAGO\
-[B48] \=+Leyenda.Seguro.1\
-[B49] \=+Leyenda_coberturas_adicionales_cotizacion\
-[B50] \=IF(CondicionAutoEsNuevo?,Leyenda_CAT_fijo_autos_nuevos,IF(CondicionAutoEsSeminuevo?,Leyenda_CAT_fijo_autos_seminuevos,""))\
-[B55] \Para mayor información, llámanos sin costo al 01 (800) BANORTE, 01 (800) 226 6783 ó visita nuestra página:\
-[B56] \www.banorte.com\
-[B57] \Nota: La presente información es únicamente para efectos ilustrativos y no representa ningún ofrecimiento formal por parte de Grupo Financiero Banorte. Las condiciones están sujetas a cambio. El CAT es para fines informativos y de comparación exclusivamente.\
+[B36] \* Crédito por el Seguro Banorte:\
+[B37] \Monto a Financiar:\
+[B38] \Pago Mensual Estimado con I.V.A. Incluido\
+[B39] \Plazo\
+[B40] \=IF(Calculos!K17="","",Calculos!K17)\
+[B41] \=IF(Calculos!K18="","",Calculos!K18)\
+[B42] \=IF(Calculos!K19="","",Calculos!K19)\
+[B43] \=IF(Calculos!K20="","",Calculos!K20)\
+[B44] \=IF(Calculos!K21="","",Calculos!K21)\
+[B46] \=LEYENDA_DIAS_INTERESES_PRIMER_PAGO\
+[B47] \=+Leyenda.Seguro.1\
+[B48] \=+Leyenda_coberturas_adicionales_cotizacion\
+[B49] \=IF(CondicionAutoEsNuevo?,Leyenda_CAT_fijo_autos_nuevos,IF(CondicionAutoEsSeminuevo?,Leyenda_CAT_fijo_autos_seminuevos,""))\
+[B54] \Para mayor información, llámanos sin costo al 01 (800) BANORTE, 01 (800) 226 6783 ó visita nuestra página:\
+[B55] \www.banorte.com\
+[B56] \Nota: La presente información es únicamente para efectos ilustrativos y no representa ningún ofrecimiento formal por parte de Grupo Financiero Banorte. Las condiciones están sujetas a cambio. El CAT es para fines informativos y de comparación exclusivamente.\
 [C3] \=IF(ID_CONDICION_AUTO=1,"Simulador Autos Nuevos",IF(ID_CONDICION_AUTO=2,"Simulador Autos Seminuevos",""))\
-[C40] \Tasa\
-[C41] \=IF(Calculos!L17="","",Calculos!L17)\
-[C42] \=IF(Calculos!L18="","",Calculos!L18)\
-[C43] \=IF(Calculos!L19="","",Calculos!L19)\
-[C44] \=IF(Calculos!L20="","",Calculos!L20)\
-[C45] \=IF(Calculos!L21="","",Calculos!L21)\
-[D7] (CapturaFechaCotizacion) \07/04/2014\
+[C39] \Tasa\
+[C40] \=IF(Calculos!L17="","",Calculos!L17)\
+[C41] \=IF(Calculos!L18="","",Calculos!L18)\
+[C42] \=IF(Calculos!L19="","",Calculos!L19)\
+[C43] \=IF(Calculos!L20="","",Calculos!L20)\
+[C44] \=IF(Calculos!L21="","",Calculos!L21)\
+[D7] (CapturaFechaCotizacion) \08/04/2014\
  DataValidation: Fecha. [Operador:"Mayor que" Formula1:"01/01/2013" ]
  Mensaje=[Mostrar:True Titulo:"Fecha" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Fecha" Mensaje:"Por favor ingresa una fecha valida" Estilo:Grave ] 
@@ -182,7 +182,7 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Condición del automóvil" Mensaje:"Por favor elije la condición del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D15] (SELECCION_MODELO) \2015\
+[D15] (SELECCION_MODELO) \2014\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_MODELO)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Modelo" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Modelo" Mensaje:"Por favor elije el modelo del automóvil" Estilo:Grave ] 
@@ -248,22 +248,22 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D30] \=MontoEnganche\
-[D31] \=MontoSeguroDeContado\
-[D32] \=MontoComisionPorAperturaConIva\
-[D33] \=AportacionAdicional\
-[D34] \=+D32+D31+D30\
-[D36] \=MontoFinanciarAuto\
-[D37] \=MontoFinanciarSeguros\
-[D38] \=MontoFinanciarTotal\
-[D40] \   Monto\
-[D41] \=IF(Calculos!M17="","",Calculos!M17)\
-[D42] \=IF(Calculos!M18="","",Calculos!M18)\
+[D29] \=MontoEnganche\
+[D30] \=MontoSeguroDeContado\
+[D31] \=MontoComisionPorAperturaConIva\
+[D32] \=AportacionAdicional\
+[D33] \=+D31+D30+D29\
+[D35] \=MontoFinanciarAuto\
+[D36] \=MontoFinanciarSeguros\
+[D37] \=MontoFinanciarTotal\
+[D39] \   Monto\
+[D40] \=IF(Calculos!M17="","",Calculos!M17)\
+[D41] \=IF(Calculos!M18="","",Calculos!M18)\
 [Captura]
-[D43] \=IF(Calculos!M19="","",Calculos!M19)\
-[D44] \=IF(Calculos!M20="","",Calculos!M20)\
-[D45] \=IF(Calculos!M21="","",Calculos!M21)\
-[D61] \=TasaInteres\
+[D42] \=IF(Calculos!M19="","",Calculos!M19)\
+[D43] \=IF(Calculos!M20="","",Calculos!M20)\
+[D44] \=IF(Calculos!M21="","",Calculos!M21)\
+[D60] \=TasaInteres\
 [E7] \=TODAY()\
 [E12] \=ID_AUTO\
 [F7] \Frecuencia\
@@ -286,7 +286,7 @@ Contenido:
 [J8] (Valor_Factura_Mínimo_Nuevos) \31250\
 [K7] \Valor Factura Mínimo Seminuevos\
 [K8] (Valor_Factura_Mínimo_Seminuevos) \33333.33\
-[Q66] \=IF(ISERROR(Q67), 0, Q67)\
+[Q65] \=IF(ISERROR(Q66), 0, Q66)\
 [AI19] \Plazo\
 [AJ19] \Tipo de aportación a Capital\
 [AK19] \PA_Mes1\
@@ -1126,7 +1126,7 @@ Contenido:
 [B57] \COMBO_SEGURO_SEMINUEVOS\
 [B58] \=CondicionAutoEsNuevo?\
 [B59] (RANGO_COMBO_SEGURO) \=IF(CondicionAutoEsNuevo?,B56,B57)\
-[B63] \=ID_TIPO_AUTO <> _3.5T\
+[B63] \=NOT(CondicionAutoEs3.5T?)\
 [B64] \COMBO_SI_NO\
 [B65] \COMBO_SOLO_NO\
 [B66] (RANGO_COMBO_AUTO_SUBSTITUTO) \=IF(B63,B64,B65)\
@@ -1136,13 +1136,13 @@ Contenido:
 [B72] (RANGO_COMBO_ADICIONAL_SI_NO) \=IF(B69,B70,B71)\
 [B75] (RANGO_COMBO_INCREMENTO_RC) \=IF(CondicionAutoEsNuevo?, "COMBO_INCREMENTO_RC", "COMBO_SOLO_NO" )\
 [B79] \=CondicionAutoEsNuevo?\
-[B80] \=ID_TIPO_AUTO = _3.5T\
+[B80] \=CondicionAutoEs3.5T?\
 [B81] \COMBO_Indem_Valor_Factura_3.5T\
 [B82] \COMBO_Indem_Valor_Factura\
 [Calculos]
 [B83] \COMBO_SOLO_NO\
 [B84] (RANGO_COMBO_Indem_Valor_Factura) \=IF(B79,IF(B80,B81,B82),B83)\
-[B88] \=ID_TIPO_AUTO <> _3.5T\
+[B88] \=NOT(CondicionAutoEs3.5T?)\
 [B89] \COMBO_SI_NO\
 [B90] \COMBO_SOLO_NO\
 [B91] (RANGO_COMBO_SERVICIO_PREMIUM) \=IF(B88,B89,B90)\
@@ -1177,99 +1177,100 @@ Contenido:
 [E16] \Es "Anterior"?\
 [E17] \Id Condición Modelo\
 [E18] \Descripcion\
-[E20] \Estado\
-[E21] \Id\
-[E22] \Descripción\
-[E23] \Es Fronterizo?\
-[E24] \Incluye RC USA?\
-[E25] \Factor Descuento\
-[E30] \Auto\
-[E31] \Cadena Completa Auto\
-[E33] \Id\
-[E36] \Descripción\
-[E37] \Tipo Auto\
-[E40] \Proxys para las capturas:\
-[E41] \Valor Factura Ajustado\
-[E42] \Aportación Adicional Ajustada\
+[E20] \Auto\
+[E21] \Cadena Completa Auto\
+[E23] \Id\
+[E26] \Descripción\
+[E27] \Tipo Auto\
+[E29] \Es 3.5T?\
+[E31] \Estado\
+[E32] \Id\
+[E33] \Descripción\
+[E34] \Es Fronterizo?\
+[E35] \Incluye RC USA?\
+[E36] \Factor Descuento\
+[E41] \Proxys para las capturas:\
+[E42] \Valor Factura Ajustado\
 [Calculos]
-[E43] \Porcentaje Enganche\
-[E45] \Cálculo Seguro\
-[E46] \Id\
-[E47] \Descripción\
-[E48] \Es Financiado?\
-[E49] \Es Multianual?\
-[E50] \ID Plazo Seguro\
-[E51] \Descripción Plazo Cotizacion\
-[E53] \Factor Multianual\
-[E54] \ID\
-[E55] \Id para Multianual:\
-[E56] \Id Si no es multianual:\
-[E57] \Factor Daños:\
-[E58] \Factor Vida:\
-[E60] \Prima Daños\
-[E61] \Prima Base\
-[E67] \Gastos de Expedición\
-[E68] \Monto RC USA\
-[E70] \Monto Auto Sustituto\
-[E72] \Monto Indem Val Factura\
-[E76] \Monto Incremento RC\
-[E79] \Monto Servicio Premium\
-[E87] \Tarifas sujetas Multi\
-[E88] \Tarifas no sujetas Multi\
-[E89] \Aplica?\
+[E43] \Aportación Adicional Ajustada\
+[E44] \Porcentaje Enganche\
+[E46] \Cálculo Seguro\
+[E47] \Id\
+[E48] \Descripción\
+[E49] \Es Financiado?\
+[E50] \Es Multianual?\
+[E51] \ID Plazo Seguro\
+[E52] \Descripción Plazo Cotizacion\
+[E54] \Factor Multianual\
+[E55] \ID\
+[E56] \Id para Multianual:\
+[E57] \Id Si no es multianual:\
+[E58] \Factor Daños:\
+[E59] \Factor Vida:\
+[E61] \Prima Daños\
+[E62] \Prima Base\
+[E68] \Gastos de Expedición\
+[E69] \Monto RC USA\
+[E71] \Monto Auto Sustituto\
+[E73] \Monto Indem Val Factura\
+[E77] \Monto Incremento RC\
+[E80] \Monto Servicio Premium\
+[E88] \Tarifas sujetas Multi\
+[E89] \Tarifas no sujetas Multi\
 [Calculos]
-[E90] \Prima de daños\
-[E92] \Tipo Persona\
-[E93] \Id\
-[E94] \Descripción\
-[E95] \Aplica Seguro de Vida?\
-[E96] \Aplica Iva para Intereses?\
-[E98] \Prima Vida\
-[E99] \Porcentaje Base Vida\
-[E100] \Cuota Base Vida\
-[E101] \Tarifas sujetas Multi\
-[E102] \Tarifas no sujetas a Multi\
-[E103] \Aplica?\
-[E104] \Prima Vida\
-[E106] \Resumen Primas\
-[E107] \Prima Total Seguros\
-[E109] \Iva\
-[E110] \Id\
-[E111] \Descripción\
-[E112] \Tasa Iva Nominal\
-[E113] \Tasa Iva Deflactada\
-[E114] \Tasa Iva p/Intereses\
-[E116] \Montos\
-[E117] \Monto del Enganche\
-[E118] \Monto Anticipo (con Aport Adic)\
-[E119] \Monto a Financiar Auto\
+[E90] \Aplica?\
+[E91] \Prima de daños\
+[E93] \Tipo Persona\
+[E94] \Id\
+[E95] \Descripción\
+[E96] \Aplica Seguro de Vida?\
+[E97] \Aplica Iva para Intereses?\
+[E99] \Prima Vida\
+[E100] \Porcentaje Base Vida\
+[E101] \Cuota Base Vida\
+[E102] \Tarifas sujetas Multi\
+[E103] \Tarifas no sujetas a Multi\
+[E104] \Aplica?\
+[E105] \Prima Vida\
+[E107] \Resumen Primas\
+[E108] \Prima Total Seguros\
+[E110] \Iva\
+[E111] \Id\
+[E112] \Descripción\
+[E113] \Tasa Iva Nominal\
+[E114] \Tasa Iva Deflactada\
+[E115] \Tasa Iva p/Intereses\
+[E117] \Montos\
+[E118] \Monto del Enganche\
+[E119] \Monto Anticipo (con Aport Adic)\
 [Calculos]
-[E120] \Monto Financiar Seguro (Total)\
-[E121] \Monto de Contado Seguro\
-[E122] \Monto Financiar Seguro (Vida)\
-[E123] \Monto a Financiar Total\
-[E124] \Comisión Apertura con IVA\
-[E126] \Porcentaje de Anticipo:\
-[E128] \Tasa de Interés\
-[E134] \Tasa a usar\
-[E135] \Tasa de Interés\
-[E137] \Datos Generales Simulación\
-[E138] \Plazo en meses\
-[E139] \Periodos por año\
-[E140] \Número de pagos\
-[E142] \Pagos\
-[E143] \Pago del Crédito de Auto\
-[E144] \Plazo para Pago Seguros\
-[E145] \Pago del Crédito de Seguro\
-[E146] \Pago Total\
-[E148] \Leyendas\
-[E149] \Plazo\
-[E150] \Monto\
-[E151] \Texto\
-[E152] \Leyenda Seguro 1:\
-[E153] \Leyenda Seguro 2:\
-[E154] \Aportación Adicional\
+[E120] \Monto a Financiar Auto\
+[E121] \Monto Financiar Seguro (Total)\
+[E122] \Monto de Contado Seguro\
+[E123] \Monto Financiar Seguro (Vida)\
+[E124] \Monto a Financiar Total\
+[E125] \Comisión Apertura con IVA\
+[E127] \Porcentaje de Anticipo:\
+[E129] \Tasa de Interés\
+[E135] \Tasa a usar\
+[E136] \Tasa de Interés\
+[E138] \Datos Generales Simulación\
+[E139] \Plazo en meses\
+[E140] \Periodos por año\
+[E141] \Número de pagos\
+[E143] \Pagos\
+[E144] \Pago del Crédito de Auto\
+[E145] \Plazo para Pago Seguros\
+[E146] \Pago del Crédito de Seguro\
+[E147] \Pago Total\
+[E149] \Leyendas\
+[E150] \Plazo\
+[E151] \Monto\
+[E152] \Texto\
+[E153] \Leyenda Seguro 1:\
+[E154] \Leyenda Seguro 2:\
 [Calculos]
+[E155] \Aportación Adicional\
 [F5] \Valor\
 [F6] \=ID_CONDICION_AUTO\
 [F7] \=GetCatalogValue(ID_CONDICION_AUTO,"Descripción",C_CONDICION_AUTO)\
@@ -1284,216 +1285,215 @@ Contenido:
 [F17] (ID_CONDICION_MODELO) \=GetCatalogValue(ID_MODELO,"IdCondicionModelo",C_MODELO_AÑO)\
 [F18] \=GetCatalogValue(ID_CONDICION_MODELO,"Descripción",C_CONDICION_MODELO)\
 [F20] \Valor\
-[F21] \=ID_ESTADO\
-[F22] \=GetCatalogValue(ID_ESTADO,"Descripción",C_ESTADO)\
-[F23] (EstadoFronterizo?) \=GetCatalogValue(ID_ESTADO,"Fronterizo",C_ESTADO)\
-[F24] (EstadoIncluyeRcUsa?) \=GetCatalogValue(ID_ESTADO,"RC_USA",C_ESTADO)\
-[F25] (EstadoFactorDescuento) \=CHOOSE(ID_CONDICION_MODELO,G25,H25)\
-[F30] \Valor\
-[F31] (AutoCadenaCompleta) \=CONCATENATE(SELECCION_MARCA,", ",SELECCION_AUTO)\
-[F33] (ID_AUTO) \=CHOOSE(ID_CONDICION_MODELO,G33,H33)\
-[F36] \=CHOOSE(ID_CONDICION_MODELO,G36,H36)\
-[F37] (ID_TIPO_AUTO) \=CHOOSE(ID_CONDICION_MODELO,G37,H37)\
-[F41] (ValorFactura) \=IF(ID_AUTO=0, 0, CapturaValorFactura)\
+[F21] (AutoCadenaCompleta) \=CONCATENATE(SELECCION_MARCA,", ",SELECCION_AUTO)\
+[F23] (ID_AUTO) \=CHOOSE(ID_CONDICION_MODELO,G23,H23)\
+[F26] \=CHOOSE(ID_CONDICION_MODELO,G26,H26)\
+[F27] (ID_TIPO_AUTO) \=CHOOSE(ID_CONDICION_MODELO,G27,H27)\
+[F29] (CondicionAutoEs3.5T?) \=ID_TIPO_AUTO = _3.5T\
+[F31] \Valor\
+[F32] \=ID_ESTADO\
+[F33] \=GetCatalogValue(ID_ESTADO,"Descripción",C_ESTADO)\
+[F34] (EstadoFronterizo?) \=GetCatalogValue(ID_ESTADO,"Fronterizo",C_ESTADO)\
+[F35] (EstadoIncluyeRcUsa?) \=GetCatalogValue(ID_ESTADO,"RC_USA",C_ESTADO)\
 [Calculos]
-[F42] (AportacionAdicional) \=IF(ValorFactura=0,0,CapturaAportacionAdicional)\
-[F43] (PorcentajeEnganche) \=CapturaPorcentajeEnganche\
-[F45] \Valor\
-[F46] \=ID_CALCULO_SEGURO\
-[F47] \=GetCatalogValue(ID_CALCULO_SEGURO,"Descripción",C_CALCULO_SEGURO)\
-[F48] (SeguroEsFinanciado?) \=GetCatalogValue(ID_CALCULO_SEGURO,"EsFinanciado",C_CALCULO_SEGURO)\
-[F49] (SeguroEsMultianual?) \=GetCatalogValue(ID_CALCULO_SEGURO,"EsMultianual",C_CALCULO_SEGURO)\
-[F50] (ID_PLAZO_CALCULO_SEGURO) \=GetCatalogValue(ID_CALCULO_SEGURO,"IdPlazo",C_CALCULO_SEGURO)\
-[F51] (DESCRIPCION_PLAZO_CALCULO_SEGURO) \=GetCatalogValue(ID_PLAZO_CALCULO_SEGURO,"Descripción",C_PLAZO)\
-[F54] (ID_FACTOR_MULTIANUAL) \=IF(SeguroEsMultianual?,F55,F56)\
-[F55] \=GetCatalogValue(ID_PLAZO,"IdFactorMultiAnual",C_PLAZO)\
-[F56] \1\
-[F57] (MultianualFactorAuto) \=GetCatalogValue(ID_FACTOR_MULTIANUAL,"Auto",C_FACTOR_MULTIANUAL)\
-[F58] (MultianualFactorVida) \=GetCatalogValue(ID_FACTOR_MULTIANUAL,"Vida",C_FACTOR_MULTIANUAL)\
-[F60] \Valor\
-[F61] (DañosPrimaBase) \=CHOOSE(ID_CONDICION_MODELO,G61,H61)\
-[F67] (DañosGastosExpedicion) \=CHOOSE(ID_CONDICION_AUTO,G67,H67)\
-[F68] (DañosMontoRcUsa) \=CHOOSE(ID_CONDICION_MODELO,G68,H68)\
-[F70] (DañosAutoSustituto) \=CHOOSE(ID_CONDICION_AUTO,G70,H70)\
-[F72] (DañosValFac1erAño) \=CHOOSE(ID_CONDICION_AUTO,G72,H72)\
-[F76] (DañosIncrementoRC) \=CHOOSE(ID_CONDICION_AUTO,G76,H76)\
-[F79] (DañosServicioPremium) \=CHOOSE(ID_CONDICION_AUTO,G79,H79)\
-[F87] (DañosComponenteConMulti) \=( ((DañosPrimaBase + DañosIncrementoRC ) * EstadoFactorDescuento) + DañosMontoRcUsa + DañosAutoSustituto ) * MultianualFactorAuto\
-[F88] (DañosComponenteSinMulti) \=DañosGastosExpedicion + (DañosValFac1erAño) + DañosServicioPremium\
-[F89] (DañosAplica?) \=ValorFactura <> 0\
+[F36] (EstadoFactorDescuento) \=CHOOSE(ID_CONDICION_MODELO,G36,H36)\
+[F42] (ValorFactura) \=IF(ID_AUTO=0, 0, CapturaValorFactura)\
+[F43] (AportacionAdicional) \=IF(ValorFactura=0,0,CapturaAportacionAdicional)\
+[F44] (PorcentajeEnganche) \=CapturaPorcentajeEnganche\
+[F46] \Valor\
+[F47] \=ID_CALCULO_SEGURO\
+[F48] \=GetCatalogValue(ID_CALCULO_SEGURO,"Descripción",C_CALCULO_SEGURO)\
+[F49] (SeguroEsFinanciado?) \=GetCatalogValue(ID_CALCULO_SEGURO,"EsFinanciado",C_CALCULO_SEGURO)\
+[F50] (SeguroEsMultianual?) \=GetCatalogValue(ID_CALCULO_SEGURO,"EsMultianual",C_CALCULO_SEGURO)\
+[F51] (ID_PLAZO_CALCULO_SEGURO) \=GetCatalogValue(ID_CALCULO_SEGURO,"IdPlazo",C_CALCULO_SEGURO)\
+[F52] (DESCRIPCION_PLAZO_CALCULO_SEGURO) \=GetCatalogValue(ID_PLAZO_CALCULO_SEGURO,"Descripción",C_PLAZO)\
+[F55] (ID_FACTOR_MULTIANUAL) \=IF(SeguroEsMultianual?,F56,F57)\
+[F56] \=GetCatalogValue(ID_PLAZO,"IdFactorMultiAnual",C_PLAZO)\
+[F57] \1\
+[F58] (MultianualFactorAuto) \=GetCatalogValue(ID_FACTOR_MULTIANUAL,"Auto",C_FACTOR_MULTIANUAL)\
+[F59] (MultianualFactorVida) \=GetCatalogValue(ID_FACTOR_MULTIANUAL,"Vida",C_FACTOR_MULTIANUAL)\
+[F61] \Valor\
+[F62] (DañosPrimaBase) \=CHOOSE(ID_CONDICION_MODELO,G62,H62)\
+[F68] (DañosGastosExpedicion) \=CHOOSE(ID_CONDICION_AUTO,G68,H68)\
+[F69] (DañosMontoRcUsa) \=CHOOSE(ID_CONDICION_MODELO,G69,H69)\
+[F71] (DañosAutoSustituto) \=CHOOSE(ID_CONDICION_AUTO,G71,H71)\
+[F73] (DañosValFac1erAño) \=CHOOSE(ID_CONDICION_AUTO,G73,H73)\
+[F77] (DañosIncrementoRC) \=CHOOSE(ID_CONDICION_AUTO,G77,H77)\
+[F80] (DañosServicioPremium) \=CHOOSE(ID_CONDICION_AUTO,G80,H80)\
+[F88] (DañosComponenteConMulti) \=( ((DañosPrimaBase + DañosIncrementoRC ) * EstadoFactorDescuento) + DañosMontoRcUsa + DañosAutoSustituto ) * MultianualFactorAuto\
 [Calculos]
-[F90] (PrimaDaños) \=( DañosComponenteConMulti + DañosComponenteSinMulti) * DañosAplica?\
-[F92] \Valor\
-[F93] \=ID_TIPO_PERSONA\
-[F94] \=GetCatalogValue(ID_TIPO_PERSONA,"Descripción",C_TIPO_PERSONA)\
-[F95] (TipoPersonaAplicaSeguroVida?) \=GetCatalogValue(ID_TIPO_PERSONA,"AplicaSeguroVida",C_TIPO_PERSONA)\
-[F96] (AplicaIvaIntereses?) \=GetCatalogValue(ID_TIPO_PERSONA,"AplicaIvaIntereses",C_TIPO_PERSONA)\
-[F99] (Porcentaje_Cuota_Base_Vida) \= CONST_Cuota_Base_Vida\
-[F100] (Constante_Base_Vida) \= CONST_Constante_Base_Vida\
-[F101] (VidaComponenteConMulti) \= ( MontoFinanciarAuto * Porcentaje_Cuota_Base_Vida ) * MultianualFactorVida\
-[F102] (VidaComponenteSinMulti) \= Constante_Base_Vida\
-[F103] (VidaAplica?) \=AND(TipoPersonaAplicaSeguroVida?, ValorFactura <>0)\
-[F104] (PrimaVida) \=( VidaComponenteConMulti + VidaComponenteSinMulti ) * VidaAplica?\
-[F107] (PrimaTotalSeguros) \= PrimaDaños + PrimaVida\
-[F110] \=ID_IVA\
-[F111] \=GetCatalogValue(ID_IVA,"Descripción",C_IVA)\
-[F112] (IvaNominal) \=GetCatalogValue(ID_IVA,"TasaIva",C_IVA)\
-[F113] (IvaDeflactada) \=IvaNominal - CONST_DESCUENTO_IVA_INTERES\
-[F114] (IvaParaIntereses) \=IvaDeflactada * AplicaIvaIntereses?\
-[F117] (MontoEnganche) \= ValorFactura * PorcentajeEnganche\
-[F118] (MontoAnticipoAuto) \= MontoEnganche + AportacionAdicional\
-[F119] (MontoFinanciarAuto) \= ValorFactura - MontoAnticipoAuto\
-[F120] (MontoFinanciarSeguros) \= PrimaTotalSeguros * SeguroEsFinanciado?\
-[F121] (MontoSeguroDeContado) \= TEXT(PrimaTotalSeguros - MontoFinanciarSeguros,"$#,##0.00")\
-[F122] (MontoFinanciarVida) \=PrimaVida * SeguroEsFinanciado?\
-[F123] (MontoFinanciarTotal) \= MontoFinanciarAuto + MontoFinanciarSeguros\
+[F89] (DañosComponenteSinMulti) \=DañosGastosExpedicion + (DañosValFac1erAño) + DañosServicioPremium\
+[F90] (DañosAplica?) \=ValorFactura <> 0\
+[F91] (PrimaDaños) \=( DañosComponenteConMulti + DañosComponenteSinMulti) * DañosAplica?\
+[F93] \Valor\
+[F94] \=ID_TIPO_PERSONA\
+[F95] \=GetCatalogValue(ID_TIPO_PERSONA,"Descripción",C_TIPO_PERSONA)\
+[F96] (TipoPersonaAplicaSeguroVida?) \=GetCatalogValue(ID_TIPO_PERSONA,"AplicaSeguroVida",C_TIPO_PERSONA)\
+[F97] (AplicaIvaIntereses?) \=GetCatalogValue(ID_TIPO_PERSONA,"AplicaIvaIntereses",C_TIPO_PERSONA)\
+[F100] (Porcentaje_Cuota_Base_Vida) \= CONST_Cuota_Base_Vida\
+[F101] (Constante_Base_Vida) \= CONST_Constante_Base_Vida\
+[F102] (VidaComponenteConMulti) \= ( MontoFinanciarAuto * Porcentaje_Cuota_Base_Vida ) * MultianualFactorVida\
+[F103] (VidaComponenteSinMulti) \= Constante_Base_Vida\
+[F104] (VidaAplica?) \=AND(TipoPersonaAplicaSeguroVida?, ValorFactura <>0)\
+[F105] (PrimaVida) \=( VidaComponenteConMulti + VidaComponenteSinMulti ) * VidaAplica?\
+[F108] (PrimaTotalSeguros) \= PrimaDaños + PrimaVida\
+[F111] \=ID_IVA\
+[F112] \=GetCatalogValue(ID_IVA,"Descripción",C_IVA)\
+[F113] (IvaNominal) \=GetCatalogValue(ID_IVA,"TasaIva",C_IVA)\
+[F114] (IvaDeflactada) \=IvaNominal - CONST_DESCUENTO_IVA_INTERES\
+[F115] (IvaParaIntereses) \=IvaDeflactada * AplicaIvaIntereses?\
+[F118] (MontoEnganche) \= ValorFactura * PorcentajeEnganche\
+[F119] (MontoAnticipoAuto) \= MontoEnganche + AportacionAdicional\
+[F120] (MontoFinanciarAuto) \= ValorFactura - MontoAnticipoAuto\
+[F121] (MontoFinanciarSeguros) \= PrimaTotalSeguros * SeguroEsFinanciado?\
+[F122] (MontoSeguroDeContado) \= TEXT(PrimaTotalSeguros - MontoFinanciarSeguros,"$#,##0.00")\
 [Calculos]
-[F124] (MontoComisionPorAperturaConIva) \=MontoFinanciarTotal * CapturaPorcentajeComisionApertura * (1+IvaNominal)\
-[F126] (PorcentajeAnticipoAuto) \=IF(ValorFactura=0, 0, MontoAnticipoAuto/ValorFactura)\
-[F134] (TasaAUsar) \=CHOOSE(ID_CONDICION_AUTO,G134,H134)\
-[F135] (TasaInteres) \=GetCatalogValue(PlazoEnMeses,TasaAUsar,C_TASAS_INTERES)\
-[F138] (PlazoEnMeses) \=GetCatalogValue(ID_PLAZO,"EnMeses",C_PLAZO)\
-[F139] (PeriodosPorAño) \=GetCatalogValue(ID_FRECUENCIA,"PeriodosPorAño",C_FRECUENCIA)\
-[F140] (NumeroDePagos) \= PlazoEnMeses / CONST_MESES_EN_AÑO * PeriodosPorAño\
-[F143] (PagoAuto) \=PMT( TasaInteres/PeriodosPorAño * (1+IvaParaIntereses), PlazoEnMeses, -MontoFinanciarAuto )\
-[F144] \=IF(SeguroEsMultianual?, PlazoEnMeses, CONST_MESES_EN_AÑO)\
-[F145] (PagoSeguro) \=PMT(TasaInteres/PeriodosPorAño*(1+IvaParaIntereses),F144,-MontoFinanciarSeguros)\
-[F146] (PagoTotal) \= PagoAuto + PagoSeguro\
-[F149] \=IF(OR(NOT(SeguroEsMultianual?),NumeroDePagos=PeriodosPorAño),"por el primer año","a " & SELECCION_PLAZO) & " por "\
-[F150] \=TEXT(MontoFinanciarSeguros,"$#,##0.00")\
-[F151] \* Costo del Seguro Banorte\
-[F152] (Leyenda.Seguro.1) \=IF(SeguroEsFinanciado?,CONCATENATE(F151,F149,F150,G149,"."),IF(ID_CALCULO_SEGURO>5,CONCATENATE(F151,F149,MontoSeguroDeContado,G149,"."),""))\
-[F153] (Leyenda.Seguro.2) \=IF(SeguroEsFinanciado?,"Con Seguro " & IF(SeguroEsMultianual?,"Multianual","Anual") & " Financiado.","")\
-[F154] (LeyendaAportacionAdicional) \=IF(AportacionAdicional>0, CONCATENATE("+ Aportación adicional de ",TEXT(AportacionAdicional,"$#,##0.00")), "")\
-[F156] \=IF(SeguroEsFinanciado?,CONCATENATE(F151,F149,F150,G149,"."),IF(ID_CALCULO_SEGURO>5,CONCATENATE(F151,F149,MontoSeguroDeContado,G149,"."),""))\
+[F123] (MontoFinanciarVida) \=PrimaVida * SeguroEsFinanciado?\
+[F124] (MontoFinanciarTotal) \= MontoFinanciarAuto + MontoFinanciarSeguros\
+[F125] (MontoComisionPorAperturaConIva) \=MontoFinanciarTotal * CapturaPorcentajeComisionApertura * (1+IvaNominal)\
+[F127] (PorcentajeAnticipoAuto) \=IF(ValorFactura=0, 0, MontoAnticipoAuto/ValorFactura)\
+[F135] (TasaAUsar) \=CHOOSE(ID_CONDICION_AUTO,G135,H135)\
+[F136] (TasaInteres) \=GetCatalogValue(PlazoEnMeses,TasaAUsar,C_TASAS_INTERES)\
+[F139] (PlazoEnMeses) \=GetCatalogValue(ID_PLAZO,"EnMeses",C_PLAZO)\
+[F140] (PeriodosPorAño) \=GetCatalogValue(ID_FRECUENCIA,"PeriodosPorAño",C_FRECUENCIA)\
+[F141] (NumeroDePagos) \= PlazoEnMeses / CONST_MESES_EN_AÑO * PeriodosPorAño\
+[F144] (PagoAuto) \=PMT( TasaInteres/PeriodosPorAño * (1+IvaParaIntereses), PlazoEnMeses, -MontoFinanciarAuto )\
+[F145] \=IF(SeguroEsMultianual?, PlazoEnMeses, CONST_MESES_EN_AÑO)\
+[F146] (PagoSeguro) \=PMT(TasaInteres/PeriodosPorAño*(1+IvaParaIntereses),F145,-MontoFinanciarSeguros)\
+[F147] (PagoTotal) \= PagoAuto + PagoSeguro\
+[F150] \=IF(OR(NOT(SeguroEsMultianual?),NumeroDePagos=PeriodosPorAño),"por el primer año","a " & SELECCION_PLAZO) & " por "\
+[F151] \=TEXT(MontoFinanciarSeguros,"$#,##0.00")\
+[F152] \* Costo del Seguro Banorte\
+[F153] (Leyenda.Seguro.1) \=IF(SeguroEsFinanciado?,CONCATENATE(F152,F150,F151,G150,"."),IF(ID_CALCULO_SEGURO>5,CONCATENATE(F152,F150,MontoSeguroDeContado,G150,"."),""))\
+[F154] (Leyenda.Seguro.2) \=IF(SeguroEsFinanciado?,"Con Seguro " & IF(SeguroEsMultianual?,"Multianual","Anual") & " Financiado.","")\
+[F155] (LeyendaAportacionAdicional) \=IF(AportacionAdicional>0, CONCATENATE("+ Aportación adicional de ",TEXT(AportacionAdicional,"$#,##0.00")), "")\
+[F157] \=IF(SeguroEsFinanciado?,CONCATENATE(F152,F150,F151,G150,"."),IF(ID_CALCULO_SEGURO>5,CONCATENATE(F152,F150,MontoSeguroDeContado,G150,"."),""))\
 [G10] \Porcentaje Máximo Enganche\
 [G20] \Recientes\
-[G25] \=IF(G26,G27,1)\
-[G26] \=ID_TIPO_AUTO <> _3.5T\
-[G27] \=GetCatalogValue(ID_ESTADO,G28,C_ESTADO)\
-[G28] \FactorDescuento\
-[G30] \Recientes\
+[G23] \=IF(ISERROR(G24), 0, G24)\
+[G24] \=GetIdFromDesc(AutoCadenaCompleta,G25)\
+[G25] \C_AUTO\
 [Calculos]
-[G33] \=IF(ISERROR(G34), 0, G34)\
-[G34] \=GetIdFromDesc(AutoCadenaCompleta,G35)\
-[G35] \C_AUTO\
-[G36] \=GetCatalogValue(ID_AUTO,"Descripción",INDIRECT(G35))\
-[G37] \=GetCatalogValue(ID_AUTO,G38,INDIRECT(G35))\
-[G38] \TipoAutomovil\
-[G60] \Nuevo/Reciente\
-[G61] \= (ValorFactura * G62) + G63\
-[G62] (Porcentaje_Base) \=GetCatalogValue(ID_AUTO,"CuotaAutoConIva",INDIRECT(G35))\
-[G63] \=GetCatalogValue(ID_AUTO,"ConstanteAutoConIva",INDIRECT(G35))\
-[G66] \Nuevos\
-[G67] \=GetCatalogValue(ID_AUTO,"GastosExpediciónAutoConIVA", INDIRECT(G35))\
-[G68] \=IF(EstadoIncluyeRcUsa?, GetCatalogValue(ID_TIPO_AUTO,G69,C_TARIFA_RC_EU), 0)\
-[G69] \Tarifa\
-[G70] \=IF(G71, GetCatalogValue(ID_AUTO,"Auto Sust",INDIRECT(G35)), 0)\
-[G71] \=GetCatalogValue(ID_AUTO_SUST,"Valor",C_SI_NO)\
-[G72] \=IF(Aplica_IndemVF?, Calculo_IndemnVF, 0)\
-[G73] (Aplica_IndemVF?) \=OR(GetCatalogValue(ID_INDEMN_AÑO1,"Porcentaje",C_Indem_Valor_Factura))\
-[G74] (Calculo_IndemnVF) \= ValorFactura * Tarifa_IndemnVF * Porcentaje_Base * EstadoFactorDescuento\
-[G75] (Tarifa_IndemnVF) \=GetCatalogValue(ID_INDEMN_AÑO1,"Porcentaje",C_Indem_Valor_Factura)\
-[G76] \=IF(G77, GetCatalogValue(ID_AUTO,G78,INDIRECT(G35)), 0)\
-[G77] \=GetCatalogValue(ID_INCREMENTO_RC,"Aplica",C_ADIC_INCREMENTO_RC)\
-[G78] \=GetCatalogValue(ID_INCREMENTO_RC,"Tarifa",C_ADIC_INCREMENTO_RC)\
-[G79] \=IF(G80,G81,0)\
-[G80] \=GetCatalogValue(ID_SERVICIO_PREMIUM,"Valor",C_SI_NO)\
+[G26] \=GetCatalogValue(ID_AUTO,"Descripción",INDIRECT(G25))\
+[G27] \=GetCatalogValue(ID_AUTO,G28,INDIRECT(G25))\
+[G28] \TipoAutomovil\
+[G31] \Recientes\
+[G36] \=IF(G37,G38,1)\
+[G37] \=NOT(CondicionAutoEs3.5T?)\
+[G38] \=GetCatalogValue(ID_ESTADO,G39,C_ESTADO)\
+[G39] \FactorDescuento\
+[G61] \Nuevo/Reciente\
+[G62] \= (ValorFactura * G63) + G64\
+[G63] (Porcentaje_Base) \=GetCatalogValue(ID_AUTO,"CuotaAutoConIva",INDIRECT(G25))\
+[G64] \=GetCatalogValue(ID_AUTO,"ConstanteAutoConIva",INDIRECT(G25))\
+[G67] \Nuevos\
+[G68] \=GetCatalogValue(ID_AUTO,"GastosExpediciónAutoConIVA", INDIRECT(G25))\
+[G69] \=IF(EstadoIncluyeRcUsa?, GetCatalogValue(ID_TIPO_AUTO,G70,C_TARIFA_RC_EU), 0)\
+[G70] \Tarifa\
+[G71] \=IF(G72, GetCatalogValue(ID_AUTO,"Auto Sust",INDIRECT(G25)), 0)\
+[G72] \=GetCatalogValue(ID_AUTO_SUST,"Valor",C_SI_NO)\
+[G73] \=IF(Aplica_IndemVF?, Calculo_IndemnVF, 0)\
+[G74] (Aplica_IndemVF?) \=OR(GetCatalogValue(ID_INDEMN_AÑO1,"Porcentaje",C_Indem_Valor_Factura))\
+[G75] (Calculo_IndemnVF) \= ValorFactura * Tarifa_IndemnVF * Porcentaje_Base * EstadoFactorDescuento\
+[G76] (Tarifa_IndemnVF) \=GetCatalogValue(ID_INDEMN_AÑO1,"Porcentaje",C_Indem_Valor_Factura)\
+[G77] \=IF(G78, GetCatalogValue(ID_AUTO,G79,INDIRECT(G25)), 0)\
+[G78] \=GetCatalogValue(ID_INCREMENTO_RC,"Aplica",C_ADIC_INCREMENTO_RC)\
+[G79] \=GetCatalogValue(ID_INCREMENTO_RC,"Tarifa",C_ADIC_INCREMENTO_RC)\
 [Calculos]
-[G81] \=G82*G83\
-[G82] \=VLOOKUP(ID_AUTO,C_AUTO,17)\
-[G83] \=MIN(G84,G85)\
-[G84] \=MultianualFactorAuto\
-[G85] \=VLOOKUP(VLOOKUP("Factor 24 Meses",C_FACTOR_MULTIANUAL_DESC,2),C_FACTOR_MULTIANUAL,4)\
-[G119] \Monto Mínimo a Financiar Auto\
-[G121] \=PrimaTotalSeguros - MontoFinanciarSeguros\
-[G128] \Nuevos\
-[G129] (TasaCondicion1Nuevos) \=PorcentajeAnticipoAuto >= CONST_UMBRAL_ENGANCHE\
-[G130] (TasaCondicion2Nuevos) \=MontoFinanciarTotal >= CONST_UMBRAL_MONTO\
-[G132] \Chica\
-[G133] \Grande\
-[G134] \=IF(OR(TasaCondicion1Nuevos,TasaCondicion2Nuevos),G132, G133)\
-[G148] \Leyendas agregadas por MAGM 130313 para cotización y tabla de amortización\
-[G149] \=IF(ID_CALCULO_SEGURO<6,", incluido en el monto a financiar",IF(ID_CALCULO_SEGURO>5,", incluido en el pago a la firma del contrato",""))\
-[G151] \+ Crédito por Seguro Banorte\
-[G152] (Leyenda.Seguro.1_tabla_amortizacion) \=IF(SeguroEsFinanciado?,CONCATENATE(G151,F149,F150,"."),"")\
-[G160] \Nuevos\
+[G80] \=IF(G81,G82,0)\
+[G81] \=GetCatalogValue(ID_SERVICIO_PREMIUM,"Valor",C_SI_NO)\
+[G82] \=G83*G84\
+[G83] \=VLOOKUP(ID_AUTO,C_AUTO,17)\
+[G84] \=MIN(G85,G86)\
+[G85] \=MultianualFactorAuto\
+[G86] \=VLOOKUP(VLOOKUP("Factor 24 Meses",C_FACTOR_MULTIANUAL_DESC,2),C_FACTOR_MULTIANUAL,4)\
+[G120] \Monto Mínimo a Financiar Auto\
+[G122] \=PrimaTotalSeguros - MontoFinanciarSeguros\
+[G129] \Nuevos\
+[G130] (TasaCondicion1Nuevos) \=PorcentajeAnticipoAuto >= CONST_UMBRAL_ENGANCHE\
+[G131] (TasaCondicion2Nuevos) \=MontoFinanciarTotal >= CONST_UMBRAL_MONTO\
+[G133] \Chica\
+[G134] \Grande\
+[G135] \=IF(OR(TasaCondicion1Nuevos,TasaCondicion2Nuevos),G133, G134)\
+[G149] \Leyendas agregadas por MAGM 130313 para cotización y tabla de amortización\
+[G150] \=IF(ID_CALCULO_SEGURO<6,", incluido en el monto a financiar",IF(ID_CALCULO_SEGURO>5,", incluido en el pago a la firma del contrato",""))\
+[G152] \+ Crédito por Seguro Banorte\
+[G153] (Leyenda.Seguro.1_tabla_amortizacion) \=IF(SeguroEsFinanciado?,CONCATENATE(G152,F150,F151,"."),"")\
 [H10] (PorcentajeMaximoEnganche) \=1-(Monto_Mínimo_a_Financiar/CapturaValorFactura)\
 [H20] \Anteriores\
-[H25] \=IF(H26,H27,1)\
-[H26] \=G26\
-[H27] \=GetCatalogValue(ID_ESTADO,H28,C_ESTADO)\
-[H28] \FactDescSeminuevos\
-[H30] \Anteriores\
+[H23] \=IF(ISERROR(H24), 0, H24)\
+[H24] \=GetIdFromDesc(AutoCadenaCompleta,H25)\
+[H25] \C_AutosSeminuevos\
+[H26] \=GetCatalogValue(ID_AUTO,"Descripción",INDIRECT(H25))\
 [Calculos]
-[H33] \=IF(ISERROR(H34), 0, H34)\
-[H34] \=GetIdFromDesc(AutoCadenaCompleta,H35)\
-[H35] \C_AutosSeminuevos\
-[H36] \=GetCatalogValue(ID_AUTO,"Descripción",INDIRECT(H35))\
-[H37] \=GetCatalogValue(ID_AUTO,H38,INDIRECT(H35))\
-[H38] \TipoAutomovil\
-[H60] \Anterior\
-[H61] \=GetCatalogValue(ID_AUTO,H64,INDIRECT(H35))\
-[H64] (NombreTarifaSemiAnt) \=GetCatalogValue(ID_MODELO,"ColumnaTarifa",C_MODELO_AÑO)\
-[H66] \Seminuevos\
-[H67] \=CONST_Gastos_Expedicion_Semi_Ant\
-[H68] \=IF(EstadoIncluyeRcUsa?, GetCatalogValue(ID_TIPO_AUTO,H69,C_TARIFA_RC_EU), 0)\
-[H69] \TarifaSemiAnt\
-[H70] \0\
-[H72] \0\
-[H76] \0\
-[H79] \0\
-[H119] (Monto_Mínimo_a_Financiar) \25000\
-[H128] \Seminuevos\
-[H131] (TasaCondicion1Seminuevos) \=PorcentajeAnticipoAuto >= CONST_UMBRAL_ENGANCHE_SEMI\
-[H132] \SemiAntChica\
-[H133] \SemiAntGrande\
-[H134] \=IF( TasaCondicion1Seminuevos, H132,H133 )\
-[H148] (Contiene_cobertura_adicional) \=IF(OR(ID_AUTO_SUST=1,ID_INCREMENTO_RC>0,ID_INDEMN_AÑO1>1),1,0)\
-[H151] \Cotización\
+[H27] \=GetCatalogValue(ID_AUTO,H28,INDIRECT(H25))\
+[H28] \TipoAutomovil\
+[H31] \Anteriores\
+[H36] \=IF(H37,H38,1)\
+[H37] \=G37\
+[H38] \=GetCatalogValue(ID_ESTADO,H39,C_ESTADO)\
+[H39] \FactDescSeminuevos\
+[H61] \Anterior\
+[H62] \=GetCatalogValue(ID_AUTO,H65,INDIRECT(H25))\
+[H65] (NombreTarifaSemiAnt) \=GetCatalogValue(ID_MODELO,"ColumnaTarifa",C_MODELO_AÑO)\
+[H67] \Seminuevos\
+[H68] \=CONST_Gastos_Expedicion_Semi_Ant\
+[H69] \=IF(EstadoIncluyeRcUsa?, GetCatalogValue(ID_TIPO_AUTO,H70,C_TARIFA_RC_EU), 0)\
+[H70] \TarifaSemiAnt\
+[H71] \0\
+[H73] \0\
+[H77] \0\
+[H80] \0\
+[H120] (Monto_Mínimo_a_Financiar) \25000\
+[H129] \Seminuevos\
+[H132] (TasaCondicion1Seminuevos) \=PorcentajeAnticipoAuto >= CONST_UMBRAL_ENGANCHE_SEMI\
+[H133] \SemiAntChica\
+[H134] \SemiAntGrande\
+[H135] \=IF( TasaCondicion1Seminuevos, H133,H134 )\
+[H149] (Contiene_cobertura_adicional) \=IF(OR(ID_AUTO_SUST=1,ID_INCREMENTO_RC>0,ID_INDEMN_AÑO1>1),1,0)\
 [Calculos]
-[H152] \Tabla de Amortización\
-[H160] \Seminuevos\
-[I21] \ \
-[I22] \ \
-[I23] \ \
-[I24] \ \
-[I25] \Si no aplica, factor = 1\
-[I26] \Aplica? (No es 3.5T)\
-[I27] \<- Si sí aplica\
-[I28] \Factor que aplica\
-[I33] \Condición de error\
-[I34] \Id \
-[I35] \Catálogo de autos\
-[I36] \ \
-[I38] \Columna Tipo Auto\
-[I61] \ \
-[I62] \Porcentaje Base\
-[I63] \Cuota Base\
-[I64] \Tarifa\
-[I69] \Columna de tarifa\
-[I71] \Aplica?\
-[I73] \Aplica?\
-[I74] \Monto\
-[I75] \Tarifa Monto IndemnVF\
-[I77] \Aplica?\
+[H152] \Cotización\
+[H153] \Tabla de Amortización\
+[I23] \Condición de error\
+[I24] \Id \
+[I25] \Catálogo de autos\
+[I26] \ \
+[I28] \Columna Tipo Auto\
+[I32] \ \
+[I33] \ \
+[I34] \ \
+[I35] \ \
+[I36] \Si no aplica, factor = 1\
+[I37] \Aplica? (No es 3.5T)\
+[I38] \<- Si sí aplica\
+[I39] \Factor que aplica\
+[I62] \ \
+[I63] \Porcentaje Base\
+[I64] \Cuota Base\
+[I65] \Tarifa\
+[I70] \Columna de tarifa\
+[I72] \Aplica?\
+[I74] \Aplica?\
+[I75] \Monto\
+[I76] \Tarifa Monto IndemnVF\
+[I78] \Aplica?\
 [Calculos]
-[I78] \Columna de tarifa\
-[I80] \Aplica?\
-[I81] \Resultado\
-[I82] \Tarifa Base Premium\
-[I83] \Factor Multi a aplicar\
-[I84] \Factor Multi Actual\
-[I85] \Factor Multi 24M\
-[I129] \1: % Anticipo Auto >= Umbral\
-[I130] \2: Monto financiar (Total) >= Umbral\
-[I131] \1: % Anticipo Auto >= Umbral\
-[I132] \Tasa Barata\
-[I133] \Tasa Cara\
-[I148] \Leyendas agregadas por MAGM 130313 para cotización y tabla de amortización de coberturas adicionales de seguro\
-[I149] \Incluye la(s) siguiente(s) cobertura(s) adicional(es):\
-[I151] (Leyenda_coberturas_adicionales_cotizacion) \=IF(Contiene_cobertura_adicional=1,CONCATENATE($I$149,Leyenda_auto_sustituto,Layenda_Incremento_RC,Leyenda_Indemnizacion_valor_factura),"")\
-[I152] (Leyenda_coberturas_adicionales_tabla_de_amortizacion) \=IF(Contiene_cobertura_adicional=1,CONCATENATE($I$149,Leyenda_auto_sustituto,Layenda_Incremento_RC,Leyenda_Indemnizacion_valor_factura,IF(ID_CALCULO_SEGURO>1,"")),"")\
+[I79] \Columna de tarifa\
+[I81] \Aplica?\
+[I82] \Resultado\
+[I83] \Tarifa Base Premium\
+[I84] \Factor Multi a aplicar\
+[I85] \Factor Multi Actual\
+[I86] \Factor Multi 24M\
+[I130] \1: % Anticipo Auto >= Umbral\
+[I131] \2: Monto financiar (Total) >= Umbral\
+[I132] \1: % Anticipo Auto >= Umbral\
+[I133] \Tasa Barata\
+[I134] \Tasa Cara\
+[I149] \Leyendas agregadas por MAGM 130313 para cotización y tabla de amortización de coberturas adicionales de seguro\
+[I150] \Incluye la(s) siguiente(s) cobertura(s) adicional(es):\
+[I152] (Leyenda_coberturas_adicionales_cotizacion) \=IF(Contiene_cobertura_adicional=1,CONCATENATE($I$150,Leyenda_auto_sustituto,Layenda_Incremento_RC,Leyenda_Indemnizacion_valor_factura),"")\
+[I153] (Leyenda_coberturas_adicionales_tabla_de_amortizacion) \=IF(Contiene_cobertura_adicional=1,CONCATENATE($I$150,Leyenda_auto_sustituto,Layenda_Incremento_RC,Leyenda_Indemnizacion_valor_factura,IF(ID_CALCULO_SEGURO>1,"")),"")\
 [J19] \ \
 [K3] \Salida de datos para la cotización\
 [K5] \Vaciado de la carátula\
@@ -45353,11 +45353,11 @@ Nombres:
  [Aplica_Cobertura_RC_USA] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$588
  [Aplica_Decuento_por_Estado] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Estado'!$C$37
  [Aplica_Ind_VF_2AÑO] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Coberturas Adicionales'!$C$36
- [Aplica_IndemVF?] =Calculos!$G$73
- [AplicaIvaIntereses?] =Calculos!$F$96
+ [Aplica_IndemVF?] =Calculos!$G$74
+ [AplicaIvaIntereses?] =Calculos!$F$97
  [Aportación_Adicional__opcional] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$E$18
- [AportacionAdicional] =Calculos!$F$42
- [AutoCadenaCompleta] =Calculos!$F$31
+ [AportacionAdicional] =Calculos!$F$43
+ [AutoCadenaCompleta] =Calculos!$F$21
  [C_ADIC_INCREMENTO_RC] ='C. Seguros'!$A$22:$E$25
  [C_ADIC_INCREMENTO_RC_DESC] =OFFSET(C_ADIC_INCREMENTO_RC,0,1,,2)
  [C_AUTO] ='C. Auto'!$A$13:$R$1105
@@ -45407,7 +45407,8 @@ Nombres:
  [CA_Consola!CA.RespaldoOpciones] =CA_Consola!$D$17:$G$20
  [CA_Consola!CA.UsarContraseñaEnHojas] =CA_Consola!$D$19
  [CA_Consola!CA.Version] =CA_Consola!$K$2
- [Calculo_IndemnVF] =Calculos!$G$74
+ [Calculo_IndemnVF] =Calculos!$G$75
+ [CAPTURA_COBERTURAS_ADICIONALES] =Captura!$B$24:$D$27
  [CapturaAportacionAdicional] =Captura!$G$8
  [CapturaFechaCotizacion] =Captura!$D$7
  [CapturaMontoEnganche] =Captura!$D$19
@@ -45449,6 +45450,7 @@ Nombres:
  [T_SoloAuto!Componentes.Pago.Fijo.Inicial] =T_SoloAuto!$F$25:$F$26
  [T_VidaAnual!Componentes.Pago.Fijo.Inicial] =T_VidaAnual!$F$25:$F$26
  [T_VidaMulti!Componentes.Pago.Fijo.Inicial] =T_VidaMulti!$F$25:$F$26
+ [CondicionAutoEs3.5T?] =Calculos!$F$29
  [CondicionAutoEsNuevo?] =Calculos!$F$8
  [CondicionAutoEsSeminuevo?] =Calculos!$F$9
  [CondicionModeloAnterior] ='C. Auto'!$I$11
@@ -45469,24 +45471,24 @@ Nombres:
  [CONST_UMBRAL_ENGANCHE] ='C. Tasas'!$C$13
  [CONST_UMBRAL_ENGANCHE_SEMI] ='C. Tasas'!$C$15
  [CONST_UMBRAL_MONTO] ='C. Tasas'!$C$14
- [Constante_Base_Vida] =Calculos!$F$100
+ [Constante_Base_Vida] =Calculos!$F$101
  [CONTEO_AUTOS] =C.Seminuevos!$O$5
  [CONTEO_MARCAS] =C.Seminuevos!$M$5
- [Contiene_cobertura_adicional] =Calculos!$H$148
+ [Contiene_cobertura_adicional] =Calculos!$H$149
  [CreditoAuto] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$G$22
  [CreditoSeguro] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$G$23
  [CreditoSeguroAnual] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]TipoSeguro'!$O$2
- [DañosAplica?] =Calculos!$F$89
- [DañosAutoSustituto] =Calculos!$F$70
- [DañosComponenteConMulti] =Calculos!$F$87
- [DañosComponenteSinMulti] =Calculos!$F$88
- [DañosGastosExpedicion] =Calculos!$F$67
- [DañosIncrementoRC] =Calculos!$F$76
- [DañosMontoRcUsa] =Calculos!$F$68
- [DañosPrimaBase] =Calculos!$F$61
- [DañosServicioPremium] =Calculos!$F$79
- [DañosValFac1erAño] =Calculos!$F$72
- [DESCRIPCION_PLAZO_CALCULO_SEGURO] =Calculos!$F$51
+ [DañosAplica?] =Calculos!$F$90
+ [DañosAutoSustituto] =Calculos!$F$71
+ [DañosComponenteConMulti] =Calculos!$F$88
+ [DañosComponenteSinMulti] =Calculos!$F$89
+ [DañosGastosExpedicion] =Calculos!$F$68
+ [DañosIncrementoRC] =Calculos!$F$77
+ [DañosMontoRcUsa] =Calculos!$F$69
+ [DañosPrimaBase] =Calculos!$F$62
+ [DañosServicioPremium] =Calculos!$F$80
+ [DañosValFac1erAño] =Calculos!$F$73
+ [DESCRIPCION_PLAZO_CALCULO_SEGURO] =Calculos!$F$52
  [DIA_COTIZACIÓN] =Fechas!$C$16
  [T_AutoYSeguroMulti!Dias.En.Año] =T_AutoYSeguroMulti!$C$22
  [T_Merger!Dias.En.Año] =T_Merger!$C$21
@@ -45500,30 +45502,30 @@ Nombres:
  [T_SoloAuto!Dias.Por.Periodo] =T_SoloAuto!$C$17
  [T_VidaAnual!Dias.Por.Periodo] =T_VidaAnual!$C$17
  [T_VidaMulti!Dias.Por.Periodo] =T_VidaMulti!$C$17
- [EstadoFactorDescuento] =Calculos!$F$25
- [EstadoFronterizo?] =Calculos!$F$23
- [EstadoIncluyeRcUsa?] =Calculos!$F$24
+ [EstadoFactorDescuento] =Calculos!$F$36
+ [EstadoFronterizo?] =Calculos!$F$34
+ [EstadoIncluyeRcUsa?] =Calculos!$F$35
  [CAT!FactorRenovacionAnual] =CAT!$H$8
  [CAT!FactorRenovacionAnualContado] =CAT!$H$6
  [CAT!FactorRenovacionAnualFinanciado] =CAT!$H$7
  [Frontera_USA] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$590
  [Id_Abono_Anticipado] =Calculos!$C$20
- [ID_AUTO] =Calculos!$F$33
+ [ID_AUTO] =Calculos!$F$23
  [ID_AUTO_SUST] =Calculos!$C$14
  [ID_CALCULO_SEGURO] =Calculos!$C$13
  [ID_CONDICION_AUTO] =Calculos!$C$11
  [ID_CONDICION_MODELO] =Calculos!$F$17
  [ID_ESTADO] =Calculos!$C$9
- [ID_FACTOR_MULTIANUAL] =Calculos!$F$54
+ [ID_FACTOR_MULTIANUAL] =Calculos!$F$55
  [ID_FRECUENCIA] =Calculos!$C$19
  [ID_INCREMENTO_RC] =Calculos!$C$15
  [ID_INDEMN_AÑO1] =Calculos!$C$16
  [ID_IVA] =Calculos!$C$8
  [ID_MODELO] =Calculos!$C$12
  [ID_PLAZO] =Calculos!$C$18
- [ID_PLAZO_CALCULO_SEGURO] =Calculos!$F$50
+ [ID_PLAZO_CALCULO_SEGURO] =Calculos!$F$51
  [ID_SERVICIO_PREMIUM] =Calculos!$C$17
- [ID_TIPO_AUTO] =Calculos!$F$37
+ [ID_TIPO_AUTO] =Calculos!$F$27
  [ID_TIPO_PERSONA] =Calculos!$C$7
  [INPUT_CELLS] =Captura!$D$7:$D$8,Captura!$D$10:$D$11,Captura!$D$14:$D$22,Captura!$D$24:$D$26,Captura!$D$18:$D$19,Captura!$D$21
  [T_AutoYSeguroMulti!Iva.Intereses] =T_AutoYSeguroMulti!$C$20
@@ -45532,26 +45534,26 @@ Nombres:
  [T_SoloAuto!Iva.Intereses] =T_SoloAuto!$C$20
  [T_VidaAnual!Iva.Intereses] =T_VidaAnual!$C$20
  [T_VidaMulti!Iva.Intereses] =T_VidaMulti!$C$20
- [IvaDeflactada] =Calculos!$F$113
- [IvaNominal] =Calculos!$F$112
- [IvaParaIntereses] =Calculos!$F$114
+ [IvaDeflactada] =Calculos!$F$114
+ [IvaNominal] =Calculos!$F$113
+ [IvaParaIntereses] =Calculos!$F$115
  [Layenda_Incremento_RC] ='C. Seguros'!$F$22
- [Leyenda.Seguro.1] =Calculos!$F$152
- [Leyenda.Seguro.1_tabla_amortizacion] =Calculos!$G$152
- [Leyenda.Seguro.2] =Calculos!$F$153
+ [Leyenda.Seguro.1] =Calculos!$F$153
+ [Leyenda.Seguro.1_tabla_amortizacion] =Calculos!$G$153
+ [Leyenda.Seguro.2] =Calculos!$F$154
  [Leyenda_auto_sustituto] ='C. Comunes'!$E$32
  [Leyenda_CAT_fija_cotización] =CAT!#REF!
  [Leyenda_CAT_fijo_autos_nuevos] =CAT!$R$7
  [Leyenda_CAT_fijo_autos_seminuevos] =CAT!$S$7
- [Leyenda_coberturas_adicionales_cotizacion] =Calculos!$I$151
- [Leyenda_coberturas_adicionales_tabla_de_amortizacion] =Calculos!$I$152
+ [Leyenda_coberturas_adicionales_cotizacion] =Calculos!$I$152
+ [Leyenda_coberturas_adicionales_tabla_de_amortizacion] =Calculos!$I$153
  [Leyenda_con_coma] ='C. Seguros'!$B$66
  [Leyenda_con_punto] ='C. Seguros'!$B$67
  [LEYENDA_DIAS_INTERESES_PRIMER_PAGO] =Fechas!$B$17
  [Leyenda_Indemnizacion_valor_factura] ='C. Seguros'!$F$52
  [Leyenda_seguro_anual_tabla_amortizacion] ='C. Seguros'!$B$65
  [LEYENDA_SELECCION_COMBOS] =C.Seminuevos!$C$3
- [LeyendaAportacionAdicional] =Calculos!$F$154
+ [LeyendaAportacionAdicional] =Calculos!$F$155
  [Marca_Ford_RC_USA] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!#REF!
  [Marca_Para_RC] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$587
  [MAX_NO_PAGOS] =TablaCliente!$A$66
@@ -45571,20 +45573,20 @@ Nombres:
  [T_SeguroAnual!Monto.Financiar.Ciclico] =T_SeguroAnual!$C$16
  [T_RenovVidaAnual!Monto.Renovacion] =T_RenovVidaAnual!$C$16
  [Monto_máximo_enganche] =Captura!$I$19
- [Monto_Mínimo_a_Financiar] =Calculos!$H$119
- [MontoAnticipoAuto] =Calculos!$F$118
- [MontoComisionPorAperturaConIva] =Calculos!$F$124
- [MontoEnganche] =Calculos!$F$117
- [MontoFinanciarAuto] =Calculos!$F$119
- [MontoFinanciarSeguros] =Calculos!$F$120
- [MontoFinanciarTotal] =Calculos!$F$123
- [MontoFinanciarVida] =Calculos!$F$122
- [MontoSeguroDeContado] =Calculos!$F$121
- [MultianualFactorAuto] =Calculos!$F$57
- [MultianualFactorVida] =Calculos!$F$58
+ [Monto_Mínimo_a_Financiar] =Calculos!$H$120
+ [MontoAnticipoAuto] =Calculos!$F$119
+ [MontoComisionPorAperturaConIva] =Calculos!$F$125
+ [MontoEnganche] =Calculos!$F$118
+ [MontoFinanciarAuto] =Calculos!$F$120
+ [MontoFinanciarSeguros] =Calculos!$F$121
+ [MontoFinanciarTotal] =Calculos!$F$124
+ [MontoFinanciarVida] =Calculos!$F$123
+ [MontoSeguroDeContado] =Calculos!$F$122
+ [MultianualFactorAuto] =Calculos!$F$58
+ [MultianualFactorVida] =Calculos!$F$59
  [T_Merger!Nombre.Tabla.Ciclica] =T_Merger!$C$24
  [T_Merger!Nombre.Tabla.Estandar] =T_Merger!$C$23
- [NombreTarifaSemiAnt] =Calculos!$H$64
+ [NombreTarifaSemiAnt] =Calculos!$H$65
  [T_RenovVidaAnual!Numero.De.Pagos] =T_RenovVidaAnual!$C$18
  [T_AutoYSeguroMulti!Numero.Pagos] =T_AutoYSeguroMulti!$C$19
  [T_Merger!Numero.pagos] =T_Merger!$C$18
@@ -45592,7 +45594,7 @@ Nombres:
  [T_SoloAuto!Numero.Pagos] =T_SoloAuto!$C$19
  [T_VidaAnual!Numero.Pagos] =T_VidaAnual!$C$19
  [T_VidaMulti!Numero.Pagos] =T_VidaMulti!$C$19
- [NumeroDePagos] =Calculos!$F$140
+ [NumeroDePagos] =Calculos!$F$141
  [T_AutoYSeguroMulti!Opcion.Abono] =T_AutoYSeguroMulti!$C$26
  [T_Merger!Opcion.Abono] =T_Merger!$C$22
  [T_SeguroAnual!Opcion.Abono] =T_SeguroAnual!$C$26
@@ -45606,9 +45608,9 @@ Nombres:
  [T_SoloAuto!Pago.Fijo] =T_SoloAuto!$F$23
  [T_VidaAnual!Pago.Fijo] =T_VidaAnual!$F$23
  [T_VidaMulti!Pago.Fijo] =T_VidaMulti!$F$23
- [PagoAuto] =Calculos!$F$143
- [PagoSeguro] =Calculos!$F$145
- [PagoTotal] =Calculos!$F$146
+ [PagoAuto] =Calculos!$F$144
+ [PagoSeguro] =Calculos!$F$146
+ [PagoTotal] =Calculos!$F$147
  [T_AutoYSeguroMulti!Parametro.Monto.Extra.Ciclo.1] =T_AutoYSeguroMulti!$C$25
  [T_SeguroAnual!Parametro.Monto.Extra.Ciclo.1] =T_SeguroAnual!$C$25
  [T_SoloAuto!Parametro.Monto.Extra.Ciclo.1] =T_SoloAuto!$C$25
@@ -45647,22 +45649,22 @@ Nombres:
  [T_SoloAuto!Periodos.Por.Ciclo] =T_SoloAuto!$F$19
  [T_VidaAnual!Periodos.Por.Ciclo] =T_VidaAnual!$F$19
  [T_VidaMulti!Periodos.Por.Ciclo] =T_VidaMulti!$F$19
- [PeriodosPorAño] =Calculos!$F$139
+ [PeriodosPorAño] =Calculos!$F$140
  [PlazoAuto] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Plazo'!$B$7
- [PlazoEnMeses] =Calculos!$F$138
+ [PlazoEnMeses] =Calculos!$F$139
  [PlazoMinimoIVF] =Calculos!$B$36
  [PlazoSeguroAnual] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Plazo'!$B$11
- [Porcentaje_Base] =Calculos!$G$62
- [Porcentaje_Cuota_Base_Vida] =Calculos!$F$99
+ [Porcentaje_Base] =Calculos!$G$63
+ [Porcentaje_Cuota_Base_Vida] =Calculos!$F$100
  [Porcentaje_máximo_enganche] =Captura!$I$18
- [PorcentajeAnticipoAuto] =Calculos!$F$126
- [PorcentajeEnganche] =Calculos!$F$43
+ [PorcentajeAnticipoAuto] =Calculos!$F$127
+ [PorcentajeEnganche] =Calculos!$F$44
  [PorcentajeMaximoEnganche] =Calculos!$H$10
  [PorcentajeMinimoEnganche] =Calculos!$F$10
- [PrimaDaños] =Calculos!$F$90
- [PrimaTotalSeguros] =Calculos!$F$107
- [PrimaVida] =Calculos!$F$104
- [Captura!Print_Area] =Captura!$B$3:$D$60
+ [PrimaDaños] =Calculos!$F$91
+ [PrimaTotalSeguros] =Calculos!$F$108
+ [PrimaVida] =Calculos!$F$105
+ [Captura!Print_Area] =Captura!$B$3:$D$59
  [TablaCliente!Print_Area] =TablaCliente!$A$3:$I$85
  [QUERY_AUTOS] =C.Seminuevos!$O$7
  [QUERY_MARCAS] =C.Seminuevos!$M$7
@@ -45707,8 +45709,8 @@ Nombres:
  [SEG._FINANCIADO] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]TipoSeguro'!$B$1
  [Seguro_Auto] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]CAT'!$H$3
  [Seguro_Vida] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]CAT'!$I$3
- [SeguroEsFinanciado?] =Calculos!$F$48
- [SeguroEsMultianual?] =Calculos!$F$49
+ [SeguroEsFinanciado?] =Calculos!$F$49
+ [SeguroEsMultianual?] =Calculos!$F$50
  [Seleccion_Abono_Anticipado] =TablaCliente!$C$10
  [SELECCION_AUTO] =Captura!$D$17
  [SELECCION_AUTO_SUST] =Captura!$D$24
@@ -45730,7 +45732,7 @@ Nombres:
  [T_VidaAnual!Tabla.Ciclica.Anual?] =T_VidaAnual!$C$30
  [T_VidaMulti!Tabla.Ciclica.Anual?] =T_VidaMulti!$C$30
  [TABLA_SEGURO_ANUAL] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]#REF'!$S$14
- [Tarifa_IndemnVF] =Calculos!$G$75
+ [Tarifa_IndemnVF] =Calculos!$G$76
  [T_AutoYSeguroMulti!Tasa.Diaria] =T_AutoYSeguroMulti!$F$17
  [T_Merger!Tasa.Diaria] =T_Merger!$F$17
  [T_SeguroAnual!Tasa.Diaria] =T_SeguroAnual!$F$17
@@ -45756,28 +45758,28 @@ Nombres:
  [T_VidaAnual!Tasa.Por.Periodo] =T_VidaAnual!$F$16
  [T_VidaMulti!Tasa.Por.Periodo] =T_VidaMulti!$F$16
  [Tasa_Fija] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]TasaProducto'!$C$20
- [TasaAUsar] =Calculos!$F$134
- [TasaCondicion1Nuevos] =Calculos!$G$129
- [TasaCondicion1Seminuevos] =Calculos!$H$131
- [TasaCondicion2Nuevos] =Calculos!$G$130
- [TasaInteres] =Calculos!$F$135
- [TipoPersonaAplicaSeguroVida?] =Calculos!$F$95
+ [TasaAUsar] =Calculos!$F$135
+ [TasaCondicion1Nuevos] =Calculos!$G$130
+ [TasaCondicion1Seminuevos] =Calculos!$H$132
+ [TasaCondicion2Nuevos] =Calculos!$G$131
+ [TasaInteres] =Calculos!$F$136
+ [TipoPersonaAplicaSeguroVida?] =Calculos!$F$96
  [CAT!TIR.Flujos] =CAT!$N$9
  [CAT!Total.Egresos.CAT] =CAT!$C$10
  [CAT!Total.Flujo.Cero.CAT] =CAT!$C$19
  [CAT!Total.Ingresos.CAT] =CAT!$C$17
- [Captura!UltimaCelda] =Captura!$H$207
+ [Captura!UltimaCelda] =Captura!$H$206
  [TablaCliente!UltimaCelda] =TablaCliente!$J$86
  [Valor_Factura] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$I$8
  [Valor_Factura_Mínimo] =Captura!$I$8
  [Valor_Factura_Mínimo_Nuevos] =Captura!$J$8
  [Valor_Factura_Mínimo_Seminuevos] =Captura!$K$8
- [ValorFactura] =Calculos!$F$41
+ [ValorFactura] =Calculos!$F$42
  [VB_STARTING_CELL] =Calculos!$K$17:$N$21
  [Vehículo] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$591
- [VidaAplica?] =Calculos!$F$103
- [VidaComponenteConMulti] =Calculos!$F$101
- [VidaComponenteSinMulti] =Calculos!$F$102
+ [VidaAplica?] =Calculos!$F$104
+ [VidaComponenteConMulti] =Calculos!$F$102
+ [VidaComponenteSinMulti] =Calculos!$F$103
  [VRF] ='\\Tsura8002673p1\1ps\SAuto\AutoEstrene\[AutoEstrene.xls]ValorResidual'!$C$17
 
 Nombre del proyecto VB: [VBAProject]
@@ -47105,7 +47107,7 @@ On Error GoTo EscondeCoberturasAdicionales_Error
 '------------------------------------------------------------------------------------------
 
 PrintDebug "Escondiendo las Coberturas Adicionales en carátula"
-Worksheets(SHEET_CAPTURA).Range("24:26").EntireRow.Hidden = True
+Worksheets(SHEET_CAPTURA).Range("CAPTURA_COBERTURAS_ADICIONALES").EntireRow.Hidden = True
 
 '------------------------------------------------------------------------------------------
     
@@ -47132,7 +47134,7 @@ On Error GoTo MuestraCoberturasAdicionales_Error
 '------------------------------------------------------------------------------------------
 
 PrintDebug "Mostrando las Coberturas Adicionales en carátula"
-Worksheets(SHEET_CAPTURA).Range("24:26").EntireRow.Hidden = False
+Worksheets(SHEET_CAPTURA).Range("CAPTURA_COBERTURAS_ADICIONALES").EntireRow.Hidden = False
 
 '------------------------------------------------------------------------------------------
 
@@ -48458,5 +48460,5 @@ Option Explicit
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 38 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 37 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
