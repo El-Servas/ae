@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 09/04/2014 01:00:25 p.m.
+Fecha y hora de generación: 09/04/2014 01:07:15 p.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 39
 
- * Líneas de código VB: 2453
+ * Líneas de código VB: 2450
 
 Detalle
 =======
@@ -45885,7 +45885,7 @@ Módulos VBA:
  [Sheet20] Tipo: 100
 
 Codigo:
-[ThisWorkbook] 17 líneas de código.
+[ThisWorkbook] 13 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Private Sub Workbook_BeforeClose(Cancel As Boolean)
     'Me.Saved = True
@@ -45897,12 +45897,8 @@ Private Sub Workbook_BeforeSave(ByVal SaveAsUI As Boolean, Cancel As Boolean)
 End Sub
 
 Private Sub Workbook_Open()
-    'Debug.Print "EVENTO WORKBOOK.OPEN()"
+    PrintDebug "EVENTO WORKBOOK.OPEN()"
     Evento_Open_Libro
-End Sub
-
-Private Sub Workbook_SheetChange(ByVal sh As Object, ByVal Target As Range)
-    Evento_Cambio_Hoja sh, Target
 End Sub
 \\\--- END OF MODULE ---
 
@@ -46817,7 +46813,7 @@ Sub ValidaComisionApertura()
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 213 líneas de código.
+[EventHandlers] 211 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -47025,10 +47021,8 @@ Sub Evento_Open_Libro()
     PrintDebug " - Fin de acciones iniciales - "
 End Sub
 
-'Se dispara cuando se modifica CUALQUIER HOJA.
-'Se va a usar para detectar el cambio en el combo de Tipo Cliente, que actualmente NO está en la hoja de captura.
-Sub Evento_Cambio_Hoja(ByVal sh As Object, ByVal Target As Range)
-    If Target.Parent.Name <> [SELECCION_TIPO_CLIENTE].Parent.Name Then Exit Sub
+'Valida la Comisión por Apertura en la hoja de captura cuando se cambia el Tipo Cliente.
+Sub Evento_Change_CTipoCliente(ByVal Target As Range)
     If Intersect(Target, [SELECCION_TIPO_CLIENTE]) Is Nothing Then Exit Sub
     ValidaComisionApertura
 End Sub
@@ -48488,12 +48482,15 @@ Option Explicit
 
 \\\--- END OF MODULE ---
 
-[Sheet20] 2 líneas de código.
+[Sheet20] 5 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
+Private Sub Worksheet_Change(ByVal Target As Range)
+    Evento_Change_CTipoCliente Target
+End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 37 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 38 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
