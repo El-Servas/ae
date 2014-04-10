@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 10/04/2014 10:31:44 a.m.
+Fecha y hora de generación: 10/04/2014 11:40:30 a.m.
 
 Resumen
 =======
@@ -8,9 +8,9 @@ Resumen
 
  * Nombres Definidos: 631
 
- * Módulos de Visual Basic: 39
+ * Módulos de Visual Basic: 40
 
- * Líneas de código VB: 2450
+ * Líneas de código VB: 2473
 
 Detalle
 =======
@@ -61,7 +61,7 @@ Contenido:
 [F7] \Registra mensaje en el Log de Cierres.\
 [F10] \Simula libro cerrado para probar antes de Cerrar.\
 [F13] \Generar un libro final para área solicitante.\
-[G17] (CA_Consola!CA.Generar2007) \True\
+[G17] (CA_Consola!CA.Generar2007) \False\
 [G20] (CA_Consola!CA.NombreParaCierre) \Cotizador AutoEstrene\
  DataValidation: InputOnly.
  Mensaje=[Mostrar:True Titulo:"Nombre para Libro Cerrado" Mensaje:"Es el nombre que se le dará al libro cerrado./Si no se proporciona, se usará el mismo nombre que el del libro de trabajo./IMPORTANTE: NO USAR PUNTOS (.)" ] 
@@ -81,14 +81,17 @@ Contenido:
 [B2] \Settings de ejecución. Se consultan cuando el simulador está en uso.\
 [B4] \Modo de Mantenimiento\
 [B5] \Marca\
-[B7] \Archivos Extra. Se generan cuando se cierra el libro.\
-[B8] \ \
-[B9] \Token\
-[B10] \%%ORIGINAL%%\
-[B11] \%%CIERRE%%\
-[B12] \ \
-[B13] (CA_Servicios!CA.ArchivosExtra) \Nombre final\
-[B14] \Cotizador Crédito de Auto IXE\
+[B6] \Tipo de Cliente\
+[B8] \Archivos Extra. Se generan cuando se cierra el libro.\
+[B9] \ \
+[B10] \Token\
+[B11] \%%ORIGINAL%%\
+[B12] \%%CIERRE%%\
+[B13] \ \
+[B14] (CA_Servicios!CA.ArchivosExtra) \Nombre final\
+[B15] \%%CIERRE%% Recurrentes\
+[B17] \Cotizador Crédito de Auto IXE\
+[B18] \Cotizador Crédito de Auto IXE Recurrentes\
 [C4] (CA_Servicios!CA.ModoMantenimiento) \True\
 [C5] (CA_Servicios!CA.Branding) \Banorte\
  DataValidation: Lista. [Fuente:"Banorte, Ixe" ListaEnCelda:True ]
@@ -96,14 +99,17 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[C9] \Corresponde a\
-[C10] \Nombre del archivo de trabajo, sin extensión.\
-[C11] \Nombre para cierre, definido en las Opciones de Cierre.\
-[C13] \Macro a ejecutar\
-[C14] \CambiaMarcaIxe\
+[C6] \- - - Combo en la hoja C.TipoCliente - - -\
+[C10] \Corresponde a\
+[C11] \Nombre del archivo de trabajo, sin extensión.\
+[C12] \Nombre para cierre, definido en las Opciones de Cierre.\
+[C14] \Macro a ejecutar\
+[C15] \CambiaTipoClienteRecurrente\
+[C17] \CambiaMarcaAIxe\
+[C18] \CambiaIxeRecurrente\
 
 [Captura]
-[B4] \Datos del crédito\
+[B4] \( BANORTE )\
 [B5] \Fecha cotización (dd/m/aaaa)\
 [B6] \Valor factura con I.V.A.:\
 [B7] \Tipo Persona\
@@ -147,19 +153,20 @@ Contenido:
 [B50] \Nota: La presente información es únicamente para efectos ilustrativos y no representa ningún ofrecimiento formal por parte de Grupo Financiero Banorte. Las condiciones están sujetas a cambio. El CAT es para fines informativos y de comparación exclusivamente.\
 [C2] \="Simulador Autos " & CondicionAuto_Descripcion & "s"\
 [C3] \="Clientes " & SELECCION_TIPO_CLIENTE\
+[C4] \Datos del crédito\
 [C33] \Tasa\
 [C34] \=IF(Calculos!L17="","",Calculos!L17)\
 [C35] \=IF(Calculos!L18="","",Calculos!L18)\
 [C36] \=IF(Calculos!L19="","",Calculos!L19)\
 [C37] \=IF(Calculos!L20="","",Calculos!L20)\
 [C38] \=IF(Calculos!L21="","",Calculos!L21)\
+[Captura]
 [D5] (CapturaFechaCotizacion) \10/04/2014\
  DataValidation: Fecha. [Operador:"Mayor que" Formula1:"01/01/2013" ]
  Mensaje=[Mostrar:True Titulo:"Fecha" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Fecha" Mensaje:"Por favor ingresa una fecha valida" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[Captura]
 [D6] (CapturaValorFactura) \150000\
  DataValidation: Decimal. [Operador:"Mayor que" Formula1:"=J6" ]
  Mensaje=[Mostrar:True Titulo:"Valor Factura" Mensaje:"De contado incluyendo I.V.A." ] 
@@ -259,8 +266,8 @@ Contenido:
 [D30] \=MontoFinanciarSeguros\
 [D31] \=MontoFinanciarTotal\
 [D33] \   Monto\
-[D34] \=IF(Calculos!M17="","",Calculos!M17)\
 [Captura]
+[D34] \=IF(Calculos!M17="","",Calculos!M17)\
 [D35] \=IF(Calculos!M18="","",Calculos!M18)\
 [D36] \=IF(Calculos!M19="","",Calculos!M19)\
 [D37] \=IF(Calculos!M20="","",Calculos!M20)\
@@ -290,8 +297,8 @@ Contenido:
 [AJ14] \Plazo\
 [AK14] \Tipo de aportación a Capital\
 [AL14] \PA_Mes1\
-[AM14] \PA_Monto1\
 [Captura]
+[AM14] \PA_Monto1\
 [AN14] \PA_Mes2\
 [AO14] \PA_Monto2\
 [AP14] \PA_Mes3\
@@ -1540,11 +1547,11 @@ Contenido:
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \10888.09\
-[M18] \6189.35\
-[M19] \4636.6\
-[M20] \3870.22\
-[M21] \3525.82\
+[M17] \11572.72\
+[M18] \6560.72\
+[M19] \4904.46\
+[M20] \4086.98\
+[M21] \3719.27\
 
 [Fechas]
 [A1] \Fechas de pago y días de intereses (AutoEstrene Mensual)\
@@ -45196,11 +45203,11 @@ Financiar\
 [C.TipoCliente]
 [A1] \Tipo Cliente\
 [A3] \Descripción\
-[A4] \Nuevos\
-[A5] \Recurrentes\
+[A4] (TipoClienteEstandar) \Nuevos\
+[A5] (TipoClienteRecurrente) \Recurrentes\
 [B3] \Id\
-[B4] (TipoClienteEstandar) \1\
-[B5] (TipoClienteRecurrente) \2\
+[B4] \1\
+[B5] \2\
 [C3] \ComisionApertura\
 [C4] \0.025\
 [C5] \0.01\
@@ -45227,22 +45234,97 @@ Financiar\
 [A6] \04/04/2014\
 [A7] \04/04/2014\
 [A8] \04/04/2014\
+[A9] \07/04/2014\
+[A10] \07/04/2014\
+[A11] \07/04/2014\
+[A12] \07/04/2014\
+[A13] \07/04/2014\
+[A14] \07/04/2014\
+[A15] \07/04/2014\
+[A16] \07/04/2014\
+[A17] \07/04/2014\
+[A18] \07/04/2014\
+[A19] \08/04/2014\
+[A20] \08/04/2014\
+[A21] \09/04/2014\
+[A22] \09/04/2014\
+[A23] \09/04/2014\
+[A24] \09/04/2014\
+[A25] \09/04/2014\
+[A26] \10/04/2014\
+[LogDeCierres]
 [B3] \Usuario\
 [B4] \A0000885\
 [B5] \A0000885\
 [B6] \A0000885\
 [B7] \A0000885\
 [B8] \A0000885\
+[B9] \A3044386\
+[B10] \A3044386\
+[B11] \A3044386\
+[B12] \A3044386\
+[B13] \A3044386\
+[B14] \A3044386\
+[B15] \A3044386\
+[B16] \A3044386\
+[B17] \A3044386\
+[B18] \A3044386\
+[B19] \A3044386\
+[B20] \A3044386\
+[B21] \A3044386\
+[B22] \A3044386\
+[B23] \A3044386\
+[B24] \A3044386\
+[B25] \A3044386\
+[B26] \A3044386\
 [C3] \Equipo\
+[LogDeCierres]
 [C4] \TSURA0000885P1\
 [C5] \TSURA0000885P1\
 [C6] \TSURA0000885P1\
 [C7] \TSURA0000885P1\
 [C8] \TSURA0000885P1\
+[C9] \TSURA3044386\
+[C10] \TSURA3044386\
+[C11] \TSURA3044386\
+[C12] \TSURA3044386\
+[C13] \TSURA3044386\
+[C14] \TSURA3044386\
+[C15] \TSURA3044386\
+[C16] \TSURA3044386\
+[C17] \TSURA3044386\
+[C18] \TSURA3044386\
+[C19] \TSURA3044386\
+[C20] \TSURA3044386\
+[C21] \TSURA3044386\
+[C22] \TSURA3044386\
+[C23] \TSURA3044386\
+[C24] \TSURA3044386\
+[C25] \TSURA3044386\
+[C26] \TSURA3044386\
 [D3] \Mensaje\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
+[LogDeCierres]
 [D5] \UltimaCelda en captura y tablacliente\
 [D6] \Actualizar catálogo de autos de 485 a 584 registros\
+[D9] \Renombra la rutina Auto_Open() -> InicializaCaptura(). La corrige para seleccionar la hoja de captura, y se manda a llamar desde el event handler Open del libro. Se agrega soporta en el evento para el modo de mantenimiento. Si está encendido, sale sin hacer nada. | 99c559b\
+[D10] \Reemplaza los estatutos de .Protect y .Unprotect por los servicios de ProtegerHoja y DesprotegerHoja. | f0346da\
+[D11] \Agrega la opción 3 - 3.5T en el catálogo de tipo de auto (TARIFA_RC_EU) y actualiza los renglones correspondientes del catálogo de Autos Nuevos. También actualiza la numeración del catálogo de autos seminuevos, para continuar con la numeración donde termina el de Nuevos. | 0ef0536\
+[D12] \Agrega soporte para el nuevo cálculo del combo de Auto Substituto, que no aplica si el auto es 3.5T (Falta validarlo cuando se cambia el auto) | b0ab280\
+[D13] \Valida el combo de auto substituto cuando se modifica el combo de auto. | 1facbdb\
+[D14] \Ejecuta las funciones de ADO cuando se abre el libro, independientemente del modo de mantenimiento. | 0b16b76\
+[D15] \Agrega el cálculo para los rangos del nuevo combo de indemnización valor factura, para el caso de los autos 3.5T. Crea un nuevo rango y agrega la llamada a la actualización del combo cuando se modifica el combo de auto. | 0938a39\
+[D16] \Actualiza las leyendas para eliminar "Generali" | 909f58d\
+[D17] \Agrega los cálculos al Descuento Por Estado, de forma que si el tipo de auto es 3.5T, NO aplica el descuento. (Hace que el factor sea 1) | f7f66a9\
+[D18] \Agrega cálculos, combos y demás modificaciones para calcular la cobertura adicional Servicio Premium. | fd14f66\
+[D19] \Expande el rango de coberturas adicionales para que se muestren/escondan cuando se cambia la modalidad del auto en la hoja de captura. Agrega nombre Condición Tipo Auto 3.5T para reemplazar varias condiciones que preguntaban directamente el ID_TIPO_AUTO | 74b1445\
+[D20] \Adecuaciones en carátula. Rótulos, Nombres Definidos, Ajuste de macros. | dbd213c\
+[D21] \Agrega catálogo de Tipo Cliente con datos preliminares, combo de selección "escondido" (en la hoja del catálogo), NDs para soportar el nuevo catálogo, la selección , el ID, etc, y una función ayudante para los lookups. | aae5ca6\
+[D22] \Alambra el dato de Comisión por Apertura en la macro que inicializa la captura. | f65c22a\
+[D23] \Agrega event handler para el combo de SELECCION_TIPO_CLIENTE y que se actualice la comisión por apertura en la captura. | ead0f69\
+[D24] \Cambia el event handler del combo de tipo cliente para que solo se dispare cuando se modifica la hoja donde está el combo, no en TODAS las hojas. | 77bdf89\
+[D25] \Usa el Umbral Enganche del catálogo Tipo Cliente para determinar el Tipo de Tasa que se va a usar. | 19c7d32\
+[D26] \Agrega las Tasas de Interés al catálogo de C_TASAS_INTERES y agrega los cálculos necesarios en la hoja de Cálculos. Ajustes de apariencia en Captura. | f93451c\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -45257,13 +45339,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$19:$Z$78
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$19:$AB$78
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$19:$AB$78
- [CAT!_Actual] =CAT!1:1
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!1:1
- [T_Merger!_Actual] =T_Merger!1:1
- [T_SeguroAnual!_Actual] =T_SeguroAnual!1:1
- [T_SoloAuto!_Actual] =T_SoloAuto!1:1
- [T_VidaAnual!_Actual] =T_VidaAnual!1:1
- [T_VidaMulti!_Actual] =T_VidaMulti!1:1
+ [CAT!_Actual] =CAT!5:5
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!5:5
+ [T_Merger!_Actual] =T_Merger!5:5
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!5:5
+ [T_SoloAuto!_Actual] =T_SoloAuto!5:5
+ [T_VidaAnual!_Actual] =T_VidaAnual!5:5
+ [T_VidaMulti!_Actual] =T_VidaMulti!5:5
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$19:$J$78
  [T_Merger!_Amortizacion] =T_Merger!$J$19:$J$78
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$19:$J$78
@@ -45272,13 +45354,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$19:$J$78
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$19:$J$78
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$19:$A$78
- [Fechas!_Anterior] =Fechas!65536:65536
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!65536:65536
- [T_Merger!_Anterior] =T_Merger!65536:65536
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!65536:65536
- [T_SoloAuto!_Anterior] =T_SoloAuto!65536:65536
- [T_VidaAnual!_Anterior] =T_VidaAnual!65536:65536
- [T_VidaMulti!_Anterior] =T_VidaMulti!65536:65536
+ [Fechas!_Anterior] =Fechas!4:4
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!4:4
+ [T_Merger!_Anterior] =T_Merger!4:4
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!4:4
+ [T_SoloAuto!_Anterior] =T_SoloAuto!4:4
+ [T_VidaAnual!_Anterior] =T_VidaAnual!4:4
+ [T_VidaMulti!_Anterior] =T_VidaMulti!4:4
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$19:$Z$78
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$19:$Z$78
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$19:$Z$78
@@ -45479,7 +45561,7 @@ Nombres:
  [C_TIPO_CLIENTE] =C.TipoCliente!$A$3:$E$5
  [C_TIPO_PERSONA] ='C. Seguros'!$A$30:$E$33
  [C_TIPO_PERSONA_DESC] =OFFSET(C_TIPO_PERSONA,0,1,,2)
- [CA_Servicios!CA.ArchivosExtra] =CA_Servicios!$B$13
+ [CA_Servicios!CA.ArchivosExtra] =CA_Servicios!$B$14
  [CA_Servicios!CA.Branding] =CA_Servicios!$C$5
  [CA_Consola!CA.Generar2007] =CA_Consola!$G$17
  [CA_Consola!CA.HojasInteractivas] =CA_Consola!$B$5:$B$20
@@ -45856,8 +45938,8 @@ Nombres:
  [TipoCliente_OffsetTasa] =Calculos!$F$122
  [TipoCliente_UmbralEnganche] =Calculos!$F$121
  [TipoClienteComisionPorApertura] =Calculos!$F$120
- [TipoClienteEstandar] =C.TipoCliente!$B$4
- [TipoClienteRecurrente] =C.TipoCliente!$B$5
+ [TipoClienteEstandar] =C.TipoCliente!$A$4
+ [TipoClienteRecurrente] =C.TipoCliente!$A$5
  [TipoPersonaAplicaSeguroVida?] =Calculos!$F$96
  [CAT!TIR.Flujos] =CAT!$N$9
  [CAT!Total.Egresos.CAT] =CAT!$C$10
@@ -45919,6 +46001,7 @@ Módulos VBA:
  [CA_PseudoCierre_X] Tipo: 1
  [Hoja1] Tipo: 100
  [Sheet20] Tipo: 100
+ [ArchivosExtra] Tipo: 1
 
 Codigo:
 [ThisWorkbook] 13 líneas de código.
@@ -46849,7 +46932,7 @@ Sub ValidaComisionApertura()
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 211 líneas de código.
+[EventHandlers] 210 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -47026,11 +47109,6 @@ ErrHan:
 End Sub
 
 Sub Evento_Open_Libro()
-    
-    PrintDebug "- Funcionalidad ADO."
-    'TestADO
-    SetUpAdo
-    
     If ModoDeMantenimiento Then Exit Sub
     
     PrintResalta "Ejecutando acciones iniciales."
@@ -47044,6 +47122,10 @@ Sub Evento_Open_Libro()
     
     PrintDebug "- Verificando versión."
     CheckVersion
+    
+    PrintDebug "- Funcionalidad ADO."
+    'TestADO
+    SetUpAdo
     
     PrintDebug "- Revisando constantes de debug."
     CheckDebugConstantsStatus
@@ -47059,7 +47141,7 @@ End Sub
 
 'Valida la Comisión por Apertura en la hoja de captura cuando se cambia el Tipo Cliente.
 Sub Evento_Change_CTipoCliente(ByVal Target As Range)
-    If Intersect(Target, [SELECCION_TIPO_CLIENTE]) Is Nothing Then Exit Sub
+    If Intersect(Target, [Seleccion_Tipo_Cliente]) Is Nothing Then Exit Sub
     ValidaComisionApertura
 End Sub
 \\\--- END OF MODULE ---
@@ -48527,6 +48609,34 @@ Private Sub Worksheet_Change(ByVal Target As Range)
 End Sub
 \\\--- END OF MODULE ---
 
+[ArchivosExtra] 24 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
 
-** Fin del proceso de exportación. Proceso realizado en 39 sec.  **
+'Contiene las macros que se invocan al cerrar el libro.
+
+'Asigna el Tipo de Cliente Recurrente en el combo Tipo Cliente.
+Sub CambiaTipoClienteRecurrente()
+    [Seleccion_Tipo_Cliente] = [TipoClienteRecurrente]
+End Sub
+
+'Asigna la Marca Ixe en el combo de marca en la hoja de servicios.
+Sub CambiaMarcaAIxe()
+    [CA_Servicios!CA.Branding] = "Ixe"
+End Sub
+
+'Asigna la marca Ixe y establece el Tipo Cliente Recurrente.
+Sub CambiaIxeRecurrente()
+    CambiaMarcaAIxe
+    CambiaTipoClienteRecurrente
+End Sub
+
+'Se ejecuta cuando se cambia el valor del combo Marca en la hoja de servicios
+Sub AsignaMarca()
+    [Captura!B4] = "( " & Marca() & " )"
+End Sub
+\\\--- END OF MODULE ---
+
+
+** Fin del proceso de exportación. Proceso realizado en 38 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
