@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 25/09/2014 02:08:03 p.m.
+Fecha y hora de generación: 25/09/2014 02:42:28 p.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 42
 
- * Líneas de código VB: 2570
+ * Líneas de código VB: 2578
 
 Detalle
 =======
@@ -63,7 +63,7 @@ Contenido:
 [F10] \Simula libro cerrado para probar antes de Cerrar.\
 [F13] \Generar un libro final para área solicitante.\
 [G17] (CA_Consola!CA.Generar2007) \True\
-[G20] (CA_Consola!CA.NombreParaCierre) \Nuevo Cotizador de Auto IXE\
+[G20] (CA_Consola!CA.NombreParaCierre) \Nuevo Cotizador de Auto\
  DataValidation: InputOnly.
  Mensaje=[Mostrar:True Titulo:"Nombre para Libro Cerrado" Mensaje:"Es el nombre que se le dará al libro cerrado./Si no se proporciona, se usará el mismo nombre que el del libro de trabajo./IMPORTANTE: NO USAR PUNTOS (.)" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -50674,6 +50674,7 @@ Indemnización VF\
 [LogDeCierres]
 [A52] \18/09/2014\
 [A53] \25/09/2014\
+[A54] \25/09/2014\
 [B3] \Usuario\
 [B4] \A0000885\
 [B5] \A0000885\
@@ -50696,8 +50697,8 @@ Indemnización VF\
 [B22] \A3044386\
 [B23] \A3044386\
 [B24] \A3044386\
-[B25] \A3044386\
 [LogDeCierres]
+[B25] \A3044386\
 [B26] \A3044386\
 [B27] \a3044386\
 [B28] \A8002673\
@@ -50722,11 +50723,12 @@ Indemnización VF\
 [B47] \A8002673\
 [B48] \a8002673\
 [B49] \HRIYL920\
-[B50] \a3505421\
 [LogDeCierres]
+[B50] \a3505421\
 [B51] \a3505421\
 [B52] \a3505421\
 [B53] \a3505421\
+[B54] \A3044386\
 [C3] \Equipo\
 [C4] \TSURA0000885P1\
 [C5] \TSURA0000885P1\
@@ -50747,9 +50749,9 @@ Indemnización VF\
 [C20] \TSURA3044386\
 [C21] \TSURA3044386\
 [C22] \TSURA3044386\
+[LogDeCierres]
 [C23] \TSURA3044386\
 [C24] \TSURA3044386\
-[LogDeCierres]
 [C25] \TSURA3044386\
 [C26] \TSURA3044386\
 [C27] \TSURA3044386\
@@ -50773,13 +50775,14 @@ Indemnización VF\
 [C45] \TMAYA3724915P1\
 [C46] \TSURA8002673P1\
 [C47] \TSURA8002673P1\
+[LogDeCierres]
 [C48] \TSURA8002673P1\
 [C49] \TSURHRIYL920P1\
-[LogDeCierres]
 [C50] \TSUR3505421P1\
 [C51] \TSUR3505421P1\
 [C52] \TSUR3505421P1\
 [C53] \TSUR3505421P1\
+[C54] \TSURA3044386\
 [D3] \Mensaje\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
 [D5] \UltimaCelda en captura y tablacliente\
@@ -50798,10 +50801,10 @@ Indemnización VF\
 [D20] \Adecuaciones en carátula. Rótulos, Nombres Definidos, Ajuste de macros. | dbd213c\
 [D21] \Agrega catálogo de Tipo Cliente con datos preliminares, combo de selección "escondido" (en la hoja del catálogo), NDs para soportar el nuevo catálogo, la selección , el ID, etc, y una función ayudante para los lookups. | aae5ca6\
 [D22] \Alambra el dato de Comisión por Apertura en la macro que inicializa la captura. | f65c22a\
+[LogDeCierres]
 [D23] \Agrega event handler para el combo de SELECCION_TIPO_CLIENTE y que se actualice la comisión por apertura en la captura. | ead0f69\
 [D24] \Cambia el event handler del combo de tipo cliente para que solo se dispare cuando se modifica la hoja donde está el combo, no en TODAS las hojas. | 77bdf89\
 [D25] \Usa el Umbral Enganche del catálogo Tipo Cliente para determinar el Tipo de Tasa que se va a usar. | 19c7d32\
-[LogDeCierres]
 [D26] \Agrega las Tasas de Interés al catálogo de C_TASAS_INTERES y agrega los cálculos necesarios en la hoja de Cálculos. Ajustes de apariencia en Captura. | f93451c\
 [D27] \Agrega macros para generar archivos extra. Agrega las entradas a la lista de archivos extra. Actualiza el LogDeCierres. Desactiva SetUpAdo() cuando se abre el libro si está en modo de mantenimiento. Interfería con el cierre de los libros y marcaba Out of Memory.\
 [D28] \[CIERRE 20140415_170536] Se registraron las tarifas del año 2013 y Cambio de Marca |Contraseña: A15304e14\
@@ -50824,18 +50827,19 @@ Indemnización VF\
 [D45] \Se actualizaron 4 unidades\
 [D46] \Se actualizaron los ID 2\
 [D47] \Se revisaron capturas\
+[LogDeCierres]
 [D48] \Se agrego Modulo de Cierre\
 [D49] \Se actualizaron 5 unidades\
 [D50] \Se agregaron 5 unidades: BMW X4, MACK QUINTA RUEDA, PEUGEOT 2008, RENAULT LOGAN, VW CADDY CARGO VAN\
-[LogDeCierres]
 [D51] \Se agregaron 3 unidades: DFSK MINI TRUCK, BMW 435, LAND ROVER RANGE ROVER EVOQUE\
 [D52] \[CIERRE 20140918_165836] Se agregaron 4 unidades: Audi SQ5, Chrysler Ram 750 Cabina Sencilla y Ram 750 Club Cab,  Mercedes Benz A180. |Contraseña: A18309e14\
 [D53] \[CIERRE 20140925_105000] Se igualo Id con Id(Alias)  de la pestaña de C.Seminuevos, de acuerdo a observaciones que nos hizo la gente de producto. |Contraseña: A25309e14\
+[D54] \Modifica las macros que corren al inicio que configuran la base de datos para que el mensaje de error muestre lo que ocurre cuando falla.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
  ['Matriz de Pruebas'!_35__de_Enganche] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$E$14
- [_35__de_Enganche] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Cotización'!$E$14
+ [_35__de_Enganche] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$E$14
  [T_AutoYSeguroMulti!_Abono_Anticipado] =T_AutoYSeguroMulti!$V$19:$V$78
  [T_Merger!_Abono_Anticipado] =T_Merger!$S$19:$S$78
  [T_SeguroAnual!_Abono_Anticipado] =T_SeguroAnual!$V$19:$V$78
@@ -50846,13 +50850,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$19:$Z$78
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$19:$AB$78
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$19:$AB$78
- [CAT!_Actual] =CAT!46:46
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!46:46
- [T_Merger!_Actual] =T_Merger!46:46
- [T_SeguroAnual!_Actual] =T_SeguroAnual!46:46
- [T_SoloAuto!_Actual] =T_SoloAuto!46:46
- [T_VidaAnual!_Actual] =T_VidaAnual!46:46
- [T_VidaMulti!_Actual] =T_VidaMulti!46:46
+ [CAT!_Actual] =CAT!21:21
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!21:21
+ [T_Merger!_Actual] =T_Merger!21:21
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!21:21
+ [T_SoloAuto!_Actual] =T_SoloAuto!21:21
+ [T_VidaAnual!_Actual] =T_VidaAnual!21:21
+ [T_VidaMulti!_Actual] =T_VidaMulti!21:21
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$19:$J$78
  [T_Merger!_Amortizacion] =T_Merger!$J$19:$J$78
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$19:$J$78
@@ -50861,13 +50865,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$19:$J$78
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$19:$J$78
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$19:$A$78
- [Fechas!_Anterior] =Fechas!45:45
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!45:45
- [T_Merger!_Anterior] =T_Merger!45:45
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!45:45
- [T_SoloAuto!_Anterior] =T_SoloAuto!45:45
- [T_VidaAnual!_Anterior] =T_VidaAnual!45:45
- [T_VidaMulti!_Anterior] =T_VidaMulti!45:45
+ [Fechas!_Anterior] =Fechas!20:20
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!20:20
+ [T_Merger!_Anterior] =T_Merger!20:20
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!20:20
+ [T_SoloAuto!_Anterior] =T_SoloAuto!20:20
+ [T_VidaAnual!_Anterior] =T_VidaAnual!20:20
+ [T_VidaMulti!_Anterior] =T_VidaMulti!20:20
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$19:$Z$78
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$19:$Z$78
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$19:$Z$78
@@ -51025,17 +51029,17 @@ Nombres:
  [T_Merger!_Stopper_Saldo_Inicial] =T_Merger!$V$19:$V$78
  [_xlfn.IFERROR] =#NAME?
  ['Matriz de Pruebas'!Aplica_Cobertura_Premium] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Coberturas Adicionales'!$C$47
- [Aplica_Cobertura_Premium] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Coberturas Adicionales'!$C$47
+ [Aplica_Cobertura_Premium] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Coberturas Adicionales'!$C$47
  ['Matriz de Pruebas'!Aplica_Cobertura_RC_USA] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$588
- [Aplica_Cobertura_RC_USA] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$588
+ [Aplica_Cobertura_RC_USA] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$588
  ['Matriz de Pruebas'!Aplica_Decuento_por_Estado] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Estado'!$C$37
- [Aplica_Decuento_por_Estado] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Estado'!$C$37
+ [Aplica_Decuento_por_Estado] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Estado'!$C$37
  ['Matriz de Pruebas'!Aplica_Ind_VF_2AÑO] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Coberturas Adicionales'!$C$36
- [Aplica_Ind_VF_2AÑO] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Coberturas Adicionales'!$C$36
+ [Aplica_Ind_VF_2AÑO] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Coberturas Adicionales'!$C$36
  [Aplica_IndemVF?] =Calculos!$G$74
  [AplicaIvaIntereses?] =Calculos!$F$97
  ['Matriz de Pruebas'!Aportación_Adicional__opcional] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$E$18
- [Aportación_Adicional__opcional] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Cotización'!$E$18
+ [Aportación_Adicional__opcional] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$E$18
  [AportacionAdicional] =Calculos!$F$43
  [AutoCadenaCompleta] =Calculos!$F$21
  [C_ADIC_INCREMENTO_RC] ='C. Seguros'!$A$22:$E$25
@@ -51158,11 +51162,11 @@ Nombres:
  [CONTEO_MARCAS] =C.Seminuevos!$M$5
  [Contiene_cobertura_adicional] =Calculos!$H$157
  ['Matriz de Pruebas'!CreditoAuto] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$G$22
- [CreditoAuto] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Cotización'!$G$22
+ [CreditoAuto] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$G$22
  ['Matriz de Pruebas'!CreditoSeguro] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$G$23
- [CreditoSeguro] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Cotización'!$G$23
+ [CreditoSeguro] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$G$23
  ['Matriz de Pruebas'!CreditoSeguroAnual] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]TipoSeguro'!$O$2
- [CreditoSeguroAnual] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]TipoSeguro'!$O$2
+ [CreditoSeguroAnual] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]TipoSeguro'!$O$2
  [DañosAplica?] =Calculos!$F$90
  [DañosAutoSustituto] =Calculos!$F$71
  [DañosComponenteConMulti] =Calculos!$F$88
@@ -51194,7 +51198,7 @@ Nombres:
  [CAT!FactorRenovacionAnualContado] =CAT!$H$6
  [CAT!FactorRenovacionAnualFinanciado] =CAT!$H$7
  ['Matriz de Pruebas'!Frontera_USA] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$590
- [Frontera_USA] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$590
+ [Frontera_USA] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$590
  [Id_Abono_Anticipado] =Calculos!$C$20
  [ID_AUTO] =Calculos!$F$23
  [ID_AUTO_SUST] =Calculos!$C$14
@@ -51243,9 +51247,9 @@ Nombres:
  [LEYENDA_SELECCION_COMBOS] =C.Seminuevos!$C$3
  [LeyendaAportacionAdicional] =Calculos!$F$163
  ['Matriz de Pruebas'!Marca_Ford_RC_USA] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!#REF!
- [Marca_Ford_RC_USA] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!#REF!
+ [Marca_Ford_RC_USA] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!#REF!
  ['Matriz de Pruebas'!Marca_Para_RC] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$587
- [Marca_Para_RC] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$587
+ [Marca_Para_RC] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$587
  [MAX_NO_PAGOS] =TablaCliente!$A$66
  [ModeloAñosAntiguedad] =Calculos!$F$15
  [ModeloEsAnterior?] =Calculos!$F$16
@@ -51341,11 +51345,11 @@ Nombres:
  [T_VidaMulti!Periodos.Por.Ciclo] =T_VidaMulti!$F$19
  [PeriodosPorAño] =Calculos!$F$148
  ['Matriz de Pruebas'!PlazoAuto] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Plazo'!$B$7
- [PlazoAuto] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Plazo'!$B$7
+ [PlazoAuto] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Plazo'!$B$7
  [PlazoEnMeses] =Calculos!$F$147
  [PlazoMinimoIVF] =Calculos!$B$36
  ['Matriz de Pruebas'!PlazoSeguroAnual] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Plazo'!$B$11
- [PlazoSeguroAnual] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Plazo'!$B$11
+ [PlazoSeguroAnual] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Plazo'!$B$11
  [Porcentaje_Base] =Calculos!$G$63
  [Porcentaje_Cuota_Base_Vida] =Calculos!$F$100
  [Porcentaje_máximo_enganche] =Captura!$J$13
@@ -51392,25 +51396,25 @@ Nombres:
  [RANGO_COMBO_SEGURO] =Calculos!$B$59
  [RANGO_COMBO_SERVICIO_PREMIUM] =Calculos!$B$91
  ['Matriz de Pruebas'!RC_USA_Autos] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$592
- [RC_USA_Autos] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$592
+ [RC_USA_Autos] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$592
  ['Matriz de Pruebas'!RC_USA_Autos_Ford] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$D$592
- [RC_USA_Autos_Ford] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$D$592
+ [RC_USA_Autos_Ford] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$D$592
  ['Matriz de Pruebas'!RC_USA_Autos_Resto_Vehiculos] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$E$592
- [RC_USA_Autos_Resto_Vehiculos] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$E$592
+ [RC_USA_Autos_Resto_Vehiculos] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$E$592
  ['Matriz de Pruebas'!RC_USA_Pickup] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$593
- [RC_USA_Pickup] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$593
+ [RC_USA_Pickup] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$593
  ['Matriz de Pruebas'!RC_USA_Pickup_Ford] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$D$593
- [RC_USA_Pickup_Ford] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$D$593
+ [RC_USA_Pickup_Ford] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$D$593
  ['Matriz de Pruebas'!RC_USA_Pickup_Resto_Vehiculos] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$E$593
- [RC_USA_Pickup_Resto_Vehiculos] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$E$593
+ [RC_USA_Pickup_Resto_Vehiculos] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$E$593
  [T_AutoYSeguroMulti!Renueva.Abono.Sobrante?] =T_AutoYSeguroMulti!$F$29
  [T_SeguroAnual!Renueva.Abono.Sobrante?] =T_SeguroAnual!$F$29
  ['Matriz de Pruebas'!SEG._FINANCIADO] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]TipoSeguro'!$B$1
- [SEG._FINANCIADO] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]TipoSeguro'!$B$1
+ [SEG._FINANCIADO] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]TipoSeguro'!$B$1
  ['Matriz de Pruebas'!Seguro_Auto] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]CAT'!$H$3
- [Seguro_Auto] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]CAT'!$H$3
+ [Seguro_Auto] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]CAT'!$H$3
  ['Matriz de Pruebas'!Seguro_Vida] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]CAT'!$I$3
- [Seguro_Vida] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]CAT'!$I$3
+ [Seguro_Vida] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]CAT'!$I$3
  [SeguroEsFinanciado?] =Calculos!$F$49
  [SeguroEsMultianual?] =Calculos!$F$50
  [Seleccion_Abono_Anticipado] =TablaCliente!$C$10
@@ -51435,7 +51439,7 @@ Nombres:
  [T_VidaAnual!Tabla.Ciclica.Anual?] =T_VidaAnual!$C$30
  [T_VidaMulti!Tabla.Ciclica.Anual?] =T_VidaMulti!$C$30
  ['Matriz de Pruebas'!TABLA_SEGURO_ANUAL] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]#REF'!$S$14
- [TABLA_SEGURO_ANUAL] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]#REF'!$S$14
+ [TABLA_SEGURO_ANUAL] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]#REF'!$S$14
  [Tarifa_IndemnVF] =Calculos!$G$76
  [T_AutoYSeguroMulti!Tasa.Diaria] =T_AutoYSeguroMulti!$F$17
  [T_Merger!Tasa.Diaria] =T_Merger!$F$17
@@ -51462,7 +51466,7 @@ Nombres:
  [T_VidaAnual!Tasa.Por.Periodo] =T_VidaAnual!$F$16
  [T_VidaMulti!Tasa.Por.Periodo] =T_VidaMulti!$F$16
  ['Matriz de Pruebas'!Tasa_Fija] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]TasaProducto'!$C$20
- [Tasa_Fija] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]TasaProducto'!$C$20
+ [Tasa_Fija] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]TasaProducto'!$C$20
  [TasaAUsar] =Calculos!$F$142
  [TasaCondicion1Nuevos] =Calculos!$G$137
  [TasaCondicion1Seminuevos] =Calculos!$H$139
@@ -51481,19 +51485,19 @@ Nombres:
  [Captura!UltimaCelda] =Captura!$E$200
  [TablaCliente!UltimaCelda] =TablaCliente!$J$86
  ['Matriz de Pruebas'!Valor_Factura] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$I$8
- [Valor_Factura] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]Cotización'!$I$8
+ [Valor_Factura] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]Cotización'!$I$8
  [Valor_Factura_Mínimo] =Captura!$J$6
  [Valor_Factura_Mínimo_Nuevos] =Captura!$K$6
  [Valor_Factura_Mínimo_Seminuevos] =Captura!$L$6
  [ValorFactura] =Calculos!$F$42
  [VB_STARTING_CELL] =Calculos!$K$17:$N$21
  ['Matriz de Pruebas'!Vehículo] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$591
- [Vehículo] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$591
+ [Vehículo] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]MarcaYTarifaSeguroAuto'!$C$591
  [VidaAplica?] =Calculos!$F$104
  [VidaComponenteConMulti] =Calculos!$F$102
  [VidaComponenteSinMulti] =Calculos!$F$103
  ['Matriz de Pruebas'!VRF] ='\\Tsura8002673p1\1ps\1PS\SAuto\AutoEstrene\[AutoEstrene.xls]ValorResidual'!$C$17
- [VRF] ='W:\Work\Cotizadores Excel\AUTOMOTRIZ\AutoEstrene 3en1\Working Folder\[AutoEstrene.xls]ValorResidual'!$C$17
+ [VRF] ='S:\SAuto\AutoEstrene\[AutoEstrene.xls]ValorResidual'!$C$17
 
 Nombre del proyecto VB: [VBAProject]
 
@@ -52108,7 +52112,7 @@ End Function
 
 \\\--- END OF MODULE ---
 
-[ADO] 212 líneas de código.
+[ADO] 220 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '               _.
 '      /\      | |
@@ -52223,7 +52227,10 @@ Exit Sub
 SetUpAdo_Error:
     Call MsgBox("Ocurrió un error probando las funciones de ADO." & vbCrLf & _
     "El simulador NO funcionará correctamente." & vbCrLf & _
-    Err.Description, _
+    "Error reportado: " & vbCrLf & vbCrLf & _
+    Err.Description & vbCrLf & _
+    "Versión Excel: " & Application.Version & "  Build: " & Application.Build _
+    , _
     vbCritical, APP_NAME)
 End Sub
 
@@ -52248,6 +52255,7 @@ Function SetADOProvider() As String
     Dim ix
     Dim ProviderName, ProviderCS, Provider
     Dim ProviderFound As Boolean: ProviderFound = False
+    Dim MensajesError As String: MensajesError = ""
     On Error Resume Next
     
     For ix = 0 To UBound(Providers, 1)
@@ -52261,7 +52269,10 @@ Function SetADOProvider() As String
         Else
             If Err.Number <> 0 Then
                 'Cachamos el error y lo desechamos. Probamos el siguiente Provider.
-                PrintDebug "Error probando proveedor [" & ProviderName & "]:" & Err.Description
+                Dim EsteError As String
+                EsteError = "Error probando proveedor [" & ProviderName & "]: " & Err.Number & " " & Err.Description
+                MensajesError = MensajesError & EsteError & vbCrLf
+                PrintDebug EsteError
                 Err.Clear
             End If
         End If
@@ -52270,7 +52281,7 @@ Function SetADOProvider() As String
     On Error GoTo 0
     
     If Not ProviderFound Then
-        Err.Raise vbObjectError + 1, , "No se pudo determinar un proveedor para ADO."
+        Err.Raise vbObjectError + 1, , "No se pudo determinar un proveedor para ADO:" & vbCrLf & MensajesError
     Else
         SetADOProvider = Provider
         PrintDebug "Provider: " & Provider
@@ -52285,11 +52296,12 @@ Function ProviderWorks(cn) As Boolean
     Dim Rs As New ADODB.Recordset ' Object '(Late binding!)
     'Set Rs = CreateObject("ADODB.Recordset")
     Dim NombreHoja As String: NombreHoja = Worksheets(1).Name 'Determinamos el nombre de la primera hoja.
+    
     On Error Resume Next
     Rs.Open "select * from [" & NombreHoja & "$A1:A1]", cn 'Query vacío, pero válido.
-    If Err.Number = 0 Then
-        ProviderWorks = True
-    End If
+    'Err.Raise vbObjectError + 1, , "Error Dummy al verificar proveedor."
+    
+    If Err.Number = 0 Then ProviderWorks = True
     'Si hubo error, lo dejamos burbujear, para cacharlo en la caller.
 End Function
 
@@ -54281,5 +54293,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 50 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 01:54 min.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
