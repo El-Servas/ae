@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 26/09/2014 03:14:23 p.m.
+Fecha y hora de generación: 26/09/2014 03:50:30 p.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 42
 
- * Líneas de código VB: 2598
+ * Líneas de código VB: 2606
 
 Detalle
 =======
@@ -50681,6 +50681,8 @@ Indemnización VF\
 [A58] \26/09/2014\
 [A59] \26/09/2014\
 [A60] \26/09/2014\
+[A61] \26/09/2014\
+[A62] \26/09/2014\
 [B3] \Usuario\
 [B4] \A0000885\
 [B5] \A0000885\
@@ -50695,9 +50697,9 @@ Indemnización VF\
 [B14] \A3044386\
 [B15] \A3044386\
 [B16] \A3044386\
+[LogDeCierres]
 [B17] \A3044386\
 [B18] \A3044386\
-[LogDeCierres]
 [B19] \A3044386\
 [B20] \A3044386\
 [B21] \A3044386\
@@ -50721,9 +50723,9 @@ Indemnización VF\
 [B39] \a8002673\
 [B40] \A8002673\
 [B41] \A8002673\
+[LogDeCierres]
 [B42] \A8002673\
 [B43] \HRIYL920\
-[LogDeCierres]
 [B44] \A8002673\
 [B45] \HRIYL920\
 [B46] \A8002673\
@@ -50741,15 +50743,17 @@ Indemnización VF\
 [B58] \A3044386\
 [B59] \A3044386\
 [B60] \a3044386\
+[B61] \a3044386\
+[B62] \a3044386\
 [C3] \Equipo\
 [C4] \TSURA0000885P1\
 [C5] \TSURA0000885P1\
 [C6] \TSURA0000885P1\
+[LogDeCierres]
 [C7] \TSURA0000885P1\
 [C8] \TSURA0000885P1\
 [C9] \TSURA3044386\
 [C10] \TSURA3044386\
-[LogDeCierres]
 [C11] \TSURA3044386\
 [C12] \TSURA3044386\
 [C13] \TSURA3044386\
@@ -50771,11 +50775,11 @@ Indemnización VF\
 [C29] \TSURA8002673P1\
 [C30] \TSURA8002673P1\
 [C31] \TSURA0000885P1\
+[LogDeCierres]
 [C32] \TSURA8002673P1\
 [C33] \TSURA8002673P1\
 [C34] \TSURA8002673P1\
 [C35] \TSURA8002673P1\
-[LogDeCierres]
 [C36] \TSURA8002673P1\
 [C37] \TSURA8002673P1\
 [C38] \TSURA8002673P1\
@@ -50797,11 +50801,13 @@ Indemnización VF\
 [C54] \TSURA3044386\
 [C55] \TSURA3044386\
 [C56] \TSURA3044386\
+[LogDeCierres]
 [C57] \TSURA3044386\
 [C58] \TSURA3044386\
 [C59] \TSURA3044386\
 [C60] \TSURA3044386\
-[LogDeCierres]
+[C61] \TSURA3044386\
+[C62] \TSURA3044386\
 [D3] \Mensaje\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
 [D5] \UltimaCelda en captura y tablacliente\
@@ -50821,13 +50827,13 @@ Indemnización VF\
 [D21] \Agrega catálogo de Tipo Cliente con datos preliminares, combo de selección "escondido" (en la hoja del catálogo), NDs para soportar el nuevo catálogo, la selección , el ID, etc, y una función ayudante para los lookups. | aae5ca6\
 [D22] \Alambra el dato de Comisión por Apertura en la macro que inicializa la captura. | f65c22a\
 [D23] \Agrega event handler para el combo de SELECCION_TIPO_CLIENTE y que se actualice la comisión por apertura en la captura. | ead0f69\
+[LogDeCierres]
 [D24] \Cambia el event handler del combo de tipo cliente para que solo se dispare cuando se modifica la hoja donde está el combo, no en TODAS las hojas. | 77bdf89\
 [D25] \Usa el Umbral Enganche del catálogo Tipo Cliente para determinar el Tipo de Tasa que se va a usar. | 19c7d32\
 [D26] \Agrega las Tasas de Interés al catálogo de C_TASAS_INTERES y agrega los cálculos necesarios en la hoja de Cálculos. Ajustes de apariencia en Captura. | f93451c\
 [D27] \Agrega macros para generar archivos extra. Agrega las entradas a la lista de archivos extra. Actualiza el LogDeCierres. Desactiva SetUpAdo() cuando se abre el libro si está en modo de mantenimiento. Interfería con el cierre de los libros y marcaba Out of Memory.\
 [D28] \[CIERRE 20140415_170536] Se registraron las tarifas del año 2013 y Cambio de Marca |Contraseña: A15304e14\
 [D29] \[CIERRE 20140428_163356] Se cambio el mensaje del CAT al "12 de Marzo del 2013" |Contraseña: A28304e14\
-[LogDeCierres]
 [D30] \[CIERRE 20140507_102725] Se agrego "Leyenda_Cobertura_Premium" |Contraseña: A07305e14\
 [D31] \Validación enganche por tipo cliente\
 [D32] \[CIERRE 20140507_151544] Elimine la palabra "Coberturas Adicionales", se actualizo el CAT y sólo se va a mostrar la leyenda de "Clientes Recurrentes" |Contraseña: A07305e14\
@@ -50847,13 +50853,13 @@ Indemnización VF\
 [D46] \Se actualizaron los ID 2\
 [D47] \Se revisaron capturas\
 [D48] \Se agrego Modulo de Cierre\
+[LogDeCierres]
 [D49] \Se actualizaron 5 unidades\
 [D50] \Se agregaron 5 unidades: BMW X4, MACK QUINTA RUEDA, PEUGEOT 2008, RENAULT LOGAN, VW CADDY CARGO VAN\
 [D51] \Se agregaron 3 unidades: DFSK MINI TRUCK, BMW 435, LAND ROVER RANGE ROVER EVOQUE\
 [D52] \[CIERRE 20140918_165836] Se agregaron 4 unidades: Audi SQ5, Chrysler Ram 750 Cabina Sencilla y Ram 750 Club Cab,  Mercedes Benz A180. |Contraseña: A18309e14\
 [D53] \[CIERRE 20140925_105000] Se igualo Id con Id(Alias)  de la pestaña de C.Seminuevos, de acuerdo a observaciones que nos hizo la gente de producto. |Contraseña: A25309e14\
 [D54] \Modifica las macros que corren al inicio que configuran la base de datos para que el mensaje de error muestre lo que ocurre cuando falla.\
-[LogDeCierres]
 [D55] \[CIERRE 20140925_144739] Genera versión de cierre completa para diagnóstico de mensaje de error. |Contraseña: A25309e14\
 [D56] \Agrega un par de funciones nuevas para determinar la arquitectura de Windows y de Office.\
 [D57] \Muestra la arquitectura de windows y de office en el error inicial de ADO.\
@@ -50862,6 +50868,8 @@ Indemnización VF\
 [D60] \Reactiva el mensaje de las constantes de compilación para desplegar los mensajes de debug y de error.
 CAMBIA EL QUERY INICIAL QUE CONFIGURA ADO A UN SELECT A UNA CELDA CON INFORMACIÓN PARA QUE NO TRUENE EN 64 BITS.
 Apaga las constantes de compilación para el desplegado de los mensajes en debug.\
+[D61] \PENDIENTE: Función que regrese la primera celda no-vacía de una hoja.\
+[D62] \Determina la primera celda no-vacía cuando se están probando los proveedores a la hora de configurar ADO.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -52139,7 +52147,7 @@ End Function
 
 \\\--- END OF MODULE ---
 
-[ADO] 240 líneas de código.
+[ADO] 248 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '               _.
 '      /\      | |
@@ -52327,8 +52335,16 @@ Function ProviderWorks(cn) As Boolean
     Dim Query As String
     
     On Error Resume Next
-    Query = "select * from [" & NombreHoja & "$B2:B2]"
-    Rs.Open Query, cn 'Query vacío, pero válido.
+    'Determinamos la primera celda no-vacía:
+    Dim CeldaNoVacia As String: CeldaNoVacia = Sheets(NombreHoja).Cells.Find("*").Address(False, False)
+    
+    'Construímos la referencia necesaria para el query:
+    Dim Referencia As String: Referencia = NombreHoja & _
+    "$" & _
+    CeldaNoVacia & ":" & CeldaNoVacia
+    
+    Query = "select * from [" & Referencia & "]"
+    Rs.Open Query, cn
     'Err.Raise vbObjectError + 1, , "Error Dummy al verificar proveedor."
     
     If Err.Number = 0 Then ProviderWorks = True
