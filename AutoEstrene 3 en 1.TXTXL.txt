@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 26/09/2014 12:12:15 p.m.
+Fecha y hora de generación: 26/09/2014 12:19:52 p.m.
 
 Resumen
 =======
@@ -54,7 +54,7 @@ Contenido:
 [D4] \Mensaje a registrar:\
 [D16] \Opciones de Cierre\
 [D17] (CA_Consola!CA.ProtegerContraseña) \True\
-[D18] (CA_Consola!CA.RegistrarMensaje) \True\
+[D18] (CA_Consola!CA.RegistrarMensaje) \False\
 [D19] (CA_Consola!CA.UsarContraseñaEnHojas) \True\
 [D20] (CA_Consola!CA.NoEsconderPestañas) \True\
 [D28] \Para actualizar o agregar esta versión del Cierre Automático en otros libros.\
@@ -62,7 +62,7 @@ Contenido:
 [F7] \Registra mensaje en el Log de Cierres.\
 [F10] \Simula libro cerrado para probar antes de Cerrar.\
 [F13] \Generar un libro final para área solicitante.\
-[G17] (CA_Consola!CA.Generar2007) \True\
+[G17] (CA_Consola!CA.Generar2007) \False\
 [G20] (CA_Consola!CA.NombreParaCierre) \Nuevo Cotizador de Auto\
  DataValidation: InputOnly.
  Mensaje=[Mostrar:True Titulo:"Nombre para Libro Cerrado" Mensaje:"Es el nombre que se le dará al libro cerrado./Si no se proporciona, se usará el mismo nombre que el del libro de trabajo./IMPORTANTE: NO USAR PUNTOS (.)" ] 
@@ -90,7 +90,7 @@ Contenido:
 [B12] \%%CIERRE%%\
 [B13] \ \
 [B14] (CA_Servicios!CA.ArchivosExtra) \Nombre final\
-[B15] \%%CIERRE%% Recurrentes\
+[B16] \%%CIERRE%% Recurrentes\
 [B17] \Cotizador Crédito de Auto IXE\
 [B18] \Cotizador Crédito de Auto IXE Recurrentes\
 [C4] (CA_Servicios!CA.ModoMantenimiento) \True\
@@ -105,7 +105,7 @@ Contenido:
 [C11] \Nombre del archivo de trabajo, sin extensión.\
 [C12] \Nombre para cierre, definido en las Opciones de Cierre.\
 [C14] \Macro a ejecutar\
-[C15] \CambiaTipoClienteRecurrente\
+[C16] \CambiaTipoClienteRecurrente\
 [C17] \CambiaMarcaAIxe\
 [C18] \CambiaIxeRecurrente\
 
