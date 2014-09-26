@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 26/09/2014 12:19:52 p.m.
+Fecha y hora de generación: 26/09/2014 03:14:23 p.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 42
 
- * Líneas de código VB: 2596
+ * Líneas de código VB: 2598
 
 Detalle
 =======
@@ -50680,6 +50680,7 @@ Indemnización VF\
 [A57] \26/09/2014\
 [A58] \26/09/2014\
 [A59] \26/09/2014\
+[A60] \26/09/2014\
 [B3] \Usuario\
 [B4] \A0000885\
 [B5] \A0000885\
@@ -50696,8 +50697,8 @@ Indemnización VF\
 [B16] \A3044386\
 [B17] \A3044386\
 [B18] \A3044386\
-[B19] \A3044386\
 [LogDeCierres]
+[B19] \A3044386\
 [B20] \A3044386\
 [B21] \A3044386\
 [B22] \A3044386\
@@ -50722,8 +50723,8 @@ Indemnización VF\
 [B41] \A8002673\
 [B42] \A8002673\
 [B43] \HRIYL920\
-[B44] \A8002673\
 [LogDeCierres]
+[B44] \A8002673\
 [B45] \HRIYL920\
 [B46] \A8002673\
 [B47] \A8002673\
@@ -50739,6 +50740,7 @@ Indemnización VF\
 [B57] \A3044386\
 [B58] \A3044386\
 [B59] \A3044386\
+[B60] \a3044386\
 [C3] \Equipo\
 [C4] \TSURA0000885P1\
 [C5] \TSURA0000885P1\
@@ -50747,9 +50749,9 @@ Indemnización VF\
 [C8] \TSURA0000885P1\
 [C9] \TSURA3044386\
 [C10] \TSURA3044386\
+[LogDeCierres]
 [C11] \TSURA3044386\
 [C12] \TSURA3044386\
-[LogDeCierres]
 [C13] \TSURA3044386\
 [C14] \TSURA3044386\
 [C15] \TSURA3044386\
@@ -50773,9 +50775,9 @@ Indemnización VF\
 [C33] \TSURA8002673P1\
 [C34] \TSURA8002673P1\
 [C35] \TSURA8002673P1\
+[LogDeCierres]
 [C36] \TSURA8002673P1\
 [C37] \TSURA8002673P1\
-[LogDeCierres]
 [C38] \TSURA8002673P1\
 [C39] \TSURA8002673P1\
 [C40] \TSURA8002673P1\
@@ -50798,10 +50800,11 @@ Indemnización VF\
 [C57] \TSURA3044386\
 [C58] \TSURA3044386\
 [C59] \TSURA3044386\
+[C60] \TSURA3044386\
+[LogDeCierres]
 [D3] \Mensaje\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
 [D5] \UltimaCelda en captura y tablacliente\
-[LogDeCierres]
 [D6] \Actualizar catálogo de autos de 485 a 584 registros\
 [D9] \Renombra la rutina Auto_Open() -> InicializaCaptura(). La corrige para seleccionar la hoja de captura, y se manda a llamar desde el event handler Open del libro. Se agrega soporta en el evento para el modo de mantenimiento. Si está encendido, sale sin hacer nada. | 99c559b\
 [D10] \Reemplaza los estatutos de .Protect y .Unprotect por los servicios de ProtegerHoja y DesprotegerHoja. | f0346da\
@@ -50824,10 +50827,10 @@ Indemnización VF\
 [D27] \Agrega macros para generar archivos extra. Agrega las entradas a la lista de archivos extra. Actualiza el LogDeCierres. Desactiva SetUpAdo() cuando se abre el libro si está en modo de mantenimiento. Interfería con el cierre de los libros y marcaba Out of Memory.\
 [D28] \[CIERRE 20140415_170536] Se registraron las tarifas del año 2013 y Cambio de Marca |Contraseña: A15304e14\
 [D29] \[CIERRE 20140428_163356] Se cambio el mensaje del CAT al "12 de Marzo del 2013" |Contraseña: A28304e14\
+[LogDeCierres]
 [D30] \[CIERRE 20140507_102725] Se agrego "Leyenda_Cobertura_Premium" |Contraseña: A07305e14\
 [D31] \Validación enganche por tipo cliente\
 [D32] \[CIERRE 20140507_151544] Elimine la palabra "Coberturas Adicionales", se actualizo el CAT y sólo se va a mostrar la leyenda de "Clientes Recurrentes" |Contraseña: A07305e14\
-[LogDeCierres]
 [D33] \[CIERRE 20140512_132732] Se dieron de alta 9 carros nuevos |Contraseña: A12305e14\
 [D34] \Se cambio la leyenda informativa del CAT con todos sus componentes para autos nuevos y seminuevos.\
 [D35] \Se renombro cambia marca a Asigna Marca para que ejecutara el cambio en la funcionalidad Banorte e Ixe\
@@ -50850,12 +50853,15 @@ Indemnización VF\
 [D52] \[CIERRE 20140918_165836] Se agregaron 4 unidades: Audi SQ5, Chrysler Ram 750 Cabina Sencilla y Ram 750 Club Cab,  Mercedes Benz A180. |Contraseña: A18309e14\
 [D53] \[CIERRE 20140925_105000] Se igualo Id con Id(Alias)  de la pestaña de C.Seminuevos, de acuerdo a observaciones que nos hizo la gente de producto. |Contraseña: A25309e14\
 [D54] \Modifica las macros que corren al inicio que configuran la base de datos para que el mensaje de error muestre lo que ocurre cuando falla.\
+[LogDeCierres]
 [D55] \[CIERRE 20140925_144739] Genera versión de cierre completa para diagnóstico de mensaje de error. |Contraseña: A25309e14\
 [D56] \Agrega un par de funciones nuevas para determinar la arquitectura de Windows y de Office.\
 [D57] \Muestra la arquitectura de windows y de office en el error inicial de ADO.\
-[LogDeCierres]
 [D58] \[CIERRE 20140926_120102] Genera Release con mensaje de error de ADO mejorado. |Contraseña: A26309e14\
 [D59] \Desactiva el mensaje inicial en los libros cerrados cuando las constantes de debug están activadas.\
+[D60] \Reactiva el mensaje de las constantes de compilación para desplegar los mensajes de debug y de error.
+CAMBIA EL QUERY INICIAL QUE CONFIGURA ADO A UN SELECT A UNA CELDA CON INFORMACIÓN PARA QUE NO TRUENE EN 64 BITS.
+Apaga las constantes de compilación para el desplegado de los mensajes en debug.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -52133,7 +52139,7 @@ End Function
 
 \\\--- END OF MODULE ---
 
-[ADO] 238 líneas de código.
+[ADO] 240 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '               _.
 '      /\      | |
@@ -52152,7 +52158,7 @@ Private ConnectionString As String
 'Ejecuta un query y lo plasma en una ubicación.
 'Regresa el número de registros recuperados.
 '====================================================================================================
-Function PlasmaQuery(query As String, _
+Function PlasmaQuery(Query As String, _
                     Ubicacion As Range, _
                     Optional LimpiaArea As Boolean = True, _
                     Optional DespliegaEncabezados As Boolean = False _
@@ -52172,7 +52178,7 @@ On Error GoTo ErrHan
     
     '----------------------------------------------------------------------------------------------------
     'Corremos el query después
-    Set Rs = RunQueryGetRS(query)
+    Set Rs = RunQueryGetRS(Query)
     
     'No podemos usar RecordCount (Truena en 64 Bits) http://support.microsoft.com/kb/983246
     'NumRegistros = Rs.RecordCount
@@ -52212,16 +52218,16 @@ End Function
 'Ejecuta un Query sobre una conexión efímera en este libro.
 'Regresa un Recordset
 '====================================================================================================
-Function RunQueryGetRS(query As String) As ADODB.Recordset
+Function RunQueryGetRS(Query As String) As ADODB.Recordset
 On Error Resume Next
-    PrintDebug " Ejecutando RunQueryGetRS(): " & query
+    PrintDebug " Ejecutando RunQueryGetRS(): " & Query
 On Error GoTo ErrHan
 
     If ConnectionString = "" Then SetUpAdo
     
     Dim Rs As New ADODB.Recordset
     Rs.CursorType = adOpenStatic 'Para que funcione la propiedad RecordCount y sepamos de antemano cuantos registros obtuvimos
-    Rs.Open query, ConnectionString 'La conexión es efímera y permanece abierta mientras lo haga el rs.
+    Rs.Open Query, ConnectionString 'La conexión es efímera y permanece abierta mientras lo haga el rs.
     Set RunQueryGetRS = Rs
 
 ErrHan:
@@ -52318,9 +52324,11 @@ Function ProviderWorks(cn) As Boolean
     Dim Rs As New ADODB.Recordset ' Object '(Late binding!)
     'Set Rs = CreateObject("ADODB.Recordset")
     Dim NombreHoja As String: NombreHoja = Worksheets(1).Name 'Determinamos el nombre de la primera hoja.
+    Dim Query As String
     
     On Error Resume Next
-    Rs.Open "select * from [" & NombreHoja & "$A1:A1]", cn 'Query vacío, pero válido.
+    Query = "select * from [" & NombreHoja & "$B2:B2]"
+    Rs.Open Query, cn 'Query vacío, pero válido.
     'Err.Raise vbObjectError + 1, , "Error Dummy al verificar proveedor."
     
     If Err.Number = 0 Then ProviderWorks = True
@@ -52351,9 +52359,9 @@ TestADO_Error:
 End Sub
 
 Sub disposable()
-    Dim query As String
-    query = "Select * from C_PLAZO as a inner join C_TASAS_INTERES as b on a.EnMeses = b.[Plazo en meses]"
-    PlasmaQuery query, ['C. Tasas'!A20], True, True
+    Dim Query As String
+    Query = "Select * from C_PLAZO as a inner join C_TASAS_INTERES as b on a.EnMeses = b.[Plazo en meses]"
+    PlasmaQuery Query, ['C. Tasas'!A20], True, True
 End Sub
 
 '----------------------------------------------------------------------------------------------------
@@ -52393,13 +52401,13 @@ Sub ActualizaComboMarcas(ColumnaTarifa As String)
 PrintDebug "Ejecutando Rutina de Actualización de Marcas."
 
     If [ID_CONDICION_MODELO] = [CondicionModeloAnterior] Then
-        query$ = "Select distinct marca from " + RANGO_CATALOGO_SEMINUEVOS + " where [" + ColumnaTarifa + "] <> 0"
+        Query$ = "Select distinct marca from " + RANGO_CATALOGO_SEMINUEVOS + " where [" + ColumnaTarifa + "] <> 0"
         
     ElseIf [ID_CONDICION_MODELO] = [CondicionModeloReciente] Then
-        query$ = "Select distinct marca from " + RANGO_CATALOGO_NUEVOS + " where Id<>0"
+        Query$ = "Select distinct marca from " + RANGO_CATALOGO_NUEVOS + " where Id<>0"
     End If
     
-    [CONTEO_MARCAS] = PlasmaQuery(query, [QUERY_MARCAS])
+    [CONTEO_MARCAS] = PlasmaQuery(Query, [QUERY_MARCAS])
     InsertSelectLegend "Marcas"
     ValidaSeleccionComboDV [SELECCION_MARCA]
 End Sub
@@ -52412,14 +52420,14 @@ Sub ActualizaComboAutos(Marca$, ColumnaTarifa$)
 PrintDebug "Ejecutando Rutina de Actualización de Autos."
 
     If [ID_CONDICION_MODELO] = [CondicionModeloAnterior] Then
-        query$ = "Select Auto from " + RANGO_CATALOGO_SEMINUEVOS + " where ucase(Marca)='" + UCase(Marca) + "' and [" + ColumnaTarifa + "] <> 0"
+        Query$ = "Select Auto from " + RANGO_CATALOGO_SEMINUEVOS + " where ucase(Marca)='" + UCase(Marca) + "' and [" + ColumnaTarifa + "] <> 0"
     
     ElseIf [ID_CONDICION_MODELO] = [CondicionModeloReciente] Then
-        query$ = "Select Auto from " + RANGO_CATALOGO_NUEVOS + " where ucase(Marca)='" + UCase(Marca) + "'"
+        Query$ = "Select Auto from " + RANGO_CATALOGO_NUEVOS + " where ucase(Marca)='" + UCase(Marca) + "'"
     
     End If
     
-    [CONTEO_AUTOS] = PlasmaQuery(query, [QUERY_AUTOS])
+    [CONTEO_AUTOS] = PlasmaQuery(Query, [QUERY_AUTOS])
     InsertSelectLegend "Autos"
     ValidaSeleccionComboDV [SELECCION_AUTO]
 End Sub
@@ -52716,8 +52724,8 @@ Sub Evento_Open_Libro()
     'TestADO
     SetUpAdo
     
-    'PrintDebug "- Revisando constantes de debug."
-    'CheckDebugConstantsStatus
+    PrintDebug "- Revisando constantes de debug."
+    CheckDebugConstantsStatus
     
     Application.ScreenUpdating = True
     Application.Calculation = xlCalculationAutomatic
@@ -54332,5 +54340,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 53 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 50 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
