@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene 3 en 1.xls"
-Fecha y hora de generación: 08/10/2014 10:52:08 a.m.
+Fecha y hora de generación: 08/10/2014 11:11:46 a.m.
 
 Resumen
 =======
@@ -50742,12 +50742,13 @@ Indemnización VF\
 [A69] \02/10/2014\
 [A70] \08/10/2014\
 [A71] \08/10/2014\
+[A72] \08/10/2014\
 [B3] \Usuario\
 [B4] \A0000885\
 [B5] \A0000885\
 [B6] \A0000885\
-[B7] \A0000885\
 [LogDeCierres]
+[B7] \A0000885\
 [B8] \A0000885\
 [B9] \A3044386\
 [B10] \A3044386\
@@ -50772,8 +50773,8 @@ Indemnización VF\
 [B29] \A8002673\
 [B30] \A8002673\
 [B31] \A0000885\
-[B32] \A8002673\
 [LogDeCierres]
+[B32] \A8002673\
 [B33] \A8002673\
 [B34] \A8002673\
 [B35] \a8002673\
@@ -50798,8 +50799,8 @@ Indemnización VF\
 [B54] \A3044386\
 [B55] \A3044386\
 [B56] \A3044386\
-[B57] \A3044386\
 [LogDeCierres]
+[B57] \A3044386\
 [B58] \A3044386\
 [B59] \A3044386\
 [B60] \a3044386\
@@ -50814,6 +50815,7 @@ Indemnización VF\
 [B69] \a3505421\
 [B70] \A3044386\
 [B71] \A3044386\
+[B72] \A3044386\
 [C3] \Equipo\
 [C4] \TSURA0000885P1\
 [C5] \TSURA0000885P1\
@@ -50823,9 +50825,9 @@ Indemnización VF\
 [C9] \TSURA3044386\
 [C10] \TSURA3044386\
 [C11] \TSURA3044386\
+[LogDeCierres]
 [C12] \TSURA3044386\
 [C13] \TSURA3044386\
-[LogDeCierres]
 [C14] \TSURA3044386\
 [C15] \TSURA3044386\
 [C16] \TSURA3044386\
@@ -50849,9 +50851,9 @@ Indemnización VF\
 [C34] \TSURA8002673P1\
 [C35] \TSURA8002673P1\
 [C36] \TSURA8002673P1\
+[LogDeCierres]
 [C37] \TSURA8002673P1\
 [C38] \TSURA8002673P1\
-[LogDeCierres]
 [C39] \TSURA8002673P1\
 [C40] \TSURA8002673P1\
 [C41] \TSURA8002673P1\
@@ -50875,9 +50877,9 @@ Indemnización VF\
 [C59] \TSURA3044386\
 [C60] \TSURA3044386\
 [C61] \TSURA3044386\
+[LogDeCierres]
 [C62] \TSURA3044386\
 [C63] \TSURA3044386\
-[LogDeCierres]
 [C64] \TSURA3044386\
 [C65] \TSURA3044386\
 [C66] \TSURA3044386\
@@ -50886,6 +50888,7 @@ Indemnización VF\
 [C69] \TSUR3505421P1\
 [C70] \TSURA3044386\
 [C71] \TSURA3044386\
+[C72] \TSURA3044386\
 [D3] \Mensaje\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
 [D5] \UltimaCelda en captura y tablacliente\
@@ -50900,10 +50903,10 @@ Indemnización VF\
 [D16] \Actualiza las leyendas para eliminar "Generali" | 909f58d\
 [D17] \Agrega los cálculos al Descuento Por Estado, de forma que si el tipo de auto es 3.5T, NO aplica el descuento. (Hace que el factor sea 1) | f7f66a9\
 [D18] \Agrega cálculos, combos y demás modificaciones para calcular la cobertura adicional Servicio Premium. | fd14f66\
+[LogDeCierres]
 [D19] \Expande el rango de coberturas adicionales para que se muestren/escondan cuando se cambia la modalidad del auto en la hoja de captura. Agrega nombre Condición Tipo Auto 3.5T para reemplazar varias condiciones que preguntaban directamente el ID_TIPO_AUTO | 74b1445\
 [D20] \Adecuaciones en carátula. Rótulos, Nombres Definidos, Ajuste de macros. | dbd213c\
 [D21] \Agrega catálogo de Tipo Cliente con datos preliminares, combo de selección "escondido" (en la hoja del catálogo), NDs para soportar el nuevo catálogo, la selección , el ID, etc, y una función ayudante para los lookups. | aae5ca6\
-[LogDeCierres]
 [D22] \Alambra el dato de Comisión por Apertura en la macro que inicializa la captura. | f65c22a\
 [D23] \Agrega event handler para el combo de SELECCION_TIPO_CLIENTE y que se actualice la comisión por apertura en la captura. | ead0f69\
 [D24] \Cambia el event handler del combo de tipo cliente para que solo se dispare cuando se modifica la hoja donde está el combo, no en TODAS las hojas. | 77bdf89\
@@ -50926,10 +50929,10 @@ Indemnización VF\
 [D41] \Se actualizaron CAT Fijos al 31/05/2014\
 [D42] \Se dieron de alta 6 unidades nuevas en C Auto\
 [D43] \Ajusta los nombres de las shapes en la macro que cambia los colores al cambiar de marca Banorte <-> Ixe\
+[LogDeCierres]
 [D44] \Se agregaron cifras de control para revisar catalogos de estado.\
 [D45] \Se actualizaron 4 unidades\
 [D46] \Se actualizaron los ID 2\
-[LogDeCierres]
 [D47] \Se revisaron capturas\
 [D48] \Se agrego Modulo de Cierre\
 [D49] \Se actualizaron 5 unidades\
@@ -50960,9 +50963,11 @@ CambiaMarcaAIxe()\
 [D66] \Cambia los nombres de los Archivos Extra.\
 [D67] \Elimina Nombres Definidos redundantes con error.\
 [D68] \Se agrego 5 unidades: Acura TLX, Freightliner M2-106, Isuzu Forward 1100, Seat Ibiza Tech, VW Golf A7\
+[LogDeCierres]
 [D69] \[CIERRE 20141002_170237] Tambien se igualo Id con Id(Alias)  en la pestaña de C.Seminuevos. |Contraseña: A02310e14\
 [D70] \Actualiza MCA a v1.3, y deja las Opciones para Cerrar para Cierre Sencillo.\
 [D71] \Ajusta las columnas Id(Alias) de los catálogos de Autos Nuevos y Seminuevos para que sean fórmulas que apuntan a Id.\
+[D72] \[CIERRE 20141008_110622] Cierre completo con actualización a MCA v1.3 |Contraseña: A08310e14\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -50976,13 +50981,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$19:$Z$78
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$19:$AB$78
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$19:$AB$78
- [CAT!_Actual] =CAT!20:20
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!20:20
- [T_Merger!_Actual] =T_Merger!20:20
- [T_SeguroAnual!_Actual] =T_SeguroAnual!20:20
- [T_SoloAuto!_Actual] =T_SoloAuto!20:20
- [T_VidaAnual!_Actual] =T_VidaAnual!20:20
- [T_VidaMulti!_Actual] =T_VidaMulti!20:20
+ [CAT!_Actual] =CAT!5:5
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!5:5
+ [T_Merger!_Actual] =T_Merger!5:5
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!5:5
+ [T_SoloAuto!_Actual] =T_SoloAuto!5:5
+ [T_VidaAnual!_Actual] =T_VidaAnual!5:5
+ [T_VidaMulti!_Actual] =T_VidaMulti!5:5
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$19:$J$78
  [T_Merger!_Amortizacion] =T_Merger!$J$19:$J$78
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$19:$J$78
@@ -50991,13 +50996,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$19:$J$78
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$19:$J$78
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$19:$A$78
- [Fechas!_Anterior] =Fechas!19:19
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!19:19
- [T_Merger!_Anterior] =T_Merger!19:19
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!19:19
- [T_SoloAuto!_Anterior] =T_SoloAuto!19:19
- [T_VidaAnual!_Anterior] =T_VidaAnual!19:19
- [T_VidaMulti!_Anterior] =T_VidaMulti!19:19
+ [Fechas!_Anterior] =Fechas!4:4
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!4:4
+ [T_Merger!_Anterior] =T_Merger!4:4
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!4:4
+ [T_SoloAuto!_Anterior] =T_SoloAuto!4:4
+ [T_VidaAnual!_Anterior] =T_VidaAnual!4:4
+ [T_VidaMulti!_Anterior] =T_VidaMulti!4:4
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$19:$Z$78
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$19:$Z$78
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$19:$Z$78
@@ -54505,5 +54510,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 39 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 38 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
