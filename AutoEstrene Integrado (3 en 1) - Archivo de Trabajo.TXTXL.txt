@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xls"
-Fecha y hora de generación: 23/06/2015 03:52:19 p.m.
+Fecha y hora de generación: 29/06/2015 12:04:21 p.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 49
 
- * Líneas de código VB: 3022
+ * Líneas de código VB: 3010
 
 Detalle
 =======
@@ -59,10 +59,10 @@ Contenido:
 [D4] \Mensaje a registrar:\
 [D16] \Opciones para Cerrar Libro:\
 [D17] (CA_Consola!CA.ProtegerContraseña) \True\
-[D18] (CA_Consola!CA.RegistrarMensaje) \False\
+[D18] (CA_Consola!CA.RegistrarMensaje) \True\
 [D19] (CA_Consola!CA.UsarContraseñaEnHojas) \True\
 [D20] (CA_Consola!CA.NoEsconderPestañas) \True\
-[D21] (CA_Consola!CA.GenerarVariantes) \False\
+[D21] (CA_Consola!CA.GenerarVariantes) \True\
 [D22] \Ruta para generar los archivos:\
 [D30] \Para actualizar o agregar esta versión del Cierre Automático en otros libros.\
 [D32] \Quitar hojas y módulos VBA.\
@@ -75,7 +75,7 @@ Contenido:
 [F10] \Simula libro cerrado para probar antes de Cerrar.\
 [CA_Consola]
 [F13] \Generar un libro final para área solicitante.\
-[G17] (CA_Consola!CA.Generar2007) \False\
+[G17] (CA_Consola!CA.Generar2007) \True\
 [G19] \ \
 [G20] (CA_Consola!CA.NombreParaCierre) \Simulador AutoEstrene\
  DataValidation: InputOnly.
@@ -181,7 +181,7 @@ Contenido:
 [Captura]
 [C39] \=IF(Calculos!L20="","",Calculos!L20)\
 [C40] \=IF(Calculos!L21="","",Calculos!L21)\
-[D5] (CapturaFechaCotizacion) \23/06/2015\
+[D5] (CapturaFechaCotizacion) \29/06/2015\
  DataValidation: Fecha. [Operador:"Mayor que" Formula1:"01/01/2013" ]
  Mensaje=[Mostrar:True Titulo:"Fecha" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Fecha" Mensaje:"Por favor ingresa una fecha valida" Estilo:Grave ] 
@@ -865,7 +865,7 @@ Contenido:
 [H11] \=CAT!CAT\
 [H12] \=NumeroDePagos-H13\
 [H13] \=MIN(COUNTIF(C20:C79,"<>0"),NumeroDePagos)\
-[H19] \0\
+[H19] \Aportación a Capital\
 [H20] \0\
 [H21] \0\
 [H22] \0\
@@ -56823,6 +56823,10 @@ indemnización VF\
 [A134] \23/06/2015\
 [A135] \23/06/2015\
 [A136] \23/06/2015\
+[A137] \26/06/2015\
+[A138] \26/06/2015\
+[A139] \26/06/2015\
+[A140] \26/06/2015\
 [B3] \Usuario\
 [B4] \A0000885\
 [B5] \A0000885\
@@ -56834,11 +56838,11 @@ indemnización VF\
 [B11] \A3044386\
 [B12] \A3044386\
 [B13] \A3044386\
+[LogDeCierres]
 [B14] \A3044386\
 [B15] \A3044386\
 [B16] \A3044386\
 [B17] \A3044386\
-[LogDeCierres]
 [B18] \A3044386\
 [B19] \A3044386\
 [B20] \A3044386\
@@ -56860,11 +56864,11 @@ indemnización VF\
 [B36] \a8002673\
 [B37] \a8002673\
 [B38] \a8002673\
+[LogDeCierres]
 [B39] \a8002673\
 [B40] \A8002673\
 [B41] \A8002673\
 [B42] \A8002673\
-[LogDeCierres]
 [B43] \HRIYL920\
 [B44] \A8002673\
 [B45] \HRIYL920\
@@ -56886,11 +56890,11 @@ indemnización VF\
 [B61] \a3044386\
 [B62] \a3044386\
 [B63] \a3044386\
+[LogDeCierres]
 [B64] \a3044386\
 [B65] \a3044386\
 [B66] \a3044386\
 [B67] \a3044386\
-[LogDeCierres]
 [B68] \a3505421\
 [B69] \a3505421\
 [B70] \A3044386\
@@ -56912,11 +56916,11 @@ indemnización VF\
 [B86] \A8002673\
 [B87] \HRIYL920\
 [B88] \HRIYL920\
+[LogDeCierres]
 [B89] \HRIYL920\
 [B90] \HRIYL920\
 [B91] \HRIYL920\
 [B92] \HRIYL920\
-[LogDeCierres]
 [B93] \HRIYL920\
 [B94] \HRIYL920\
 [B95] \A8002673\
@@ -56938,11 +56942,11 @@ indemnización VF\
 [B111] \HRIYL920\
 [B112] \HRIYL920\
 [B113] \HRIYL920\
+[LogDeCierres]
 [B114] \A8002673\
 [B115] \HRIYL920\
 [B116] \A8002673\
 [B117] \HRIYL920\
-[LogDeCierres]
 [B118] \HRIYL920\
 [B119] \HRIYL920\
 [B120] \A8002673\
@@ -56962,13 +56966,17 @@ indemnización VF\
 [B134] \A3044386\
 [B135] \A3044386\
 [B136] \A3044386\
+[B137] \a8002673\
+[B138] \a8002673\
+[LogDeCierres]
+[B139] \HRIYL920\
+[B140] \HRIYL920\
 [C3] \Equipo\
 [C4] \TSURA0000885P1\
 [C5] \TSURA0000885P1\
 [C6] \TSURA0000885P1\
 [C7] \TSURA0000885P1\
 [C8] \TSURA0000885P1\
-[LogDeCierres]
 [C9] \TSURA3044386\
 [C10] \TSURA3044386\
 [C11] \TSURA3044386\
@@ -56986,6 +56994,7 @@ indemnización VF\
 [C23] \TSURA3044386\
 [C24] \TSURA3044386\
 [C25] \TSURA3044386\
+[LogDeCierres]
 [C26] \TSURA3044386\
 [C27] \TSURA3044386\
 [C28] \TSURA8002673P1\
@@ -56994,7 +57003,6 @@ indemnización VF\
 [C31] \TSURA0000885P1\
 [C32] \TSURA8002673P1\
 [C33] \TSURA8002673P1\
-[LogDeCierres]
 [C34] \TSURA8002673P1\
 [C35] \TSURA8002673P1\
 [C36] \TSURA8002673P1\
@@ -57012,6 +57020,7 @@ indemnización VF\
 [C48] \TSURA8002673P1\
 [C49] \TSURHRIYL920P1\
 [C50] \TSUR3505421P1\
+[LogDeCierres]
 [C51] \TSUR3505421P1\
 [C52] \TSUR3505421P1\
 [C53] \TSUR3505421P1\
@@ -57020,7 +57029,6 @@ indemnización VF\
 [C56] \TSURA3044386\
 [C57] \TSURA3044386\
 [C58] \TSURA3044386\
-[LogDeCierres]
 [C59] \TSURA3044386\
 [C60] \TSURA3044386\
 [C61] \TSURA3044386\
@@ -57038,6 +57046,7 @@ indemnización VF\
 [C73] \TSURA8002673P1\
 [C74] \TSUR3505421P1\
 [C75] \TSUR3505421P1\
+[LogDeCierres]
 [C76] \TSURA8002673P1\
 [C77] \TSUR3505421P1\
 [C78] \TSUR3505421P1\
@@ -57046,7 +57055,6 @@ indemnización VF\
 [C81] \TSUR3505421P1\
 [C82] \TSUR3505421P1\
 [C83] \TSURA8002673P1\
-[LogDeCierres]
 [C84] \TSUR3505421P1\
 [C85] \TSURA8002673X1\
 [C86] \TSURA8002673X1\
@@ -57064,6 +57072,7 @@ indemnización VF\
 [C98] \TSURA8002673X1\
 [C99] \TSURA8002673X1\
 [C100] \TSURHRIYL920P1\
+[LogDeCierres]
 [C101] \TSURHRIYL920P1\
 [C102] \TSURHRIYL920P1\
 [C103] \TSUR3505421P1\
@@ -57072,7 +57081,6 @@ indemnización VF\
 [C106] \TSURHRIYL920P1\
 [C107] \TSURHRIYL920P1\
 [C108] \TSURA3044386\
-[LogDeCierres]
 [C109] \TSURA3044386\
 [C110] \TSURA8002673X1\
 [C111] \TSURHRIYL920P1\
@@ -57090,6 +57098,7 @@ indemnización VF\
 [C123] \TSURHRIYL920P1\
 [C124] \TSURHRIYL920P1\
 [C125] \TSURHRIYL920P1\
+[LogDeCierres]
 [C126] \TSURHRIYL920P1\
 [C127] \TSURHRIYL920P1\
 [C128] \TSUR3505421P1\
@@ -57098,10 +57107,13 @@ indemnización VF\
 [C131] \TSUR3505421P1\
 [C132] \TSURA8002673X1\
 [C133] \TSURA3044386\
-[LogDeCierres]
 [C134] \TSURA3044386\
 [C135] \TSURA3044386\
 [C136] \TSURA3044386\
+[C137] \TSURA8002673X1\
+[C138] \TSURA8002673X1\
+[C139] \TSURHRIYL920P1\
+[C140] \TSURHRIYL920P1\
 [D3] \Mensaje\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
 [D5] \UltimaCelda en captura y tablacliente\
@@ -57112,6 +57124,7 @@ indemnización VF\
 [D12] \Agrega soporte para el nuevo cálculo del combo de Auto Substituto, que no aplica si el auto es 3.5T (Falta validarlo cuando se cambia el auto) | b0ab280\
 [D13] \Valida el combo de auto substituto cuando se modifica el combo de auto. | 1facbdb\
 [D14] \Ejecuta las funciones de ADO cuando se abre el libro, independientemente del modo de mantenimiento. | 0b16b76\
+[LogDeCierres]
 [D15] \Agrega el cálculo para los rangos del nuevo combo de indemnización valor factura, para el caso de los autos 3.5T. Crea un nuevo rango y agrega la llamada a la actualización del combo cuando se modifica el combo de auto. | 0938a39\
 [D16] \Actualiza las leyendas para eliminar "Generali" | 909f58d\
 [D17] \Agrega los cálculos al Descuento Por Estado, de forma que si el tipo de auto es 3.5T, NO aplica el descuento. (Hace que el factor sea 1) | f7f66a9\
@@ -57124,7 +57137,6 @@ indemnización VF\
 [D24] \Cambia el event handler del combo de tipo cliente para que solo se dispare cuando se modifica la hoja donde está el combo, no en TODAS las hojas. | 77bdf89\
 [D25] \Usa el Umbral Enganche del catálogo Tipo Cliente para determinar el Tipo de Tasa que se va a usar. | 19c7d32\
 [D26] \Agrega las Tasas de Interés al catálogo de C_TASAS_INTERES y agrega los cálculos necesarios en la hoja de Cálculos. Ajustes de apariencia en Captura. | f93451c\
-[LogDeCierres]
 [D27] \Agrega macros para generar archivos extra. Agrega las entradas a la lista de archivos extra. Actualiza el LogDeCierres. Desactiva SetUpAdo() cuando se abre el libro si está en modo de mantenimiento. Interfería con el cierre de los libros y marcaba Out of Memory.\
 [D28] \[CIERRE 20140415_170536] Se registraron las tarifas del año 2013 y Cambio de Marca |Contraseña: A15304e14\
 [D29] \[CIERRE 20140428_163356] Se cambio el mensaje del CAT al "12 de Marzo del 2013" |Contraseña: A28304e14\
@@ -57138,6 +57150,7 @@ indemnización VF\
 [D37] \Se actualizo las Tarifas de Descuento por Estado para Seminuevos Años Anteriores\
 [D38] \Actualización de Tarifas descuentos por Estados en seminuevos.\
 [D39] \Se dieron de alta 6 carros nuevos\
+[LogDeCierres]
 [D40] \Se cambio la unidad Gran I10 de Hyundai a Grand I10.\
 [D41] \Se actualizaron CAT Fijos al 31/05/2014\
 [D42] \Se dieron de alta 6 unidades nuevas en C Auto\
@@ -57150,7 +57163,6 @@ indemnización VF\
 [D49] \Se actualizaron 5 unidades\
 [D50] \Se agregaron 5 unidades: BMW X4, MACK QUINTA RUEDA, PEUGEOT 2008, RENAULT LOGAN, VW CADDY CARGO VAN\
 [D51] \Se agregaron 3 unidades: DFSK MINI TRUCK, BMW 435, LAND ROVER RANGE ROVER EVOQUE\
-[LogDeCierres]
 [D52] \[CIERRE 20140918_165836] Se agregaron 4 unidades: Audi SQ5, Chrysler Ram 750 Cabina Sencilla y Ram 750 Club Cab,  Mercedes Benz A180. |Contraseña: A18309e14\
 [D53] \[CIERRE 20140925_105000] Se igualo Id con Id(Alias)  de la pestaña de C.Seminuevos, de acuerdo a observaciones que nos hizo la gente de producto. |Contraseña: A25309e14\
 [D54] \Modifica las macros que corren al inicio que configuran la base de datos para que el mensaje de error muestre lo que ocurre cuando falla.\
@@ -57170,6 +57182,7 @@ Leyendas_CAT_en_Captura
 Leyendas_CAT_Clientes_Recurrentes
 Leyendas_CAT_AutoEstrene_Clientes_Nuevos
 Leyendas_CAT_Auto_IXE\
+[LogDeCierres]
 [D65] \Ajusta las macros que generan los archivos extra para copiar las leyendas del CAT correspondientes.
 CambiaTipoClienteRecurrente()
 CambiaMarcaAIxe()\
@@ -57184,7 +57197,6 @@ CambiaMarcaAIxe()\
 [D74] \Se agrego 6 unidades: Chrysler, Ram 700 Club Cab y Ram 700 Cabina Sencilla, Freightliner M2 - 33K y M2 - 52K, Hyundai, Sonata, Mercedes Benz, GLA 45.\
 [D75] \[CIERRE 20141107_130900] Tambien se igualo Id con Id(Alias)  en la pestaña de C.Seminuevos.  |Contraseña: A07311e14\
 [D76] \Se hizo el cambio de fechas cómo lo solicito producto.\
-[LogDeCierres]
 [D77] \Se Capturaron 16 unidades en el catalogo de C. Auto, las cuales describo a continuacion: BMW 740, Chrysler Dodge y Vision Ram 4000 Chasis Cabina, Ford Lincoln MKC, Lobo Pick Up Platinum Doble Cab, Taurus, Hino 500 - 1724, Mack, International Durastar 4300, International Durastar 4400, Kenworth T-660 Aerocab, Kenworth T-800, Mitsubishi Mirage, Subaru Subaru Impreza WRX, VW, Jetta A6 Comfortline, Jetta A6 Sportline, Jetta A6 Trendline.\
 [D78] \[CIERRE 20150109_115832] Se actualizaron tarifas Autoestrene vehiculos usados 2011,2012,2013,2014 |Contraseña: A09301e15\
 [D79] \Se cambia mensaje de leyenda de CAT Fijo para versión en pantalla.\
@@ -57198,6 +57210,7 @@ CambiaMarcaAIxe()\
 [D87] \Se agrego ID_GTIAEXT en combos y parametros\
 [D88] \Se agrego una fila al inicio entodas las en todas las hojas y el rubro de (Garantía extendida:) en tabla del cliente\
 [D89] \Se le agrego a Monto.Financiar de la hoja T_AutoYSeguroMulti el valor de la garantia extendida\
+[LogDeCierres]
 [D90] \Se agrego garantia extendida al monto total del credito teniendo impacto directo a la comisión por apertura.\
 [D91] \Se agregaron hojas ( Comisiónes_V, y Comisiónes_V_Calculos)\
 [D92] \Se agregaron calculos y formulas a las hojas ( Comisiónes_V, y Comisiónes_V_Calculos)\
@@ -57210,7 +57223,6 @@ CambiaMarcaAIxe()\
 [D99] \Se corrigieron las tarifas de Valor Fatura 1 año.\
 [D100] \S modificó condicionate de leyenda para qu no aparezca si es seminuevo.\
 [D101] \Se modifico el monto para calcular la tasa de 200,000 a 0\
-[LogDeCierres]
 [D102] \En la hoja de calculos se cambió la formula de la variable "TasaCondicion2Nuevos" de "=MontoFinanciarTotal >= CONST_UMBRAL_MONTO" a "=PorcentajeEnganche>=CONST_UMBRAL_ENGANCHE"\
 [D103] \[CIERRE 20150312_181554] Se desbloqueo columna de Pagos Anticipados |Contraseña: A12303e15\
 [D104] \Se Capturaron 12 unidades en el catalogo de C. Auto, las cuales describo a continuacion:  Audi RS7 y S7, BMW M3, CBO 8000, Ford F-150 Pick Up XL Super Cab, Freightliner Cascadia, GM 2500 High Country, Hino 500 - 1727, International 9200 y Workstar 7300-210, Mercedes Benz 250, Suzuki Ciaz\
@@ -57230,6 +57242,7 @@ Si es Reciente, realiza el cálculo para obtener el costo de la cobertura corresp
 [D112] \Se amplió Rango C_MODELO_AÑO para tomar en cuenta 2011\
 [D113] \Se amplio Rango COMBO_MODELO_SEMINUEVOS para tomar en cuenta 2011\
 [D114] \Se movio el boton de inicializar captura para que el "Cliente" lo pueda usar y no se quede "vivo" en ningún simulador cerrado.\
+[LogDeCierres]
 [D115] \[CIERRE 20150512_164139] Se cierra para revisión de producto. |Contraseña: A12I05(15\
 [D116] \Se cambia nombre al boton "Inicializar" captura.\
 [D117] \[CIERRE 20150513_155141] Se cierra para revisión de producto. |Contraseña: A13I05(15\
@@ -57247,7 +57260,6 @@ MuestraGarantiaExtendida
 
 \
 [D126] \Se dejo solo la condición del enganche en la hoja de calculos G142\
-[LogDeCierres]
 [D127] \Se modifico la formula de la hoja C.Auto N5 de "   =SI(Y(ID_CONDICION_AUTO=1,O(ID_TIPO_PERSONA=1,ID_TIPO_PERSONA=2)),"10%","20%")  "   a esta formula "   =SI(Y(ID_CONDICION_AUTO=1,O(ID_TIPO_PERSONA=1,ID_TIPO_PERSONA=2)),0.1,0.2)   "    \
 [D128] \[CIERRE 20150603_185742] Se Capturaron 33 unidades en el catalogo de C. Auto, y se actualizo Id en C.Seminuevos, en archivo Altas1 Mayo2015, pueden revisar con exactitud las unidades que se dieron de alta.  |Contraseña: A03I06(15\
 [D129] \[CIERRE 20150610_131516] Se actualizaron Leyendas del CAT al 01 de Abril 2015 Banorte e Ixe Nuevos y Smienuevos |Contraseña: A10I06(15\
@@ -57271,6 +57283,11 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
  Ajusta la referencia para incluír sólamente las filas adecuadas. Las que ya no se utilizan, se quedan permanentemente ocultas, ya que en ningun lado se muestran.\
 [D135] \Reactiva mostrar/ocultar las opciones de Coberturas Adicionales y Garantía Extendida cuando aplican o no.\
 [D136] \Ajusta GenTablaPagos() al almacenar y restablecer el valor de respaldo de los plazos. Se usaba la .Formula del rango de [SELECCION_PLAZO] pero si la hoja está protegida con UserInterfaceOnly=Yes, la .Formula NO es accesible.\
+[D137] \Se mueve el "boton" de "Siempre utiliza este botón para hacer un ajuste o para realizar una nueva cotización" para no generar ruido con los ejecutivos de atención de este producto.\
+[D138] \Se pone titulo a la columna "Aportación a Capital" por que estaba en "0".\
+[D139] \[CIERRE 20150626_125315] Cierre para entregar a producto |Contraseña: A26I06(15\
+[LogDeCierres]
+[D140] \[CIERRE 20150626_130351] Cierre Para entregar a producto con variantes |Contraseña: A26I06(15\
 
 [Hoja1]
 [A1] \ACURA\
@@ -62452,13 +62469,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!6:6
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!6:6
- [T_Merger!_Actual] =T_Merger!6:6
- [T_SeguroAnual!_Actual] =T_SeguroAnual!6:6
- [T_SoloAuto!_Actual] =T_SoloAuto!6:6
- [T_VidaAnual!_Actual] =T_VidaAnual!6:6
- [T_VidaMulti!_Actual] =T_VidaMulti!6:6
+ [CAT!_Actual] =CAT!1:1
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!1:1
+ [T_Merger!_Actual] =T_Merger!1:1
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!1:1
+ [T_SoloAuto!_Actual] =T_SoloAuto!1:1
+ [T_VidaAnual!_Actual] =T_VidaAnual!1:1
+ [T_VidaMulti!_Actual] =T_VidaMulti!1:1
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -62467,13 +62484,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!5:5
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!5:5
- [T_Merger!_Anterior] =T_Merger!5:5
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!5:5
- [T_SoloAuto!_Anterior] =T_SoloAuto!5:5
- [T_VidaAnual!_Anterior] =T_VidaAnual!5:5
- [T_VidaMulti!_Anterior] =T_VidaMulti!5:5
+ [Fechas!_Anterior] =Fechas!65536:65536
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!65536:65536
+ [T_Merger!_Anterior] =T_Merger!65536:65536
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!65536:65536
+ [T_SoloAuto!_Anterior] =T_SoloAuto!65536:65536
+ [T_VidaAnual!_Anterior] =T_VidaAnual!65536:65536
+ [T_VidaMulti!_Anterior] =T_VidaMulti!65536:65536
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -63192,7 +63209,7 @@ End Sub
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Tools] 349 líneas de código.
+[Tools] 337 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   _______          _.
 '  |__   __|        | |
@@ -63504,33 +63521,21 @@ Sub InicializaCaptura()
     Pantalla BkSU
 End Sub
 
+'Limpia la tabla cliente y se regresa a la hoja de Captura.
+'Se lanza desde el botón "Regresar" de la Tabla Cliente.
 Sub Limpia_tabla()
-'
-' Limpia_tabla Macro
-' Macro grabada el 15/03/2013 por MAGM
-' Limpia los datos capturados en la columna pagos anticipados
-'
-' Acceso directo: CTRL+l
-'
-    Sheets("TablaCliente").Select
-    DesprotegerHoja
-    Range("A19").Select
-    Range(Selection, Selection.End(xlDown)).Select
-    Selection.EntireRow.Hidden = False
-    Range("H19").Select
-    ActiveCell.FormulaR1C1 = "0"
-    Selection.Copy
-    Range("H20:H78").Select
-    Range(Selection, Selection.End(xlDown)).Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
-    Range("H19:H78").Select
-    Application.CutCopyMode = False
-    Range("A2").Select
+    
+    Sheets(SHEET_TABLA_CLIENTE).Select
     ProtegerHoja
-    Sheets("Captura").Select
-    Range("D7").Select
-    ProtegerHoja
+    
+    'Elimina todas las Aportaciones a Capital.
+    Intersect(Range(RANGO_AMORTIZACIONES_TABLA_CLIENTE).EntireRow, Range("h:h")) = 0
+    
+    Range("SELECCION_PLAZO").Select
+
+    'Nos vamos a la captura.
+    Sheets(SHEET_CAPTURA).Select
+    Range("CapturaValorFactura").Select
 End Sub
 
 'Regresa la posición de una columna en un catálogo. Útil para los vlookups (Se usa como fórmula en las hojas de cálculo)
