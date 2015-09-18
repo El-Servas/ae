@@ -1,16 +1,16 @@
-Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xls"
-Fecha y hora de generación: 29/06/2015 12:57:08 p.m.
+Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
+Fecha y hora de generación: 18/09/2015 12:21:53 p.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 655
+ * Nombres Definidos: 636
 
  * Módulos de Visual Basic: 43
 
- * Líneas de código VB: 2982
+ * Líneas de código VB: 3007
 
 Detalle
 =======
@@ -55,7 +55,7 @@ Contenido:
 [D17] (CA_Consola!CA.ProtegerContraseña) \True\
 [D18] (CA_Consola!CA.RegistrarMensaje) \False\
 [D19] (CA_Consola!CA.UsarContraseñaEnHojas) \True\
-[D20] (CA_Consola!CA.NoEsconderPestañas) \True\
+[D20] (CA_Consola!CA.NoEsconderPestañas) \False\
 [D21] (CA_Consola!CA.GenerarVariantes) \False\
 [D22] \Ruta para generar los archivos:\
 [D30] \Para actualizar o agregar esta versión del Cierre Automático en otros libros.\
@@ -84,7 +84,7 @@ Contenido:
 [J11] \Status:\
 [K2] (CA_Consola!CA.Version) \1.4-Dev\
 [K11] (CA_Consola!CA.PseudoCierreStatus) \OFF\
-[L2] \f9f3c8+\
+[L2] \+12 673077e+\
 
 [CA_Servicios]
 [B2] \Settings de ejecución. Se consultan cuando el simulador está en uso.\
@@ -55787,6 +55787,15 @@ Financiar\
 [A141] \29/06/2015\
 [A142] \29/06/2015\
 [A143] \29/06/2015\
+[A144] \29/06/2015\
+[A145] \14/09/2015\
+[A146] \15/09/2015\
+[A147] \17/09/2015\
+[A148] \17/09/2015\
+[A149] \18/09/2015\
+[A150] \18/09/2015\
+[A151] \18/09/2015\
+[LogDeCierres]
 [B3] \Usuario\
 [B4] \A0000885\
 [B5] \A0000885\
@@ -55795,7 +55804,6 @@ Financiar\
 [B8] \A0000885\
 [B9] \A3044386\
 [B10] \A3044386\
-[LogDeCierres]
 [B11] \A3044386\
 [B12] \A3044386\
 [B13] \A3044386\
@@ -55813,6 +55821,7 @@ Financiar\
 [B25] \A3044386\
 [B26] \A3044386\
 [B27] \a3044386\
+[LogDeCierres]
 [B28] \A8002673\
 [B29] \A8002673\
 [B30] \A8002673\
@@ -55821,7 +55830,6 @@ Financiar\
 [B33] \A8002673\
 [B34] \A8002673\
 [B35] \a8002673\
-[LogDeCierres]
 [B36] \a8002673\
 [B37] \a8002673\
 [B38] \a8002673\
@@ -55839,6 +55847,7 @@ Financiar\
 [B50] \a3505421\
 [B51] \a3505421\
 [B52] \a3505421\
+[LogDeCierres]
 [B53] \a3505421\
 [B54] \A3044386\
 [B55] \A3044386\
@@ -55847,7 +55856,6 @@ Financiar\
 [B58] \A3044386\
 [B59] \A3044386\
 [B60] \a3044386\
-[LogDeCierres]
 [B61] \a3044386\
 [B62] \a3044386\
 [B63] \a3044386\
@@ -55865,6 +55873,7 @@ Financiar\
 [B75] \a3505421\
 [B76] \a8002673\
 [B77] \a3505421\
+[LogDeCierres]
 [B78] \a3505421\
 [B79] \a8002673\
 [B80] \HRIYL920\
@@ -55873,7 +55882,6 @@ Financiar\
 [B83] \a8002673\
 [B84] \a3505421\
 [B85] \A8002673\
-[LogDeCierres]
 [B86] \A8002673\
 [B87] \HRIYL920\
 [B88] \HRIYL920\
@@ -55891,6 +55899,7 @@ Financiar\
 [B100] \HRIYL920\
 [B101] \HRIYL920\
 [B102] \HRIYL920\
+[LogDeCierres]
 [B103] \a3505421\
 [B104] \a3505421\
 [B105] \a3505421\
@@ -55899,7 +55908,6 @@ Financiar\
 [B108] \A3044386\
 [B109] \A3044386\
 [B110] \a8002673\
-[LogDeCierres]
 [B111] \HRIYL920\
 [B112] \HRIYL920\
 [B113] \HRIYL920\
@@ -55917,6 +55925,7 @@ Financiar\
 [B125] \HRIYL920\
 [B126] \HRIYL920\
 [B127] \HRIYL920\
+[LogDeCierres]
 [B128] \a3505421\
 [B129] \a3505421\
 [B130] \HRIYL920\
@@ -55925,7 +55934,6 @@ Financiar\
 [B133] \A3044386\
 [B134] \A3044386\
 [B135] \A3044386\
-[LogDeCierres]
 [B136] \A3044386\
 [B137] \a8002673\
 [B138] \a8002673\
@@ -55934,7 +55942,16 @@ Financiar\
 [B141] \A3044386\
 [B142] \A3044386\
 [B143] \A3044386\
+[B144] \A3044386\
+[B145] \A3044386\
+[B146] \A3044386\
+[B147] \A3044386\
+[B148] \A3044386\
+[B149] \A3044386\
+[B150] \A3044386\
+[B151] \A3044386\
 [C3] \Equipo\
+[LogDeCierres]
 [C4] \TSURA0000885P1\
 [C5] \TSURA0000885P1\
 [C6] \TSURA0000885P1\
@@ -55951,7 +55968,6 @@ Financiar\
 [C17] \TSURA3044386\
 [C18] \TSURA3044386\
 [C19] \TSURA3044386\
-[LogDeCierres]
 [C20] \TSURA3044386\
 [C21] \TSURA3044386\
 [C22] \TSURA3044386\
@@ -55961,6 +55977,7 @@ Financiar\
 [C26] \TSURA3044386\
 [C27] \TSURA3044386\
 [C28] \TSURA8002673P1\
+[LogDeCierres]
 [C29] \TSURA8002673P1\
 [C30] \TSURA8002673P1\
 [C31] \TSURA0000885P1\
@@ -55977,7 +55994,6 @@ Financiar\
 [C42] \TSURA8002673P1\
 [C43] \TMAYA3724915P1\
 [C44] \TSURA8002673P1\
-[LogDeCierres]
 [C45] \TMAYA3724915P1\
 [C46] \TSURA8002673P1\
 [C47] \TSURA8002673P1\
@@ -55987,6 +56003,7 @@ Financiar\
 [C51] \TSUR3505421P1\
 [C52] \TSUR3505421P1\
 [C53] \TSUR3505421P1\
+[LogDeCierres]
 [C54] \TSURA3044386\
 [C55] \TSURA3044386\
 [C56] \TSURA3044386\
@@ -56003,7 +56020,6 @@ Financiar\
 [C67] \TSURA3044386\
 [C68] \TSUR3505421P1\
 [C69] \TSUR3505421P1\
-[LogDeCierres]
 [C70] \TSURA3044386\
 [C71] \TSURA3044386\
 [C72] \TSURA3044386\
@@ -56013,6 +56029,7 @@ Financiar\
 [C76] \TSURA8002673P1\
 [C77] \TSUR3505421P1\
 [C78] \TSUR3505421P1\
+[LogDeCierres]
 [C79] \TSURA8002673P1\
 [C80] \TSURHRIYL920P1\
 [C81] \TSUR3505421P1\
@@ -56029,7 +56046,6 @@ Financiar\
 [C92] \TSURHRIYL920P1\
 [C93] \TSURHRIYL920P1\
 [C94] \TSURHRIYL920P1\
-[LogDeCierres]
 [C95] \TSURA8002673X1\
 [C96] \TSURA8002673X1\
 [C97] \TSURA8002673X1\
@@ -56039,6 +56055,7 @@ Financiar\
 [C101] \TSURHRIYL920P1\
 [C102] \TSURHRIYL920P1\
 [C103] \TSUR3505421P1\
+[LogDeCierres]
 [C104] \TSUR3505421P1\
 [C105] \TSUR3505421P1\
 [C106] \TSURHRIYL920P1\
@@ -56055,7 +56072,6 @@ Financiar\
 [C117] \TSURHRIYL920P1\
 [C118] \TSURHRIYL920P1\
 [C119] \TSURHRIYL920P1\
-[LogDeCierres]
 [C120] \TSURA8002673X1\
 [C121] \TSURHRIYL920P1\
 [C122] \TSURHRIYL920P1\
@@ -56065,6 +56081,7 @@ Financiar\
 [C126] \TSURHRIYL920P1\
 [C127] \TSURHRIYL920P1\
 [C128] \TSUR3505421P1\
+[LogDeCierres]
 [C129] \TSUR3505421P1\
 [C130] \TSURHRIYL920P1\
 [C131] \TSUR3505421P1\
@@ -56080,9 +56097,17 @@ Financiar\
 [C141] \TSURA3044386\
 [C142] \TSURA3044386\
 [C143] \TSURA3044386\
+[C144] \TSURA3044386\
+[C145] \TSURA3044386\
+[C146] \TSURA3044386\
+[C147] \TSURA3044386\
+[C148] \TSURA3044386\
+[C149] \TSURA3044386\
+[C150] \TSURA3044386\
+[C151] \TSURA3044386\
 [D3] \Mensaje\
-[LogDeCierres]
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
+[LogDeCierres]
 [D5] \UltimaCelda en captura y tablacliente\
 [D6] \Actualizar catálogo de autos de 485 a 584 registros\
 [D9] \Renombra la rutina Auto_Open() -> InicializaCaptura(). La corrige para seleccionar la hoja de captura, y se manda a llamar desde el event handler Open del libro. Se agrega soporta en el evento para el modo de mantenimiento. Si está encendido, sale sin hacer nada. | 99c559b\
@@ -56107,8 +56132,8 @@ Financiar\
 [D28] \[CIERRE 20140415_170536] Se registraron las tarifas del año 2013 y Cambio de Marca |Contraseña: A15304e14\
 [D29] \[CIERRE 20140428_163356] Se cambio el mensaje del CAT al "12 de Marzo del 2013" |Contraseña: A28304e14\
 [D30] \[CIERRE 20140507_102725] Se agrego "Leyenda_Cobertura_Premium" |Contraseña: A07305e14\
-[LogDeCierres]
 [D31] \Validación enganche por tipo cliente\
+[LogDeCierres]
 [D32] \[CIERRE 20140507_151544] Elimine la palabra "Coberturas Adicionales", se actualizo el CAT y sólo se va a mostrar la leyenda de "Clientes Recurrentes" |Contraseña: A07305e14\
 [D33] \[CIERRE 20140512_132732] Se dieron de alta 9 carros nuevos |Contraseña: A12305e14\
 [D34] \Se cambio la leyenda informativa del CAT con todos sus componentes para autos nuevos y seminuevos.\
@@ -56133,8 +56158,8 @@ Financiar\
 [D53] \[CIERRE 20140925_105000] Se igualo Id con Id(Alias)  de la pestaña de C.Seminuevos, de acuerdo a observaciones que nos hizo la gente de producto. |Contraseña: A25309e14\
 [D54] \Modifica las macros que corren al inicio que configuran la base de datos para que el mensaje de error muestre lo que ocurre cuando falla.\
 [D55] \[CIERRE 20140925_144739] Genera versión de cierre completa para diagnóstico de mensaje de error. |Contraseña: A25309e14\
-[LogDeCierres]
 [D56] \Agrega un par de funciones nuevas para determinar la arquitectura de Windows y de Office.\
+[LogDeCierres]
 [D57] \Muestra la arquitectura de windows y de office en el error inicial de ADO.\
 [D58] \[CIERRE 20140926_120102] Genera Release con mensaje de error de ADO mejorado. |Contraseña: A26309e14\
 [D59] \Desactiva el mensaje inicial en los libros cerrados cuando las constantes de debug están activadas.\
@@ -56167,8 +56192,8 @@ CambiaMarcaAIxe()\
 [D78] \[CIERRE 20150109_115832] Se actualizaron tarifas Autoestrene vehiculos usados 2011,2012,2013,2014 |Contraseña: A09301e15\
 [D79] \Se cambia mensaje de leyenda de CAT Fijo para versión en pantalla.\
 [D80] \Se agrega en matriz la fecha de primer pago.\
-[LogDeCierres]
 [D81] \[CIERRE 20150120_171727] Se corrigió marca y tipo de auto, de acuerdo a vehiculos de 3.5 toneladas con AMIS "TRA". |Contraseña: A20301e15\
+[LogDeCierres]
 [D82] \[CIERRE 20150120_180814] Se actualizo alto ("28") de celda, en Hoja TablaCliente celda "Tipo Aportación a capital". |Contraseña: A20301e15\
 [D83] \Agregue la hoja de reglas al principio del simulador para tomar todo este archivo cómo parte de la reingenieria de simuladores\
 [D84] \[CIERRE 20150206_102159] Se corrigio en el archivo de "carga de auto" auto Grand I10 para Hyundai, lo cual estaba como Gran I10, debiendo ser Grand I10 |Contraseña: A06302e15\
@@ -56193,8 +56218,8 @@ CambiaMarcaAIxe()\
 [D103] \[CIERRE 20150312_181554] Se desbloqueo columna de Pagos Anticipados |Contraseña: A12303e15\
 [D104] \Se Capturaron 12 unidades en el catalogo de C. Auto, las cuales describo a continuacion:  Audi RS7 y S7, BMW M3, CBO 8000, Ford F-150 Pick Up XL Super Cab, Freightliner Cascadia, GM 2500 High Country, Hino 500 - 1727, International 9200 y Workstar 7300-210, Mercedes Benz 250, Suzuki Ciaz\
 [D105] \En la Hoja de Captura se actualizaron los montos de las celdas D37 a D41, de acuerdo a la selección que se hace en el combo de Garantia extendida Financiada, esto derivado a que no estaba tomando en cuenta la garantia en la suma del pago total, por lo que a la formula en la hoja de calculos en el recuadro de PAGOS, en Pago del Crédito de Auto, en la formula al final se agrego un (-MontoGtiaExt ), para que me tome en cuenta los 6000 del combo Garantia Extendida. \
-[LogDeCierres]
 [D106] \Se corrigen "leyendas" y "titulos" que hacen que no se vea bien el simulador, cómo puntos que sobran.\
+[LogDeCierres]
 [D107] \[CIERRE 20150506_105458] Se cierra para revisión de Producto, falta registrar los cambios realizados de esta última etapa. |Contraseña: A06I05(15\
 [D108] \[Coberturas Adicionales Obligatorias] Modifica la celda Cálculos!H71 para que discrimine si el Seminuevo es Reciente o Anterior.
 Si es Anterior, directamente le asigna cero, ya que no aplican.
@@ -56230,8 +56255,8 @@ MuestraGarantiaExtendida
 [D128] \[CIERRE 20150603_185742] Se Capturaron 33 unidades en el catalogo de C. Auto, y se actualizo Id en C.Seminuevos, en archivo Altas1 Mayo2015, pueden revisar con exactitud las unidades que se dieron de alta.  |Contraseña: A03I06(15\
 [D129] \[CIERRE 20150610_131516] Se actualizaron Leyendas del CAT al 01 de Abril 2015 Banorte e Ixe Nuevos y Smienuevos |Contraseña: A10I06(15\
 [D130] \Se pone condición para que en persona moral solo tome las tasas grandes.\
-[LogDeCierres]
 [D131] \[CIERRE 20150611_120638] Se actualizaron Leyendas del CAT al 01 de Abril 2015 Recurrentes Banorte nuevo y seminuevos |Contraseña: A11I06(15\
+[LogDeCierres]
 [D132] \Se cambia la constane 0.052865 por 0.045670 en la unidad vento de VW.\
 [D133] \Elimina funciones GetOSArch() y GetOfficeArch() del Módulo 'ADO', ya que estas funciones se agregaron al módulo CA_UTILS cuando actualizamos el MCA.
 Agrega función Pantalla() a Módulo CA_Servicios, Copiada de Universal Hipotecario.
@@ -56257,6 +56282,14 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D141] \[AJUSTES] Modifica la macro Limpia_tabla() para cambiar la forma de limpiar las aportaciones a capital. Le ponía un cero en el encabezado.\
 [D142] \[AJUSTES] Corrige la llamada a LinkRequisitosAlFrente() que estaba usando un parámetro incorrecto que ocasionaba que los botones de requisitos no se mandaran al frente cuando se seleccionaba "Nuevo"\
 [D143] \[AJUSTES] Corrige los botones de Requisitos de Nuevos y de Seminuevos. Los dos juegos en la hoja de captura, y el de la Tabla Cliente.\
+[D144] \[VB] Apaga las constantes de impresión de mensajes de debug y de error, en las propiedades del proyecto de VB.\
+[D145] \Conversión a formato XLSM.\
+[D146] \Actualiza MCA a v1.4-Dev [ +12 673077e+ ], sin opción de generar ver. 2007 (xlsm)\
+[D147] \Se prueba la versión cerrada original.\
+[D148] \Ajustes para cierre después de actualización xlsm.\
+[D149] \Se prueba cerrar con Variantes.\
+[D150] \Éxito. Dejamos esta versión como definitiva.\
+[D151] \Elimina Nombres Definidos con errores de #REFerencia.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56270,13 +56303,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!1:1
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!1:1
- [T_Merger!_Actual] =T_Merger!1:1
- [T_SeguroAnual!_Actual] =T_SeguroAnual!1:1
- [T_SoloAuto!_Actual] =T_SoloAuto!1:1
- [T_VidaAnual!_Actual] =T_VidaAnual!1:1
- [T_VidaMulti!_Actual] =T_VidaMulti!1:1
+ [CAT!_Actual] =CAT!6:6
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!6:6
+ [T_Merger!_Actual] =T_Merger!6:6
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!6:6
+ [T_SoloAuto!_Actual] =T_SoloAuto!6:6
+ [T_VidaAnual!_Actual] =T_VidaAnual!6:6
+ [T_VidaMulti!_Actual] =T_VidaMulti!6:6
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56285,13 +56318,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!65536:65536
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!65536:65536
- [T_Merger!_Anterior] =T_Merger!65536:65536
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!65536:65536
- [T_SoloAuto!_Anterior] =T_SoloAuto!65536:65536
- [T_VidaAnual!_Anterior] =T_VidaAnual!65536:65536
- [T_VidaMulti!_Anterior] =T_VidaMulti!65536:65536
+ [Fechas!_Anterior] =Fechas!5:5
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!5:5
+ [T_Merger!_Anterior] =T_Merger!5:5
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!5:5
+ [T_SoloAuto!_Anterior] =T_SoloAuto!5:5
+ [T_VidaAnual!_Anterior] =T_VidaAnual!5:5
+ [T_VidaMulti!_Anterior] =T_VidaMulti!5:5
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -56447,15 +56480,6 @@ Nombres:
  [T_AutoYSeguroMulti!_Stopper_Capital_Original] =T_AutoYSeguroMulti!$AQ$20:$AQ$79
  [T_SeguroAnual!_Stopper_Capital_Original] =T_SeguroAnual!$AQ$20:$AQ$79
  [T_Merger!_Stopper_Saldo_Inicial] =T_Merger!$V$20:$V$79
- [_xlfn.IFERROR] =#NAME?
- [Aleatorio_Automovil] =#REF!$F$11
- [Aleatorio_Condiciones] =#REF!$F$6
- [Aleatorio_Estado] =#REF!$F$5
- [Aleatorio_Marca] =#REF!$F$8
- [Aleatorio_Modelo] =#REF!$F$7
- [Aleatorio_Seguro] =#REF!$F$14
- [Aleatorio_Tipo_P] =#REF!$F$4
- [Aleatorio_Valor_F] =#REF!$F$3
  [Aplica_IndemVF?] =Calculos!$G$74
  [AplicaIvaIntereses?] =Calculos!$F$97
  [AportacionAdicional] =Calculos!$F$43
@@ -56475,7 +56499,6 @@ Nombres:
  [C_ESTADO_DESC] =OFFSET(C_ESTADO,0,1,,COLUMNS(C_ESTADO)-1)
  [C_FACTOR_MULTIANUAL] ='C. Seguros'!$A$12:$E$18
  [C_FACTOR_MULTIANUAL_DESC] =OFFSET(C_FACTOR_MULTIANUAL,0,1,,2)
- [C_FINANCIADO_NO] =#REF!$B$32:$C$33
  [C_Financiado_Noaplica] ='C. Comunes'!$A$30:$D$32
  [C_FRECUENCIA] ='C. Comunes'!$A$4:$E$9
  [C_FRECUENCIA_DESC] =OFFSET(C_FRECUENCIA,0,1,,2)
@@ -56559,7 +56582,6 @@ Nombres:
  [COMBO_SOLO_Noaplica] ='C. Comunes'!$B$32
  [COMBO_TIPO_CLIENTE] =C.TipoCliente!$A$4:$A$5
  [COMBO_TIPO_PERSONA] ='C. Seguros'!$B$31:$B$33
- [Comisión_Adicional_C] =#REF!$B$12:$D$13
  [T_AutoYSeguroMulti!Componentes.Pago.Fijo] =T_AutoYSeguroMulti!$F$22:$F$23
  [T_SeguroAnual!Componentes.Pago.Fijo] =T_SeguroAnual!$F$22:$F$23
  [T_SoloAuto!Componentes.Pago.Fijo] =T_SoloAuto!$F$22:$F$23
@@ -56678,7 +56700,6 @@ Nombres:
  [Leyendas_CAT_AutoEstrene_Clientes_Nuevos] =CAT!$R$14:$S$16
  [Leyendas_CAT_Clientes_Recurrentes] =CAT!$R$19:$S$21
  [Leyendas_CAT_en_Captura] =CAT!$R$5:$S$7
- [Matriz_Datos] =#REF!$25:$25
  [MAX_NO_PAGOS] =TablaCliente!$A$67
  [Maximo_Garantia_Extendida] =Captura!$L$14
  [ModeloAñosAntiguedad] =Calculos!$F$15
@@ -56696,7 +56717,6 @@ Nombres:
  [T_AutoYSeguroMulti!Monto.Financiar.Ciclico] =T_AutoYSeguroMulti!$C$17
  [T_SeguroAnual!Monto.Financiar.Ciclico] =T_SeguroAnual!$C$17
  [T_RenovVidaAnual!Monto.Renovacion] =T_RenovVidaAnual!$C$17
- [Monto_GtiaExt] =#REF!$F$169
  [Monto_máximo_enganche] =Captura!$J$14
  [Monto_Mínimo_a_Financiar] =Calculos!$H$131
  [MontoAnticipoAuto] =Calculos!$F$130
@@ -56736,9 +56756,6 @@ Nombres:
  [T_SoloAuto!Pago.Fijo] =T_SoloAuto!$F$24
  [T_VidaAnual!Pago.Fijo] =T_VidaAnual!$F$24
  [T_VidaMulti!Pago.Fijo] =T_VidaMulti!$F$24
- [Pago_C_Adicional] =#REF!$B$39
- [Pago_Colocación] =#REF!$B$26
- [Pago_UDI] =#REF!$B$13
  [PagoAuto] =Calculos!$F$156
  [PagoSeguro] =Calculos!$F$158
  [PagoTotal] =Calculos!$F$159
@@ -56791,7 +56808,6 @@ Nombres:
  [PorcentajeMaximoEnganche] =Calculos!$H$10
  [PorcentajeMinimoEnganche] =Calculos!$F$10
  [PrimaDaños] =Calculos!$F$91
- [PrimaNetaAuto] =#REF!$B$6
  [PrimaTotalSeguros] =Calculos!$F$108
  [PrimaVida] =Calculos!$F$105
  ['C. Estados'!Print_Area] ='C. Estados'!$A$1:$I$36
@@ -56840,7 +56856,6 @@ Nombres:
  [SELECCION_AUTO] =Captura!$D$12
  [SELECCION_AUTO_SUST] =Captura!$D$20
  [SELECCION_CALCULO_SEGURO] =Captura!$D$16
- [SELECCION_COMISIÓN_ADICIONAL] =#REF!$B$41
  [SELECCION_CONDICION_AUTO] =Captura!$D$9
  [SELECCION_ESTADO] =Captura!$D$8
  [SELECCION_FRECUENCIA] =Captura!$H$5
@@ -56908,7 +56923,6 @@ Nombres:
  [Valor_Factura_Mínimo_Seminuevos] =Captura!$L$6
  [VALOR_GARANITA_EXTENDIDA] =Captura!$B$18:$D$18,Captura!$B$32:$D$32
  [Valor_Garantía_Extendida.Aplica?] =Calculos!$F$125
- [Valores_Aleatorios] =#REF!$C$3:$C$11
  [ValorFactura] =Calculos!$F$42
  [VB_STARTING_CELL] =Calculos!$K$17:$N$21
  [VidaAplica?] =Calculos!$F$104
@@ -59144,7 +59158,7 @@ End Sub
 
 \\\--- END OF MODULE ---
 
-[CA_Utils] 356 líneas de código.
+[CA_Utils] 365 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '====================================================================================================
 'Módulo con funciones y rutinas útiles
@@ -59500,6 +59514,15 @@ Function GetOfficeArch() As Integer
     #If Win64 Then
         GetOfficeArch = 64
     #End If
+End Function
+
+'Auxiliar para que no se refresque la pantalla en operaciones de limpia y ajuste.
+'Regresa el valor que tenía antes de aplicar el setting.
+Function Pantalla(Estado As Boolean) As Boolean
+On Error GoTo Outer_Error
+    Pantalla = Application.ScreenUpdating
+    Application.ScreenUpdating = Estado
+Outer_Error:
 End Function
 
 \\\--- END OF MODULE ---
@@ -59862,7 +59885,7 @@ End Sub
 
 \\\--- END OF MODULE ---
 
-[CA_Servicios] 85 líneas de código.
+[CA_Servicios] 78 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -59941,23 +59964,31 @@ Public Sub DisplayRunningEnvironment()
     MsgBox SimInfo & ReadOnly & OSInfo & vbCrLf & OfficeInfo, vbInformation, "Simuladores - Ambiente de ejecución"
 End Sub
 
-'Auxiliar para que no se refresque la pantalla en operaciones de limpia y ajuste.
-'Regresa el valor que tenía antes de aplicar el setting.
-Function Pantalla(Estado As Boolean) As Boolean
-On Error GoTo Outer_Error
-    Pantalla = Application.ScreenUpdating
-    Application.ScreenUpdating = Estado
-Outer_Error:
-End Function
+
 \\\--- END OF MODULE ---
 
-[CA_Portapapeles_X] 56 líneas de código.
+[CA_Portapapeles_X] 79 líneas de código.
 ///--- BEGINNING OF MODULE ---
-'Declaraciones y constantes para el acceso al Portapapeles:
+'Declaraciones y constantes para el acceso al Portapapeles (32-Bit):
 'Código obtenido de http://support.microsoft.com/kb/210216
+
+'Código para 64 Bits adaptado de http://stackoverflow.com/questions/18668928/excel-2013-64-bit-vba-clipboard-api-doesnt-work
 
 Option Explicit
 
+#If VBA7 Then
+Declare PtrSafe Function GlobalAlloc Lib "kernel32" (ByVal wFlags As Long, ByVal dwBytes As LongPtr) As LongPtr
+Declare PtrSafe Function GlobalFree Lib "kernel32" (ByVal hMem As LongPtr) As LongPtr
+Declare PtrSafe Function GlobalLock Lib "kernel32" (ByVal hMem As LongPtr) As LongPtr
+Declare PtrSafe Function GlobalSize Lib "kernel32" (ByVal hMem As LongPtr) As LongPtr
+Declare PtrSafe Function GlobalUnlock Lib "kernel32" (ByVal hMem As LongPtr) As Long
+Declare PtrSafe Function OpenClipboard Lib "user32" (ByVal hwnd As LongPtr) As Long
+Declare PtrSafe Function CloseClipboard Lib "user32" () As Long
+Declare PtrSafe Function EmptyClipboard Lib "user32" () As Long
+Declare PtrSafe Function SetClipboardData Lib "user32" (ByVal wFormat As Long, ByVal hMem As LongPtr) As LongPtr
+Declare PtrSafe Function GetClipboardData Lib "user32" (ByVal wFormat As Long) As LongPtr
+Declare PtrSafe Function lstrcpy Lib "kernel32" (ByVal lpString1 As Any, ByVal lpString2 As Any) As LongPtr
+#Else
 Declare Function GlobalUnlock Lib "kernel32" (ByVal hMem As Long) As Long
 Declare Function GlobalLock Lib "kernel32" (ByVal hMem As Long) As Long
 Declare Function GlobalAlloc Lib "kernel32" (ByVal wFlags As Long, ByVal dwBytes As Long) As Long
@@ -59966,15 +59997,23 @@ Declare Function OpenClipboard Lib "User32" (ByVal hwnd As Long) As Long
 Declare Function EmptyClipboard Lib "User32" () As Long
 Declare Function lstrcpy Lib "kernel32" (ByVal lpString1 As Any, ByVal lpString2 As Any) As Long
 Declare Function SetClipboardData Lib "User32" (ByVal wFormat As Long, ByVal hMem As Long) As Long
+#End If
 
-Public Const GHND = &H42
+Private Const GMEM_MOVEABLE = &H2
+Private Const GMEM_ZEROINIT = &H40
+Private Const GHND = (GMEM_MOVEABLE Or GMEM_ZEROINIT)
+
 Public Const CF_TEXT = 1
 Public Const MAXSIZE = 4096
                     
 'Manda un string al portapapeles
 Function ClipBoard_SetData(MyString As String)
-    Dim hGlobalMemory As Long, lpGlobalMemory As Long
-    Dim hClipMemory As Long, X As Long
+    #If VBA7 Then
+    Dim hGlobalMemory As LongPtr, lpGlobalMemory As LongPtr, hClipMemory As LongPtr
+    #Else
+    Dim hGlobalMemory As Long, lpGlobalMemory As Long, hClipMemory As Long
+    #End If
+    Dim X As Long
     
     ' Allocate moveable global memory.
     '-------------------------------------------
@@ -60118,5 +60157,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 46 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 43 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
