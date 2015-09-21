@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 21/09/2015 10:53:51 a.m.
+Fecha y hora de generación: 21/09/2015 11:03:11 a.m.
 
 Resumen
 =======
@@ -56111,6 +56111,10 @@ Financiar\
 [C151] \TSURA3044386\
 [LogDeCierres]
 [C152] \TSURA3044386\
+[C156] \1\
+[C160] \2\
+[C164] \3\
+[C167] \4\
 [D3] \Mensaje\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
 [D5] \UltimaCelda en captura y tablacliente\
@@ -56131,11 +56135,11 @@ Financiar\
 [D22] \Alambra el dato de Comisión por Apertura en la macro que inicializa la captura. | f65c22a\
 [D23] \Agrega event handler para el combo de SELECCION_TIPO_CLIENTE y que se actualice la comisión por apertura en la captura. | ead0f69\
 [D24] \Cambia el event handler del combo de tipo cliente para que solo se dispare cuando se modifica la hoja donde está el combo, no en TODAS las hojas. | 77bdf89\
+[LogDeCierres]
 [D25] \Usa el Umbral Enganche del catálogo Tipo Cliente para determinar el Tipo de Tasa que se va a usar. | 19c7d32\
 [D26] \Agrega las Tasas de Interés al catálogo de C_TASAS_INTERES y agrega los cálculos necesarios en la hoja de Cálculos. Ajustes de apariencia en Captura. | f93451c\
 [D27] \Agrega macros para generar archivos extra. Agrega las entradas a la lista de archivos extra. Actualiza el LogDeCierres. Desactiva SetUpAdo() cuando se abre el libro si está en modo de mantenimiento. Interfería con el cierre de los libros y marcaba Out of Memory.\
 [D28] \[CIERRE 20140415_170536] Se registraron las tarifas del año 2013 y Cambio de Marca |Contraseña: A15304e14\
-[LogDeCierres]
 [D29] \[CIERRE 20140428_163356] Se cambio el mensaje del CAT al "12 de Marzo del 2013" |Contraseña: A28304e14\
 [D30] \[CIERRE 20140507_102725] Se agrego "Leyenda_Cobertura_Premium" |Contraseña: A07305e14\
 [D31] \Validación enganche por tipo cliente\
@@ -56157,11 +56161,11 @@ Financiar\
 [D47] \Se revisaron capturas\
 [D48] \Se agrego Modulo de Cierre\
 [D49] \Se actualizaron 5 unidades\
+[LogDeCierres]
 [D50] \Se agregaron 5 unidades: BMW X4, MACK QUINTA RUEDA, PEUGEOT 2008, RENAULT LOGAN, VW CADDY CARGO VAN\
 [D51] \Se agregaron 3 unidades: DFSK MINI TRUCK, BMW 435, LAND ROVER RANGE ROVER EVOQUE\
 [D52] \[CIERRE 20140918_165836] Se agregaron 4 unidades: Audi SQ5, Chrysler Ram 750 Cabina Sencilla y Ram 750 Club Cab,  Mercedes Benz A180. |Contraseña: A18309e14\
 [D53] \[CIERRE 20140925_105000] Se igualo Id con Id(Alias)  de la pestaña de C.Seminuevos, de acuerdo a observaciones que nos hizo la gente de producto. |Contraseña: A25309e14\
-[LogDeCierres]
 [D54] \Modifica las macros que corren al inicio que configuran la base de datos para que el mensaje de error muestre lo que ocurre cuando falla.\
 [D55] \[CIERRE 20140925_144739] Genera versión de cierre completa para diagnóstico de mensaje de error. |Contraseña: A25309e14\
 [D56] \Agrega un par de funciones nuevas para determinar la arquitectura de Windows y de Office.\
@@ -56191,11 +56195,11 @@ CambiaMarcaAIxe()\
 [D72] \[CIERRE 20141008_110622] Cierre completo con actualización a MCA v1.3 |Contraseña: A08310e14\
 [D73] \Se cambia la fecha en Captura para que tenga la fecha de hoy() por default.\
 [D74] \Se agrego 6 unidades: Chrysler, Ram 700 Club Cab y Ram 700 Cabina Sencilla, Freightliner M2 - 33K y M2 - 52K, Hyundai, Sonata, Mercedes Benz, GLA 45.\
+[LogDeCierres]
 [D75] \[CIERRE 20141107_130900] Tambien se igualo Id con Id(Alias)  en la pestaña de C.Seminuevos.  |Contraseña: A07311e14\
 [D76] \Se hizo el cambio de fechas cómo lo solicito producto.\
 [D77] \Se Capturaron 16 unidades en el catalogo de C. Auto, las cuales describo a continuacion: BMW 740, Chrysler Dodge y Vision Ram 4000 Chasis Cabina, Ford Lincoln MKC, Lobo Pick Up Platinum Doble Cab, Taurus, Hino 500 - 1724, Mack, International Durastar 4300, International Durastar 4400, Kenworth T-660 Aerocab, Kenworth T-800, Mitsubishi Mirage, Subaru Subaru Impreza WRX, VW, Jetta A6 Comfortline, Jetta A6 Sportline, Jetta A6 Trendline.\
 [D78] \[CIERRE 20150109_115832] Se actualizaron tarifas Autoestrene vehiculos usados 2011,2012,2013,2014 |Contraseña: A09301e15\
-[LogDeCierres]
 [D79] \Se cambia mensaje de leyenda de CAT Fijo para versión en pantalla.\
 [D80] \Se agrega en matriz la fecha de primer pago.\
 [D81] \[CIERRE 20150120_171727] Se corrigió marca y tipo de auto, de acuerdo a vehiculos de 3.5 toneladas con AMIS "TRA". |Contraseña: A20301e15\
@@ -56217,11 +56221,11 @@ CambiaMarcaAIxe()\
 [D97] \Se actualizaron las tarifas de seguros.\
 [D98] \Se actualizaron tarifas de seguros.\
 [D99] \Se corrigieron las tarifas de Valor Fatura 1 año.\
+[LogDeCierres]
 [D100] \S modificó condicionate de leyenda para qu no aparezca si es seminuevo.\
 [D101] \Se modifico el monto para calcular la tasa de 200,000 a 0\
 [D102] \En la hoja de calculos se cambió la formula de la variable "TasaCondicion2Nuevos" de "=MontoFinanciarTotal >= CONST_UMBRAL_MONTO" a "=PorcentajeEnganche>=CONST_UMBRAL_ENGANCHE"\
 [D103] \[CIERRE 20150312_181554] Se desbloqueo columna de Pagos Anticipados |Contraseña: A12303e15\
-[LogDeCierres]
 [D104] \Se Capturaron 12 unidades en el catalogo de C. Auto, las cuales describo a continuacion:  Audi RS7 y S7, BMW M3, CBO 8000, Ford F-150 Pick Up XL Super Cab, Freightliner Cascadia, GM 2500 High Country, Hino 500 - 1727, International 9200 y Workstar 7300-210, Mercedes Benz 250, Suzuki Ciaz\
 [D105] \En la Hoja de Captura se actualizaron los montos de las celdas D37 a D41, de acuerdo a la selección que se hace en el combo de Garantia extendida Financiada, esto derivado a que no estaba tomando en cuenta la garantia en la suma del pago total, por lo que a la formula en la hoja de calculos en el recuadro de PAGOS, en Pago del Crédito de Auto, en la formula al final se agrego un (-MontoGtiaExt ), para que me tome en cuenta los 6000 del combo Garantia Extendida. \
 [D106] \Se corrigen "leyendas" y "titulos" que hacen que no se vea bien el simulador, cómo puntos que sobran.\
@@ -56249,6 +56253,7 @@ Si es Reciente, realiza el cálculo para obtener el costo de la cobertura corresp
 [D122] \Se agregan unidades urgentes y se quita leyenda de "No Autorizado" en Marca de la Unidad HINO Mod 816.\
 [D123] \[CIERRE 20150521_153502] Se cierra para revisión de producto. |Contraseña: A21I05(15\
 [D124] \[CIERRE 20150528_185240] Se modifica el nombre del modelo Range Rover de la marca Land Rover por que tenia un espacio de más y por eso no se mostraban los datos correspondientes al momento de seleccionarlo. |Contraseña: A28I05(15\
+[LogDeCierres]
 [D125] \Se agrego la condicionante [If Not Worksheets(SHEET_CAPTURA).Range("SELECCION_TIPO_PERSONA") = "Moral" Then]
 en los subs
 MuestraValorGarantiaExtendida
@@ -56258,7 +56263,6 @@ MuestraGarantiaExtendida
 [D126] \Se dejo solo la condición del enganche en la hoja de calculos G142\
 [D127] \Se modifico la formula de la hoja C.Auto N5 de "   =SI(Y(ID_CONDICION_AUTO=1,O(ID_TIPO_PERSONA=1,ID_TIPO_PERSONA=2)),"10%","20%")  "   a esta formula "   =SI(Y(ID_CONDICION_AUTO=1,O(ID_TIPO_PERSONA=1,ID_TIPO_PERSONA=2)),0.1,0.2)   "    \
 [D128] \[CIERRE 20150603_185742] Se Capturaron 33 unidades en el catalogo de C. Auto, y se actualizo Id en C.Seminuevos, en archivo Altas1 Mayo2015, pueden revisar con exactitud las unidades que se dieron de alta.  |Contraseña: A03I06(15\
-[LogDeCierres]
 [D129] \[CIERRE 20150610_131516] Se actualizaron Leyendas del CAT al 01 de Abril 2015 Banorte e Ixe Nuevos y Smienuevos |Contraseña: A10I06(15\
 [D130] \Se pone condición para que en persona moral solo tome las tasas grandes.\
 [D131] \[CIERRE 20150611_120638] Se actualizaron Leyendas del CAT al 01 de Abril 2015 Recurrentes Banorte nuevo y seminuevos |Contraseña: A11I06(15\
@@ -56293,21 +56297,22 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D147] \Se prueba la versión cerrada original.\
 [D148] \Ajustes para cierre después de actualización xlsm.\
 [D149] \Se prueba cerrar con Variantes.\
+[LogDeCierres]
 [D150] \Éxito. Dejamos esta versión como definitiva.\
 [D151] \Elimina Nombres Definidos con errores de #REFerencia.\
 [D152] \Inicia cambios para cómputo con las nuevas reglas del CAT\
-[D153] \Escenario: Seguro Multianual Contado\
-[LogDeCierres]
-[D154] \CAT!C15 , Entradas , Seguro de Vida , de =PrimaVida * NOT(SeguroEsFinanciado?) a =PrimaVida. Siempre se cobra.\
-[D155] \CAT!C16 , Entradas , Seguro de Daños , de 0 fijo a =PrimaDaños. Siempre se cobra.\
-[D157] \Escenario: Seguro Multianual Financiado\
-[D158] \CAT!C9 , Salidas , Seguro de Daños , de 0 fijo a =MontoFinanciarSeguros - MontoFinanciarVida\
-[D159] \'Configuración de Tablas'!E27 , Tablas para CAT, T_VidaMulti, Monto.FInanciar, de =MontoFinanciarVida * SeguroEsMultianual? a =MontoFinanciarSeguros * SeguroEsMultianual?\
-[D161] \Escenario: Seguro Anual Contado\
-[D162] \'Configuración de Tablas'!K27, Tablas para CAT, T_RenovVidaAnual, Monto.Renovación, =( PrimaTotalSeguros - DañosValFac1erAño ) * SeguroEsAnual?\
-[D164] \Escenario: Seguro Anual Financiado\
-[D165] \'Configuración de Tablas'!H27, Tablas para CAT, T_VidaAnual, Monto.Financiar, =( MontoFinanciarSeguros - DañosValFac1erAño ) * SeguroEsAnual? * SeguroEsFinanciado?\
-[D166] \'Configuración de Tablas'!H36, Tablas para CAT, T_VidaAnual, Monto.Extra.Ciclo.1, = DañosValFac1erAño * SeguroEsAnual? * SeguroEsFinanciado?\
+[D154] \Resumen de Cambios *importantes*:\
+[D156] \Escenario: Seguro Multianual Contado\
+[D157] \CAT!C15 , Entradas , Seguro de Vida , de =PrimaVida * NOT(SeguroEsFinanciado?) a =PrimaVida. Siempre se cobra.\
+[D158] \CAT!C16 , Entradas , Seguro de Daños , de 0 fijo a =PrimaDaños. Siempre se cobra.\
+[D160] \Escenario: Seguro Multianual Financiado\
+[D161] \CAT!C9 , Salidas , Seguro de Daños , de 0 fijo a =MontoFinanciarSeguros - MontoFinanciarVida\
+[D162] \'Configuración de Tablas'!E27 , Tablas para CAT, T_VidaMulti, Monto.FInanciar, de =MontoFinanciarVida * SeguroEsMultianual? a =MontoFinanciarSeguros * SeguroEsMultianual?\
+[D164] \Escenario: Seguro Anual Contado\
+[D165] \'Configuración de Tablas'!K27, Tablas para CAT, T_RenovVidaAnual, Monto.Renovación, =( PrimaTotalSeguros - DañosValFac1erAño ) * SeguroEsAnual?\
+[D167] \Escenario: Seguro Anual Financiado\
+[D168] \'Configuración de Tablas'!H27, Tablas para CAT, T_VidaAnual, Monto.Financiar, =( MontoFinanciarSeguros - DañosValFac1erAño ) * SeguroEsAnual? * SeguroEsFinanciado?\
+[D169] \'Configuración de Tablas'!H36, Tablas para CAT, T_VidaAnual, Monto.Extra.Ciclo.1, = DañosValFac1erAño * SeguroEsAnual? * SeguroEsFinanciado?\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -60176,5 +60181,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 43 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 44 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
