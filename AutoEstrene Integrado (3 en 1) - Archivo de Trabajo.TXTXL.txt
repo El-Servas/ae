@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 21/09/2015 09:36:33 a.m.
+Fecha y hora de generación: 21/09/2015 09:59:53 a.m.
 
 Resumen
 =======
@@ -241,7 +241,7 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Comisión por apertura" Mensaje:"Importante: Recuerde que una Comisión por Apertura menor a la estipulada en la normatividad, requiere autorización especial." Estilo:Advertencia ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D16] (SELECCION_CALCULO_SEGURO) \Multianual Contado (24M)\
+[D16] (SELECCION_CALCULO_SEGURO) \Multianual Financiado (24M)\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_SEGURO)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Tipo de Seguro" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Tipo de Seguro" Mensaje:"Por favor elije el tipo de seguro" Estilo:Grave ] 
@@ -1547,11 +1547,11 @@ Contenido:
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \13413.47\
-[M18] \7523.44\
-[M19] \5573.53\
-[M20] \4608.54\
-[M21] \4063.43\
+[M17] \17886.54\
+[M18] \10058.63\
+[M19] \7497.94\
+[M20] \6265.91\
+[M21] \5611.17\
 
 [Fechas]
 [A2] \Fechas de pago y días de intereses (AutoEstrene Mensual)\
@@ -1936,7 +1936,7 @@ Contenido:
 [E20] \-\
 [E24] \Tipo de Tabla\
 [E25] \(Simple + CAT)\
-[E27] \=MontoFinanciarVida * SeguroEsMultianual?\
+[E27] \=MontoFinanciarSeguros * SeguroEsMultianual?\
 [E28] \30\
 [E29] \=PeriodosPorAño\
 [E30] \=NumeroDePagos\
@@ -13120,17 +13120,17 @@ Financiar\
 [B6] \Salidas (Disposiciones Aj)\
 [B7] \Monto del Crédito (Del Auto)\
 [B8] \Seguro de Vida Financiado\
-[B9] \Seguro de Daños (N/A)\
+[B9] \Seguro de Daños\
 [B11] \Total Salidas\
 [B13] \Entradas (Pagos Bk)\
 [B14] \Comisión Apertura (para CAT)\
 [B15] \Seguro De Vida Contado\
-[B16] \Seguro de Daños (N/A)\
+[B16] \Seguro de Daños\
 [B18] \Total Entradas\
 [B20] \Neto: \
 [C7] \=MontoFinanciarAuto\
 [C8] \=MontoFinanciarVida\
-[C9] \0\
+[C9] \=MontoFinanciarSeguros - MontoFinanciarVida\
 [C11] (CAT!Total.Egresos.CAT) \=SUM(C7:C10)\
 [C14] \=Total.Egresos.CAT * CapturaPorcentajeComisionApertura\
 [C15] \=PrimaVida\
@@ -56298,6 +56298,9 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [LogDeCierres]
 [D154] \CAT!C15 , Entradas , Seguro de Vida , de =PrimaVida * NOT(SeguroEsFinanciado?) a =PrimaVida. Siempre se cobra.\
 [D155] \CAT!C16 , Entradas , Seguro de Daños , de 0 fijo a =PrimaDaños. Siempre se cobra.\
+[D157] \Escenario: Seguro Multianual Financiado\
+[D158] \CAT!C9 , Salidas , Seguro de Daños , de 0 fijo a =MontoFinanciarSeguros - MontoFinanciarVida\
+[D159] \Configuración de Tablas'!E27 , Tablas para CAT, T_VidaMulti, Monto.FInanciar, de =MontoFinanciarVida * SeguroEsMultianual? a =MontoFinanciarSeguros * SeguroEsMultianual?\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56311,13 +56314,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!153:153
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!153:153
- [T_Merger!_Actual] =T_Merger!153:153
- [T_SeguroAnual!_Actual] =T_SeguroAnual!153:153
- [T_SoloAuto!_Actual] =T_SoloAuto!153:153
- [T_VidaAnual!_Actual] =T_VidaAnual!153:153
- [T_VidaMulti!_Actual] =T_VidaMulti!153:153
+ [CAT!_Actual] =CAT!159:159
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!159:159
+ [T_Merger!_Actual] =T_Merger!159:159
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!159:159
+ [T_SoloAuto!_Actual] =T_SoloAuto!159:159
+ [T_VidaAnual!_Actual] =T_VidaAnual!159:159
+ [T_VidaMulti!_Actual] =T_VidaMulti!159:159
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56326,13 +56329,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!152:152
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!152:152
- [T_Merger!_Anterior] =T_Merger!152:152
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!152:152
- [T_SoloAuto!_Anterior] =T_SoloAuto!152:152
- [T_VidaAnual!_Anterior] =T_VidaAnual!152:152
- [T_VidaMulti!_Anterior] =T_VidaMulti!152:152
+ [Fechas!_Anterior] =Fechas!158:158
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!158:158
+ [T_Merger!_Anterior] =T_Merger!158:158
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!158:158
+ [T_SoloAuto!_Anterior] =T_SoloAuto!158:158
+ [T_VidaAnual!_Anterior] =T_VidaAnual!158:158
+ [T_VidaMulti!_Anterior] =T_VidaMulti!158:158
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -60165,5 +60168,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 42 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 43 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
