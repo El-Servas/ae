@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 22/09/2015 03:33:28 p.m.
+Fecha y hora de generación: 22/09/2015 03:42:37 p.m.
 
 Resumen
 =======
@@ -2013,7 +2013,7 @@ Contenido:
 [B5] \Tipo de Tabla\
 [B6] \(ConPrepagos)\
 [B8] \= MontoFinanciarAuto + (MontoFinanciarSeguros * SeguroEsMultianual? )\
-[B9] \30\
+[B9] \=FREC.DiasPorPeriodo\
 [B10] \=PeriodosPorAño\
 [B11] \=NumeroDePagos\
 [B12] \=IvaParaIntereses\
@@ -2028,7 +2028,7 @@ Contenido:
 [B24] \Tipo de Tabla\
 [B25] \(Simple + CAT)\
 [B27] \=MontoFinanciarAuto\
-[B28] \30\
+[B28] \=FREC.DiasPorPeriodo\
 [Configuración de Tablas]
 [B29] \=PeriodosPorAño\
 [B30] \=NumeroDePagos\
@@ -2056,7 +2056,7 @@ Contenido:
 [E25] \(Simple + CAT)\
 [E27] \=MontoFinanciarSeguros * SeguroEsMultianual?\
 [Configuración de Tablas]
-[E28] \30\
+[E28] \=FREC.DiasPorPeriodo\
 [E29] \=PeriodosPorAño\
 [E30] \=NumeroDePagos\
 [E31] \=IvaParaIntereses\
@@ -2098,7 +2098,7 @@ Contenido:
 [H5] \Tipo de Tabla\
 [H6] \(ConPrepagos)\
 [H8] \=( MontoFinanciarSeguros - DañosValFac1erAño ) * SeguroEsAnual? * SeguroEsFinanciado?\
-[H9] \30\
+[H9] \=FREC.DiasPorPeriodo\
 [H10] \=PeriodosPorAño\
 [H11] \=NumeroDePagos\
 [H12] \=IvaParaIntereses\
@@ -2114,7 +2114,7 @@ Contenido:
 [H24] \Tipo de Tabla\
 [H25] \(Simple + CAT)\
 [H27] \=( MontoFinanciarSeguros - DañosValFac1erAño ) * SeguroEsAnual? * SeguroEsFinanciado?\
-[H28] \30\
+[H28] \=FREC.DiasPorPeriodo\
 [H29] \=PeriodosPorAño\
 [H30] \=NumeroDePagos\
 [H31] \=IvaParaIntereses\
@@ -2144,7 +2144,7 @@ Contenido:
 [J29] \Numero.De.Pagos\
 [K5] \Tipo de Tabla\
 [K6] \(Merger_EC)\
-[K8] \30\
+[K8] \=FREC.DiasPorPeriodo\
 [K9] \=PeriodosPorAño\
 [K10] \=NumeroDePagos\
 [K11] \=IvaParaIntereses\
@@ -56426,6 +56426,7 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D180] \Ajusta los Días CAT en la hoja Fechas, a que sean siempre los Días por Periodo de la Frecuencia, en lugar de fijo a 30.\
 [D181] \Inicia la refactorización del algoritmo Mensual en la hoja de Fechas para agregar los faltantes.\
 [D182] \Alambra las Fechas de Pago de la Tabla Cliente a la columna correspondiente de los Resultados de la hoja de Fechas.\
+[D183] \Cambia todas las referencias a los Días por Periodo en la hoja Configuración de Tablas, de constante 30 a =FREC.DiasPorPeriodo\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56439,13 +56440,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!182:182
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!182:182
- [T_Merger!_Actual] =T_Merger!182:182
- [T_SeguroAnual!_Actual] =T_SeguroAnual!182:182
- [T_SoloAuto!_Actual] =T_SoloAuto!182:182
- [T_VidaAnual!_Actual] =T_VidaAnual!182:182
- [T_VidaMulti!_Actual] =T_VidaMulti!182:182
+ [CAT!_Actual] =CAT!5:5
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!5:5
+ [T_Merger!_Actual] =T_Merger!5:5
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!5:5
+ [T_SoloAuto!_Actual] =T_SoloAuto!5:5
+ [T_VidaAnual!_Actual] =T_VidaAnual!5:5
+ [T_VidaMulti!_Actual] =T_VidaMulti!5:5
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56454,13 +56455,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!181:181
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!181:181
- [T_Merger!_Anterior] =T_Merger!181:181
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!181:181
- [T_SoloAuto!_Anterior] =T_SoloAuto!181:181
- [T_VidaAnual!_Anterior] =T_VidaAnual!181:181
- [T_VidaMulti!_Anterior] =T_VidaMulti!181:181
+ [Fechas!_Anterior] =Fechas!4:4
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!4:4
+ [T_Merger!_Anterior] =T_Merger!4:4
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!4:4
+ [T_SoloAuto!_Anterior] =T_SoloAuto!4:4
+ [T_VidaAnual!_Anterior] =T_VidaAnual!4:4
+ [T_VidaMulti!_Anterior] =T_VidaMulti!4:4
  [Fechas!_Búsqueda_Duración] =Fechas!$B$15
  [Fechas!_Búsqueda_Fechas_Pago] =Fechas!$B$14
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
@@ -60327,5 +60328,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 46 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
