@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 21/09/2015 11:03:11 a.m.
+Fecha y hora de generación: 22/09/2015 10:39:29 a.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 637
+ * Nombres Definidos: 648
 
  * Módulos de Visual Basic: 43
 
@@ -55620,22 +55620,80 @@ Financiar\
 [A3] \Descripción\
 [A4] (TipoClienteEstandar) \Nuevos\
 [A5] (TipoClienteRecurrente) \Recurrentes\
+[A7] \Producto\
+[A9] \Combo\
+[A11] \Producto\
+[A12] \AutoEstrene\
+[A13] \AutoNómina\
+[A15] \Selecciones\
+[A17] \Producto\
+[A18] \=SELECCION_PRODUCTO\
+[A20] \Tipo Tarifa\
+[A22] \Combo\
+[A24] \Tipo Tarifa\
+[A25] \Tradicional\
+[A26] \Recurrente/Preferente\
+[A28] \Selecciones\
+[A30] \Tipo Tarifa\
+[A31] \=SELECCION_TIPO_TARIFA\
 [B3] \Id\
 [B4] \1\
 [B5] \2\
+[B11] \Id\
+[B12] \1\
+[C.TipoCliente]
+[B13] \2\
+[B17] \Id\
+[B18] (PROD.Id) \=DGET(C_PRODUCTO,B17,$A$17:$A$18)\
+[B24] \Id\
+[B25] \1\
+[B26] \2\
+[B30] \Id\
+[B31] (TTAR.Id) \=DGET(C_TIPO_TARIFA,B30,$A$30:$A$31)\
 [C3] \ComisionApertura\
 [C4] \0.025\
 [C5] \0.01\
+[C11] \Código\
+[C12] \AET\
+[C13] \AEN\
+[C17] \Código\
+[C18] (PROD.Código) \=DGET(C_PRODUCTO,C17,$A$17:$A$18)\
+[C24] \Código\
+[C25] \T.T.TRAD\
+[C26] \T.T.PREF\
+[C30] \Código\
+[C31] (TTAR.Código) \=DGET(C_TIPO_TARIFA,C30,$A$30:$A$31)\
+[D2] \Aplica para Autos Nuevos\
 [D3] \UmbralEngancheTasaReducida\
 [D4] \0.3\
 [D5] \0.3\
+[C.TipoCliente]
+[D24] \Comisión por Apertura\
+[D25] \0.025\
+[D26] \0.01\
+[D30] \Comisión por Apertura\
+[D31] (TTAR.ComisiónApertura) \=DGET(C_TIPO_TARIFA,D30,$A$30:$A$31)\
 [E3] \OffsetEnTasa\
 [E4] \0\
 [E5] \4\
-[G2] \"Combo" escondido:\
+[G2] \Combos escondidos\
 [G3] \Tipo Cliente:\
+[G11] \Producto:\
+[G24] \Tipo Tarifa:\
 [H3] (SELECCION_TIPO_CLIENTE) \Nuevos\
  DataValidation: Lista. [Fuente:"=COMBO_TIPO_CLIENTE" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:True DatoActualEsVálido:True 
+
+[H11] (SELECCION_PRODUCTO) \AutoEstrene\
+ DataValidation: Lista. [Fuente:"=COMBO_PRODUCTO" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:True DatoActualEsVálido:True 
+
+[H24] (SELECCION_TIPO_TARIFA) \Tradicional\
+ DataValidation: Lista. [Fuente:"=COMBO_TIPO_TARIFA" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
@@ -55799,6 +55857,7 @@ Financiar\
 [A151] \18/09/2015\
 [LogDeCierres]
 [A152] \18/09/2015\
+[A171] \25/09/2015\
 [B3] \Usuario\
 [B4] \A0000885\
 [B5] \A0000885\
@@ -55822,8 +55881,8 @@ Financiar\
 [B23] \A3044386\
 [B24] \A3044386\
 [B25] \A3044386\
-[B26] \A3044386\
 [LogDeCierres]
+[B26] \A3044386\
 [B27] \a3044386\
 [B28] \A8002673\
 [B29] \A8002673\
@@ -55848,8 +55907,8 @@ Financiar\
 [B48] \a8002673\
 [B49] \HRIYL920\
 [B50] \a3505421\
-[B51] \a3505421\
 [LogDeCierres]
+[B51] \a3505421\
 [B52] \a3505421\
 [B53] \a3505421\
 [B54] \A3044386\
@@ -55874,8 +55933,8 @@ Financiar\
 [B73] \A8002673\
 [B74] \a3505421\
 [B75] \a3505421\
-[B76] \a8002673\
 [LogDeCierres]
+[B76] \a8002673\
 [B77] \a3505421\
 [B78] \a3505421\
 [B79] \a8002673\
@@ -55900,8 +55959,8 @@ Financiar\
 [B98] \A8002673\
 [B99] \A8002673\
 [B100] \HRIYL920\
-[B101] \HRIYL920\
 [LogDeCierres]
+[B101] \HRIYL920\
 [B102] \HRIYL920\
 [B103] \a3505421\
 [B104] \a3505421\
@@ -55926,8 +55985,8 @@ Financiar\
 [B123] \HRIYL920\
 [B124] \HRIYL920\
 [B125] \HRIYL920\
-[B126] \HRIYL920\
 [LogDeCierres]
+[B126] \HRIYL920\
 [B127] \HRIYL920\
 [B128] \a3505421\
 [B129] \a3505421\
@@ -55952,9 +56011,10 @@ Financiar\
 [B148] \A3044386\
 [B149] \A3044386\
 [B150] \A3044386\
-[B151] \A3044386\
 [LogDeCierres]
+[B151] \A3044386\
 [B152] \A3044386\
+[B171] \A3044386\
 [C3] \Equipo\
 [C4] \TSURA0000885P1\
 [C5] \TSURA0000885P1\
@@ -55977,9 +56037,9 @@ Financiar\
 [C22] \TSURA3044386\
 [C23] \TSURA3044386\
 [C24] \TSURA3044386\
+[LogDeCierres]
 [C25] \TSURA3044386\
 [C26] \TSURA3044386\
-[LogDeCierres]
 [C27] \TSURA3044386\
 [C28] \TSURA8002673P1\
 [C29] \TSURA8002673P1\
@@ -56003,9 +56063,9 @@ Financiar\
 [C47] \TSURA8002673P1\
 [C48] \TSURA8002673P1\
 [C49] \TSURHRIYL920P1\
+[LogDeCierres]
 [C50] \TSUR3505421P1\
 [C51] \TSUR3505421P1\
-[LogDeCierres]
 [C52] \TSUR3505421P1\
 [C53] \TSUR3505421P1\
 [C54] \TSURA3044386\
@@ -56029,9 +56089,9 @@ Financiar\
 [C72] \TSURA3044386\
 [C73] \TSURA8002673P1\
 [C74] \TSUR3505421P1\
+[LogDeCierres]
 [C75] \TSUR3505421P1\
 [C76] \TSURA8002673P1\
-[LogDeCierres]
 [C77] \TSUR3505421P1\
 [C78] \TSUR3505421P1\
 [C79] \TSURA8002673P1\
@@ -56055,9 +56115,9 @@ Financiar\
 [C97] \TSURA8002673X1\
 [C98] \TSURA8002673X1\
 [C99] \TSURA8002673X1\
+[LogDeCierres]
 [C100] \TSURHRIYL920P1\
 [C101] \TSURHRIYL920P1\
-[LogDeCierres]
 [C102] \TSURHRIYL920P1\
 [C103] \TSUR3505421P1\
 [C104] \TSUR3505421P1\
@@ -56081,9 +56141,9 @@ Financiar\
 [C122] \TSURHRIYL920P1\
 [C123] \TSURHRIYL920P1\
 [C124] \TSURHRIYL920P1\
+[LogDeCierres]
 [C125] \TSURHRIYL920P1\
 [C126] \TSURHRIYL920P1\
-[LogDeCierres]
 [C127] \TSURHRIYL920P1\
 [C128] \TSUR3505421P1\
 [C129] \TSUR3505421P1\
@@ -56107,14 +56167,15 @@ Financiar\
 [C147] \TSURA3044386\
 [C148] \TSURA3044386\
 [C149] \TSURA3044386\
+[LogDeCierres]
 [C150] \TSURA3044386\
 [C151] \TSURA3044386\
-[LogDeCierres]
 [C152] \TSURA3044386\
 [C156] \1\
 [C160] \2\
 [C164] \3\
 [C167] \4\
+[C171] \TSURA3044386\
 [D3] \Mensaje\
 [D4] \Se agrega el módulo de cierre y se cambia en hojas nteractivas cotización por captura\
 [D5] \UltimaCelda en captura y tablacliente\
@@ -56132,10 +56193,10 @@ Financiar\
 [D19] \Expande el rango de coberturas adicionales para que se muestren/escondan cuando se cambia la modalidad del auto en la hoja de captura. Agrega nombre Condición Tipo Auto 3.5T para reemplazar varias condiciones que preguntaban directamente el ID_TIPO_AUTO | 74b1445\
 [D20] \Adecuaciones en carátula. Rótulos, Nombres Definidos, Ajuste de macros. | dbd213c\
 [D21] \Agrega catálogo de Tipo Cliente con datos preliminares, combo de selección "escondido" (en la hoja del catálogo), NDs para soportar el nuevo catálogo, la selección , el ID, etc, y una función ayudante para los lookups. | aae5ca6\
+[LogDeCierres]
 [D22] \Alambra el dato de Comisión por Apertura en la macro que inicializa la captura. | f65c22a\
 [D23] \Agrega event handler para el combo de SELECCION_TIPO_CLIENTE y que se actualice la comisión por apertura en la captura. | ead0f69\
 [D24] \Cambia el event handler del combo de tipo cliente para que solo se dispare cuando se modifica la hoja donde está el combo, no en TODAS las hojas. | 77bdf89\
-[LogDeCierres]
 [D25] \Usa el Umbral Enganche del catálogo Tipo Cliente para determinar el Tipo de Tasa que se va a usar. | 19c7d32\
 [D26] \Agrega las Tasas de Interés al catálogo de C_TASAS_INTERES y agrega los cálculos necesarios en la hoja de Cálculos. Ajustes de apariencia en Captura. | f93451c\
 [D27] \Agrega macros para generar archivos extra. Agrega las entradas a la lista de archivos extra. Actualiza el LogDeCierres. Desactiva SetUpAdo() cuando se abre el libro si está en modo de mantenimiento. Interfería con el cierre de los libros y marcaba Out of Memory.\
@@ -56158,10 +56219,10 @@ Financiar\
 [D44] \Se agregaron cifras de control para revisar catalogos de estado.\
 [D45] \Se actualizaron 4 unidades\
 [D46] \Se actualizaron los ID 2\
+[LogDeCierres]
 [D47] \Se revisaron capturas\
 [D48] \Se agrego Modulo de Cierre\
 [D49] \Se actualizaron 5 unidades\
-[LogDeCierres]
 [D50] \Se agregaron 5 unidades: BMW X4, MACK QUINTA RUEDA, PEUGEOT 2008, RENAULT LOGAN, VW CADDY CARGO VAN\
 [D51] \Se agregaron 3 unidades: DFSK MINI TRUCK, BMW 435, LAND ROVER RANGE ROVER EVOQUE\
 [D52] \[CIERRE 20140918_165836] Se agregaron 4 unidades: Audi SQ5, Chrysler Ram 750 Cabina Sencilla y Ram 750 Club Cab,  Mercedes Benz A180. |Contraseña: A18309e14\
@@ -56192,10 +56253,10 @@ CambiaMarcaAIxe()\
 [D69] \[CIERRE 20141002_170237] Tambien se igualo Id con Id(Alias)  en la pestaña de C.Seminuevos. |Contraseña: A02310e14\
 [D70] \Actualiza MCA a v1.3, y deja las Opciones para Cerrar para Cierre Sencillo.\
 [D71] \Ajusta las columnas Id(Alias) de los catálogos de Autos Nuevos y Seminuevos para que sean fórmulas que apuntan a Id.\
+[LogDeCierres]
 [D72] \[CIERRE 20141008_110622] Cierre completo con actualización a MCA v1.3 |Contraseña: A08310e14\
 [D73] \Se cambia la fecha en Captura para que tenga la fecha de hoy() por default.\
 [D74] \Se agrego 6 unidades: Chrysler, Ram 700 Club Cab y Ram 700 Cabina Sencilla, Freightliner M2 - 33K y M2 - 52K, Hyundai, Sonata, Mercedes Benz, GLA 45.\
-[LogDeCierres]
 [D75] \[CIERRE 20141107_130900] Tambien se igualo Id con Id(Alias)  en la pestaña de C.Seminuevos.  |Contraseña: A07311e14\
 [D76] \Se hizo el cambio de fechas cómo lo solicito producto.\
 [D77] \Se Capturaron 16 unidades en el catalogo de C. Auto, las cuales describo a continuacion: BMW 740, Chrysler Dodge y Vision Ram 4000 Chasis Cabina, Ford Lincoln MKC, Lobo Pick Up Platinum Doble Cab, Taurus, Hino 500 - 1724, Mack, International Durastar 4300, International Durastar 4400, Kenworth T-660 Aerocab, Kenworth T-800, Mitsubishi Mirage, Subaru Subaru Impreza WRX, VW, Jetta A6 Comfortline, Jetta A6 Sportline, Jetta A6 Trendline.\
@@ -56218,10 +56279,10 @@ CambiaMarcaAIxe()\
 [D94] \Se amplió el rango de C_AutosSeminuevos para que seleccione todas las marcas\
 [D95] \Se revisa.\
 [D96] \Se "ocultaron" dos "Coberturas Adicionales" y ahora estarán seleccionadas por "Ley" dentro del seguro.\
+[LogDeCierres]
 [D97] \Se actualizaron las tarifas de seguros.\
 [D98] \Se actualizaron tarifas de seguros.\
 [D99] \Se corrigieron las tarifas de Valor Fatura 1 año.\
-[LogDeCierres]
 [D100] \S modificó condicionate de leyenda para qu no aparezca si es seminuevo.\
 [D101] \Se modifico el monto para calcular la tasa de 200,000 a 0\
 [D102] \En la hoja de calculos se cambió la formula de la variable "TasaCondicion2Nuevos" de "=MontoFinanciarTotal >= CONST_UMBRAL_MONTO" a "=PorcentajeEnganche>=CONST_UMBRAL_ENGANCHE"\
@@ -56250,10 +56311,10 @@ Si es Reciente, realiza el cálculo para obtener el costo de la cobertura corresp
 [D119] \[CIERRE 20150519_113347] Cierre para entrega a producto |Contraseña: A19I05(15\
 [D120] \Se agrega la siguiente formula en Variable Definida cómo CONST_AÑOS_PLAZOS_LIMITADOS =SI(ID_TIPO_PERSONA=3,3,4) | Hoja C.Comunes | Celda 52 | Para que no tome en cuante la Persona Moral para el año 2012.\
 [D121] \[CIERRE 20150521_140203] Se cierra para revisión de producto. |Contraseña: A21I05(15\
+[LogDeCierres]
 [D122] \Se agregan unidades urgentes y se quita leyenda de "No Autorizado" en Marca de la Unidad HINO Mod 816.\
 [D123] \[CIERRE 20150521_153502] Se cierra para revisión de producto. |Contraseña: A21I05(15\
 [D124] \[CIERRE 20150528_185240] Se modifica el nombre del modelo Range Rover de la marca Land Rover por que tenia un espacio de más y por eso no se mostraban los datos correspondientes al momento de seleccionarlo. |Contraseña: A28I05(15\
-[LogDeCierres]
 [D125] \Se agrego la condicionante [If Not Worksheets(SHEET_CAPTURA).Range("SELECCION_TIPO_PERSONA") = "Moral" Then]
 en los subs
 MuestraValorGarantiaExtendida
@@ -56294,10 +56355,10 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D144] \[VB] Apaga las constantes de impresión de mensajes de debug y de error, en las propiedades del proyecto de VB.\
 [D145] \Conversión a formato XLSM.\
 [D146] \Actualiza MCA a v1.4-Dev [ +12 673077e+ ], sin opción de generar ver. 2007 (xlsm)\
+[LogDeCierres]
 [D147] \Se prueba la versión cerrada original.\
 [D148] \Ajustes para cierre después de actualización xlsm.\
 [D149] \Se prueba cerrar con Variantes.\
-[LogDeCierres]
 [D150] \Éxito. Dejamos esta versión como definitiva.\
 [D151] \Elimina Nombres Definidos con errores de #REFerencia.\
 [D152] \Inicia cambios para cómputo con las nuevas reglas del CAT\
@@ -56313,6 +56374,9 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D167] \Escenario: Seguro Anual Financiado\
 [D168] \'Configuración de Tablas'!H27, Tablas para CAT, T_VidaAnual, Monto.Financiar, =( MontoFinanciarSeguros - DañosValFac1erAño ) * SeguroEsAnual? * SeguroEsFinanciado?\
 [D169] \'Configuración de Tablas'!H36, Tablas para CAT, T_VidaAnual, Monto.Extra.Ciclo.1, = DañosValFac1erAño * SeguroEsAnual? * SeguroEsFinanciado?\
+[D171] \Inicia cambios para agregar soporte para AutoNómina, Frecuencias, Fechas de Pago, Tasas, Etc.\
+[D172] \Agrega Catálogo, Combo de selección y resultados para Producto, en la hoja 'C.TipoCliente'\
+[D173] \Agrega Catálogo, Combo de selección y resultados para Tipo Tarifa, en la hoja 'C.TipoCliente'\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56535,6 +56599,7 @@ Nombres:
  [C_OPCION_ABONO_ANTICIPADO_DESC] =OFFSET(C_OPCION_ABONO_ANTICIPADO,0,1,,2)
  [C_PLAZO] ='C. Comunes'!$A$13:$F$21
  [C_PLAZO_DESC] =OFFSET(C_PLAZO,0,1,,2)
+ [C_PRODUCTO] =C.TipoCliente!$A$11:$C$13
  [C_SI_NO] ='C. Comunes'!$A$36:$D$38
  [C_SI_NO_DESC] =OFFSET(C_SI_NO,0,1,,2)
  [C_TARIFA_RC_EU] ='C. Seguros'!$A$4:$E$8
@@ -56543,6 +56608,7 @@ Nombres:
  [C_TIPO_CLIENTE] =C.TipoCliente!$A$3:$E$5
  [C_TIPO_PERSONA] ='C. Seguros'!$A$30:$E$33
  [C_TIPO_PERSONA_DESC] =OFFSET(C_TIPO_PERSONA,0,1,,2)
+ [C_TIPO_TARIFA] =C.TipoCliente!$A$24:$D$26
  [CA_Servicios!CA.ArchivosExtra] =CA_Servicios!$B$19
  [CA_Servicios!CA.Branding] =CA_Servicios!$C$5
  [CA_Consola!CA.Generar2007] =CA_Consola!$G$17
@@ -56597,6 +56663,7 @@ Nombres:
  [COMBO_PLAZO_SEMINUEVOS] ='C. Comunes'!$F$56:$F$59
  [COMBO_PLAZO_SEMINUEVOS_LIMITADO] ='C. Comunes'!$G$56:$G$58
  [Combo_Plazo_Seminuevos_PFyPFAC_Limitado_] ='C. Comunes'!$I$56:$I$58
+ [COMBO_PRODUCTO] =C.TipoCliente!$A$12:$A$13
  [COMBO_SEGURO_NUEVOS] ='C. Seguros'!$H$39:$H$48
  [COMBO_SEGURO_SEMINUEVOS] ='C. Seguros'!$I$39:$I$40
  [COMBO_SeminuevosAnteriores] =C.Seminuevos!$B$10:$B$2020
@@ -56605,6 +56672,7 @@ Nombres:
  [COMBO_SOLO_Noaplica] ='C. Comunes'!$B$32
  [COMBO_TIPO_CLIENTE] =C.TipoCliente!$A$4:$A$5
  [COMBO_TIPO_PERSONA] ='C. Seguros'!$B$31:$B$33
+ [COMBO_TIPO_TARIFA] =C.TipoCliente!$A$25:$A$26
  [T_AutoYSeguroMulti!Componentes.Pago.Fijo] =T_AutoYSeguroMulti!$F$22:$F$23
  [T_SeguroAnual!Componentes.Pago.Fijo] =T_SeguroAnual!$F$22:$F$23
  [T_SoloAuto!Componentes.Pago.Fijo] =T_SoloAuto!$F$22:$F$23
@@ -56836,6 +56904,8 @@ Nombres:
  ['C. Estados'!Print_Area] ='C. Estados'!$A$1:$I$36
  [Captura!Print_Area] =Captura!$B$2:$D$55
  [TablaCliente!Print_Area] =TablaCliente!$A$6:$I$85
+ [PROD.Código] =C.TipoCliente!$C$18
+ [PROD.Id] =C.TipoCliente!$B$18
  [Prueba16] =Fechas!$E$16
  [Prueba3] =Fechas!$F$16
  [QUERY_AUTOS] =C.Seminuevos!$O$7
@@ -56890,9 +56960,11 @@ Nombres:
  [SELECCION_MARCA] =Captura!$D$11
  [SELECCION_MODELO] =Captura!$D$10
  [SELECCION_PLAZO] =TablaCliente!$C$13
+ [SELECCION_PRODUCTO] =C.TipoCliente!$H$11
  [SELECCION_SERVICIO_PREMIUM] =Captura!$D$23
  [SELECCION_TIPO_CLIENTE] =C.TipoCliente!$H$3
  [SELECCION_TIPO_PERSONA] =Captura!$D$7
+ [SELECCION_TIPO_TARIFA] =C.TipoCliente!$H$24
  [T_AutoYSeguroMulti!Tabla.Ciclica.Anual?] =T_AutoYSeguroMulti!$C$35
  [T_SeguroAnual!Tabla.Ciclica.Anual?] =T_SeguroAnual!$C$35
  [T_SoloAuto!Tabla.Ciclica.Anual?] =T_SoloAuto!$C$31
@@ -56940,6 +57012,9 @@ Nombres:
  [CAT!Total.Egresos.CAT] =CAT!$C$11
  [CAT!Total.Flujo.Cero.CAT] =CAT!$C$20
  [CAT!Total.Ingresos.CAT] =CAT!$C$18
+ [TTAR.Código] =C.TipoCliente!$C$31
+ [TTAR.ComisiónApertura] =C.TipoCliente!$D$31
+ [TTAR.Id] =C.TipoCliente!$B$31
  [Captura!UltimaCelda] =Captura!$E$202
  [TablaCliente!UltimaCelda] =TablaCliente!$J$86
  [Valor_Factura_Mínimo] =Captura!$J$6
@@ -60181,5 +60256,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 44 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
