@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 22/09/2015 01:18:37 p.m.
+Fecha y hora de generación: 22/09/2015 01:35:17 p.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 43
 
- * Líneas de código VB: 3007
+ * Líneas de código VB: 3011
 
 Detalle
 =======
@@ -223,7 +223,7 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"Por favor elije el tipo del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D13] (CapturaPorcentajeEnganche) \0.25\
+[D13] (CapturaPorcentajeEnganche) \0.35\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"=PorcentajeMinimoEnganche" Formula2:"=PorcentajeMaximoEnganche" ]
  Mensaje=[Mostrar:True Titulo:"Enganche" Mensaje:"Enganche menor al 10% en Autos Nuevos requiere Autorización Especial./Enganche menor al 25% en Autos Seminuevos requiere Autorización Especial." ] 
  Advertencia=[Mostrar:False Titulo:"Enganche" Mensaje:"Un enganche menor requiere autorización especial./Recuerda que el monto mínimo a financiar es de $25,000.00" Estilo:Información. ] 
@@ -1497,11 +1497,11 @@ Contenido:
 [K20] \48\
 [K21] \60\
 [L16] \Tasa\
-[L17] \0.129\
-[L18] \0.129\
-[L19] \0.129\
-[L20] \0.129\
-[L21] \0.129\
+[L17] \0.1199\
+[L18] \0.1199\
+[L19] \0.1199\
+[L20] \0.1199\
+[L21] \0.125\
 [M5] \Usando Macros\
 [M7] \=MontoEnganche\
 [M8] \=MontoSeguroDeContado\
@@ -1512,11 +1512,11 @@ Contenido:
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \17774.61\
-[M18] \9524.4\
-[M19] \6793.14\
-[M20] \5441.47\
-[M21] \4641.48\
+[M17] \15441.95\
+[M18] \8235.75\
+[M19] \5847.9\
+[M20] \4664.54\
+[M21] \4013.77\
 
 [Fechas]
 [A2] \Fechas de pago y días de intereses (AutoEstrene Mensual)\
@@ -56268,6 +56268,7 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D174] \Refactoriza la obtención de la Tasa de Interés Anual. Aun no la alambra.\
 [D175] \Agrega Catálogo de Condición Auto y Tipo Tarifa, en donde se define el Porcentaje Mínimo de Enganche.\
 [D176] \Alambra los Catálogos nuevos, adecúa la hoja de Cálculos para obtener la Tasa de Interés de la nueva forma.\
+[D177] \Ajusta la macro que coordina el cálculo de la tabla de plazos, tasas y pagos para que tome en cuenta la nueva forma de calcular la tasa de interés. Tiene que recalcular la hoja de cálculos y en medio la de Tasas.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56281,13 +56282,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!1:1
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!1:1
- [T_Merger!_Actual] =T_Merger!1:1
- [T_SeguroAnual!_Actual] =T_SeguroAnual!1:1
- [T_SoloAuto!_Actual] =T_SoloAuto!1:1
- [T_VidaAnual!_Actual] =T_VidaAnual!1:1
- [T_VidaMulti!_Actual] =T_VidaMulti!1:1
+ [CAT!_Actual] =CAT!178:178
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!178:178
+ [T_Merger!_Actual] =T_Merger!178:178
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!178:178
+ [T_SoloAuto!_Actual] =T_SoloAuto!178:178
+ [T_VidaAnual!_Actual] =T_VidaAnual!178:178
+ [T_VidaMulti!_Actual] =T_VidaMulti!178:178
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56296,13 +56297,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!1048576:1048576
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!1048576:1048576
- [T_Merger!_Anterior] =T_Merger!1048576:1048576
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!1048576:1048576
- [T_SoloAuto!_Anterior] =T_SoloAuto!1048576:1048576
- [T_VidaAnual!_Anterior] =T_VidaAnual!1048576:1048576
- [T_VidaMulti!_Anterior] =T_VidaMulti!1048576:1048576
+ [Fechas!_Anterior] =Fechas!177:177
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!177:177
+ [T_Merger!_Anterior] =T_Merger!177:177
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!177:177
+ [T_SoloAuto!_Anterior] =T_SoloAuto!177:177
+ [T_VidaAnual!_Anterior] =T_VidaAnual!177:177
+ [T_VidaMulti!_Anterior] =T_VidaMulti!177:177
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -57925,7 +57926,7 @@ Sub Valida_ValorGarantíaExtendida()
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 227 líneas de código.
+[EventHandlers] 231 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -58101,7 +58102,11 @@ On Error Resume Next
 On Error GoTo ErrHan
     BackupScreenUpdating = Application.ScreenUpdating: Application.ScreenUpdating = False
     
-    If Application.Calculation <> xlCalculationAutomatic Then Worksheets(SHEET_CALCULOS).Calculate
+    If Application.Calculation <> xlCalculationAutomatic Then
+        Worksheets(SHEET_CALCULOS).Calculate 'Se calcula la primera parte...
+        Worksheets("C. Tasas").Calculate 'Luego las Tasas...
+        Worksheets(SHEET_CALCULOS).Calculate ' Por último lo que resta.
+    End If
     
     If Not SkipTableAdjusting Then
         Tools.AjustaFilasTablaPagos Worksheets(SHEET_TABLA_CLIENTE).Range(RANGO_AMORTIZACIONES_TABLA_CLIENTE), _
@@ -60154,5 +60159,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 46 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
