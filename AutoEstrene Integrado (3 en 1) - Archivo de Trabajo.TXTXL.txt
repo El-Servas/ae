@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 22/09/2015 02:13:39 p.m.
+Fecha y hora de generación: 22/09/2015 03:33:28 p.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 655
+ * Nombres Definidos: 668
 
  * Módulos de Visual Basic: 43
 
@@ -175,7 +175,7 @@ Contenido:
 [Captura]
 [C39] \=IF(Calculos!L20="","",Calculos!L20)\
 [C40] \=IF(Calculos!L21="","",Calculos!L21)\
-[D5] (CapturaFechaCotizacion) \29/06/2015\
+[D5] (CapturaFechaCotizacion) \26/06/2015\
  DataValidation: Fecha. [Operador:"Mayor que" Formula1:"01/01/2013" ]
  Mensaje=[Mostrar:True Titulo:"Fecha" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Fecha" Mensaje:"Por favor ingresa una fecha valida" Estilo:Grave ] 
@@ -438,69 +438,69 @@ Contenido:
 [A81] \Nota: La presente información es únicamente para efectos ilustrativos, no representa ningún ofrecimiento formal por parte de Grupo Financiero Banorte. El CAT es para fines informativos y de comparación exclusivamente.\
 [A83] \=IF(ID_CALCULO_SEGURO>5,"",IF(ID_CALCULO_SEGURO=1,Leyenda_seguro_anual_tabla_amortizacion&Leyenda_coberturas_adicionales_tabla_de_amortizacion))\
 [B19] \Fecha\
-[B20] \=Fechas!B20\
-[B21] \=Fechas!B21\
+[B20] \=INDEX(Fechas_Pago,$A20)\
+[B21] \=INDEX(Fechas_Pago,$A21)\
 [TablaCliente]
-[B22] \=Fechas!B22\
-[B23] \=Fechas!B23\
-[B24] \=Fechas!B24\
-[B25] \=Fechas!B25\
-[B26] \=Fechas!B26\
-[B27] \=Fechas!B27\
-[B28] \=Fechas!B28\
-[B29] \=Fechas!B29\
-[B30] \=Fechas!B30\
-[B31] \=Fechas!B31\
-[B32] \=Fechas!B32\
-[B33] \=Fechas!B33\
-[B34] \=Fechas!B34\
-[B35] \=Fechas!B35\
-[B36] \=Fechas!B36\
-[B37] \=Fechas!B37\
-[B38] \=Fechas!B38\
-[B39] \=Fechas!B39\
-[B40] \=Fechas!B40\
-[B41] \=Fechas!B41\
-[B42] \=Fechas!B42\
-[B43] \=Fechas!B43\
-[B44] \=Fechas!B44\
-[B45] \=Fechas!B45\
-[B46] \=Fechas!B46\
+[B22] \=INDEX(Fechas_Pago,$A22)\
+[B23] \=INDEX(Fechas_Pago,$A23)\
+[B24] \=INDEX(Fechas_Pago,$A24)\
+[B25] \=INDEX(Fechas_Pago,$A25)\
+[B26] \=INDEX(Fechas_Pago,$A26)\
+[B27] \=INDEX(Fechas_Pago,$A27)\
+[B28] \=INDEX(Fechas_Pago,$A28)\
+[B29] \=INDEX(Fechas_Pago,$A29)\
+[B30] \=INDEX(Fechas_Pago,$A30)\
+[B31] \=INDEX(Fechas_Pago,$A31)\
+[B32] \=INDEX(Fechas_Pago,$A32)\
+[B33] \=INDEX(Fechas_Pago,$A33)\
+[B34] \=INDEX(Fechas_Pago,$A34)\
+[B35] \=INDEX(Fechas_Pago,$A35)\
+[B36] \=INDEX(Fechas_Pago,$A36)\
+[B37] \=INDEX(Fechas_Pago,$A37)\
+[B38] \=INDEX(Fechas_Pago,$A38)\
+[B39] \=INDEX(Fechas_Pago,$A39)\
+[B40] \=INDEX(Fechas_Pago,$A40)\
+[B41] \=INDEX(Fechas_Pago,$A41)\
+[B42] \=INDEX(Fechas_Pago,$A42)\
+[B43] \=INDEX(Fechas_Pago,$A43)\
+[B44] \=INDEX(Fechas_Pago,$A44)\
+[B45] \=INDEX(Fechas_Pago,$A45)\
+[B46] \=INDEX(Fechas_Pago,$A46)\
 [TablaCliente]
-[B47] \=Fechas!B47\
-[B48] \=Fechas!B48\
-[B49] \=Fechas!B49\
-[B50] \=Fechas!B50\
-[B51] \=Fechas!B51\
-[B52] \=Fechas!B52\
-[B53] \=Fechas!B53\
-[B54] \=Fechas!B54\
-[B55] \=Fechas!B55\
-[B56] \=Fechas!B56\
-[B57] \=Fechas!B57\
-[B58] \=Fechas!B58\
-[B59] \=Fechas!B59\
-[B60] \=Fechas!B60\
-[B61] \=Fechas!B61\
-[B62] \=Fechas!B62\
-[B63] \=Fechas!B63\
-[B64] \=Fechas!B64\
-[B65] \=Fechas!B65\
-[B66] \=Fechas!B66\
-[B67] \=Fechas!B67\
-[B68] \=Fechas!B68\
-[B69] \=Fechas!B69\
-[B70] \=Fechas!B70\
-[B71] \=Fechas!B71\
+[B47] \=INDEX(Fechas_Pago,$A47)\
+[B48] \=INDEX(Fechas_Pago,$A48)\
+[B49] \=INDEX(Fechas_Pago,$A49)\
+[B50] \=INDEX(Fechas_Pago,$A50)\
+[B51] \=INDEX(Fechas_Pago,$A51)\
+[B52] \=INDEX(Fechas_Pago,$A52)\
+[B53] \=INDEX(Fechas_Pago,$A53)\
+[B54] \=INDEX(Fechas_Pago,$A54)\
+[B55] \=INDEX(Fechas_Pago,$A55)\
+[B56] \=INDEX(Fechas_Pago,$A56)\
+[B57] \=INDEX(Fechas_Pago,$A57)\
+[B58] \=INDEX(Fechas_Pago,$A58)\
+[B59] \=INDEX(Fechas_Pago,$A59)\
+[B60] \=INDEX(Fechas_Pago,$A60)\
+[B61] \=INDEX(Fechas_Pago,$A61)\
+[B62] \=INDEX(Fechas_Pago,$A62)\
+[B63] \=INDEX(Fechas_Pago,$A63)\
+[B64] \=INDEX(Fechas_Pago,$A64)\
+[B65] \=INDEX(Fechas_Pago,$A65)\
+[B66] \=INDEX(Fechas_Pago,$A66)\
+[B67] \=INDEX(Fechas_Pago,$A67)\
+[B68] \=INDEX(Fechas_Pago,$A68)\
+[B69] \=INDEX(Fechas_Pago,$A69)\
+[B70] \=INDEX(Fechas_Pago,$A70)\
+[B71] \=INDEX(Fechas_Pago,$A71)\
 [TablaCliente]
-[B72] \=Fechas!B72\
-[B73] \=Fechas!B73\
-[B74] \=Fechas!B74\
-[B75] \=Fechas!B75\
-[B76] \=Fechas!B76\
-[B77] \=Fechas!B77\
-[B78] \=Fechas!B78\
-[B79] \=Fechas!B79\
+[B72] \=INDEX(Fechas_Pago,$A72)\
+[B73] \=INDEX(Fechas_Pago,$A73)\
+[B74] \=INDEX(Fechas_Pago,$A74)\
+[B75] \=INDEX(Fechas_Pago,$A75)\
+[B76] \=INDEX(Fechas_Pago,$A76)\
+[B77] \=INDEX(Fechas_Pago,$A77)\
+[B78] \=INDEX(Fechas_Pago,$A78)\
+[B79] \=INDEX(Fechas_Pago,$A79)\
 [C9] \=ValorFactura\
 [C10] \=MontoEnganche\
 [C11] \=MontoFinanciarAuto\
@@ -1528,38 +1528,50 @@ Contenido:
 [O15] \=CondicionAuto_Descripcion\
 [O20] \Tipo Tarifa\
 [O21] \=TTAR.Código\
+[O23] \Descripción\
+[O24] \=SELECCION_FRECUENCIA\
 [P5] \Código\
 [P6] (PROD.Código) \=DGET(C_PRODUCTO,P5,$O$5:$O$6)\
 [P8] \Código\
 [P9] (TTAR.Código) \=DGET(C_TIPO_TARIFA,P8,$O$8:$O$9)\
+[Calculos]
 [P11] \Tipo Tarifa\
 [P12] \=TTAR.Código\
-[Calculos]
 [P14] \Enganche Requerido\
 [P15] (TR.EngancheRequerido) \=DGET(C_TASA_REDUCIDA,P14,$O$14:$O$15)\
 [P17] \Tasa Reducida?\
 [P18] (Tasa_Reducida?) \=PorcentajeEnganche >= TR.EngancheRequerido\
 [P20] \Condición Auto\
 [P21] \=CondicionAuto_Descripcion\
+[P23] \DiasPorPeriodo\
+[P24] (FREC.DiasPorPeriodo) \=DGET(C_FRECUENCIA,P23,$O$23:$O$24)\
 [Q8] \Comisión por Apertura\
 [Q9] (TTAR.ComisiónApertura) \=DGET(C_TIPO_TARIFA,Q8,$O$8:$O$9)\
 [Q11] \Porc. Min. Eng\
 [Q12] (C.Porcentaje_Mínimo_Enganche) \=DGET(C_CONDICION_AUTO_TIPO_TARIFA,Q11,$O$11:$P$12)\
 [Q20] \Plazo Normalizado\
 [Q21] \=IF(PlazoEnMeses>=60,60,"Hasta 48")\
+[Q23] \PeriodosPorAño\
+[Q24] (FREC.PeriodosPorAño) \=DGET(C_FRECUENCIA,Q23,$O$23:$O$24)\
 [R20] \Tasa Reducida\
 [R21] \=Tasa_Reducida?\
 [S20] \Tasa de Interés Anual\
 [S21] (TIA.Tasa_Interés_Anual) \=DGET(C_TASA_INTERES_ANUAL,S20,$O$20:$R$21)\
 
 [Fechas]
-[A2] \Fechas de pago y días de intereses (AutoEstrene Mensual)\
-[A13] \CONST_DIA_CORTE_ANIVERSARIO\
-[A14] \CONST_DIAS_BASE_INTERES\
-[A15] \CONST_DIAS_LIMITE\
-[A17] \Fecha de la cotización:\
-[A18] \LEYENDA_DIAS_INTERESES_PRIMER_PAGO\
-[A19] \Pago No.\
+[A1] \Fechas de pago y días de intereses\
+[A3] \Parámetros\
+[A4] \Fecha Cotización\
+[A5] \Producto\
+[A6] \Frecuencia\
+[A8] \Constantes\
+[A9] \Etiqueta Fechas Pago\
+[A10] \Etiqueta Duración\
+[A12] \Cálculos\
+[A13] \Día Cotización\
+[A14] \Búsqueda Fechas Pago\
+[A15] \Búsqueda Duración \
+[A19] \Pago\
 [A20] \1\
 [A21] \2\
 [A22] \3\
@@ -1572,13 +1584,13 @@ Contenido:
 [A29] \10\
 [A30] \11\
 [A31] \12\
+[Fechas]
 [A32] \13\
 [A33] \14\
 [A34] \15\
 [A35] \16\
 [A36] \17\
 [A37] \18\
-[Fechas]
 [A38] \19\
 [A39] \20\
 [A40] \21\
@@ -1598,13 +1610,13 @@ Contenido:
 [A54] \35\
 [A55] \36\
 [A56] \37\
+[Fechas]
 [A57] \38\
 [A58] \39\
 [A59] \40\
 [A60] \41\
 [A61] \42\
 [A62] \43\
-[Fechas]
 [A63] \44\
 [A64] \45\
 [A65] \46\
@@ -1622,209 +1634,348 @@ Contenido:
 [A77] \58\
 [A78] \59\
 [A79] \60\
-[B13] (Fechas!Const_Dia_Corte_Aniversario) \25\
-[B14] (Fechas!CONST_DIAS_BASE_INTERES) \30\
-[B15] (Fechas!CONST_DIAS_LIMITE) \31\
-[B17] \=CapturaFechaCotizacion\
-[B18] (LEYENDA_DIAS_INTERESES_PRIMER_PAGO) \=IF(Días_de_interés_para_Pago>30,"El monto de su primer pago será mayor que el resto, ya que incluye más días de interés.","")\
-[B19] \=B17\
-[B20] \=IF(DIA_COTIZACIÓN<Prueba16,EOMONTH(B17,0)+Prueba3,EOMONTH(B17,0)+Prueba16)\
-[B21] \=IF(DAY(B20)>=Const_Dia_Corte_Aniversario,FinMesPropia(B20,1)+1,FinMesPropia(B20,0)+DAY(B20))\
+[B4] (Fechas!_Fecha_Cotización) \=CapturaFechaCotizacion\
+[B5] (Fechas!_Producto) \=PROD.Código\
 [Fechas]
-[B22] \=IF(DAY(B21)>=Const_Dia_Corte_Aniversario,FinMesPropia(B21,1)+1,FinMesPropia(B21,0)+DAY(B21))\
-[B23] \=IF(DAY(B22)>=Const_Dia_Corte_Aniversario,FinMesPropia(B22,1)+1,FinMesPropia(B22,0)+DAY(B22))\
-[B24] \=IF(DAY(B23)>=Const_Dia_Corte_Aniversario,FinMesPropia(B23,1)+1,FinMesPropia(B23,0)+DAY(B23))\
-[B25] \=IF(DAY(B24)>=Const_Dia_Corte_Aniversario,FinMesPropia(B24,1)+1,FinMesPropia(B24,0)+DAY(B24))\
-[B26] \=IF(DAY(B25)>=Const_Dia_Corte_Aniversario,FinMesPropia(B25,1)+1,FinMesPropia(B25,0)+DAY(B25))\
-[B27] \=IF(DAY(B26)>=Const_Dia_Corte_Aniversario,FinMesPropia(B26,1)+1,FinMesPropia(B26,0)+DAY(B26))\
-[B28] \=IF(DAY(B27)>=Const_Dia_Corte_Aniversario,FinMesPropia(B27,1)+1,FinMesPropia(B27,0)+DAY(B27))\
-[B29] \=IF(DAY(B28)>=Const_Dia_Corte_Aniversario,FinMesPropia(B28,1)+1,FinMesPropia(B28,0)+DAY(B28))\
-[B30] \=IF(DAY(B29)>=Const_Dia_Corte_Aniversario,FinMesPropia(B29,1)+1,FinMesPropia(B29,0)+DAY(B29))\
-[B31] \=IF(DAY(B30)>=Const_Dia_Corte_Aniversario,FinMesPropia(B30,1)+1,FinMesPropia(B30,0)+DAY(B30))\
-[B32] \=IF(DAY(B31)>=Const_Dia_Corte_Aniversario,FinMesPropia(B31,1)+1,FinMesPropia(B31,0)+DAY(B31))\
-[B33] \=IF(DAY(B32)>=Const_Dia_Corte_Aniversario,FinMesPropia(B32,1)+1,FinMesPropia(B32,0)+DAY(B32))\
-[B34] \=IF(DAY(B33)>=Const_Dia_Corte_Aniversario,FinMesPropia(B33,1)+1,FinMesPropia(B33,0)+DAY(B33))\
-[B35] \=IF(DAY(B34)>=Const_Dia_Corte_Aniversario,FinMesPropia(B34,1)+1,FinMesPropia(B34,0)+DAY(B34))\
-[B36] \=IF(DAY(B35)>=Const_Dia_Corte_Aniversario,FinMesPropia(B35,1)+1,FinMesPropia(B35,0)+DAY(B35))\
-[B37] \=IF(DAY(B36)>=Const_Dia_Corte_Aniversario,FinMesPropia(B36,1)+1,FinMesPropia(B36,0)+DAY(B36))\
-[B38] \=IF(DAY(B37)>=Const_Dia_Corte_Aniversario,FinMesPropia(B37,1)+1,FinMesPropia(B37,0)+DAY(B37))\
-[B39] \=IF(DAY(B38)>=Const_Dia_Corte_Aniversario,FinMesPropia(B38,1)+1,FinMesPropia(B38,0)+DAY(B38))\
-[B40] \=IF(DAY(B39)>=Const_Dia_Corte_Aniversario,FinMesPropia(B39,1)+1,FinMesPropia(B39,0)+DAY(B39))\
-[B41] \=IF(DAY(B40)>=Const_Dia_Corte_Aniversario,FinMesPropia(B40,1)+1,FinMesPropia(B40,0)+DAY(B40))\
-[B42] \=IF(DAY(B41)>=Const_Dia_Corte_Aniversario,FinMesPropia(B41,1)+1,FinMesPropia(B41,0)+DAY(B41))\
-[B43] \=IF(DAY(B42)>=Const_Dia_Corte_Aniversario,FinMesPropia(B42,1)+1,FinMesPropia(B42,0)+DAY(B42))\
-[B44] \=IF(DAY(B43)>=Const_Dia_Corte_Aniversario,FinMesPropia(B43,1)+1,FinMesPropia(B43,0)+DAY(B43))\
-[B45] \=IF(DAY(B44)>=Const_Dia_Corte_Aniversario,FinMesPropia(B44,1)+1,FinMesPropia(B44,0)+DAY(B44))\
-[B46] \=IF(DAY(B45)>=Const_Dia_Corte_Aniversario,FinMesPropia(B45,1)+1,FinMesPropia(B45,0)+DAY(B45))\
+[B6] (Fechas!_Frecuencia) \=SELECCION_FRECUENCIA\
+[B9] (Fechas!_Etiqueta_Fechas_Pago) \Fechas Pago\
+[B10] (Fechas!_Etiqueta_Duración_Intereses) \Duración Intereses\
+[B13] (Fechas!_Día_Cotización) \=DAY(_Fecha_Cotización)\
+[B14] (Fechas!_Búsqueda_Fechas_Pago) \=CONCATENATE(_Etiqueta_Fechas_Pago, " ", _Frecuencia, " ", _Producto)\
+[B15] (Fechas!_Búsqueda_Duración) \=CONCATENATE(_Etiqueta_Duración_Intereses, " ", _Frecuencia, " ", _Producto)\
+[D15] \Resultados\
+[D17] \L. 1er Pago Mayor\
+[D19] \Duración CAT\
+[D20] \=FREC.DiasPorPeriodo\
+[D21] \=FREC.DiasPorPeriodo\
+[D22] \=FREC.DiasPorPeriodo\
+[D23] \=FREC.DiasPorPeriodo\
+[D24] \=FREC.DiasPorPeriodo\
+[D25] \=FREC.DiasPorPeriodo\
+[D26] \=FREC.DiasPorPeriodo\
+[D27] \=FREC.DiasPorPeriodo\
+[D28] \=FREC.DiasPorPeriodo\
+[D29] \=FREC.DiasPorPeriodo\
+[D30] \=FREC.DiasPorPeriodo\
+[D31] \=FREC.DiasPorPeriodo\
+[D32] \=FREC.DiasPorPeriodo\
+[D33] \=FREC.DiasPorPeriodo\
+[D34] \=FREC.DiasPorPeriodo\
+[D35] \=FREC.DiasPorPeriodo\
 [Fechas]
-[B47] \=IF(DAY(B46)>=Const_Dia_Corte_Aniversario,FinMesPropia(B46,1)+1,FinMesPropia(B46,0)+DAY(B46))\
-[B48] \=IF(DAY(B47)>=Const_Dia_Corte_Aniversario,FinMesPropia(B47,1)+1,FinMesPropia(B47,0)+DAY(B47))\
-[B49] \=IF(DAY(B48)>=Const_Dia_Corte_Aniversario,FinMesPropia(B48,1)+1,FinMesPropia(B48,0)+DAY(B48))\
-[B50] \=IF(DAY(B49)>=Const_Dia_Corte_Aniversario,FinMesPropia(B49,1)+1,FinMesPropia(B49,0)+DAY(B49))\
-[B51] \=IF(DAY(B50)>=Const_Dia_Corte_Aniversario,FinMesPropia(B50,1)+1,FinMesPropia(B50,0)+DAY(B50))\
-[B52] \=IF(DAY(B51)>=Const_Dia_Corte_Aniversario,FinMesPropia(B51,1)+1,FinMesPropia(B51,0)+DAY(B51))\
-[B53] \=IF(DAY(B52)>=Const_Dia_Corte_Aniversario,FinMesPropia(B52,1)+1,FinMesPropia(B52,0)+DAY(B52))\
-[B54] \=IF(DAY(B53)>=Const_Dia_Corte_Aniversario,FinMesPropia(B53,1)+1,FinMesPropia(B53,0)+DAY(B53))\
-[B55] \=IF(DAY(B54)>=Const_Dia_Corte_Aniversario,FinMesPropia(B54,1)+1,FinMesPropia(B54,0)+DAY(B54))\
-[B56] \=IF(DAY(B55)>=Const_Dia_Corte_Aniversario,FinMesPropia(B55,1)+1,FinMesPropia(B55,0)+DAY(B55))\
-[B57] \=IF(DAY(B56)>=Const_Dia_Corte_Aniversario,FinMesPropia(B56,1)+1,FinMesPropia(B56,0)+DAY(B56))\
-[B58] \=IF(DAY(B57)>=Const_Dia_Corte_Aniversario,FinMesPropia(B57,1)+1,FinMesPropia(B57,0)+DAY(B57))\
-[B59] \=IF(DAY(B58)>=Const_Dia_Corte_Aniversario,FinMesPropia(B58,1)+1,FinMesPropia(B58,0)+DAY(B58))\
-[B60] \=IF(DAY(B59)>=Const_Dia_Corte_Aniversario,FinMesPropia(B59,1)+1,FinMesPropia(B59,0)+DAY(B59))\
-[B61] \=IF(DAY(B60)>=Const_Dia_Corte_Aniversario,FinMesPropia(B60,1)+1,FinMesPropia(B60,0)+DAY(B60))\
-[B62] \=IF(DAY(B61)>=Const_Dia_Corte_Aniversario,FinMesPropia(B61,1)+1,FinMesPropia(B61,0)+DAY(B61))\
-[B63] \=IF(DAY(B62)>=Const_Dia_Corte_Aniversario,FinMesPropia(B62,1)+1,FinMesPropia(B62,0)+DAY(B62))\
-[B64] \=IF(DAY(B63)>=Const_Dia_Corte_Aniversario,FinMesPropia(B63,1)+1,FinMesPropia(B63,0)+DAY(B63))\
-[B65] \=IF(DAY(B64)>=Const_Dia_Corte_Aniversario,FinMesPropia(B64,1)+1,FinMesPropia(B64,0)+DAY(B64))\
-[B66] \=IF(DAY(B65)>=Const_Dia_Corte_Aniversario,FinMesPropia(B65,1)+1,FinMesPropia(B65,0)+DAY(B65))\
-[B67] \=IF(DAY(B66)>=Const_Dia_Corte_Aniversario,FinMesPropia(B66,1)+1,FinMesPropia(B66,0)+DAY(B66))\
-[B68] \=IF(DAY(B67)>=Const_Dia_Corte_Aniversario,FinMesPropia(B67,1)+1,FinMesPropia(B67,0)+DAY(B67))\
-[B69] \=IF(DAY(B68)>=Const_Dia_Corte_Aniversario,FinMesPropia(B68,1)+1,FinMesPropia(B68,0)+DAY(B68))\
-[B70] \=IF(DAY(B69)>=Const_Dia_Corte_Aniversario,FinMesPropia(B69,1)+1,FinMesPropia(B69,0)+DAY(B69))\
-[B71] \=IF(DAY(B70)>=Const_Dia_Corte_Aniversario,FinMesPropia(B70,1)+1,FinMesPropia(B70,0)+DAY(B70))\
+[D36] \=FREC.DiasPorPeriodo\
+[D37] \=FREC.DiasPorPeriodo\
+[D38] \=FREC.DiasPorPeriodo\
+[D39] \=FREC.DiasPorPeriodo\
+[D40] \=FREC.DiasPorPeriodo\
+[D41] \=FREC.DiasPorPeriodo\
+[D42] \=FREC.DiasPorPeriodo\
+[D43] \=FREC.DiasPorPeriodo\
+[D44] \=FREC.DiasPorPeriodo\
+[D45] \=FREC.DiasPorPeriodo\
+[D46] \=FREC.DiasPorPeriodo\
+[D47] \=FREC.DiasPorPeriodo\
+[D48] \=FREC.DiasPorPeriodo\
+[D49] \=FREC.DiasPorPeriodo\
+[D50] \=FREC.DiasPorPeriodo\
+[D51] \=FREC.DiasPorPeriodo\
+[D52] \=FREC.DiasPorPeriodo\
+[D53] \=FREC.DiasPorPeriodo\
+[D54] \=FREC.DiasPorPeriodo\
+[D55] \=FREC.DiasPorPeriodo\
+[D56] \=FREC.DiasPorPeriodo\
+[D57] \=FREC.DiasPorPeriodo\
+[D58] \=FREC.DiasPorPeriodo\
+[D59] \=FREC.DiasPorPeriodo\
+[D60] \=FREC.DiasPorPeriodo\
 [Fechas]
-[B72] \=IF(DAY(B71)>=Const_Dia_Corte_Aniversario,FinMesPropia(B71,1)+1,FinMesPropia(B71,0)+DAY(B71))\
-[B73] \=IF(DAY(B72)>=Const_Dia_Corte_Aniversario,FinMesPropia(B72,1)+1,FinMesPropia(B72,0)+DAY(B72))\
-[B74] \=IF(DAY(B73)>=Const_Dia_Corte_Aniversario,FinMesPropia(B73,1)+1,FinMesPropia(B73,0)+DAY(B73))\
-[B75] \=IF(DAY(B74)>=Const_Dia_Corte_Aniversario,FinMesPropia(B74,1)+1,FinMesPropia(B74,0)+DAY(B74))\
-[B76] \=IF(DAY(B75)>=Const_Dia_Corte_Aniversario,FinMesPropia(B75,1)+1,FinMesPropia(B75,0)+DAY(B75))\
-[B77] \=IF(DAY(B76)>=Const_Dia_Corte_Aniversario,FinMesPropia(B76,1)+1,FinMesPropia(B76,0)+DAY(B76))\
-[B78] \=IF(DAY(B77)>=Const_Dia_Corte_Aniversario,FinMesPropia(B77,1)+1,FinMesPropia(B77,0)+DAY(B77))\
-[B79] \=IF(DAY(B78)>=Const_Dia_Corte_Aniversario,FinMesPropia(B78,1)+1,FinMesPropia(B78,0)+DAY(B78))\
-[C17] (DIA_COTIZACIÓN) \=DAY(B17)\
-[C19] \Días de interés para Pago\
-[C20] (Días_de_interés_para_Pago) \=B20-B17\
-[C21] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C22] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C23] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C24] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C25] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C26] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C27] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C28] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C29] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C30] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C31] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C32] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C33] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C34] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[D61] \=FREC.DiasPorPeriodo\
+[D62] \=FREC.DiasPorPeriodo\
+[D63] \=FREC.DiasPorPeriodo\
+[D64] \=FREC.DiasPorPeriodo\
+[D65] \=FREC.DiasPorPeriodo\
+[D66] \=FREC.DiasPorPeriodo\
+[D67] \=FREC.DiasPorPeriodo\
+[D68] \=FREC.DiasPorPeriodo\
+[D69] \=FREC.DiasPorPeriodo\
+[D70] \=FREC.DiasPorPeriodo\
+[D71] \=FREC.DiasPorPeriodo\
+[D72] \=FREC.DiasPorPeriodo\
+[D73] \=FREC.DiasPorPeriodo\
+[D74] \=FREC.DiasPorPeriodo\
+[D75] \=FREC.DiasPorPeriodo\
+[D76] \=FREC.DiasPorPeriodo\
+[D77] \=FREC.DiasPorPeriodo\
+[D78] \=FREC.DiasPorPeriodo\
+[D79] \=FREC.DiasPorPeriodo\
+[E17] (LEYENDA_DIAS_INTERESES_PRIMER_PAGO) \=IF(Días_de_interés_para_Pago>FREC.DiasPorPeriodo,"El monto de su primer pago será mayor que el resto, ya que incluye más días de interés.","")\
+[E19] \=_Etiqueta_Fechas_Pago\
+[E20] \=INDEX(_Datos 20:20,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E21] \=INDEX(_Datos 21:21,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E22] \=INDEX(_Datos 22:22,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E23] \=INDEX(_Datos 23:23,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [Fechas]
-[C35] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C36] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C37] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C38] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C39] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C40] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C41] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C42] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C43] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C44] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C45] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C46] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C47] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C48] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C49] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C50] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C51] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C52] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C53] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C54] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C55] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C56] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C57] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C58] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C59] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[E24] \=INDEX(_Datos 24:24,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E25] \=INDEX(_Datos 25:25,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E26] \=INDEX(_Datos 26:26,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E27] \=INDEX(_Datos 27:27,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E28] \=INDEX(_Datos 28:28,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E29] \=INDEX(_Datos 29:29,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E30] \=INDEX(_Datos 30:30,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E31] \=INDEX(_Datos 31:31,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E32] \=INDEX(_Datos 32:32,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E33] \=INDEX(_Datos 33:33,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E34] \=INDEX(_Datos 34:34,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E35] \=INDEX(_Datos 35:35,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E36] \=INDEX(_Datos 36:36,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E37] \=INDEX(_Datos 37:37,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E38] \=INDEX(_Datos 38:38,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E39] \=INDEX(_Datos 39:39,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E40] \=INDEX(_Datos 40:40,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E41] \=INDEX(_Datos 41:41,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E42] \=INDEX(_Datos 42:42,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E43] \=INDEX(_Datos 43:43,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E44] \=INDEX(_Datos 44:44,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E45] \=INDEX(_Datos 45:45,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E46] \=INDEX(_Datos 46:46,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E47] \=INDEX(_Datos 47:47,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E48] \=INDEX(_Datos 48:48,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [Fechas]
-[C60] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C61] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C62] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C63] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C64] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C65] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C66] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C67] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C68] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C69] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C70] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C71] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C72] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C73] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C74] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C75] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C76] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C77] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C78] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[C79] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[D19] \Dias Interés para CAT\
-[D20] \=CONST_DIAS_BASE_INTERES\
-[D21] \=CONST_DIAS_BASE_INTERES\
-[D22] \=CONST_DIAS_BASE_INTERES\
-[D23] \=CONST_DIAS_BASE_INTERES\
+[E49] \=INDEX(_Datos 49:49,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E50] \=INDEX(_Datos 50:50,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E51] \=INDEX(_Datos 51:51,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E52] \=INDEX(_Datos 52:52,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E53] \=INDEX(_Datos 53:53,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E54] \=INDEX(_Datos 54:54,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E55] \=INDEX(_Datos 55:55,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E56] \=INDEX(_Datos 56:56,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E57] \=INDEX(_Datos 57:57,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E58] \=INDEX(_Datos 58:58,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E59] \=INDEX(_Datos 59:59,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E60] \=INDEX(_Datos 60:60,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E61] \=INDEX(_Datos 61:61,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E62] \=INDEX(_Datos 62:62,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E63] \=INDEX(_Datos 63:63,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E64] \=INDEX(_Datos 64:64,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E65] \=INDEX(_Datos 65:65,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E66] \=INDEX(_Datos 66:66,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E67] \=INDEX(_Datos 67:67,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E68] \=INDEX(_Datos 68:68,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E69] \=INDEX(_Datos 69:69,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E70] \=INDEX(_Datos 70:70,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E71] \=INDEX(_Datos 71:71,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E72] \=INDEX(_Datos 72:72,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E73] \=INDEX(_Datos 73:73,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [Fechas]
-[D24] \=CONST_DIAS_BASE_INTERES\
-[D25] \=CONST_DIAS_BASE_INTERES\
-[D26] \=CONST_DIAS_BASE_INTERES\
-[D27] \=CONST_DIAS_BASE_INTERES\
-[D28] \=CONST_DIAS_BASE_INTERES\
-[D29] \=CONST_DIAS_BASE_INTERES\
-[D30] \=CONST_DIAS_BASE_INTERES\
-[D31] \=CONST_DIAS_BASE_INTERES\
-[D32] \=CONST_DIAS_BASE_INTERES\
-[D33] \=CONST_DIAS_BASE_INTERES\
-[D34] \=CONST_DIAS_BASE_INTERES\
-[D35] \=CONST_DIAS_BASE_INTERES\
-[D36] \=CONST_DIAS_BASE_INTERES\
-[D37] \=CONST_DIAS_BASE_INTERES\
-[D38] \=CONST_DIAS_BASE_INTERES\
-[D39] \=CONST_DIAS_BASE_INTERES\
-[D40] \=CONST_DIAS_BASE_INTERES\
-[D41] \=CONST_DIAS_BASE_INTERES\
-[D42] \=CONST_DIAS_BASE_INTERES\
-[D43] \=CONST_DIAS_BASE_INTERES\
-[D44] \=CONST_DIAS_BASE_INTERES\
-[D45] \=CONST_DIAS_BASE_INTERES\
-[D46] \=CONST_DIAS_BASE_INTERES\
-[D47] \=CONST_DIAS_BASE_INTERES\
-[D48] \=CONST_DIAS_BASE_INTERES\
+[E74] \=INDEX(_Datos 74:74,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E75] \=INDEX(_Datos 75:75,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E76] \=INDEX(_Datos 76:76,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E77] \=INDEX(_Datos 77:77,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E78] \=INDEX(_Datos 78:78,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[E79] \=INDEX(_Datos 79:79,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[F19] \=_Etiqueta_Duración_Intereses\
+[F20] \=INDEX(_Datos 20:20,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F21] \=INDEX(_Datos 21:21,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F22] \=INDEX(_Datos 22:22,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F23] \=INDEX(_Datos 23:23,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F24] \=INDEX(_Datos 24:24,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F25] \=INDEX(_Datos 25:25,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F26] \=INDEX(_Datos 26:26,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F27] \=INDEX(_Datos 27:27,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F28] \=INDEX(_Datos 28:28,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F29] \=INDEX(_Datos 29:29,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F30] \=INDEX(_Datos 30:30,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F31] \=INDEX(_Datos 31:31,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F32] \=INDEX(_Datos 32:32,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F33] \=INDEX(_Datos 33:33,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F34] \=INDEX(_Datos 34:34,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F35] \=INDEX(_Datos 35:35,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F36] \=INDEX(_Datos 36:36,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F37] \=INDEX(_Datos 37:37,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [Fechas]
-[D49] \=CONST_DIAS_BASE_INTERES\
-[D50] \=CONST_DIAS_BASE_INTERES\
-[D51] \=CONST_DIAS_BASE_INTERES\
-[D52] \=CONST_DIAS_BASE_INTERES\
-[D53] \=CONST_DIAS_BASE_INTERES\
-[D54] \=CONST_DIAS_BASE_INTERES\
-[D55] \=CONST_DIAS_BASE_INTERES\
-[D56] \=CONST_DIAS_BASE_INTERES\
-[D57] \=CONST_DIAS_BASE_INTERES\
-[D58] \=CONST_DIAS_BASE_INTERES\
-[D59] \=CONST_DIAS_BASE_INTERES\
-[D60] \=CONST_DIAS_BASE_INTERES\
-[D61] \=CONST_DIAS_BASE_INTERES\
-[D62] \=CONST_DIAS_BASE_INTERES\
-[D63] \=CONST_DIAS_BASE_INTERES\
-[D64] \=CONST_DIAS_BASE_INTERES\
-[D65] \=CONST_DIAS_BASE_INTERES\
-[D66] \=CONST_DIAS_BASE_INTERES\
-[D67] \=CONST_DIAS_BASE_INTERES\
-[D68] \=CONST_DIAS_BASE_INTERES\
-[D69] \=CONST_DIAS_BASE_INTERES\
-[D70] \=CONST_DIAS_BASE_INTERES\
-[D71] \=CONST_DIAS_BASE_INTERES\
-[D72] \=CONST_DIAS_BASE_INTERES\
-[D73] \=CONST_DIAS_BASE_INTERES\
+[F38] \=INDEX(_Datos 38:38,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F39] \=INDEX(_Datos 39:39,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F40] \=INDEX(_Datos 40:40,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F41] \=INDEX(_Datos 41:41,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F42] \=INDEX(_Datos 42:42,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F43] \=INDEX(_Datos 43:43,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F44] \=INDEX(_Datos 44:44,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F45] \=INDEX(_Datos 45:45,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F46] \=INDEX(_Datos 46:46,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F47] \=INDEX(_Datos 47:47,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F48] \=INDEX(_Datos 48:48,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F49] \=INDEX(_Datos 49:49,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F50] \=INDEX(_Datos 50:50,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F51] \=INDEX(_Datos 51:51,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F52] \=INDEX(_Datos 52:52,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F53] \=INDEX(_Datos 53:53,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F54] \=INDEX(_Datos 54:54,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F55] \=INDEX(_Datos 55:55,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F56] \=INDEX(_Datos 56:56,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F57] \=INDEX(_Datos 57:57,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F58] \=INDEX(_Datos 58:58,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F59] \=INDEX(_Datos 59:59,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F60] \=INDEX(_Datos 60:60,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F61] \=INDEX(_Datos 61:61,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F62] \=INDEX(_Datos 62:62,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [Fechas]
-[D74] \=CONST_DIAS_BASE_INTERES\
-[D75] \=CONST_DIAS_BASE_INTERES\
-[D76] \=CONST_DIAS_BASE_INTERES\
-[D77] \=CONST_DIAS_BASE_INTERES\
-[D78] \=CONST_DIAS_BASE_INTERES\
-[D79] \=CONST_DIAS_BASE_INTERES\
-[E15] \Prueba 16\
-[E16] (Prueba16) \16\
-[F15] \Prueba 3\
-[F16] (Prueba3) \3\
-[K19] \Antes "B19"\
-[K20] \=IF(DAY(B17)>=Const_Dia_Corte_Aniversario,FinMesPropia(B17,1)+1,FinMesPropia(B17,0)+DAY(B17))\
+[F63] \=INDEX(_Datos 63:63,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F64] \=INDEX(_Datos 64:64,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F65] \=INDEX(_Datos 65:65,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F66] \=INDEX(_Datos 66:66,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F67] \=INDEX(_Datos 67:67,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F68] \=INDEX(_Datos 68:68,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F69] \=INDEX(_Datos 69:69,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F70] \=INDEX(_Datos 70:70,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F71] \=INDEX(_Datos 71:71,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F72] \=INDEX(_Datos 72:72,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F73] \=INDEX(_Datos 73:73,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F74] \=INDEX(_Datos 74:74,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F75] \=INDEX(_Datos 75:75,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F76] \=INDEX(_Datos 76:76,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F77] \=INDEX(_Datos 77:77,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F78] \=INDEX(_Datos 78:78,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[F79] \=INDEX(_Datos 79:79,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[H3] \Cálculos para Frecuencias Individuales\
+[H8] \Constantes Mensual AET\
+[H9] \DIA_CORTE_ANIVERSARIO\
+[H10] \DIAS_BASE_INTERES\
+[H11] \DIAS_LIMITE\
+[H12] \CORTE_1\
+[H13] \CORTE_2\
+[H19] \Fechas Pago Mensual AET\
+[Fechas]
+[H20] \=IF(DIA_COTIZACIÓN<CONST_CORTE_2,EOMONTH(B4,0)+CONST_CORTE_1,EOMONTH(B4,0)+CONST_CORTE_2)\
+[H21] \=IF(DAY(H20)>=Const_Dia_Corte_Aniversario,FinMesPropia(H20,1)+1,FinMesPropia(H20,0)+DAY(H20))\
+[H22] \=IF(DAY(H21)>=Const_Dia_Corte_Aniversario,FinMesPropia(H21,1)+1,FinMesPropia(H21,0)+DAY(H21))\
+[H23] \=IF(DAY(H22)>=Const_Dia_Corte_Aniversario,FinMesPropia(H22,1)+1,FinMesPropia(H22,0)+DAY(H22))\
+[H24] \=IF(DAY(H23)>=Const_Dia_Corte_Aniversario,FinMesPropia(H23,1)+1,FinMesPropia(H23,0)+DAY(H23))\
+[H25] \=IF(DAY(H24)>=Const_Dia_Corte_Aniversario,FinMesPropia(H24,1)+1,FinMesPropia(H24,0)+DAY(H24))\
+[H26] \=IF(DAY(H25)>=Const_Dia_Corte_Aniversario,FinMesPropia(H25,1)+1,FinMesPropia(H25,0)+DAY(H25))\
+[H27] \=IF(DAY(H26)>=Const_Dia_Corte_Aniversario,FinMesPropia(H26,1)+1,FinMesPropia(H26,0)+DAY(H26))\
+[H28] \=IF(DAY(H27)>=Const_Dia_Corte_Aniversario,FinMesPropia(H27,1)+1,FinMesPropia(H27,0)+DAY(H27))\
+[H29] \=IF(DAY(H28)>=Const_Dia_Corte_Aniversario,FinMesPropia(H28,1)+1,FinMesPropia(H28,0)+DAY(H28))\
+[H30] \=IF(DAY(H29)>=Const_Dia_Corte_Aniversario,FinMesPropia(H29,1)+1,FinMesPropia(H29,0)+DAY(H29))\
+[H31] \=IF(DAY(H30)>=Const_Dia_Corte_Aniversario,FinMesPropia(H30,1)+1,FinMesPropia(H30,0)+DAY(H30))\
+[H32] \=IF(DAY(H31)>=Const_Dia_Corte_Aniversario,FinMesPropia(H31,1)+1,FinMesPropia(H31,0)+DAY(H31))\
+[H33] \=IF(DAY(H32)>=Const_Dia_Corte_Aniversario,FinMesPropia(H32,1)+1,FinMesPropia(H32,0)+DAY(H32))\
+[H34] \=IF(DAY(H33)>=Const_Dia_Corte_Aniversario,FinMesPropia(H33,1)+1,FinMesPropia(H33,0)+DAY(H33))\
+[H35] \=IF(DAY(H34)>=Const_Dia_Corte_Aniversario,FinMesPropia(H34,1)+1,FinMesPropia(H34,0)+DAY(H34))\
+[H36] \=IF(DAY(H35)>=Const_Dia_Corte_Aniversario,FinMesPropia(H35,1)+1,FinMesPropia(H35,0)+DAY(H35))\
+[H37] \=IF(DAY(H36)>=Const_Dia_Corte_Aniversario,FinMesPropia(H36,1)+1,FinMesPropia(H36,0)+DAY(H36))\
+[H38] \=IF(DAY(H37)>=Const_Dia_Corte_Aniversario,FinMesPropia(H37,1)+1,FinMesPropia(H37,0)+DAY(H37))\
+[H39] \=IF(DAY(H38)>=Const_Dia_Corte_Aniversario,FinMesPropia(H38,1)+1,FinMesPropia(H38,0)+DAY(H38))\
+[H40] \=IF(DAY(H39)>=Const_Dia_Corte_Aniversario,FinMesPropia(H39,1)+1,FinMesPropia(H39,0)+DAY(H39))\
+[H41] \=IF(DAY(H40)>=Const_Dia_Corte_Aniversario,FinMesPropia(H40,1)+1,FinMesPropia(H40,0)+DAY(H40))\
+[H42] \=IF(DAY(H41)>=Const_Dia_Corte_Aniversario,FinMesPropia(H41,1)+1,FinMesPropia(H41,0)+DAY(H41))\
+[H43] \=IF(DAY(H42)>=Const_Dia_Corte_Aniversario,FinMesPropia(H42,1)+1,FinMesPropia(H42,0)+DAY(H42))\
+[H44] \=IF(DAY(H43)>=Const_Dia_Corte_Aniversario,FinMesPropia(H43,1)+1,FinMesPropia(H43,0)+DAY(H43))\
+[Fechas]
+[H45] \=IF(DAY(H44)>=Const_Dia_Corte_Aniversario,FinMesPropia(H44,1)+1,FinMesPropia(H44,0)+DAY(H44))\
+[H46] \=IF(DAY(H45)>=Const_Dia_Corte_Aniversario,FinMesPropia(H45,1)+1,FinMesPropia(H45,0)+DAY(H45))\
+[H47] \=IF(DAY(H46)>=Const_Dia_Corte_Aniversario,FinMesPropia(H46,1)+1,FinMesPropia(H46,0)+DAY(H46))\
+[H48] \=IF(DAY(H47)>=Const_Dia_Corte_Aniversario,FinMesPropia(H47,1)+1,FinMesPropia(H47,0)+DAY(H47))\
+[H49] \=IF(DAY(H48)>=Const_Dia_Corte_Aniversario,FinMesPropia(H48,1)+1,FinMesPropia(H48,0)+DAY(H48))\
+[H50] \=IF(DAY(H49)>=Const_Dia_Corte_Aniversario,FinMesPropia(H49,1)+1,FinMesPropia(H49,0)+DAY(H49))\
+[H51] \=IF(DAY(H50)>=Const_Dia_Corte_Aniversario,FinMesPropia(H50,1)+1,FinMesPropia(H50,0)+DAY(H50))\
+[H52] \=IF(DAY(H51)>=Const_Dia_Corte_Aniversario,FinMesPropia(H51,1)+1,FinMesPropia(H51,0)+DAY(H51))\
+[H53] \=IF(DAY(H52)>=Const_Dia_Corte_Aniversario,FinMesPropia(H52,1)+1,FinMesPropia(H52,0)+DAY(H52))\
+[H54] \=IF(DAY(H53)>=Const_Dia_Corte_Aniversario,FinMesPropia(H53,1)+1,FinMesPropia(H53,0)+DAY(H53))\
+[H55] \=IF(DAY(H54)>=Const_Dia_Corte_Aniversario,FinMesPropia(H54,1)+1,FinMesPropia(H54,0)+DAY(H54))\
+[H56] \=IF(DAY(H55)>=Const_Dia_Corte_Aniversario,FinMesPropia(H55,1)+1,FinMesPropia(H55,0)+DAY(H55))\
+[H57] \=IF(DAY(H56)>=Const_Dia_Corte_Aniversario,FinMesPropia(H56,1)+1,FinMesPropia(H56,0)+DAY(H56))\
+[H58] \=IF(DAY(H57)>=Const_Dia_Corte_Aniversario,FinMesPropia(H57,1)+1,FinMesPropia(H57,0)+DAY(H57))\
+[H59] \=IF(DAY(H58)>=Const_Dia_Corte_Aniversario,FinMesPropia(H58,1)+1,FinMesPropia(H58,0)+DAY(H58))\
+[H60] \=IF(DAY(H59)>=Const_Dia_Corte_Aniversario,FinMesPropia(H59,1)+1,FinMesPropia(H59,0)+DAY(H59))\
+[H61] \=IF(DAY(H60)>=Const_Dia_Corte_Aniversario,FinMesPropia(H60,1)+1,FinMesPropia(H60,0)+DAY(H60))\
+[H62] \=IF(DAY(H61)>=Const_Dia_Corte_Aniversario,FinMesPropia(H61,1)+1,FinMesPropia(H61,0)+DAY(H61))\
+[H63] \=IF(DAY(H62)>=Const_Dia_Corte_Aniversario,FinMesPropia(H62,1)+1,FinMesPropia(H62,0)+DAY(H62))\
+[H64] \=IF(DAY(H63)>=Const_Dia_Corte_Aniversario,FinMesPropia(H63,1)+1,FinMesPropia(H63,0)+DAY(H63))\
+[H65] \=IF(DAY(H64)>=Const_Dia_Corte_Aniversario,FinMesPropia(H64,1)+1,FinMesPropia(H64,0)+DAY(H64))\
+[H66] \=IF(DAY(H65)>=Const_Dia_Corte_Aniversario,FinMesPropia(H65,1)+1,FinMesPropia(H65,0)+DAY(H65))\
+[H67] \=IF(DAY(H66)>=Const_Dia_Corte_Aniversario,FinMesPropia(H66,1)+1,FinMesPropia(H66,0)+DAY(H66))\
+[H68] \=IF(DAY(H67)>=Const_Dia_Corte_Aniversario,FinMesPropia(H67,1)+1,FinMesPropia(H67,0)+DAY(H67))\
+[H69] \=IF(DAY(H68)>=Const_Dia_Corte_Aniversario,FinMesPropia(H68,1)+1,FinMesPropia(H68,0)+DAY(H68))\
+[Fechas]
+[H70] \=IF(DAY(H69)>=Const_Dia_Corte_Aniversario,FinMesPropia(H69,1)+1,FinMesPropia(H69,0)+DAY(H69))\
+[H71] \=IF(DAY(H70)>=Const_Dia_Corte_Aniversario,FinMesPropia(H70,1)+1,FinMesPropia(H70,0)+DAY(H70))\
+[H72] \=IF(DAY(H71)>=Const_Dia_Corte_Aniversario,FinMesPropia(H71,1)+1,FinMesPropia(H71,0)+DAY(H71))\
+[H73] \=IF(DAY(H72)>=Const_Dia_Corte_Aniversario,FinMesPropia(H72,1)+1,FinMesPropia(H72,0)+DAY(H72))\
+[H74] \=IF(DAY(H73)>=Const_Dia_Corte_Aniversario,FinMesPropia(H73,1)+1,FinMesPropia(H73,0)+DAY(H73))\
+[H75] \=IF(DAY(H74)>=Const_Dia_Corte_Aniversario,FinMesPropia(H74,1)+1,FinMesPropia(H74,0)+DAY(H74))\
+[H76] \=IF(DAY(H75)>=Const_Dia_Corte_Aniversario,FinMesPropia(H75,1)+1,FinMesPropia(H75,0)+DAY(H75))\
+[H77] \=IF(DAY(H76)>=Const_Dia_Corte_Aniversario,FinMesPropia(H76,1)+1,FinMesPropia(H76,0)+DAY(H76))\
+[H78] \=IF(DAY(H77)>=Const_Dia_Corte_Aniversario,FinMesPropia(H77,1)+1,FinMesPropia(H77,0)+DAY(H77))\
+[H79] \=IF(DAY(H78)>=Const_Dia_Corte_Aniversario,FinMesPropia(H78,1)+1,FinMesPropia(H78,0)+DAY(H78))\
+[I9] (Fechas!Const_Dia_Corte_Aniversario) \25\
+[I10] (Fechas!CONST_DIAS_BASE_INTERES) \30\
+[I11] (Fechas!CONST_DIAS_LIMITE) \31\
+[I12] (CONST_CORTE_1) \3\
+[I13] (CONST_CORTE_2) \16\
+[I19] \Duración Intereses Mensual AET\
+[I20] (Días_de_interés_para_Pago) \=H20-B4\
+[I21] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I22] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I23] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I24] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I25] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I26] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I27] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I28] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[Fechas]
+[I29] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I30] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I31] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I32] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I33] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I34] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I35] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I36] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I37] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I38] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I39] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I40] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I41] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I42] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I43] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I44] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I45] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I46] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I47] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I48] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I49] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I50] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I51] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I52] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I53] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[Fechas]
+[I54] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I55] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I56] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I57] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I58] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I59] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I60] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I61] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I62] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I63] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I64] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I65] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I66] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I67] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I68] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I69] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I70] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I71] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I72] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I73] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I74] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I75] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I76] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I77] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[I78] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[Fechas]
+[I79] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 
 [Configuración de Tablas]
 [A1] \Parámetros para las tablas.\
@@ -56271,6 +56422,10 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D177] \Ajusta la macro que coordina el cálculo de la tabla de plazos, tasas y pagos para que tome en cuenta la nueva forma de calcular la tasa de interés. Tiene que recalcular la hoja de cálculos y en medio la de Tasas.\
 [LogDeCierres]
 [D178] \Mueve los cálculos a la hoja de Cálculos, y deja los catálogos sin fórmulas. Ajusta la macro anterior para que no haya que estar malabareando los cálculos de las hojas.\
+[D179] \Selecciona los datos de la Frecuencia (Dias por Periodo y Periodos por Año) en los Cálculos.\
+[D180] \Ajusta los Días CAT en la hoja Fechas, a que sean siempre los Días por Periodo de la Frecuencia, en lugar de fijo a 30.\
+[D181] \Inicia la refactorización del algoritmo Mensual en la hoja de Fechas para agregar los faltantes.\
+[D182] \Alambra las Fechas de Pago de la Tabla Cliente a la columna correspondiente de los Resultados de la hoja de Fechas.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56284,13 +56439,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!179:179
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!179:179
- [T_Merger!_Actual] =T_Merger!179:179
- [T_SeguroAnual!_Actual] =T_SeguroAnual!179:179
- [T_SoloAuto!_Actual] =T_SoloAuto!179:179
- [T_VidaAnual!_Actual] =T_VidaAnual!179:179
- [T_VidaMulti!_Actual] =T_VidaMulti!179:179
+ [CAT!_Actual] =CAT!182:182
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!182:182
+ [T_Merger!_Actual] =T_Merger!182:182
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!182:182
+ [T_SoloAuto!_Actual] =T_SoloAuto!182:182
+ [T_VidaAnual!_Actual] =T_VidaAnual!182:182
+ [T_VidaMulti!_Actual] =T_VidaMulti!182:182
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56299,13 +56454,15 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!178:178
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!178:178
- [T_Merger!_Anterior] =T_Merger!178:178
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!178:178
- [T_SoloAuto!_Anterior] =T_SoloAuto!178:178
- [T_VidaAnual!_Anterior] =T_VidaAnual!178:178
- [T_VidaMulti!_Anterior] =T_VidaMulti!178:178
+ [Fechas!_Anterior] =Fechas!181:181
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!181:181
+ [T_Merger!_Anterior] =T_Merger!181:181
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!181:181
+ [T_SoloAuto!_Anterior] =T_SoloAuto!181:181
+ [T_VidaAnual!_Anterior] =T_VidaAnual!181:181
+ [T_VidaMulti!_Anterior] =T_VidaMulti!181:181
+ [Fechas!_Búsqueda_Duración] =Fechas!$B$15
+ [Fechas!_Búsqueda_Fechas_Pago] =Fechas!$B$14
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -56351,24 +56508,31 @@ Nombres:
  [CAT!_Componentes_CAT] =CAT!$E$20:$H$79
  [T_AutoYSeguroMulti!_Componentes_Pago_Proyectado] =T_AutoYSeguroMulti!$AV$20:$AW$79
  [T_SeguroAnual!_Componentes_Pago_Proyectado] =T_SeguroAnual!$AV$20:$AW$79
+ [Fechas!_Datos] =Fechas!$H:$I
+ [Fechas!_Día_Cotización] =Fechas!$B$13
  [T_SoloAuto!_Dias_Cat] =T_SoloAuto!$AH$20:$AH$79
  [T_VidaAnual!_Dias_Cat] =T_VidaAnual!$AH$20:$AH$79
  [T_VidaMulti!_Dias_Cat] =T_VidaMulti!$AH$20:$AH$79
- [Fechas!_Dias_Interes_CAT] =Fechas!$D$20:$D$79
+ [Fechas!_Dias_Interes_CAT] =Fechas!$D$20:$D$1048576
  [T_AutoYSeguroMulti!_Dias_Interes_CAT] =T_AutoYSeguroMulti!$BC$20:$BC$79
  [T_SeguroAnual!_Dias_Interes_CAT] =T_SeguroAnual!$BC$20:$BC$79
- [Fechas!_Dias_Interes_Pago] =Fechas!$C$20:$C$79
+ [Fechas!_Dias_Interes_Pago] =Fechas!$F$20:$F$1048576
  [T_AutoYSeguroMulti!_Dias_Interes_Periodo] =T_AutoYSeguroMulti!$R$20:$R$79
  [T_Merger!_Dias_Interes_Periodo] =T_Merger!$O$20:$O$79
  [T_SeguroAnual!_Dias_Interes_Periodo] =T_SeguroAnual!$R$20:$R$79
  [T_SoloAuto!_Dias_Interes_Periodo] =T_SoloAuto!$U$20:$U$79
  [T_VidaAnual!_Dias_Interes_Periodo] =T_VidaAnual!$U$20:$U$79
  [T_VidaMulti!_Dias_Interes_Periodo] =T_VidaMulti!$U$20:$U$79
- [Fechas!_Fecha_Pago] =Fechas!$B$19:$B$79
+ [Fechas!_Etiqueta_Duración_Intereses] =Fechas!$B$10
+ [Fechas!_Etiqueta_Fechas_Pago] =Fechas!$B$9
+ [Fechas!_Fecha_Cotización] =Fechas!$B$4
+ [Fechas!_Fecha_Pago] =Fechas!$H$19:$H$79
  ['C. Auto'!_FilterDatabase] ='C. Auto'!$A$13:$S$715
  ['C. Estados'!_FilterDatabase] ='C. Estados'!$A$4:$I$36
  [C.Seminuevos!_FilterDatabase] =C.Seminuevos!$A$6:$I$2020
  [CAT!_Flujos.CAT] =CAT!$K$19:$K$79
+ [Fechas!_Frecuencia] =Fechas!$B$6
+ [Fechas!_Headers] =Fechas!$19:$19
  [T_AutoYSeguroMulti!_Interes] =T_AutoYSeguroMulti!$S$20:$S$79
  [T_Merger!_Interes] =T_Merger!$P$20:$P$79
  [T_SeguroAnual!_Interes] =T_SeguroAnual!$S$20:$S$79
@@ -56425,6 +56589,7 @@ Nombres:
  [T_VidaMulti!_Pago_Fijo] =T_VidaMulti!$O$20:$O$79
  [T_AutoYSeguroMulti!_Pago_Proyectado] =T_AutoYSeguroMulti!$AX$20:$AX$79
  [T_SeguroAnual!_Pago_Proyectado] =T_SeguroAnual!$AX$20:$AX$79
+ [Fechas!_Producto] =Fechas!$B$5
  [T_AutoYSeguroMulti!_Remanentes] =T_AutoYSeguroMulti!$AD$20:$AD$79
  [T_SeguroAnual!_Remanentes] =T_SeguroAnual!$AD$20:$AD$79
  [T_AutoYSeguroMulti!_Saldo_Ciclico] =T_AutoYSeguroMulti!$AJ$20:$AJ$79
@@ -56591,13 +56756,15 @@ Nombres:
  [T_SeguroAnual!Config.Estandar] =T_SeguroAnual!$B$10:$B$16
  [CONST_AÑOS_PLAZOS_LIMITADOS] ='C. Comunes'!$C$52
  [CONST_Constante_Base_Vida] ='C. Seguros'!$C$59
+ [CONST_CORTE_1] =Fechas!$I$12
+ [CONST_CORTE_2] =Fechas!$I$13
  [CONST_Cuota_Base_Vida] ='C. Seguros'!$C$58
  [CONST_DESCUENTO_IVA_INTERES] ='C. Comunes'!$C$48
- [Fechas!Const_Dia_Corte_Aniversario] =Fechas!$B$13
- [Fechas!CONST_DIAS_BASE_INTERES] =Fechas!$B$14
+ [Fechas!Const_Dia_Corte_Aniversario] =Fechas!$I$9
+ [Fechas!CONST_DIAS_BASE_INTERES] =Fechas!$I$10
  [CONST_DIAS_EN_AÑO] ='C. Comunes'!$C$50
  [CONST_DIAS_EN_MES] ='C. Comunes'!$C$49
- [Fechas!CONST_DIAS_LIMITE] =Fechas!$B$15
+ [Fechas!CONST_DIAS_LIMITE] =Fechas!$I$11
  [CONST_Gastos_Expedicion_Semi_Ant] ='C. Seguros'!$C$60
  [CONST_MESES_EN_AÑO] ='C. Comunes'!$C$51
  [CONST_UMBRAL_ENGANCHE] ='C. Tasas'!#REF!
@@ -56618,7 +56785,7 @@ Nombres:
  [DañosServicioPremium] =Calculos!$F$83
  [DañosValFac1erAño] =Calculos!$F$76
  [DESCRIPCION_PLAZO_CALCULO_SEGURO] =Calculos!$F$55
- [DIA_COTIZACIÓN] =Fechas!$C$17
+ [DIA_COTIZACIÓN] =Fechas!$B$13
  [T_AutoYSeguroMulti!Dias.En.Año] =T_AutoYSeguroMulti!$C$23
  [T_Merger!Dias.En.Año] =T_Merger!$C$22
  [T_SeguroAnual!Dias.En.Año] =T_SeguroAnual!$C$23
@@ -56631,13 +56798,16 @@ Nombres:
  [T_SoloAuto!Dias.Por.Periodo] =T_SoloAuto!$C$18
  [T_VidaAnual!Dias.Por.Periodo] =T_VidaAnual!$C$18
  [T_VidaMulti!Dias.Por.Periodo] =T_VidaMulti!$C$18
- [Días_de_interés_para_Pago] =Fechas!$C$20
+ [Días_de_interés_para_Pago] =Fechas!$I$20
  [EstadoFactorDescuento] =Calculos!$F$38
  [EstadoFronterizo?] =Calculos!$F$36
  [EstadoIncluyeRcUsa?] =Calculos!$F$37
  [CAT!FactorRenovacionAnual] =CAT!$H$9
  [CAT!FactorRenovacionAnualContado] =CAT!$H$7
  [CAT!FactorRenovacionAnualFinanciado] =CAT!$H$8
+ [Fechas_Pago] =Fechas!$E$20:$E$1048576
+ [FREC.DiasPorPeriodo] =Calculos!$P$24
+ [FREC.PeriodosPorAño] =Calculos!$Q$24
  [Garantía_Extendida.Aplica?] =Calculos!$B$97
  [Id_Abono_Anticipado] =Calculos!$C$21
  [ID_AUTO] =Calculos!$F$25
@@ -56680,7 +56850,7 @@ Nombres:
  [Leyenda_coberturas_adicionales_tabla_de_amortizacion] =Calculos!$I$154
  [Leyenda_con_coma] ='C. Seguros'!$B$65
  [Leyenda_con_punto] ='C. Seguros'!$B$66
- [LEYENDA_DIAS_INTERESES_PRIMER_PAGO] =Fechas!$B$18
+ [LEYENDA_DIAS_INTERESES_PRIMER_PAGO] =Fechas!$E$17
  [Leyenda_Indemnizacion_valor_factura] ='C. Seguros'!$F$52
  [Leyenda_seguro_anual_tabla_amortizacion] ='C. Seguros'!$B$64
  [LEYENDA_SELECCION_COMBOS] =C.Seminuevos!$C$3
@@ -56804,8 +56974,6 @@ Nombres:
  [TablaCliente!Print_Area] =TablaCliente!$A$6:$I$85
  [PROD.Código] =Calculos!$P$6
  [PROD.Id] =C.TipoCliente!#REF!
- [Prueba16] =Fechas!$E$16
- [Prueba3] =Fechas!$F$16
  [QUERY_AUTOS] =C.Seminuevos!$O$7
  [QUERY_MARCAS] =C.Seminuevos!$M$7
  [T_AutoYSeguroMulti!Rango.Abono.Anticipado] =T_AutoYSeguroMulti!$C$34
