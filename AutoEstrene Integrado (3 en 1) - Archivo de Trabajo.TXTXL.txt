@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 22/09/2015 12:51:03 p.m.
+Fecha y hora de generación: 22/09/2015 01:18:37 p.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 654
+ * Nombres Definidos: 655
 
  * Módulos de Visual Basic: 43
 
@@ -166,7 +166,7 @@ Contenido:
 [B51] \www.banorte.com\
 [B52] \Nota: La presente información es únicamente para efectos ilustrativos y no representa ningún ofrecimiento formal por parte de Grupo Financiero Banorte. Las condiciones están sujetas a cambio. El CAT es para fines informativos y de comparación exclusivamente.\
 [C2] \="Simulador Autos " & CondicionAuto_Descripcion & "s"\
-[C3] \=IF(SELECCION_TIPO_CLIENTE="Recurrentes","Clientes " & SELECCION_TIPO_CLIENTE,"")\
+[C3] \=SELECCION_TIPO_TARIFA\
 [C4] \Datos del crédito\
 [C35] \Tasa\
 [C36] \=IF(Calculos!L17="","",Calculos!L17)\
@@ -223,7 +223,7 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"Por favor elije el tipo del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D13] (CapturaPorcentajeEnganche) \0.1\
+[D13] (CapturaPorcentajeEnganche) \0.25\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"=PorcentajeMinimoEnganche" Formula2:"=PorcentajeMaximoEnganche" ]
  Mensaje=[Mostrar:True Titulo:"Enganche" Mensaje:"Enganche menor al 10% en Autos Nuevos requiere Autorización Especial./Enganche menor al 25% en Autos Seminuevos requiere Autorización Especial." ] 
  Advertencia=[Mostrar:False Titulo:"Enganche" Mensaje:"Un enganche menor requiere autorización especial./Recuerda que el monto mínimo a financiar es de $25,000.00" Estilo:Información. ] 
@@ -1161,364 +1161,328 @@ Contenido:
 [E5] \Condicion del Auto\
 [E6] \Id\
 [E7] \Descripción\
-[E8] \Es nuevo?\
+[E8] \Es Nuevo?\
 [E9] \Es Seminuevo?\
-[E10] \Porcentaje Mínimo Enganche\
-[E12] \Modelo\
-[E13] \Id\
-[E14] \Descripción\
-[E15] \Años Antigüedad\
-[E16] \Es "Anterior"?\
-[E17] \Id Condición Modelo\
+[E11] \Porcentaje Mínimo Enganche\
+[E12] \Porcentaje Máximo Enganche\
+[E14] \Modelo\
+[E15] \Id\
+[E16] \Descripción\
+[E17] \Años Antigüedad\
+[E18] \Es "Anterior"?\
 [Calculos]
-[E18] \Descripcion\
-[E20] \Auto\
-[E21] \Cadena Completa Auto\
-[E23] \Id\
-[E26] \Descripción\
-[E27] \Tipo Auto\
-[E29] \Es 3.5T?\
-[E31] \Estado\
-[E32] \Id\
-[E33] \Descripción\
-[E34] \Es Fronterizo?\
-[E35] \Incluye RC USA?\
-[E36] \Factor Descuento\
-[E41] \Proxys para las capturas:\
-[E42] \Valor Factura Ajustado\
-[E43] \Aportación Adicional Ajustada\
-[E44] \Porcentaje Enganche\
-[E46] \Cálculo Seguro\
-[E47] \Id\
-[E48] \Descripción\
-[E49] \Es Financiado?\
-[E50] \Es Multianual?\
-[E51] \Es Anual?\
-[E52] \ID Plazo Seguro\
-[E53] \Descripción Plazo Cotizacion\
+[E19] \Id Condición Modelo\
+[E20] \Descripcion\
+[E22] \Auto\
+[E23] \Cadena Completa Auto\
+[E25] \Id\
+[E28] \Descripción\
+[E29] \Tipo Auto\
+[E31] \Es 3.5T?\
+[E33] \Estado\
+[E34] \Id\
+[E35] \Descripción\
+[E36] \Es Fronterizo?\
+[E37] \Incluye RC USA?\
+[E38] \Factor Descuento\
+[E43] \Proxys para las capturas:\
+[E44] \Valor Factura Ajustado\
+[E45] \Aportación Adicional Ajustada\
+[E46] \Porcentaje Enganche\
+[E48] \Cálculo Seguro\
+[E49] \Id\
+[E50] \Descripción\
+[E51] \Es Financiado?\
+[E52] \Es Multianual?\
+[E53] \Es Anual?\
+[E54] \ID Plazo Seguro\
 [Calculos]
-[E55] \Factor Multianual\
-[E56] \ID\
-[E57] \Id para Multianual:\
-[E58] \Id Si no es multianual:\
-[E59] \Factor Daños:\
-[E60] \Factor Vida:\
-[E62] \Prima Daños\
-[E63] \Prima Base\
-[E69] \Gastos de Expedición\
-[E70] \Monto RC USA\
-[E72] \Monto Auto Sustituto\
-[E74] \Monto Indem Val Factura\
-[E78] \Monto Incremento RC\
-[E81] \Monto Servicio Premium\
-[E89] \Tarifas sujetas Multi\
-[E90] \Tarifas no sujetas Multi\
-[E91] \Aplica?\
-[E92] \Prima de daños\
-[E94] \Tipo Persona\
-[E95] \Id\
-[E96] \Descripción\
-[E97] \Aplica Seguro de Vida?\
-[E98] \Aplica Iva para Intereses?\
-[E100] \Prima Vida\
-[E101] \Porcentaje Base Vida\
+[E55] \Descripción Plazo Cotizacion\
+[E57] \Factor Multianual\
+[E58] \ID\
+[E59] \Id para Multianual:\
+[E60] \Id Si no es multianual:\
+[E61] \Factor Daños:\
+[E62] \Factor Vida:\
+[E64] \Prima Daños\
+[E65] \Prima Base\
+[E71] \Gastos de Expedición\
+[E72] \Monto RC USA\
+[E74] \Monto Auto Sustituto\
+[E76] \Monto Indem Val Factura\
+[E80] \Monto Incremento RC\
+[E83] \Monto Servicio Premium\
+[E91] \Tarifas sujetas Multi\
+[E92] \Tarifas no sujetas Multi\
+[E93] \Aplica?\
+[E94] \Prima de daños\
+[E96] \Tipo Persona\
+[E97] \Id\
+[E98] \Descripción\
+[E99] \Aplica Seguro de Vida?\
+[E100] \Aplica Iva para Intereses?\
+[E102] \Prima Vida\
 [Calculos]
-[E102] \Cuota Base Vida\
-[E103] \Tarifas sujetas Multi\
-[E104] \Tarifas no sujetas a Multi\
-[E105] \Aplica?\
-[E106] \Prima Vida\
-[E108] \Resumen Primas\
-[E109] \Prima Total Seguros\
-[E111] \Iva\
-[E112] \Id\
-[E113] \Descripción\
-[E114] \Tasa Iva Nominal\
-[E115] \Tasa Iva Deflactada\
-[E116] \Tasa Iva p/Intereses\
-[E118] \Tipo Cliente\
-[E119] \Descripción\
-[E120] \Id\
-[E121] \Comisión por Apertura\
-[E122] \UmbralEngancheTasaReducida\
-[E123] \Offset en Tasa\
-[E125] \Garantia Extendida\
-[E126] \Aplica?\
-[E127] \Monto de Garantia \
-[E129] \Montos\
-[E130] \Monto del Enganche\
-[E131] \Monto Anticipo (con Aport Adic)\
+[E103] \Porcentaje Base Vida\
+[E104] \Cuota Base Vida\
+[E105] \Tarifas sujetas Multi\
+[E106] \Tarifas no sujetas a Multi\
+[E107] \Aplica?\
+[E108] \Prima Vida\
+[E110] \Resumen Primas\
+[E111] \Prima Total Seguros\
+[E113] \Iva\
+[E114] \Id\
+[E115] \Descripción\
+[E116] \Tasa Iva Nominal\
+[E117] \Tasa Iva Deflactada\
+[E118] \Tasa Iva p/Intereses\
+[E120] \Garantia Extendida\
+[E121] \Aplica?\
+[E122] \Monto de Garantia \
+[E124] \Montos\
+[E125] \Monto del Enganche\
+[E126] \Monto Anticipo (con Aport Adic)\
+[E127] \Monto a Financiar Auto\
+[E128] \Monto Financiar Seguro (Total)\
+[E129] \Monto de Contado Seguro\
+[E130] \Monto Financiar Seguro (Vida)\
+[E131] \Monto a Financiar Total\
 [Calculos]
-[E132] \Monto a Financiar Auto\
-[E133] \Monto Financiar Seguro (Total)\
-[E134] \Monto de Contado Seguro\
-[E135] \Monto Financiar Seguro (Vida)\
-[E136] \Monto a Financiar Total\
-[E137] \Comisión Apertura con IVA\
-[E139] \Porcentaje de Anticipo:\
-[E141] \Tasa de Interés\
-[E147] \Tasa a usar\
-[E148] \Tasa de Interés (Cálculo anterior)\
-[E149] \Tasa de Interés\
-[E151] \Datos Generales Simulación\
-[E152] \Plazo en meses\
-[E153] \Periodos por año\
-[E154] \Número de pagos\
-[E156] \Pagos\
-[E157] \Pago del Crédito de Auto\
-[E158] \Plazo para Pago Seguros\
-[E159] \Pago del Crédito de Seguro\
-[E160] \Pago Total\
-[E162] \Leyendas\
-[E163] \Plazo\
-[E164] \Monto\
-[E165] \Texto\
-[E166] \Leyenda Seguro 1:\
-[Calculos]
-[E167] \Leyenda Seguro 2:\
-[E168] \Aportación Adicional\
+[E132] \Comisión Apertura con IVA\
+[E134] \Porcentaje de Anticipo:\
+[E136] \Tasa de Interés\
+[E137] \Tasa de Interés\
+[E139] \Datos Generales Simulación\
+[E140] \Plazo en meses\
+[E141] \Periodos por año\
+[E142] \Número de pagos\
+[E144] \Pagos\
+[E145] \Pago del Crédito de Auto\
+[E146] \Plazo para Pago Seguros\
+[E147] \Pago del Crédito de Seguro\
+[E148] \Pago Total\
+[E150] \Leyendas\
+[E151] \Plazo\
+[E152] \Monto\
+[E153] \Texto\
+[E154] \Leyenda Seguro 1:\
+[E155] \Leyenda Seguro 2:\
+[E156] \Aportación Adicional\
 [F5] \Valor\
 [F6] \=ID_CONDICION_AUTO\
-[F7] (CondicionAuto_Descripcion) \=GetCatalogValue(ID_CONDICION_AUTO,"Descripción",C_CONDICION_AUTO)\
-[F8] (CondicionAutoEsNuevo?) \=GetCatalogValue(ID_CONDICION_AUTO,"EsNuevo",C_CONDICION_AUTO)\
+[F7] (CondicionAuto_Descripcion) \=VLOOKUP(ID_CONDICION_AUTO,C_CONDICION_AUTO,2,0)\
+[F8] (CondicionAutoEsNuevo?) \=VLOOKUP(ID_CONDICION_AUTO,C_CONDICION_AUTO,4,0)\
 [F9] (CondicionAutoEsSeminuevo?) \=NOT(CondicionAutoEsNuevo?)\
-[F10] (PorcentajeMinimoEnganche) \=IF(SELECCION_TIPO_CLIENTE="recurrentes",GetCatalogValue(ID_CONDICION_AUTO,"PctMinimoEngancher",C_CONDICION_AUTO),GetCatalogValue(ID_CONDICION_AUTO,"PctMinimoEnganche",C_CONDICION_AUTO))\
-[F12] \Valor\
-[F13] \=ID_MODELO\
-[F14] \=GetCatalogValue(ID_MODELO,"Descripción",C_MODELO_AÑO)\
-[F15] (ModeloAñosAntiguedad) \=GetCatalogValue(ID_MODELO,"AñosAntiguedad",C_MODELO_AÑO)\
-[F16] (ModeloEsAnterior?) \= ModeloAñosAntiguedad > 0\
-[F17] (ID_CONDICION_MODELO) \=GetCatalogValue(ID_MODELO,"IdCondicionModelo",C_MODELO_AÑO)\
-[F18] \=GetCatalogValue(ID_CONDICION_MODELO,"Descripción",C_CONDICION_MODELO)\
-[F20] \Valor\
-[F21] (AutoCadenaCompleta) \=CONCATENATE(SELECCION_MARCA,", ",SELECCION_AUTO)\
-[F23] (ID_AUTO) \=CHOOSE(ID_CONDICION_MODELO,G23,H23)\
-[F26] \=CHOOSE(ID_CONDICION_MODELO,G26,H26)\
-[F27] (ID_TIPO_AUTO) \=CHOOSE(ID_CONDICION_MODELO,G27,H27)\
-[F29] (CondicionAutoEs3.5T?) \=ID_TIPO_AUTO = _3.5T\
-[F31] \Valor\
-[F32] \=ID_ESTADO\
-[F33] \=GetCatalogValue(ID_ESTADO,"Descripción",C_ESTADO)\
-[F34] (EstadoFronterizo?) \=GetCatalogValue(ID_ESTADO,"Fronterizo",C_ESTADO)\
 [Calculos]
-[F35] (EstadoIncluyeRcUsa?) \=GetCatalogValue(ID_ESTADO,"RC_USA",C_ESTADO)\
-[F36] (EstadoFactorDescuento) \=CHOOSE(ID_CONDICION_MODELO,G36,H36)\
-[F42] (ValorFactura) \=IF(ID_AUTO=0, 0, CapturaValorFactura)\
-[F43] (AportacionAdicional) \=IF(ValorFactura=0,0,CapturaAportacionAdicional)\
-[F44] (PorcentajeEnganche) \=CapturaPorcentajeEnganche\
-[F46] \Valor\
-[F47] \=ID_CALCULO_SEGURO\
-[F48] \=GetCatalogValue(ID_CALCULO_SEGURO,"Descripción",C_CALCULO_SEGURO)\
-[F49] (SeguroEsFinanciado?) \=GetCatalogValue(ID_CALCULO_SEGURO,"EsFinanciado",C_CALCULO_SEGURO)\
-[F50] (SeguroEsMultianual?) \=GetCatalogValue(ID_CALCULO_SEGURO,"EsMultianual",C_CALCULO_SEGURO)\
-[F51] (SeguroEsAnual?) \=NOT(SeguroEsMultianual?)\
-[F52] (ID_PLAZO_CALCULO_SEGURO) \=GetCatalogValue(ID_CALCULO_SEGURO,"IdPlazo",C_CALCULO_SEGURO)\
-[F53] (DESCRIPCION_PLAZO_CALCULO_SEGURO) \=GetCatalogValue(ID_PLAZO_CALCULO_SEGURO,"Descripción",C_PLAZO)\
-[F56] (ID_FACTOR_MULTIANUAL) \=IF(SeguroEsMultianual?,F57,F58)\
-[F57] \=GetCatalogValue(ID_PLAZO,"IdFactorMultiAnual",C_PLAZO)\
-[F58] \1\
-[F59] (MultianualFactorAuto) \=GetCatalogValue(ID_FACTOR_MULTIANUAL,"Auto",C_FACTOR_MULTIANUAL)\
-[F60] (MultianualFactorVida) \=GetCatalogValue(ID_FACTOR_MULTIANUAL,"Vida",C_FACTOR_MULTIANUAL)\
-[F62] \Valor\
-[F63] (DañosPrimaBase) \=CHOOSE(ID_CONDICION_MODELO,G63,H63)\
-[F69] (DañosGastosExpedicion) \=CHOOSE(ID_CONDICION_AUTO,G69,H69)\
-[F70] (DañosMontoRcUsa) \=CHOOSE(ID_CONDICION_MODELO,G70,H70)\
-[F72] (DañosAutoSustituto) \=CHOOSE(ID_CONDICION_AUTO,G72,H72)\
-[F74] (DañosValFac1erAño) \=CHOOSE(ID_CONDICION_AUTO,G74,H74)\
-[F78] (DañosIncrementoRC) \=CHOOSE(ID_CONDICION_AUTO,G78,H78)\
+[F11] (PorcentajeMinimoEnganche) \=C.Porcentaje_Mínimo_Enganche\
+[F12] (PorcentajeMaximoEnganche) \=1-(Monto_Mínimo_a_Financiar/CapturaValorFactura)\
+[F14] \Valor\
+[F15] \=ID_MODELO\
+[F16] \=GetCatalogValue(ID_MODELO,"Descripción",C_MODELO_AÑO)\
+[F17] (ModeloAñosAntiguedad) \=GetCatalogValue(ID_MODELO,"AñosAntiguedad",C_MODELO_AÑO)\
+[F18] (ModeloEsAnterior?) \= ModeloAñosAntiguedad > 0\
+[F19] (ID_CONDICION_MODELO) \=GetCatalogValue(ID_MODELO,"IdCondicionModelo",C_MODELO_AÑO)\
+[F20] \=GetCatalogValue(ID_CONDICION_MODELO,"Descripción",C_CONDICION_MODELO)\
+[F22] \Valor\
+[F23] (AutoCadenaCompleta) \=CONCATENATE(SELECCION_MARCA,", ",SELECCION_AUTO)\
+[F25] (ID_AUTO) \=CHOOSE(ID_CONDICION_MODELO,G25,H25)\
+[F28] \=CHOOSE(ID_CONDICION_MODELO,G28,H28)\
+[F29] (ID_TIPO_AUTO) \=CHOOSE(ID_CONDICION_MODELO,G29,H29)\
+[F31] (CondicionAutoEs3.5T?) \=ID_TIPO_AUTO = _3.5T\
+[F33] \Valor\
+[F34] \=ID_ESTADO\
+[F35] \=GetCatalogValue(ID_ESTADO,"Descripción",C_ESTADO)\
+[F36] (EstadoFronterizo?) \=GetCatalogValue(ID_ESTADO,"Fronterizo",C_ESTADO)\
+[F37] (EstadoIncluyeRcUsa?) \=GetCatalogValue(ID_ESTADO,"RC_USA",C_ESTADO)\
+[F38] (EstadoFactorDescuento) \=CHOOSE(ID_CONDICION_MODELO,G38,H38)\
+[F44] (ValorFactura) \=IF(ID_AUTO=0, 0, CapturaValorFactura)\
+[F45] (AportacionAdicional) \=IF(ValorFactura=0,0,CapturaAportacionAdicional)\
+[F46] (PorcentajeEnganche) \=CapturaPorcentajeEnganche\
+[F48] \Valor\
 [Calculos]
-[F81] (DañosServicioPremium) \=CHOOSE(ID_CONDICION_AUTO,G81,H81)\
-[F89] (DañosComponenteConMulti) \=( ((DañosPrimaBase + DañosIncrementoRC ) * EstadoFactorDescuento) + DañosMontoRcUsa + DañosAutoSustituto ) * MultianualFactorAuto\
-[F90] (DañosComponenteSinMulti) \=DañosGastosExpedicion + (DañosValFac1erAño) + DañosServicioPremium\
-[F91] (DañosAplica?) \=ValorFactura <> 0\
-[F92] (PrimaDaños) \=( DañosComponenteConMulti + DañosComponenteSinMulti) * DañosAplica?\
-[F94] \Valor\
-[F95] \=ID_TIPO_PERSONA\
-[F96] (Tipo_Persona.Descripción) \=GetCatalogValue(ID_TIPO_PERSONA,"Descripción",C_TIPO_PERSONA)\
-[F97] (TipoPersonaAplicaSeguroVida?) \=GetCatalogValue(ID_TIPO_PERSONA,"AplicaSeguroVida",C_TIPO_PERSONA)\
-[F98] (AplicaIvaIntereses?) \=GetCatalogValue(ID_TIPO_PERSONA,"AplicaIvaIntereses",C_TIPO_PERSONA)\
-[F101] (Porcentaje_Cuota_Base_Vida) \= CONST_Cuota_Base_Vida\
-[F102] (Constante_Base_Vida) \= CONST_Constante_Base_Vida\
-[F103] (VidaComponenteConMulti) \= ( MontoFinanciarAuto * Porcentaje_Cuota_Base_Vida ) * MultianualFactorVida\
-[F104] (VidaComponenteSinMulti) \= Constante_Base_Vida\
-[F105] (VidaAplica?) \=AND(TipoPersonaAplicaSeguroVida?, ValorFactura <>0)\
-[F106] (PrimaVida) \=( VidaComponenteConMulti + VidaComponenteSinMulti ) * VidaAplica?\
-[F109] (PrimaTotalSeguros) \= PrimaDaños + PrimaVida\
-[F112] \=ID_IVA\
-[F113] \=GetCatalogValue(ID_IVA,"Descripción",C_IVA)\
-[F114] (IvaNominal) \=GetCatalogValue(ID_IVA,"TasaIva",C_IVA)\
-[F115] (IvaDeflactada) \=IvaNominal - CONST_DESCUENTO_IVA_INTERES\
-[F116] (IvaParaIntereses) \=IvaDeflactada * AplicaIvaIntereses?\
-[F119] \=SELECCION_TIPO_CLIENTE\
-[F120] (ID_TIPO_CLIENTE) \=VLOOKUP(SELECCION_TIPO_CLIENTE,C_TIPO_CLIENTE,PosColumna("Id",C_TIPO_CLIENTE),FALSE)\
-[F121] (TipoClienteComisionPorApertura) \=VLOOKUP(SELECCION_TIPO_CLIENTE,C_TIPO_CLIENTE,PosColumna("ComisionApertura",C_TIPO_CLIENTE))\
+[F49] \=ID_CALCULO_SEGURO\
+[F50] \=GetCatalogValue(ID_CALCULO_SEGURO,"Descripción",C_CALCULO_SEGURO)\
+[F51] (SeguroEsFinanciado?) \=GetCatalogValue(ID_CALCULO_SEGURO,"EsFinanciado",C_CALCULO_SEGURO)\
+[F52] (SeguroEsMultianual?) \=GetCatalogValue(ID_CALCULO_SEGURO,"EsMultianual",C_CALCULO_SEGURO)\
+[F53] (SeguroEsAnual?) \=NOT(SeguroEsMultianual?)\
+[F54] (ID_PLAZO_CALCULO_SEGURO) \=GetCatalogValue(ID_CALCULO_SEGURO,"IdPlazo",C_CALCULO_SEGURO)\
+[F55] (DESCRIPCION_PLAZO_CALCULO_SEGURO) \=GetCatalogValue(ID_PLAZO_CALCULO_SEGURO,"Descripción",C_PLAZO)\
+[F58] (ID_FACTOR_MULTIANUAL) \=IF(SeguroEsMultianual?,F59,F60)\
+[F59] \=GetCatalogValue(ID_PLAZO,"IdFactorMultiAnual",C_PLAZO)\
+[F60] \1\
+[F61] (MultianualFactorAuto) \=GetCatalogValue(ID_FACTOR_MULTIANUAL,"Auto",C_FACTOR_MULTIANUAL)\
+[F62] (MultianualFactorVida) \=GetCatalogValue(ID_FACTOR_MULTIANUAL,"Vida",C_FACTOR_MULTIANUAL)\
+[F64] \Valor\
+[F65] (DañosPrimaBase) \=CHOOSE(ID_CONDICION_MODELO,G65,H65)\
+[F71] (DañosGastosExpedicion) \=CHOOSE(ID_CONDICION_AUTO,G71,H71)\
+[F72] (DañosMontoRcUsa) \=CHOOSE(ID_CONDICION_MODELO,G72,H72)\
+[F74] (DañosAutoSustituto) \=CHOOSE(ID_CONDICION_AUTO,G74,H74)\
+[F76] (DañosValFac1erAño) \=CHOOSE(ID_CONDICION_AUTO,G76,H76)\
+[F80] (DañosIncrementoRC) \=CHOOSE(ID_CONDICION_AUTO,G80,H80)\
+[F83] (DañosServicioPremium) \=CHOOSE(ID_CONDICION_AUTO,G83,H83)\
+[F91] (DañosComponenteConMulti) \=( ((DañosPrimaBase + DañosIncrementoRC ) * EstadoFactorDescuento) + DañosMontoRcUsa + DañosAutoSustituto ) * MultianualFactorAuto\
+[F92] (DañosComponenteSinMulti) \=DañosGastosExpedicion + (DañosValFac1erAño) + DañosServicioPremium\
+[F93] (DañosAplica?) \=ValorFactura <> 0\
+[F94] (PrimaDaños) \=( DañosComponenteConMulti + DañosComponenteSinMulti) * DañosAplica?\
+[F96] \Valor\
 [Calculos]
-[F122] (TipoCliente_UmbralEnganche) \=VLOOKUP(SELECCION_TIPO_CLIENTE,C_TIPO_CLIENTE,PosColumna("UmbralEngancheTasaReducida",C_TIPO_CLIENTE))\
-[F123] (TipoCliente_OffsetTasa) \=VLOOKUP(SELECCION_TIPO_CLIENTE,C_TIPO_CLIENTE,PosColumna("OffsetEnTasa",C_TIPO_CLIENTE))\
-[F125] \Valor\
-[F126] (Valor_Garantía_Extendida.Aplica?) \=SELECCION_GTIAEXT="Financiado"\
-[F127] (MontoGtiaExt) \=CapturaGtiaExt * Valor_Garantía_Extendida.Aplica?\
-[F130] (MontoEnganche) \= ValorFactura * PorcentajeEnganche\
-[F131] (MontoAnticipoAuto) \= MontoEnganche + AportacionAdicional\
-[F132] (MontoFinanciarAuto) \= ValorFactura - MontoAnticipoAuto\
-[F133] (MontoFinanciarSeguros) \= PrimaTotalSeguros * SeguroEsFinanciado?\
-[F134] (MontoSeguroDeContado) \= TEXT(PrimaTotalSeguros - MontoFinanciarSeguros,"$#,##0.00")\
-[F135] (MontoFinanciarVida) \=PrimaVida * SeguroEsFinanciado?\
-[F136] (MontoFinanciarTotal) \= MontoFinanciarAuto + MontoFinanciarSeguros+MontoGtiaExt\
-[F137] (MontoComisionPorAperturaConIva) \=MontoFinanciarTotal * CapturaPorcentajeComisionApertura * (1+IvaNominal)\
-[F139] (PorcentajeAnticipoAuto) \=IF(ValorFactura=0, 0, MontoAnticipoAuto/ValorFactura)\
-[F147] (TasaAUsar) \=CHOOSE(ID_CONDICION_AUTO,G147,H147)\
-[F148] \=GetCatalogValue(PlazoEnMeses,TasaAUsar,C_TASAS_INTERES)\
-[F149] (TasaInteres) \=VLOOKUP(PlazoEnMeses, C_TASAS_INTERES, PosColumna(TasaAUsar, C_TASAS_INTERES) + TipoCliente_OffsetTasa, 0)\
-[F152] (PlazoEnMeses) \=GetCatalogValue(ID_PLAZO,"EnMeses",C_PLAZO)\
-[F153] (PeriodosPorAño) \=GetCatalogValue(ID_FRECUENCIA,"PeriodosPorAño",C_FRECUENCIA)\
-[F154] (NumeroDePagos) \= PlazoEnMeses / CONST_MESES_EN_AÑO * PeriodosPorAño\
-[F157] (PagoAuto) \=PMT( TasaInteres/PeriodosPorAño * (1+IvaParaIntereses), PlazoEnMeses, -MontoFinanciarAuto-MontoGtiaExt )\
-[F158] \=IF(SeguroEsMultianual?, PlazoEnMeses, CONST_MESES_EN_AÑO)\
-[F159] (PagoSeguro) \=PMT(TasaInteres/PeriodosPorAño*(1+IvaParaIntereses),F158,-MontoFinanciarSeguros)\
-[F160] (PagoTotal) \= PagoAuto + PagoSeguro\
-[F163] \=IF(OR(NOT(SeguroEsMultianual?),NumeroDePagos=PeriodosPorAño)," por el primer año","a " & SELECCION_PLAZO) & " por "\
+[F97] \=ID_TIPO_PERSONA\
+[F98] (Tipo_Persona.Descripción) \=GetCatalogValue(ID_TIPO_PERSONA,"Descripción",C_TIPO_PERSONA)\
+[F99] (TipoPersonaAplicaSeguroVida?) \=GetCatalogValue(ID_TIPO_PERSONA,"AplicaSeguroVida",C_TIPO_PERSONA)\
+[F100] (AplicaIvaIntereses?) \=GetCatalogValue(ID_TIPO_PERSONA,"AplicaIvaIntereses",C_TIPO_PERSONA)\
+[F103] (Porcentaje_Cuota_Base_Vida) \= CONST_Cuota_Base_Vida\
+[F104] (Constante_Base_Vida) \= CONST_Constante_Base_Vida\
+[F105] (VidaComponenteConMulti) \= ( MontoFinanciarAuto * Porcentaje_Cuota_Base_Vida ) * MultianualFactorVida\
+[F106] (VidaComponenteSinMulti) \= Constante_Base_Vida\
+[F107] (VidaAplica?) \=AND(TipoPersonaAplicaSeguroVida?, ValorFactura <>0)\
+[F108] (PrimaVida) \=( VidaComponenteConMulti + VidaComponenteSinMulti ) * VidaAplica?\
+[F111] (PrimaTotalSeguros) \= PrimaDaños + PrimaVida\
+[F114] \=ID_IVA\
+[F115] \=GetCatalogValue(ID_IVA,"Descripción",C_IVA)\
+[F116] (IvaNominal) \=GetCatalogValue(ID_IVA,"TasaIva",C_IVA)\
+[F117] (IvaDeflactada) \=IvaNominal - CONST_DESCUENTO_IVA_INTERES\
+[F118] (IvaParaIntereses) \=IvaDeflactada * AplicaIvaIntereses?\
+[F120] \Valor\
+[F121] (Valor_Garantía_Extendida.Aplica?) \=SELECCION_GTIAEXT="Financiado"\
+[F122] (MontoGtiaExt) \=CapturaGtiaExt * Valor_Garantía_Extendida.Aplica?\
+[F125] (MontoEnganche) \= ValorFactura * PorcentajeEnganche\
+[F126] (MontoAnticipoAuto) \= MontoEnganche + AportacionAdicional\
+[F127] (MontoFinanciarAuto) \= ValorFactura - MontoAnticipoAuto\
+[F128] (MontoFinanciarSeguros) \= PrimaTotalSeguros * SeguroEsFinanciado?\
+[F129] (MontoSeguroDeContado) \= TEXT(PrimaTotalSeguros - MontoFinanciarSeguros,"$#,##0.00")\
+[F130] (MontoFinanciarVida) \=PrimaVida * SeguroEsFinanciado?\
 [Calculos]
-[F164] \=TEXT(MontoFinanciarSeguros,"$#,##0.00")\
-[F165] \* Costo del Seguro Banorte\
-[F166] (Leyenda.Seguro.1) \=IF(ID_CONDICION_AUTO=1,IF(SeguroEsFinanciado?,CONCATENATE(F165,F163,F164,G163,"."),IF(ID_CALCULO_SEGURO>5,CONCATENATE(F165,F163,MontoSeguroDeContado,G163,"."),"")),"")\
-[F167] (Leyenda.Seguro.2) \=IF(SeguroEsFinanciado?,"Con Seguro " & IF(SeguroEsMultianual?,"Multianual","Anual") & " Financiado.","")\
-[F168] (LeyendaAportacionAdicional) \=IF(AportacionAdicional>0, CONCATENATE("+ Aportación adicional de ",TEXT(AportacionAdicional,"$#,##0.00")), "")\
-[F170] \=IF(SeguroEsFinanciado?,CONCATENATE(F165,F163,F164,G163,"."),IF(ID_CALCULO_SEGURO>5,CONCATENATE(F165,F163,MontoSeguroDeContado,G163,"."),""))\
-[G10] \Porcentaje Máximo Enganche\
-[G20] \Recientes\
-[G23] \=IF(ISERROR(G24), 0, G24)\
-[G24] \=GetIdFromDesc(AutoCadenaCompleta,G25)\
-[G25] \C_AUTO\
-[G26] \=GetCatalogValue(ID_AUTO,"Descripción",INDIRECT(G25))\
-[G27] \=GetCatalogValue(ID_AUTO,G28,INDIRECT(G25))\
-[G28] \TipoAutomovil\
-[G31] \Recientes\
-[G36] \=IF(G37,G38,1)\
-[G37] \=NOT(CondicionAutoEs3.5T?)\
-[G38] \=GetCatalogValue(ID_ESTADO,G39,C_ESTADO)\
-[G39] \FactorDescuento\
-[G62] \Nuevo/Reciente\
-[G63] \= (ValorFactura * G64) + G65\
-[G64] (Porcentaje_Base) \=GetCatalogValue(ID_AUTO,"CuotaAutoConIva",INDIRECT(G25))\
-[G65] \=GetCatalogValue(ID_AUTO,"ConstanteAutoConIva",INDIRECT(G25))\
-[G68] \Nuevos\
-[G69] \=GetCatalogValue(ID_AUTO,"GastosExpediciónAutoConIVA", INDIRECT(G25))\
+[F131] (MontoFinanciarTotal) \= MontoFinanciarAuto + MontoFinanciarSeguros+MontoGtiaExt\
+[F132] (MontoComisionPorAperturaConIva) \=MontoFinanciarTotal * CapturaPorcentajeComisionApertura * (1+IvaNominal)\
+[F134] (PorcentajeAnticipoAuto) \=IF(ValorFactura=0, 0, MontoAnticipoAuto/ValorFactura)\
+[F137] (TasaInteres) \=TIA.Tasa_Interés_Anual\
+[F140] (PlazoEnMeses) \=GetCatalogValue(ID_PLAZO,"EnMeses",C_PLAZO)\
+[F141] (PeriodosPorAño) \=GetCatalogValue(ID_FRECUENCIA,"PeriodosPorAño",C_FRECUENCIA)\
+[F142] (NumeroDePagos) \= PlazoEnMeses / CONST_MESES_EN_AÑO * PeriodosPorAño\
+[F145] (PagoAuto) \=PMT( TasaInteres/PeriodosPorAño * (1+IvaParaIntereses), PlazoEnMeses, -MontoFinanciarAuto-MontoGtiaExt )\
+[F146] \=IF(SeguroEsMultianual?, PlazoEnMeses, CONST_MESES_EN_AÑO)\
+[F147] (PagoSeguro) \=PMT(TasaInteres/PeriodosPorAño*(1+IvaParaIntereses),F146,-MontoFinanciarSeguros)\
+[F148] (PagoTotal) \= PagoAuto + PagoSeguro\
+[F151] \=IF(OR(NOT(SeguroEsMultianual?),NumeroDePagos=PeriodosPorAño)," por el primer año","a " & SELECCION_PLAZO) & " por "\
+[F152] \=TEXT(MontoFinanciarSeguros,"$#,##0.00")\
+[F153] \* Costo del Seguro Banorte\
+[F154] (Leyenda.Seguro.1) \=IF(ID_CONDICION_AUTO=1,IF(SeguroEsFinanciado?,CONCATENATE(F153,F151,F152,G151,"."),IF(ID_CALCULO_SEGURO>5,CONCATENATE(F153,F151,MontoSeguroDeContado,G151,"."),"")),"")\
+[F155] (Leyenda.Seguro.2) \=IF(SeguroEsFinanciado?,"Con Seguro " & IF(SeguroEsMultianual?,"Multianual","Anual") & " Financiado.","")\
+[F156] (LeyendaAportacionAdicional) \=IF(AportacionAdicional>0, CONCATENATE("+ Aportación adicional de ",TEXT(AportacionAdicional,"$#,##0.00")), "")\
+[F158] \=IF(SeguroEsFinanciado?,CONCATENATE(F153,F151,F152,G151,"."),IF(ID_CALCULO_SEGURO>5,CONCATENATE(F153,F151,MontoSeguroDeContado,G151,"."),""))\
+[G22] \Recientes\
+[G25] \=IF(ISERROR(G26), 0, G26)\
+[G26] \=GetIdFromDesc(AutoCadenaCompleta,G27)\
+[G27] \C_AUTO\
+[G28] \=GetCatalogValue(ID_AUTO,"Descripción",INDIRECT(G27))\
+[G29] \=GetCatalogValue(ID_AUTO,G30,INDIRECT(G27))\
+[G30] \TipoAutomovil\
 [Calculos]
-[G70] \=IF(EstadoIncluyeRcUsa?, GetCatalogValue(ID_TIPO_AUTO,G71,C_TARIFA_RC_EU), 0)\
-[G71] \Tarifa\
-[G72] \=IF(G73, GetCatalogValue(ID_AUTO,"Auto Sust",INDIRECT(G25)), 0)\
-[G73] \=GetCatalogValue(ID_AUTO_SUST,"Valor",C_SI_NO)\
-[G74] \=IF(Aplica_IndemVF?, Calculo_IndemnVF, 0)\
-[G75] (Aplica_IndemVF?) \=OR(GetCatalogValue(ID_INDEMN_AÑO1,"Porcentaje",C_Indem_Valor_Factura))\
-[G76] (Calculo_IndemnVF) \= ValorFactura * Tarifa_IndemnVF * Porcentaje_Base * EstadoFactorDescuento\
-[G77] (Tarifa_IndemnVF) \=GetCatalogValue(ID_INDEMN_AÑO1,"Porcentaje",C_Indem_Valor_Factura)\
-[G78] \=IF(G79, GetCatalogValue(ID_AUTO,G80,INDIRECT(G25)), 0)\
-[G79] \=GetCatalogValue(ID_INCREMENTO_RC,"Aplica",C_ADIC_INCREMENTO_RC)\
-[G80] \=GetCatalogValue(ID_INCREMENTO_RC,"Tarifa",C_ADIC_INCREMENTO_RC)\
-[G81] \=IF(G82,G83,0)\
-[G82] \=GetCatalogValue(ID_SERVICIO_PREMIUM,"Valor",C_SI_NO)\
-[G83] \=G84*G85\
-[G84] \=VLOOKUP(ID_AUTO,C_AUTO,17)\
-[G85] \=MIN(G86,G87)\
-[G86] \=MultianualFactorAuto\
-[G87] \=VLOOKUP(VLOOKUP("Factor 24 Meses",C_FACTOR_MULTIANUAL_DESC,2),C_FACTOR_MULTIANUAL,4)\
-[G132] \Monto Mínimo a Financiar Auto\
-[G138] \=PorcentajeEnganche\
-[G141] \Nuevos\
-[G142] (TasaCondicion1Nuevos) \=PorcentajeAnticipoAuto >= TipoCliente_UmbralEnganche\
-[G143] (TasaCondicion2Nuevos) \=PorcentajeEnganche>=CONST_UMBRAL_ENGANCHE\
-[G145] \Chica\
-[G146] \Grande\
+[G33] \Recientes\
+[G38] \=IF(G39,G40,1)\
+[G39] \=NOT(CondicionAutoEs3.5T?)\
+[G40] \=GetCatalogValue(ID_ESTADO,G41,C_ESTADO)\
+[G41] \FactorDescuento\
+[G64] \Nuevo/Reciente\
+[G65] \= (ValorFactura * G66) + G67\
+[G66] (Porcentaje_Base) \=GetCatalogValue(ID_AUTO,"CuotaAutoConIva",INDIRECT(G27))\
+[G67] \=GetCatalogValue(ID_AUTO,"ConstanteAutoConIva",INDIRECT(G27))\
+[G70] \Nuevos\
+[G71] \=GetCatalogValue(ID_AUTO,"GastosExpediciónAutoConIVA", INDIRECT(G27))\
+[G72] \=IF(EstadoIncluyeRcUsa?, GetCatalogValue(ID_TIPO_AUTO,G73,C_TARIFA_RC_EU), 0)\
+[G73] \Tarifa\
+[G74] \=IF(G75, GetCatalogValue(ID_AUTO,"Auto Sust",INDIRECT(G27)), 0)\
+[G75] \=GetCatalogValue(ID_AUTO_SUST,"Valor",C_SI_NO)\
+[G76] \=IF(Aplica_IndemVF?, Calculo_IndemnVF, 0)\
+[G77] (Aplica_IndemVF?) \=OR(GetCatalogValue(ID_INDEMN_AÑO1,"Porcentaje",C_Indem_Valor_Factura))\
+[G78] (Calculo_IndemnVF) \= ValorFactura * Tarifa_IndemnVF * Porcentaje_Base * EstadoFactorDescuento\
+[G79] (Tarifa_IndemnVF) \=GetCatalogValue(ID_INDEMN_AÑO1,"Porcentaje",C_Indem_Valor_Factura)\
+[G80] \=IF(G81, GetCatalogValue(ID_AUTO,G82,INDIRECT(G27)), 0)\
+[G81] \=GetCatalogValue(ID_INCREMENTO_RC,"Aplica",C_ADIC_INCREMENTO_RC)\
+[G82] \=GetCatalogValue(ID_INCREMENTO_RC,"Tarifa",C_ADIC_INCREMENTO_RC)\
+[G83] \=IF(G84,G85,0)\
+[G84] \=GetCatalogValue(ID_SERVICIO_PREMIUM,"Valor",C_SI_NO)\
+[G85] \=G86*G87\
 [Calculos]
-[G147] \=IF(TasaCondicion2Nuevos,G145,G146)\
-[G152] \142'=SI(O(TasaCondicion1Nuevos,TasaCondicion2Nuevos),G140, G141)\
-[G162] \Leyendas agregadas por MAGM 130313 para cotización y tabla de amortización\
-[G163] \=IF(ID_CALCULO_SEGURO<6,", incluye Indeminización Valor Factura Primer Año, Reparación en Agencia y Auto Sustituto",IF(ID_CALCULO_SEGURO>5,", incluye Indeminización Valor Factura Primer Año, Reparación en Agencia y Auto Sustituto en el pago a la firma del contrato",""))\
-[G165] \+ Crédito por Seguro Banorte\
-[G166] (Leyenda.Seguro.1_tabla_amortizacion) \=IF(SeguroEsFinanciado?,CONCATENATE(G165,F163,F164,"."),"")\
-[H10] (PorcentajeMaximoEnganche) \=1-(Monto_Mínimo_a_Financiar/CapturaValorFactura)\
-[H20] \Anteriores\
-[H23] \=IF(ISERROR(H24), 0, H24)\
-[H24] \=GetIdFromDesc(AutoCadenaCompleta,H25)\
-[H25] \C_AutosSeminuevos\
-[H26] \=GetCatalogValue(ID_AUTO,"Descripción",INDIRECT(H25))\
-[H27] \=GetCatalogValue(ID_AUTO,H28,INDIRECT(H25))\
-[H28] \TipoAutomovil\
-[H31] \Anteriores\
-[H36] \=IF(H37,H38,1)\
-[H37] \=G37\
-[H38] \=GetCatalogValue(ID_ESTADO,H39,C_ESTADO)\
-[H39] \FactDescSeminuevos\
-[H62] \Anterior\
-[H63] \=GetCatalogValue(ID_AUTO,H66,INDIRECT(H25))\
-[H66] (NombreTarifaSemiAnt) \=GetCatalogValue(ID_MODELO,"ColumnaTarifa",C_MODELO_AÑO)\
-[H68] \Seminuevos\
-[H69] \=CONST_Gastos_Expedicion_Semi_Ant\
-[H70] \=IF(EstadoIncluyeRcUsa?, GetCatalogValue(ID_TIPO_AUTO,H71,C_TARIFA_RC_EU), 0)\
+[G86] \=VLOOKUP(ID_AUTO,C_AUTO,17)\
+[G87] \=MIN(G88,G89)\
+[G88] \=MultianualFactorAuto\
+[G89] \=VLOOKUP(VLOOKUP("Factor 24 Meses",C_FACTOR_MULTIANUAL_DESC,2),C_FACTOR_MULTIANUAL,4)\
+[G127] \Monto Mínimo a Financiar Auto\
+[G140] \142'=SI(O(TasaCondicion1Nuevos,TasaCondicion2Nuevos),G140, G141)\
+[G150] \Leyendas agregadas por MAGM 130313 para cotización y tabla de amortización\
+[G151] \=IF(ID_CALCULO_SEGURO<6,", incluye Indeminización Valor Factura Primer Año, Reparación en Agencia y Auto Sustituto",IF(ID_CALCULO_SEGURO>5,", incluye Indeminización Valor Factura Primer Año, Reparación en Agencia y Auto Sustituto en el pago a la firma del contrato",""))\
+[G153] \+ Crédito por Seguro Banorte\
+[G154] (Leyenda.Seguro.1_tabla_amortizacion) \=IF(SeguroEsFinanciado?,CONCATENATE(G153,F151,F152,"."),"")\
+[H22] \Anteriores\
+[H25] \=IF(ISERROR(H26), 0, H26)\
+[H26] \=GetIdFromDesc(AutoCadenaCompleta,H27)\
+[H27] \C_AutosSeminuevos\
+[H28] \=GetCatalogValue(ID_AUTO,"Descripción",INDIRECT(H27))\
+[H29] \=GetCatalogValue(ID_AUTO,H30,INDIRECT(H27))\
+[H30] \TipoAutomovil\
+[H33] \Anteriores\
+[H38] \=IF(H39,H40,1)\
+[H39] \=G39\
+[H40] \=GetCatalogValue(ID_ESTADO,H41,C_ESTADO)\
+[H41] \FactDescSeminuevos\
+[H64] \Anterior\
+[H65] \=GetCatalogValue(ID_AUTO,H68,INDIRECT(H27))\
+[H68] (NombreTarifaSemiAnt) \=GetCatalogValue(ID_MODELO,"ColumnaTarifa",C_MODELO_AÑO)\
 [Calculos]
-[H71] \TarifaSemiAnt\
-[H72] \=IF(ModeloEsAnterior?,0, GetCatalogValue(ID_AUTO,"Auto Sust",INDIRECT(G25)) )\
-[H74] \=IF(ModeloEsAnterior?,0, Calculo_IndemnVF_Seminuevos_Recientes )\
-[H76] (Calculo_IndemnVF_Seminuevos_Recientes) \= ValorFactura * Tarifa_IndemnVF_Seminuevos_Recientes * Porcentaje_Base * EstadoFactorDescuento\
-[H77] (Tarifa_IndemnVF_Seminuevos_Recientes) \=GetCatalogValue(1,"Porcentaje",C_Indem_Valor_Factura)\
-[H78] \0\
-[H81] \=IF(ModeloEsAnterior?,0, GetCatalogValue(ID_AUTO,"Servicio Premium",INDIRECT(G25)) )\
-[H132] (Monto_Mínimo_a_Financiar) \25000\
-[H138] \=CONST_UMBRAL_ENGANCHE\
-[H141] \Seminuevos\
-[H144] (TasaCondicion1Seminuevos) \=PorcentajeAnticipoAuto >= CONST_UMBRAL_ENGANCHE_SEMI\
-[H145] \SemiAntChica\
-[H146] \SemiAntGrande\
-[H147] \=IF(TasaCondicion1Seminuevos,H145,H146)\
-[H162] (Contiene_cobertura_adicional) \=IF(OR(ID_AUTO_SUST=1,ID_INCREMENTO_RC>0,ID_INDEMN_AÑO1>1,ID_SERVICIO_PREMIUM=1),1,0)\
-[H165] \Cotización\
-[H166] \Tabla de Amortización\
-[I23] \Condición de error\
-[I24] \Id \
-[I25] \Catálogo de autos\
-[I26] \ \
-[I28] \Columna Tipo Auto\
-[I32] \ \
-[I33] \ \
+[H70] \Seminuevos\
+[H71] \=CONST_Gastos_Expedicion_Semi_Ant\
+[H72] \=IF(EstadoIncluyeRcUsa?, GetCatalogValue(ID_TIPO_AUTO,H73,C_TARIFA_RC_EU), 0)\
+[H73] \TarifaSemiAnt\
+[H74] \=IF(ModeloEsAnterior?,0, GetCatalogValue(ID_AUTO,"Auto Sust",INDIRECT(G27)) )\
+[H76] \=IF(ModeloEsAnterior?,0, Calculo_IndemnVF_Seminuevos_Recientes )\
+[H78] (Calculo_IndemnVF_Seminuevos_Recientes) \= ValorFactura * Tarifa_IndemnVF_Seminuevos_Recientes * Porcentaje_Base * EstadoFactorDescuento\
+[H79] (Tarifa_IndemnVF_Seminuevos_Recientes) \=GetCatalogValue(1,"Porcentaje",C_Indem_Valor_Factura)\
+[H80] \0\
+[H83] \=IF(ModeloEsAnterior?,0, GetCatalogValue(ID_AUTO,"Servicio Premium",INDIRECT(G27)) )\
+[H127] (Monto_Mínimo_a_Financiar) \25000\
+[H150] (Contiene_cobertura_adicional) \=IF(OR(ID_AUTO_SUST=1,ID_INCREMENTO_RC>0,ID_INDEMN_AÑO1>1,ID_SERVICIO_PREMIUM=1),1,0)\
+[H153] \Cotización\
+[H154] \Tabla de Amortización\
+[I25] \Condición de error\
+[I26] \Id \
+[I27] \Catálogo de autos\
+[I28] \ \
+[I30] \Columna Tipo Auto\
 [I34] \ \
-[Calculos]
 [I35] \ \
-[I36] \Si no aplica, factor = 1\
-[I37] \Aplica? (No es 3.5T)\
-[I38] \<- Si sí aplica\
-[I39] \Factor que aplica\
-[I63] \ \
-[I64] \Porcentaje Base\
-[I65] \Cuota Base\
-[I66] \Tarifa\
-[I71] \Columna de tarifa\
-[I73] \Aplica?\
-[I75] \Aplica?\
-[I76] \Monto\
-[I77] \Tarifa Monto IndemnVF\
-[I79] \Aplica?\
-[I80] \Columna de tarifa\
-[I82] \Aplica?\
-[I83] \Resultado\
-[I84] \Tarifa Base Premium\
-[I85] \Factor Multi a aplicar\
-[I86] \Factor Multi Actual\
-[I87] \Factor Multi 24M\
-[I138] \=G138>=H138\
-[I142] \1: % Anticipo Auto >= Umbral\
-[I143] \2: Monto financiar (Total) >= Umbral\
+[I36] \ \
+[I37] \ \
+[I38] \Si no aplica, factor = 1\
+[I39] \Aplica? (No es 3.5T)\
 [Calculos]
-[I144] \1: % Anticipo Auto >= Umbral\
-[I145] \Tasa Barata\
-[I146] \Tasa Cara\
-[I162] \Leyendas modificadas por JIHY 20140507 para cotización y tabla de amortización de coberturas adicionales de seguro\
-[I163] \Incluye la(s) siguiente(s) cobertura(s) adicional(es):\
-[I165] (Leyenda_coberturas_adicionales_cotizacion) \=IF(Contiene_cobertura_adicional=1,CONCATENATE($I$163,Leyenda_auto_sustituto,Layenda_Incremento_RC,Leyenda_Indemnizacion_valor_factura,Leyenda_cobertura_premium),"")\
-[I166] (Leyenda_coberturas_adicionales_tabla_de_amortizacion) \=IF(Contiene_cobertura_adicional=1,CONCATENATE($I$163,Leyenda_auto_sustituto,Layenda_Incremento_RC,Leyenda_Indemnizacion_valor_factura,Leyenda_cobertura_premium,IF(ID_CALCULO_SEGURO>=1,"")),"")\
-[J19] \ \
+[I40] \<- Si sí aplica\
+[I41] \Factor que aplica\
+[I65] \ \
+[I66] \Porcentaje Base\
+[I67] \Cuota Base\
+[I68] \Tarifa\
+[I73] \Columna de tarifa\
+[I75] \Aplica?\
+[I77] \Aplica?\
+[I78] \Monto\
+[I79] \Tarifa Monto IndemnVF\
+[I81] \Aplica?\
+[I82] \Columna de tarifa\
+[I84] \Aplica?\
+[I85] \Resultado\
+[I86] \Tarifa Base Premium\
+[I87] \Factor Multi a aplicar\
+[I88] \Factor Multi Actual\
+[I89] \Factor Multi 24M\
+[I150] \Leyendas modificadas por JIHY 20140507 para cotización y tabla de amortización de coberturas adicionales de seguro\
+[I151] \Incluye la(s) siguiente(s) cobertura(s) adicional(es):\
+[I153] (Leyenda_coberturas_adicionales_cotizacion) \=IF(Contiene_cobertura_adicional=1,CONCATENATE($I$151,Leyenda_auto_sustituto,Layenda_Incremento_RC,Leyenda_Indemnizacion_valor_factura,Leyenda_cobertura_premium),"")\
+[I154] (Leyenda_coberturas_adicionales_tabla_de_amortizacion) \=IF(Contiene_cobertura_adicional=1,CONCATENATE($I$151,Leyenda_auto_sustituto,Layenda_Incremento_RC,Leyenda_Indemnizacion_valor_factura,Leyenda_cobertura_premium,IF(ID_CALCULO_SEGURO>=1,"")),"")\
 [K3] \Salida de datos para la cotización\
 [K5] \Vaciado de la carátula\
+[Calculos]
 [K7] \Enganche:\
 [K8] \Seguro (Contado):\
 [K9] \Comisión apertura:\
@@ -1532,28 +1496,27 @@ Contenido:
 [K19] \36\
 [K20] \48\
 [K21] \60\
-[K81] \=H81-G81\
 [L16] \Tasa\
-[Calculos]
 [L17] \0.129\
 [L18] \0.129\
 [L19] \0.129\
 [L20] \0.129\
-[L21] \0.132\
+[L21] \0.129\
 [M5] \Usando Macros\
 [M7] \=MontoEnganche\
 [M8] \=MontoSeguroDeContado\
 [M9] \=MontoComisionPorAperturaConIva\
 [M10] \=AportacionAdicional\
 [M11] \=SUM(M7:M10)\
+[Calculos]
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \21149.54\
-[M18] \11332.83\
-[M19] \8082.97\
-[M20] \6474.66\
-[M21] \5564.02\
+[M17] \17774.61\
+[M18] \9524.4\
+[M19] \6793.14\
+[M20] \5441.47\
+[M21] \4641.48\
 
 [Fechas]
 [A2] \Fechas de pago y días de intereses (AutoEstrene Mensual)\
@@ -23021,16 +22984,12 @@ Financiar\
 [L713] \348\
 [L714] \348\
 [L715] \348\
-[M3] \Recurrentes\
-[M4] \PctMinimoEngancheR\
-[M5] \0.15\
-[M6] \0.25\
 [M13] \FAC VALOR FACTURA\
-[C. Auto]
 [M15] \0.000\
 [M16] \0.000\
 [M17] \0.000\
 [M18] \0.000\
+[C. Auto]
 [M19] \0.000\
 [M20] \0.000\
 [M21] \0.000\
@@ -23052,11 +23011,11 @@ Financiar\
 [M37] \0.000\
 [M38] \0.000\
 [M39] \0.000\
-[C. Auto]
 [M40] \0.000\
 [M41] \0.000\
 [M42] \0.000\
 [M43] \0.000\
+[C. Auto]
 [M44] \0.000\
 [M45] \0.000\
 [M46] \0.000\
@@ -23078,11 +23037,11 @@ Financiar\
 [M62] \0.000\
 [M63] \0.000\
 [M64] \0.000\
-[C. Auto]
 [M65] \0.000\
 [M66] \0.000\
 [M67] \0.000\
 [M68] \0.000\
+[C. Auto]
 [M69] \0.000\
 [M70] \0.000\
 [M71] \0.000\
@@ -23104,11 +23063,11 @@ Financiar\
 [M87] \0.000\
 [M88] \0.000\
 [M89] \0.000\
-[C. Auto]
 [M90] \0.000\
 [M91] \0.000\
 [M92] \0.000\
 [M93] \0.000\
+[C. Auto]
 [M94] \0.000\
 [M95] \0.000\
 [M96] \0.000\
@@ -23130,11 +23089,11 @@ Financiar\
 [M112] \0.000\
 [M113] \0.000\
 [M114] \0.000\
-[C. Auto]
 [M115] \0.000\
 [M116] \0.000\
 [M117] \0.000\
 [M118] \0.000\
+[C. Auto]
 [M119] \0.000\
 [M120] \0.000\
 [M121] \0.000\
@@ -23156,11 +23115,11 @@ Financiar\
 [M137] \0.000\
 [M138] \0.000\
 [M139] \0.000\
-[C. Auto]
 [M140] \0.000\
 [M141] \0.000\
 [M142] \0.000\
 [M143] \0.000\
+[C. Auto]
 [M144] \0.000\
 [M145] \0.000\
 [M146] \0.000\
@@ -23182,11 +23141,11 @@ Financiar\
 [M162] \0.000\
 [M163] \0.000\
 [M164] \0.000\
-[C. Auto]
 [M165] \0.000\
 [M166] \0.000\
 [M167] \0.000\
 [M168] \0.000\
+[C. Auto]
 [M169] \0.000\
 [M170] \0.000\
 [M171] \0.000\
@@ -23208,11 +23167,11 @@ Financiar\
 [M187] \0.000\
 [M188] \0.000\
 [M189] \0.000\
-[C. Auto]
 [M190] \0.000\
 [M191] \0.000\
 [M192] \0.000\
 [M193] \0.000\
+[C. Auto]
 [M194] \0.000\
 [M195] \0.000\
 [M196] \0.000\
@@ -23234,11 +23193,11 @@ Financiar\
 [M212] \0.000\
 [M213] \0.000\
 [M214] \0.000\
-[C. Auto]
 [M215] \0.000\
 [M216] \0.000\
 [M217] \0.000\
 [M218] \0.000\
+[C. Auto]
 [M219] \0.000\
 [M220] \0.000\
 [M221] \0.000\
@@ -23260,11 +23219,11 @@ Financiar\
 [M237] \0.000\
 [M238] \0.000\
 [M239] \0.000\
-[C. Auto]
 [M240] \0.000\
 [M241] \0.000\
 [M242] \0.000\
 [M243] \0.000\
+[C. Auto]
 [M244] \0.000\
 [M245] \0.000\
 [M246] \0.000\
@@ -23286,11 +23245,11 @@ Financiar\
 [M262] \0.000\
 [M263] \0.000\
 [M264] \0.000\
-[C. Auto]
 [M265] \0.000\
 [M266] \0.000\
 [M267] \0.000\
 [M268] \0.000\
+[C. Auto]
 [M269] \0.000\
 [M270] \0.000\
 [M271] \0.000\
@@ -23312,11 +23271,11 @@ Financiar\
 [M287] \0.000\
 [M288] \0.000\
 [M289] \0.000\
-[C. Auto]
 [M290] \0.000\
 [M291] \0.000\
 [M292] \0.000\
 [M293] \0.000\
+[C. Auto]
 [M294] \0.000\
 [M295] \0.000\
 [M296] \0.000\
@@ -23338,11 +23297,11 @@ Financiar\
 [M312] \0.000\
 [M313] \0.000\
 [M314] \0.000\
-[C. Auto]
 [M315] \0.000\
 [M316] \0.000\
 [M317] \0.000\
 [M318] \0.000\
+[C. Auto]
 [M319] \0.000\
 [M320] \0.000\
 [M321] \0.000\
@@ -23364,11 +23323,11 @@ Financiar\
 [M337] \0.000\
 [M338] \0.000\
 [M339] \0.000\
-[C. Auto]
 [M340] \0.000\
 [M341] \0.000\
 [M342] \0.000\
 [M343] \0.000\
+[C. Auto]
 [M344] \0.000\
 [M345] \0.000\
 [M346] \0.000\
@@ -23390,11 +23349,11 @@ Financiar\
 [M362] \0.000\
 [M363] \0.000\
 [M364] \0.000\
-[C. Auto]
 [M365] \0.000\
 [M366] \0.000\
 [M367] \0.000\
 [M368] \0.000\
+[C. Auto]
 [M369] \0.000\
 [M370] \0.000\
 [M371] \0.000\
@@ -23416,11 +23375,11 @@ Financiar\
 [M387] \0.000\
 [M388] \0.000\
 [M389] \0.000\
-[C. Auto]
 [M390] \0.000\
 [M391] \0.000\
 [M392] \0.000\
 [M393] \0.000\
+[C. Auto]
 [M394] \0.000\
 [M395] \0.000\
 [M396] \0.000\
@@ -23442,11 +23401,11 @@ Financiar\
 [M412] \0.000\
 [M413] \0.000\
 [M414] \0.000\
-[C. Auto]
 [M415] \0.000\
 [M416] \0.000\
 [M417] \0.000\
 [M418] \0.000\
+[C. Auto]
 [M419] \0.000\
 [M420] \0.000\
 [M421] \0.000\
@@ -23468,11 +23427,11 @@ Financiar\
 [M437] \0.000\
 [M438] \0.000\
 [M439] \0.000\
-[C. Auto]
 [M440] \0.000\
 [M441] \0.000\
 [M442] \0.000\
 [M443] \0.000\
+[C. Auto]
 [M444] \0.000\
 [M445] \0.000\
 [M446] \0.000\
@@ -23494,11 +23453,11 @@ Financiar\
 [M462] \0.000\
 [M463] \0.000\
 [M464] \0.000\
-[C. Auto]
 [M465] \0.000\
 [M466] \0.000\
 [M467] \0.000\
 [M468] \0.000\
+[C. Auto]
 [M469] \0.000\
 [M470] \0.000\
 [M471] \0.000\
@@ -23520,11 +23479,11 @@ Financiar\
 [M487] \0.000\
 [M488] \0.000\
 [M489] \0.000\
-[C. Auto]
 [M490] \0.000\
 [M491] \0.000\
 [M492] \0.000\
 [M493] \0.000\
+[C. Auto]
 [M494] \0.000\
 [M495] \0.000\
 [M496] \0.000\
@@ -23546,11 +23505,11 @@ Financiar\
 [M512] \0.000\
 [M513] \0.000\
 [M514] \0.000\
-[C. Auto]
 [M515] \0.000\
 [M516] \0.000\
 [M517] \0.000\
 [M518] \0.000\
+[C. Auto]
 [M519] \0.000\
 [M520] \0.000\
 [M521] \0.000\
@@ -23572,11 +23531,11 @@ Financiar\
 [M537] \0.000\
 [M538] \0.000\
 [M539] \0.000\
-[C. Auto]
 [M540] \0.000\
 [M541] \0.000\
 [M542] \0.000\
 [M543] \0.000\
+[C. Auto]
 [M544] \0.000\
 [M545] \0.000\
 [M546] \0.000\
@@ -23598,11 +23557,11 @@ Financiar\
 [M562] \0.000\
 [M563] \0.000\
 [M564] \0.000\
-[C. Auto]
 [M565] \0.000\
 [M566] \0.000\
 [M567] \0.000\
 [M568] \0.000\
+[C. Auto]
 [M569] \0.000\
 [M570] \0.000\
 [M571] \0.000\
@@ -23624,11 +23583,11 @@ Financiar\
 [M587] \0.000\
 [M588] \0.000\
 [M589] \0.000\
-[C. Auto]
 [M590] \0.000\
 [M591] \0.000\
 [M592] \0.000\
 [M593] \0.000\
+[C. Auto]
 [M594] \0.000\
 [M595] \0.000\
 [M596] \0.000\
@@ -23650,11 +23609,11 @@ Financiar\
 [M612] \0.000\
 [M613] \0.000\
 [M614] \0.000\
-[C. Auto]
 [M615] \0.000\
 [M616] \0.000\
 [M617] \0.000\
 [M618] \0.000\
+[C. Auto]
 [M619] \0.000\
 [M620] \0.000\
 [M621] \0.000\
@@ -23676,11 +23635,11 @@ Financiar\
 [M637] \0.000\
 [M638] \0.000\
 [M639] \0.000\
-[C. Auto]
 [M640] \0.000\
 [M641] \0.000\
 [M642] \0.000\
 [M643] \0.000\
+[C. Auto]
 [M644] \0.000\
 [M645] \0.000\
 [M646] \0.000\
@@ -23702,11 +23661,11 @@ Financiar\
 [M662] \0.000\
 [M663] \0.000\
 [M664] \0.000\
-[C. Auto]
 [M665] \0.000\
 [M666] \0.000\
 [M667] \0.000\
 [M668] \0.000\
+[C. Auto]
 [M669] \0.000\
 [M670] \0.000\
 [M671] \0.000\
@@ -23728,11 +23687,11 @@ Financiar\
 [M687] \0.000\
 [M688] \0.000\
 [M689] \0.000\
-[C. Auto]
 [M690] \0.000\
 [M691] \0.000\
 [M692] \0.000\
 [M693] \0.000\
+[C. Auto]
 [M694] \0.000\
 [M695] \0.000\
 [M696] \0.000\
@@ -23754,15 +23713,11 @@ Financiar\
 [M712] \0.000\
 [M713] \0.000\
 [M714] \0.000\
-[C. Auto]
 [M715] \0.000\
-[N3] \Nuevos\
-[N4] \PctMinimoEnganche\
-[N5] \=IF(Tipo_Persona.Descripción="Moral",20%,10%)\
-[N6] \0.25\
 [N13] \EXCESO RC 4500\
 [N15] \67.0711999999999\
 [N16] \67.0711999999999\
+[C. Auto]
 [N17] \67.0711999999999\
 [N18] \67.0711999999999\
 [N19] \67.0711999999999\
@@ -23780,7 +23735,6 @@ Financiar\
 [N31] \67.0711999999999\
 [N32] \67.0711999999999\
 [N33] \67.0711999999999\
-[C. Auto]
 [N34] \67.0711999999999\
 [N35] \67.0711999999999\
 [N36] \67.0711999999999\
@@ -23789,6 +23743,7 @@ Financiar\
 [N39] \67.0711999999999\
 [N40] \67.0711999999999\
 [N41] \67.0711999999999\
+[C. Auto]
 [N42] \67.0711999999999\
 [N43] \67.0711999999999\
 [N44] \67.0711999999999\
@@ -23806,7 +23761,6 @@ Financiar\
 [N56] \67.0711999999999\
 [N57] \67.0711999999999\
 [N58] \67.0711999999999\
-[C. Auto]
 [N59] \67.0711999999999\
 [N60] \67.0711999999999\
 [N61] \67.0711999999999\
@@ -23815,6 +23769,7 @@ Financiar\
 [N64] \67.0711999999999\
 [N65] \67.0711999999999\
 [N66] \67.0711999999999\
+[C. Auto]
 [N67] \67.0711999999999\
 [N68] \67.0711999999999\
 [N69] \67.0711999999999\
@@ -23832,7 +23787,6 @@ Financiar\
 [N81] \67.0711999999999\
 [N82] \67.0711999999999\
 [N83] \67.0711999999999\
-[C. Auto]
 [N84] \67.0711999999999\
 [N85] \121.626\
 [N86] \121.626\
@@ -23841,6 +23795,7 @@ Financiar\
 [N89] \121.626\
 [N90] \121.626\
 [N91] \121.626\
+[C. Auto]
 [N92] \298.14\
 [N93] \284.725\
 [N94] \67.0711999999999\
@@ -23858,7 +23813,6 @@ Financiar\
 [N106] \67.0711999999999\
 [N107] \67.0711999999999\
 [N108] \67.0711999999999\
-[C. Auto]
 [N109] \121.626\
 [N110] \67.0711999999999\
 [N111] \67.0711999999999\
@@ -23867,6 +23821,7 @@ Financiar\
 [N114] \121.626\
 [N115] \67.0711999999999\
 [N116] \67.0711999999999\
+[C. Auto]
 [N117] \67.0711999999999\
 [N118] \121.626\
 [N119] \121.626\
@@ -23884,7 +23839,6 @@ Financiar\
 [N131] \67.0711999999999\
 [N132] \67.0711999999999\
 [N133] \67.0711999999999\
-[C. Auto]
 [N134] \67.0711999999999\
 [N135] \67.0711999999999\
 [N136] \67.0711999999999\
@@ -23893,6 +23847,7 @@ Financiar\
 [N139] \121.626\
 [N140] \121.626\
 [N141] \121.626\
+[C. Auto]
 [N142] \121.626\
 [N143] \121.626\
 [N144] \121.626\
@@ -23910,7 +23865,6 @@ Financiar\
 [N156] \121.626\
 [N157] \121.626\
 [N158] \121.626\
-[C. Auto]
 [N159] \67.0711999999999\
 [N160] \67.0711999999999\
 [N161] \121.626\
@@ -23919,6 +23873,7 @@ Financiar\
 [N164] \67.0711999999999\
 [N165] \67.0711999999999\
 [N166] \67.0711999999999\
+[C. Auto]
 [N167] \67.0711999999999\
 [N168] \121.626\
 [N169] \121.626\
@@ -23936,7 +23891,6 @@ Financiar\
 [N181] \67.0711999999999\
 [N182] \121.626\
 [N183] \121.626\
-[C. Auto]
 [N184] \67.0711999999999\
 [N185] \67.0711999999999\
 [N186] \67.0711999999999\
@@ -23945,6 +23899,7 @@ Financiar\
 [N189] \67.0711999999999\
 [N190] \67.0711999999999\
 [N191] \67.0711999999999\
+[C. Auto]
 [N192] \67.0711999999999\
 [N193] \67.0711999999999\
 [N194] \67.0711999999999\
@@ -23962,7 +23917,6 @@ Financiar\
 [N206] \121.626\
 [N207] \121.626\
 [N208] \67.0711999999999\
-[C. Auto]
 [N209] \67.0711999999999\
 [N210] \67.0711999999999\
 [N211] \67.0711999999999\
@@ -23971,6 +23925,7 @@ Financiar\
 [N214] \121.626\
 [N215] \67.0711999999999\
 [N216] \67.0711999999999\
+[C. Auto]
 [N217] \67.0711999999999\
 [N218] \67.0711999999999\
 [N219] \121.626\
@@ -23988,7 +23943,6 @@ Financiar\
 [N231] \121.626\
 [N232] \121.626\
 [N233] \121.626\
-[C. Auto]
 [N234] \121.626\
 [N235] \121.626\
 [N236] \121.626\
@@ -23997,6 +23951,7 @@ Financiar\
 [N239] \121.626\
 [N240] \67.0711999999999\
 [N241] \121.626\
+[C. Auto]
 [N242] \121.626\
 [N243] \121.626\
 [N244] \121.626\
@@ -24014,7 +23969,6 @@ Financiar\
 [N256] \121.626\
 [N257] \121.626\
 [N258] \121.626\
-[C. Auto]
 [N259] \121.626\
 [N260] \121.626\
 [N261] \121.626\
@@ -24023,6 +23977,7 @@ Financiar\
 [N264] \121.626\
 [N265] \121.626\
 [N266] \415.315000000001\
+[C. Auto]
 [N267] \298.14\
 [N268] \330.29\
 [N269] \354.902000000001\
@@ -24040,7 +23995,6 @@ Financiar\
 [N281] \67.0711999999999\
 [N282] \67.0711999999999\
 [N283] \67.0711999999999\
-[C. Auto]
 [N284] \67.0711999999999\
 [N285] \67.0711999999999\
 [N286] \67.0711999999999\
@@ -24049,6 +24003,7 @@ Financiar\
 [N289] \67.0711999999999\
 [N290] \67.0711999999999\
 [N291] \67.0711999999999\
+[C. Auto]
 [N292] \67.0711999999999\
 [N293] \67.0711999999999\
 [N294] \67.0711999999999\
@@ -24066,7 +24021,6 @@ Financiar\
 [N306] \67.0711999999999\
 [N307] \67.0711999999999\
 [N308] \67.0711999999999\
-[C. Auto]
 [N309] \67.0711999999999\
 [N310] \67.0711999999999\
 [N311] \121.626\
@@ -24075,6 +24029,7 @@ Financiar\
 [N314] \67.0711999999999\
 [N315] \67.0711999999999\
 [N316] \67.0711999999999\
+[C. Auto]
 [N317] \67.0711999999999\
 [N318] \67.0711999999999\
 [N319] \67.0711999999999\
@@ -24092,7 +24047,6 @@ Financiar\
 [N331] \298.14\
 [N332] \121.626\
 [N333] \121.626\
-[C. Auto]
 [N334] \121.626\
 [N335] \121.626\
 [N336] \121.626\
@@ -24101,6 +24055,7 @@ Financiar\
 [N339] \121.626\
 [N340] \121.626\
 [N341] \121.626\
+[C. Auto]
 [N342] \121.626\
 [N343] \67.0711999999999\
 [N344] \67.0711999999999\
@@ -24118,7 +24073,6 @@ Financiar\
 [N356] \67.0711999999999\
 [N357] \67.0711999999999\
 [N358] \67.0711999999999\
-[C. Auto]
 [N359] \67.0711999999999\
 [N360] \67.0711999999999\
 [N361] \121.626\
@@ -24127,6 +24081,7 @@ Financiar\
 [N364] \67.0711999999999\
 [N365] \284.725\
 [N366] \284.725\
+[C. Auto]
 [N367] \121.626\
 [N368] \121.626\
 [N369] \121.626\
@@ -24144,7 +24099,6 @@ Financiar\
 [N381] \67.0711999999999\
 [N382] \67.0711999999999\
 [N383] \67.0711999999999\
-[C. Auto]
 [N384] \67.0711999999999\
 [N385] \67.0711999999999\
 [N386] \67.0711999999999\
@@ -24153,6 +24107,7 @@ Financiar\
 [N389] \67.0711999999999\
 [N390] \67.0711999999999\
 [N391] \67.0711999999999\
+[C. Auto]
 [N392] \67.0711999999999\
 [N393] \67.0711999999999\
 [N394] \67.0711999999999\
@@ -24170,7 +24125,6 @@ Financiar\
 [N406] \298.14\
 [N407] \298.143199999999\
 [N408] \415.315000000001\
-[C. Auto]
 [N409] \415.315000000001\
 [N410] \481.7712\
 [N411] \481.7712\
@@ -24179,6 +24133,7 @@ Financiar\
 [N414] \121.626\
 [N415] \121.626\
 [N416] \121.626\
+[C. Auto]
 [N417] \121.626\
 [N418] \121.626\
 [N419] \330.29\
@@ -24196,7 +24151,6 @@ Financiar\
 [N431] \67.0711999999999\
 [N432] \67.0711999999999\
 [N433] \67.0711999999999\
-[C. Auto]
 [N434] \67.0711999999999\
 [N435] \67.0711999999999\
 [N436] \67.0711999999999\
@@ -24205,6 +24159,7 @@ Financiar\
 [N439] \67.0711999999999\
 [N440] \67.0711999999999\
 [N441] \67.0711999999999\
+[C. Auto]
 [N442] \67.0711999999999\
 [N443] \67.0711999999999\
 [N444] \67.0711999999999\
@@ -24222,7 +24177,6 @@ Financiar\
 [N456] \67.0711999999999\
 [N457] \67.0711999999999\
 [N458] \67.0711999999999\
-[C. Auto]
 [N459] \67.0711999999999\
 [N460] \67.0711999999999\
 [N461] \67.0711999999999\
@@ -24231,6 +24185,7 @@ Financiar\
 [N464] \67.0711999999999\
 [N465] \67.0711999999999\
 [N466] \67.0711999999999\
+[C. Auto]
 [N467] \67.0711999999999\
 [N468] \67.0711999999999\
 [N469] \67.0711999999999\
@@ -24248,7 +24203,6 @@ Financiar\
 [N481] \67.0711999999999\
 [N482] \67.0711999999999\
 [N483] \67.0711999999999\
-[C. Auto]
 [N484] \67.0711999999999\
 [N485] \67.0711999999999\
 [N486] \67.0711999999999\
@@ -24257,6 +24211,7 @@ Financiar\
 [N489] \67.0711999999999\
 [N490] \67.0711999999999\
 [N491] \67.0711999999999\
+[C. Auto]
 [N492] \67.0711999999999\
 [N493] \121.626\
 [N494] \121.626\
@@ -24274,7 +24229,6 @@ Financiar\
 [N506] \67.0711999999999\
 [N507] \67.0711999999999\
 [N508] \67.0711999999999\
-[C. Auto]
 [N509] \121.626\
 [N510] \67.0711999999999\
 [N511] \67.0711999999999\
@@ -24283,6 +24237,7 @@ Financiar\
 [N514] \67.0711999999999\
 [N515] \67.0711999999999\
 [N516] \67.0711999999999\
+[C. Auto]
 [N517] \67.0711999999999\
 [N518] \67.0711999999999\
 [N519] \67.0711999999999\
@@ -24300,7 +24255,6 @@ Financiar\
 [N531] \121.626\
 [N532] \121.626\
 [N533] \121.626\
-[C. Auto]
 [N534] \121.626\
 [N535] \121.626\
 [N536] \121.626\
@@ -24309,6 +24263,7 @@ Financiar\
 [N539] \121.626\
 [N540] \121.626\
 [N541] \121.626\
+[C. Auto]
 [N542] \67.0711999999999\
 [N543] \67.0711999999999\
 [N544] \67.0711999999999\
@@ -24326,7 +24281,6 @@ Financiar\
 [N556] \67.0711999999999\
 [N557] \67.0711999999999\
 [N558] \67.0711999999999\
-[C. Auto]
 [N559] \67.0711999999999\
 [N560] \67.0711999999999\
 [N561] \121.626\
@@ -24335,6 +24289,7 @@ Financiar\
 [N564] \121.626\
 [N565] \67.0711999999999\
 [N566] \121.626\
+[C. Auto]
 [N567] \121.626\
 [N568] \67.0711999999999\
 [N569] \67.0711999999999\
@@ -24352,7 +24307,6 @@ Financiar\
 [N581] \67.0711999999999\
 [N582] \121.626\
 [N583] \67.0711999999999\
-[C. Auto]
 [N584] \67.0711999999999\
 [N585] \67.0711999999999\
 [N586] \67.0711999999999\
@@ -24361,6 +24315,7 @@ Financiar\
 [N589] \67.0711999999999\
 [N590] \67.0711999999999\
 [N591] \67.0711999999999\
+[C. Auto]
 [N592] \67.0711999999999\
 [N593] \121.626\
 [N594] \67.0711999999999\
@@ -24378,7 +24333,6 @@ Financiar\
 [N606] \67.0711999999999\
 [N607] \67.0711999999999\
 [N608] \67.0711999999999\
-[C. Auto]
 [N609] \67.0711999999999\
 [N610] \67.0711999999999\
 [N611] \121.626\
@@ -24387,6 +24341,7 @@ Financiar\
 [N614] \121.626\
 [N615] \121.626\
 [N616] \121.626\
+[C. Auto]
 [N617] \121.626\
 [N618] \121.626\
 [N619] \121.626\
@@ -24404,7 +24359,6 @@ Financiar\
 [N631] \67.0711999999999\
 [N632] \67.0711999999999\
 [N633] \67.0711999999999\
-[C. Auto]
 [N634] \67.0711999999999\
 [N635] \67.0711999999999\
 [N636] \67.0711999999999\
@@ -24413,6 +24367,7 @@ Financiar\
 [N639] \67.0711999999999\
 [N640] \67.0711999999999\
 [N641] \121.626\
+[C. Auto]
 [N642] \67.0711999999999\
 [N643] \67.0711999999999\
 [N644] \121.626\
@@ -24430,7 +24385,6 @@ Financiar\
 [N656] \67.0711999999999\
 [N657] \121.626\
 [N658] \67.0711999999999\
-[C. Auto]
 [N659] \481.765400000001\
 [N660] \330.29\
 [N661] \330.29\
@@ -24439,6 +24393,7 @@ Financiar\
 [N664] \67.0711999999999\
 [N665] \67.0711999999999\
 [N666] \121.626\
+[C. Auto]
 [N667] \67.0711999999999\
 [N668] \121.626\
 [N669] \121.626\
@@ -24456,7 +24411,6 @@ Financiar\
 [N681] \67.0711999999999\
 [N682] \67.0711999999999\
 [N683] \67.0711999999999\
-[C. Auto]
 [N684] \67.0711999999999\
 [N685] \67.0711999999999\
 [N686] \67.0711999999999\
@@ -24465,6 +24419,7 @@ Financiar\
 [N689] \67.0711999999999\
 [N690] \67.0711999999999\
 [N691] \67.0711999999999\
+[C. Auto]
 [N692] \67.0711999999999\
 [N693] \67.0711999999999\
 [N694] \67.0711999999999\
@@ -24482,7 +24437,6 @@ Financiar\
 [N706] \67.0711999999999\
 [N707] \67.0711999999999\
 [N708] \67.0711999999999\
-[C. Auto]
 [N709] \121.626\
 [N710] \121.626\
 [N711] \67.0711999999999\
@@ -24491,6 +24445,7 @@ Financiar\
 [N714] \121.626\
 [N715] \121.626\
 [O13] \EXCESO RC 5000\
+[C. Auto]
 [O15] \134.154\
 [O16] \134.154\
 [O17] \134.154\
@@ -24508,7 +24463,6 @@ Financiar\
 [O29] \134.154\
 [O30] \134.154\
 [O31] \134.154\
-[C. Auto]
 [O32] \134.154\
 [O33] \134.154\
 [O34] \134.154\
@@ -24517,6 +24471,7 @@ Financiar\
 [O37] \134.154\
 [O38] \134.154\
 [O39] \134.154\
+[C. Auto]
 [O40] \134.154\
 [O41] \134.154\
 [O42] \134.154\
@@ -24534,7 +24489,6 @@ Financiar\
 [O54] \134.154\
 [O55] \134.154\
 [O56] \134.154\
-[C. Auto]
 [O57] \134.154\
 [O58] \134.154\
 [O59] \134.154\
@@ -24543,6 +24497,7 @@ Financiar\
 [O62] \134.154\
 [O63] \134.154\
 [O64] \134.154\
+[C. Auto]
 [O65] \134.154\
 [O66] \134.154\
 [O67] \134.154\
@@ -24560,7 +24515,6 @@ Financiar\
 [O79] \134.154\
 [O80] \134.154\
 [O81] \134.154\
-[C. Auto]
 [O82] \134.154\
 [O83] \134.154\
 [O84] \134.154\
@@ -24569,6 +24523,7 @@ Financiar\
 [O87] \243.2404\
 [O88] \243.2404\
 [O89] \243.2404\
+[C. Auto]
 [O90] \243.2404\
 [O91] \243.2404\
 [O92] \596.29\
@@ -24586,7 +24541,6 @@ Financiar\
 [O104] \134.154\
 [O105] \134.154\
 [O106] \134.154\
-[C. Auto]
 [O107] \134.154\
 [O108] \134.154\
 [O109] \243.2404\
@@ -24595,6 +24549,7 @@ Financiar\
 [O112] \134.154\
 [O113] \134.154\
 [O114] \243.2404\
+[C. Auto]
 [O115] \134.154\
 [O116] \134.154\
 [O117] \134.154\
@@ -24612,7 +24567,6 @@ Financiar\
 [O129] \134.154\
 [O130] \134.154\
 [O131] \134.154\
-[C. Auto]
 [O132] \134.154\
 [O133] \134.154\
 [O134] \134.154\
@@ -24621,6 +24575,7 @@ Financiar\
 [O137] \134.154\
 [O138] \243.2404\
 [O139] \243.2404\
+[C. Auto]
 [O140] \243.2404\
 [O141] \243.2404\
 [O142] \243.2404\
@@ -24638,7 +24593,6 @@ Financiar\
 [O154] \243.2404\
 [O155] \243.2404\
 [O156] \243.2404\
-[C. Auto]
 [O157] \243.2404\
 [O158] \243.2404\
 [O159] \134.154\
@@ -24647,6 +24601,7 @@ Financiar\
 [O162] \243.2404\
 [O163] \134.154\
 [O164] \134.154\
+[C. Auto]
 [O165] \134.154\
 [O166] \134.154\
 [O167] \134.154\
@@ -24664,7 +24619,6 @@ Financiar\
 [O179] \134.154\
 [O180] \134.154\
 [O181] \134.154\
-[C. Auto]
 [O182] \243.2404\
 [O183] \243.2404\
 [O184] \134.154\
@@ -24673,6 +24627,7 @@ Financiar\
 [O187] \134.154\
 [O188] \134.154\
 [O189] \134.154\
+[C. Auto]
 [O190] \134.154\
 [O191] \134.154\
 [O192] \134.154\
@@ -24690,7 +24645,6 @@ Financiar\
 [O204] \134.154\
 [O205] \134.154\
 [O206] \243.2404\
-[C. Auto]
 [O207] \243.2404\
 [O208] \134.154\
 [O209] \134.154\
@@ -24699,6 +24653,7 @@ Financiar\
 [O212] \134.154\
 [O213] \134.154\
 [O214] \243.2404\
+[C. Auto]
 [O215] \134.154\
 [O216] \134.154\
 [O217] \134.154\
@@ -24716,7 +24671,6 @@ Financiar\
 [O229] \243.2404\
 [O230] \243.2404\
 [O231] \243.2404\
-[C. Auto]
 [O232] \243.2404\
 [O233] \243.2404\
 [O234] \243.2404\
@@ -24725,6 +24679,7 @@ Financiar\
 [O237] \243.2404\
 [O238] \243.2404\
 [O239] \243.2404\
+[C. Auto]
 [O240] \134.154\
 [O241] \243.2404\
 [O242] \243.2404\
@@ -24742,7 +24697,6 @@ Financiar\
 [O254] \243.2404\
 [O255] \243.2404\
 [O256] \243.2404\
-[C. Auto]
 [O257] \243.2404\
 [O258] \243.2404\
 [O259] \243.2404\
@@ -24751,6 +24705,7 @@ Financiar\
 [O262] \243.2404\
 [O263] \243.2404\
 [O264] \243.2404\
+[C. Auto]
 [O265] \243.2404\
 [O266] \830.630000000001\
 [O267] \596.29\
@@ -24768,7 +24723,6 @@ Financiar\
 [O279] \243.2404\
 [O280] \243.2404\
 [O281] \134.154\
-[C. Auto]
 [O282] \134.154\
 [O283] \134.154\
 [O284] \134.154\
@@ -24777,6 +24731,7 @@ Financiar\
 [O287] \134.154\
 [O288] \134.154\
 [O289] \134.154\
+[C. Auto]
 [O290] \134.154\
 [O291] \134.154\
 [O292] \134.154\
@@ -24794,7 +24749,6 @@ Financiar\
 [O304] \134.154\
 [O305] \134.154\
 [O306] \134.154\
-[C. Auto]
 [O307] \134.154\
 [O308] \134.154\
 [O309] \134.154\
@@ -24803,6 +24757,7 @@ Financiar\
 [O312] \134.154\
 [O313] \134.154\
 [O314] \134.154\
+[C. Auto]
 [O315] \134.154\
 [O316] \134.154\
 [O317] \134.154\
@@ -24820,7 +24775,6 @@ Financiar\
 [O329] \243.2404\
 [O330] \596.29\
 [O331] \596.29\
-[C. Auto]
 [O332] \243.2404\
 [O333] \243.2404\
 [O334] \243.2404\
@@ -24829,6 +24783,7 @@ Financiar\
 [O337] \243.2404\
 [O338] \243.2404\
 [O339] \243.2404\
+[C. Auto]
 [O340] \243.2404\
 [O341] \243.2404\
 [O342] \243.2404\
@@ -24846,7 +24801,6 @@ Financiar\
 [O354] \134.154\
 [O355] \134.154\
 [O356] \134.154\
-[C. Auto]
 [O357] \134.154\
 [O358] \134.154\
 [O359] \134.154\
@@ -24855,6 +24809,7 @@ Financiar\
 [O362] \243.2404\
 [O363] \134.154\
 [O364] \134.154\
+[C. Auto]
 [O365] \569.45\
 [O366] \569.45\
 [O367] \243.2404\
@@ -24872,7 +24827,6 @@ Financiar\
 [O379] \134.154\
 [O380] \134.154\
 [O381] \134.154\
-[C. Auto]
 [O382] \134.154\
 [O383] \134.154\
 [O384] \134.154\
@@ -24881,6 +24835,7 @@ Financiar\
 [O387] \134.154\
 [O388] \134.154\
 [O389] \134.154\
+[C. Auto]
 [O390] \134.154\
 [O391] \134.154\
 [O392] \134.154\
@@ -24898,7 +24853,6 @@ Financiar\
 [O404] \830.630000000001\
 [O405] \709.804000000001\
 [O406] \596.29\
-[C. Auto]
 [O407] \596.2864\
 [O408] \830.630000000001\
 [O409] \830.630000000001\
@@ -24907,6 +24861,7 @@ Financiar\
 [O412] \611.900000000001\
 [O413] \243.2404\
 [O414] \243.2404\
+[C. Auto]
 [O415] \243.2404\
 [O416] \243.2404\
 [O417] \243.2404\
@@ -24924,7 +24879,6 @@ Financiar\
 [O429] \963.5308\
 [O430] \830.630000000001\
 [O431] \134.154\
-[C. Auto]
 [O432] \134.154\
 [O433] \134.154\
 [O434] \134.154\
@@ -24933,6 +24887,7 @@ Financiar\
 [O437] \134.154\
 [O438] \134.154\
 [O439] \134.154\
+[C. Auto]
 [O440] \134.154\
 [O441] \134.154\
 [O442] \134.154\
@@ -24950,7 +24905,6 @@ Financiar\
 [O454] \134.154\
 [O455] \134.154\
 [O456] \134.154\
-[C. Auto]
 [O457] \134.154\
 [O458] \134.154\
 [O459] \134.154\
@@ -24959,6 +24913,7 @@ Financiar\
 [O462] \134.154\
 [O463] \134.154\
 [O464] \134.154\
+[C. Auto]
 [O465] \134.154\
 [O466] \134.154\
 [O467] \134.154\
@@ -24976,7 +24931,6 @@ Financiar\
 [O479] \134.154\
 [O480] \134.154\
 [O481] \134.154\
-[C. Auto]
 [O482] \134.154\
 [O483] \134.154\
 [O484] \134.154\
@@ -24985,6 +24939,7 @@ Financiar\
 [O487] \134.154\
 [O488] \134.154\
 [O489] \134.154\
+[C. Auto]
 [O490] \134.154\
 [O491] \134.154\
 [O492] \134.154\
@@ -25002,7 +24957,6 @@ Financiar\
 [O504] \134.154\
 [O505] \134.154\
 [O506] \134.154\
-[C. Auto]
 [O507] \134.154\
 [O508] \134.154\
 [O509] \243.2404\
@@ -25011,6 +24965,7 @@ Financiar\
 [O512] \134.154\
 [O513] \134.154\
 [O514] \134.154\
+[C. Auto]
 [O515] \134.154\
 [O516] \134.154\
 [O517] \134.154\
@@ -25028,7 +24983,6 @@ Financiar\
 [O529] \243.2404\
 [O530] \243.2404\
 [O531] \243.2404\
-[C. Auto]
 [O532] \243.2404\
 [O533] \243.2404\
 [O534] \243.2404\
@@ -25037,6 +24991,7 @@ Financiar\
 [O537] \243.2404\
 [O538] \243.2404\
 [O539] \243.2404\
+[C. Auto]
 [O540] \243.2404\
 [O541] \243.2404\
 [O542] \134.154\
@@ -25054,7 +25009,6 @@ Financiar\
 [O554] \134.154\
 [O555] \134.154\
 [O556] \134.154\
-[C. Auto]
 [O557] \134.154\
 [O558] \134.154\
 [O559] \134.154\
@@ -25063,6 +25017,7 @@ Financiar\
 [O562] \134.154\
 [O563] \134.154\
 [O564] \243.2404\
+[C. Auto]
 [O565] \134.154\
 [O566] \243.2404\
 [O567] \243.2404\
@@ -25080,7 +25035,6 @@ Financiar\
 [O579] \134.154\
 [O580] \134.154\
 [O581] \134.154\
-[C. Auto]
 [O582] \243.2404\
 [O583] \134.154\
 [O584] \134.154\
@@ -25089,6 +25043,7 @@ Financiar\
 [O587] \134.154\
 [O588] \134.154\
 [O589] \134.154\
+[C. Auto]
 [O590] \134.154\
 [O591] \134.154\
 [O592] \134.154\
@@ -25106,7 +25061,6 @@ Financiar\
 [O604] \134.154\
 [O605] \134.154\
 [O606] \134.154\
-[C. Auto]
 [O607] \134.154\
 [O608] \134.154\
 [O609] \134.154\
@@ -25115,6 +25069,7 @@ Financiar\
 [O612] \243.2404\
 [O613] \243.2404\
 [O614] \243.2404\
+[C. Auto]
 [O615] \243.2404\
 [O616] \243.2404\
 [O617] \243.2404\
@@ -25132,7 +25087,6 @@ Financiar\
 [O629] \134.154\
 [O630] \134.154\
 [O631] \134.154\
-[C. Auto]
 [O632] \134.154\
 [O633] \134.154\
 [O634] \134.154\
@@ -25141,6 +25095,7 @@ Financiar\
 [O637] \134.154\
 [O638] \134.154\
 [O639] \134.154\
+[C. Auto]
 [O640] \134.154\
 [O641] \243.2404\
 [O642] \134.154\
@@ -25158,7 +25113,6 @@ Financiar\
 [O654] \243.2404\
 [O655] \243.2404\
 [O656] \134.154\
-[C. Auto]
 [O657] \243.2404\
 [O658] \134.154\
 [O659] \963.530800000001\
@@ -25167,6 +25121,7 @@ Financiar\
 [O662] \660.56\
 [O663] \660.56\
 [O664] \134.154\
+[C. Auto]
 [O665] \134.154\
 [O666] \243.2404\
 [O667] \134.154\
@@ -25184,7 +25139,6 @@ Financiar\
 [O679] \134.154\
 [O680] \134.154\
 [O681] \134.154\
-[C. Auto]
 [O682] \134.154\
 [O683] \134.154\
 [O684] \134.154\
@@ -25193,6 +25147,7 @@ Financiar\
 [O687] \134.154\
 [O688] \134.154\
 [O689] \134.154\
+[C. Auto]
 [O690] \134.154\
 [O691] \134.154\
 [O692] \134.154\
@@ -25210,7 +25165,6 @@ Financiar\
 [O704] \134.154\
 [O705] \134.154\
 [O706] \134.154\
-[C. Auto]
 [O707] \134.154\
 [O708] \134.154\
 [O709] \243.2404\
@@ -25219,6 +25173,7 @@ Financiar\
 [O712] \243.2404\
 [O713] \134.15\
 [O714] \243.2404\
+[C. Auto]
 [O715] \243.2404\
 [P3] \Combo de Modelo\
 [P4] \Combo_Modelo_Nuevos\
@@ -25236,7 +25191,6 @@ Financiar\
 [P22] \0\
 [P23] \0\
 [P24] \0\
-[C. Auto]
 [P25] \0\
 [P26] \0\
 [P27] \0\
@@ -25245,6 +25199,7 @@ Financiar\
 [P30] \0\
 [P31] \0\
 [P32] \0\
+[C. Auto]
 [P33] \0\
 [P34] \0\
 [P35] \0\
@@ -25262,7 +25217,6 @@ Financiar\
 [P47] \0\
 [P48] \0\
 [P49] \0\
-[C. Auto]
 [P50] \0\
 [P51] \0\
 [P52] \0\
@@ -25271,6 +25225,7 @@ Financiar\
 [P55] \0\
 [P56] \0\
 [P57] \0\
+[C. Auto]
 [P58] \0\
 [P59] \0\
 [P60] \0\
@@ -25288,7 +25243,6 @@ Financiar\
 [P72] \0\
 [P73] \0\
 [P74] \0\
-[C. Auto]
 [P75] \0\
 [P76] \0\
 [P77] \0\
@@ -25297,6 +25251,7 @@ Financiar\
 [P80] \0\
 [P81] \0\
 [P82] \0\
+[C. Auto]
 [P83] \0\
 [P84] \0\
 [P85] \0\
@@ -25314,7 +25269,6 @@ Financiar\
 [P97] \0\
 [P98] \0\
 [P99] \0\
-[C. Auto]
 [P100] \0\
 [P101] \0\
 [P102] \0\
@@ -25323,6 +25277,7 @@ Financiar\
 [P105] \0\
 [P106] \0\
 [P107] \0\
+[C. Auto]
 [P108] \0\
 [P109] \0\
 [P110] \0\
@@ -25340,7 +25295,6 @@ Financiar\
 [P122] \0\
 [P123] \0\
 [P124] \0\
-[C. Auto]
 [P125] \0\
 [P126] \0\
 [P127] \0\
@@ -25349,6 +25303,7 @@ Financiar\
 [P130] \0\
 [P131] \0\
 [P132] \0\
+[C. Auto]
 [P133] \0\
 [P134] \0\
 [P135] \0\
@@ -25366,7 +25321,6 @@ Financiar\
 [P147] \0\
 [P148] \0\
 [P149] \0\
-[C. Auto]
 [P150] \0\
 [P151] \0\
 [P152] \0\
@@ -25375,6 +25329,7 @@ Financiar\
 [P155] \0\
 [P156] \0\
 [P157] \0\
+[C. Auto]
 [P158] \0\
 [P159] \0\
 [P160] \0\
@@ -25392,7 +25347,6 @@ Financiar\
 [P172] \0\
 [P173] \0\
 [P174] \0\
-[C. Auto]
 [P175] \0\
 [P176] \0\
 [P177] \0\
@@ -25401,6 +25355,7 @@ Financiar\
 [P180] \0\
 [P181] \0\
 [P182] \0\
+[C. Auto]
 [P183] \0\
 [P184] \0\
 [P185] \0\
@@ -25418,7 +25373,6 @@ Financiar\
 [P197] \0\
 [P198] \0\
 [P199] \0\
-[C. Auto]
 [P200] \0\
 [P201] \0\
 [P202] \0\
@@ -25427,6 +25381,7 @@ Financiar\
 [P205] \0\
 [P206] \0\
 [P207] \0\
+[C. Auto]
 [P208] \0\
 [P209] \0\
 [P210] \0\
@@ -25444,7 +25399,6 @@ Financiar\
 [P222] \0\
 [P223] \0\
 [P224] \0\
-[C. Auto]
 [P225] \0\
 [P226] \0\
 [P227] \0\
@@ -25453,6 +25407,7 @@ Financiar\
 [P230] \0\
 [P231] \0\
 [P232] \0\
+[C. Auto]
 [P233] \0\
 [P234] \0\
 [P235] \0\
@@ -25470,7 +25425,6 @@ Financiar\
 [P247] \0\
 [P248] \0\
 [P249] \0\
-[C. Auto]
 [P250] \0\
 [P251] \0\
 [P252] \0\
@@ -25479,6 +25433,7 @@ Financiar\
 [P255] \0\
 [P256] \0\
 [P257] \0\
+[C. Auto]
 [P258] \0\
 [P259] \0\
 [P260] \0\
@@ -25496,7 +25451,6 @@ Financiar\
 [P272] \0\
 [P273] \0\
 [P274] \0\
-[C. Auto]
 [P275] \0\
 [P276] \0\
 [P277] \0\
@@ -25505,6 +25459,7 @@ Financiar\
 [P280] \0\
 [P281] \0\
 [P282] \0\
+[C. Auto]
 [P283] \0\
 [P284] \0\
 [P285] \0\
@@ -25522,7 +25477,6 @@ Financiar\
 [P297] \0\
 [P298] \0\
 [P299] \0\
-[C. Auto]
 [P300] \0\
 [P301] \0\
 [P302] \0\
@@ -25531,6 +25485,7 @@ Financiar\
 [P305] \0\
 [P306] \0\
 [P307] \0\
+[C. Auto]
 [P308] \0\
 [P309] \0\
 [P310] \0\
@@ -25548,7 +25503,6 @@ Financiar\
 [P322] \0\
 [P323] \0\
 [P324] \0\
-[C. Auto]
 [P325] \0\
 [P326] \0\
 [P327] \0\
@@ -25557,6 +25511,7 @@ Financiar\
 [P330] \0\
 [P331] \0\
 [P332] \0\
+[C. Auto]
 [P333] \0\
 [P334] \0\
 [P335] \0\
@@ -25574,7 +25529,6 @@ Financiar\
 [P347] \0\
 [P348] \0\
 [P349] \0\
-[C. Auto]
 [P350] \0\
 [P351] \0\
 [P352] \0\
@@ -25583,6 +25537,7 @@ Financiar\
 [P355] \0\
 [P356] \0\
 [P357] \0\
+[C. Auto]
 [P358] \0\
 [P359] \0\
 [P360] \0\
@@ -25600,7 +25555,6 @@ Financiar\
 [P372] \0\
 [P373] \0\
 [P374] \0\
-[C. Auto]
 [P375] \0\
 [P376] \0\
 [P377] \0\
@@ -25609,6 +25563,7 @@ Financiar\
 [P380] \0\
 [P381] \0\
 [P382] \0\
+[C. Auto]
 [P383] \0\
 [P384] \0\
 [P385] \0\
@@ -25626,7 +25581,6 @@ Financiar\
 [P397] \0\
 [P398] \0\
 [P399] \0\
-[C. Auto]
 [P400] \0\
 [P401] \0\
 [P402] \0\
@@ -25635,6 +25589,7 @@ Financiar\
 [P405] \0\
 [P406] \0\
 [P407] \0\
+[C. Auto]
 [P408] \0\
 [P409] \0\
 [P410] \0\
@@ -25652,7 +25607,6 @@ Financiar\
 [P422] \0\
 [P423] \0\
 [P424] \0\
-[C. Auto]
 [P425] \0\
 [P426] \0\
 [P427] \0\
@@ -25661,6 +25615,7 @@ Financiar\
 [P430] \0\
 [P431] \0\
 [P432] \0\
+[C. Auto]
 [P433] \0\
 [P434] \0\
 [P435] \0\
@@ -25678,7 +25633,6 @@ Financiar\
 [P447] \0\
 [P448] \0\
 [P449] \0\
-[C. Auto]
 [P450] \0\
 [P451] \0\
 [P452] \0\
@@ -25687,6 +25641,7 @@ Financiar\
 [P455] \0\
 [P456] \0\
 [P457] \0\
+[C. Auto]
 [P458] \0\
 [P459] \0\
 [P460] \0\
@@ -25704,7 +25659,6 @@ Financiar\
 [P472] \0\
 [P473] \0\
 [P474] \0\
-[C. Auto]
 [P475] \0\
 [P476] \0\
 [P477] \0\
@@ -25713,6 +25667,7 @@ Financiar\
 [P480] \0\
 [P481] \0\
 [P482] \0\
+[C. Auto]
 [P483] \0\
 [P484] \0\
 [P485] \0\
@@ -25730,7 +25685,6 @@ Financiar\
 [P497] \0\
 [P498] \0\
 [P499] \0\
-[C. Auto]
 [P500] \0\
 [P501] \0\
 [P502] \0\
@@ -25739,6 +25693,7 @@ Financiar\
 [P505] \0\
 [P506] \0\
 [P507] \0\
+[C. Auto]
 [P508] \0\
 [P509] \0\
 [P510] \0\
@@ -25756,7 +25711,6 @@ Financiar\
 [P522] \0\
 [P523] \0\
 [P524] \0\
-[C. Auto]
 [P525] \0\
 [P526] \0\
 [P527] \0\
@@ -25765,6 +25719,7 @@ Financiar\
 [P530] \0\
 [P531] \0\
 [P532] \0\
+[C. Auto]
 [P533] \0\
 [P534] \0\
 [P535] \0\
@@ -25782,7 +25737,6 @@ Financiar\
 [P547] \0\
 [P548] \0\
 [P549] \0\
-[C. Auto]
 [P550] \0\
 [P551] \0\
 [P552] \0\
@@ -25791,6 +25745,7 @@ Financiar\
 [P555] \0\
 [P556] \0\
 [P557] \0\
+[C. Auto]
 [P558] \0\
 [P559] \0\
 [P560] \0\
@@ -25808,7 +25763,6 @@ Financiar\
 [P572] \0\
 [P573] \0\
 [P574] \0\
-[C. Auto]
 [P575] \0\
 [P576] \0\
 [P577] \0\
@@ -25817,6 +25771,7 @@ Financiar\
 [P580] \0\
 [P581] \0\
 [P582] \0\
+[C. Auto]
 [P583] \0\
 [P584] \0\
 [P585] \0\
@@ -25834,7 +25789,6 @@ Financiar\
 [P597] \0\
 [P598] \0\
 [P599] \0\
-[C. Auto]
 [P600] \0\
 [P601] \0\
 [P602] \0\
@@ -25843,6 +25797,7 @@ Financiar\
 [P605] \0\
 [P606] \0\
 [P607] \0\
+[C. Auto]
 [P608] \0\
 [P609] \0\
 [P610] \0\
@@ -25860,7 +25815,6 @@ Financiar\
 [P622] \0\
 [P623] \0\
 [P624] \0\
-[C. Auto]
 [P625] \0\
 [P626] \0\
 [P627] \0\
@@ -25869,6 +25823,7 @@ Financiar\
 [P630] \0\
 [P631] \0\
 [P632] \0\
+[C. Auto]
 [P633] \0\
 [P634] \0\
 [P635] \0\
@@ -25886,7 +25841,6 @@ Financiar\
 [P647] \0\
 [P648] \0\
 [P649] \0\
-[C. Auto]
 [P650] \0\
 [P651] \0\
 [P652] \0\
@@ -25895,6 +25849,7 @@ Financiar\
 [P655] \0\
 [P656] \0\
 [P657] \0\
+[C. Auto]
 [P658] \0\
 [P659] \0\
 [P660] \0\
@@ -25912,7 +25867,6 @@ Financiar\
 [P672] \0\
 [P673] \0\
 [P674] \0\
-[C. Auto]
 [P675] \0\
 [P676] \0\
 [P677] \0\
@@ -25921,6 +25875,7 @@ Financiar\
 [P680] \0\
 [P681] \0\
 [P682] \0\
+[C. Auto]
 [P683] \0\
 [P684] \0\
 [P685] \0\
@@ -25938,7 +25893,6 @@ Financiar\
 [P697] \0\
 [P698] \0\
 [P699] \0\
-[C. Auto]
 [P700] \0\
 [P701] \0\
 [P702] \0\
@@ -25947,6 +25901,7 @@ Financiar\
 [P705] \0\
 [P706] \0\
 [P707] \0\
+[C. Auto]
 [P708] \0\
 [P709] \0\
 [P710] \0\
@@ -25964,7 +25919,6 @@ Financiar\
 [Q20] \336.6784\
 [Q21] \336.6784\
 [Q22] \336.6784\
-[C. Auto]
 [Q23] \336.6784\
 [Q24] \336.6784\
 [Q25] \336.6784\
@@ -25973,6 +25927,7 @@ Financiar\
 [Q28] \336.6784\
 [Q29] \336.6784\
 [Q30] \336.6784\
+[C. Auto]
 [Q31] \336.6784\
 [Q32] \336.6784\
 [Q33] \336.6784\
@@ -25990,7 +25945,6 @@ Financiar\
 [Q45] \336.6784\
 [Q46] \336.6784\
 [Q47] \336.6784\
-[C. Auto]
 [Q48] \336.6784\
 [Q49] \336.6784\
 [Q50] \336.6784\
@@ -25999,6 +25953,7 @@ Financiar\
 [Q53] \336.6784\
 [Q54] \336.6784\
 [Q55] \336.6784\
+[C. Auto]
 [Q56] \336.6784\
 [Q57] \336.6784\
 [Q58] \336.6784\
@@ -26016,7 +25971,6 @@ Financiar\
 [Q70] \336.6784\
 [Q71] \336.6784\
 [Q72] \336.6784\
-[C. Auto]
 [Q73] \336.6784\
 [Q74] \336.6784\
 [Q75] \336.6784\
@@ -26025,6 +25979,7 @@ Financiar\
 [Q78] \336.6784\
 [Q79] \336.6784\
 [Q80] \336.6784\
+[C. Auto]
 [Q81] \336.6784\
 [Q82] \336.6784\
 [Q83] \336.6784\
@@ -26042,7 +25997,6 @@ Financiar\
 [Q95] \336.6784\
 [Q96] \336.6784\
 [Q97] \336.6784\
-[C. Auto]
 [Q98] \336.6784\
 [Q99] \336.6784\
 [Q100] \336.6784\
@@ -26051,6 +26005,7 @@ Financiar\
 [Q103] \336.6784\
 [Q104] \336.6784\
 [Q105] \336.6784\
+[C. Auto]
 [Q106] \336.6784\
 [Q107] \336.6784\
 [Q108] \336.6784\
@@ -26068,7 +26023,6 @@ Financiar\
 [Q120] \0\
 [Q121] \336.6784\
 [Q122] \336.6784\
-[C. Auto]
 [Q123] \0\
 [Q124] \336.6784\
 [Q125] \336.6784\
@@ -26077,6 +26031,7 @@ Financiar\
 [Q128] \336.6784\
 [Q129] \336.6784\
 [Q130] \336.6784\
+[C. Auto]
 [Q131] \336.6784\
 [Q132] \336.6784\
 [Q133] \336.6784\
@@ -26094,7 +26049,6 @@ Financiar\
 [Q145] \336.6784\
 [Q146] \336.6784\
 [Q147] \336.6784\
-[C. Auto]
 [Q148] \336.6784\
 [Q149] \336.6784\
 [Q150] \336.6784\
@@ -26103,6 +26057,7 @@ Financiar\
 [Q153] \336.6784\
 [Q154] \336.6784\
 [Q155] \336.6784\
+[C. Auto]
 [Q156] \336.6784\
 [Q157] \336.6784\
 [Q158] \336.6784\
@@ -26120,7 +26075,6 @@ Financiar\
 [Q170] \0\
 [Q171] \336.6784\
 [Q172] \429.2\
-[C. Auto]
 [Q173] \0\
 [Q174] \336.6784\
 [Q175] \336.6784\
@@ -26129,6 +26083,7 @@ Financiar\
 [Q178] \336.6784\
 [Q179] \336.6784\
 [Q180] \336.6784\
+[C. Auto]
 [Q181] \336.6784\
 [Q182] \336.6784\
 [Q183] \336.6784\
@@ -26146,7 +26101,6 @@ Financiar\
 [Q195] \336.6784\
 [Q196] \336.6784\
 [Q197] \336.6784\
-[C. Auto]
 [Q198] \336.6784\
 [Q199] \336.6784\
 [Q200] \336.6784\
@@ -26155,6 +26109,7 @@ Financiar\
 [Q203] \336.6784\
 [Q204] \336.6784\
 [Q205] \336.6784\
+[C. Auto]
 [Q206] \336.6784\
 [Q207] \336.6784\
 [Q208] \336.6784\
@@ -26172,7 +26127,6 @@ Financiar\
 [Q220] \336.6784\
 [Q221] \336.6784\
 [Q222] \336.6784\
-[C. Auto]
 [Q223] \336.6784\
 [Q224] \336.6784\
 [Q225] \336.6784\
@@ -26181,6 +26135,7 @@ Financiar\
 [Q228] \336.6784\
 [Q229] \336.6784\
 [Q230] \336.6784\
+[C. Auto]
 [Q231] \336.6784\
 [Q232] \336.6784\
 [Q233] \336.6784\
@@ -26198,7 +26153,6 @@ Financiar\
 [Q245] \336.6784\
 [Q246] \336.6784\
 [Q247] \336.6784\
-[C. Auto]
 [Q248] \336.6784\
 [Q249] \336.6784\
 [Q250] \336.6784\
@@ -26207,6 +26161,7 @@ Financiar\
 [Q253] \0\
 [Q254] \336.6784\
 [Q255] \336.6784\
+[C. Auto]
 [Q256] \336.6784\
 [Q257] \336.6784\
 [Q258] \336.6784\
@@ -26224,7 +26179,6 @@ Financiar\
 [Q270] \0\
 [Q271] \0\
 [Q272] \0\
-[C. Auto]
 [Q273] \0\
 [Q274] \336.6784\
 [Q275] \336.6784\
@@ -26233,6 +26187,7 @@ Financiar\
 [Q278] \336.6784\
 [Q279] \336.6784\
 [Q280] \336.6784\
+[C. Auto]
 [Q281] \336.6784\
 [Q282] \336.6784\
 [Q283] \336.6784\
@@ -26250,7 +26205,6 @@ Financiar\
 [Q295] \336.6784\
 [Q296] \336.6784\
 [Q297] \336.6784\
-[C. Auto]
 [Q298] \336.6784\
 [Q299] \336.6784\
 [Q300] \336.6784\
@@ -26259,6 +26213,7 @@ Financiar\
 [Q303] \336.6784\
 [Q304] \336.6784\
 [Q305] \336.6784\
+[C. Auto]
 [Q306] \336.6784\
 [Q307] \336.6784\
 [Q308] \336.6784\
@@ -26276,7 +26231,6 @@ Financiar\
 [Q320] \336.6784\
 [Q321] \336.6784\
 [Q322] \336.6784\
-[C. Auto]
 [Q323] \336.6784\
 [Q324] \336.6784\
 [Q325] \336.6784\
@@ -26285,6 +26239,7 @@ Financiar\
 [Q328] \336.6784\
 [Q329] \336.6784\
 [Q330] \0\
+[C. Auto]
 [Q331] \0\
 [Q332] \336.6784\
 [Q333] \336.6784\
@@ -26302,7 +26257,6 @@ Financiar\
 [Q345] \336.6784\
 [Q346] \336.6784\
 [Q347] \336.6784\
-[C. Auto]
 [Q348] \336.6784\
 [Q349] \336.6784\
 [Q350] \336.6784\
@@ -26311,6 +26265,7 @@ Financiar\
 [Q353] \336.6784\
 [Q354] \336.6784\
 [Q355] \336.6784\
+[C. Auto]
 [Q356] \336.6784\
 [Q357] \336.6784\
 [Q358] \336.6784\
@@ -26328,7 +26283,6 @@ Financiar\
 [Q370] \336.6784\
 [Q371] \336.6784\
 [Q372] \336.6784\
-[C. Auto]
 [Q373] \0\
 [Q374] \0\
 [Q375] \336.6784\
@@ -26337,6 +26291,7 @@ Financiar\
 [Q378] \336.6784\
 [Q379] \336.6784\
 [Q380] \336.6784\
+[C. Auto]
 [Q381] \336.6784\
 [Q382] \336.6784\
 [Q383] \336.6784\
@@ -26354,7 +26309,6 @@ Financiar\
 [Q395] \336.6784\
 [Q396] \336.6784\
 [Q397] \336.6784\
-[C. Auto]
 [Q398] \336.6784\
 [Q399] \336.6784\
 [Q400] \336.6784\
@@ -26363,6 +26317,7 @@ Financiar\
 [Q403] \0\
 [Q404] \0\
 [Q405] \0\
+[C. Auto]
 [Q406] \0\
 [Q407] \0\
 [Q408] \0\
@@ -26380,7 +26335,6 @@ Financiar\
 [Q420] \336.6784\
 [Q421] \336.6784\
 [Q422] \336.6784\
-[C. Auto]
 [Q423] \336.6784\
 [Q424] \336.6784\
 [Q425] \336.6784\
@@ -26389,6 +26343,7 @@ Financiar\
 [Q428] \0\
 [Q429] \0\
 [Q430] \0\
+[C. Auto]
 [Q431] \336.6784\
 [Q432] \336.6784\
 [Q433] \336.6784\
@@ -26406,7 +26361,6 @@ Financiar\
 [Q445] \336.6784\
 [Q446] \336.6784\
 [Q447] \336.6784\
-[C. Auto]
 [Q448] \336.6784\
 [Q449] \336.6784\
 [Q450] \0\
@@ -26415,6 +26369,7 @@ Financiar\
 [Q453] \336.6784\
 [Q454] \336.6784\
 [Q455] \336.6784\
+[C. Auto]
 [Q456] \336.6784\
 [Q457] \336.6784\
 [Q458] \336.6784\
@@ -26432,7 +26387,6 @@ Financiar\
 [Q470] \336.6784\
 [Q471] \336.6784\
 [Q472] \336.6784\
-[C. Auto]
 [Q473] \336.6784\
 [Q474] \336.6784\
 [Q475] \336.6784\
@@ -26441,6 +26395,7 @@ Financiar\
 [Q478] \336.6784\
 [Q479] \336.6784\
 [Q480] \336.6784\
+[C. Auto]
 [Q481] \336.6784\
 [Q482] \336.6784\
 [Q483] \336.6784\
@@ -26458,7 +26413,6 @@ Financiar\
 [Q495] \336.6784\
 [Q496] \336.6784\
 [Q497] \336.6784\
-[C. Auto]
 [Q498] \336.6784\
 [Q499] \336.6784\
 [Q500] \336.6784\
@@ -26467,6 +26421,7 @@ Financiar\
 [Q503] \336.6784\
 [Q504] \336.6784\
 [Q505] \336.6784\
+[C. Auto]
 [Q506] \336.6784\
 [Q507] \336.6784\
 [Q508] \336.6784\
@@ -26484,7 +26439,6 @@ Financiar\
 [Q520] \336.6784\
 [Q521] \336.6784\
 [Q522] \336.6784\
-[C. Auto]
 [Q523] \336.6784\
 [Q524] \336.6784\
 [Q525] \336.6784\
@@ -26493,6 +26447,7 @@ Financiar\
 [Q528] \336.6784\
 [Q529] \336.6784\
 [Q530] \336.6784\
+[C. Auto]
 [Q531] \336.6784\
 [Q532] \336.6784\
 [Q533] \336.6784\
@@ -26510,7 +26465,6 @@ Financiar\
 [Q545] \336.6784\
 [Q546] \336.6784\
 [Q547] \336.6784\
-[C. Auto]
 [Q548] \336.6784\
 [Q549] \336.6784\
 [Q550] \336.6784\
@@ -26519,6 +26473,7 @@ Financiar\
 [Q553] \336.6784\
 [Q554] \336.6784\
 [Q555] \336.6784\
+[C. Auto]
 [Q556] \336.6784\
 [Q557] \336.6784\
 [Q558] \336.6784\
@@ -26536,7 +26491,6 @@ Financiar\
 [Q570] \336.6784\
 [Q571] \336.6784\
 [Q572] \336.6784\
-[C. Auto]
 [Q573] \336.6784\
 [Q574] \336.6784\
 [Q575] \336.6784\
@@ -26545,6 +26499,7 @@ Financiar\
 [Q578] \336.6784\
 [Q579] \336.6784\
 [Q580] \336.6784\
+[C. Auto]
 [Q581] \336.6784\
 [Q582] \336.6784\
 [Q583] \336.6784\
@@ -26562,7 +26517,6 @@ Financiar\
 [Q595] \336.6784\
 [Q596] \336.6784\
 [Q597] \336.6784\
-[C. Auto]
 [Q598] \336.6784\
 [Q599] \336.6784\
 [Q600] \336.6784\
@@ -26571,6 +26525,7 @@ Financiar\
 [Q603] \336.6784\
 [Q604] \336.6784\
 [Q605] \336.6784\
+[C. Auto]
 [Q606] \336.6784\
 [Q607] \336.6784\
 [Q608] \336.6784\
@@ -26588,7 +26543,6 @@ Financiar\
 [Q620] \336.6784\
 [Q621] \0\
 [Q622] \336.6784\
-[C. Auto]
 [Q623] \336.6784\
 [Q624] \336.6784\
 [Q625] \336.6784\
@@ -26597,6 +26551,7 @@ Financiar\
 [Q628] \336.6784\
 [Q629] \336.6784\
 [Q630] \336.6784\
+[C. Auto]
 [Q631] \336.6784\
 [Q632] \336.6784\
 [Q633] \336.6784\
@@ -26614,7 +26569,6 @@ Financiar\
 [Q645] \336.6784\
 [Q646] \336.6784\
 [Q647] \336.6784\
-[C. Auto]
 [Q648] \336.6784\
 [Q649] \336.6784\
 [Q650] \336.6784\
@@ -26623,6 +26577,7 @@ Financiar\
 [Q653] \336.6784\
 [Q654] \336.6784\
 [Q655] \336.6784\
+[C. Auto]
 [Q656] \336.6784\
 [Q657] \336.6784\
 [Q658] \336.6784\
@@ -26640,7 +26595,6 @@ Financiar\
 [Q670] \336.6784\
 [Q671] \336.6784\
 [Q672] \336.6784\
-[C. Auto]
 [Q673] \336.6784\
 [Q674] \336.6784\
 [Q675] \336.6784\
@@ -26649,6 +26603,7 @@ Financiar\
 [Q678] \336.6784\
 [Q679] \336.6784\
 [Q680] \336.6784\
+[C. Auto]
 [Q681] \336.6784\
 [Q682] \336.6784\
 [Q683] \336.6784\
@@ -26666,7 +26621,6 @@ Financiar\
 [Q695] \336.6784\
 [Q696] \336.6784\
 [Q697] \336.6784\
-[C. Auto]
 [Q698] \336.6784\
 [Q699] \336.6784\
 [Q700] \336.6784\
@@ -26675,6 +26629,7 @@ Financiar\
 [Q703] \336.6784\
 [Q704] \336.6784\
 [Q705] \336.6784\
+[C. Auto]
 [Q706] \336.6784\
 [Q707] \336.6784\
 [Q708] \336.6784\
@@ -55451,458 +55406,181 @@ Financiar\
 [I40] \=B43\
 
 [C. Tasas]
-[A1] \ Catálogo de tasas de interés.\
-[A4] \Plazo en meses\
-[A5] \12\
-[A6] \24\
-[A7] \36\
-[A8] \48\
-[A9] \60\
-[A18] \Tasa Reducida\
-[A20] \Catálogo\
+[A1] \Tasa Reducida\
+[A3] \Condición Auto\
+[A4] \Nuevo\
+[A5] \Seminuevo\
+[A7] \Condición Auto\
+[A8] \=CondicionAuto_Descripcion\
+[B3] \Enganche Requerido\
+[B4] \0.3\
+[B5] \0.35\
+[B7] \Enganche Requerido\
+[B8] (TR.EngancheRequerido) \=DGET(C_TASA_REDUCIDA,B7,$A$7:$A$8)\
+[B10] \Tasa Reducida?\
+[B11] (Tasa_Reducida?) \=PorcentajeEnganche >= TR.EngancheRequerido\
+[D1] \Tasa de Interés Anual\
+[D3] \Tipo Tarifa\
+[D4] \T.T.TRAD\
+[D5] \T.T.TRAD\
+[D6] \T.T.TRAD\
+[D7] \T.T.TRAD\
+[D8] \T.T.TRAD\
+[D9] \T.T.TRAD\
+[D10] \T.T.TRAD\
+[D11] \T.T.TRAD\
+[D12] \T.T.PREF\
+[D13] \T.T.PREF\
+[C. Tasas]
+[D14] \T.T.PREF\
+[D15] \T.T.PREF\
+[D16] \T.T.PREF\
+[D17] \T.T.PREF\
+[D18] \T.T.PREF\
+[D19] \T.T.PREF\
+[D21] \Tipo Tarifa\
+[D22] \=TTAR.Código\
+[E3] \Condición Auto\
+[E4] \Nuevo\
+[E5] \Nuevo\
+[E6] \Nuevo\
+[E7] \Nuevo\
+[E8] \Seminuevo\
+[E9] \Seminuevo\
+[E10] \Seminuevo\
+[E11] \Seminuevo\
+[E12] \Nuevo\
+[E13] \Nuevo\
+[E14] \Nuevo\
+[E15] \Nuevo\
+[E16] \Seminuevo\
+[E17] \Seminuevo\
+[E18] \Seminuevo\
+[E19] \Seminuevo\
+[C. Tasas]
+[E21] \Condición Auto\
+[E22] \=CondicionAuto_Descripcion\
+[F3] \Plazo Normalizado\
+[F4] \Hasta 48\
+[F5] \Hasta 48\
+[F6] \60\
+[F7] \60\
+[F8] \Hasta 48\
+[F9] \Hasta 48\
+[F10] \60\
+[F11] \60\
+[F12] \Hasta 48\
+[F13] \Hasta 48\
+[F14] \60\
+[F15] \60\
+[F16] \Hasta 48\
+[F17] \Hasta 48\
+[F18] \60\
+[F19] \60\
+[F21] \Plazo Normalizado\
+[F22] \=IF(PlazoEnMeses>=60,60,"Hasta 48")\
+[G3] \Tasa Reducida\
+[G4] \False\
+[G5] \True\
+[G6] \False\
+[C. Tasas]
+[G7] \True\
+[G8] \False\
+[G9] \True\
+[G10] \False\
+[G11] \True\
+[G12] \False\
+[G13] \True\
+[G14] \False\
+[G15] \True\
+[G16] \False\
+[G17] \True\
+[G18] \False\
+[G19] \True\
+[G21] \Tasa Reducida\
+[G22] \=Tasa_Reducida?\
+[H3] \Tasa de Interés Anual\
+[H4] \0.129\
+[H5] \0.1199\
+[H6] \0.132\
+[H7] \0.125\
+[H8] \0.132\
+[H9] \0.129\
+[H10] \0.1399\
+[H11] \0.132\
+[H12] \0.1199\
+[C. Tasas]
+[H13] \0.115\
+[H14] \0.125\
+[H15] \0.1199\
+[H16] \0.1199\
+[H17] \0.115\
+[H18] \0.125\
+[H19] \0.1199\
+[H21] \Tasa de Interés Anual\
+[H22] (TIA.Tasa_Interés_Anual) \=DGET(C_TASA_INTERES_ANUAL,H21,$D$21:$G$22)\
+
+[C.TipoCliente]
+[A1] \Producto\
+[A3] \Producto\
+[A4] \AutoEstrene\
+[A5] \AutoNómina\
+[A7] \Producto\
+[A8] \=SELECCION_PRODUCTO\
+[A10] \Tipo Tarifa\
+[A12] \Tipo Tarifa\
+[A13] \Tradicional\
+[A14] \Recurrente/Preferente\
+[A16] \Tipo Tarifa\
+[A17] \=SELECCION_TIPO_TARIFA\
+[A20] \Condición Auto y Tipo Tarifa\
 [A22] \Condición Auto\
 [A23] \Nuevo\
-[A24] \Seminuevo\
-[A26] \Selección y Resultados\
+[A24] \Nuevo\
+[A25] \Seminuevo\
+[A26] \Seminuevo\
 [A28] \Condición Auto\
 [A29] \=CondicionAuto_Descripcion\
-[B3] \Clientes Estándar\
-[B4] \Chica\
-[B5] \0.1199\
-[B6] \0.1199\
-[B7] \0.1199\
-[B8] \0.1199\
-[B9] \0.125\
-[B12] \Constantes\
-[B13] \CONST_UMBRAL_ENGANCHE\
-[B14] \CONST_UMBRAL_MONTO\
-[C. Tasas]
-[B15] \CONST_UMBRAL_ENGANCHE_SEMI\
-[B22] \Enganche Requerido\
-[B23] \0.3\
-[B24] \0.35\
-[B28] \Enganche Requerido\
-[B29] (TasaReducida.EngancheRequerido) \=DGET(C_TASA_REDUCIDA,B28,$A$28:$A$29)\
-[B31] \Tasa Reducida?\
-[B32] (Tasa_Reducida?) \=PorcentajeEnganche >= TasaReducida.EngancheRequerido\
-[C4] \Grande\
-[C5] \0.129\
-[C6] \0.129\
-[C7] \0.129\
-[C8] \0.129\
-[C9] \0.132\
-[C13] (CONST_UMBRAL_ENGANCHE) \0.3\
-[C14] (CONST_UMBRAL_MONTO) \0\
-[C15] (CONST_UMBRAL_ENGANCHE_SEMI) \0.35\
-[D1] \Actualizadas al 15/Feb/2015\
-[D4] \SemiAntChica\
-[D5] \0.129\
-[D6] \0.129\
-[D7] \0.129\
-[D8] \0.129\
-[D9] \0.132\
-[D13] \<- Se deja de usar a favor del dato contenido en el catálogo TipoCliente\
-[C. Tasas]
-[D18] \Tasa de Interés Anual\
-[D20] \Catálogo\
-[D22] \Producto\
-[D23] \AET\
-[D24] \AET\
-[D25] \AET\
-[D26] \AET\
-[D27] \AET\
-[D28] \AET\
-[D29] \AET\
-[D30] \AET\
-[D31] \AET\
-[D32] \AET\
-[D33] \AET\
-[D34] \AET\
-[D35] \AET\
-[D36] \AET\
-[D37] \AET\
-[D38] \AET\
-[D39] \AEN\
-[D40] \AEN\
-[D41] \AEN\
-[D42] \AEN\
-[D43] \AEN\
-[D44] \AEN\
-[C. Tasas]
-[D45] \AEN\
-[D46] \AEN\
-[D48] \Selección y Resultados\
-[D50] \Producto\
-[D51] \=PROD.Código\
-[E4] \SemiAntGrande\
-[E5] \0.132\
-[E6] \0.132\
-[E7] \0.132\
-[E8] \0.132\
-[E9] \0.1399\
-[E22] \Tipo Tarifa\
-[E23] \T.T.TRAD\
-[E24] \T.T.TRAD\
-[E25] \T.T.TRAD\
-[E26] \T.T.TRAD\
-[E27] \T.T.TRAD\
-[E28] \T.T.TRAD\
-[E29] \T.T.TRAD\
-[E30] \T.T.TRAD\
-[E31] \T.T.PREF\
-[E32] \T.T.PREF\
-[E33] \T.T.PREF\
-[E34] \T.T.PREF\
-[E35] \T.T.PREF\
-[C. Tasas]
-[E36] \T.T.PREF\
-[E37] \T.T.PREF\
-[E38] \T.T.PREF\
-[E39] \T.T.PREF\
-[E40] \T.T.PREF\
-[E41] \T.T.PREF\
-[E42] \T.T.PREF\
-[E43] \T.T.PREF\
-[E44] \T.T.PREF\
-[E45] \T.T.PREF\
-[E46] \T.T.PREF\
-[E50] \Tipo Tarifa\
-[E51] \=TTAR.Código\
-[F3] \Clientes Recurrentes\
-[F4] \Chica\
-[F5] \0.115\
-[F6] \0.115\
-[F7] \0.115\
-[F8] \0.115\
-[F9] \0.1199\
-[F22] \Condición Auto\
-[F23] \Nuevo\
-[F24] \Nuevo\
-[F25] \Nuevo\
-[F26] \Nuevo\
-[C. Tasas]
-[F27] \Seminuevo\
-[F28] \Seminuevo\
-[F29] \Seminuevo\
-[F30] \Seminuevo\
-[F31] \Nuevo\
-[F32] \Nuevo\
-[F33] \Nuevo\
-[F34] \Nuevo\
-[F35] \Seminuevo\
-[F36] \Seminuevo\
-[F37] \Seminuevo\
-[F38] \Seminuevo\
-[F39] \Nuevo\
-[F40] \Nuevo\
-[F41] \Nuevo\
-[F42] \Nuevo\
-[F43] \Seminuevo\
-[F44] \Seminuevo\
-[F45] \Seminuevo\
-[F46] \Seminuevo\
-[F50] \Condición Auto\
-[F51] \=CondicionAuto_Descripcion\
-[G4] \Grande\
-[G5] \0.1199\
-[G6] \0.1199\
-[C. Tasas]
-[G7] \0.1199\
-[G8] \0.1199\
-[G9] \0.125\
-[G22] \Plazo\
-[G23] \Hasta 48\
-[G24] \Hasta 48\
-[G25] \60\
-[G26] \60\
-[G27] \Hasta 48\
-[G28] \Hasta 48\
-[G29] \60\
-[G30] \60\
-[G31] \Hasta 48\
-[G32] \Hasta 48\
-[G33] \60\
-[G34] \60\
-[G35] \Hasta 48\
-[G36] \Hasta 48\
-[G37] \60\
-[G38] \60\
-[G39] \Hasta 48\
-[G40] \Hasta 48\
-[G41] \60\
-[G42] \60\
-[G43] \Hasta 48\
-[C. Tasas]
-[G44] \Hasta 48\
-[G45] \60\
-[G46] \60\
-[G50] \Plazo\
-[G51] \=IF(PlazoEnMeses>=60,60,"Hasta 48")\
-[H4] \SemiAntChica\
-[H5] \0.115\
-[H6] \0.115\
-[H7] \0.115\
-[H8] \0.115\
-[H9] \0.1199\
-[H22] \Tasa Reducida\
-[H23] \False\
-[H24] \True\
-[H25] \False\
-[H26] \True\
-[H27] \False\
-[H28] \True\
-[H29] \False\
-[H30] \True\
-[H31] \False\
-[H32] \True\
-[H33] \False\
-[H34] \True\
-[H35] \False\
-[C. Tasas]
-[H36] \True\
-[H37] \False\
-[H38] \True\
-[H39] \False\
-[H40] \True\
-[H41] \False\
-[H42] \True\
-[H43] \False\
-[H44] \True\
-[H45] \False\
-[H46] \True\
-[H50] \Tasa Reducida\
-[H51] \=Tasa_Reducida?\
-[I4] \SemiAntGrande\
-[I5] \0.1199\
-[I6] \0.1199\
-[I7] \0.1199\
-[I8] \0.1199\
-[I9] \0.125\
-[I22] \Tasa de Interés Anual\
-[I23] \0.129\
-[I24] \0.1199\
-[I25] \0.132\
-[I26] \0.125\
-[I27] \0.132\
-[C. Tasas]
-[I28] \0.129\
-[I29] \0.1399\
-[I30] \0.132\
-[I31] \0.1199\
-[I32] \0.115\
-[I33] \0.125\
-[I34] \0.1199\
-[I35] \0.1199\
-[I36] \0.115\
-[I37] \0.125\
-[I38] \0.1199\
-[I39] \=I31\
-[I40] \=I32\
-[I41] \=I33\
-[I42] \=I34\
-[I43] \=I35\
-[I44] \=I36\
-[I45] \=I37\
-[I46] \=I38\
-[I50] \Tasa de Interés Anual\
-[I51] \=DGET(C_TASA_INTERES_ANUAL,I50,$D$50:$H$51)\
-[K1] \ Anteriores vigentes hasta el 15/Feb/2015\
-[K3] \Clientes Estandar\
-[K4] \Chica\
-[K5] \0.135\
-[C. Tasas]
-[K6] \0.135\
-[K7] \0.135\
-[K8] \0.135\
-[K9] \0.145\
-[L4] \Grande\
-[L5] \0.145\
-[L6] \0.145\
-[L7] \0.145\
-[L8] \0.145\
-[L9] \0.16\
-[M4] \SemiAntChica\
-[M5] \0.145\
-[M6] \0.145\
-[M7] \0.145\
-[M8] \0.145\
-[M9] \0\
-[N4] \SemiAntGrande\
-[N5] \0.16\
-[N6] \0.16\
-[N7] \0.16\
-[N8] \0.16\
-[N9] \0\
-[O3] \Clientes Recurrentes\
-[O4] \Chica\
-[O5] \0.129\
-[C. Tasas]
-[O6] \0.129\
-[O7] \0.129\
-[O8] \0.129\
-[O9] \0.139\
-[P4] \Grande\
-[P5] \0.139\
-[P6] \0.139\
-[P7] \0.139\
-[P8] \0.139\
-[P9] \0.149\
-[Q4] \SemiAntChica\
-[Q5] \0.139\
-[Q6] \0.139\
-[Q7] \0.139\
-[Q8] \0.139\
-[Q9] \0\
-[R4] \SemiAntGrande\
-[R5] \0.155\
-[R6] \0.155\
-[R7] \0.155\
-[R8] \0.155\
-[R9] \0\
-[T5] \=B5-K5\
-[T6] \=B6-K6\
-[T7] \=B7-K7\
-[C. Tasas]
-[T8] \=B8-K8\
-[T9] \=B9-K9\
-[U5] \=C5-L5\
-[U6] \=C6-L6\
-[U7] \=C7-L7\
-[U8] \=C8-L8\
-[U9] \=C9-L9\
-[V5] \=D5-M5\
-[V6] \=D6-M6\
-[V7] \=D7-M7\
-[V8] \=D8-M8\
-[V9] \=D9-M9\
-[W5] \=E5-N5\
-[W6] \=E6-N6\
-[W7] \=E7-N7\
-[W8] \=E8-N8\
-[W9] \=E9-N9\
-[X5] \=F5-O5\
-[X6] \=F6-O6\
-[X7] \=F7-O7\
-[X8] \=F8-O8\
-[X9] \=F9-O9\
-[Y5] \=G5-P5\
-[Y6] \=G6-P6\
-[Y7] \=G7-P7\
-[C. Tasas]
-[Y8] \=G8-P8\
-[Y9] \=G9-P9\
-[Z5] \=H5-Q5\
-[Z6] \=H6-Q6\
-[Z7] \=H7-Q7\
-[Z8] \=H8-Q8\
-[Z9] \=H9-Q9\
-[AA5] \=I5-R5\
-[AA6] \=I6-R6\
-[AA7] \=I7-R7\
-[AA8] \=I8-R8\
-[AA9] \=I9-R9\
-
+[B3] \Código\
+[B4] \AET\
+[B5] \AEN\
+[B7] \Código\
+[B8] (PROD.Código) \=DGET(C_PRODUCTO,B7,$A$7:$A$8)\
 [C.TipoCliente]
-[A1] \Tipo Cliente\
-[A3] \Descripción\
-[A4] (TipoClienteEstandar) \Nuevos\
-[A5] (TipoClienteRecurrente) \Recurrentes\
-[A7] \Producto\
-[A9] \Combo\
-[A11] \Producto\
-[A12] \AutoEstrene\
-[A13] \AutoNómina\
-[A15] \Selecciones\
-[A17] \Producto\
-[A18] \=SELECCION_PRODUCTO\
-[A20] \Tipo Tarifa\
-[A22] \Combo\
-[A24] \Tipo Tarifa\
-[A25] \Tradicional\
-[A26] \Recurrente/Preferente\
-[A28] \Selecciones\
-[A30] \Tipo Tarifa\
-[A31] \=SELECCION_TIPO_TARIFA\
-[A34] \Condición Auto y Tipo Tarifa\
-[A36] \Condición Auto\
-[A37] \Nuevo\
-[A38] \Nuevo\
-[A39] \Seminuevo\
+[B12] \Código\
+[B13] \T.T.TRAD\
+[B14] \T.T.PREF\
+[B16] \Código\
+[B17] (TTAR.Código) \=DGET(C_TIPO_TARIFA,B16,$A$16:$A$17)\
+[B22] \Tipo Tarifa\
+[B23] \T.T.TRAD\
+[B24] \T.T.PREF\
+[B25] \T.T.TRAD\
+[B26] \T.T.PREF\
+[B28] \Tipo Tarifa\
+[B29] \=TTAR.Código\
+[C12] \Comisión por Apertura\
+[C13] \0.025\
+[C14] \0.01\
+[C16] \Comisión por Apertura\
+[C17] (TTAR.ComisiónApertura) \=DGET(C_TIPO_TARIFA,C16,$A$16:$A$17)\
+[C22] \Porc. Min. Eng\
+[C23] \0.1\
+[C24] \0.15\
+[C25] \0.25\
+[C26] \0.25\
+[C28] \Porc. Min. Eng\
+[C29] (C.Porcentaje_Mínimo_Enganche) \=DGET(C_CONDICION_AUTO_TIPO_TARIFA,C28,$A$28:$B$29)\
+[F3] \Producto:\
 [C.TipoCliente]
-[A40] \Seminuevo\
-[A42] \Condición Auto\
-[A43] \=CondicionAuto_Descripcion\
-[B3] \Id\
-[B4] \1\
-[B5] \2\
-[B11] \Id\
-[B12] \1\
-[B13] \2\
-[B17] \Id\
-[B18] (PROD.Id) \=DGET(C_PRODUCTO,B17,$A$17:$A$18)\
-[B24] \Id\
-[B25] \1\
-[B26] \2\
-[B30] \Id\
-[B31] (TTAR.Id) \=DGET(C_TIPO_TARIFA,B30,$A$30:$A$31)\
-[B36] \Tipo Tarifa\
-[B37] \T.T.TRAD\
-[B38] \T.T.PREF\
-[B39] \T.T.TRAD\
-[B40] \T.T.PREF\
-[B42] \Tipo Tarifa\
-[B43] \=TTAR.Código\
-[C3] \ComisionApertura\
-[C4] \0.025\
-[C.TipoCliente]
-[C5] \0.01\
-[C11] \Código\
-[C12] \AET\
-[C13] \AEN\
-[C17] \Código\
-[C18] (PROD.Código) \=DGET(C_PRODUCTO,C17,$A$17:$A$18)\
-[C24] \Código\
-[C25] \T.T.TRAD\
-[C26] \T.T.PREF\
-[C30] \Código\
-[C31] (TTAR.Código) \=DGET(C_TIPO_TARIFA,C30,$A$30:$A$31)\
-[C36] \Porc. Min. Eng\
-[C37] \0.1\
-[C38] \0.15\
-[C39] \0.25\
-[C40] \0.25\
-[C42] \Porc. Min. Eng\
-[C43] (Porcentaje_Mínimo_Enganche) \=DGET(C_CONDICION_AUTO_TIPO_TARIFA,C42,$A$42:$B$43)\
-[D2] \Aplica para Autos Nuevos\
-[D3] \UmbralEngancheTasaReducida\
-[D4] \0.3\
-[D5] \0.3\
-[D24] \Comisión por Apertura\
-[D25] \0.025\
-[D26] \0.01\
-[C.TipoCliente]
-[D30] \Comisión por Apertura\
-[D31] (TTAR.ComisiónApertura) \=DGET(C_TIPO_TARIFA,D30,$A$30:$A$31)\
-[E3] \OffsetEnTasa\
-[E4] \0\
-[E5] \4\
-[G2] \Combos escondidos\
-[G3] \Tipo Cliente:\
-[G11] \Producto:\
-[G24] \Tipo Tarifa:\
-[H3] (SELECCION_TIPO_CLIENTE) \Nuevos\
- DataValidation: Lista. [Fuente:"=COMBO_TIPO_CLIENTE" ListaEnCelda:True ]
- Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
- Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
- OmitirBlancos:True DatoActualEsVálido:True 
-
-[H11] (SELECCION_PRODUCTO) \AutoEstrene\
+[F12] \Tipo Tarifa:\
+[G3] (SELECCION_PRODUCTO) \AutoEstrene\
  DataValidation: Lista. [Fuente:"=COMBO_PRODUCTO" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[H24] (SELECCION_TIPO_TARIFA) \Tradicional\
+[G12] (SELECCION_TIPO_TARIFA) \Tradicional\
  DataValidation: Lista. [Fuente:"=COMBO_TIPO_TARIFA" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -56589,6 +56267,7 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D173] \Agrega Catálogo, Combo de selección y resultados para Tipo Tarifa, en la hoja 'C.TipoCliente'\
 [D174] \Refactoriza la obtención de la Tasa de Interés Anual. Aun no la alambra.\
 [D175] \Agrega Catálogo de Condición Auto y Tipo Tarifa, en donde se define el Porcentaje Mínimo de Enganche.\
+[D176] \Alambra los Catálogos nuevos, adecúa la hoja de Cálculos para obtener la Tasa de Interés de la nueva forma.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56602,13 +56281,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!43:43
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!43:43
- [T_Merger!_Actual] =T_Merger!43:43
- [T_SeguroAnual!_Actual] =T_SeguroAnual!43:43
- [T_SoloAuto!_Actual] =T_SoloAuto!43:43
- [T_VidaAnual!_Actual] =T_VidaAnual!43:43
- [T_VidaMulti!_Actual] =T_VidaMulti!43:43
+ [CAT!_Actual] =CAT!1:1
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!1:1
+ [T_Merger!_Actual] =T_Merger!1:1
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!1:1
+ [T_SoloAuto!_Actual] =T_SoloAuto!1:1
+ [T_VidaAnual!_Actual] =T_VidaAnual!1:1
+ [T_VidaMulti!_Actual] =T_VidaMulti!1:1
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56617,13 +56296,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!42:42
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!42:42
- [T_Merger!_Anterior] =T_Merger!42:42
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!42:42
- [T_SoloAuto!_Anterior] =T_SoloAuto!42:42
- [T_VidaAnual!_Anterior] =T_VidaAnual!42:42
- [T_VidaMulti!_Anterior] =T_VidaMulti!42:42
+ [Fechas!_Anterior] =Fechas!1048576:1048576
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!1048576:1048576
+ [T_Merger!_Anterior] =T_Merger!1048576:1048576
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!1048576:1048576
+ [T_SoloAuto!_Anterior] =T_SoloAuto!1048576:1048576
+ [T_VidaAnual!_Anterior] =T_VidaAnual!1048576:1048576
+ [T_VidaMulti!_Anterior] =T_VidaMulti!1048576:1048576
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -56779,10 +56458,11 @@ Nombres:
  [T_AutoYSeguroMulti!_Stopper_Capital_Original] =T_AutoYSeguroMulti!$AQ$20:$AQ$79
  [T_SeguroAnual!_Stopper_Capital_Original] =T_SeguroAnual!$AQ$20:$AQ$79
  [T_Merger!_Stopper_Saldo_Inicial] =T_Merger!$V$20:$V$79
- [Aplica_IndemVF?] =Calculos!$G$75
- [AplicaIvaIntereses?] =Calculos!$F$98
- [AportacionAdicional] =Calculos!$F$43
- [AutoCadenaCompleta] =Calculos!$F$21
+ [Aplica_IndemVF?] =Calculos!$G$77
+ [AplicaIvaIntereses?] =Calculos!$F$100
+ [AportacionAdicional] =Calculos!$F$45
+ [AutoCadenaCompleta] =Calculos!$F$23
+ [C.Porcentaje_Mínimo_Enganche] =C.TipoCliente!$C$29
  [C_ADIC_INCREMENTO_RC] ='C. Seguros'!$A$22:$E$25
  [C_ADIC_INCREMENTO_RC_DESC] =OFFSET(C_ADIC_INCREMENTO_RC,0,1,,2)
  [C_AUTO] ='C. Auto'!$A$13:$R$1206
@@ -56791,9 +56471,9 @@ Nombres:
  [C_AutosSeminuevos_Desc] =OFFSET(C_AutosSeminuevos,0,1,,2)
  [C_CALCULO_SEGURO] ='C. Seguros'!$A$37:$F$47
  [C_CALCULO_SEGURO_DESC] =OFFSET(C_CALCULO_SEGURO,0,1,,2)
- [C_CONDICION_AUTO] ='C. Auto'!$I$4:$N$6
+ [C_CONDICION_AUTO] ='C. Auto'!$I$4:$L$6
  [C_CONDICION_AUTO_DESC] =OFFSET(C_CONDICION_AUTO,0,1,,2)
- [C_CONDICION_AUTO_TIPO_TARIFA] =C.TipoCliente!$A$36:$C$40
+ [C_CONDICION_AUTO_TIPO_TARIFA] =C.TipoCliente!$A$22:$C$26
  [C_CONDICION_MODELO] ='C. Auto'!$I$9:$L$11
  [C_ESTADO] ='C. Estados'!$A$4:$I$36
  [C_ESTADO_DESC] =OFFSET(C_ESTADO,0,1,,COLUMNS(C_ESTADO)-1)
@@ -56812,18 +56492,18 @@ Nombres:
  [C_OPCION_ABONO_ANTICIPADO_DESC] =OFFSET(C_OPCION_ABONO_ANTICIPADO,0,1,,2)
  [C_PLAZO] ='C. Comunes'!$A$13:$F$21
  [C_PLAZO_DESC] =OFFSET(C_PLAZO,0,1,,2)
- [C_PRODUCTO] =C.TipoCliente!$A$11:$C$13
+ [C_PRODUCTO] =C.TipoCliente!$A$3:$B$5
  [C_SI_NO] ='C. Comunes'!$A$36:$D$38
  [C_SI_NO_DESC] =OFFSET(C_SI_NO,0,1,,2)
  [C_TARIFA_RC_EU] ='C. Seguros'!$A$4:$E$8
  [C_TARIFA_RC_EU_DESC] =OFFSET(C_TARIFA_RC_EU,0,1,,2)
- [C_TASA_INTERES_ANUAL] ='C. Tasas'!$D$22:$I$46
- [C_TASA_REDUCIDA] ='C. Tasas'!$A$22:$B$24
- [C_TASAS_INTERES] ='C. Tasas'!$A$4:$I$9
- [C_TIPO_CLIENTE] =C.TipoCliente!$A$3:$E$5
+ [C_TASA_INTERES_ANUAL] ='C. Tasas'!$D$3:$H$19
+ [C_TASA_REDUCIDA] ='C. Tasas'!$A$3:$B$5
+ [C_TASAS_INTERES] ='C. Tasas'!#REF!
+ [C_TIPO_CLIENTE] =C.TipoCliente!#REF!
  [C_TIPO_PERSONA] ='C. Seguros'!$A$30:$E$33
  [C_TIPO_PERSONA_DESC] =OFFSET(C_TIPO_PERSONA,0,1,,2)
- [C_TIPO_TARIFA] =C.TipoCliente!$A$24:$D$26
+ [C_TIPO_TARIFA] =C.TipoCliente!$A$12:$C$14
  [CA_Servicios!CA.ArchivosExtra] =CA_Servicios!$B$19
  [CA_Servicios!CA.Branding] =CA_Servicios!$C$5
  [CA_Consola!CA.Generar2007] =CA_Consola!$G$17
@@ -56845,8 +56525,8 @@ Nombres:
  [CA_Consola!CA.UsarContraseñaEnHojas] =CA_Consola!$D$19
  [CA_Servicios!CA.UsarContraseñaEnHojasRT] =CA_Servicios!$C$6
  [CA_Consola!CA.Version] =CA_Consola!$K$2
- [Calculo_IndemnVF] =Calculos!$G$76
- [Calculo_IndemnVF_Seminuevos_Recientes] =Calculos!$H$76
+ [Calculo_IndemnVF] =Calculos!$G$78
+ [Calculo_IndemnVF_Seminuevos_Recientes] =Calculos!$H$78
  [CAPTURA_COBERTURAS_ADICIONALES] =Captura!$D$19,Captura!$D$21,Captura!$D$22
  [CAPTURA_GARANTIA_EXTENDIDA] =Captura!$D$17:$D$18,Captura!$D$32
  [CapturaAportacionAdicional] =Captura!$H$6
@@ -56878,16 +56558,16 @@ Nombres:
  [COMBO_PLAZO_SEMINUEVOS] ='C. Comunes'!$F$56:$F$59
  [COMBO_PLAZO_SEMINUEVOS_LIMITADO] ='C. Comunes'!$G$56:$G$58
  [Combo_Plazo_Seminuevos_PFyPFAC_Limitado_] ='C. Comunes'!$I$56:$I$58
- [COMBO_PRODUCTO] =C.TipoCliente!$A$12:$A$13
+ [COMBO_PRODUCTO] =C.TipoCliente!$A$4:$A$5
  [COMBO_SEGURO_NUEVOS] ='C. Seguros'!$H$39:$H$48
  [COMBO_SEGURO_SEMINUEVOS] ='C. Seguros'!$I$39:$I$40
  [COMBO_SeminuevosAnteriores] =C.Seminuevos!$B$10:$B$2020
  [COMBO_SI_NO] ='C. Comunes'!$B$37:$B$38
  [COMBO_SOLO_NO] ='C. Comunes'!$B$38
  [COMBO_SOLO_Noaplica] ='C. Comunes'!$B$32
- [COMBO_TIPO_CLIENTE] =C.TipoCliente!$A$4:$A$5
+ [COMBO_TIPO_CLIENTE] =C.TipoCliente!#REF!
  [COMBO_TIPO_PERSONA] ='C. Seguros'!$B$31:$B$33
- [COMBO_TIPO_TARIFA] =C.TipoCliente!$A$25:$A$26
+ [COMBO_TIPO_TARIFA] =C.TipoCliente!$A$13:$A$14
  [T_AutoYSeguroMulti!Componentes.Pago.Fijo] =T_AutoYSeguroMulti!$F$22:$F$23
  [T_SeguroAnual!Componentes.Pago.Fijo] =T_SeguroAnual!$F$22:$F$23
  [T_SoloAuto!Componentes.Pago.Fijo] =T_SoloAuto!$F$22:$F$23
@@ -56899,7 +56579,7 @@ Nombres:
  [T_VidaAnual!Componentes.Pago.Fijo.Inicial] =T_VidaAnual!$F$26:$F$27
  [T_VidaMulti!Componentes.Pago.Fijo.Inicial] =T_VidaMulti!$F$26:$F$27
  [CondicionAuto_Descripcion] =Calculos!$F$7
- [CondicionAutoEs3.5T?] =Calculos!$F$29
+ [CondicionAutoEs3.5T?] =Calculos!$F$31
  [CondicionAutoEsNuevo?] =Calculos!$F$8
  [CondicionAutoEsSeminuevo?] =Calculos!$F$9
  [CondicionModeloAnterior] ='C. Auto'!$I$11
@@ -56917,24 +56597,24 @@ Nombres:
  [Fechas!CONST_DIAS_LIMITE] =Fechas!$B$15
  [CONST_Gastos_Expedicion_Semi_Ant] ='C. Seguros'!$C$60
  [CONST_MESES_EN_AÑO] ='C. Comunes'!$C$51
- [CONST_UMBRAL_ENGANCHE] ='C. Tasas'!$C$13
- [CONST_UMBRAL_ENGANCHE_SEMI] ='C. Tasas'!$C$15
- [CONST_UMBRAL_MONTO] ='C. Tasas'!$C$14
- [Constante_Base_Vida] =Calculos!$F$102
+ [CONST_UMBRAL_ENGANCHE] ='C. Tasas'!#REF!
+ [CONST_UMBRAL_ENGANCHE_SEMI] ='C. Tasas'!#REF!
+ [CONST_UMBRAL_MONTO] ='C. Tasas'!#REF!
+ [Constante_Base_Vida] =Calculos!$F$104
  [CONTEO_AUTOS] =C.Seminuevos!$O$5
  [CONTEO_MARCAS] =C.Seminuevos!$M$5
- [Contiene_cobertura_adicional] =Calculos!$H$162
- [DañosAplica?] =Calculos!$F$91
- [DañosAutoSustituto] =Calculos!$F$72
- [DañosComponenteConMulti] =Calculos!$F$89
- [DañosComponenteSinMulti] =Calculos!$F$90
- [DañosGastosExpedicion] =Calculos!$F$69
- [DañosIncrementoRC] =Calculos!$F$78
- [DañosMontoRcUsa] =Calculos!$F$70
- [DañosPrimaBase] =Calculos!$F$63
- [DañosServicioPremium] =Calculos!$F$81
- [DañosValFac1erAño] =Calculos!$F$74
- [DESCRIPCION_PLAZO_CALCULO_SEGURO] =Calculos!$F$53
+ [Contiene_cobertura_adicional] =Calculos!$H$150
+ [DañosAplica?] =Calculos!$F$93
+ [DañosAutoSustituto] =Calculos!$F$74
+ [DañosComponenteConMulti] =Calculos!$F$91
+ [DañosComponenteSinMulti] =Calculos!$F$92
+ [DañosGastosExpedicion] =Calculos!$F$71
+ [DañosIncrementoRC] =Calculos!$F$80
+ [DañosMontoRcUsa] =Calculos!$F$72
+ [DañosPrimaBase] =Calculos!$F$65
+ [DañosServicioPremium] =Calculos!$F$83
+ [DañosValFac1erAño] =Calculos!$F$76
+ [DESCRIPCION_PLAZO_CALCULO_SEGURO] =Calculos!$F$55
  [DIA_COTIZACIÓN] =Fechas!$C$17
  [T_AutoYSeguroMulti!Dias.En.Año] =T_AutoYSeguroMulti!$C$23
  [T_Merger!Dias.En.Año] =T_Merger!$C$22
@@ -56949,31 +56629,31 @@ Nombres:
  [T_VidaAnual!Dias.Por.Periodo] =T_VidaAnual!$C$18
  [T_VidaMulti!Dias.Por.Periodo] =T_VidaMulti!$C$18
  [Días_de_interés_para_Pago] =Fechas!$C$20
- [EstadoFactorDescuento] =Calculos!$F$36
- [EstadoFronterizo?] =Calculos!$F$34
- [EstadoIncluyeRcUsa?] =Calculos!$F$35
+ [EstadoFactorDescuento] =Calculos!$F$38
+ [EstadoFronterizo?] =Calculos!$F$36
+ [EstadoIncluyeRcUsa?] =Calculos!$F$37
  [CAT!FactorRenovacionAnual] =CAT!$H$9
  [CAT!FactorRenovacionAnualContado] =CAT!$H$7
  [CAT!FactorRenovacionAnualFinanciado] =CAT!$H$8
  [Garantía_Extendida.Aplica?] =Calculos!$B$97
  [Id_Abono_Anticipado] =Calculos!$C$21
- [ID_AUTO] =Calculos!$F$23
+ [ID_AUTO] =Calculos!$F$25
  [ID_AUTO_SUST] =Calculos!$C$15
  [ID_CALCULO_SEGURO] =Calculos!$C$13
  [ID_CONDICION_AUTO] =Calculos!$C$11
- [ID_CONDICION_MODELO] =Calculos!$F$17
+ [ID_CONDICION_MODELO] =Calculos!$F$19
  [ID_ESTADO] =Calculos!$C$9
- [ID_FACTOR_MULTIANUAL] =Calculos!$F$56
+ [ID_FACTOR_MULTIANUAL] =Calculos!$F$58
  [ID_FRECUENCIA] =Calculos!$C$20
  [ID_INCREMENTO_RC] =Calculos!$C$16
  [ID_INDEMN_AÑO1] =Calculos!$C$17
  [ID_IVA] =Calculos!$C$8
  [ID_MODELO] =Calculos!$C$12
  [ID_PLAZO] =Calculos!$C$19
- [ID_PLAZO_CALCULO_SEGURO] =Calculos!$F$52
+ [ID_PLAZO_CALCULO_SEGURO] =Calculos!$F$54
  [ID_SERVICIO_PREMIUM] =Calculos!$C$18
- [ID_TIPO_AUTO] =Calculos!$F$27
- [ID_TIPO_CLIENTE] =Calculos!$F$120
+ [ID_TIPO_AUTO] =Calculos!$F$29
+ [ID_TIPO_CLIENTE] =Calculos!#REF!
  [ID_TIPO_PERSONA] =Calculos!$C$7
  [INPUT_CELLS] =Captura!$D$5:$D$16,Captura!$D$20:$D$23,Captura!$D$17:$D$18
  [T_AutoYSeguroMulti!Iva.Intereses] =T_AutoYSeguroMulti!$C$21
@@ -56982,34 +56662,34 @@ Nombres:
  [T_SoloAuto!Iva.Intereses] =T_SoloAuto!$C$21
  [T_VidaAnual!Iva.Intereses] =T_VidaAnual!$C$21
  [T_VidaMulti!Iva.Intereses] =T_VidaMulti!$C$21
- [IvaDeflactada] =Calculos!$F$115
- [IvaNominal] =Calculos!$F$114
- [IvaParaIntereses] =Calculos!$F$116
+ [IvaDeflactada] =Calculos!$F$117
+ [IvaNominal] =Calculos!$F$116
+ [IvaParaIntereses] =Calculos!$F$118
  [Layenda_Incremento_RC] ='C. Seguros'!$F$22
- [Leyenda.Seguro.1] =Calculos!$F$166
- [Leyenda.Seguro.1_tabla_amortizacion] =Calculos!$G$166
- [Leyenda.Seguro.2] =Calculos!$F$167
+ [Leyenda.Seguro.1] =Calculos!$F$154
+ [Leyenda.Seguro.1_tabla_amortizacion] =Calculos!$G$154
+ [Leyenda.Seguro.2] =Calculos!$F$155
  [Leyenda_auto_sustituto] ='C. Comunes'!$E$37
  [Leyenda_CAT_fijo_autos_nuevos] =CAT!$R$8
  [Leyenda_CAT_fijo_autos_seminuevos] =CAT!$S$8
  [Leyenda_cobertura_premium] ='C. Seguros'!$E$70
- [Leyenda_coberturas_adicionales_cotizacion] =Calculos!$I$165
- [Leyenda_coberturas_adicionales_tabla_de_amortizacion] =Calculos!$I$166
+ [Leyenda_coberturas_adicionales_cotizacion] =Calculos!$I$153
+ [Leyenda_coberturas_adicionales_tabla_de_amortizacion] =Calculos!$I$154
  [Leyenda_con_coma] ='C. Seguros'!$B$65
  [Leyenda_con_punto] ='C. Seguros'!$B$66
  [LEYENDA_DIAS_INTERESES_PRIMER_PAGO] =Fechas!$B$18
  [Leyenda_Indemnizacion_valor_factura] ='C. Seguros'!$F$52
  [Leyenda_seguro_anual_tabla_amortizacion] ='C. Seguros'!$B$64
  [LEYENDA_SELECCION_COMBOS] =C.Seminuevos!$C$3
- [LeyendaAportacionAdicional] =Calculos!$F$168
+ [LeyendaAportacionAdicional] =Calculos!$F$156
  [Leyendas_CAT_Auto_IXE] =CAT!$R$24:$S$26
  [Leyendas_CAT_AutoEstrene_Clientes_Nuevos] =CAT!$R$14:$S$16
  [Leyendas_CAT_Clientes_Recurrentes] =CAT!$R$19:$S$21
  [Leyendas_CAT_en_Captura] =CAT!$R$5:$S$7
  [MAX_NO_PAGOS] =TablaCliente!$A$67
  [Maximo_Garantia_Extendida] =Captura!$L$14
- [ModeloAñosAntiguedad] =Calculos!$F$15
- [ModeloEsAnterior?] =Calculos!$F$16
+ [ModeloAñosAntiguedad] =Calculos!$F$17
+ [ModeloEsAnterior?] =Calculos!$F$18
  [T_AutoYSeguroMulti!Monto.Extra.Ciclo.1] =T_AutoYSeguroMulti!$C$36
  [T_SeguroAnual!Monto.Extra.Ciclo.1] =T_SeguroAnual!$C$36
  [T_SoloAuto!Monto.Extra.Ciclo.1] =T_SoloAuto!$C$32
@@ -57024,21 +56704,21 @@ Nombres:
  [T_SeguroAnual!Monto.Financiar.Ciclico] =T_SeguroAnual!$C$17
  [T_RenovVidaAnual!Monto.Renovacion] =T_RenovVidaAnual!$C$17
  [Monto_máximo_enganche] =Captura!$J$14
- [Monto_Mínimo_a_Financiar] =Calculos!$H$132
- [MontoAnticipoAuto] =Calculos!$F$131
- [MontoComisionPorAperturaConIva] =Calculos!$F$137
- [MontoEnganche] =Calculos!$F$130
- [MontoFinanciarAuto] =Calculos!$F$132
- [MontoFinanciarSeguros] =Calculos!$F$133
- [MontoFinanciarTotal] =Calculos!$F$136
- [MontoFinanciarVida] =Calculos!$F$135
- [MontoGtiaExt] =Calculos!$F$127
- [MontoSeguroDeContado] =Calculos!$F$134
- [MultianualFactorAuto] =Calculos!$F$59
- [MultianualFactorVida] =Calculos!$F$60
+ [Monto_Mínimo_a_Financiar] =Calculos!$H$127
+ [MontoAnticipoAuto] =Calculos!$F$126
+ [MontoComisionPorAperturaConIva] =Calculos!$F$132
+ [MontoEnganche] =Calculos!$F$125
+ [MontoFinanciarAuto] =Calculos!$F$127
+ [MontoFinanciarSeguros] =Calculos!$F$128
+ [MontoFinanciarTotal] =Calculos!$F$131
+ [MontoFinanciarVida] =Calculos!$F$130
+ [MontoGtiaExt] =Calculos!$F$122
+ [MontoSeguroDeContado] =Calculos!$F$129
+ [MultianualFactorAuto] =Calculos!$F$61
+ [MultianualFactorVida] =Calculos!$F$62
  [T_Merger!Nombre.Tabla.Ciclica] =T_Merger!$C$25
  [T_Merger!Nombre.Tabla.Estandar] =T_Merger!$C$24
- [NombreTarifaSemiAnt] =Calculos!$H$66
+ [NombreTarifaSemiAnt] =Calculos!$H$68
  [T_RenovVidaAnual!Numero.De.Pagos] =T_RenovVidaAnual!$C$19
  [T_AutoYSeguroMulti!Numero.Pagos] =T_AutoYSeguroMulti!$C$20
  [T_Merger!Numero.pagos] =T_Merger!$C$19
@@ -57046,7 +56726,7 @@ Nombres:
  [T_SoloAuto!Numero.Pagos] =T_SoloAuto!$C$20
  [T_VidaAnual!Numero.Pagos] =T_VidaAnual!$C$20
  [T_VidaMulti!Numero.Pagos] =T_VidaMulti!$C$20
- [NumeroDePagos] =Calculos!$F$154
+ [NumeroDePagos] =Calculos!$F$142
  [T_AutoYSeguroMulti!Opcion.Abono] =T_AutoYSeguroMulti!$C$27
  [T_Merger!Opcion.Abono] =T_Merger!$C$23
  [T_SeguroAnual!Opcion.Abono] =T_SeguroAnual!$C$27
@@ -57062,9 +56742,9 @@ Nombres:
  [T_SoloAuto!Pago.Fijo] =T_SoloAuto!$F$24
  [T_VidaAnual!Pago.Fijo] =T_VidaAnual!$F$24
  [T_VidaMulti!Pago.Fijo] =T_VidaMulti!$F$24
- [PagoAuto] =Calculos!$F$157
- [PagoSeguro] =Calculos!$F$159
- [PagoTotal] =Calculos!$F$160
+ [PagoAuto] =Calculos!$F$145
+ [PagoSeguro] =Calculos!$F$147
+ [PagoTotal] =Calculos!$F$148
  [T_AutoYSeguroMulti!Parametro.Monto.Extra.Ciclo.1] =T_AutoYSeguroMulti!$C$26
  [T_SeguroAnual!Parametro.Monto.Extra.Ciclo.1] =T_SeguroAnual!$C$26
  [T_SoloAuto!Parametro.Monto.Extra.Ciclo.1] =T_SoloAuto!$C$26
@@ -57103,25 +56783,24 @@ Nombres:
  [T_SoloAuto!Periodos.Por.Ciclo] =T_SoloAuto!$F$20
  [T_VidaAnual!Periodos.Por.Ciclo] =T_VidaAnual!$F$20
  [T_VidaMulti!Periodos.Por.Ciclo] =T_VidaMulti!$F$20
- [PeriodosPorAño] =Calculos!$F$153
- [PlazoEnMeses] =Calculos!$F$152
+ [PeriodosPorAño] =Calculos!$F$141
+ [PlazoEnMeses] =Calculos!$F$140
  [PlazoMinimoIVF] =Calculos!$B$37
- [Porcentaje_Base] =Calculos!$G$64
- [Porcentaje_Cuota_Base_Vida] =Calculos!$F$101
+ [Porcentaje_Base] =Calculos!$G$66
+ [Porcentaje_Cuota_Base_Vida] =Calculos!$F$103
  [Porcentaje_máximo_enganche] =Captura!$J$13
- [Porcentaje_Mínimo_Enganche] =C.TipoCliente!$C$43
- [PorcentajeAnticipoAuto] =Calculos!$F$139
- [PorcentajeEnganche] =Calculos!$F$44
- [PorcentajeMaximoEnganche] =Calculos!$H$10
- [PorcentajeMinimoEnganche] =Calculos!$F$10
- [PrimaDaños] =Calculos!$F$92
- [PrimaTotalSeguros] =Calculos!$F$109
- [PrimaVida] =Calculos!$F$106
+ [PorcentajeAnticipoAuto] =Calculos!$F$134
+ [PorcentajeEnganche] =Calculos!$F$46
+ [PorcentajeMaximoEnganche] =Calculos!$F$12
+ [PorcentajeMinimoEnganche] =Calculos!$F$11
+ [PrimaDaños] =Calculos!$F$94
+ [PrimaTotalSeguros] =Calculos!$F$111
+ [PrimaVida] =Calculos!$F$108
  ['C. Estados'!Print_Area] ='C. Estados'!$A$1:$I$36
  [Captura!Print_Area] =Captura!$B$2:$D$55
  [TablaCliente!Print_Area] =TablaCliente!$A$6:$I$85
- [PROD.Código] =C.TipoCliente!$C$18
- [PROD.Id] =C.TipoCliente!$B$18
+ [PROD.Código] =C.TipoCliente!$B$8
+ [PROD.Id] =C.TipoCliente!#REF!
  [Prueba16] =Fechas!$E$16
  [Prueba3] =Fechas!$F$16
  [QUERY_AUTOS] =C.Seminuevos!$O$7
@@ -57159,9 +56838,9 @@ Nombres:
  [RANGO_COMBO_SERVICIO_PREMIUM] =Calculos!$B$93
  [T_AutoYSeguroMulti!Renueva.Abono.Sobrante?] =T_AutoYSeguroMulti!$F$30
  [T_SeguroAnual!Renueva.Abono.Sobrante?] =T_SeguroAnual!$F$30
- [SeguroEsAnual?] =Calculos!$F$51
- [SeguroEsFinanciado?] =Calculos!$F$49
- [SeguroEsMultianual?] =Calculos!$F$50
+ [SeguroEsAnual?] =Calculos!$F$53
+ [SeguroEsFinanciado?] =Calculos!$F$51
+ [SeguroEsMultianual?] =Calculos!$F$52
  [Seleccion_Abono_Anticipado] =TablaCliente!$C$14
  [SELECCION_AUTO] =Captura!$D$12
  [SELECCION_AUTO_SUST] =Captura!$D$20
@@ -57176,18 +56855,18 @@ Nombres:
  [SELECCION_MARCA] =Captura!$D$11
  [SELECCION_MODELO] =Captura!$D$10
  [SELECCION_PLAZO] =TablaCliente!$C$13
- [SELECCION_PRODUCTO] =C.TipoCliente!$H$11
+ [SELECCION_PRODUCTO] =C.TipoCliente!$G$3
  [SELECCION_SERVICIO_PREMIUM] =Captura!$D$23
- [SELECCION_TIPO_CLIENTE] =C.TipoCliente!$H$3
+ [SELECCION_TIPO_CLIENTE] =C.TipoCliente!#REF!
  [SELECCION_TIPO_PERSONA] =Captura!$D$7
- [SELECCION_TIPO_TARIFA] =C.TipoCliente!$H$24
+ [SELECCION_TIPO_TARIFA] =C.TipoCliente!$G$12
  [T_AutoYSeguroMulti!Tabla.Ciclica.Anual?] =T_AutoYSeguroMulti!$C$35
  [T_SeguroAnual!Tabla.Ciclica.Anual?] =T_SeguroAnual!$C$35
  [T_SoloAuto!Tabla.Ciclica.Anual?] =T_SoloAuto!$C$31
  [T_VidaAnual!Tabla.Ciclica.Anual?] =T_VidaAnual!$C$31
  [T_VidaMulti!Tabla.Ciclica.Anual?] =T_VidaMulti!$C$31
- [Tarifa_IndemnVF] =Calculos!$G$77
- [Tarifa_IndemnVF_Seminuevos_Recientes] =Calculos!$H$77
+ [Tarifa_IndemnVF] =Calculos!$G$79
+ [Tarifa_IndemnVF_Seminuevos_Recientes] =Calculos!$H$79
  [T_AutoYSeguroMulti!Tasa.Diaria] =T_AutoYSeguroMulti!$F$18
  [T_Merger!Tasa.Diaria] =T_Merger!$F$18
  [T_SeguroAnual!Tasa.Diaria] =T_SeguroAnual!$F$18
@@ -57212,39 +56891,40 @@ Nombres:
  [T_SoloAuto!Tasa.Por.Periodo] =T_SoloAuto!$F$17
  [T_VidaAnual!Tasa.Por.Periodo] =T_VidaAnual!$F$17
  [T_VidaMulti!Tasa.Por.Periodo] =T_VidaMulti!$F$17
- [Tasa_Reducida?] ='C. Tasas'!$B$32
- [TasaAUsar] =Calculos!$F$147
- [TasaCondicion1Nuevos] =Calculos!$G$142
- [TasaCondicion1Seminuevos] =Calculos!$H$144
- [TasaCondicion2Nuevos] =Calculos!$G$143
- [TasaInteres] =Calculos!$F$149
- [TasaReducida.EngancheRequerido] ='C. Tasas'!$B$29
- [Tipo_Persona.Descripción] =Calculos!$F$96
- [TipoCliente_OffsetTasa] =Calculos!$F$123
- [TipoCliente_UmbralEnganche] =Calculos!$F$122
- [TipoClienteComisionPorApertura] =Calculos!$F$121
- [TipoClienteEstandar] =C.TipoCliente!$A$4
- [TipoClienteRecurrente] =C.TipoCliente!$A$5
- [TipoPersonaAplicaSeguroVida?] =Calculos!$F$97
+ [Tasa_Reducida?] ='C. Tasas'!$B$11
+ [TasaAUsar] =Calculos!#REF!
+ [TasaCondicion1Nuevos] =Calculos!#REF!
+ [TasaCondicion1Seminuevos] =Calculos!#REF!
+ [TasaCondicion2Nuevos] =Calculos!#REF!
+ [TasaInteres] =Calculos!$F$137
+ [TIA.Tasa_Interés_Anual] ='C. Tasas'!$H$22
+ [Tipo_Persona.Descripción] =Calculos!$F$98
+ [TipoCliente_OffsetTasa] =Calculos!#REF!
+ [TipoCliente_UmbralEnganche] =Calculos!#REF!
+ [TipoClienteComisionPorApertura] =Calculos!#REF!
+ [TipoClienteEstandar] =C.TipoCliente!#REF!
+ [TipoClienteRecurrente] =C.TipoCliente!#REF!
+ [TipoPersonaAplicaSeguroVida?] =Calculos!$F$99
  [CAT!TIR.Flujos] =CAT!$N$10
  [CAT!Total.Egresos.CAT] =CAT!$C$11
  [CAT!Total.Flujo.Cero.CAT] =CAT!$C$20
  [CAT!Total.Ingresos.CAT] =CAT!$C$18
- [TTAR.Código] =C.TipoCliente!$C$31
- [TTAR.ComisiónApertura] =C.TipoCliente!$D$31
- [TTAR.Id] =C.TipoCliente!$B$31
+ [TR.EngancheRequerido] ='C. Tasas'!$B$8
+ [TTAR.Código] =C.TipoCliente!$B$17
+ [TTAR.ComisiónApertura] =C.TipoCliente!$C$17
+ [TTAR.Id] =C.TipoCliente!#REF!
  [Captura!UltimaCelda] =Captura!$E$202
  [TablaCliente!UltimaCelda] =TablaCliente!$J$86
  [Valor_Factura_Mínimo] =Captura!$J$6
  [Valor_Factura_Mínimo_Nuevos] =Captura!$K$6
  [Valor_Factura_Mínimo_Seminuevos] =Captura!$L$6
  [VALOR_GARANITA_EXTENDIDA] =Captura!$B$18:$D$18,Captura!$B$32:$D$32
- [Valor_Garantía_Extendida.Aplica?] =Calculos!$F$126
- [ValorFactura] =Calculos!$F$42
+ [Valor_Garantía_Extendida.Aplica?] =Calculos!$F$121
+ [ValorFactura] =Calculos!$F$44
  [VB_STARTING_CELL] =Calculos!$K$17:$N$21
- [VidaAplica?] =Calculos!$F$105
- [VidaComponenteConMulti] =Calculos!$F$103
- [VidaComponenteSinMulti] =Calculos!$F$104
+ [VidaAplica?] =Calculos!$F$107
+ [VidaComponenteConMulti] =Calculos!$F$105
+ [VidaComponenteSinMulti] =Calculos!$F$106
 
 Nombre del proyecto VB: [VBAProject]
 
@@ -58230,7 +57910,7 @@ End Sub
 Sub ValidaComisionApertura()
     PrintDebug "Asignando Comisión por Apertura según Tipo Cliente"
     'Application.EnableEvents = False
-    [CapturaPorcentajeComisionApertura] = [TipoClienteComisionPorApertura]
+    [CapturaPorcentajeComisionApertura] = [TTAR.ComisiónApertura]
     'Application.EnableEvents = True
 End Sub
 
@@ -58471,7 +58151,7 @@ End Sub
 
 'Valida la Comisión por Apertura en la hoja de captura cuando se cambia el Tipo Cliente.
 Sub Evento_Change_CTipoCliente(ByVal Target As Range)
-    If Intersect(Target, [Seleccion_Tipo_Cliente]) Is Nothing Then Exit Sub
+    If Intersect(Target, [SELECCION_TIPO_TARIFA]) Is Nothing Then Exit Sub
     ValidaComisionApertura
 End Sub
 \\\--- END OF MODULE ---
@@ -60474,5 +60154,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 46 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
