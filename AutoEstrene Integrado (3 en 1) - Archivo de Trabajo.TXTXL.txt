@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 22/09/2015 01:35:17 p.m.
+Fecha y hora de generación: 22/09/2015 02:13:39 p.m.
 
 Resumen
 =======
@@ -10,7 +10,7 @@ Resumen
 
  * Módulos de Visual Basic: 43
 
- * Líneas de código VB: 3011
+ * Líneas de código VB: 3009
 
 Detalle
 =======
@@ -223,7 +223,7 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"Por favor elije el tipo del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D13] (CapturaPorcentajeEnganche) \0.35\
+[D13] (CapturaPorcentajeEnganche) \0.1\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"=PorcentajeMinimoEnganche" Formula2:"=PorcentajeMaximoEnganche" ]
  Mensaje=[Mostrar:True Titulo:"Enganche" Mensaje:"Enganche menor al 10% en Autos Nuevos requiere Autorización Especial./Enganche menor al 25% en Autos Seminuevos requiere Autorización Especial." ] 
  Advertencia=[Mostrar:False Titulo:"Enganche" Mensaje:"Un enganche menor requiere autorización especial./Recuerda que el monto mínimo a financiar es de $25,000.00" Estilo:Información. ] 
@@ -1497,11 +1497,11 @@ Contenido:
 [K20] \48\
 [K21] \60\
 [L16] \Tasa\
-[L17] \0.1199\
-[L18] \0.1199\
-[L19] \0.1199\
-[L20] \0.1199\
-[L21] \0.125\
+[L17] \0.129\
+[L18] \0.129\
+[L19] \0.129\
+[L20] \0.129\
+[L21] \0.132\
 [M5] \Usando Macros\
 [M7] \=MontoEnganche\
 [M8] \=MontoSeguroDeContado\
@@ -1512,11 +1512,45 @@ Contenido:
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \15441.95\
-[M18] \8235.75\
-[M19] \5847.9\
-[M20] \4664.54\
-[M21] \4013.77\
+[M17] \21149.54\
+[M18] \11332.83\
+[M19] \8082.97\
+[M20] \6474.66\
+[M21] \5564.02\
+[O3] \Otros Cálculos\
+[O5] \Producto\
+[O6] \=SELECCION_PRODUCTO\
+[O8] \Tipo Tarifa\
+[O9] \=SELECCION_TIPO_TARIFA\
+[O11] \Condición Auto\
+[O12] \=CondicionAuto_Descripcion\
+[O14] \Condición Auto\
+[O15] \=CondicionAuto_Descripcion\
+[O20] \Tipo Tarifa\
+[O21] \=TTAR.Código\
+[P5] \Código\
+[P6] (PROD.Código) \=DGET(C_PRODUCTO,P5,$O$5:$O$6)\
+[P8] \Código\
+[P9] (TTAR.Código) \=DGET(C_TIPO_TARIFA,P8,$O$8:$O$9)\
+[P11] \Tipo Tarifa\
+[P12] \=TTAR.Código\
+[Calculos]
+[P14] \Enganche Requerido\
+[P15] (TR.EngancheRequerido) \=DGET(C_TASA_REDUCIDA,P14,$O$14:$O$15)\
+[P17] \Tasa Reducida?\
+[P18] (Tasa_Reducida?) \=PorcentajeEnganche >= TR.EngancheRequerido\
+[P20] \Condición Auto\
+[P21] \=CondicionAuto_Descripcion\
+[Q8] \Comisión por Apertura\
+[Q9] (TTAR.ComisiónApertura) \=DGET(C_TIPO_TARIFA,Q8,$O$8:$O$9)\
+[Q11] \Porc. Min. Eng\
+[Q12] (C.Porcentaje_Mínimo_Enganche) \=DGET(C_CONDICION_AUTO_TIPO_TARIFA,Q11,$O$11:$P$12)\
+[Q20] \Plazo Normalizado\
+[Q21] \=IF(PlazoEnMeses>=60,60,"Hasta 48")\
+[R20] \Tasa Reducida\
+[R21] \=Tasa_Reducida?\
+[S20] \Tasa de Interés Anual\
+[S21] (TIA.Tasa_Interés_Anual) \=DGET(C_TASA_INTERES_ANUAL,S20,$O$20:$R$21)\
 
 [Fechas]
 [A2] \Fechas de pago y días de intereses (AutoEstrene Mensual)\
@@ -55406,181 +55440,147 @@ Financiar\
 [I40] \=B43\
 
 [C. Tasas]
-[A1] \Tasa Reducida\
-[A3] \Condición Auto\
-[A4] \Nuevo\
-[A5] \Seminuevo\
-[A7] \Condición Auto\
-[A8] \=CondicionAuto_Descripcion\
-[B3] \Enganche Requerido\
-[B4] \0.3\
-[B5] \0.35\
-[B7] \Enganche Requerido\
-[B8] (TR.EngancheRequerido) \=DGET(C_TASA_REDUCIDA,B7,$A$7:$A$8)\
-[B10] \Tasa Reducida?\
-[B11] (Tasa_Reducida?) \=PorcentajeEnganche >= TR.EngancheRequerido\
-[D1] \Tasa de Interés Anual\
-[D3] \Tipo Tarifa\
-[D4] \T.T.TRAD\
-[D5] \T.T.TRAD\
-[D6] \T.T.TRAD\
-[D7] \T.T.TRAD\
-[D8] \T.T.TRAD\
-[D9] \T.T.TRAD\
-[D10] \T.T.TRAD\
-[D11] \T.T.TRAD\
-[D12] \T.T.PREF\
-[D13] \T.T.PREF\
+[A1] \Tasa de Interés Anual\
+[A3] \Tipo Tarifa\
+[A4] \T.T.TRAD\
+[A5] \T.T.TRAD\
+[A6] \T.T.TRAD\
+[A7] \T.T.TRAD\
+[A8] \T.T.TRAD\
+[A9] \T.T.TRAD\
+[A10] \T.T.TRAD\
+[A11] \T.T.TRAD\
+[A12] \T.T.PREF\
+[A13] \T.T.PREF\
+[A14] \T.T.PREF\
+[A15] \T.T.PREF\
+[A16] \T.T.PREF\
+[A17] \T.T.PREF\
+[A18] \T.T.PREF\
+[A19] \T.T.PREF\
+[B3] \Condición Auto\
+[B4] \Nuevo\
+[B5] \Nuevo\
+[B6] \Nuevo\
+[B7] \Nuevo\
+[B8] \Seminuevo\
+[B9] \Seminuevo\
 [C. Tasas]
-[D14] \T.T.PREF\
-[D15] \T.T.PREF\
-[D16] \T.T.PREF\
-[D17] \T.T.PREF\
-[D18] \T.T.PREF\
-[D19] \T.T.PREF\
-[D21] \Tipo Tarifa\
-[D22] \=TTAR.Código\
-[E3] \Condición Auto\
-[E4] \Nuevo\
-[E5] \Nuevo\
-[E6] \Nuevo\
-[E7] \Nuevo\
-[E8] \Seminuevo\
-[E9] \Seminuevo\
-[E10] \Seminuevo\
-[E11] \Seminuevo\
-[E12] \Nuevo\
-[E13] \Nuevo\
-[E14] \Nuevo\
-[E15] \Nuevo\
-[E16] \Seminuevo\
-[E17] \Seminuevo\
-[E18] \Seminuevo\
-[E19] \Seminuevo\
+[B10] \Seminuevo\
+[B11] \Seminuevo\
+[B12] \Nuevo\
+[B13] \Nuevo\
+[B14] \Nuevo\
+[B15] \Nuevo\
+[B16] \Seminuevo\
+[B17] \Seminuevo\
+[B18] \Seminuevo\
+[B19] \Seminuevo\
+[C3] \Plazo Normalizado\
+[C4] \Hasta 48\
+[C5] \Hasta 48\
+[C6] \60\
+[C7] \60\
+[C8] \Hasta 48\
+[C9] \Hasta 48\
+[C10] \60\
+[C11] \60\
+[C12] \Hasta 48\
+[C13] \Hasta 48\
+[C14] \60\
+[C15] \60\
+[C16] \Hasta 48\
+[C17] \Hasta 48\
 [C. Tasas]
-[E21] \Condición Auto\
-[E22] \=CondicionAuto_Descripcion\
-[F3] \Plazo Normalizado\
-[F4] \Hasta 48\
-[F5] \Hasta 48\
-[F6] \60\
-[F7] \60\
-[F8] \Hasta 48\
-[F9] \Hasta 48\
-[F10] \60\
-[F11] \60\
-[F12] \Hasta 48\
-[F13] \Hasta 48\
-[F14] \60\
-[F15] \60\
-[F16] \Hasta 48\
-[F17] \Hasta 48\
-[F18] \60\
-[F19] \60\
-[F21] \Plazo Normalizado\
-[F22] \=IF(PlazoEnMeses>=60,60,"Hasta 48")\
-[G3] \Tasa Reducida\
-[G4] \False\
-[G5] \True\
-[G6] \False\
+[C18] \60\
+[C19] \60\
+[D3] \Tasa Reducida\
+[D4] \False\
+[D5] \True\
+[D6] \False\
+[D7] \True\
+[D8] \False\
+[D9] \True\
+[D10] \False\
+[D11] \True\
+[D12] \False\
+[D13] \True\
+[D14] \False\
+[D15] \True\
+[D16] \False\
+[D17] \True\
+[D18] \False\
+[D19] \True\
+[E3] \Tasa de Interés Anual\
+[E4] \0.129\
+[E5] \0.1199\
+[E6] \0.132\
+[E7] \0.125\
+[E8] \0.132\
 [C. Tasas]
-[G7] \True\
-[G8] \False\
-[G9] \True\
-[G10] \False\
-[G11] \True\
-[G12] \False\
-[G13] \True\
-[G14] \False\
-[G15] \True\
-[G16] \False\
-[G17] \True\
-[G18] \False\
-[G19] \True\
-[G21] \Tasa Reducida\
-[G22] \=Tasa_Reducida?\
-[H3] \Tasa de Interés Anual\
-[H4] \0.129\
-[H5] \0.1199\
-[H6] \0.132\
-[H7] \0.125\
-[H8] \0.132\
-[H9] \0.129\
-[H10] \0.1399\
-[H11] \0.132\
-[H12] \0.1199\
-[C. Tasas]
-[H13] \0.115\
-[H14] \0.125\
-[H15] \0.1199\
-[H16] \0.1199\
-[H17] \0.115\
-[H18] \0.125\
-[H19] \0.1199\
-[H21] \Tasa de Interés Anual\
-[H22] (TIA.Tasa_Interés_Anual) \=DGET(C_TASA_INTERES_ANUAL,H21,$D$21:$G$22)\
+[E9] \0.129\
+[E10] \0.1399\
+[E11] \0.132\
+[E12] \0.1199\
+[E13] \0.115\
+[E14] \0.125\
+[E15] \0.1199\
+[E16] \0.1199\
+[E17] \0.115\
+[E18] \0.125\
+[E19] \0.1199\
+[G1] \Tasa Reducida\
+[G3] \Condición Auto\
+[G4] \Nuevo\
+[G5] \Seminuevo\
+[H3] \Enganche Requerido\
+[H4] \0.3\
+[H5] \0.35\
 
 [C.TipoCliente]
 [A1] \Producto\
 [A3] \Producto\
 [A4] \AutoEstrene\
 [A5] \AutoNómina\
-[A7] \Producto\
-[A8] \=SELECCION_PRODUCTO\
-[A10] \Tipo Tarifa\
-[A12] \Tipo Tarifa\
-[A13] \Tradicional\
-[A14] \Recurrente/Preferente\
-[A16] \Tipo Tarifa\
-[A17] \=SELECCION_TIPO_TARIFA\
-[A20] \Condición Auto y Tipo Tarifa\
-[A22] \Condición Auto\
-[A23] \Nuevo\
-[A24] \Nuevo\
-[A25] \Seminuevo\
-[A26] \Seminuevo\
-[A28] \Condición Auto\
-[A29] \=CondicionAuto_Descripcion\
+[A7] \Tipo Tarifa\
+[A9] \Tipo Tarifa\
+[A10] \Tradicional\
+[A11] \Recurrente/Preferente\
+[A13] \Condición Auto y Tipo Tarifa\
+[A15] \Condición Auto\
+[A16] \Nuevo\
+[A17] \Nuevo\
+[A18] \Seminuevo\
+[A19] \Seminuevo\
 [B3] \Código\
 [B4] \AET\
 [B5] \AEN\
-[B7] \Código\
-[B8] (PROD.Código) \=DGET(C_PRODUCTO,B7,$A$7:$A$8)\
+[B9] \Código\
+[B10] \T.T.TRAD\
+[B11] \T.T.PREF\
+[B15] \Tipo Tarifa\
+[B16] \T.T.TRAD\
+[B17] \T.T.PREF\
+[B18] \T.T.TRAD\
+[B19] \T.T.PREF\
 [C.TipoCliente]
-[B12] \Código\
-[B13] \T.T.TRAD\
-[B14] \T.T.PREF\
-[B16] \Código\
-[B17] (TTAR.Código) \=DGET(C_TIPO_TARIFA,B16,$A$16:$A$17)\
-[B22] \Tipo Tarifa\
-[B23] \T.T.TRAD\
-[B24] \T.T.PREF\
-[B25] \T.T.TRAD\
-[B26] \T.T.PREF\
-[B28] \Tipo Tarifa\
-[B29] \=TTAR.Código\
-[C12] \Comisión por Apertura\
-[C13] \0.025\
-[C14] \0.01\
-[C16] \Comisión por Apertura\
-[C17] (TTAR.ComisiónApertura) \=DGET(C_TIPO_TARIFA,C16,$A$16:$A$17)\
-[C22] \Porc. Min. Eng\
-[C23] \0.1\
-[C24] \0.15\
-[C25] \0.25\
-[C26] \0.25\
-[C28] \Porc. Min. Eng\
-[C29] (C.Porcentaje_Mínimo_Enganche) \=DGET(C_CONDICION_AUTO_TIPO_TARIFA,C28,$A$28:$B$29)\
-[F3] \Producto:\
-[C.TipoCliente]
-[F12] \Tipo Tarifa:\
-[G3] (SELECCION_PRODUCTO) \AutoEstrene\
+[C9] \Comisión por Apertura\
+[C10] \0.025\
+[C11] \0.01\
+[C15] \Porc. Min. Eng\
+[C16] \0.1\
+[C17] \0.15\
+[C18] \0.25\
+[C19] \0.25\
+[E3] \Producto:\
+[E9] \Tipo Tarifa:\
+[F3] (SELECCION_PRODUCTO) \AutoEstrene\
  DataValidation: Lista. [Fuente:"=COMBO_PRODUCTO" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[G12] (SELECCION_TIPO_TARIFA) \Tradicional\
+[F9] (SELECCION_TIPO_TARIFA) \Tradicional\
  DataValidation: Lista. [Fuente:"=COMBO_TIPO_TARIFA" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -56269,6 +56269,8 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D175] \Agrega Catálogo de Condición Auto y Tipo Tarifa, en donde se define el Porcentaje Mínimo de Enganche.\
 [D176] \Alambra los Catálogos nuevos, adecúa la hoja de Cálculos para obtener la Tasa de Interés de la nueva forma.\
 [D177] \Ajusta la macro que coordina el cálculo de la tabla de plazos, tasas y pagos para que tome en cuenta la nueva forma de calcular la tasa de interés. Tiene que recalcular la hoja de cálculos y en medio la de Tasas.\
+[LogDeCierres]
+[D178] \Mueve los cálculos a la hoja de Cálculos, y deja los catálogos sin fórmulas. Ajusta la macro anterior para que no haya que estar malabareando los cálculos de las hojas.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56282,13 +56284,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!178:178
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!178:178
- [T_Merger!_Actual] =T_Merger!178:178
- [T_SeguroAnual!_Actual] =T_SeguroAnual!178:178
- [T_SoloAuto!_Actual] =T_SoloAuto!178:178
- [T_VidaAnual!_Actual] =T_VidaAnual!178:178
- [T_VidaMulti!_Actual] =T_VidaMulti!178:178
+ [CAT!_Actual] =CAT!179:179
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!179:179
+ [T_Merger!_Actual] =T_Merger!179:179
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!179:179
+ [T_SoloAuto!_Actual] =T_SoloAuto!179:179
+ [T_VidaAnual!_Actual] =T_VidaAnual!179:179
+ [T_VidaMulti!_Actual] =T_VidaMulti!179:179
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56297,13 +56299,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!177:177
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!177:177
- [T_Merger!_Anterior] =T_Merger!177:177
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!177:177
- [T_SoloAuto!_Anterior] =T_SoloAuto!177:177
- [T_VidaAnual!_Anterior] =T_VidaAnual!177:177
- [T_VidaMulti!_Anterior] =T_VidaMulti!177:177
+ [Fechas!_Anterior] =Fechas!178:178
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!178:178
+ [T_Merger!_Anterior] =T_Merger!178:178
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!178:178
+ [T_SoloAuto!_Anterior] =T_SoloAuto!178:178
+ [T_VidaAnual!_Anterior] =T_VidaAnual!178:178
+ [T_VidaMulti!_Anterior] =T_VidaMulti!178:178
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -56463,7 +56465,7 @@ Nombres:
  [AplicaIvaIntereses?] =Calculos!$F$100
  [AportacionAdicional] =Calculos!$F$45
  [AutoCadenaCompleta] =Calculos!$F$23
- [C.Porcentaje_Mínimo_Enganche] =C.TipoCliente!$C$29
+ [C.Porcentaje_Mínimo_Enganche] =Calculos!$Q$12
  [C_ADIC_INCREMENTO_RC] ='C. Seguros'!$A$22:$E$25
  [C_ADIC_INCREMENTO_RC_DESC] =OFFSET(C_ADIC_INCREMENTO_RC,0,1,,2)
  [C_AUTO] ='C. Auto'!$A$13:$R$1206
@@ -56474,7 +56476,7 @@ Nombres:
  [C_CALCULO_SEGURO_DESC] =OFFSET(C_CALCULO_SEGURO,0,1,,2)
  [C_CONDICION_AUTO] ='C. Auto'!$I$4:$L$6
  [C_CONDICION_AUTO_DESC] =OFFSET(C_CONDICION_AUTO,0,1,,2)
- [C_CONDICION_AUTO_TIPO_TARIFA] =C.TipoCliente!$A$22:$C$26
+ [C_CONDICION_AUTO_TIPO_TARIFA] =C.TipoCliente!$A$15:$C$19
  [C_CONDICION_MODELO] ='C. Auto'!$I$9:$L$11
  [C_ESTADO] ='C. Estados'!$A$4:$I$36
  [C_ESTADO_DESC] =OFFSET(C_ESTADO,0,1,,COLUMNS(C_ESTADO)-1)
@@ -56498,13 +56500,13 @@ Nombres:
  [C_SI_NO_DESC] =OFFSET(C_SI_NO,0,1,,2)
  [C_TARIFA_RC_EU] ='C. Seguros'!$A$4:$E$8
  [C_TARIFA_RC_EU_DESC] =OFFSET(C_TARIFA_RC_EU,0,1,,2)
- [C_TASA_INTERES_ANUAL] ='C. Tasas'!$D$3:$H$19
- [C_TASA_REDUCIDA] ='C. Tasas'!$A$3:$B$5
+ [C_TASA_INTERES_ANUAL] ='C. Tasas'!$A$3:$E$19
+ [C_TASA_REDUCIDA] ='C. Tasas'!$G$3:$H$5
  [C_TASAS_INTERES] ='C. Tasas'!#REF!
  [C_TIPO_CLIENTE] =C.TipoCliente!#REF!
  [C_TIPO_PERSONA] ='C. Seguros'!$A$30:$E$33
  [C_TIPO_PERSONA_DESC] =OFFSET(C_TIPO_PERSONA,0,1,,2)
- [C_TIPO_TARIFA] =C.TipoCliente!$A$12:$C$14
+ [C_TIPO_TARIFA] =C.TipoCliente!$A$9:$C$11
  [CA_Servicios!CA.ArchivosExtra] =CA_Servicios!$B$19
  [CA_Servicios!CA.Branding] =CA_Servicios!$C$5
  [CA_Consola!CA.Generar2007] =CA_Consola!$G$17
@@ -56568,7 +56570,7 @@ Nombres:
  [COMBO_SOLO_Noaplica] ='C. Comunes'!$B$32
  [COMBO_TIPO_CLIENTE] =C.TipoCliente!#REF!
  [COMBO_TIPO_PERSONA] ='C. Seguros'!$B$31:$B$33
- [COMBO_TIPO_TARIFA] =C.TipoCliente!$A$13:$A$14
+ [COMBO_TIPO_TARIFA] =C.TipoCliente!$A$10:$A$11
  [T_AutoYSeguroMulti!Componentes.Pago.Fijo] =T_AutoYSeguroMulti!$F$22:$F$23
  [T_SeguroAnual!Componentes.Pago.Fijo] =T_SeguroAnual!$F$22:$F$23
  [T_SoloAuto!Componentes.Pago.Fijo] =T_SoloAuto!$F$22:$F$23
@@ -56800,7 +56802,7 @@ Nombres:
  ['C. Estados'!Print_Area] ='C. Estados'!$A$1:$I$36
  [Captura!Print_Area] =Captura!$B$2:$D$55
  [TablaCliente!Print_Area] =TablaCliente!$A$6:$I$85
- [PROD.Código] =C.TipoCliente!$B$8
+ [PROD.Código] =Calculos!$P$6
  [PROD.Id] =C.TipoCliente!#REF!
  [Prueba16] =Fechas!$E$16
  [Prueba3] =Fechas!$F$16
@@ -56856,11 +56858,11 @@ Nombres:
  [SELECCION_MARCA] =Captura!$D$11
  [SELECCION_MODELO] =Captura!$D$10
  [SELECCION_PLAZO] =TablaCliente!$C$13
- [SELECCION_PRODUCTO] =C.TipoCliente!$G$3
+ [SELECCION_PRODUCTO] =C.TipoCliente!$F$3
  [SELECCION_SERVICIO_PREMIUM] =Captura!$D$23
  [SELECCION_TIPO_CLIENTE] =C.TipoCliente!#REF!
  [SELECCION_TIPO_PERSONA] =Captura!$D$7
- [SELECCION_TIPO_TARIFA] =C.TipoCliente!$G$12
+ [SELECCION_TIPO_TARIFA] =C.TipoCliente!$F$9
  [T_AutoYSeguroMulti!Tabla.Ciclica.Anual?] =T_AutoYSeguroMulti!$C$35
  [T_SeguroAnual!Tabla.Ciclica.Anual?] =T_SeguroAnual!$C$35
  [T_SoloAuto!Tabla.Ciclica.Anual?] =T_SoloAuto!$C$31
@@ -56892,13 +56894,13 @@ Nombres:
  [T_SoloAuto!Tasa.Por.Periodo] =T_SoloAuto!$F$17
  [T_VidaAnual!Tasa.Por.Periodo] =T_VidaAnual!$F$17
  [T_VidaMulti!Tasa.Por.Periodo] =T_VidaMulti!$F$17
- [Tasa_Reducida?] ='C. Tasas'!$B$11
+ [Tasa_Reducida?] =Calculos!$P$18
  [TasaAUsar] =Calculos!#REF!
  [TasaCondicion1Nuevos] =Calculos!#REF!
  [TasaCondicion1Seminuevos] =Calculos!#REF!
  [TasaCondicion2Nuevos] =Calculos!#REF!
  [TasaInteres] =Calculos!$F$137
- [TIA.Tasa_Interés_Anual] ='C. Tasas'!$H$22
+ [TIA.Tasa_Interés_Anual] =Calculos!$S$21
  [Tipo_Persona.Descripción] =Calculos!$F$98
  [TipoCliente_OffsetTasa] =Calculos!#REF!
  [TipoCliente_UmbralEnganche] =Calculos!#REF!
@@ -56910,9 +56912,9 @@ Nombres:
  [CAT!Total.Egresos.CAT] =CAT!$C$11
  [CAT!Total.Flujo.Cero.CAT] =CAT!$C$20
  [CAT!Total.Ingresos.CAT] =CAT!$C$18
- [TR.EngancheRequerido] ='C. Tasas'!$B$8
- [TTAR.Código] =C.TipoCliente!$B$17
- [TTAR.ComisiónApertura] =C.TipoCliente!$C$17
+ [TR.EngancheRequerido] =Calculos!$P$15
+ [TTAR.Código] =Calculos!$P$9
+ [TTAR.ComisiónApertura] =Calculos!$Q$9
  [TTAR.Id] =C.TipoCliente!#REF!
  [Captura!UltimaCelda] =Captura!$E$202
  [TablaCliente!UltimaCelda] =TablaCliente!$J$86
@@ -57926,7 +57928,7 @@ Sub Valida_ValorGarantíaExtendida()
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 231 líneas de código.
+[EventHandlers] 229 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -58103,9 +58105,7 @@ On Error GoTo ErrHan
     BackupScreenUpdating = Application.ScreenUpdating: Application.ScreenUpdating = False
     
     If Application.Calculation <> xlCalculationAutomatic Then
-        Worksheets(SHEET_CALCULOS).Calculate 'Se calcula la primera parte...
-        Worksheets("C. Tasas").Calculate 'Luego las Tasas...
-        Worksheets(SHEET_CALCULOS).Calculate ' Por último lo que resta.
+        Worksheets(SHEET_CALCULOS).Calculate
     End If
     
     If Not SkipTableAdjusting Then
@@ -60159,5 +60159,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 46 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
