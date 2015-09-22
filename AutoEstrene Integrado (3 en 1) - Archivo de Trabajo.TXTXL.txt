@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 22/09/2015 12:24:19 p.m.
+Fecha y hora de generación: 22/09/2015 12:51:03 p.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 652
+ * Nombres Definidos: 654
 
  * Módulos de Visual Basic: 43
 
@@ -55823,12 +55823,20 @@ Financiar\
 [A28] \Selecciones\
 [A30] \Tipo Tarifa\
 [A31] \=SELECCION_TIPO_TARIFA\
+[A34] \Condición Auto y Tipo Tarifa\
+[A36] \Condición Auto\
+[A37] \Nuevo\
+[A38] \Nuevo\
+[A39] \Seminuevo\
+[C.TipoCliente]
+[A40] \Seminuevo\
+[A42] \Condición Auto\
+[A43] \=CondicionAuto_Descripcion\
 [B3] \Id\
 [B4] \1\
 [B5] \2\
 [B11] \Id\
 [B12] \1\
-[C.TipoCliente]
 [B13] \2\
 [B17] \Id\
 [B18] (PROD.Id) \=DGET(C_PRODUCTO,B17,$A$17:$A$18)\
@@ -55837,8 +55845,16 @@ Financiar\
 [B26] \2\
 [B30] \Id\
 [B31] (TTAR.Id) \=DGET(C_TIPO_TARIFA,B30,$A$30:$A$31)\
+[B36] \Tipo Tarifa\
+[B37] \T.T.TRAD\
+[B38] \T.T.PREF\
+[B39] \T.T.TRAD\
+[B40] \T.T.PREF\
+[B42] \Tipo Tarifa\
+[B43] \=TTAR.Código\
 [C3] \ComisionApertura\
 [C4] \0.025\
+[C.TipoCliente]
 [C5] \0.01\
 [C11] \Código\
 [C12] \AET\
@@ -55850,14 +55866,21 @@ Financiar\
 [C26] \T.T.PREF\
 [C30] \Código\
 [C31] (TTAR.Código) \=DGET(C_TIPO_TARIFA,C30,$A$30:$A$31)\
+[C36] \Porc. Min. Eng\
+[C37] \0.1\
+[C38] \0.15\
+[C39] \0.25\
+[C40] \0.25\
+[C42] \Porc. Min. Eng\
+[C43] (Porcentaje_Mínimo_Enganche) \=DGET(C_CONDICION_AUTO_TIPO_TARIFA,C42,$A$42:$B$43)\
 [D2] \Aplica para Autos Nuevos\
 [D3] \UmbralEngancheTasaReducida\
 [D4] \0.3\
 [D5] \0.3\
-[C.TipoCliente]
 [D24] \Comisión por Apertura\
 [D25] \0.025\
 [D26] \0.01\
+[C.TipoCliente]
 [D30] \Comisión por Apertura\
 [D31] (TTAR.ComisiónApertura) \=DGET(C_TIPO_TARIFA,D30,$A$30:$A$31)\
 [E3] \OffsetEnTasa\
@@ -56565,6 +56588,7 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D172] \Agrega Catálogo, Combo de selección y resultados para Producto, en la hoja 'C.TipoCliente'\
 [D173] \Agrega Catálogo, Combo de selección y resultados para Tipo Tarifa, en la hoja 'C.TipoCliente'\
 [D174] \Refactoriza la obtención de la Tasa de Interés Anual. Aun no la alambra.\
+[D175] \Agrega Catálogo de Condición Auto y Tipo Tarifa, en donde se define el Porcentaje Mínimo de Enganche.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56578,13 +56602,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!1:1
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!1:1
- [T_Merger!_Actual] =T_Merger!1:1
- [T_SeguroAnual!_Actual] =T_SeguroAnual!1:1
- [T_SoloAuto!_Actual] =T_SoloAuto!1:1
- [T_VidaAnual!_Actual] =T_VidaAnual!1:1
- [T_VidaMulti!_Actual] =T_VidaMulti!1:1
+ [CAT!_Actual] =CAT!43:43
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!43:43
+ [T_Merger!_Actual] =T_Merger!43:43
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!43:43
+ [T_SoloAuto!_Actual] =T_SoloAuto!43:43
+ [T_VidaAnual!_Actual] =T_VidaAnual!43:43
+ [T_VidaMulti!_Actual] =T_VidaMulti!43:43
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56593,13 +56617,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!1048576:1048576
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!1048576:1048576
- [T_Merger!_Anterior] =T_Merger!1048576:1048576
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!1048576:1048576
- [T_SoloAuto!_Anterior] =T_SoloAuto!1048576:1048576
- [T_VidaAnual!_Anterior] =T_VidaAnual!1048576:1048576
- [T_VidaMulti!_Anterior] =T_VidaMulti!1048576:1048576
+ [Fechas!_Anterior] =Fechas!42:42
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!42:42
+ [T_Merger!_Anterior] =T_Merger!42:42
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!42:42
+ [T_SoloAuto!_Anterior] =T_SoloAuto!42:42
+ [T_VidaAnual!_Anterior] =T_VidaAnual!42:42
+ [T_VidaMulti!_Anterior] =T_VidaMulti!42:42
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -56769,6 +56793,7 @@ Nombres:
  [C_CALCULO_SEGURO_DESC] =OFFSET(C_CALCULO_SEGURO,0,1,,2)
  [C_CONDICION_AUTO] ='C. Auto'!$I$4:$N$6
  [C_CONDICION_AUTO_DESC] =OFFSET(C_CONDICION_AUTO,0,1,,2)
+ [C_CONDICION_AUTO_TIPO_TARIFA] =C.TipoCliente!$A$36:$C$40
  [C_CONDICION_MODELO] ='C. Auto'!$I$9:$L$11
  [C_ESTADO] ='C. Estados'!$A$4:$I$36
  [C_ESTADO_DESC] =OFFSET(C_ESTADO,0,1,,COLUMNS(C_ESTADO)-1)
@@ -57084,6 +57109,7 @@ Nombres:
  [Porcentaje_Base] =Calculos!$G$64
  [Porcentaje_Cuota_Base_Vida] =Calculos!$F$101
  [Porcentaje_máximo_enganche] =Captura!$J$13
+ [Porcentaje_Mínimo_Enganche] =C.TipoCliente!$C$43
  [PorcentajeAnticipoAuto] =Calculos!$F$139
  [PorcentajeEnganche] =Calculos!$F$44
  [PorcentajeMaximoEnganche] =Calculos!$H$10
@@ -60448,5 +60474,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 46 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
