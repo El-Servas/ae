@@ -1,16 +1,16 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 23/09/2015 09:39:06 a.m.
+Fecha y hora de generación: 23/09/2015 11:13:07 a.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 675
+ * Nombres Definidos: 658
 
  * Módulos de Visual Basic: 43
 
- * Líneas de código VB: 3009
+ * Líneas de código VB: 3015
 
 Detalle
 =======
@@ -37,7 +37,7 @@ Hojas:
  [C.Seminuevos]
  [C. Seguros]
  [C. Tasas]
- [C.TipoCliente]
+ [C.Otros]
  [LogDeCierres]
 
 Contenido:
@@ -181,14 +181,14 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Fecha" Mensaje:"Por favor ingresa una fecha valida" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D6] (CapturaValorFactura) \250000\
+[D6] (CapturaValorFactura) \150000\
  DataValidation: Decimal. [Operador:"Mayor que" Formula1:"=J6" ]
  Mensaje=[Mostrar:True Titulo:"Valor Factura" Mensaje:"De contado incluyendo I.V.A." ] 
  Advertencia=[Mostrar:True Titulo:"Valor Factura" Mensaje:"Por favor ingresa una cantidad mayor" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
 [D7] (SELECCION_TIPO_PERSONA) \Física\
- DataValidation: Lista. [Fuente:"=COMBO_TIPO_PERSONA" ListaEnCelda:True ]
+ DataValidation: Lista. [Fuente:"=OFFSET(COMBO_TIPO_PERSONA,0,0,CONTEO_TIPO_PERSONA,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Tipo de Persona" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Tipo de Persona" Mensaje:"Por favor elije el tipo de personalidad jurídica" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
@@ -211,13 +211,13 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Modelo" Mensaje:"Por favor elije el modelo del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D11] (SELECCION_MARCA) \Acura\
+[D11] (SELECCION_MARCA) \Yuejin\
  DataValidation: Lista. [Fuente:"=OFFSET(QUERY_MARCAS,0,0,CONTEO_MARCAS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Marca" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Marca del automóvil" Mensaje:"Por favor elije la marca del automóvil" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D12] (SELECCION_AUTO) \MDX\
+[D12] (SELECCION_AUTO) \NJ1028\
  DataValidation: Lista. [Fuente:"=OFFSET(QUERY_AUTOS,0,0,CONTEO_AUTOS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Tipo de automóvil" Mensaje:"Por favor elije el tipo del automóvil" Estilo:Grave ] 
@@ -253,7 +253,7 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"Tipo de Seguro" Mensaje:"Por favor elije el tipo de seguro" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[D18] (CapturaGtiaExt) \10000\
+[D18] (CapturaGtiaExt) \6000\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"0" Formula2:"= CapturaValorFactura *0.04" ]
  Mensaje=[Mostrar:True Titulo:"$Garantia Extendida" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"$ Garantia Extendida" Mensaje:"El monto no puede ser mayor al 4% valor factura." Estilo:Grave ] 
@@ -304,7 +304,7 @@ Contenido:
 [G13] \Mínimos:\
 [G50] \Sucursal Ixe........\
 [H5] (SELECCION_FRECUENCIA) \Mensual\
- DataValidation: Lista. [Fuente:"=COMBO_FRECUENCIA" ListaEnCelda:True ]
+ DataValidation: Lista. [Fuente:"=OFFSET(COMBO_FRECUENCIA,0,0,CONTEO_FRECUENCIA,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
@@ -1512,11 +1512,11 @@ Contenido:
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \21149.54\
-[M18] \11332.83\
-[M19] \8082.97\
-[M20] \6474.66\
-[M21] \5564.02\
+[M17] \12689.72\
+[M18] \6799.7\
+[M19] \4849.78\
+[M20] \3884.8\
+[M21] \3338.41\
 [O3] \Otros Cálculos\
 [O5] \Producto\
 [O6] \=SELECCION_PRODUCTO\
@@ -14629,7 +14629,7 @@ Financiar\
 [A44] \3\
 [B3] \FRECUENCIA\
 [B4] \Descripción\
-[B5] (COMBO_FRECUENCIA) \Mensual\
+[B5] \Mensual\
 [B6] \Quincenal\
 [B7] \Catorcenal\
 [B8] \Decenal\
@@ -14783,18 +14783,36 @@ Financiar\
 [G57] \=F57\
 [G58] \=F58\
 [G67] (Opción_3_Semi) \=IF(ModeloAñosAntiguedad>=CONST_AÑOS_PLAZOS_LIMITADOS,"COMBO_PLAZO_SEMINUEVOS_LIMITADO","COMBO_PLAZO_SEMINUEVOS")\
-[H55] \Combo_Plazo_Seminuevo_PFyPFAC\
+[H2] \Opciones para el combo de Frecuencia según Producto.\
 [C. Comunes]
+[H4] \AET\
+[H5] \=B5\
+[H55] \Combo_Plazo_Seminuevo_PFyPFAC\
 [H56] \=$B$16\
 [H57] \=$B$18\
 [H58] \=$B$19\
 [H59] \=$B$20\
 [H60] \=$B$21\
+[I4] \AEN\
+[I5] \=B5\
+[I6] \=B6\
+[I7] \=B7\
+[I8] \=B8\
+[I9] \=B9\
 [I55] \Combo_Plazo_Seminuevos_PFyPFAC_Limitado_\
 [I56] \=H56\
 [I57] \=H57\
 [I58] \=H58\
 [I67] (Opción_1_2_Semi) \=IF(ModeloAñosAntiguedad>=CONST_AÑOS_PLAZOS_LIMITADOS,"Combo_Plazo_Seminuevos_PFyPFAC_Limitado_","Combo_Plazo_Seminuevo_PFyPFAC")\
+[K2] \Conteo\
+[K3] (CONTEO_FRECUENCIA) \=SUM(IF(COMBO_FRECUENCIA<>0,1))\
+[K4] \Combo\
+[K5] \=INDEX(H5:I5,, MATCH(PROD.Código,$H$4:$I$4,0))\
+[K6] \=INDEX(H6:I6,, MATCH(PROD.Código,$H$4:$I$4,0))\
+[K7] \=INDEX(H7:I7,, MATCH(PROD.Código,$H$4:$I$4,0))\
+[C. Comunes]
+[K8] \=INDEX(H8:I8,, MATCH(PROD.Código,$H$4:$I$4,0))\
+[K9] \=INDEX(H9:I9,, MATCH(PROD.Código,$H$4:$I$4,0))\
 
 [C. Estados]
 [A1] \Catálogo de Estados\
@@ -56098,22 +56116,16 @@ Financiar\
 [M61] \Yuejin\
 [N4] \ \
 [O4] \Conteo de Autos\
-[O5] (CONTEO_AUTOS) \9\
+[O5] (CONTEO_AUTOS) \3\
 [O7] (QUERY_AUTOS) \- = Seleccione una opción = -\
-[O8] \ILX\
-[O9] \MDX\
-[O10] \RDX\
-[O11] \RL\
-[O12] \TL\
-[O13] \TLX\
-[O14] \TSX\
-[C.Seminuevos]
-[O15] \ZDX\
+[O8] \NJ1028\
+[O9] \NJ1038\
 [S5] \1\
 [S6] \AMIS\
 [T5] \2\
 [T6] \2011\
 [T40] \Pick Up Lobo Crew Cab XLT\
+[C.Seminuevos]
 [U5] \3\
 [U6] \2012\
 [V5] \4\
@@ -56351,11 +56363,16 @@ Financiar\
 [F47] \True\
 [F51] \Leyenda (formula en amarillo)\
 [F52] (Leyenda_Indemnizacion_valor_factura) \=IF(ID_INDEMN_AÑO1=1,"",IF(ID_INDEMN_AÑO1=2,", Indemnización Valor Factura primeros 2 años",IF(ID_INDEMN_AÑO1=3,"")))\
+[H29] \Opciones para el combo de Tipo Persona según Producto.\
+[H31] \AET\
+[H32] \=B31\
+[H33] \=B32\
+[C. Seguros]
+[H34] \=B33\
 [H37] \Combo para el tipo de seguro\
 [H38] \Nuevos\
 [H39] \=B38\
 [H40] \=B39\
-[C. Seguros]
 [H41] \=B40\
 [H42] \=B41\
 [H43] \=B42\
@@ -56364,9 +56381,18 @@ Financiar\
 [H46] \=B45\
 [H47] \=B46\
 [H48] \=B47\
+[I31] \AEN\
+[I32] \=B31\
 [I38] \Seminuevos\
 [I39] \=B38\
 [I40] \=B43\
+[J31] \ \
+[K29] \Conteo\
+[K30] (CONTEO_TIPO_PERSONA) \=SUM(IF(COMBO_TIPO_PERSONA<>0,1))\
+[K31] \Combo\
+[K32] \=INDEX(H32:I32,,MATCH(PROD.Código,$H$31:$I$31,0))\
+[K33] \=INDEX(H33:I33,,MATCH(PROD.Código,$H$31:$I$31,0))\
+[K34] \=INDEX(H34:I34,,MATCH(PROD.Código,$H$31:$I$31,0))\
 
 [C. Tasas]
 [A1] \Tasa de Interés Anual\
@@ -56466,7 +56492,7 @@ Financiar\
 [H4] \0.3\
 [H5] \0.35\
 
-[C.TipoCliente]
+[C.Otros]
 [A1] \Producto\
 [A3] \Producto\
 [A4] \AutoEstrene\
@@ -56492,7 +56518,7 @@ Financiar\
 [B17] \T.T.PREF\
 [B18] \T.T.TRAD\
 [B19] \T.T.PREF\
-[C.TipoCliente]
+[C.Otros]
 [C9] \Comisión por Apertura\
 [C10] \0.025\
 [C11] \0.01\
@@ -56503,7 +56529,7 @@ Financiar\
 [C19] \0.25\
 [E3] \Producto:\
 [E9] \Tipo Tarifa:\
-[F3] (SELECCION_PRODUCTO) \AutoEstrene\
+[F3] (SELECCION_PRODUCTO) \AutoNómina\
  DataValidation: Lista. [Fuente:"=COMBO_PRODUCTO" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -57211,6 +57237,8 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D187] \Reemplaza Frecuencias específicas por algoritmos genéricos.\
 [D188] \Agrega Fechas de Pago y Duración Intereses para Quincenal y Decenal.\
 [D189] \Concluye con los algoritmos de Fechas de Pago y Duración para todas las frecuencias soportadas de ambos productos.\
+[D190] \Combo variable de Frecuencias según Producto. Incluye Event Handler para validar opción seleccionada al cambiar el Producto.\
+[D191] \Combo variable de Tipo Persona según Producto. Incluye Event Handler.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -57224,13 +57252,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!190:190
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!190:190
- [T_Merger!_Actual] =T_Merger!190:190
- [T_SeguroAnual!_Actual] =T_SeguroAnual!190:190
- [T_SoloAuto!_Actual] =T_SoloAuto!190:190
- [T_VidaAnual!_Actual] =T_VidaAnual!190:190
- [T_VidaMulti!_Actual] =T_VidaMulti!190:190
+ [CAT!_Actual] =CAT!192:192
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!192:192
+ [T_Merger!_Actual] =T_Merger!192:192
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!192:192
+ [T_SoloAuto!_Actual] =T_SoloAuto!192:192
+ [T_VidaAnual!_Actual] =T_VidaAnual!192:192
+ [T_VidaMulti!_Actual] =T_VidaMulti!192:192
  [Fechas!_Algoritmo] =Fechas!$C$24
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
@@ -57240,13 +57268,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!189:189
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!189:189
- [T_Merger!_Anterior] =T_Merger!189:189
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!189:189
- [T_SoloAuto!_Anterior] =T_SoloAuto!189:189
- [T_VidaAnual!_Anterior] =T_VidaAnual!189:189
- [T_VidaMulti!_Anterior] =T_VidaMulti!189:189
+ [Fechas!_Anterior] =Fechas!191:191
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!191:191
+ [T_Merger!_Anterior] =T_Merger!191:191
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!191:191
+ [T_SoloAuto!_Anterior] =T_SoloAuto!191:191
+ [T_VidaAnual!_Anterior] =T_VidaAnual!191:191
+ [T_VidaMulti!_Anterior] =T_VidaMulti!191:191
  [Fechas!_Búsqueda_Duración] =Fechas!$B$27
  [Fechas!_Búsqueda_Fechas_Pago] =Fechas!$B$26
  [Fechas!_C_FRECUENCIA_ALGORITMO] =Fechas!$A$13:$C$19
@@ -57433,7 +57461,7 @@ Nombres:
  [C_CALCULO_SEGURO_DESC] =OFFSET(C_CALCULO_SEGURO,0,1,,2)
  [C_CONDICION_AUTO] ='C. Auto'!$I$4:$L$6
  [C_CONDICION_AUTO_DESC] =OFFSET(C_CONDICION_AUTO,0,1,,2)
- [C_CONDICION_AUTO_TIPO_TARIFA] =C.TipoCliente!$A$15:$C$19
+ [C_CONDICION_AUTO_TIPO_TARIFA] =C.Otros!$A$15:$C$19
  [C_CONDICION_MODELO] ='C. Auto'!$I$9:$L$11
  [C_ESTADO] ='C. Estados'!$A$4:$I$36
  [C_ESTADO_DESC] =OFFSET(C_ESTADO,0,1,,COLUMNS(C_ESTADO)-1)
@@ -57452,18 +57480,16 @@ Nombres:
  [C_OPCION_ABONO_ANTICIPADO_DESC] =OFFSET(C_OPCION_ABONO_ANTICIPADO,0,1,,2)
  [C_PLAZO] ='C. Comunes'!$A$13:$F$21
  [C_PLAZO_DESC] =OFFSET(C_PLAZO,0,1,,2)
- [C_PRODUCTO] =C.TipoCliente!$A$3:$B$5
+ [C_PRODUCTO] =C.Otros!$A$3:$B$5
  [C_SI_NO] ='C. Comunes'!$A$36:$D$38
  [C_SI_NO_DESC] =OFFSET(C_SI_NO,0,1,,2)
  [C_TARIFA_RC_EU] ='C. Seguros'!$A$4:$E$8
  [C_TARIFA_RC_EU_DESC] =OFFSET(C_TARIFA_RC_EU,0,1,,2)
  [C_TASA_INTERES_ANUAL] ='C. Tasas'!$A$3:$E$19
  [C_TASA_REDUCIDA] ='C. Tasas'!$G$3:$H$5
- [C_TASAS_INTERES] ='C. Tasas'!#REF!
- [C_TIPO_CLIENTE] =C.TipoCliente!#REF!
  [C_TIPO_PERSONA] ='C. Seguros'!$A$30:$E$33
  [C_TIPO_PERSONA_DESC] =OFFSET(C_TIPO_PERSONA,0,1,,2)
- [C_TIPO_TARIFA] =C.TipoCliente!$A$9:$C$11
+ [C_TIPO_TARIFA] =C.Otros!$A$9:$C$11
  [CA_Servicios!CA.ArchivosExtra] =CA_Servicios!$B$19
  [CA_Servicios!CA.Branding] =CA_Servicios!$C$5
  [CA_Consola!CA.Generar2007] =CA_Consola!$G$17
@@ -57503,7 +57529,7 @@ Nombres:
  [COMBO_CONDICION_AUTO] ='C. Auto'!$J$5:$J$6
  [COMBO_ESTADO] ='C. Estados'!$B$5:$B$36
  [COMBO_Financiado_Noaplica] ='C. Comunes'!$B$31:$B$32
- [COMBO_FRECUENCIA] ='C. Comunes'!$B$5
+ [COMBO_FRECUENCIA] ='C. Comunes'!$K$5:$K$9
  [COMBO_INCREMENTO_RC] ='C. Seguros'!$B$23:$B$25
  [COMBO_Indem_Valor_Factura] ='C. Seguros'!$B$53:$B$54
  [COMBO_Indem_Valor_Factura_3.5T] ='C. Seguros'!$B$53:$B$53
@@ -57518,16 +57544,15 @@ Nombres:
  [COMBO_PLAZO_SEMINUEVOS] ='C. Comunes'!$F$56:$F$59
  [COMBO_PLAZO_SEMINUEVOS_LIMITADO] ='C. Comunes'!$G$56:$G$58
  [Combo_Plazo_Seminuevos_PFyPFAC_Limitado_] ='C. Comunes'!$I$56:$I$58
- [COMBO_PRODUCTO] =C.TipoCliente!$A$4:$A$5
+ [COMBO_PRODUCTO] =C.Otros!$A$4:$A$5
  [COMBO_SEGURO_NUEVOS] ='C. Seguros'!$H$39:$H$48
  [COMBO_SEGURO_SEMINUEVOS] ='C. Seguros'!$I$39:$I$40
  [COMBO_SeminuevosAnteriores] =C.Seminuevos!$B$10:$B$2020
  [COMBO_SI_NO] ='C. Comunes'!$B$37:$B$38
  [COMBO_SOLO_NO] ='C. Comunes'!$B$38
  [COMBO_SOLO_Noaplica] ='C. Comunes'!$B$32
- [COMBO_TIPO_CLIENTE] =C.TipoCliente!#REF!
- [COMBO_TIPO_PERSONA] ='C. Seguros'!$B$31:$B$33
- [COMBO_TIPO_TARIFA] =C.TipoCliente!$A$10:$A$11
+ [COMBO_TIPO_PERSONA] ='C. Seguros'!$K$32:$K$34
+ [COMBO_TIPO_TARIFA] =C.Otros!$A$10:$A$11
  [T_AutoYSeguroMulti!Componentes.Pago.Fijo] =T_AutoYSeguroMulti!$F$22:$F$23
  [T_SeguroAnual!Componentes.Pago.Fijo] =T_SeguroAnual!$F$22:$F$23
  [T_SoloAuto!Componentes.Pago.Fijo] =T_SoloAuto!$F$22:$F$23
@@ -57559,12 +57584,11 @@ Nombres:
  [Fechas!CONST_DIAS_LIMITE] =Fechas!$J$11
  [CONST_Gastos_Expedicion_Semi_Ant] ='C. Seguros'!$C$60
  [CONST_MESES_EN_AÑO] ='C. Comunes'!$C$51
- [CONST_UMBRAL_ENGANCHE] ='C. Tasas'!#REF!
- [CONST_UMBRAL_ENGANCHE_SEMI] ='C. Tasas'!#REF!
- [CONST_UMBRAL_MONTO] ='C. Tasas'!#REF!
  [Constante_Base_Vida] =Calculos!$F$104
  [CONTEO_AUTOS] =C.Seminuevos!$O$5
+ [CONTEO_FRECUENCIA] ='C. Comunes'!$K$3
  [CONTEO_MARCAS] =C.Seminuevos!$M$5
+ [CONTEO_TIPO_PERSONA] ='C. Seguros'!$K$30
  [Contiene_cobertura_adicional] =Calculos!$H$150
  [DañosAplica?] =Calculos!$F$93
  [DañosAutoSustituto] =Calculos!$F$74
@@ -57618,9 +57642,8 @@ Nombres:
  [ID_PLAZO_CALCULO_SEGURO] =Calculos!$F$54
  [ID_SERVICIO_PREMIUM] =Calculos!$C$18
  [ID_TIPO_AUTO] =Calculos!$F$29
- [ID_TIPO_CLIENTE] =Calculos!#REF!
  [ID_TIPO_PERSONA] =Calculos!$C$7
- [INPUT_CELLS] =Captura!$D$5:$D$16,Captura!$D$20:$D$23,Captura!$D$17:$D$18
+ [INPUT_CELLS] =Captura!$D$5:$D$16,Captura!$D$20:$D$23,Captura!$D$17:$D$18,Captura!$H$5
  [T_AutoYSeguroMulti!Iva.Intereses] =T_AutoYSeguroMulti!$C$21
  [T_Merger!Iva.Intereses] =T_Merger!$C$20
  [T_SeguroAnual!Iva.Intereses] =T_SeguroAnual!$C$21
@@ -57765,7 +57788,6 @@ Nombres:
  [Captura!Print_Area] =Captura!$B$2:$D$55
  [TablaCliente!Print_Area] =TablaCliente!$A$6:$I$85
  [PROD.Código] =Calculos!$P$6
- [PROD.Id] =C.TipoCliente!#REF!
  [QUERY_AUTOS] =C.Seminuevos!$O$7
  [QUERY_MARCAS] =C.Seminuevos!$M$7
  [T_AutoYSeguroMulti!Rango.Abono.Anticipado] =T_AutoYSeguroMulti!$C$34
@@ -57818,11 +57840,10 @@ Nombres:
  [SELECCION_MARCA] =Captura!$D$11
  [SELECCION_MODELO] =Captura!$D$10
  [SELECCION_PLAZO] =TablaCliente!$C$13
- [SELECCION_PRODUCTO] =C.TipoCliente!$F$3
+ [SELECCION_PRODUCTO] =C.Otros!$F$3
  [SELECCION_SERVICIO_PREMIUM] =Captura!$D$23
- [SELECCION_TIPO_CLIENTE] =C.TipoCliente!#REF!
  [SELECCION_TIPO_PERSONA] =Captura!$D$7
- [SELECCION_TIPO_TARIFA] =C.TipoCliente!$F$9
+ [SELECCION_TIPO_TARIFA] =C.Otros!$F$9
  [T_AutoYSeguroMulti!Tabla.Ciclica.Anual?] =T_AutoYSeguroMulti!$C$35
  [T_SeguroAnual!Tabla.Ciclica.Anual?] =T_SeguroAnual!$C$35
  [T_SoloAuto!Tabla.Ciclica.Anual?] =T_SoloAuto!$C$31
@@ -57855,18 +57876,9 @@ Nombres:
  [T_VidaAnual!Tasa.Por.Periodo] =T_VidaAnual!$F$17
  [T_VidaMulti!Tasa.Por.Periodo] =T_VidaMulti!$F$17
  [Tasa_Reducida?] =Calculos!$P$18
- [TasaAUsar] =Calculos!#REF!
- [TasaCondicion1Nuevos] =Calculos!#REF!
- [TasaCondicion1Seminuevos] =Calculos!#REF!
- [TasaCondicion2Nuevos] =Calculos!#REF!
  [TasaInteres] =Calculos!$F$137
  [TIA.Tasa_Interés_Anual] =Calculos!$S$21
  [Tipo_Persona.Descripción] =Calculos!$F$98
- [TipoCliente_OffsetTasa] =Calculos!#REF!
- [TipoCliente_UmbralEnganche] =Calculos!#REF!
- [TipoClienteComisionPorApertura] =Calculos!#REF!
- [TipoClienteEstandar] =C.TipoCliente!#REF!
- [TipoClienteRecurrente] =C.TipoCliente!#REF!
  [TipoPersonaAplicaSeguroVida?] =Calculos!$F$99
  [CAT!TIR.Flujos] =CAT!$N$10
  [CAT!Total.Egresos.CAT] =CAT!$C$11
@@ -57875,7 +57887,6 @@ Nombres:
  [TR.EngancheRequerido] =Calculos!$P$15
  [TTAR.Código] =Calculos!$P$9
  [TTAR.ComisiónApertura] =Calculos!$Q$9
- [TTAR.Id] =C.TipoCliente!#REF!
  [Captura!UltimaCelda] =Captura!$E$202
  [TablaCliente!UltimaCelda] =TablaCliente!$J$86
  [Valor_Factura_Mínimo] =Captura!$J$6
@@ -58888,7 +58899,7 @@ Sub Valida_ValorGarantíaExtendida()
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 229 líneas de código.
+[EventHandlers] 235 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -59116,8 +59127,14 @@ End Sub
 
 'Valida la Comisión por Apertura en la hoja de captura cuando se cambia el Tipo Cliente.
 Sub Evento_Change_CTipoCliente(ByVal Target As Range)
-    If Intersect(Target, [SELECCION_TIPO_TARIFA]) Is Nothing Then Exit Sub
-    ValidaComisionApertura
+    If Not Intersect(Target, [SELECCION_TIPO_TARIFA]) Is Nothing Then _
+        ValidaComisionApertura
+    
+    If Not Intersect(Target, [SELECCION_PRODUCTO]) Is Nothing Then
+        ValidaSeleccionComboDV [SELECCION_FRECUENCIA]
+        ValidaSeleccionComboDV [SELECCION_TIPO_PERSONA]
+    End If
+
 End Sub
 \\\--- END OF MODULE ---
 
@@ -61119,5 +61136,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 47 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
