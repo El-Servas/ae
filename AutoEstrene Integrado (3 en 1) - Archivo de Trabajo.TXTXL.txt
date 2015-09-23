@@ -1,16 +1,16 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 23/09/2015 11:49:22 a.m.
+Fecha y hora de generación: 23/09/2015 12:42:18 p.m.
 
 Resumen
 =======
 
- * Hojas: 23
+ * Hojas: 24
 
  * Nombres Definidos: 659
 
- * Módulos de Visual Basic: 43
+ * Módulos de Visual Basic: 44
 
- * Líneas de código VB: 3035
+ * Líneas de código VB: 3050
 
 Detalle
 =======
@@ -20,6 +20,7 @@ Hojas:
  [CA_Servicios]
  [Captura]
  [TablaCliente]
+ [Combos Variables]
  [Calculos]
  [Fechas]
  [Configuración de Tablas]
@@ -151,7 +152,7 @@ Contenido:
 [B31] \* Crédito por el Seguro Banorte:\
 [B32] \Garantía extendida a financiar:\
 [B33] \Monto a Financiar:\
-[B34] \Pago Mensual Estimado con I.V.A. Incluido\
+[B34] \="Pago " & SELECCION_FRECUENCIA & " Estimado con I.V.A. Incluido"\
 [B35] \Plazo\
 [B36] \=IF(Calculos!K17="","",Calculos!K17)\
 [B37] \=IF(Calculos!K18="","",Calculos!K18)\
@@ -993,6 +994,43 @@ Contenido:
 [I77] \=T_Merger!T77\
 [I78] \=T_Merger!T78\
 [I79] \=T_Merger!T79\
+
+[Combos Variables]
+[A1] \Combos Variables\
+[A3] \Para concentrar las diferentes opciones de los combos, y sus dependencias.\
+[A5] \Frecuencia\
+[A7] \AET\
+[A8] \='C. Comunes'!B5\
+[A14] \Tipo Persona\
+[A16] \AET\
+[A17] \='C. Seguros'!B31\
+[A18] \='C. Seguros'!B32\
+[A19] \='C. Seguros'!B33\
+[B7] \AEN\
+[B8] \='C. Comunes'!B5\
+[B9] \='C. Comunes'!B6\
+[B10] \='C. Comunes'!B7\
+[B11] \='C. Comunes'!B8\
+[B12] \='C. Comunes'!B9\
+[B16] \AEN\
+[B17] \='C. Seguros'!B31\
+[C7] \ \
+[C16] \ \
+[D5] \Conteo\
+[D6] (CONTEO_FRECUENCIA) \=SUM(IF(COMBO_FRECUENCIA<>0,1))\
+[D7] \Combo\
+[D8] \=INDEX(A8:B8,, MATCH(PROD.Código,$A$7:$B$7,0))\
+[D9] \=INDEX(A9:B9,, MATCH(PROD.Código,$A$7:$B$7,0))\
+[Combos Variables]
+[D10] \=INDEX(A10:B10,, MATCH(PROD.Código,$A$7:$B$7,0))\
+[D11] \=INDEX(A11:B11,, MATCH(PROD.Código,$A$7:$B$7,0))\
+[D12] \=INDEX(A12:B12,, MATCH(PROD.Código,$A$7:$B$7,0))\
+[D14] \Conteo\
+[D15] (CONTEO_TIPO_PERSONA) \=SUM(IF(COMBO_TIPO_PERSONA<>0,1))\
+[D16] \Combo\
+[D17] \=INDEX(A17:B17,,MATCH(PROD.Código,$A$16:$B$16,0))\
+[D18] \=INDEX(A18:B18,,MATCH(PROD.Código,$A$16:$B$16,0))\
+[D19] \=INDEX(A19:B19,,MATCH(PROD.Código,$A$16:$B$16,0))\
 
 [Calculos]
 [A1] \Cálculos.\
@@ -14789,36 +14827,18 @@ Financiar\
 [G57] \=F57\
 [G58] \=F58\
 [G67] (Opción_3_Semi) \=IF(ModeloAñosAntiguedad>=CONST_AÑOS_PLAZOS_LIMITADOS,"COMBO_PLAZO_SEMINUEVOS_LIMITADO","COMBO_PLAZO_SEMINUEVOS")\
-[H2] \Opciones para el combo de Frecuencia según Producto.\
-[C. Comunes]
-[H4] \AET\
-[H5] \=B5\
 [H55] \Combo_Plazo_Seminuevo_PFyPFAC\
+[C. Comunes]
 [H56] \=$B$16\
 [H57] \=$B$18\
 [H58] \=$B$19\
 [H59] \=$B$20\
 [H60] \=$B$21\
-[I4] \AEN\
-[I5] \=B5\
-[I6] \=B6\
-[I7] \=B7\
-[I8] \=B8\
-[I9] \=B9\
 [I55] \Combo_Plazo_Seminuevos_PFyPFAC_Limitado_\
 [I56] \=H56\
 [I57] \=H57\
 [I58] \=H58\
 [I67] (Opción_1_2_Semi) \=IF(ModeloAñosAntiguedad>=CONST_AÑOS_PLAZOS_LIMITADOS,"Combo_Plazo_Seminuevos_PFyPFAC_Limitado_","Combo_Plazo_Seminuevo_PFyPFAC")\
-[K2] \Conteo\
-[K3] (CONTEO_FRECUENCIA) \=SUM(IF(COMBO_FRECUENCIA<>0,1))\
-[K4] \Combo\
-[K5] \=INDEX(H5:I5,, MATCH(PROD.Código,$H$4:$I$4,0))\
-[K6] \=INDEX(H6:I6,, MATCH(PROD.Código,$H$4:$I$4,0))\
-[K7] \=INDEX(H7:I7,, MATCH(PROD.Código,$H$4:$I$4,0))\
-[C. Comunes]
-[K8] \=INDEX(H8:I8,, MATCH(PROD.Código,$H$4:$I$4,0))\
-[K9] \=INDEX(H9:I9,, MATCH(PROD.Código,$H$4:$I$4,0))\
 
 [C. Estados]
 [A1] \Catálogo de Estados\
@@ -56369,16 +56389,11 @@ Financiar\
 [F47] \True\
 [F51] \Leyenda (formula en amarillo)\
 [F52] (Leyenda_Indemnizacion_valor_factura) \=IF(ID_INDEMN_AÑO1=1,"",IF(ID_INDEMN_AÑO1=2,", Indemnización Valor Factura primeros 2 años",IF(ID_INDEMN_AÑO1=3,"")))\
-[H29] \Opciones para el combo de Tipo Persona según Producto.\
-[H31] \AET\
-[H32] \=B31\
-[H33] \=B32\
-[C. Seguros]
-[H34] \=B33\
 [H37] \Combo para el tipo de seguro\
 [H38] \Nuevos\
 [H39] \=B38\
 [H40] \=B39\
+[C. Seguros]
 [H41] \=B40\
 [H42] \=B41\
 [H43] \=B42\
@@ -56387,18 +56402,9 @@ Financiar\
 [H46] \=B45\
 [H47] \=B46\
 [H48] \=B47\
-[I31] \AEN\
-[I32] \=B31\
 [I38] \Seminuevos\
 [I39] \=B38\
 [I40] \=B43\
-[J31] \ \
-[K29] \Conteo\
-[K30] (CONTEO_TIPO_PERSONA) \=SUM(IF(COMBO_TIPO_PERSONA<>0,1))\
-[K31] \Combo\
-[K32] \=INDEX(H32:I32,,MATCH(PROD.Código,$H$31:$I$31,0))\
-[K33] \=INDEX(H33:I33,,MATCH(PROD.Código,$H$31:$I$31,0))\
-[K34] \=INDEX(H34:I34,,MATCH(PROD.Código,$H$31:$I$31,0))\
 
 [C. Tasas]
 [A1] \Tasa de Interés Anual\
@@ -57246,6 +57252,9 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D190] \Combo variable de Frecuencias según Producto. Incluye Event Handler para validar opción seleccionada al cambiar el Producto.\
 [D191] \Combo variable de Tipo Persona según Producto. Incluye Event Handler.\
 [D192] \Ajusta los Event Handlers de los dos combos de la Frecuencia: La de la Captura y la de la Tabla Cliente.\
+[D193] \Cambia Evento_Change_Captura() para que no resetee el plazo cada que hay un cálculo.\
+[D194] \Evento_Change_Captura(). Cuando se cambie la Frecuencia, que se ajuste el número de pagos visibles en la Tabla Cliente.\
+[D195] \Inicia Concentración de Combos Variables en una hoja propia, en lugar de en los Catálogos.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -57259,13 +57268,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!192:192
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!192:192
- [T_Merger!_Actual] =T_Merger!192:192
- [T_SeguroAnual!_Actual] =T_SeguroAnual!192:192
- [T_SoloAuto!_Actual] =T_SoloAuto!192:192
- [T_VidaAnual!_Actual] =T_VidaAnual!192:192
- [T_VidaMulti!_Actual] =T_VidaMulti!192:192
+ [CAT!_Actual] =CAT!195:195
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!195:195
+ [T_Merger!_Actual] =T_Merger!195:195
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!195:195
+ [T_SoloAuto!_Actual] =T_SoloAuto!195:195
+ [T_VidaAnual!_Actual] =T_VidaAnual!195:195
+ [T_VidaMulti!_Actual] =T_VidaMulti!195:195
  [Fechas!_Algoritmo] =Fechas!$C$24
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
@@ -57275,13 +57284,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!191:191
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!191:191
- [T_Merger!_Anterior] =T_Merger!191:191
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!191:191
- [T_SoloAuto!_Anterior] =T_SoloAuto!191:191
- [T_VidaAnual!_Anterior] =T_VidaAnual!191:191
- [T_VidaMulti!_Anterior] =T_VidaMulti!191:191
+ [Fechas!_Anterior] =Fechas!194:194
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!194:194
+ [T_Merger!_Anterior] =T_Merger!194:194
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!194:194
+ [T_SoloAuto!_Anterior] =T_SoloAuto!194:194
+ [T_VidaAnual!_Anterior] =T_VidaAnual!194:194
+ [T_VidaMulti!_Anterior] =T_VidaMulti!194:194
  [Fechas!_Búsqueda_Duración] =Fechas!$B$27
  [Fechas!_Búsqueda_Fechas_Pago] =Fechas!$B$26
  [Fechas!_C_FRECUENCIA_ALGORITMO] =Fechas!$A$13:$C$19
@@ -57536,7 +57545,7 @@ Nombres:
  [COMBO_CONDICION_AUTO] ='C. Auto'!$J$5:$J$6
  [COMBO_ESTADO] ='C. Estados'!$B$5:$B$36
  [COMBO_Financiado_Noaplica] ='C. Comunes'!$B$31:$B$32
- [COMBO_FRECUENCIA] ='C. Comunes'!$K$5:$K$9
+ [COMBO_FRECUENCIA] ='Combos Variables'!$D$8:$D$12
  [COMBO_INCREMENTO_RC] ='C. Seguros'!$B$23:$B$25
  [COMBO_Indem_Valor_Factura] ='C. Seguros'!$B$53:$B$54
  [COMBO_Indem_Valor_Factura_3.5T] ='C. Seguros'!$B$53:$B$53
@@ -57558,7 +57567,7 @@ Nombres:
  [COMBO_SI_NO] ='C. Comunes'!$B$37:$B$38
  [COMBO_SOLO_NO] ='C. Comunes'!$B$38
  [COMBO_SOLO_Noaplica] ='C. Comunes'!$B$32
- [COMBO_TIPO_PERSONA] ='C. Seguros'!$K$32:$K$34
+ [COMBO_TIPO_PERSONA] ='Combos Variables'!$D$17:$D$19
  [COMBO_TIPO_TARIFA] =C.Otros!$A$10:$A$11
  [T_AutoYSeguroMulti!Componentes.Pago.Fijo] =T_AutoYSeguroMulti!$F$22:$F$23
  [T_SeguroAnual!Componentes.Pago.Fijo] =T_SeguroAnual!$F$22:$F$23
@@ -57593,9 +57602,9 @@ Nombres:
  [CONST_MESES_EN_AÑO] ='C. Comunes'!$C$51
  [Constante_Base_Vida] =Calculos!$F$104
  [CONTEO_AUTOS] =C.Seminuevos!$O$5
- [CONTEO_FRECUENCIA] ='C. Comunes'!$K$3
+ [CONTEO_FRECUENCIA] ='Combos Variables'!$D$6
  [CONTEO_MARCAS] =C.Seminuevos!$M$5
- [CONTEO_TIPO_PERSONA] ='C. Seguros'!$K$30
+ [CONTEO_TIPO_PERSONA] ='Combos Variables'!$D$15
  [Contiene_cobertura_adicional] =Calculos!$H$150
  [DañosAplica?] =Calculos!$F$93
  [DañosAutoSustituto] =Calculos!$F$74
@@ -57954,6 +57963,7 @@ Módulos VBA:
  [CA_Portapapeles_X] Tipo: 1
  [CA_LogCierres_X] Tipo: 1
  [CA_PseudoCierre_X] Tipo: 1
+ [Sheet21] Tipo: 100
 
 Codigo:
 [ThisWorkbook] 13 líneas de código.
@@ -58907,7 +58917,7 @@ Sub Valida_ValorGarantíaExtendida()
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 255 líneas de código.
+[EventHandlers] 268 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -58938,7 +58948,6 @@ On Error Resume Next
     PrintResalta DebugString
     
 On Error GoTo ErrHan
-    
     Dim BkSU As Boolean: BkSU = Pantalla(False)
     
     ProtegerHoja Worksheets(SHEET_CAPTURA)
@@ -58951,13 +58960,20 @@ On Error GoTo ErrHan
         Application.Calculate
     End If
     
-    'Replicamos la selección de la frecuencia en la hoja cliente.
+    '----------------------------------------------------------------------------------------------------
+    'Si movemos la Frecuencia, hay que replicar la selección en el Combo de la Tabla Cliente.
     'Es necesario desactivar los eventos, porque al actualizar AQUELLA celda,
     'Dispara un Event Handler que viene y actualiza ESTA celda,
     'Y estaríamos en un ciclo infinito.
     If Not Application.Intersect(Target, [SELECCION_FRECUENCIA]) Is Nothing Then
         Application.EnableEvents = False
         [SELECCION_FRECUENCIA_TABLA_CLIENTE] = [SELECCION_FRECUENCIA]
+                
+        'Ademas, un cambio de frecuencia cambia el número de pagos, por lo que actualizamos la Tabla Cliente.
+        'falta ver si no hay que calcular hoja cálculos.
+        Tools.AjustaFilasTablaPagos Worksheets(SHEET_TABLA_CLIENTE).Range(RANGO_AMORTIZACIONES_TABLA_CLIENTE), _
+                                    Range(RANGO_NUMERO_DE_PAGOS), _
+                                    Worksheets(SHEET_TABLA_CLIENTE).Range(RANGO_AMORTIZACIONES_TABLA_CLIENTE).Cells.Count
         Application.EnableEvents = True
     End If
     
@@ -59057,8 +59073,13 @@ On Error GoTo ErrHan
     '----------------------------------------------------------------------------------------------------
     If NestedEventCount = 1 Then
         GenTablaPagos
-        [SELECCION_PLAZO] = [DESCRIPCION_PLAZO_CALCULO_SEGURO] '(Por default, el Plazo se ajusta al Seguro)
-        ValidaSeleccionComboDV [SELECCION_PLAZO]
+        'No estoy seguro de que lo siguiente tenga que ir aquí. Esto me suena más a que se cambie cuando
+        'se ajuste el combo del cálculo del seguro:
+        '----------
+        '(Por default, el Plazo se ajusta al Seguro)
+        '[SELECCION_PLAZO] = [DESCRIPCION_PLAZO_CALCULO_SEGURO]
+        'ValidaSeleccionComboDV [SELECCION_PLAZO]
+        '----------
     End If
 
 ErrHan:
@@ -59122,6 +59143,7 @@ ErrHan:
     PrintDebug " --- Fin Evento Change Hoja TablaCliente --- "
 End Sub
 
+'====================================================================================================
 Sub Evento_Open_Libro()
     If ModoDeMantenimiento Then Exit Sub
     
@@ -59153,7 +59175,8 @@ Sub Evento_Open_Libro()
     PrintDebug " - Fin de acciones iniciales - "
 End Sub
 
-'Valida la Comisión por Apertura en la hoja de captura cuando se cambia el Tipo Cliente.
+'====================================================================================================
+'Corre las validaciones necesarias si se cambian los combos correspondientes.
 Sub Evento_Change_CTipoCliente(ByVal Target As Range)
     If Not Intersect(Target, [SELECCION_TIPO_TARIFA]) Is Nothing Then _
         ValidaComisionApertura
@@ -61160,6 +61183,12 @@ Sub PseudoCierreToggle()
         
     Application.ScreenUpdating = True
 End Sub
+
+\\\--- END OF MODULE ---
+
+[Sheet21] 2 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
 
 \\\--- END OF MODULE ---
 
