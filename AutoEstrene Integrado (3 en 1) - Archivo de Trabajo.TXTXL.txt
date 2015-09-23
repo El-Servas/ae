@@ -1,16 +1,16 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 23/09/2015 11:13:07 a.m.
+Fecha y hora de generación: 23/09/2015 11:49:22 a.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 658
+ * Nombres Definidos: 659
 
  * Módulos de Visual Basic: 43
 
- * Líneas de código VB: 3015
+ * Líneas de código VB: 3035
 
 Detalle
 =======
@@ -367,7 +367,7 @@ Contenido:
 [A10] \Enganche:\
 [A11] \Crédito por Auto:\
 [A12] \Garantía Extendida:\
-[A13] \Plazo en meses:\
+[A13] \Frecuencia y Plazo:\
 [A14] \Tipo Aportación a capital:\
 [A15] \Persona:\
 [A16] \Esquema:\
@@ -505,8 +505,8 @@ Contenido:
 [C10] \=MontoEnganche\
 [C11] \=MontoFinanciarAuto\
 [C12] \=MontoGtiaExt\
-[C13] (SELECCION_PLAZO) \12 Meses\
- DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_PLAZOS)" ListaEnCelda:True ]
+[C13] (SELECCION_FRECUENCIA_TABLA_CLIENTE) \Mensual\
+ DataValidation: Lista. [Fuente:"=OFFSET(COMBO_FRECUENCIA,0,0,CONTEO_FRECUENCIA,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
@@ -588,6 +588,12 @@ Contenido:
 [D7] \=IF(ID_CONDICION_AUTO=1,"Autos Nuevos",IF(ID_CONDICION_AUTO=2,"Autos Seminuevos",""))\
 [D11] \=Leyenda.Seguro.1_tabla_amortizacion\
 [D12] \11243.62\
+[D13] (SELECCION_PLAZO) \12 Meses\
+ DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_PLAZOS)" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:True DatoActualEsVálido:True 
+
 [D16] \=Leyenda.Seguro.2\
 [D19] \Amortización a Capital\
 [D20] \=T_Merger!M20\
@@ -605,8 +611,8 @@ Contenido:
 [D32] \=T_Merger!M32\
 [D33] \=T_Merger!M33\
 [D34] \=T_Merger!M34\
-[D35] \=T_Merger!M35\
 [TablaCliente]
+[D35] \=T_Merger!M35\
 [D36] \=T_Merger!M36\
 [D37] \=T_Merger!M37\
 [D38] \=T_Merger!M38\
@@ -631,8 +637,8 @@ Contenido:
 [D57] \=T_Merger!M57\
 [D58] \=T_Merger!M58\
 [D59] \=T_Merger!M59\
-[D60] \=T_Merger!M60\
 [TablaCliente]
+[D60] \=T_Merger!M60\
 [D61] \=T_Merger!M61\
 [D62] \=T_Merger!M62\
 [D63] \=T_Merger!M63\
@@ -657,8 +663,8 @@ Contenido:
 [E19] \Interés\
 [E20] \=T_Merger!P20\
 [E21] \=T_Merger!P21\
-[E22] \=T_Merger!P22\
 [TablaCliente]
+[E22] \=T_Merger!P22\
 [E23] \=T_Merger!P23\
 [E24] \=T_Merger!P24\
 [E25] \=T_Merger!P25\
@@ -683,8 +689,8 @@ Contenido:
 [E44] \=T_Merger!P44\
 [E45] \=T_Merger!P45\
 [E46] \=T_Merger!P46\
-[E47] \=T_Merger!P47\
 [TablaCliente]
+[E47] \=T_Merger!P47\
 [E48] \=T_Merger!P48\
 [E49] \=T_Merger!P49\
 [E50] \=T_Merger!P50\
@@ -709,8 +715,8 @@ Contenido:
 [E69] \=T_Merger!P69\
 [E70] \=T_Merger!P70\
 [E71] \=T_Merger!P71\
-[E72] \=T_Merger!P72\
 [TablaCliente]
+[E72] \=T_Merger!P72\
 [E73] \=T_Merger!P73\
 [E74] \=T_Merger!P74\
 [E75] \=T_Merger!P75\
@@ -735,8 +741,8 @@ Contenido:
 [F32] \=T_Merger!Q32\
 [F33] \=T_Merger!Q33\
 [F34] \=T_Merger!Q34\
-[F35] \=T_Merger!Q35\
 [TablaCliente]
+[F35] \=T_Merger!Q35\
 [F36] \=T_Merger!Q36\
 [F37] \=T_Merger!Q37\
 [F38] \=T_Merger!Q38\
@@ -761,8 +767,8 @@ Contenido:
 [F57] \=T_Merger!Q57\
 [F58] \=T_Merger!Q58\
 [F59] \=T_Merger!Q59\
-[F60] \=T_Merger!Q60\
 [TablaCliente]
+[F60] \=T_Merger!Q60\
 [F61] \=T_Merger!Q61\
 [F62] \=T_Merger!Q62\
 [F63] \=T_Merger!Q63\
@@ -787,8 +793,8 @@ Contenido:
 [G13] \Tasa Anual:\
 [G14] \CAT:\
 [G15] \Reducción en meses:\
-[G16] \Plazo estimado:\
 [TablaCliente]
+[G16] \Plazo estimado:\
 [G19] \Pago\
 [G20] \=T_Merger!R20\
 [G21] \=T_Merger!R21\
@@ -813,8 +819,8 @@ Contenido:
 [G40] \=T_Merger!R40\
 [G41] \=T_Merger!R41\
 [G42] \=T_Merger!R42\
-[G43] \=T_Merger!R43\
 [TablaCliente]
+[G43] \=T_Merger!R43\
 [G44] \=T_Merger!R44\
 [G45] \=T_Merger!R45\
 [G46] \=T_Merger!R46\
@@ -839,8 +845,8 @@ Contenido:
 [G65] \=T_Merger!R65\
 [G66] \=T_Merger!R66\
 [G67] \=T_Merger!R67\
-[G68] \=T_Merger!R68\
 [TablaCliente]
+[G68] \=T_Merger!R68\
 [G69] \=T_Merger!R69\
 [G70] \=T_Merger!R70\
 [G71] \=T_Merger!R71\
@@ -865,8 +871,8 @@ Contenido:
 [H23] \0\
 [H24] \0\
 [H25] \0\
-[H26] \0\
 [TablaCliente]
+[H26] \0\
 [H27] \0\
 [H28] \0\
 [H29] \0\
@@ -891,8 +897,8 @@ Contenido:
 [H48] \0\
 [H49] \0\
 [H50] \0\
-[H51] \0\
 [TablaCliente]
+[H51] \0\
 [H52] \0\
 [H53] \0\
 [H54] \0\
@@ -917,8 +923,8 @@ Contenido:
 [H73] \0\
 [H74] \0\
 [H75] \0\
-[H76] \0\
 [TablaCliente]
+[H76] \0\
 [H77] \0\
 [H78] \0\
 [H79] \0\
@@ -943,8 +949,8 @@ Contenido:
 [I35] \=T_Merger!T35\
 [I36] \=T_Merger!T36\
 [I37] \=T_Merger!T37\
-[I38] \=T_Merger!T38\
 [TablaCliente]
+[I38] \=T_Merger!T38\
 [I39] \=T_Merger!T39\
 [I40] \=T_Merger!T40\
 [I41] \=T_Merger!T41\
@@ -969,8 +975,8 @@ Contenido:
 [I60] \=T_Merger!T60\
 [I61] \=T_Merger!T61\
 [I62] \=T_Merger!T62\
-[I63] \=T_Merger!T63\
 [TablaCliente]
+[I63] \=T_Merger!T63\
 [I64] \=T_Merger!T64\
 [I65] \=T_Merger!T65\
 [I66] \=T_Merger!T66\
@@ -14707,7 +14713,7 @@ Financiar\
 [D5] \30\
 [D6] \15\
 [D7] \14\
-[D8] \150000\
+[D8] \10\
 [D9] \7\
 [D13] \EnMeses\
 [D14] \2\
@@ -57239,6 +57245,7 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D189] \Concluye con los algoritmos de Fechas de Pago y Duración para todas las frecuencias soportadas de ambos productos.\
 [D190] \Combo variable de Frecuencias según Producto. Incluye Event Handler para validar opción seleccionada al cambiar el Producto.\
 [D191] \Combo variable de Tipo Persona según Producto. Incluye Event Handler.\
+[D192] \Ajusta los Event Handlers de los dos combos de la Frecuencia: La de la Captura y la de la Tabla Cliente.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -57833,13 +57840,14 @@ Nombres:
  [SELECCION_CONDICION_AUTO] =Captura!$D$9
  [SELECCION_ESTADO] =Captura!$D$8
  [SELECCION_FRECUENCIA] =Captura!$H$5
+ [SELECCION_FRECUENCIA_TABLA_CLIENTE] =TablaCliente!$C$13
  [SELECCION_GTIAEXT] =Captura!$D$17
  [SELECCION_INCREMENTO_RC] =Captura!$D$21
  [SELECCION_INDEMN_AÑO1] =Captura!$D$22
  [SELECCION_IVA] ='C. Comunes'!$G$24
  [SELECCION_MARCA] =Captura!$D$11
  [SELECCION_MODELO] =Captura!$D$10
- [SELECCION_PLAZO] =TablaCliente!$C$13
+ [SELECCION_PLAZO] =TablaCliente!$D$13
  [SELECCION_PRODUCTO] =C.Otros!$F$3
  [SELECCION_SERVICIO_PREMIUM] =Captura!$D$23
  [SELECCION_TIPO_PERSONA] =Captura!$D$7
@@ -58899,7 +58907,7 @@ Sub Valida_ValorGarantíaExtendida()
 End Sub
 \\\--- END OF MODULE ---
 
-[EventHandlers] 235 líneas de código.
+[EventHandlers] 255 líneas de código.
 ///--- BEGINNING OF MODULE ---
 '   ______               _     _    _                 _ _
 '  |  ____|             | |   | |  | |               | | |
@@ -58941,6 +58949,16 @@ On Error GoTo ErrHan
         PrintDebug " -> Cambiando a modo de cálculo manual."
         Application.Calculation = xlCalculationManual
         Application.Calculate
+    End If
+    
+    'Replicamos la selección de la frecuencia en la hoja cliente.
+    'Es necesario desactivar los eventos, porque al actualizar AQUELLA celda,
+    'Dispara un Event Handler que viene y actualiza ESTA celda,
+    'Y estaríamos en un ciclo infinito.
+    If Not Application.Intersect(Target, [SELECCION_FRECUENCIA]) Is Nothing Then
+        Application.EnableEvents = False
+        [SELECCION_FRECUENCIA_TABLA_CLIENTE] = [SELECCION_FRECUENCIA]
+        Application.EnableEvents = True
     End If
     
     '----------------------------------------------------------------------------------------------------
@@ -59062,8 +59080,15 @@ End Sub
 Sub Evento_Change_TablaCliente(ByVal Target As Range)
 
 '----------------------------------------------------------------------------------------------------
-'El evento sólo se maneja si el cambio proviene de la celda de selección de plazo.
-If Application.Intersect(Target, [SELECCION_PLAZO]) Is Nothing Then Exit Sub
+'El evento sólo se maneja si el cambio proviene de las celdas necesarias.
+If Application.Intersect( _
+    Target, _
+    Union( _
+        [SELECCION_PLAZO], _
+        [SELECCION_FRECUENCIA_TABLA_CLIENTE] _
+        ) _
+    ) _
+Is Nothing Then Exit Sub
 '----------------------------------------------------------------------------------------------------
 
 On Error Resume Next
@@ -59074,6 +59099,9 @@ On Error Resume Next
 
 On Error GoTo ErrHan
     BackupScreenUpdating = Application.ScreenUpdating: Application.ScreenUpdating = False
+    
+    If Not Application.Intersect(Target, [SELECCION_FRECUENCIA_TABLA_CLIENTE]) Is Nothing Then _
+        [SELECCION_FRECUENCIA] = [SELECCION_FRECUENCIA_TABLA_CLIENTE] ' Mandamos el valor a la celda "buena"
     
     If Application.Calculation <> xlCalculationAutomatic Then
         Worksheets(SHEET_CALCULOS).Calculate
