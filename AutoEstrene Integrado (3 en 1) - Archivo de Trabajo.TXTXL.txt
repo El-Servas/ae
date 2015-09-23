@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 22/09/2015 04:19:56 p.m.
+Fecha y hora de generación: 23/09/2015 09:07:58 a.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 671
+ * Nombres Definidos: 674
 
  * Módulos de Visual Basic: 43
 
@@ -1559,7 +1559,7 @@ Contenido:
 [S21] (TIA.Tasa_Interés_Anual) \=DGET(C_TASA_INTERES_ANUAL,S20,$O$20:$R$21)\
 
 [Fechas]
-[A1] \Fechas de pago y días de intereses\
+[A1] \Fechas de Pago y Duración Intereses\
 [A3] \Parámetros\
 [A4] \Fecha Cotización\
 [A5] \Frecuencia\
@@ -1569,13 +1569,14 @@ Contenido:
 [A10] \Etiqueta Duración\
 [A12] \Frecuencia\
 [A13] \Mensual\
-[A14] \Catorcenal\
-[A15] \Semanal\
-[A17] \Cálculos\
-[A18] \Día Cotización\
-[A19] \Algoritmo\
-[A20] \Búsqueda Fechas Pago\
-[A21] \Búsqueda Duración \
+[A14] \Quincenal\
+[A15] \Catorcenal\
+[A16] \Decenal\
+[A17] \Semanal\
+[A19] \Cálculos\
+[A20] \Algoritmo\
+[A21] \Búsqueda Fechas Pago\
+[A22] \Búsqueda Duración \
 [B4] (Fechas!_Fecha_Cotización) \=CapturaFechaCotizacion\
 [B5] (Fechas!_Frecuencia) \=SELECCION_FRECUENCIA\
 [B6] (Fechas!_Días_por_Periodo) \=FREC.DiasPorPeriodo\
@@ -1583,13 +1584,14 @@ Contenido:
 [B10] (Fechas!_Etiqueta_Duración_Intereses) \Duración Intereses\
 [B12] \Algoritmo\
 [B13] \Mensual\
-[B14] \Simple\
 [Fechas]
+[B14] \Quincenal\
 [B15] \Simple\
-[B18] (Fechas!_Día_Cotización) \=DAY(_Fecha_Cotización)\
-[B19] (Fechas!_Algoritmo) \=VLOOKUP(_Frecuencia,_C_FRECUENCIA_ALGORITMO,2,0)\
-[B20] (Fechas!_Búsqueda_Fechas_Pago) \=CONCATENATE(_Etiqueta_Fechas_Pago, " ", _Algoritmo)\
-[B21] (Fechas!_Búsqueda_Duración) \=CONCATENATE(_Etiqueta_Duración_Intereses, " ", _Algoritmo)\
+[B16] \Decenal\
+[B17] \Simple\
+[B20] (Fechas!_Algoritmo) \=VLOOKUP(_Frecuencia,_C_FRECUENCIA_ALGORITMO,2,0)\
+[B21] (Fechas!_Búsqueda_Fechas_Pago) \=CONCATENATE(_Etiqueta_Fechas_Pago, " ", _Algoritmo)\
+[B22] (Fechas!_Búsqueda_Duración) \=CONCATENATE(_Etiqueta_Duración_Intereses, " ", _Algoritmo)\
 [D15] \Resultados\
 [D17] \L. 1er Pago Mayor\
 [D19] \Duración CAT\
@@ -1608,9 +1610,9 @@ Contenido:
 [D32] \=_Días_por_Periodo\
 [D33] \=_Días_por_Periodo\
 [D34] \=_Días_por_Periodo\
+[Fechas]
 [D35] \=_Días_por_Periodo\
 [D36] \=_Días_por_Periodo\
-[Fechas]
 [D37] \=_Días_por_Periodo\
 [D38] \=_Días_por_Periodo\
 [D39] \=_Días_por_Periodo\
@@ -1634,9 +1636,9 @@ Contenido:
 [D57] \=_Días_por_Periodo\
 [D58] \=_Días_por_Periodo\
 [D59] \=_Días_por_Periodo\
+[Fechas]
 [D60] \=_Días_por_Periodo\
 [D61] \=_Días_por_Periodo\
-[Fechas]
 [D62] \=_Días_por_Periodo\
 [D63] \=_Días_por_Periodo\
 [D64] \=_Días_por_Periodo\
@@ -1655,14 +1657,14 @@ Contenido:
 [D77] \=_Días_por_Periodo\
 [D78] \=_Días_por_Periodo\
 [D79] \=_Días_por_Periodo\
-[E17] (LEYENDA_DIAS_INTERESES_PRIMER_PAGO) \=IF(Días_de_interés_para_Pago>FREC.DiasPorPeriodo,"El monto de su primer pago será mayor que el resto, ya que incluye más días de interés.","")\
+[E17] (LEYENDA_DIAS_INTERESES_PRIMER_PAGO) \=IF( INDEX(_Dias_Interes_Pago,1) > _Días_por_Periodo,"El monto de su primer pago será mayor que el resto, ya que incluye más días de interés.","")\
 [E19] \=_Etiqueta_Fechas_Pago\
 [E20] \=INDEX(_Datos 20:20,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E21] \=INDEX(_Datos 21:21,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E22] \=INDEX(_Datos 22:22,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[Fechas]
 [E23] \=INDEX(_Datos 23:23,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E24] \=INDEX(_Datos 24:24,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
-[Fechas]
 [E25] \=INDEX(_Datos 25:25,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E26] \=INDEX(_Datos 26:26,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E27] \=INDEX(_Datos 27:27,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
@@ -1686,9 +1688,9 @@ Contenido:
 [E45] \=INDEX(_Datos 45:45,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E46] \=INDEX(_Datos 46:46,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E47] \=INDEX(_Datos 47:47,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[Fechas]
 [E48] \=INDEX(_Datos 48:48,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E49] \=INDEX(_Datos 49:49,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
-[Fechas]
 [E50] \=INDEX(_Datos 50:50,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E51] \=INDEX(_Datos 51:51,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E52] \=INDEX(_Datos 52:52,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
@@ -1712,9 +1714,9 @@ Contenido:
 [E70] \=INDEX(_Datos 70:70,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E71] \=INDEX(_Datos 71:71,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E72] \=INDEX(_Datos 72:72,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
+[Fechas]
 [E73] \=INDEX(_Datos 73:73,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E74] \=INDEX(_Datos 74:74,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
-[Fechas]
 [E75] \=INDEX(_Datos 75:75,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E76] \=INDEX(_Datos 76:76,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
 [E77] \=INDEX(_Datos 77:77,,MATCH(_Búsqueda_Fechas_Pago, _Datos _Headers,0))\
@@ -1738,9 +1740,9 @@ Contenido:
 [F34] \=INDEX(_Datos 34:34,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F35] \=INDEX(_Datos 35:35,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F36] \=INDEX(_Datos 36:36,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[Fechas]
 [F37] \=INDEX(_Datos 37:37,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F38] \=INDEX(_Datos 38:38,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
-[Fechas]
 [F39] \=INDEX(_Datos 39:39,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F40] \=INDEX(_Datos 40:40,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F41] \=INDEX(_Datos 41:41,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
@@ -1764,9 +1766,9 @@ Contenido:
 [F59] \=INDEX(_Datos 59:59,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F60] \=INDEX(_Datos 60:60,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F61] \=INDEX(_Datos 61:61,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
+[Fechas]
 [F62] \=INDEX(_Datos 62:62,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F63] \=INDEX(_Datos 63:63,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
-[Fechas]
 [F64] \=INDEX(_Datos 64:64,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F65] \=INDEX(_Datos 65:65,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F66] \=INDEX(_Datos 66:66,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
@@ -1783,16 +1785,18 @@ Contenido:
 [F77] \=INDEX(_Datos 77:77,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F78] \=INDEX(_Datos 78:78,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
 [F79] \=INDEX(_Datos 79:79,,MATCH(_Búsqueda_Duración, _Datos _Headers,0))\
-[H3] \Cálculos para Frecuencias Individuales\
-[H8] \Constantes Mensual\
+[H3] \Cálculos Individuales\
+[H8] \Constantes\
 [H9] \DIA_CORTE_ANIVERSARIO\
 [H10] \DIAS_BASE_INTERES\
 [H11] \DIAS_LIMITE\
 [H12] \CORTE_1\
 [H13] \CORTE_2\
+[Fechas]
+[H15] \Cálculos\
+[H16] \Día Cotización\
 [H19] \Fechas Pago Mensual\
 [H20] \=IF(DIA_COTIZACIÓN<CONST_CORTE_2,EOMONTH(B4,0)+CONST_CORTE_1,EOMONTH(B4,0)+CONST_CORTE_2)\
-[Fechas]
 [H21] \=IF(DAY(H20)>=Const_Dia_Corte_Aniversario,FinMesPropia(H20,1)+1,FinMesPropia(H20,0)+DAY(H20))\
 [H22] \=IF(DAY(H21)>=Const_Dia_Corte_Aniversario,FinMesPropia(H21,1)+1,FinMesPropia(H21,0)+DAY(H21))\
 [H23] \=IF(DAY(H22)>=Const_Dia_Corte_Aniversario,FinMesPropia(H22,1)+1,FinMesPropia(H22,0)+DAY(H22))\
@@ -1814,11 +1818,11 @@ Contenido:
 [H39] \=IF(DAY(H38)>=Const_Dia_Corte_Aniversario,FinMesPropia(H38,1)+1,FinMesPropia(H38,0)+DAY(H38))\
 [H40] \=IF(DAY(H39)>=Const_Dia_Corte_Aniversario,FinMesPropia(H39,1)+1,FinMesPropia(H39,0)+DAY(H39))\
 [H41] \=IF(DAY(H40)>=Const_Dia_Corte_Aniversario,FinMesPropia(H40,1)+1,FinMesPropia(H40,0)+DAY(H40))\
+[Fechas]
 [H42] \=IF(DAY(H41)>=Const_Dia_Corte_Aniversario,FinMesPropia(H41,1)+1,FinMesPropia(H41,0)+DAY(H41))\
 [H43] \=IF(DAY(H42)>=Const_Dia_Corte_Aniversario,FinMesPropia(H42,1)+1,FinMesPropia(H42,0)+DAY(H42))\
 [H44] \=IF(DAY(H43)>=Const_Dia_Corte_Aniversario,FinMesPropia(H43,1)+1,FinMesPropia(H43,0)+DAY(H43))\
 [H45] \=IF(DAY(H44)>=Const_Dia_Corte_Aniversario,FinMesPropia(H44,1)+1,FinMesPropia(H44,0)+DAY(H44))\
-[Fechas]
 [H46] \=IF(DAY(H45)>=Const_Dia_Corte_Aniversario,FinMesPropia(H45,1)+1,FinMesPropia(H45,0)+DAY(H45))\
 [H47] \=IF(DAY(H46)>=Const_Dia_Corte_Aniversario,FinMesPropia(H46,1)+1,FinMesPropia(H46,0)+DAY(H46))\
 [H48] \=IF(DAY(H47)>=Const_Dia_Corte_Aniversario,FinMesPropia(H47,1)+1,FinMesPropia(H47,0)+DAY(H47))\
@@ -1840,11 +1844,11 @@ Contenido:
 [H64] \=IF(DAY(H63)>=Const_Dia_Corte_Aniversario,FinMesPropia(H63,1)+1,FinMesPropia(H63,0)+DAY(H63))\
 [H65] \=IF(DAY(H64)>=Const_Dia_Corte_Aniversario,FinMesPropia(H64,1)+1,FinMesPropia(H64,0)+DAY(H64))\
 [H66] \=IF(DAY(H65)>=Const_Dia_Corte_Aniversario,FinMesPropia(H65,1)+1,FinMesPropia(H65,0)+DAY(H65))\
+[Fechas]
 [H67] \=IF(DAY(H66)>=Const_Dia_Corte_Aniversario,FinMesPropia(H66,1)+1,FinMesPropia(H66,0)+DAY(H66))\
 [H68] \=IF(DAY(H67)>=Const_Dia_Corte_Aniversario,FinMesPropia(H67,1)+1,FinMesPropia(H67,0)+DAY(H67))\
 [H69] \=IF(DAY(H68)>=Const_Dia_Corte_Aniversario,FinMesPropia(H68,1)+1,FinMesPropia(H68,0)+DAY(H68))\
 [H70] \=IF(DAY(H69)>=Const_Dia_Corte_Aniversario,FinMesPropia(H69,1)+1,FinMesPropia(H69,0)+DAY(H69))\
-[Fechas]
 [H71] \=IF(DAY(H70)>=Const_Dia_Corte_Aniversario,FinMesPropia(H70,1)+1,FinMesPropia(H70,0)+DAY(H70))\
 [H72] \=IF(DAY(H71)>=Const_Dia_Corte_Aniversario,FinMesPropia(H71,1)+1,FinMesPropia(H71,0)+DAY(H71))\
 [H73] \=IF(DAY(H72)>=Const_Dia_Corte_Aniversario,FinMesPropia(H72,1)+1,FinMesPropia(H72,0)+DAY(H72))\
@@ -1859,18 +1863,19 @@ Contenido:
 [I11] (Fechas!CONST_DIAS_LIMITE) \31\
 [I12] (CONST_CORTE_1) \3\
 [I13] (CONST_CORTE_2) \16\
+[I16] (Fechas!_Día_Cotización) \=DAY(_Fecha_Cotización)\
 [I19] \Duración Intereses Mensual\
 [I20] (Días_de_interés_para_Pago) \=H20 - _Fecha_Cotización\
 [I21] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I22] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I23] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I24] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[Fechas]
 [I25] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I26] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I27] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I28] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I29] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[Fechas]
 [I30] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I31] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I32] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
@@ -1891,12 +1896,12 @@ Contenido:
 [I47] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I48] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I49] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[Fechas]
 [I50] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I51] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I52] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I53] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I54] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[Fechas]
 [I55] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I56] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I57] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
@@ -1917,12 +1922,12 @@ Contenido:
 [I72] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I73] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I74] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
+[Fechas]
 [I75] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I76] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I77] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I78] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
 [I79] \=CONST_DIAS_BASE_INTERES + IF(DAY(_Fecha_Pago _Anterior)>=Const_Dia_Corte_Aniversario,MAX(CONST_DIAS_LIMITE-DAY(_Fecha_Pago _Anterior),1))\
-[Fechas]
 [K19] \Fechas Pago Simple\
 [K20] \=_Fecha_Cotización + _Días_por_Periodo\
 [K21] \=K20 + _Días_por_Periodo\
@@ -1943,12 +1948,12 @@ Contenido:
 [K36] \=K35 + _Días_por_Periodo\
 [K37] \=K36 + _Días_por_Periodo\
 [K38] \=K37 + _Días_por_Periodo\
+[Fechas]
 [K39] \=K38 + _Días_por_Periodo\
 [K40] \=K39 + _Días_por_Periodo\
 [K41] \=K40 + _Días_por_Periodo\
 [K42] \=K41 + _Días_por_Periodo\
 [K43] \=K42 + _Días_por_Periodo\
-[Fechas]
 [K44] \=K43 + _Días_por_Periodo\
 [K45] \=K44 + _Días_por_Periodo\
 [K46] \=K45 + _Días_por_Periodo\
@@ -1969,12 +1974,12 @@ Contenido:
 [K61] \=K60 + _Días_por_Periodo\
 [K62] \=K61 + _Días_por_Periodo\
 [K63] \=K62 + _Días_por_Periodo\
+[Fechas]
 [K64] \=K63 + _Días_por_Periodo\
 [K65] \=K64 + _Días_por_Periodo\
 [K66] \=K65 + _Días_por_Periodo\
 [K67] \=K66 + _Días_por_Periodo\
 [K68] \=K67 + _Días_por_Periodo\
-[Fechas]
 [K69] \=K68 + _Días_por_Periodo\
 [K70] \=K69 + _Días_por_Periodo\
 [K71] \=K70 + _Días_por_Periodo\
@@ -1995,12 +2000,12 @@ Contenido:
 [L25] \=K25 - K24\
 [L26] \=K26 - K25\
 [L27] \=K27 - K26\
+[Fechas]
 [L28] \=K28 - K27\
 [L29] \=K29 - K28\
 [L30] \=K30 - K29\
 [L31] \=K31 - K30\
 [L32] \=K32 - K31\
-[Fechas]
 [L33] \=K33 - K32\
 [L34] \=K34 - K33\
 [L35] \=K35 - K34\
@@ -2021,12 +2026,12 @@ Contenido:
 [L50] \=K50 - K49\
 [L51] \=K51 - K50\
 [L52] \=K52 - K51\
+[Fechas]
 [L53] \=K53 - K52\
 [L54] \=K54 - K53\
 [L55] \=K55 - K54\
 [L56] \=K56 - K55\
 [L57] \=K57 - K56\
-[Fechas]
 [L58] \=K58 - K57\
 [L59] \=K59 - K58\
 [L60] \=K60 - K59\
@@ -2047,8 +2052,566 @@ Contenido:
 [L75] \=K75 - K74\
 [L76] \=K76 - K75\
 [L77] \=K77 - K76\
+[Fechas]
 [L78] \=K78 - K77\
 [L79] \=K79 - K78\
+[N9] \DÍAS_POR_PERIODO\
+[N19] \Fechas Pago Quincenal\
+[N20] \=IF(DAY(_Fecha_Cotización + 1) <= _DPP _Quincenal,
+DATE(YEAR(_Fecha_Cotización + 1),MONTH( _Fecha_Cotización + 1), _DPP _Quincenal ),
+EOMONTH( _Fecha_Cotización + 1,0))\
+[N21] \=IF(DAY(N20 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N20 + 1),MONTH( N20 + 1), _DPP _Quincenal ),
+EOMONTH( N20 + 1,0))\
+[N22] \=IF(DAY(N21 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N21 + 1),MONTH( N21 + 1), _DPP _Quincenal ),
+EOMONTH( N21 + 1,0))\
+[N23] \=IF(DAY(N22 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N22 + 1),MONTH( N22 + 1), _DPP _Quincenal ),
+EOMONTH( N22 + 1,0))\
+[N24] \=IF(DAY(N23 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N23 + 1),MONTH( N23 + 1), _DPP _Quincenal ),
+EOMONTH( N23 + 1,0))\
+[N25] \=IF(DAY(N24 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N24 + 1),MONTH( N24 + 1), _DPP _Quincenal ),
+EOMONTH( N24 + 1,0))\
+[N26] \=IF(DAY(N25 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N25 + 1),MONTH( N25 + 1), _DPP _Quincenal ),
+EOMONTH( N25 + 1,0))\
+[N27] \=IF(DAY(N26 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N26 + 1),MONTH( N26 + 1), _DPP _Quincenal ),
+EOMONTH( N26 + 1,0))\
+[N28] \=IF(DAY(N27 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N27 + 1),MONTH( N27 + 1), _DPP _Quincenal ),
+EOMONTH( N27 + 1,0))\
+[N29] \=IF(DAY(N28 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N28 + 1),MONTH( N28 + 1), _DPP _Quincenal ),
+EOMONTH( N28 + 1,0))\
+[N30] \=IF(DAY(N29 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N29 + 1),MONTH( N29 + 1), _DPP _Quincenal ),
+EOMONTH( N29 + 1,0))\
+[N31] \=IF(DAY(N30 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N30 + 1),MONTH( N30 + 1), _DPP _Quincenal ),
+EOMONTH( N30 + 1,0))\
+[N32] \=IF(DAY(N31 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N31 + 1),MONTH( N31 + 1), _DPP _Quincenal ),
+EOMONTH( N31 + 1,0))\
+[N33] \=IF(DAY(N32 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N32 + 1),MONTH( N32 + 1), _DPP _Quincenal ),
+EOMONTH( N32 + 1,0))\
+[N34] \=IF(DAY(N33 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N33 + 1),MONTH( N33 + 1), _DPP _Quincenal ),
+EOMONTH( N33 + 1,0))\
+[N35] \=IF(DAY(N34 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N34 + 1),MONTH( N34 + 1), _DPP _Quincenal ),
+EOMONTH( N34 + 1,0))\
+[N36] \=IF(DAY(N35 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N35 + 1),MONTH( N35 + 1), _DPP _Quincenal ),
+EOMONTH( N35 + 1,0))\
+[N37] \=IF(DAY(N36 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N36 + 1),MONTH( N36 + 1), _DPP _Quincenal ),
+EOMONTH( N36 + 1,0))\
+[N38] \=IF(DAY(N37 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N37 + 1),MONTH( N37 + 1), _DPP _Quincenal ),
+EOMONTH( N37 + 1,0))\
+[N39] \=IF(DAY(N38 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N38 + 1),MONTH( N38 + 1), _DPP _Quincenal ),
+EOMONTH( N38 + 1,0))\
+[N40] \=IF(DAY(N39 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N39 + 1),MONTH( N39 + 1), _DPP _Quincenal ),
+EOMONTH( N39 + 1,0))\
+[Fechas]
+[N41] \=IF(DAY(N40 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N40 + 1),MONTH( N40 + 1), _DPP _Quincenal ),
+EOMONTH( N40 + 1,0))\
+[N42] \=IF(DAY(N41 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N41 + 1),MONTH( N41 + 1), _DPP _Quincenal ),
+EOMONTH( N41 + 1,0))\
+[N43] \=IF(DAY(N42 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N42 + 1),MONTH( N42 + 1), _DPP _Quincenal ),
+EOMONTH( N42 + 1,0))\
+[N44] \=IF(DAY(N43 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N43 + 1),MONTH( N43 + 1), _DPP _Quincenal ),
+EOMONTH( N43 + 1,0))\
+[N45] \=IF(DAY(N44 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N44 + 1),MONTH( N44 + 1), _DPP _Quincenal ),
+EOMONTH( N44 + 1,0))\
+[N46] \=IF(DAY(N45 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N45 + 1),MONTH( N45 + 1), _DPP _Quincenal ),
+EOMONTH( N45 + 1,0))\
+[N47] \=IF(DAY(N46 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N46 + 1),MONTH( N46 + 1), _DPP _Quincenal ),
+EOMONTH( N46 + 1,0))\
+[N48] \=IF(DAY(N47 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N47 + 1),MONTH( N47 + 1), _DPP _Quincenal ),
+EOMONTH( N47 + 1,0))\
+[N49] \=IF(DAY(N48 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N48 + 1),MONTH( N48 + 1), _DPP _Quincenal ),
+EOMONTH( N48 + 1,0))\
+[N50] \=IF(DAY(N49 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N49 + 1),MONTH( N49 + 1), _DPP _Quincenal ),
+EOMONTH( N49 + 1,0))\
+[N51] \=IF(DAY(N50 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N50 + 1),MONTH( N50 + 1), _DPP _Quincenal ),
+EOMONTH( N50 + 1,0))\
+[N52] \=IF(DAY(N51 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N51 + 1),MONTH( N51 + 1), _DPP _Quincenal ),
+EOMONTH( N51 + 1,0))\
+[N53] \=IF(DAY(N52 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N52 + 1),MONTH( N52 + 1), _DPP _Quincenal ),
+EOMONTH( N52 + 1,0))\
+[N54] \=IF(DAY(N53 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N53 + 1),MONTH( N53 + 1), _DPP _Quincenal ),
+EOMONTH( N53 + 1,0))\
+[N55] \=IF(DAY(N54 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N54 + 1),MONTH( N54 + 1), _DPP _Quincenal ),
+EOMONTH( N54 + 1,0))\
+[N56] \=IF(DAY(N55 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N55 + 1),MONTH( N55 + 1), _DPP _Quincenal ),
+EOMONTH( N55 + 1,0))\
+[N57] \=IF(DAY(N56 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N56 + 1),MONTH( N56 + 1), _DPP _Quincenal ),
+EOMONTH( N56 + 1,0))\
+[N58] \=IF(DAY(N57 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N57 + 1),MONTH( N57 + 1), _DPP _Quincenal ),
+EOMONTH( N57 + 1,0))\
+[N59] \=IF(DAY(N58 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N58 + 1),MONTH( N58 + 1), _DPP _Quincenal ),
+EOMONTH( N58 + 1,0))\
+[N60] \=IF(DAY(N59 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N59 + 1),MONTH( N59 + 1), _DPP _Quincenal ),
+EOMONTH( N59 + 1,0))\
+[N61] \=IF(DAY(N60 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N60 + 1),MONTH( N60 + 1), _DPP _Quincenal ),
+EOMONTH( N60 + 1,0))\
+[N62] \=IF(DAY(N61 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N61 + 1),MONTH( N61 + 1), _DPP _Quincenal ),
+EOMONTH( N61 + 1,0))\
+[N63] \=IF(DAY(N62 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N62 + 1),MONTH( N62 + 1), _DPP _Quincenal ),
+EOMONTH( N62 + 1,0))\
+[N64] \=IF(DAY(N63 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N63 + 1),MONTH( N63 + 1), _DPP _Quincenal ),
+EOMONTH( N63 + 1,0))\
+[N65] \=IF(DAY(N64 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N64 + 1),MONTH( N64 + 1), _DPP _Quincenal ),
+EOMONTH( N64 + 1,0))\
+[Fechas]
+[N66] \=IF(DAY(N65 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N65 + 1),MONTH( N65 + 1), _DPP _Quincenal ),
+EOMONTH( N65 + 1,0))\
+[N67] \=IF(DAY(N66 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N66 + 1),MONTH( N66 + 1), _DPP _Quincenal ),
+EOMONTH( N66 + 1,0))\
+[N68] \=IF(DAY(N67 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N67 + 1),MONTH( N67 + 1), _DPP _Quincenal ),
+EOMONTH( N67 + 1,0))\
+[N69] \=IF(DAY(N68 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N68 + 1),MONTH( N68 + 1), _DPP _Quincenal ),
+EOMONTH( N68 + 1,0))\
+[N70] \=IF(DAY(N69 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N69 + 1),MONTH( N69 + 1), _DPP _Quincenal ),
+EOMONTH( N69 + 1,0))\
+[N71] \=IF(DAY(N70 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N70 + 1),MONTH( N70 + 1), _DPP _Quincenal ),
+EOMONTH( N70 + 1,0))\
+[N72] \=IF(DAY(N71 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N71 + 1),MONTH( N71 + 1), _DPP _Quincenal ),
+EOMONTH( N71 + 1,0))\
+[N73] \=IF(DAY(N72 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N72 + 1),MONTH( N72 + 1), _DPP _Quincenal ),
+EOMONTH( N72 + 1,0))\
+[N74] \=IF(DAY(N73 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N73 + 1),MONTH( N73 + 1), _DPP _Quincenal ),
+EOMONTH( N73 + 1,0))\
+[N75] \=IF(DAY(N74 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N74 + 1),MONTH( N74 + 1), _DPP _Quincenal ),
+EOMONTH( N74 + 1,0))\
+[N76] \=IF(DAY(N75 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N75 + 1),MONTH( N75 + 1), _DPP _Quincenal ),
+EOMONTH( N75 + 1,0))\
+[N77] \=IF(DAY(N76 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N76 + 1),MONTH( N76 + 1), _DPP _Quincenal ),
+EOMONTH( N76 + 1,0))\
+[N78] \=IF(DAY(N77 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N77 + 1),MONTH( N77 + 1), _DPP _Quincenal ),
+EOMONTH( N77 + 1,0))\
+[N79] \=IF(DAY(N78 + 1) <= _DPP _Quincenal,
+DATE(YEAR(N78 + 1),MONTH( N78 + 1), _DPP _Quincenal ),
+EOMONTH( N78 + 1,0))\
+[O9] \15\
+[O19] \Duración Intereses Quincenal\
+[O20] \=_DPP _Quincenal\
+[O21] \=_DPP _Quincenal\
+[O22] \=_DPP _Quincenal\
+[O23] \=_DPP _Quincenal\
+[O24] \=_DPP _Quincenal\
+[O25] \=_DPP _Quincenal\
+[O26] \=_DPP _Quincenal\
+[O27] \=_DPP _Quincenal\
+[O28] \=_DPP _Quincenal\
+[Fechas]
+[O29] \=_DPP _Quincenal\
+[O30] \=_DPP _Quincenal\
+[O31] \=_DPP _Quincenal\
+[O32] \=_DPP _Quincenal\
+[O33] \=_DPP _Quincenal\
+[O34] \=_DPP _Quincenal\
+[O35] \=_DPP _Quincenal\
+[O36] \=_DPP _Quincenal\
+[O37] \=_DPP _Quincenal\
+[O38] \=_DPP _Quincenal\
+[O39] \=_DPP _Quincenal\
+[O40] \=_DPP _Quincenal\
+[O41] \=_DPP _Quincenal\
+[O42] \=_DPP _Quincenal\
+[O43] \=_DPP _Quincenal\
+[O44] \=_DPP _Quincenal\
+[O45] \=_DPP _Quincenal\
+[O46] \=_DPP _Quincenal\
+[O47] \=_DPP _Quincenal\
+[O48] \=_DPP _Quincenal\
+[O49] \=_DPP _Quincenal\
+[O50] \=_DPP _Quincenal\
+[O51] \=_DPP _Quincenal\
+[O52] \=_DPP _Quincenal\
+[O53] \=_DPP _Quincenal\
+[Fechas]
+[O54] \=_DPP _Quincenal\
+[O55] \=_DPP _Quincenal\
+[O56] \=_DPP _Quincenal\
+[O57] \=_DPP _Quincenal\
+[O58] \=_DPP _Quincenal\
+[O59] \=_DPP _Quincenal\
+[O60] \=_DPP _Quincenal\
+[O61] \=_DPP _Quincenal\
+[O62] \=_DPP _Quincenal\
+[O63] \=_DPP _Quincenal\
+[O64] \=_DPP _Quincenal\
+[O65] \=_DPP _Quincenal\
+[O66] \=_DPP _Quincenal\
+[O67] \=_DPP _Quincenal\
+[O68] \=_DPP _Quincenal\
+[O69] \=_DPP _Quincenal\
+[O70] \=_DPP _Quincenal\
+[O71] \=_DPP _Quincenal\
+[O72] \=_DPP _Quincenal\
+[O73] \=_DPP _Quincenal\
+[O74] \=_DPP _Quincenal\
+[O75] \=_DPP _Quincenal\
+[O76] \=_DPP _Quincenal\
+[O77] \=_DPP _Quincenal\
+[O78] \=_DPP _Quincenal\
+[Fechas]
+[O79] \=_DPP _Quincenal\
+[Q9] \DÍAS_POR_PERIODO\
+[Q19] \Fechas Pago Decenal\
+[Q20] \=IF(DAY(_Fecha_Cotización + 1) <= _DPP _Decenal,
+DATE(YEAR(_Fecha_Cotización + 1),MONTH(_Fecha_Cotización + 1),_DPP _Decenal),
+IF(DAY(_Fecha_Cotización + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(_Fecha_Cotización + 1),MONTH(_Fecha_Cotización + 1),(_DPP _Decenal*2)),EOMONTH(_Fecha_Cotización + 1,0)))\
+[Q21] \=IF(DAY(Q20 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q20 + 1),MONTH(Q20 + 1),_DPP _Decenal),
+IF(DAY(Q20 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q20 + 1),MONTH(Q20 + 1),(_DPP _Decenal*2)),EOMONTH(Q20 + 1,0)))\
+[Q22] \=IF(DAY(Q21 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q21 + 1),MONTH(Q21 + 1),_DPP _Decenal),
+IF(DAY(Q21 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q21 + 1),MONTH(Q21 + 1),(_DPP _Decenal*2)),EOMONTH(Q21 + 1,0)))\
+[Q23] \=IF(DAY(Q22 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q22 + 1),MONTH(Q22 + 1),_DPP _Decenal),
+IF(DAY(Q22 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q22 + 1),MONTH(Q22 + 1),(_DPP _Decenal*2)),EOMONTH(Q22 + 1,0)))\
+[Q24] \=IF(DAY(Q23 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q23 + 1),MONTH(Q23 + 1),_DPP _Decenal),
+IF(DAY(Q23 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q23 + 1),MONTH(Q23 + 1),(_DPP _Decenal*2)),EOMONTH(Q23 + 1,0)))\
+[Q25] \=IF(DAY(Q24 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q24 + 1),MONTH(Q24 + 1),_DPP _Decenal),
+IF(DAY(Q24 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q24 + 1),MONTH(Q24 + 1),(_DPP _Decenal*2)),EOMONTH(Q24 + 1,0)))\
+[Q26] \=IF(DAY(Q25 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q25 + 1),MONTH(Q25 + 1),_DPP _Decenal),
+IF(DAY(Q25 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q25 + 1),MONTH(Q25 + 1),(_DPP _Decenal*2)),EOMONTH(Q25 + 1,0)))\
+[Q27] \=IF(DAY(Q26 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q26 + 1),MONTH(Q26 + 1),_DPP _Decenal),
+IF(DAY(Q26 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q26 + 1),MONTH(Q26 + 1),(_DPP _Decenal*2)),EOMONTH(Q26 + 1,0)))\
+[Q28] \=IF(DAY(Q27 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q27 + 1),MONTH(Q27 + 1),_DPP _Decenal),
+IF(DAY(Q27 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q27 + 1),MONTH(Q27 + 1),(_DPP _Decenal*2)),EOMONTH(Q27 + 1,0)))\
+[Q29] \=IF(DAY(Q28 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q28 + 1),MONTH(Q28 + 1),_DPP _Decenal),
+IF(DAY(Q28 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q28 + 1),MONTH(Q28 + 1),(_DPP _Decenal*2)),EOMONTH(Q28 + 1,0)))\
+[Q30] \=IF(DAY(Q29 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q29 + 1),MONTH(Q29 + 1),_DPP _Decenal),
+IF(DAY(Q29 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q29 + 1),MONTH(Q29 + 1),(_DPP _Decenal*2)),EOMONTH(Q29 + 1,0)))\
+[Q31] \=IF(DAY(Q30 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q30 + 1),MONTH(Q30 + 1),_DPP _Decenal),
+IF(DAY(Q30 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q30 + 1),MONTH(Q30 + 1),(_DPP _Decenal*2)),EOMONTH(Q30 + 1,0)))\
+[Q32] \=IF(DAY(Q31 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q31 + 1),MONTH(Q31 + 1),_DPP _Decenal),
+IF(DAY(Q31 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q31 + 1),MONTH(Q31 + 1),(_DPP _Decenal*2)),EOMONTH(Q31 + 1,0)))\
+[Q33] \=IF(DAY(Q32 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q32 + 1),MONTH(Q32 + 1),_DPP _Decenal),
+IF(DAY(Q32 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q32 + 1),MONTH(Q32 + 1),(_DPP _Decenal*2)),EOMONTH(Q32 + 1,0)))\
+[Q34] \=IF(DAY(Q33 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q33 + 1),MONTH(Q33 + 1),_DPP _Decenal),
+IF(DAY(Q33 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q33 + 1),MONTH(Q33 + 1),(_DPP _Decenal*2)),EOMONTH(Q33 + 1,0)))\
+[Q35] \=IF(DAY(Q34 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q34 + 1),MONTH(Q34 + 1),_DPP _Decenal),
+IF(DAY(Q34 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q34 + 1),MONTH(Q34 + 1),(_DPP _Decenal*2)),EOMONTH(Q34 + 1,0)))\
+[Q36] \=IF(DAY(Q35 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q35 + 1),MONTH(Q35 + 1),_DPP _Decenal),
+IF(DAY(Q35 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q35 + 1),MONTH(Q35 + 1),(_DPP _Decenal*2)),EOMONTH(Q35 + 1,0)))\
+[Q37] \=IF(DAY(Q36 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q36 + 1),MONTH(Q36 + 1),_DPP _Decenal),
+IF(DAY(Q36 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q36 + 1),MONTH(Q36 + 1),(_DPP _Decenal*2)),EOMONTH(Q36 + 1,0)))\
+[Q38] \=IF(DAY(Q37 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q37 + 1),MONTH(Q37 + 1),_DPP _Decenal),
+IF(DAY(Q37 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q37 + 1),MONTH(Q37 + 1),(_DPP _Decenal*2)),EOMONTH(Q37 + 1,0)))\
+[Q39] \=IF(DAY(Q38 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q38 + 1),MONTH(Q38 + 1),_DPP _Decenal),
+IF(DAY(Q38 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q38 + 1),MONTH(Q38 + 1),(_DPP _Decenal*2)),EOMONTH(Q38 + 1,0)))\
+[Q40] \=IF(DAY(Q39 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q39 + 1),MONTH(Q39 + 1),_DPP _Decenal),
+IF(DAY(Q39 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q39 + 1),MONTH(Q39 + 1),(_DPP _Decenal*2)),EOMONTH(Q39 + 1,0)))\
+[Q41] \=IF(DAY(Q40 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q40 + 1),MONTH(Q40 + 1),_DPP _Decenal),
+IF(DAY(Q40 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q40 + 1),MONTH(Q40 + 1),(_DPP _Decenal*2)),EOMONTH(Q40 + 1,0)))\
+[Fechas]
+[Q42] \=IF(DAY(Q41 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q41 + 1),MONTH(Q41 + 1),_DPP _Decenal),
+IF(DAY(Q41 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q41 + 1),MONTH(Q41 + 1),(_DPP _Decenal*2)),EOMONTH(Q41 + 1,0)))\
+[Q43] \=IF(DAY(Q42 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q42 + 1),MONTH(Q42 + 1),_DPP _Decenal),
+IF(DAY(Q42 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q42 + 1),MONTH(Q42 + 1),(_DPP _Decenal*2)),EOMONTH(Q42 + 1,0)))\
+[Q44] \=IF(DAY(Q43 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q43 + 1),MONTH(Q43 + 1),_DPP _Decenal),
+IF(DAY(Q43 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q43 + 1),MONTH(Q43 + 1),(_DPP _Decenal*2)),EOMONTH(Q43 + 1,0)))\
+[Q45] \=IF(DAY(Q44 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q44 + 1),MONTH(Q44 + 1),_DPP _Decenal),
+IF(DAY(Q44 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q44 + 1),MONTH(Q44 + 1),(_DPP _Decenal*2)),EOMONTH(Q44 + 1,0)))\
+[Q46] \=IF(DAY(Q45 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q45 + 1),MONTH(Q45 + 1),_DPP _Decenal),
+IF(DAY(Q45 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q45 + 1),MONTH(Q45 + 1),(_DPP _Decenal*2)),EOMONTH(Q45 + 1,0)))\
+[Q47] \=IF(DAY(Q46 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q46 + 1),MONTH(Q46 + 1),_DPP _Decenal),
+IF(DAY(Q46 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q46 + 1),MONTH(Q46 + 1),(_DPP _Decenal*2)),EOMONTH(Q46 + 1,0)))\
+[Q48] \=IF(DAY(Q47 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q47 + 1),MONTH(Q47 + 1),_DPP _Decenal),
+IF(DAY(Q47 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q47 + 1),MONTH(Q47 + 1),(_DPP _Decenal*2)),EOMONTH(Q47 + 1,0)))\
+[Q49] \=IF(DAY(Q48 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q48 + 1),MONTH(Q48 + 1),_DPP _Decenal),
+IF(DAY(Q48 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q48 + 1),MONTH(Q48 + 1),(_DPP _Decenal*2)),EOMONTH(Q48 + 1,0)))\
+[Q50] \=IF(DAY(Q49 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q49 + 1),MONTH(Q49 + 1),_DPP _Decenal),
+IF(DAY(Q49 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q49 + 1),MONTH(Q49 + 1),(_DPP _Decenal*2)),EOMONTH(Q49 + 1,0)))\
+[Q51] \=IF(DAY(Q50 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q50 + 1),MONTH(Q50 + 1),_DPP _Decenal),
+IF(DAY(Q50 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q50 + 1),MONTH(Q50 + 1),(_DPP _Decenal*2)),EOMONTH(Q50 + 1,0)))\
+[Q52] \=IF(DAY(Q51 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q51 + 1),MONTH(Q51 + 1),_DPP _Decenal),
+IF(DAY(Q51 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q51 + 1),MONTH(Q51 + 1),(_DPP _Decenal*2)),EOMONTH(Q51 + 1,0)))\
+[Q53] \=IF(DAY(Q52 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q52 + 1),MONTH(Q52 + 1),_DPP _Decenal),
+IF(DAY(Q52 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q52 + 1),MONTH(Q52 + 1),(_DPP _Decenal*2)),EOMONTH(Q52 + 1,0)))\
+[Q54] \=IF(DAY(Q53 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q53 + 1),MONTH(Q53 + 1),_DPP _Decenal),
+IF(DAY(Q53 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q53 + 1),MONTH(Q53 + 1),(_DPP _Decenal*2)),EOMONTH(Q53 + 1,0)))\
+[Q55] \=IF(DAY(Q54 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q54 + 1),MONTH(Q54 + 1),_DPP _Decenal),
+IF(DAY(Q54 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q54 + 1),MONTH(Q54 + 1),(_DPP _Decenal*2)),EOMONTH(Q54 + 1,0)))\
+[Q56] \=IF(DAY(Q55 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q55 + 1),MONTH(Q55 + 1),_DPP _Decenal),
+IF(DAY(Q55 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q55 + 1),MONTH(Q55 + 1),(_DPP _Decenal*2)),EOMONTH(Q55 + 1,0)))\
+[Q57] \=IF(DAY(Q56 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q56 + 1),MONTH(Q56 + 1),_DPP _Decenal),
+IF(DAY(Q56 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q56 + 1),MONTH(Q56 + 1),(_DPP _Decenal*2)),EOMONTH(Q56 + 1,0)))\
+[Q58] \=IF(DAY(Q57 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q57 + 1),MONTH(Q57 + 1),_DPP _Decenal),
+IF(DAY(Q57 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q57 + 1),MONTH(Q57 + 1),(_DPP _Decenal*2)),EOMONTH(Q57 + 1,0)))\
+[Q59] \=IF(DAY(Q58 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q58 + 1),MONTH(Q58 + 1),_DPP _Decenal),
+IF(DAY(Q58 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q58 + 1),MONTH(Q58 + 1),(_DPP _Decenal*2)),EOMONTH(Q58 + 1,0)))\
+[Q60] \=IF(DAY(Q59 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q59 + 1),MONTH(Q59 + 1),_DPP _Decenal),
+IF(DAY(Q59 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q59 + 1),MONTH(Q59 + 1),(_DPP _Decenal*2)),EOMONTH(Q59 + 1,0)))\
+[Q61] \=IF(DAY(Q60 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q60 + 1),MONTH(Q60 + 1),_DPP _Decenal),
+IF(DAY(Q60 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q60 + 1),MONTH(Q60 + 1),(_DPP _Decenal*2)),EOMONTH(Q60 + 1,0)))\
+[Q62] \=IF(DAY(Q61 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q61 + 1),MONTH(Q61 + 1),_DPP _Decenal),
+IF(DAY(Q61 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q61 + 1),MONTH(Q61 + 1),(_DPP _Decenal*2)),EOMONTH(Q61 + 1,0)))\
+[Q63] \=IF(DAY(Q62 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q62 + 1),MONTH(Q62 + 1),_DPP _Decenal),
+IF(DAY(Q62 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q62 + 1),MONTH(Q62 + 1),(_DPP _Decenal*2)),EOMONTH(Q62 + 1,0)))\
+[Q64] \=IF(DAY(Q63 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q63 + 1),MONTH(Q63 + 1),_DPP _Decenal),
+IF(DAY(Q63 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q63 + 1),MONTH(Q63 + 1),(_DPP _Decenal*2)),EOMONTH(Q63 + 1,0)))\
+[Q65] \=IF(DAY(Q64 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q64 + 1),MONTH(Q64 + 1),_DPP _Decenal),
+IF(DAY(Q64 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q64 + 1),MONTH(Q64 + 1),(_DPP _Decenal*2)),EOMONTH(Q64 + 1,0)))\
+[Q66] \=IF(DAY(Q65 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q65 + 1),MONTH(Q65 + 1),_DPP _Decenal),
+IF(DAY(Q65 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q65 + 1),MONTH(Q65 + 1),(_DPP _Decenal*2)),EOMONTH(Q65 + 1,0)))\
+[Fechas]
+[Q67] \=IF(DAY(Q66 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q66 + 1),MONTH(Q66 + 1),_DPP _Decenal),
+IF(DAY(Q66 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q66 + 1),MONTH(Q66 + 1),(_DPP _Decenal*2)),EOMONTH(Q66 + 1,0)))\
+[Q68] \=IF(DAY(Q67 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q67 + 1),MONTH(Q67 + 1),_DPP _Decenal),
+IF(DAY(Q67 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q67 + 1),MONTH(Q67 + 1),(_DPP _Decenal*2)),EOMONTH(Q67 + 1,0)))\
+[Q69] \=IF(DAY(Q68 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q68 + 1),MONTH(Q68 + 1),_DPP _Decenal),
+IF(DAY(Q68 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q68 + 1),MONTH(Q68 + 1),(_DPP _Decenal*2)),EOMONTH(Q68 + 1,0)))\
+[Q70] \=IF(DAY(Q69 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q69 + 1),MONTH(Q69 + 1),_DPP _Decenal),
+IF(DAY(Q69 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q69 + 1),MONTH(Q69 + 1),(_DPP _Decenal*2)),EOMONTH(Q69 + 1,0)))\
+[Q71] \=IF(DAY(Q70 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q70 + 1),MONTH(Q70 + 1),_DPP _Decenal),
+IF(DAY(Q70 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q70 + 1),MONTH(Q70 + 1),(_DPP _Decenal*2)),EOMONTH(Q70 + 1,0)))\
+[Q72] \=IF(DAY(Q71 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q71 + 1),MONTH(Q71 + 1),_DPP _Decenal),
+IF(DAY(Q71 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q71 + 1),MONTH(Q71 + 1),(_DPP _Decenal*2)),EOMONTH(Q71 + 1,0)))\
+[Q73] \=IF(DAY(Q72 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q72 + 1),MONTH(Q72 + 1),_DPP _Decenal),
+IF(DAY(Q72 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q72 + 1),MONTH(Q72 + 1),(_DPP _Decenal*2)),EOMONTH(Q72 + 1,0)))\
+[Q74] \=IF(DAY(Q73 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q73 + 1),MONTH(Q73 + 1),_DPP _Decenal),
+IF(DAY(Q73 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q73 + 1),MONTH(Q73 + 1),(_DPP _Decenal*2)),EOMONTH(Q73 + 1,0)))\
+[Q75] \=IF(DAY(Q74 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q74 + 1),MONTH(Q74 + 1),_DPP _Decenal),
+IF(DAY(Q74 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q74 + 1),MONTH(Q74 + 1),(_DPP _Decenal*2)),EOMONTH(Q74 + 1,0)))\
+[Q76] \=IF(DAY(Q75 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q75 + 1),MONTH(Q75 + 1),_DPP _Decenal),
+IF(DAY(Q75 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q75 + 1),MONTH(Q75 + 1),(_DPP _Decenal*2)),EOMONTH(Q75 + 1,0)))\
+[Q77] \=IF(DAY(Q76 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q76 + 1),MONTH(Q76 + 1),_DPP _Decenal),
+IF(DAY(Q76 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q76 + 1),MONTH(Q76 + 1),(_DPP _Decenal*2)),EOMONTH(Q76 + 1,0)))\
+[Q78] \=IF(DAY(Q77 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q77 + 1),MONTH(Q77 + 1),_DPP _Decenal),
+IF(DAY(Q77 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q77 + 1),MONTH(Q77 + 1),(_DPP _Decenal*2)),EOMONTH(Q77 + 1,0)))\
+[Q79] \=IF(DAY(Q78 + 1) <= _DPP _Decenal,
+DATE(YEAR(Q78 + 1),MONTH(Q78 + 1),_DPP _Decenal),
+IF(DAY(Q78 + 1) <= (_DPP _Decenal*2),
+DATE(YEAR(Q78 + 1),MONTH(Q78 + 1),(_DPP _Decenal*2)),EOMONTH(Q78 + 1,0)))\
+[R9] \10\
+[R19] \Duración Intereses Decenal\
+[R20] \=_DPP _Decenal\
+[R21] \=_DPP _Decenal\
+[R22] \=_DPP _Decenal\
+[R23] \=_DPP _Decenal\
+[R24] \=_DPP _Decenal\
+[R25] \=_DPP _Decenal\
+[R26] \=_DPP _Decenal\
+[R27] \=_DPP _Decenal\
+[R28] \=_DPP _Decenal\
+[R29] \=_DPP _Decenal\
+[Fechas]
+[R30] \=_DPP _Decenal\
+[R31] \=_DPP _Decenal\
+[R32] \=_DPP _Decenal\
+[R33] \=_DPP _Decenal\
+[R34] \=_DPP _Decenal\
+[R35] \=_DPP _Decenal\
+[R36] \=_DPP _Decenal\
+[R37] \=_DPP _Decenal\
+[R38] \=_DPP _Decenal\
+[R39] \=_DPP _Decenal\
+[R40] \=_DPP _Decenal\
+[R41] \=_DPP _Decenal\
+[R42] \=_DPP _Decenal\
+[R43] \=_DPP _Decenal\
+[R44] \=_DPP _Decenal\
+[R45] \=_DPP _Decenal\
+[R46] \=_DPP _Decenal\
+[R47] \=_DPP _Decenal\
+[R48] \=_DPP _Decenal\
+[R49] \=_DPP _Decenal\
+[R50] \=_DPP _Decenal\
+[R51] \=_DPP _Decenal\
+[R52] \=_DPP _Decenal\
+[R53] \=_DPP _Decenal\
+[R54] \=_DPP _Decenal\
+[Fechas]
+[R55] \=_DPP _Decenal\
+[R56] \=_DPP _Decenal\
+[R57] \=_DPP _Decenal\
+[R58] \=_DPP _Decenal\
+[R59] \=_DPP _Decenal\
+[R60] \=_DPP _Decenal\
+[R61] \=_DPP _Decenal\
+[R62] \=_DPP _Decenal\
+[R63] \=_DPP _Decenal\
+[R64] \=_DPP _Decenal\
+[R65] \=_DPP _Decenal\
+[R66] \=_DPP _Decenal\
+[R67] \=_DPP _Decenal\
+[R68] \=_DPP _Decenal\
+[R69] \=_DPP _Decenal\
+[R70] \=_DPP _Decenal\
+[R71] \=_DPP _Decenal\
+[R72] \=_DPP _Decenal\
+[R73] \=_DPP _Decenal\
+[R74] \=_DPP _Decenal\
+[R75] \=_DPP _Decenal\
+[R76] \=_DPP _Decenal\
+[R77] \=_DPP _Decenal\
+[R78] \=_DPP _Decenal\
+[R79] \=_DPP _Decenal\
 
 [Configuración de Tablas]
 [A1] \Parámetros para las tablas.\
@@ -56504,6 +57067,7 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D185] \Agrega Fechas de Pago y Duración Intereses para Semanal.\
 [D186] \Agrega Fechas de Pago y Duración Intereses para Catorcenal.\
 [D187] \Reemplaza Frecuencias específicas por algoritmos genéricos.\
+[D188] \Agrega Fechas de Pago y Duración Intereses para Quincenal y Decenal.\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -56517,14 +57081,14 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!188:188
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!188:188
- [T_Merger!_Actual] =T_Merger!188:188
- [T_SeguroAnual!_Actual] =T_SeguroAnual!188:188
- [T_SoloAuto!_Actual] =T_SoloAuto!188:188
- [T_VidaAnual!_Actual] =T_VidaAnual!188:188
- [T_VidaMulti!_Actual] =T_VidaMulti!188:188
- [Fechas!_Algoritmo] =Fechas!$B$19
+ [CAT!_Actual] =CAT!189:189
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!189:189
+ [T_Merger!_Actual] =T_Merger!189:189
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!189:189
+ [T_SoloAuto!_Actual] =T_SoloAuto!189:189
+ [T_VidaAnual!_Actual] =T_VidaAnual!189:189
+ [T_VidaMulti!_Actual] =T_VidaMulti!189:189
+ [Fechas!_Algoritmo] =Fechas!$B$20
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
  [T_RenovVidaAnual!_Amortizacion] =T_RenovVidaAnual!$J$20:$J$79
@@ -56533,16 +57097,16 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!187:187
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!187:187
- [T_Merger!_Anterior] =T_Merger!187:187
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!187:187
- [T_SoloAuto!_Anterior] =T_SoloAuto!187:187
- [T_VidaAnual!_Anterior] =T_VidaAnual!187:187
- [T_VidaMulti!_Anterior] =T_VidaMulti!187:187
- [Fechas!_Búsqueda_Duración] =Fechas!$B$21
- [Fechas!_Búsqueda_Fechas_Pago] =Fechas!$B$20
- [Fechas!_C_FRECUENCIA_ALGORITMO] =Fechas!$A$12:$B$15
+ [Fechas!_Anterior] =Fechas!188:188
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!188:188
+ [T_Merger!_Anterior] =T_Merger!188:188
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!188:188
+ [T_SoloAuto!_Anterior] =T_SoloAuto!188:188
+ [T_VidaAnual!_Anterior] =T_VidaAnual!188:188
+ [T_VidaMulti!_Anterior] =T_VidaMulti!188:188
+ [Fechas!_Búsqueda_Duración] =Fechas!$B$22
+ [Fechas!_Búsqueda_Fechas_Pago] =Fechas!$B$21
+ [Fechas!_C_FRECUENCIA_ALGORITMO] =Fechas!$A$12:$B$17
  [T_SoloAuto!_Calculo_Capital] =T_SoloAuto!$Z$20:$Z$79
  [T_VidaAnual!_Calculo_Capital] =T_VidaAnual!$Z$20:$Z$79
  [T_VidaMulti!_Calculo_Capital] =T_VidaMulti!$Z$20:$Z$79
@@ -56589,7 +57153,8 @@ Nombres:
  [T_AutoYSeguroMulti!_Componentes_Pago_Proyectado] =T_AutoYSeguroMulti!$AV$20:$AW$79
  [T_SeguroAnual!_Componentes_Pago_Proyectado] =T_SeguroAnual!$AV$20:$AW$79
  [Fechas!_Datos] =Fechas!$H:$AX
- [Fechas!_Día_Cotización] =Fechas!$B$18
+ [Fechas!_Decenal] =Fechas!$R:$R
+ [Fechas!_Día_Cotización] =Fechas!$I$16
  [T_SoloAuto!_Dias_Cat] =T_SoloAuto!$AH$20:$AH$79
  [T_VidaAnual!_Dias_Cat] =T_VidaAnual!$AH$20:$AH$79
  [T_VidaMulti!_Dias_Cat] =T_VidaMulti!$AH$20:$AH$79
@@ -56604,6 +57169,7 @@ Nombres:
  [T_VidaAnual!_Dias_Interes_Periodo] =T_VidaAnual!$U$20:$U$79
  [T_VidaMulti!_Dias_Interes_Periodo] =T_VidaMulti!$U$20:$U$79
  [Fechas!_Días_por_Periodo] =Fechas!$B$6
+ [Fechas!_DPP] =Fechas!$9:$9
  [Fechas!_Etiqueta_Duración_Intereses] =Fechas!$B$10
  [Fechas!_Etiqueta_Fechas_Pago] =Fechas!$B$9
  [Fechas!_Fecha_Cotización] =Fechas!$B$4
@@ -56671,6 +57237,7 @@ Nombres:
  [T_AutoYSeguroMulti!_Pago_Proyectado] =T_AutoYSeguroMulti!$AX$20:$AX$79
  [T_SeguroAnual!_Pago_Proyectado] =T_SeguroAnual!$AX$20:$AX$79
  [Fechas!_Producto] =Fechas!#REF!
+ [Fechas!_Quincenal] =Fechas!$O:$O
  [T_AutoYSeguroMulti!_Remanentes] =T_AutoYSeguroMulti!$AD$20:$AD$79
  [T_SeguroAnual!_Remanentes] =T_SeguroAnual!$AD$20:$AD$79
  [T_AutoYSeguroMulti!_Saldo_Ciclico] =T_AutoYSeguroMulti!$AJ$20:$AJ$79
@@ -56866,7 +57433,7 @@ Nombres:
  [DañosServicioPremium] =Calculos!$F$83
  [DañosValFac1erAño] =Calculos!$F$76
  [DESCRIPCION_PLAZO_CALCULO_SEGURO] =Calculos!$F$55
- [DIA_COTIZACIÓN] =Fechas!$B$18
+ [DIA_COTIZACIÓN] =Fechas!$I$16
  [T_AutoYSeguroMulti!Dias.En.Año] =T_AutoYSeguroMulti!$C$23
  [T_Merger!Dias.En.Año] =T_Merger!$C$22
  [T_SeguroAnual!Dias.En.Año] =T_SeguroAnual!$C$23
@@ -60408,5 +60975,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 46 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
