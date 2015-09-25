@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 23/09/2015 01:35:56 p.m.
+Fecha y hora de generación: 25/09/2015 09:52:42 a.m.
 
 Resumen
 =======
 
  * Hojas: 23
 
- * Nombres Definidos: 659
+ * Nombres Definidos: 660
 
  * Módulos de Visual Basic: 43
 
@@ -227,15 +227,15 @@ Contenido:
  DataValidation: Decimal. [Operador:"Entre" Formula1:"=PorcentajeMinimoEnganche" Formula2:"=PorcentajeMaximoEnganche" ]
  Mensaje=[Mostrar:True Titulo:"Enganche" Mensaje:"Enganche menor al 10% en Autos Nuevos requiere Autorización Especial./Enganche menor al 25% en Autos Seminuevos requiere Autorización Especial." ] 
  Advertencia=[Mostrar:False Titulo:"Enganche" Mensaje:"Un enganche menor requiere autorización especial./Recuerda que el monto mínimo a financiar es de $25,000.00" Estilo:Información. ] 
- OmitirBlancos:True DatoActualEsVálido:True 
+ OmitirBlancos:True DatoActualEsVálido:False 
 
 [D14] (CapturaMontoEnganche) \=CapturaPorcentajeEnganche * CapturaValorFactura\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"= CapturaValorFactura * PorcentajeMinimoEnganche" Formula2:"= Monto_máximo_enganche" ]
  Mensaje=[Mostrar:True Titulo:"$ Enganche" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"$ Enganche" Mensaje:"Un enganche menor requiere autorización especial./Recuerda que el monto mínimo a financiar es de $25,000.00" Estilo:Advertencia ] 
- OmitirBlancos:True DatoActualEsVálido:True 
+ OmitirBlancos:True DatoActualEsVálido:False 
 
-[D15] (CapturaPorcentajeComisionApertura) \0.025\
+[D15] (CapturaPorcentajeComisionApertura) \0.01\
  DataValidation: Decimal. [Operador:"Entre" Formula1:"=TipoClienteComisionPorApertura" Formula2:"1" ]
  Mensaje=[Mostrar:True Titulo:"Comisión por apertura" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"Comisión por apertura" Mensaje:"Importante: Recuerde que una Comisión por Apertura menor a la estipulada en la normatividad, requiere autorización especial." Estilo:Advertencia ] 
@@ -303,7 +303,7 @@ Contenido:
 [G6] \Aportación Adicional\
 [G13] \Mínimos:\
 [G50] \Sucursal Ixe........\
-[H5] (SELECCION_FRECUENCIA) \Catorcenal\
+[H5] (SELECCION_FRECUENCIA) \Mensual\
  DataValidation: Lista. [Fuente:"=OFFSET(COMBO_FRECUENCIA,0,0,CONTEO_FRECUENCIA,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -505,7 +505,7 @@ Contenido:
 [C10] \=MontoEnganche\
 [C11] \=MontoFinanciarAuto\
 [C12] \=MontoGtiaExt\
-[C13] (SELECCION_FRECUENCIA_TABLA_CLIENTE) \Catorcenal\
+[C13] (SELECCION_FRECUENCIA_TABLA_CLIENTE) \Mensual\
  DataValidation: Lista. [Fuente:"=OFFSET(COMBO_FRECUENCIA,0,0,CONTEO_FRECUENCIA,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -1503,11 +1503,11 @@ Contenido:
 [K20] \48\
 [K21] \60\
 [L16] \Tasa\
-[L17] \0.129\
-[L18] \0.129\
-[L19] \0.129\
-[L20] \0.129\
-[L21] \0.132\
+[L17] \0.1199\
+[L18] \0.1199\
+[L19] \0.1199\
+[L20] \0.1199\
+[L21] \0.125\
 [M5] \Usando Macros\
 [M7] \=MontoEnganche\
 [M8] \=MontoSeguroDeContado\
@@ -1518,11 +1518,11 @@ Contenido:
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \12178.72\
-[M18] \6291.75\
-[M19] \4332.32\
-[M20] \3354.76\
-[M21] \2780.23\
+[M17] \12622.12\
+[M18] \6731.83\
+[M19] \4780.02\
+[M20] \3812.75\
+[M21] \3280.82\
 [O3] \Otros Cálculos\
 [O5] \Producto\
 [O6] \=SELECCION_PRODUCTO\
@@ -56519,6 +56519,10 @@ Financiar\
 [A17] \Nuevo\
 [A18] \Seminuevo\
 [A19] \Seminuevo\
+[A21] \Ambiente\
+[A23] \Ambiente\
+[A24] \Portal\
+[A25] \Intranet\
 [B3] \Código\
 [B4] \AET\
 [B5] \AEN\
@@ -56526,11 +56530,14 @@ Financiar\
 [B10] \T.T.TRAD\
 [B11] \T.T.PREF\
 [B15] \Tipo Tarifa\
+[C.Otros]
 [B16] \T.T.TRAD\
 [B17] \T.T.PREF\
 [B18] \T.T.TRAD\
 [B19] \T.T.PREF\
-[C.Otros]
+[B23] \Código\
+[B24] \PUBLIC\
+[B25] \PRIVATE\
 [C9] \Comisión por Apertura\
 [C10] \0.025\
 [C11] \0.01\
@@ -56547,7 +56554,7 @@ Financiar\
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
 
-[F9] (SELECCION_TIPO_TARIFA) \Tradicional\
+[F9] (SELECCION_TIPO_TARIFA) \Recurrente/Preferente\
  DataValidation: Lista. [Fuente:"=COMBO_TIPO_TARIFA" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -57256,6 +57263,7 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D194] \Evento_Change_Captura(). Cuando se cambie la Frecuencia, que se ajuste el número de pagos visibles en la Tabla Cliente.\
 [D195] \Inicia Concentración de Combos Variables en una hoja propia, en lugar de en los Catálogos.\
 [D196] \Manda los Combos Variables al final de la hoja de Cálculos, para aprovechar las llamadas en las macros que la calculan.\
+[D197] \Agrega Catálogo de Ambiente, para poder seleccionar entre ambientes Públicos (Portal) o Privados (Intranet)\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -57269,13 +57277,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!197:197
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!197:197
- [T_Merger!_Actual] =T_Merger!197:197
- [T_SeguroAnual!_Actual] =T_SeguroAnual!197:197
- [T_SoloAuto!_Actual] =T_SoloAuto!197:197
- [T_VidaAnual!_Actual] =T_VidaAnual!197:197
- [T_VidaMulti!_Actual] =T_VidaMulti!197:197
+ [CAT!_Actual] =CAT!198:198
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!198:198
+ [T_Merger!_Actual] =T_Merger!198:198
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!198:198
+ [T_SoloAuto!_Actual] =T_SoloAuto!198:198
+ [T_VidaAnual!_Actual] =T_VidaAnual!198:198
+ [T_VidaMulti!_Actual] =T_VidaMulti!198:198
  [Fechas!_Algoritmo] =Fechas!$C$26
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
@@ -57285,13 +57293,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!196:196
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!196:196
- [T_Merger!_Anterior] =T_Merger!196:196
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!196:196
- [T_SoloAuto!_Anterior] =T_SoloAuto!196:196
- [T_VidaAnual!_Anterior] =T_VidaAnual!196:196
- [T_VidaMulti!_Anterior] =T_VidaMulti!196:196
+ [Fechas!_Anterior] =Fechas!197:197
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!197:197
+ [T_Merger!_Anterior] =T_Merger!197:197
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!197:197
+ [T_SoloAuto!_Anterior] =T_SoloAuto!197:197
+ [T_VidaAnual!_Anterior] =T_VidaAnual!197:197
+ [T_VidaMulti!_Anterior] =T_VidaMulti!197:197
  [Fechas!_Búsqueda_Duración] =Fechas!$B$29
  [Fechas!_Búsqueda_Fechas_Pago] =Fechas!$B$28
  [Fechas!_C_FRECUENCIA_ALGORITMO] =Fechas!$A$14:$C$20
@@ -57480,6 +57488,7 @@ Nombres:
  [C_CONDICION_AUTO_DESC] =OFFSET(C_CONDICION_AUTO,0,1,,2)
  [C_CONDICION_AUTO_TIPO_TARIFA] =C.Otros!$A$15:$C$19
  [C_CONDICION_MODELO] ='C. Auto'!$I$9:$L$11
+ [C_ENVIRONMENT] =C.Otros!$A$23:$B$25
  [C_ESTADO] ='C. Estados'!$A$4:$I$36
  [C_ESTADO_DESC] =OFFSET(C_ESTADO,0,1,,COLUMNS(C_ESTADO)-1)
  [C_FACTOR_MULTIANUAL] ='C. Seguros'!$A$12:$E$18
@@ -61189,5 +61198,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 43 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
