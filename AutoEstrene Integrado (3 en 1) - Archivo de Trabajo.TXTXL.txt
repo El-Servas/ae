@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "AutoEstrene Integrado (3 en 1) - Archivo de Trabajo.xlsm"
-Fecha y hora de generación: 25/09/2015 09:52:42 a.m.
+Fecha y hora de generación: 25/09/2015 10:05:24 a.m.
 
 Resumen
 =======
@@ -303,7 +303,7 @@ Contenido:
 [G6] \Aportación Adicional\
 [G13] \Mínimos:\
 [G50] \Sucursal Ixe........\
-[H5] (SELECCION_FRECUENCIA) \Mensual\
+[H5] (SELECCION_FRECUENCIA) \Semanal\
  DataValidation: Lista. [Fuente:"=OFFSET(COMBO_FRECUENCIA,0,0,CONTEO_FRECUENCIA,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -438,74 +438,77 @@ Contenido:
 [A81] \Nota: La presente información es únicamente para efectos ilustrativos, no representa ningún ofrecimiento formal por parte de Grupo Financiero Banorte. El CAT es para fines informativos y de comparación exclusivamente.\
 [A83] \=IF(ID_CALCULO_SEGURO>5,"",IF(ID_CALCULO_SEGURO=1,Leyenda_seguro_anual_tabla_amortizacion&Leyenda_coberturas_adicionales_tabla_de_amortizacion))\
 [B19] \Fecha\
-[B20] \=INDEX(Fechas_Pago,$A20)\
-[B21] \=INDEX(Fechas_Pago,$A21)\
+[B20] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B21] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[B22] \=INDEX(Fechas_Pago,$A22)\
-[B23] \=INDEX(Fechas_Pago,$A23)\
-[B24] \=INDEX(Fechas_Pago,$A24)\
-[B25] \=INDEX(Fechas_Pago,$A25)\
-[B26] \=INDEX(Fechas_Pago,$A26)\
-[B27] \=INDEX(Fechas_Pago,$A27)\
-[B28] \=INDEX(Fechas_Pago,$A28)\
-[B29] \=INDEX(Fechas_Pago,$A29)\
-[B30] \=INDEX(Fechas_Pago,$A30)\
-[B31] \=INDEX(Fechas_Pago,$A31)\
-[B32] \=INDEX(Fechas_Pago,$A32)\
-[B33] \=INDEX(Fechas_Pago,$A33)\
-[B34] \=INDEX(Fechas_Pago,$A34)\
-[B35] \=INDEX(Fechas_Pago,$A35)\
-[B36] \=INDEX(Fechas_Pago,$A36)\
-[B37] \=INDEX(Fechas_Pago,$A37)\
-[B38] \=INDEX(Fechas_Pago,$A38)\
-[B39] \=INDEX(Fechas_Pago,$A39)\
-[B40] \=INDEX(Fechas_Pago,$A40)\
-[B41] \=INDEX(Fechas_Pago,$A41)\
-[B42] \=INDEX(Fechas_Pago,$A42)\
-[B43] \=INDEX(Fechas_Pago,$A43)\
-[B44] \=INDEX(Fechas_Pago,$A44)\
-[B45] \=INDEX(Fechas_Pago,$A45)\
-[B46] \=INDEX(Fechas_Pago,$A46)\
+[B22] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B23] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B24] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B25] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B26] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B27] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B28] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B29] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B30] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B31] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B32] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B33] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B34] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B35] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B36] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B37] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B38] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B39] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B40] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B41] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B42] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B43] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B44] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B45] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B46] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[B47] \=INDEX(Fechas_Pago,$A47)\
-[B48] \=INDEX(Fechas_Pago,$A48)\
-[B49] \=INDEX(Fechas_Pago,$A49)\
-[B50] \=INDEX(Fechas_Pago,$A50)\
-[B51] \=INDEX(Fechas_Pago,$A51)\
-[B52] \=INDEX(Fechas_Pago,$A52)\
-[B53] \=INDEX(Fechas_Pago,$A53)\
-[B54] \=INDEX(Fechas_Pago,$A54)\
-[B55] \=INDEX(Fechas_Pago,$A55)\
-[B56] \=INDEX(Fechas_Pago,$A56)\
-[B57] \=INDEX(Fechas_Pago,$A57)\
-[B58] \=INDEX(Fechas_Pago,$A58)\
-[B59] \=INDEX(Fechas_Pago,$A59)\
-[B60] \=INDEX(Fechas_Pago,$A60)\
-[B61] \=INDEX(Fechas_Pago,$A61)\
-[B62] \=INDEX(Fechas_Pago,$A62)\
-[B63] \=INDEX(Fechas_Pago,$A63)\
-[B64] \=INDEX(Fechas_Pago,$A64)\
-[B65] \=INDEX(Fechas_Pago,$A65)\
-[B66] \=INDEX(Fechas_Pago,$A66)\
-[B67] \=INDEX(Fechas_Pago,$A67)\
-[B68] \=INDEX(Fechas_Pago,$A68)\
-[B69] \=INDEX(Fechas_Pago,$A69)\
-[B70] \=INDEX(Fechas_Pago,$A70)\
-[B71] \=INDEX(Fechas_Pago,$A71)\
+[B47] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B48] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B49] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B50] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B51] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B52] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B53] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B54] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B55] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B56] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B57] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B58] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B59] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B60] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B61] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B62] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B63] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B64] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B65] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B66] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B67] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B68] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B69] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B70] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B71] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[B72] \=INDEX(Fechas_Pago,$A72)\
-[B73] \=INDEX(Fechas_Pago,$A73)\
-[B74] \=INDEX(Fechas_Pago,$A74)\
-[B75] \=INDEX(Fechas_Pago,$A75)\
-[B76] \=INDEX(Fechas_Pago,$A76)\
-[B77] \=INDEX(Fechas_Pago,$A77)\
-[B78] \=INDEX(Fechas_Pago,$A78)\
-[B79] \=INDEX(Fechas_Pago,$A79)\
+[B72] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B73] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B74] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B75] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B76] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B77] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B78] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B79] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
+[B87] \Fórmulas para recuperar los valores si se reemplaza T_Merger o Fechas\
+[B88] \Fecha\
+[B89] \=INDEX(Fechas_Pago,_AmortizacionesTablaCliente)\
 [C9] \=ValorFactura\
 [C10] \=MontoEnganche\
 [C11] \=MontoFinanciarAuto\
 [C12] \=MontoGtiaExt\
-[C13] (SELECCION_FRECUENCIA_TABLA_CLIENTE) \Mensual\
+[C13] (SELECCION_FRECUENCIA_TABLA_CLIENTE) \Semanal\
  DataValidation: Lista. [Fuente:"=OFFSET(COMBO_FRECUENCIA,0,0,CONTEO_FRECUENCIA,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -520,75 +523,77 @@ Contenido:
 [C15] \=SELECCION_TIPO_PERSONA\
 [C16] \Tradicional\
 [C19] \Saldo Inicial\
-[C20] \=T_Merger!L20\
-[C21] \=T_Merger!L21\
-[C22] \=T_Merger!L22\
-[C23] \=T_Merger!L23\
-[C24] \=T_Merger!L24\
-[C25] \=T_Merger!L25\
-[C26] \=T_Merger!L26\
-[C27] \=T_Merger!L27\
+[C20] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C21] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C22] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C23] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C24] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[C28] \=T_Merger!L28\
-[C29] \=T_Merger!L29\
-[C30] \=T_Merger!L30\
-[C31] \=T_Merger!L31\
-[C32] \=T_Merger!L32\
-[C33] \=T_Merger!L33\
-[C34] \=T_Merger!L34\
-[C35] \=T_Merger!L35\
-[C36] \=T_Merger!L36\
-[C37] \=T_Merger!L37\
-[C38] \=T_Merger!L38\
-[C39] \=T_Merger!L39\
-[C40] \=T_Merger!L40\
-[C41] \=T_Merger!L41\
-[C42] \=T_Merger!L42\
-[C43] \=T_Merger!L43\
-[C44] \=T_Merger!L44\
-[C45] \=T_Merger!L45\
-[C46] \=T_Merger!L46\
-[C47] \=T_Merger!L47\
-[C48] \=T_Merger!L48\
-[C49] \=T_Merger!L49\
-[C50] \=T_Merger!L50\
-[C51] \=T_Merger!L51\
-[C52] \=T_Merger!L52\
+[C25] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C26] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C27] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C28] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C29] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C30] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C31] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C32] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C33] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C34] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C35] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C36] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C37] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C38] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C39] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C40] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C41] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C42] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C43] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C44] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C45] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C46] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C47] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C48] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C49] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[C53] \=T_Merger!L53\
-[C54] \=T_Merger!L54\
-[C55] \=T_Merger!L55\
-[C56] \=T_Merger!L56\
-[C57] \=T_Merger!L57\
-[C58] \=T_Merger!L58\
-[C59] \=T_Merger!L59\
-[C60] \=T_Merger!L60\
-[C61] \=T_Merger!L61\
-[C62] \=T_Merger!L62\
-[C63] \=T_Merger!L63\
-[C64] \=T_Merger!L64\
-[C65] \=T_Merger!L65\
-[C66] \=T_Merger!L66\
-[C67] \=T_Merger!L67\
-[C68] \=T_Merger!L68\
-[C69] \=T_Merger!L69\
-[C70] \=T_Merger!L70\
-[C71] \=T_Merger!L71\
-[C72] \=T_Merger!L72\
-[C73] \=T_Merger!L73\
-[C74] \=T_Merger!L74\
-[C75] \=T_Merger!L75\
-[C76] \=T_Merger!L76\
-[C77] \=T_Merger!L77\
+[C50] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C51] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C52] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C53] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C54] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C55] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C56] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C57] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C58] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C59] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C60] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C61] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C62] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C63] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C64] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C65] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C66] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C67] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C68] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C69] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C70] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C71] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C72] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C73] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C74] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[C78] \=T_Merger!L78\
-[C79] \=T_Merger!L79\
+[C75] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C76] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C77] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C78] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
+[C79] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
 [C80] \Suma\
+[C88] \Saldo Inicial\
+[C89] \=INDEX(T_Merger!_Saldo_Inicial,_AmortizacionesTablaCliente)\
 [D6] \Simulación Tabla de Amortización\
 [D7] \=IF(ID_CONDICION_AUTO=1,"Autos Nuevos",IF(ID_CONDICION_AUTO=2,"Autos Seminuevos",""))\
 [D11] \=Leyenda.Seguro.1_tabla_amortizacion\
 [D12] \11243.62\
-[D13] (SELECCION_PLAZO) \24 Meses\
+[D13] (SELECCION_PLAZO) \60 Meses\
  DataValidation: Lista. [Fuente:"=INDIRECT(RANGO_COMBO_PLAZOS)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -596,269 +601,278 @@ Contenido:
 
 [D16] \=Leyenda.Seguro.2\
 [D19] \Amortización a Capital\
-[D20] \=T_Merger!M20\
-[D21] \=T_Merger!M21\
-[D22] \=T_Merger!M22\
-[D23] \=T_Merger!M23\
-[D24] \=T_Merger!M24\
-[D25] \=T_Merger!M25\
-[D26] \=T_Merger!M26\
-[D27] \=T_Merger!M27\
-[D28] \=T_Merger!M28\
-[D29] \=T_Merger!M29\
-[D30] \=T_Merger!M30\
-[D31] \=T_Merger!M31\
-[D32] \=T_Merger!M32\
-[D33] \=T_Merger!M33\
-[D34] \=T_Merger!M34\
+[D20] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D21] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D22] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D23] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D24] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D25] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D26] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D27] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D28] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D29] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[D35] \=T_Merger!M35\
-[D36] \=T_Merger!M36\
-[D37] \=T_Merger!M37\
-[D38] \=T_Merger!M38\
-[D39] \=T_Merger!M39\
-[D40] \=T_Merger!M40\
-[D41] \=T_Merger!M41\
-[D42] \=T_Merger!M42\
-[D43] \=T_Merger!M43\
-[D44] \=T_Merger!M44\
-[D45] \=T_Merger!M45\
-[D46] \=T_Merger!M46\
-[D47] \=T_Merger!M47\
-[D48] \=T_Merger!M48\
-[D49] \=T_Merger!M49\
-[D50] \=T_Merger!M50\
-[D51] \=T_Merger!M51\
-[D52] \=T_Merger!M52\
-[D53] \=T_Merger!M53\
-[D54] \=T_Merger!M54\
-[D55] \=T_Merger!M55\
-[D56] \=T_Merger!M56\
-[D57] \=T_Merger!M57\
-[D58] \=T_Merger!M58\
-[D59] \=T_Merger!M59\
+[D30] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D31] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D32] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D33] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D34] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D35] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D36] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D37] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D38] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D39] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D40] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D41] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D42] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D43] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D44] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D45] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D46] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D47] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D48] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D49] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D50] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D51] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D52] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D53] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D54] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[D60] \=T_Merger!M60\
-[D61] \=T_Merger!M61\
-[D62] \=T_Merger!M62\
-[D63] \=T_Merger!M63\
-[D64] \=T_Merger!M64\
-[D65] \=T_Merger!M65\
-[D66] \=T_Merger!M66\
-[D67] \=T_Merger!M67\
-[D68] \=T_Merger!M68\
-[D69] \=T_Merger!M69\
-[D70] \=T_Merger!M70\
-[D71] \=T_Merger!M71\
-[D72] \=T_Merger!M72\
-[D73] \=T_Merger!M73\
-[D74] \=T_Merger!M74\
-[D75] \=T_Merger!M75\
-[D76] \=T_Merger!M76\
-[D77] \=T_Merger!M77\
-[D78] \=T_Merger!M78\
-[D79] \=T_Merger!M79\
+[D55] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D56] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D57] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D58] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D59] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D60] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D61] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D62] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D63] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D64] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D65] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D66] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D67] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D68] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D69] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D70] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D71] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D72] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D73] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D74] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D75] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D76] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D77] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D78] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[D79] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
+[TablaCliente]
 [D80] \=SUM(D20:D79)\
+[D88] \Amortización a Capital\
+[D89] \=INDEX(T_Merger!_Capital,_AmortizacionesTablaCliente)\
 [E10] \=LeyendaAportacionAdicional\
 [E19] \Interés\
-[E20] \=T_Merger!P20\
-[E21] \=T_Merger!P21\
+[E20] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E21] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E22] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E23] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E24] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E25] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E26] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E27] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E28] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E29] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E30] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E31] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E32] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E33] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E34] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E35] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E36] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E37] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E38] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E39] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[E22] \=T_Merger!P22\
-[E23] \=T_Merger!P23\
-[E24] \=T_Merger!P24\
-[E25] \=T_Merger!P25\
-[E26] \=T_Merger!P26\
-[E27] \=T_Merger!P27\
-[E28] \=T_Merger!P28\
-[E29] \=T_Merger!P29\
-[E30] \=T_Merger!P30\
-[E31] \=T_Merger!P31\
-[E32] \=T_Merger!P32\
-[E33] \=T_Merger!P33\
-[E34] \=T_Merger!P34\
-[E35] \=T_Merger!P35\
-[E36] \=T_Merger!P36\
-[E37] \=T_Merger!P37\
-[E38] \=T_Merger!P38\
-[E39] \=T_Merger!P39\
-[E40] \=T_Merger!P40\
-[E41] \=T_Merger!P41\
-[E42] \=T_Merger!P42\
-[E43] \=T_Merger!P43\
-[E44] \=T_Merger!P44\
-[E45] \=T_Merger!P45\
-[E46] \=T_Merger!P46\
+[E40] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E41] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E42] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E43] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E44] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E45] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E46] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E47] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E48] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E49] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E50] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E51] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E52] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E53] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E54] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E55] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E56] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E57] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E58] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E59] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E60] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E61] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E62] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E63] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E64] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[E47] \=T_Merger!P47\
-[E48] \=T_Merger!P48\
-[E49] \=T_Merger!P49\
-[E50] \=T_Merger!P50\
-[E51] \=T_Merger!P51\
-[E52] \=T_Merger!P52\
-[E53] \=T_Merger!P53\
-[E54] \=T_Merger!P54\
-[E55] \=T_Merger!P55\
-[E56] \=T_Merger!P56\
-[E57] \=T_Merger!P57\
-[E58] \=T_Merger!P58\
-[E59] \=T_Merger!P59\
-[E60] \=T_Merger!P60\
-[E61] \=T_Merger!P61\
-[E62] \=T_Merger!P62\
-[E63] \=T_Merger!P63\
-[E64] \=T_Merger!P64\
-[E65] \=T_Merger!P65\
-[E66] \=T_Merger!P66\
-[E67] \=T_Merger!P67\
-[E68] \=T_Merger!P68\
-[E69] \=T_Merger!P69\
-[E70] \=T_Merger!P70\
-[E71] \=T_Merger!P71\
-[TablaCliente]
-[E72] \=T_Merger!P72\
-[E73] \=T_Merger!P73\
-[E74] \=T_Merger!P74\
-[E75] \=T_Merger!P75\
-[E76] \=T_Merger!P76\
-[E77] \=T_Merger!P77\
-[E78] \=T_Merger!P78\
-[E79] \=T_Merger!P79\
+[E65] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E66] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E67] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E68] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E69] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E70] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E71] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E72] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E73] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E74] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E75] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E76] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E77] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E78] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
+[E79] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
 [E80] \=SUM(E20:E79)\
+[E88] \Interés\
+[E89] \=INDEX(T_Merger!_Interes,_AmortizacionesTablaCliente)\
 [F19] \I.V.A. Estimado\
-[F20] \=T_Merger!Q20\
-[F21] \=T_Merger!Q21\
-[F22] \=T_Merger!Q22\
-[F23] \=T_Merger!Q23\
-[F24] \=T_Merger!Q24\
-[F25] \=T_Merger!Q25\
-[F26] \=T_Merger!Q26\
-[F27] \=T_Merger!Q27\
-[F28] \=T_Merger!Q28\
-[F29] \=T_Merger!Q29\
-[F30] \=T_Merger!Q30\
-[F31] \=T_Merger!Q31\
-[F32] \=T_Merger!Q32\
-[F33] \=T_Merger!Q33\
-[F34] \=T_Merger!Q34\
+[F20] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F21] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F22] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F23] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F24] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F25] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[F35] \=T_Merger!Q35\
-[F36] \=T_Merger!Q36\
-[F37] \=T_Merger!Q37\
-[F38] \=T_Merger!Q38\
-[F39] \=T_Merger!Q39\
-[F40] \=T_Merger!Q40\
-[F41] \=T_Merger!Q41\
-[F42] \=T_Merger!Q42\
-[F43] \=T_Merger!Q43\
-[F44] \=T_Merger!Q44\
-[F45] \=T_Merger!Q45\
-[F46] \=T_Merger!Q46\
-[F47] \=T_Merger!Q47\
-[F48] \=T_Merger!Q48\
-[F49] \=T_Merger!Q49\
-[F50] \=T_Merger!Q50\
-[F51] \=T_Merger!Q51\
-[F52] \=T_Merger!Q52\
-[F53] \=T_Merger!Q53\
-[F54] \=T_Merger!Q54\
-[F55] \=T_Merger!Q55\
-[F56] \=T_Merger!Q56\
-[F57] \=T_Merger!Q57\
-[F58] \=T_Merger!Q58\
-[F59] \=T_Merger!Q59\
+[F26] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F27] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F28] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F29] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F30] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F31] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F32] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F33] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F34] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F35] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F36] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F37] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F38] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F39] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F40] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F41] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F42] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F43] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F44] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F45] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F46] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F47] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F48] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F49] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F50] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[F60] \=T_Merger!Q60\
-[F61] \=T_Merger!Q61\
-[F62] \=T_Merger!Q62\
-[F63] \=T_Merger!Q63\
-[F64] \=T_Merger!Q64\
-[F65] \=T_Merger!Q65\
-[F66] \=T_Merger!Q66\
-[F67] \=T_Merger!Q67\
-[F68] \=T_Merger!Q68\
-[F69] \=T_Merger!Q69\
-[F70] \=T_Merger!Q70\
-[F71] \=T_Merger!Q71\
-[F72] \=T_Merger!Q72\
-[F73] \=T_Merger!Q73\
-[F74] \=T_Merger!Q74\
-[F75] \=T_Merger!Q75\
-[F76] \=T_Merger!Q76\
-[F77] \=T_Merger!Q77\
-[F78] \=T_Merger!Q78\
-[F79] \=T_Merger!Q79\
+[F51] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F52] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F53] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F54] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F55] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F56] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F57] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F58] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F59] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F60] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F61] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F62] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F63] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F64] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F65] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F66] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F67] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F68] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F69] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F70] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F71] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F72] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F73] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F74] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F75] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[TablaCliente]
+[F76] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F77] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F78] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
+[F79] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
 [F80] \=SUM(F20:F79)\
+[F88] \I.V.A. Estimado\
+[F89] \=INDEX(T_Merger!_IVA,_AmortizacionesTablaCliente)\
 [G9] \Fecha:\
 [G13] \Tasa Anual:\
 [G14] \CAT:\
 [G15] \Reducción en meses:\
-[TablaCliente]
 [G16] \Plazo estimado:\
 [G19] \Pago\
-[G20] \=T_Merger!R20\
-[G21] \=T_Merger!R21\
-[G22] \=T_Merger!R22\
-[G23] \=T_Merger!R23\
-[G24] \=T_Merger!R24\
-[G25] \=T_Merger!R25\
-[G26] \=T_Merger!R26\
-[G27] \=T_Merger!R27\
-[G28] \=T_Merger!R28\
-[G29] \=T_Merger!R29\
-[G30] \=T_Merger!R30\
-[G31] \=T_Merger!R31\
-[G32] \=T_Merger!R32\
-[G33] \=T_Merger!R33\
-[G34] \=T_Merger!R34\
-[G35] \=T_Merger!R35\
-[G36] \=T_Merger!R36\
-[G37] \=T_Merger!R37\
-[G38] \=T_Merger!R38\
-[G39] \=T_Merger!R39\
-[G40] \=T_Merger!R40\
-[G41] \=T_Merger!R41\
-[G42] \=T_Merger!R42\
+[G20] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G21] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G22] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G23] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G24] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G25] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G26] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G27] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G28] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G29] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G30] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G31] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[G43] \=T_Merger!R43\
-[G44] \=T_Merger!R44\
-[G45] \=T_Merger!R45\
-[G46] \=T_Merger!R46\
-[G47] \=T_Merger!R47\
-[G48] \=T_Merger!R48\
-[G49] \=T_Merger!R49\
-[G50] \=T_Merger!R50\
-[G51] \=T_Merger!R51\
-[G52] \=T_Merger!R52\
-[G53] \=T_Merger!R53\
-[G54] \=T_Merger!R54\
-[G55] \=T_Merger!R55\
-[G56] \=T_Merger!R56\
-[G57] \=T_Merger!R57\
-[G58] \=T_Merger!R58\
-[G59] \=T_Merger!R59\
-[G60] \=T_Merger!R60\
-[G61] \=T_Merger!R61\
-[G62] \=T_Merger!R62\
-[G63] \=T_Merger!R63\
-[G64] \=T_Merger!R64\
-[G65] \=T_Merger!R65\
-[G66] \=T_Merger!R66\
-[G67] \=T_Merger!R67\
+[G32] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G33] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G34] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G35] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G36] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G37] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G38] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G39] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G40] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G41] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G42] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G43] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G44] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G45] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G46] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G47] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G48] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G49] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G50] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G51] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G52] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G53] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G54] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G55] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G56] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[G68] \=T_Merger!R68\
-[G69] \=T_Merger!R69\
-[G70] \=T_Merger!R70\
-[G71] \=T_Merger!R71\
-[G72] \=T_Merger!R72\
-[G73] \=T_Merger!R73\
-[G74] \=T_Merger!R74\
-[G75] \=T_Merger!R75\
-[G76] \=T_Merger!R76\
-[G77] \=T_Merger!R77\
-[G78] \=T_Merger!R78\
-[G79] \=T_Merger!R79\
+[G57] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G58] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G59] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G60] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G61] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G62] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G63] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G64] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G65] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G66] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G67] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G68] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G69] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G70] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G71] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G72] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G73] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G74] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G75] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G76] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G77] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G78] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
+[G79] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
 [G80] \=SUM(G20:G79)\
+[G88] \Pago\
+[TablaCliente]
+[G89] \=INDEX(T_Merger!_Pago,_AmortizacionesTablaCliente)\
 [H9] \=CapturaFechaCotizacion\
 [H13] \=TasaInteres\
 [H14] \=CAT!CAT\
@@ -871,7 +885,6 @@ Contenido:
 [H23] \0\
 [H24] \0\
 [H25] \0\
-[TablaCliente]
 [H26] \0\
 [H27] \0\
 [H28] \0\
@@ -884,6 +897,7 @@ Contenido:
 [H35] \0\
 [H36] \0\
 [H37] \0\
+[TablaCliente]
 [H38] \0\
 [H39] \0\
 [H40] \0\
@@ -897,7 +911,6 @@ Contenido:
 [H48] \0\
 [H49] \0\
 [H50] \0\
-[TablaCliente]
 [H51] \0\
 [H52] \0\
 [H53] \0\
@@ -910,6 +923,7 @@ Contenido:
 [H60] \0\
 [H61] \0\
 [H62] \0\
+[TablaCliente]
 [H63] \0\
 [H64] \0\
 [H65] \0\
@@ -923,7 +937,6 @@ Contenido:
 [H73] \0\
 [H74] \0\
 [H75] \0\
-[TablaCliente]
 [H76] \0\
 [H77] \0\
 [H78] \0\
@@ -931,68 +944,71 @@ Contenido:
 [H80] \=SUM(H20:H79)\
 [I14] \Sin I.V.A.\
 [I19] \Saldo Final\
-[I20] \=T_Merger!T20\
-[I21] \=T_Merger!T21\
-[I22] \=T_Merger!T22\
-[I23] \=T_Merger!T23\
-[I24] \=T_Merger!T24\
-[I25] \=T_Merger!T25\
-[I26] \=T_Merger!T26\
-[I27] \=T_Merger!T27\
-[I28] \=T_Merger!T28\
-[I29] \=T_Merger!T29\
-[I30] \=T_Merger!T30\
-[I31] \=T_Merger!T31\
-[I32] \=T_Merger!T32\
-[I33] \=T_Merger!T33\
-[I34] \=T_Merger!T34\
-[I35] \=T_Merger!T35\
-[I36] \=T_Merger!T36\
-[I37] \=T_Merger!T37\
+[I20] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I21] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I22] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I23] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I24] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[I38] \=T_Merger!T38\
-[I39] \=T_Merger!T39\
-[I40] \=T_Merger!T40\
-[I41] \=T_Merger!T41\
-[I42] \=T_Merger!T42\
-[I43] \=T_Merger!T43\
-[I44] \=T_Merger!T44\
-[I45] \=T_Merger!T45\
-[I46] \=T_Merger!T46\
-[I47] \=T_Merger!T47\
-[I48] \=T_Merger!T48\
-[I49] \=T_Merger!T49\
-[I50] \=T_Merger!T50\
-[I51] \=T_Merger!T51\
-[I52] \=T_Merger!T52\
-[I53] \=T_Merger!T53\
-[I54] \=T_Merger!T54\
-[I55] \=T_Merger!T55\
-[I56] \=T_Merger!T56\
-[I57] \=T_Merger!T57\
-[I58] \=T_Merger!T58\
-[I59] \=T_Merger!T59\
-[I60] \=T_Merger!T60\
-[I61] \=T_Merger!T61\
-[I62] \=T_Merger!T62\
+[I25] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I26] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I27] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I28] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I29] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I30] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I31] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I32] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I33] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I34] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I35] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I36] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I37] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I38] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I39] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I40] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I41] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I42] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I43] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I44] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I45] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I46] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I47] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I48] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I49] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
 [TablaCliente]
-[I63] \=T_Merger!T63\
-[I64] \=T_Merger!T64\
-[I65] \=T_Merger!T65\
-[I66] \=T_Merger!T66\
-[I67] \=T_Merger!T67\
-[I68] \=T_Merger!T68\
-[I69] \=T_Merger!T69\
-[I70] \=T_Merger!T70\
-[I71] \=T_Merger!T71\
-[I72] \=T_Merger!T72\
-[I73] \=T_Merger!T73\
-[I74] \=T_Merger!T74\
-[I75] \=T_Merger!T75\
-[I76] \=T_Merger!T76\
-[I77] \=T_Merger!T77\
-[I78] \=T_Merger!T78\
-[I79] \=T_Merger!T79\
+[I50] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I51] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I52] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I53] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I54] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I55] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I56] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I57] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I58] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I59] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I60] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I61] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I62] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I63] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I64] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I65] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I66] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I67] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I68] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I69] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I70] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I71] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I72] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I73] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I74] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[TablaCliente]
+[I75] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I76] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I77] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I78] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I79] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
+[I88] \Saldo Final\
+[I89] \=INDEX(T_Merger!_Saldo_Final,_AmortizacionesTablaCliente)\
 
 [Calculos]
 [A1] \Cálculos.\
@@ -1518,11 +1534,11 @@ Contenido:
 [M13] \=MontoFinanciarAuto\
 [M14] \=MontoFinanciarSeguros\
 [M16] \Pago (Esq. Trad)\
-[M17] \12622.12\
-[M18] \6731.83\
-[M19] \4780.02\
-[M20] \3812.75\
-[M21] \3280.82\
+[M17] \11948.17\
+[M18] \6066.52\
+[M19] \4106.6\
+[M20] \3127.11\
+[M21] \2548.07\
 [O3] \Otros Cálculos\
 [O5] \Producto\
 [O6] \=SELECCION_PRODUCTO\
@@ -57264,6 +57280,7 @@ Agrega y modifica varias macros que tenían que ver con los eventos de captura pa
 [D195] \Inicia Concentración de Combos Variables en una hoja propia, en lugar de en los Catálogos.\
 [D196] \Manda los Combos Variables al final de la hoja de Cálculos, para aprovechar las llamadas en las macros que la calculan.\
 [D197] \Agrega Catálogo de Ambiente, para poder seleccionar entre ambientes Públicos (Portal) o Privados (Intranet)\
+[D198] \Reemplaza las fórmulas de la Tabla Cliente con INDEX() y Nombres Definidos para traer los datos de T_Merger\
 
 Nombres:
  [_3.5T] ='C. Seguros'!$A$8
@@ -57277,13 +57294,13 @@ Nombres:
  [T_SeguroAnual!_Abono_Sobrante] =T_SeguroAnual!$Z$20:$Z$79
  [T_AutoYSeguroMulti!_Abono_Sobrante_Ciclo_Anterior] =T_AutoYSeguroMulti!$AB$20:$AB$79
  [T_SeguroAnual!_Abono_Sobrante_Ciclo_Anterior] =T_SeguroAnual!$AB$20:$AB$79
- [CAT!_Actual] =CAT!198:198
- [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!198:198
- [T_Merger!_Actual] =T_Merger!198:198
- [T_SeguroAnual!_Actual] =T_SeguroAnual!198:198
- [T_SoloAuto!_Actual] =T_SoloAuto!198:198
- [T_VidaAnual!_Actual] =T_VidaAnual!198:198
- [T_VidaMulti!_Actual] =T_VidaMulti!198:198
+ [CAT!_Actual] =CAT!5:5
+ [T_AutoYSeguroMulti!_Actual] =T_AutoYSeguroMulti!5:5
+ [T_Merger!_Actual] =T_Merger!5:5
+ [T_SeguroAnual!_Actual] =T_SeguroAnual!5:5
+ [T_SoloAuto!_Actual] =T_SoloAuto!5:5
+ [T_VidaAnual!_Actual] =T_VidaAnual!5:5
+ [T_VidaMulti!_Actual] =T_VidaMulti!5:5
  [Fechas!_Algoritmo] =Fechas!$C$26
  [T_AutoYSeguroMulti!_Amortizacion] =T_AutoYSeguroMulti!$J$20:$J$79
  [T_Merger!_Amortizacion] =T_Merger!$J$20:$J$79
@@ -57293,13 +57310,13 @@ Nombres:
  [T_VidaAnual!_Amortizacion] =T_VidaAnual!$J$20:$J$79
  [T_VidaMulti!_Amortizacion] =T_VidaMulti!$J$20:$J$79
  [TablaCliente!_AmortizacionesTablaCliente] =TablaCliente!$A$20:$A$79
- [Fechas!_Anterior] =Fechas!197:197
- [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!197:197
- [T_Merger!_Anterior] =T_Merger!197:197
- [T_SeguroAnual!_Anterior] =T_SeguroAnual!197:197
- [T_SoloAuto!_Anterior] =T_SoloAuto!197:197
- [T_VidaAnual!_Anterior] =T_VidaAnual!197:197
- [T_VidaMulti!_Anterior] =T_VidaMulti!197:197
+ [Fechas!_Anterior] =Fechas!4:4
+ [T_AutoYSeguroMulti!_Anterior] =T_AutoYSeguroMulti!4:4
+ [T_Merger!_Anterior] =T_Merger!4:4
+ [T_SeguroAnual!_Anterior] =T_SeguroAnual!4:4
+ [T_SoloAuto!_Anterior] =T_SoloAuto!4:4
+ [T_VidaAnual!_Anterior] =T_VidaAnual!4:4
+ [T_VidaMulti!_Anterior] =T_VidaMulti!4:4
  [Fechas!_Búsqueda_Duración] =Fechas!$B$29
  [Fechas!_Búsqueda_Fechas_Pago] =Fechas!$B$28
  [Fechas!_C_FRECUENCIA_ALGORITMO] =Fechas!$A$14:$C$20
@@ -61198,5 +61215,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 45 sec.  **
+** Fin del proceso de exportación. Proceso realizado en 46 sec.  **
 Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
