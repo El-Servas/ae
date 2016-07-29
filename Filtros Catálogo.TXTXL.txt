@@ -1,12 +1,16 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 29/07/2016 01:08:42 a.m.
+Fecha y hora de generación: 29/07/2016 10:25:29 a.m.
 
 Resumen
 =======
+
  * Hojas: 1
- * Nombres Definidos: 10
- * Módulos de Visual Basic: 3
- * Líneas de código VB: 16
+
+ * Nombres Definidos: 11
+
+ * Módulos de Visual Basic: 4
+
+ * Líneas de código VB: 41
 
 Detalle
 =======
@@ -16,49 +20,71 @@ Hojas:
 
 Contenido:
 [Catálogo]
-Bloques: 6
+[A1] \Catálogo\
+[A3] (HEADER_MARCA) \MARCA\
+[A4] \Honda\
+[A5] \Honda\
+[A6] \Nissan\
+[A7] \Nissan\
+[A8] \Honda\
+[A9] \Toyota\
+[A10] \Baic\
+[A11] \Honda\
+[A12] \Honda\
+[B3] \AUTO\
+[B4] \Accord\
+[B5] \Civic\
+[B6] \Sentra\
+[B7] \Ventra\
+[B8] \Mamalón\
+[B9] \TuHoyota\
+[B10] \Mameid\
+[B11] \Fit\
+[B12] \Civic\
+[C3] \DATO\
+[C4] \a\
+[C5] \b\
+[C6] \c\
+[Catálogo]
+[C7] \d\
+[C8] \e\
+[C9] \g\
+[C10] \--\
+[C11] \x\
+[C12] \b\
+[E4] \Conteo\
+[E5] (CONTEO_MARCAS) \=COUNTA(E8:E1048576)\
+[E7] (DESTINO_MARCAS) \MARCA\
+[E8] \Honda\
+[E9] \Nissan\
+[E10] \Toyota\
+[E11] \Baic\
+[G1] \MARCA\
+[G2] (SELECCION_MARCA) \Honda\
+ DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_MARCAS,1,0,CONTEO_MARCAS,1)" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:True DatoActualEsVálido:True 
 
-@ A1 [1x1]
-> Catálogo
-
-@ G1 [1x1]
-> MARCA
-
-@ K1 [1x1]
-> AUTO
-
-@ A3 [8x3]
-> MARCA
-> Honda
-> Honda
-> Nissan
-> Nissan
-> Honda
-> Toyota
-> Baic
-> AUTO
-> Accord
-> Civic
-> Sentra
-> Ventra
-> Mamalón
-> TuHoyota
-> Mameid
-> DATO
-> a
-> b
-> c
-> d
-> e
-> g
-> --
-
-@ E4 [1x1]
-> Conteo
-
-@ G4 [1x1]
-> Conteo
-
+[G4] \Conteo\
+[G5] (CONTEO_AUTOS) \=COUNTA(G8:G10)\
+[G7] (DESTINO_AUTOS) \MARCA\
+[G8] \Honda\
+[G9] \Honda\
+[G10] \Honda\
+[G11] \Honda\
+[H7] \AUTO\
+[H8] \Accord\
+[H9] \Civic\
+[Catálogo]
+[H10] \Fit\
+[H11] \Mamalón\
+[I7] \DATO\
+[I8] \a\
+[I9] \b\
+[I10] \x\
+[I11] \e\
+[K1] \AUTO\
 
 Nombres:
  [Catálogo!_FilterDatabase] =Catálogo!$A$3:$C$1048576
@@ -70,6 +96,7 @@ Nombres:
  [DESTINO_AUTOS] =Catálogo!$G$7
  [DESTINO_MARCAS] =Catálogo!$E$7
  [Catálogo!Extract] =Catálogo!$G$7:$I$7
+ [HEADER_MARCA] =Catálogo!$A$3
  [SELECCION_MARCA] =Catálogo!$G$2
 
 Nombre del proyecto VB: [VBAProject]
@@ -78,6 +105,7 @@ Módulos VBA:
  [ThisWorkbook] Tipo: 100
  [Sheet1] Tipo: 100
  [Module1] Tipo: 1
+ [Module2] Tipo: 1
 
 Codigo:
 [ThisWorkbook] 0 líneas de código.
@@ -95,8 +123,8 @@ Sub Actualizar_Marcas()
     'Limpiamos resultados previos
     [DESTINO_MARCAS].CurrentRegion.Clear
 
-    'Aquí se está especificando a mano la columna (1)
-    [CATALOGO].Columns(1).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[DESTINO_MARCAS], Unique:=True, criteriaRange:=""
+    'Se especifica a mano la columna de la marca (Con un Rango Nombrado)
+    Intersect([HEADER_MARCA].CurrentRegion, [HEADER_MARCA].EntireColumn).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[DESTINO_MARCAS], Unique:=True, criteriaRange:=""
 End Sub
 
 'Lista filtrada por una Marca particular
@@ -104,10 +132,39 @@ Sub Actualizar_Autos()
     'Limpiamos resultados previos
     [DESTINO_AUTOS].CurrentRegion.Clear
     
-    [CATALOGO].AdvancedFilter Action:=xlFilterCopy, criteriaRange:=[CONDICION_MARCA], CopyToRange:=[DESTINO_AUTOS], Unique:=False
+    [CATALOGO].AdvancedFilter Action:=xlFilterCopy, criteriaRange:=[CONDICION_MARCA], CopyToRange:=[DESTINO_AUTOS], Unique:=True
 End Sub
 \\\--- END OF MODULE ---
 
+[Module2] 25 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
 
-** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
-ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
+Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, Columna As String)
+    
+    With rgAOrdenar.Parent.Sort
+        .SortFields.Clear
+        .SortFields.Add Key:=Range("H8:H11"), _
+                             SortOn:=xlSortOnValues, _
+                             Order:=xlAscending, _
+                             DataOption:=xlSortNormal
+                             
+        .SetRange rgAOrdenar
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+    
+End Sub
+
+Sub Rig()
+    OrdenarFilasPorNombreDeColumna [DESTINO_AUTOS].CurrentRegion
+End Sub
+
+\\\--- END OF MODULE ---
+
+
+** Fin del proceso de exportación. Proceso realizado en 00 sec.  **
+Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
