@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 28/07/2016 09:44:57 p.m.
+Fecha y hora de generación: 29/07/2016 01:08:42 a.m.
 
 Resumen
 =======
  * Hojas: 1
- * Nombres Definidos: 3
+ * Nombres Definidos: 10
  * Módulos de Visual Basic: 3
- * Líneas de código VB: 15
+ * Líneas de código VB: 16
 
 Detalle
 =======
@@ -16,52 +16,61 @@ Hojas:
 
 Contenido:
 [Catálogo]
-Bloques: 7
+Bloques: 6
 
 @ A1 [1x1]
 > Catálogo
 
-@ A3 [6x3]
+@ G1 [1x1]
+> MARCA
+
+@ K1 [1x1]
+> AUTO
+
+@ A3 [8x3]
 > MARCA
 > Honda
 > Honda
 > Nissan
 > Nissan
 > Honda
+> Toyota
+> Baic
 > AUTO
 > Accord
 > Civic
 > Sentra
 > Ventra
 > Mamalón
+> TuHoyota
+> Mameid
 > DATO
 > a
 > b
 > c
 > d
 > e
+> g
+> --
 
 @ E4 [1x1]
-> Marcas
+> Conteo
 
 @ G4 [1x1]
-> Autos
-
-@ E6 [1x1]
 > Conteo
-
-@ G6 [1x1]
-> Conteo
-
-@ E9 [2x1]
-> Honda
-> Nissan
 
 
 Nombres:
- [Catálogo!_FilterDatabase] =Catálogo!$A$3:$A$8
- [CATALOGO] =Catálogo!$A$3:$C$8
- [DESTINO_AUTOS] =Catálogo!$G$9
+ [Catálogo!_FilterDatabase] =Catálogo!$A$3:$C$1048576
+ [CATALOGO] =Catálogo!$A$3:$C$1048576
+ [CONDICION_MARCA] =Catálogo!$G$1:$G$2
+ [CONTEO_AUTOS] =Catálogo!$G$5
+ [CONTEO_MARCAS] =Catálogo!$E$5
+ [Catálogo!Criteria] =Catálogo!$G$1:$G$2
+ [DESTINO_AUTOS] =Catálogo!$G$7
+ [DESTINO_MARCAS] =Catálogo!$E$7
+ [Catálogo!Extract] =Catálogo!$G$7:$I$7
+ [SELECCION_MARCA] =Catálogo!$G$2
 
 Nombre del proyecto VB: [VBAProject]
 
@@ -79,22 +88,23 @@ Codigo:
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Module1] 15 líneas de código.
+[Module1] 16 líneas de código.
 ///--- BEGINNING OF MODULE ---
 'Lista única de Marcas
 Sub Actualizar_Marcas()
-    [E9].CurrentRegion.Clear
+    'Limpiamos resultados previos
+    [DESTINO_MARCAS].CurrentRegion.Clear
 
-    'Primero filtramos y depositamos el resultado en la celda de destino.
-    [CATALOGO].Columns(1).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[E9], Unique:=True
-    
-    'Después, como *siempre* se consideran encabezados, lo borramos:
-    [E9].Delete xlShiftUp
+    'Aquí se está especificando a mano la columna (1)
+    [CATALOGO].Columns(1).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[DESTINO_MARCAS], Unique:=True, criteriaRange:=""
 End Sub
 
 'Lista filtrada por una Marca particular
-Sub Macro2()
-    Range("D5:E9").AdvancedFilter Action:=xlFilterCopy, CriteriaRange:=Range("I3:I4"), CopyToRange:=Range("I6"), Unique:=False
+Sub Actualizar_Autos()
+    'Limpiamos resultados previos
+    [DESTINO_AUTOS].CurrentRegion.Clear
+    
+    [CATALOGO].AdvancedFilter Action:=xlFilterCopy, criteriaRange:=[CONDICION_MARCA], CopyToRange:=[DESTINO_AUTOS], Unique:=False
 End Sub
 \\\--- END OF MODULE ---
 
