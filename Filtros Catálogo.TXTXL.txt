@@ -1,0 +1,103 @@
+Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
+Fecha y hora de generación: 28/07/2016 09:44:57 p.m.
+
+Resumen
+=======
+ * Hojas: 1
+ * Nombres Definidos: 3
+ * Módulos de Visual Basic: 3
+ * Líneas de código VB: 15
+
+Detalle
+=======
+
+Hojas:
+ [Catálogo]
+
+Contenido:
+[Catálogo]
+Bloques: 7
+
+@ A1 [1x1]
+> Catálogo
+
+@ A3 [6x3]
+> MARCA
+> Honda
+> Honda
+> Nissan
+> Nissan
+> Honda
+> AUTO
+> Accord
+> Civic
+> Sentra
+> Ventra
+> Mamalón
+> DATO
+> a
+> b
+> c
+> d
+> e
+
+@ E4 [1x1]
+> Marcas
+
+@ G4 [1x1]
+> Autos
+
+@ E6 [1x1]
+> Conteo
+
+@ G6 [1x1]
+> Conteo
+
+@ E9 [2x1]
+> Honda
+> Nissan
+
+
+Nombres:
+ [Catálogo!_FilterDatabase] =Catálogo!$A$3:$A$8
+ [CATALOGO] =Catálogo!$A$3:$C$8
+ [DESTINO_AUTOS] =Catálogo!$G$9
+
+Nombre del proyecto VB: [VBAProject]
+
+Módulos VBA:
+ [ThisWorkbook] Tipo: 100
+ [Sheet1] Tipo: 100
+ [Module1] Tipo: 1
+
+Codigo:
+[ThisWorkbook] 0 líneas de código.
+///--- BEGINNING OF MODULE ---
+\\\--- END OF MODULE ---
+
+[Sheet1] 0 líneas de código.
+///--- BEGINNING OF MODULE ---
+\\\--- END OF MODULE ---
+
+[Module1] 15 líneas de código.
+///--- BEGINNING OF MODULE ---
+'Lista única de Marcas
+Sub Actualizar_Marcas()
+    [E9].CurrentRegion.Clear
+
+    'Primero filtramos y depositamos el resultado en la celda de destino.
+    [CATALOGO].Columns(1).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[E9], Unique:=True
+    
+    'Después, como *siempre* se consideran encabezados, lo borramos:
+    [E9].Delete xlShiftUp
+End Sub
+
+'Lista filtrada por una Marca particular
+Sub Macro2()
+    Range("D5:E9").AdvancedFilter Action:=xlFilterCopy, CriteriaRange:=Range("I3:I4"), CopyToRange:=Range("I6"), Unique:=False
+End Sub
+\\\--- END OF MODULE ---
+
+
+** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
+ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
