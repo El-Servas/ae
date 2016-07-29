@@ -1,16 +1,12 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 29/07/2016 10:25:29 a.m.
+Fecha y hora de generación: 29/07/2016 06:32:51 p.m.
 
 Resumen
 =======
-
  * Hojas: 1
-
  * Nombres Definidos: 11
-
  * Módulos de Visual Basic: 4
-
- * Líneas de código VB: 41
+ * Líneas de código VB: 56
 
 Detalle
 =======
@@ -20,84 +16,84 @@ Hojas:
 
 Contenido:
 [Catálogo]
-[A1] \Catálogo\
-[A3] (HEADER_MARCA) \MARCA\
-[A4] \Honda\
-[A5] \Honda\
-[A6] \Nissan\
-[A7] \Nissan\
-[A8] \Honda\
-[A9] \Toyota\
-[A10] \Baic\
-[A11] \Honda\
-[A12] \Honda\
-[B3] \AUTO\
-[B4] \Accord\
-[B5] \Civic\
-[B6] \Sentra\
-[B7] \Ventra\
-[B8] \Mamalón\
-[B9] \TuHoyota\
-[B10] \Mameid\
-[B11] \Fit\
-[B12] \Civic\
-[C3] \DATO\
-[C4] \a\
-[C5] \b\
-[C6] \c\
-[Catálogo]
-[C7] \d\
-[C8] \e\
-[C9] \g\
-[C10] \--\
-[C11] \x\
-[C12] \b\
-[E4] \Conteo\
-[E5] (CONTEO_MARCAS) \=COUNTA(E8:E1048576)\
-[E7] (DESTINO_MARCAS) \MARCA\
-[E8] \Honda\
-[E9] \Nissan\
-[E10] \Toyota\
-[E11] \Baic\
-[G1] \MARCA\
-[G2] (SELECCION_MARCA) \Honda\
- DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_MARCAS,1,0,CONTEO_MARCAS,1)" ListaEnCelda:True ]
- Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
- Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
- OmitirBlancos:True DatoActualEsVálido:True 
+Bloques: 10
 
-[G4] \Conteo\
-[G5] (CONTEO_AUTOS) \=COUNTA(G8:G10)\
-[G7] (DESTINO_AUTOS) \MARCA\
-[G8] \Honda\
-[G9] \Honda\
-[G10] \Honda\
-[G11] \Honda\
-[H7] \AUTO\
-[H8] \Accord\
-[H9] \Civic\
-[Catálogo]
-[H10] \Fit\
-[H11] \Mamalón\
-[I7] \DATO\
-[I8] \a\
-[I9] \b\
-[I10] \x\
-[I11] \e\
-[K1] \AUTO\
+@ A1 [1x1]
+> Captura
+
+@ A3 [1x1]
+> MARCA
+
+@ A5 [1x1]
+> AUTO
+
+@ A8 [1x1]
+> Catálogos
+
+@ E8 [1x1]
+> Zona de Búsquedas
+
+@ A10 [10x3]
+(HEADER_MARCA) > MARCA
+> Honda
+> Honda
+> Nissan
+> Nissan
+> Honda
+> Toyota
+> Baic
+> Honda
+> Honda
+> AUTO
+> Accord
+> Civic
+> Sentra
+> Ventra
+> Mamalón
+> TuHoyota
+> Mameid
+> Fit
+> Civic
+> DATO
+> a
+> b
+> c
+> d
+> e
+> g
+> --
+> x
+> b
+
+@ E10 [1x1]
+> Marcas
+
+@ G10 [1x1]
+> Autos
+
+@ E12 [2x1]
+> Conteo
+(CONTEO_MARCAS) > =COUNTA(E16:E1048576)
+
+@ G12 [2x2]
+> Marca
+> =SELECCION_MARCA
+> Conteo
+(CONTEO_AUTOS) > =COUNTA(G16:G1048576)
+
 
 Nombres:
- [Catálogo!_FilterDatabase] =Catálogo!$A$3:$C$1048576
- [CATALOGO] =Catálogo!$A$3:$C$1048576
- [CONDICION_MARCA] =Catálogo!$G$1:$G$2
- [CONTEO_AUTOS] =Catálogo!$G$5
- [CONTEO_MARCAS] =Catálogo!$E$5
- [Catálogo!Criteria] =Catálogo!$G$1:$G$2
- [DESTINO_AUTOS] =Catálogo!$G$7
- [DESTINO_MARCAS] =Catálogo!$E$7
- [Catálogo!Extract] =Catálogo!$G$7:$I$7
- [HEADER_MARCA] =Catálogo!$A$3
- [SELECCION_MARCA] =Catálogo!$G$2
+ [Catálogo!_FilterDatabase] =Catálogo!$A$10:$C$1048576
+ [CATALOGO] =Catálogo!$A$10:$C$1048576
+ [CONDICION_MARCA] =Catálogo!$G$12:$G$13
+ [CONTEO_AUTOS] =Catálogo!$H$13
+ [CONTEO_MARCAS] =Catálogo!$E$13
+ [Catálogo!Criteria] =Catálogo!$G$12:$G$13
+ [DESTINO_AUTOS] =Catálogo!$G$15
+ [DESTINO_MARCAS] =Catálogo!$E$15
+ [Catálogo!Extract] =Catálogo!$G$15:$I$15
+ [HEADER_MARCA] =Catálogo!$A$10
+ [SELECCION_MARCA] =Catálogo!$B$3
 
 Nombre del proyecto VB: [VBAProject]
 
@@ -116,38 +112,53 @@ Codigo:
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Module1] 16 líneas de código.
+[Module1] 20 líneas de código.
 ///--- BEGINNING OF MODULE ---
 'Lista única de Marcas
 Sub Actualizar_Marcas()
     'Limpiamos resultados previos
-    [DESTINO_MARCAS].CurrentRegion.Clear
+    [Destino_Marcas].CurrentRegion.ClearContents
 
     'Se especifica a mano la columna de la marca (Con un Rango Nombrado)
-    Intersect([HEADER_MARCA].CurrentRegion, [HEADER_MARCA].EntireColumn).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[DESTINO_MARCAS], Unique:=True, criteriaRange:=""
+    Intersect([HEADER_MARCA].CurrentRegion, [HEADER_MARCA].EntireColumn).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[Destino_Marcas], Unique:=True, criteriaRange:=""
+    
+    OrdenarFilasPorNombreDeColumna [Destino_Marcas].CurrentRegion, "marca"
 End Sub
 
 'Lista filtrada por una Marca particular
 Sub Actualizar_Autos()
     'Limpiamos resultados previos
-    [DESTINO_AUTOS].CurrentRegion.Clear
+    [Destino_Autos].CurrentRegion.ClearContents
     
-    [CATALOGO].AdvancedFilter Action:=xlFilterCopy, criteriaRange:=[CONDICION_MARCA], CopyToRange:=[DESTINO_AUTOS], Unique:=True
+    [CATALOGO].AdvancedFilter Action:=xlFilterCopy, criteriaRange:=[CONDICION_MARCA], CopyToRange:=[Destino_Autos], Unique:=True
+    
+    OrdenarFilasPorNombreDeColumna [Destino_Autos].CurrentRegion, "auto"
 End Sub
 \\\--- END OF MODULE ---
 
-[Module2] 25 líneas de código.
+[Module2] 36 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
-Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, Columna As String)
+Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
+    'Determinar la columna de ordenamiento
+    Dim rgHeader: Set rgHeader = rgAOrdenar.Rows(1).Find(NomColumna)
+        
+    If rgHeader Is Nothing Then Exit Sub 'No existe la columna? Nothing to do.
+    
+    'Determinar el Rango (Columna sin encabezado)
+    Dim rgKey As Range
+    Set rgKey = Intersect(rgHeader.EntireColumn, _
+                          rgAOrdenar, _
+                          rgAOrdenar.Offset(1, 0))
     
     With rgAOrdenar.Parent.Sort
         .SortFields.Clear
-        .SortFields.Add Key:=Range("H8:H11"), _
-                             SortOn:=xlSortOnValues, _
-                             Order:=xlAscending, _
-                             DataOption:=xlSortNormal
+        
+        .SortFields.Add Key:=rgKey, _
+                        SortOn:=xlSortOnValues, _
+                        Order:=xlAscending, _
+                        DataOption:=xlSortNormal
                              
         .SetRange rgAOrdenar
         .Header = xlYes
@@ -160,11 +171,11 @@ Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, Columna As String)
 End Sub
 
 Sub Rig()
-    OrdenarFilasPorNombreDeColumna [DESTINO_AUTOS].CurrentRegion
+    OrdenarFilasPorNombreDeColumna [Destino_Autos].CurrentRegion, "auto"
 End Sub
 
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 00 sec.  **
-Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
+** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
+ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
