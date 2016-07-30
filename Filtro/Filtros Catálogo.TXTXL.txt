@@ -1,10 +1,10 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 30/07/2016 03:49:22 p.m.
+Fecha y hora de generación: 30/07/2016 03:59:09 p.m.
 
 Resumen
 =======
  * Hojas: 4
- * Nombres Definidos: 28
+ * Nombres Definidos: 29
  * Módulos de Visual Basic: 8
  * Líneas de código VB: 146
 
@@ -23,23 +23,23 @@ Contenido:
 [A3] \TIPO\
 [A5] \MARCA\
 [A7] \AUTO\
-[B3] (SELECCION_TIPO) \Siu\
+[B3] (SELECCION_TIPO) \Niu\
  DataValidation: Lista. [Fuente:"=$D$3:$D$4" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B5] (SELECCION_MARCA) \Hummer\
+[B5] (SELECCION_MARCA) \Baic\
  DataValidation: Lista. [Fuente:"=FUENTE_MARCAS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
 [B7] (SELECCION_AUTO) \No sabe fallar\
- DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_NIVEL_2,1,-2,CONTEO_NIVEL_2,1)" ListaEnCelda:True ]
+ DataValidation: Lista. [Fuente:"=FUENTE_AUTOS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
- OmitirBlancos:False DatoActualEsVálido:False 
+ OmitirBlancos:False DatoActualEsVálido:True 
 
 [D1] (Captura!Listado.Catálogo) \=SELECCION_TIPO\
 [D2] \Catálogo\
@@ -70,16 +70,16 @@ Contenido:
 [G3] \AUTO\
 [G4] \Carro\
 [G6] \AUTOS\
-[G8] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G9] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G10] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G11] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G12] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G13] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G14] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G15] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G16] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
-[G17] \=OFFSET(FILTRO2N!_DESTINO_NIVEL_2_VBA,1,-2,10,1)\
+[G8] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G9] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G10] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G11] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G12] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G13] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G14] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G15] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G16] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
+[G17] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
 
 [N]
 [A1] \Catálogo N\
@@ -170,45 +170,44 @@ Contenido:
 [D12] \Nivel 1\
 [D16] \Conteo\
 [D17] (FILTRO2N!o.Conteo_Nivel_1) \=COUNTA(D20:D23)\
-[D19] (FILTRO2N!_DESTINO_NIVEL_1_VBA) \Brand\
-[D20] (FILTRO2N!o.Elementos_Nivel_1) \Chevrolet\
-[D21] \Ford\
-[D22] \Hummer\
+[D19] (FILTRO2N!_DESTINO_NIVEL_1_VBA) \MARCA\
+[D20] (FILTRO2N!o.Elementos_Nivel_1) \Baic\
+[D21] \Honda\
+[D22] \Nissan\
+[D23] \Toyota\
 [F12] \Nivel 2\
-[F14] \Parte 2\
 [FILTRO2N]
+[F14] \Parte 2\
 [F16] \Conteo\
 [F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F23)\
-[F19] (FILTRO2N!Extract) \Carro\
-[F20] (FILTRO2N!o.Elementos_Nivel_2) \H2\
-[F21] \H3\
+[F19] (FILTRO2N!Extract) \AUTO\
+[F20] (FILTRO2N!o.Elementos_Nivel_2) \No sabe fallar\
+[F21] \Zameid\
 [H14] \Parte 1\
 [H16] \=i.Campo_Nivel_1\
 [H17] \=SELECCION_MARCA\
-[H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \Brand\
-[H20] \Hummer\
-[H21] \Hummer\
-[I19] \Carro\
-[I20] \H3\
-[I21] \H2\
-[J19] \Campo\
-[J20] \8.81063830658396\
-[J21] \7.26757075058705\
-[K19] \Traviesa\
-[K20] \6.30113621112\
-[K21] \4.33891429727652\
+[H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \MARCA\
+[H20] \Baic\
+[H21] \Baic\
+[I19] \AUTO\
+[I20] \Zameid\
+[I21] \No sabe fallar\
+[J19] \DATO\
+[J20] \--\
+[J21] \?\
 
 Nombres:
  [FILTRO2N!_DESTINO_NIVEL_1_VBA] =FILTRO2N!$D$19
  [FILTRO2N!_DESTINO_NIVEL_2_VBA] =FILTRO2N!$H$19
  [Captura!_FilterDatabase] =S!$A$3:$D$9
  [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$21
- [N!_FilterDatabase] =N!$A$3:$A$13
+ [N!_FilterDatabase] =N!$A$3:$C$13
  [S!_FilterDatabase] =S!$A$3:$D$9
  [CATALOGO_N] =N!$A$3:$C$13
  [CATALOGO_S] =S!$A$3:$D$9
  [FILTRO2N!Extract] =FILTRO2N!$F$19
  [FILTRO2N!FILTRO_NIVEL_2] =FILTRO2N!$H$16:$H$17
+ [FUENTE_AUTOS] =OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)
  [FUENTE_MARCAS] =OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)
  [FILTRO2N!i.Campo_Nivel_1] =FILTRO2N!$B$6
  [FILTRO2N!i.Campo_Nivel_2] =FILTRO2N!$B$7
@@ -298,7 +297,7 @@ Public Sub Actualizar_Nivel_2()
                        [_Destino_Nivel_2_VBA]
     
     'Parte 2
-    ExtraerÚnicosPorColumna "_Destino_Nivel_2_VBA", _
+    ExtraerÚnicosPorColumna Me.Name & "!" & "_Destino_Nivel_2_VBA", _
                             [i.Campo_Nivel_2], _
                             Me.Name & "!" & [_Destino_Nivel_2_VBA].Offset(0, -2).Address()
     
