@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 29/07/2016 07:38:43 p.m.
+Fecha y hora de generación: 29/07/2016 07:46:03 p.m.
 
 Resumen
 =======
@@ -30,8 +30,14 @@ Bloques: 17
  OmitirBlancos:True DatoActualEsVálido:True 
 
 
-@ A5 [1x1]
+@ A5 [1x2]
 > MARCA
+(SELECCION_MARCA) > Baic
+ DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_MARCAS,1,0,CONTEO_MARCAS,1)" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:True DatoActualEsVálido:True 
+
 
 @ A7 [1x1]
 > AUTO
@@ -131,6 +137,10 @@ Bloques: 17
 > Catálogo
 > N
 > S
+(Metacat.Rango_Nombrado) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
+> Rango Nombrado
+> CATALOGO_N
+> CATALOGO_S
 (Metacat.Campo_Marca) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
 > Campo Marca
 > MARCA
@@ -139,10 +149,6 @@ Bloques: 17
 > Campo Auto
 > AUTO
 > Carro
-(Metacat.Rango_Nombrado) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
-> Rango Nombrado
-> CATALOGO_N
-> CATALOGO_S
 
 @ L14 [2x2]
 > =Metacat.Campo_Marca
@@ -168,10 +174,10 @@ Nombres:
  [HEADER_MARCA] =Catálogo!$A$14
  [INPUT_CELLS] =Catálogo!$B$3,Catálogo!$B$5,Catálogo!$B$7
  [METACAT] =Catálogo!$P$15:$S$16
- [Metacat.Campo_Auto] =Catálogo!$R$13
- [Metacat.Campo_Marca] =Catálogo!$Q$13
+ [Metacat.Campo_Auto] =Catálogo!$S$13
+ [Metacat.Campo_Marca] =Catálogo!$R$13
  [Metacat.Catálogo] =Catálogo!$P$13
- [Metacat.Rango_Nombrado] =Catálogo!$S$13
+ [Metacat.Rango_Nombrado] =Catálogo!$Q$13
  [SELECCION_AUTO] =Catálogo!$B$7
  [SELECCION_MARCA] =Catálogo!$B$5
  [SELECCION_TIPO] =Catálogo!$B$3
@@ -189,13 +195,14 @@ Codigo:
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Sheet1] 7 líneas de código.
+[Sheet1] 8 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Private Sub Worksheet_Change(ByVal Target As Range)
     If Application.Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
     
     'Actualiza las marcas
     ExtraerÚnicosPorColumna [Metacat.Rango_Nombrado], [Metacat.Campo_Marca], [Destino_Marcas]
+    ValidarComboDV [SELECCION_MARCA]
     
 End Sub
 \\\--- END OF MODULE ---
@@ -257,16 +264,15 @@ End Sub
 
 \\\--- END OF MODULE ---
 
-[Module2] 8 líneas de código.
+[Module2] 7 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
-
-
-Sub Rig()
-    OrdenarFilasPorNombreDeColumna [Destino_Autos].CurrentRegion, "auto"
+'Si la selección de la celda no es válida, seleccionar la primera disponible.
+Sub ValidarComboDV(AValidar As Range)
+    If Not AValidar.Validation.Value Then _
+        AValidar.Value = Range(AValidar.Validation.Formula1).Cells(1)
 End Sub
-
 \\\--- END OF MODULE ---
 
 
