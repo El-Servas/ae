@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "Filtro de Catálogos a 2 Niveles.xlsm"
-Fecha y hora de generación: 30/07/2016 04:38:56 p.m.
+Fecha y hora de generación: 30/07/2016 04:45:40 p.m.
 
 Resumen
 =======
@@ -47,6 +47,7 @@ Contenido:
 [J10] \Fórmulas para DV\
 [J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
 [J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
+[J13] \(Usar el nombre de la hoja)\
 [K5] \Celda inicial del listado.\
 [K6] \Número de elementos en el listado.\
 [K7] \Celda inicial del listado.\
