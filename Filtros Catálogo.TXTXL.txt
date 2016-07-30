@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 29/07/2016 08:47:35 p.m.
+Fecha y hora de generación: 29/07/2016 09:43:06 p.m.
 
 Resumen
 =======
  * Hojas: 1
  * Nombres Definidos: 20
  * Módulos de Visual Basic: 4
- * Líneas de código VB: 81
+ * Líneas de código VB: 105
 
 Detalle
 =======
@@ -23,7 +23,7 @@ Bloques: 18
 
 @ A3 [1x2]
 > TIPO
-(SELECCION_TIPO) > S
+(SELECCION_TIPO) > N
  DataValidation: Lista. [Fuente:"=OFFSET(METACAT,0,0,,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -32,7 +32,7 @@ Bloques: 18
 
 @ A5 [1x2]
 > MARCA
-(SELECCION_MARCA) > Chevrolet
+(SELECCION_MARCA) > Baic
  DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_MARCAS,1,0,CONTEO_MARCAS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -41,7 +41,7 @@ Bloques: 18
 
 @ A7 [1x2]
 > AUTO
-(SELECCION_AUTO) > Chevy
+(SELECCION_AUTO) > Mameid
  DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_AUTOS,1,1,CONTEO_AUTOS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -110,12 +110,12 @@ Bloques: 18
 > Chevrolet
 > Chevrolet
 > Carro
-> H2
 > H3
+> H2
+> Ka
 > Exploter
-> KaKa
-> Chevy
 > Spank
+> Chevy
 > Campo
 > 8.81063830658396
 > 7.26757075058705
@@ -131,25 +131,20 @@ Bloques: 18
 > 6.10761154948007
 > 7.30097305044152
 
-@ L17 [3x4]
-(DESTINO_AUTOS) > Brand
-> Chevrolet
-> Chevrolet
-> Carro
-> Chevy
-> Spank
-> Campo
-> 6.13038631666927
-> 6.21706932805607
-> Traviesa
-> 6.10761154948007
-> 7.30097305044152
+@ L17 [2x3]
+(DESTINO_AUTOS) > MARCA
+> Baic
+> AUTO
+> Mameid
+> DATO
+> --
 
-@ J17 [4x1]
-(DESTINO_MARCAS) > Brand
-> Chevrolet
-> Ford
-> Hummer
+@ J17 [5x1]
+(DESTINO_MARCAS) > MARCA
+> Baic
+> Honda
+> Nissan
+> Toyota
 
 @ Q13 [4x4]
 (Metacat.Catálogo) > =SELECCION_TIPO
@@ -181,7 +176,7 @@ Bloques: 18
 
 
 Nombres:
- [Catálogo!_FilterDatabase] =Catálogo!$E$14:$H$20
+ [Catálogo!_FilterDatabase] =Catálogo!$A$14:$C$23
  [CATALOGO_N] =Catálogo!$A$14:$C$23
  [CATALOGO_S] =Catálogo!$E$14:$H$20
  [CONDICION_MARCA] =Catálogo!$L$14:$L$15
@@ -190,7 +185,7 @@ Nombres:
  [Catálogo!Criteria] =Catálogo!$L$14:$L$15
  [DESTINO_AUTOS] =Catálogo!$L$17
  [DESTINO_MARCAS] =Catálogo!$J$17
- [Catálogo!Extract] =Catálogo!$L$17:$O$17
+ [Catálogo!Extract] =Catálogo!$L$17:$N$17
  [HEADER_MARCA] =Catálogo!$A$14
  [INPUT_CELLS] =Catálogo!$B$3,Catálogo!$B$5,Catálogo!$B$7
  [METACAT] =Catálogo!$Q$15:$T$16
@@ -215,28 +210,35 @@ Codigo:
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Sheet1] 17 líneas de código.
+[Sheet1] 24 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Private Sub Worksheet_Change(ByVal Target As Range)
+On Error GoTo ErrHan
     If Application.Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
     
-    'Actualiza las marcas
+    Debug.Print "Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
+        
+    Debug.Print "Actualizando Marcas..." 'Actualiza las marcas
     ExtraerÚnicosPorColumna [Metacat.Rango_Nombrado], _
                             [Metacat.Campo_Marca], _
                             [Destino_Marcas]
     ValidarComboDV [SELECCION_MARCA]
     
-    'Actualiza los autos
+    Debug.Print "Actualizando Autos..." 'Actualiza los autos
     ExtraerPorCriteria [Metacat.Rango_Nombrado], _
                        [Condicion_Marca], _
-                       [Destino_Autos], _
+                       [DESTINO_AUTOS], _
                        [Metacat.Campo_Auto]
     ValidarComboDV [SELECCION_AUTO]
+    
+ErrHan:
+    If Err.Number <> 0 Then _
+        Debug.Print Err.Number & " - " & Err.Description
 End Sub
 
 \\\--- END OF MODULE ---
 
-[Module1] 57 líneas de código.
+[Module1] 59 líneas de código.
 ///--- BEGINNING OF MODULE ---
 'Lista única de Marcas
 Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, RgDestino As Range)
@@ -277,6 +279,8 @@ Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
                           rgAOrdenar, _
                           rgAOrdenar.Offset(1, 0))
     
+    If rgKey Is Nothing Then Exit Sub 'No hay filas?
+    
     With rgAOrdenar.Parent.Sort
         .SortFields.Clear
         
@@ -297,14 +301,29 @@ End Sub
 
 \\\--- END OF MODULE ---
 
-[Module2] 7 líneas de código.
+[Module2] 22 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
 'Si la selección de la celda no es válida, seleccionar la primera disponible.
 Sub ValidarComboDV(AValidar As Range)
-    If Not AValidar.Validation.Value Then _
-        AValidar.Value = Range(AValidar.Validation.Formula1).Cells(1)
+    
+    Debug.Print "Validando " & AValidar.Name.Name & " [" & AValidar.Value & "]"
+    
+    If Not AValidar.Validation.Value Then
+        
+        On Error Resume Next 'Si no hay un rango válido, ocurre un error y el objeto 'Is Nothing'
+        Dim rgOpcionesVálidas As Range: Set rgOpcionesVálidas = Range(AValidar.Validation.Formula1)
+        On Error GoTo 0
+        
+        Dim NewValue: NewValue = ""
+        If Not rgOpcionesVálidas Is Nothing Then _
+            NewValue = rgOpcionesVálidas.Cells(1)
+        Debug.Print "...No Válido. Asignado [" & NewValue & "]"
+        AValidar.Value = NewValue
+    Else
+        Debug.Print "...Válido"
+    End If
 End Sub
 \\\--- END OF MODULE ---
 
