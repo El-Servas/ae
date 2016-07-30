@@ -1,10 +1,10 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 30/07/2016 03:02:33 p.m.
+Fecha y hora de generación: 30/07/2016 03:08:56 p.m.
 
 Resumen
 =======
  * Hojas: 5
- * Nombres Definidos: 27
+ * Nombres Definidos: 28
  * Módulos de Visual Basic: 9
  * Líneas de código VB: 146
 
@@ -24,17 +24,17 @@ Contenido:
 [A3] \TIPO\
 [A5] \MARCA\
 [A7] \AUTO\
-[B3] (SELECCION_TIPO) \Siu\
+[B3] (SELECCION_TIPO) \Niu\
  DataValidation: Lista. [Fuente:"=$D$3:$D$4" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B5] (SELECCION_MARCA) \Baic\
- DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_NIVEL_1,1,0,CONTEO_NIVEL_1,1)" ListaEnCelda:True ]
+[B5] (SELECCION_MARCA) \Honda\
+ DataValidation: Lista. [Fuente:"=LISTADO_MARCAS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
- OmitirBlancos:False DatoActualEsVálido:False 
+ OmitirBlancos:False DatoActualEsVálido:True 
 
 [B7] (SELECCION_AUTO) \No sabe fallar\
  DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_NIVEL_2,1,-2,CONTEO_NIVEL_2,1)" ListaEnCelda:True ]
@@ -172,14 +172,15 @@ Contenido:
 [D12] \Nivel 1\
 [D16] \Conteo\
 [D17] (FILTRO2N!CONTEO_NIVEL_1) \=COUNTA(D20:D23)\
-[D19] (FILTRO2N!DESTINO_NIVEL_1) \Brand\
-[D20] \Hummer\
-[D21] \Ford\
-[D22] \Chevrolet\
+[D19] (FILTRO2N!DESTINO_NIVEL_1) \MARCA\
+[D20] \Honda\
+[D21] \Nissan\
+[D22] \Toyota\
+[D23] \Baic\
 [F12] \Nivel 2\
 [F14] \Parte 2\
-[F16] \Conteo\
 [FILTRO2N]
+[F16] \Conteo\
 [F17] (FILTRO2N!CONTEO_NIVEL_2) \=COUNTA(F20:F23)\
 [F19] \AUTO\
 [F20] \No sabe fallar\
@@ -222,6 +223,7 @@ Nombres:
  [Captura!Listado.Catálogo] =Captura!$D$1
  [Listados!Listado.Catálogo] =Captura!$D$1
  [Listado.Ubicación] =Captura!$E$1
+ [LISTADO_MARCAS] =OFFSET(FILTRO2N!DESTINO_NIVEL_1,1,0,10,1)
  [SELECCION_AUTO] =Captura!$B$7
  [SELECCION_MARCA] =Captura!$B$5
  [SELECCION_TIPO] =Captura!$B$3
@@ -232,12 +234,12 @@ Módulos VBA:
  [ThisWorkbook] Tipo: 100
  [Sheet1] Tipo: 100
  [Module2] Tipo: 1
- [Sheet2] Tipo: 100
+ [Filtro2N] Tipo: 100
  [Sheet3] Tipo: 100
  [Sheet4] Tipo: 100
  [EventHandlers] Tipo: 1
  [Sheet5] Tipo: 100
- [FILTRO2N] Tipo: 1
+ [Filtro2N_Support] Tipo: 1
 
 Codigo:
 [ThisWorkbook] 0 líneas de código.
@@ -278,7 +280,7 @@ Sub ValidarComboDV(AValidar As Range)
 End Sub
 \\\--- END OF MODULE ---
 
-[Sheet2] 8 líneas de código.
+[Filtro2N] 8 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -353,7 +355,7 @@ Option Explicit
 
 \\\--- END OF MODULE ---
 
-[FILTRO2N] 65 líneas de código.
+[Filtro2N_Support] 65 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
