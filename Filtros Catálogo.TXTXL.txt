@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 29/07/2016 07:03:45 p.m.
+Fecha y hora de generación: 29/07/2016 07:38:43 p.m.
 
 Resumen
 =======
  * Hojas: 1
- * Nombres Definidos: 13
+ * Nombres Definidos: 19
  * Módulos de Visual Basic: 4
- * Líneas de código VB: 56
+ * Líneas de código VB: 68
 
 Detalle
 =======
@@ -16,7 +16,7 @@ Hojas:
 
 Contenido:
 [Catálogo]
-Bloques: 14
+Bloques: 17
 
 @ A1 [1x1]
 > Captura
@@ -24,7 +24,7 @@ Bloques: 14
 @ A3 [1x2]
 > TIPO
 (SELECCION_TIPO) > N
- DataValidation: Lista. [Fuente:"N, S" ListaEnCelda:True ]
+ DataValidation: Lista. [Fuente:"=OFFSET(METACAT,0,0,,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:True DatoActualEsVálido:True 
@@ -41,6 +41,9 @@ Bloques: 14
 
 @ J10 [1x1]
 > Zona de Búsquedas
+
+@ P10 [1x1]
+> Meta Catálogo
 
 @ A12 [1x1]
 > Catálogo N
@@ -87,14 +90,14 @@ Bloques: 14
 > b
 
 @ E14 [7x4]
-> Marca
+> Brand
 > Hummer
 > Hummer
 > Ford
 > Ford
 > Chevrolet
 > Chevrolet
-> Auto
+> Carro
 > H2
 > H3
 > Exploter
@@ -116,28 +119,59 @@ Bloques: 14
 > 6.10761154948007
 > 7.30097305044152
 
-@ J14 [2x1]
-> Conteo
-(CONTEO_MARCAS) > =COUNTA(E18:E1048576)
+@ J17 [5x1]
+(DESTINO_MARCAS) > MARCA
+> Baic
+> Honda
+> Nissan
+> Toyota
+
+@ P13 [4x4]
+(Metacat.Catálogo) > =SELECCION_TIPO
+> Catálogo
+> N
+> S
+(Metacat.Campo_Marca) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
+> Campo Marca
+> MARCA
+> Brand
+(Metacat.Campo_Auto) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
+> Campo Auto
+> AUTO
+> Carro
+(Metacat.Rango_Nombrado) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
+> Rango Nombrado
+> CATALOGO_N
+> CATALOGO_S
 
 @ L14 [2x2]
-> Marca
+> =Metacat.Campo_Marca
 > =SELECCION_MARCA
 > Conteo
-(CONTEO_AUTOS) > =COUNTA(G18:G1048576)
+(CONTEO_AUTOS) > =COUNTA(M18:M1048576)
+
+@ J14 [2x1]
+> Conteo
+(CONTEO_MARCAS) > =COUNTA(J18:J1048576)
 
 
 Nombres:
- [Catálogo!_FilterDatabase] =Catálogo!$A$14:$C$1048576
- [CATALOGO] =Catálogo!$A$14:$C$1048576
+ [Catálogo!_FilterDatabase] =Catálogo!$A$14:$A$23
+ [CATALOGO_N] =Catálogo!$A$14:$C$23
+ [CATALOGO_S] =Catálogo!$E$14:$H$20
  [CONDICION_MARCA] =Catálogo!$L$14:$L$15
  [CONTEO_AUTOS] =Catálogo!$M$15
  [CONTEO_MARCAS] =Catálogo!$J$15
- [Catálogo!Criteria] =Catálogo!$L$14:$L$15
  [DESTINO_AUTOS] =Catálogo!$L$17
  [DESTINO_MARCAS] =Catálogo!$J$17
- [Catálogo!Extract] =Catálogo!$L$17:$N$17
+ [Catálogo!Extract] =Catálogo!$J$17
  [HEADER_MARCA] =Catálogo!$A$14
+ [INPUT_CELLS] =Catálogo!$B$3,Catálogo!$B$5,Catálogo!$B$7
+ [METACAT] =Catálogo!$P$15:$S$16
+ [Metacat.Campo_Auto] =Catálogo!$R$13
+ [Metacat.Campo_Marca] =Catálogo!$Q$13
+ [Metacat.Catálogo] =Catálogo!$P$13
+ [Metacat.Rango_Nombrado] =Catálogo!$S$13
  [SELECCION_AUTO] =Catálogo!$B$7
  [SELECCION_MARCA] =Catálogo!$B$5
  [SELECCION_TIPO] =Catálogo!$B$3
@@ -155,21 +189,30 @@ Codigo:
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Sheet1] 0 líneas de código.
+[Sheet1] 7 líneas de código.
 ///--- BEGINNING OF MODULE ---
+Private Sub Worksheet_Change(ByVal Target As Range)
+    If Application.Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
+    
+    'Actualiza las marcas
+    ExtraerÚnicosPorColumna [Metacat.Rango_Nombrado], [Metacat.Campo_Marca], [Destino_Marcas]
+    
+End Sub
 \\\--- END OF MODULE ---
 
-[Module1] 20 líneas de código.
+[Module1] 53 líneas de código.
 ///--- BEGINNING OF MODULE ---
 'Lista única de Marcas
-Sub Actualizar_Marcas()
+Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, RgDestino As Range)
     'Limpiamos resultados previos
-    [Destino_Marcas].CurrentRegion.ClearContents
+    RgDestino.CurrentRegion.ClearContents
 
-    'Se especifica a mano la columna de la marca (Con un Rango Nombrado)
-    Intersect([HEADER_MARCA].CurrentRegion, [HEADER_MARCA].EntireColumn).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[Destino_Marcas], Unique:=True, criteriaRange:=""
+    'Determinamos la columna a extraer los valores únicos
+    Dim rgHeader: Set rgHeader = Range(NomRangoNombrado).Rows(1).Find(NomColumna)
     
-    OrdenarFilasPorNombreDeColumna [Destino_Marcas].CurrentRegion, "marca"
+    Intersect(rgHeader.CurrentRegion, rgHeader.EntireColumn).AdvancedFilter Action:=xlFilterCopy, CopyToRange:=[Destino_Marcas], Unique:=True, criteriaRange:=""
+    
+    OrdenarFilasPorNombreDeColumna RgDestino.CurrentRegion, NomColumna
 End Sub
 
 'Lista filtrada por una Marca particular
@@ -181,11 +224,6 @@ Sub Actualizar_Autos()
     
     OrdenarFilasPorNombreDeColumna [Destino_Autos].CurrentRegion, "auto"
 End Sub
-\\\--- END OF MODULE ---
-
-[Module2] 36 líneas de código.
-///--- BEGINNING OF MODULE ---
-Option Explicit
 
 Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
     'Determinar la columna de ordenamiento
@@ -216,6 +254,14 @@ Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
     End With
     
 End Sub
+
+\\\--- END OF MODULE ---
+
+[Module2] 8 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+
 
 Sub Rig()
     OrdenarFilasPorNombreDeColumna [Destino_Autos].CurrentRegion, "auto"
