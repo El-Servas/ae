@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 30/07/2016 01:09:46 p.m.
+Fecha y hora de generación: 30/07/2016 01:21:50 p.m.
 
 Resumen
 =======
  * Hojas: 4
  * Nombres Definidos: 21
  * Módulos de Visual Basic: 8
- * Líneas de código VB: 122
+ * Líneas de código VB: 131
 
 Detalle
 =======
@@ -36,7 +36,7 @@ Contenido:
  OmitirBlancos:False DatoActualEsVálido:True 
 
 [B7] (SELECCION_AUTO) \No sabe fallar\
- DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_AUTOS,1,1,CONTEO_AUTOS,1)" ListaEnCelda:True ]
+ DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_AUTOS,1,-2,CONTEO_AUTOS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
@@ -84,13 +84,13 @@ Contenido:
 [E19] \Baic\
 [E20] \Baic\
 [F18] \AUTO\
-[F19] \No sabe fallar\
-[F20] \Zameid\
+[F19] \Zameid\
+[F20] \No sabe fallar\
 [G1] \Consideraciones\
 [G3] \La [Metacat.Ubicación] debe de poder ser accesible usando "notación global"\
 [G18] \DATO\
-[G19] \?\
-[G20] \--\
+[G19] \--\
+[G20] \?\
 
 [N]
 [A1] \Catálogo N\
@@ -106,14 +106,14 @@ Contenido:
 [A12] \Honda\
 [A13] \Baic\
 [B3] \AUTO\
-[B4] \Accord\
+[B4] \Fit\
 [B5] \Civic\
 [B6] \Sentra\
 [B7] \Ventra\
 [B8] \CRV\
 [B9] \TuHoyota\
 [B10] \Zameid\
-[B11] \Fit\
+[B11] \Accord\
 [B12] \Civic\
 [B13] \No sabe fallar\
 [C3] \DATO\
@@ -209,7 +209,7 @@ End Sub
 
 \\\--- END OF MODULE ---
 
-[Module1] 64 líneas de código.
+[Module1] 60 líneas de código.
 ///--- BEGINNING OF MODULE ---
 'Lista única de Marcas
 Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, RgDestino As Range)
@@ -225,12 +225,10 @@ Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, Rg
                                                     CopyToRange:=RgDestino, _
                                                     Unique:=True, _
                                                     criteriaRange:=""
-    
-    OrdenarFilasPorNombreDeColumna RgDestino.CurrentRegion, NomColumna
 End Sub
 
 'Lista filtrada por una Marca particular
-Sub ExtraerPorCriteria(NomRangoNombrado As String, RgCriteria As Range, RgDestino As Range, Optional NomColumnaOrdenar As String)
+Sub ExtraerPorCriteria(NomRangoNombrado As String, RgCriteria As Range, RgDestino As Range)
     'Limpiamos resultados previos
     RgDestino.CurrentRegion.ClearContents
     
@@ -238,12 +236,10 @@ Sub ExtraerPorCriteria(NomRangoNombrado As String, RgCriteria As Range, RgDestin
                                            criteriaRange:=RgCriteria, _
                                            CopyToRange:=RgDestino, _
                                            Unique:=True
-    
-    If NomColumnaOrdenar <> "" Then _
-        OrdenarFilasPorNombreDeColumna RgDestino.CurrentRegion, NomColumnaOrdenar
 End Sub
 
 Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
+    Set rgAOrdenar = rgAOrdenar.CurrentRegion
     'Determinar la columna de ordenamiento
     Dim rgHeader: Set rgHeader = rgAOrdenar.Rows(1).Find(NomColumna)
         
@@ -315,7 +311,7 @@ End Sub
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 32 líneas de código.
+[EventHandlers] 45 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Sub Captura_Change(ByVal Target As Range)
 On Error GoTo ErrHan
@@ -325,29 +321,42 @@ On Error GoTo ErrHan
     
     ValidarComboDV [SELECCION_TIPO]
         
-    Debug.Print "Actualizando Marcas..." 'Actualiza las marcas
+    Call Actualizar_Marcas
+    
+    Call Actualizar_Autos
+    
+ErrHan:
+    If Err.Number <> 0 Then _
+        Debug.Print Err.Number & " - " & Err.Description
+End Sub
+
+Sub Actualizar_Marcas()
+    Debug.Print "Actualizando Marcas..."
+    
     ExtraerÚnicosPorColumna [Metacat.Ubicación], _
                             [Metacat.Campo_Marca], _
                             [Destino_Marcas]
-    ValidarComboDV [SELECCION_MARCA]
     
-    Debug.Print "Actualizando Autos..." 'Actualiza los autos
+    OrdenarFilasPorNombreDeColumna [Destino_Marcas], [Metacat.Campo_Marca]
+    
+    ValidarComboDV [SELECCION_MARCA]
+End Sub
+
+Sub Actualizar_Autos()
+    Debug.Print "Actualizando Autos..."
+    
     'Parte 1
     ExtraerPorCriteria [Metacat.Ubicación], _
                        [Condicion_Marca], _
-                       [DESTINO_AUTOS], _
-                       [Metacat.Campo_Auto]
+                       [DESTINO_AUTOS]
     
     'Parte 2
     ExtraerÚnicosPorColumna "Destino_Autos", _
                             [Metacat.Campo_Auto], _
                             [DESTINO_AUTOS].Offset(0, -2)
-                            
-    ValidarComboDV [SELECCION_AUTO]
     
-ErrHan:
-    If Err.Number <> 0 Then _
-        Debug.Print Err.Number & " - " & Err.Description
+    OrdenarFilasPorNombreDeColumna [DESTINO_AUTOS].Offset(0, -2), [Metacat.Campo_Auto]
+    ValidarComboDV [SELECCION_AUTO]
 End Sub
 \\\--- END OF MODULE ---
 
