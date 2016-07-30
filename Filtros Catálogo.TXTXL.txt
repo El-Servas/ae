@@ -1,10 +1,10 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 29/07/2016 06:32:51 p.m.
+Fecha y hora de generación: 29/07/2016 07:03:45 p.m.
 
 Resumen
 =======
  * Hojas: 1
- * Nombres Definidos: 11
+ * Nombres Definidos: 13
  * Módulos de Visual Basic: 4
  * Líneas de código VB: 56
 
@@ -16,24 +16,45 @@ Hojas:
 
 Contenido:
 [Catálogo]
-Bloques: 10
+Bloques: 14
 
 @ A1 [1x1]
 > Captura
 
-@ A3 [1x1]
-> MARCA
+@ A3 [1x2]
+> TIPO
+(SELECCION_TIPO) > N
+ DataValidation: Lista. [Fuente:"N, S" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:True DatoActualEsVálido:True 
+
 
 @ A5 [1x1]
+> MARCA
+
+@ A7 [1x1]
 > AUTO
 
-@ A8 [1x1]
+@ A10 [1x1]
 > Catálogos
 
-@ E8 [1x1]
+@ J10 [1x1]
 > Zona de Búsquedas
 
-@ A10 [10x3]
+@ A12 [1x1]
+> Catálogo N
+
+@ E12 [1x1]
+> Catálogo S
+
+@ J12 [1x1]
+> Marcas
+
+@ L12 [1x1]
+> Autos
+
+@ A14 [10x3]
 (HEADER_MARCA) > MARCA
 > Honda
 > Honda
@@ -65,35 +86,61 @@ Bloques: 10
 > x
 > b
 
-@ E10 [1x1]
-> Marcas
+@ E14 [7x4]
+> Marca
+> Hummer
+> Hummer
+> Ford
+> Ford
+> Chevrolet
+> Chevrolet
+> Auto
+> H2
+> H3
+> Exploter
+> KaKa
+> Chevy
+> Spank
+> Campo
+> 8.81063830658396
+> 7.26757075058705
+> 1.17157911971267
+> 4.03875095145369
+> 6.13038631666927
+> 6.21706932805607
+> Traviesa
+> 6.30113621112
+> 4.33891429727652
+> 4.98945367454637
+> 3.33697476316045
+> 6.10761154948007
+> 7.30097305044152
 
-@ G10 [1x1]
-> Autos
-
-@ E12 [2x1]
+@ J14 [2x1]
 > Conteo
-(CONTEO_MARCAS) > =COUNTA(E16:E1048576)
+(CONTEO_MARCAS) > =COUNTA(E18:E1048576)
 
-@ G12 [2x2]
+@ L14 [2x2]
 > Marca
 > =SELECCION_MARCA
 > Conteo
-(CONTEO_AUTOS) > =COUNTA(G16:G1048576)
+(CONTEO_AUTOS) > =COUNTA(G18:G1048576)
 
 
 Nombres:
- [Catálogo!_FilterDatabase] =Catálogo!$A$10:$C$1048576
- [CATALOGO] =Catálogo!$A$10:$C$1048576
- [CONDICION_MARCA] =Catálogo!$G$12:$G$13
- [CONTEO_AUTOS] =Catálogo!$H$13
- [CONTEO_MARCAS] =Catálogo!$E$13
- [Catálogo!Criteria] =Catálogo!$G$12:$G$13
- [DESTINO_AUTOS] =Catálogo!$G$15
- [DESTINO_MARCAS] =Catálogo!$E$15
- [Catálogo!Extract] =Catálogo!$G$15:$I$15
- [HEADER_MARCA] =Catálogo!$A$10
- [SELECCION_MARCA] =Catálogo!$B$3
+ [Catálogo!_FilterDatabase] =Catálogo!$A$14:$C$1048576
+ [CATALOGO] =Catálogo!$A$14:$C$1048576
+ [CONDICION_MARCA] =Catálogo!$L$14:$L$15
+ [CONTEO_AUTOS] =Catálogo!$M$15
+ [CONTEO_MARCAS] =Catálogo!$J$15
+ [Catálogo!Criteria] =Catálogo!$L$14:$L$15
+ [DESTINO_AUTOS] =Catálogo!$L$17
+ [DESTINO_MARCAS] =Catálogo!$J$17
+ [Catálogo!Extract] =Catálogo!$L$17:$N$17
+ [HEADER_MARCA] =Catálogo!$A$14
+ [SELECCION_AUTO] =Catálogo!$B$7
+ [SELECCION_MARCA] =Catálogo!$B$5
+ [SELECCION_TIPO] =Catálogo!$B$3
 
 Nombre del proyecto VB: [VBAProject]
 
