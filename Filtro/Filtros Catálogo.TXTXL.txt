@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 30/07/2016 03:59:09 p.m.
+Fecha y hora de generación: 30/07/2016 04:30:04 p.m.
 
 Resumen
 =======
@@ -29,13 +29,13 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B5] (SELECCION_MARCA) \Baic\
+[B5] (SELECCION_MARCA) \Honda\
  DataValidation: Lista. [Fuente:"=FUENTE_MARCAS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B7] (SELECCION_AUTO) \No sabe fallar\
+[B7] (SELECCION_AUTO) \CRV\
  DataValidation: Lista. [Fuente:"=FUENTE_AUTOS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -53,33 +53,10 @@ Contenido:
 [F2] \Campo Marca\
 [F3] \MARCA\
 [F4] \Brand\
-[F6] \MARCAS\
-[F8] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[F9] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[F10] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[F11] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[F12] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[Captura]
-[F13] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[F14] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[F15] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[F16] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
-[F17] \=OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)\
 [G1] (Listado.Campo_Auto) \=VLOOKUP(Listado.Catálogo,Listado,COLUMN()-COLUMN(Listado.Catálogo)+1,0)\
 [G2] \Campo Auto\
 [G3] \AUTO\
 [G4] \Carro\
-[G6] \AUTOS\
-[G8] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G9] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G10] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G11] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G12] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G13] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G14] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G15] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G16] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
-[G17] \=OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)\
 
 [N]
 [A1] \Catálogo N\
@@ -181,26 +158,47 @@ Contenido:
 [F16] \Conteo\
 [F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F23)\
 [F19] (FILTRO2N!Extract) \AUTO\
-[F20] (FILTRO2N!o.Elementos_Nivel_2) \No sabe fallar\
-[F21] \Zameid\
+[F20] (FILTRO2N!o.Elementos_Nivel_2) \Accord\
+[F21] \Civic\
+[F22] \CRV\
+[F23] \Fit\
 [H14] \Parte 1\
 [H16] \=i.Campo_Nivel_1\
 [H17] \=SELECCION_MARCA\
 [H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \MARCA\
-[H20] \Baic\
-[H21] \Baic\
+[H20] \Honda\
+[H21] \Honda\
+[H22] \Honda\
+[H23] \Honda\
 [I19] \AUTO\
-[I20] \Zameid\
-[I21] \No sabe fallar\
+[I20] \Fit\
+[I21] \Civic\
+[I22] \CRV\
+[I23] \Accord\
+[J4] \Resultados (descripción)\
+[J5] \o.Elementos_Nivel_1\
+[J6] \o.Conteo_Nivel_1\
+[J7] \o.Elementos_Nivel_2\
+[FILTRO2N]
+[J8] \o.Conteo_Nivel_2\
+[J10] \Fórmulas para DV\
+[J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
+[J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
 [J19] \DATO\
-[J20] \--\
-[J21] \?\
+[J20] \a\
+[J21] \b\
+[J22] \e\
+[J23] \x\
+[K5] \Celda inicial del listado.\
+[K6] \Número de elementos en el listado.\
+[K7] \Celda inicial del listado.\
+[K8] \Número de elementos en el listado.\
 
 Nombres:
  [FILTRO2N!_DESTINO_NIVEL_1_VBA] =FILTRO2N!$D$19
  [FILTRO2N!_DESTINO_NIVEL_2_VBA] =FILTRO2N!$H$19
  [Captura!_FilterDatabase] =S!$A$3:$D$9
- [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$21
+ [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$23
  [N!_FilterDatabase] =N!$A$3:$C$13
  [S!_FilterDatabase] =S!$A$3:$D$9
  [CATALOGO_N] =N!$A$3:$C$13
@@ -247,7 +245,7 @@ Codigo:
 [Sheet1] 4 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Private Sub Worksheet_Change(ByVal Target As Range)
-    'Captura_Change Target
+    Captura_Change Target
 End Sub
 
 \\\--- END OF MODULE ---
