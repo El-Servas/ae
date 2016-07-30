@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 30/07/2016 11:39:16 a.m.
+Fecha y hora de generación: 30/07/2016 12:14:38 p.m.
 
 Resumen
 =======
  * Hojas: 4
  * Nombres Definidos: 22
- * Módulos de Visual Basic: 7
- * Líneas de código VB: 107
+ * Módulos de Visual Basic: 8
+ * Líneas de código VB: 110
 
 Detalle
 =======
@@ -29,13 +29,13 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B5] (SELECCION_MARCA) \Baic\
+[B5] (SELECCION_MARCA) \Nissan\
  DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_MARCAS,1,0,CONTEO_MARCAS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B7] (SELECCION_AUTO) \No sabe fallar\
+[B7] (SELECCION_AUTO) \Sentra\
  DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_AUTOS,1,1,CONTEO_AUTOS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -57,9 +57,9 @@ Contenido:
 [A18] \Honda\
 [A19] \Nissan\
 [A20] \Toyota\
-[B3] (Metacat.Rango_Nombrado) \=VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)\
-[B4] \Rango Nombrado\
-[B5] \CATALOGO_N\
+[B3] (Metacat.Ubicación) \=VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)\
+[B4] \Ubicación\
+[B5] \N!A3:C13\
 [B6] \CATALOGO_S\
 [C3] (Metacat.Campo_Marca) \=VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)\
 [C4] \Campo Marca\
@@ -70,8 +70,8 @@ Contenido:
 [C14] \=SELECCION_MARCA\
 [Listados]
 [C16] (DESTINO_AUTOS) \MARCA\
-[C17] \Baic\
-[C18] \Baic\
+[C17] \Nissan\
+[C18] \Nissan\
 [D3] (Metacat.Campo_Auto) \=VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)\
 [D4] \Campo Auto\
 [D5] \AUTO\
@@ -79,13 +79,13 @@ Contenido:
 [D13] \Conteo\
 [D14] (CONTEO_AUTOS) \=COUNTA(D17:D1048576)\
 [D16] \AUTO\
-[D17] \No sabe fallar\
-[D18] \Zameid\
+[D17] \Sentra\
+[D18] \Ventra\
 [E16] \DATO\
-[E17] \?\
-[E18] \--\
+[E17] \c\
+[E18] \d\
 [G1] \Consideraciones\
-[G3] \Los Rangos Nombrados que define la celda [Metacat.Rango_Nombrado] deben de ser globales.\
+[G3] \La [Metacat.Ubicación] debe de poder ser accesible usando "notación global"\
 [G4] \El Combo de Autos siempre apunta a la segunda columna de la zona de resultados de auto. \
 
 [N]
@@ -176,7 +176,7 @@ Nombres:
  [Metacat.Campo_Auto] =Listados!$D$3
  [Metacat.Campo_Marca] =Listados!$C$3
  [Metacat.Catálogo] =Listados!$A$3
- [Metacat.Rango_Nombrado] =Listados!$B$3
+ [Metacat.Ubicación] =Listados!$B$3
  [SELECCION_AUTO] =Captura!$B$7
  [SELECCION_MARCA] =Captura!$B$5
  [SELECCION_TIPO] =Captura!$B$3
@@ -191,38 +191,17 @@ Módulos VBA:
  [Sheet2] Tipo: 100
  [Sheet3] Tipo: 100
  [Sheet4] Tipo: 100
+ [EventHandlers] Tipo: 1
 
 Codigo:
 [ThisWorkbook] 0 líneas de código.
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[Sheet1] 26 líneas de código.
+[Sheet1] 4 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Private Sub Worksheet_Change(ByVal Target As Range)
-On Error GoTo ErrHan
-    If Application.Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
-    
-    Debug.Print "Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
-    
-    ValidarComboDV [SELECCION_TIPO]
-        
-    Debug.Print "Actualizando Marcas..." 'Actualiza las marcas
-    ExtraerÚnicosPorColumna [Metacat.Rango_Nombrado], _
-                            [Metacat.Campo_Marca], _
-                            [Destino_Marcas]
-    ValidarComboDV [SELECCION_MARCA]
-    
-    Debug.Print "Actualizando Autos..." 'Actualiza los autos
-    ExtraerPorCriteria [Metacat.Rango_Nombrado], _
-                       [Condicion_Marca], _
-                       [DESTINO_AUTOS], _
-                       [Metacat.Campo_Auto]
-    ValidarComboDV [SELECCION_AUTO]
-    
-ErrHan:
-    If Err.Number <> 0 Then _
-        Debug.Print Err.Number & " - " & Err.Description
+    Captura_Change Target
 End Sub
 
 \\\--- END OF MODULE ---
@@ -328,6 +307,35 @@ End Sub
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
+[EventHandlers] 25 líneas de código.
+///--- BEGINNING OF MODULE ---
+Sub Captura_Change(ByVal Target As Range)
+On Error GoTo ErrHan
+    If Application.Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
+    
+    Debug.Print "Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
+    
+    ValidarComboDV [SELECCION_TIPO]
+        
+    Debug.Print "Actualizando Marcas..." 'Actualiza las marcas
+    ExtraerÚnicosPorColumna [Metacat.Ubicación], _
+                            [Metacat.Campo_Marca], _
+                            [Destino_Marcas]
+    ValidarComboDV [SELECCION_MARCA]
+    
+    Debug.Print "Actualizando Autos..." 'Actualiza los autos
+    ExtraerPorCriteria [Metacat.Ubicación], _
+                       [Condicion_Marca], _
+                       [DESTINO_AUTOS], _
+                       [Metacat.Campo_Auto]
+    ValidarComboDV [SELECCION_AUTO]
+    
+ErrHan:
+    If Err.Number <> 0 Then _
+        Debug.Print Err.Number & " - " & Err.Description
+End Sub
+\\\--- END OF MODULE ---
 
-** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
+
+** Fin del proceso de exportación. Proceso realizado en 0.02 minutos. **
 ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
