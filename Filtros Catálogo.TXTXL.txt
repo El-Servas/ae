@@ -1,209 +1,185 @@
 Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 30/07/2016 10:59:04 a.m.
+Fecha y hora de generación: 30/07/2016 11:39:16 a.m.
 
 Resumen
 =======
- * Hojas: 1
- * Nombres Definidos: 20
- * Módulos de Visual Basic: 4
+ * Hojas: 4
+ * Nombres Definidos: 22
+ * Módulos de Visual Basic: 7
  * Líneas de código VB: 107
 
 Detalle
 =======
 
 Hojas:
- [Catálogo]
+ [Captura]
+ [Listados]
+ [N]
+ [S]
 
 Contenido:
-[Catálogo]
-Bloques: 18
-
-@ A1 [1x1]
-> Captura
-
-@ A3 [1x2]
-> TIPO
-(SELECCION_TIPO) > S
+[Captura]
+[A1] \Captura\
+[A3] \TIPO\
+[A5] \MARCA\
+[A7] \AUTO\
+[B3] (SELECCION_TIPO) \N\
  DataValidation: Lista. [Fuente:"=OFFSET(METACAT,0,0,,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-
-@ A5 [1x2]
-> MARCA
-(SELECCION_MARCA) > Chevrolet
+[B5] (SELECCION_MARCA) \Baic\
  DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_MARCAS,1,0,CONTEO_MARCAS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-
-@ A7 [1x2]
-> AUTO
-(SELECCION_AUTO) > Chevy
+[B7] (SELECCION_AUTO) \No sabe fallar\
  DataValidation: Lista. [Fuente:"=OFFSET(DESTINO_AUTOS,1,1,CONTEO_AUTOS,1)" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
 
-@ A10 [1x1]
-> Catálogos
+[Listados]
+[A1] \Listados\
+[A3] (Metacat.Catálogo) \=SELECCION_TIPO\
+[A4] \Catálogo\
+[A5] \N\
+[A6] \S\
+[A9] \Zona de Resultados\
+[A11] \Marcas\
+[A13] \Conteo\
+[A14] (CONTEO_MARCAS) \=COUNTA(A17:A1048576)\
+[A16] (DESTINO_MARCAS) \MARCA\
+[A17] \Baic\
+[A18] \Honda\
+[A19] \Nissan\
+[A20] \Toyota\
+[B3] (Metacat.Rango_Nombrado) \=VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)\
+[B4] \Rango Nombrado\
+[B5] \CATALOGO_N\
+[B6] \CATALOGO_S\
+[C3] (Metacat.Campo_Marca) \=VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)\
+[C4] \Campo Marca\
+[C5] \MARCA\
+[C6] \Brand\
+[C11] \Autos\
+[C13] \=Metacat.Campo_Marca\
+[C14] \=SELECCION_MARCA\
+[Listados]
+[C16] (DESTINO_AUTOS) \MARCA\
+[C17] \Baic\
+[C18] \Baic\
+[D3] (Metacat.Campo_Auto) \=VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)\
+[D4] \Campo Auto\
+[D5] \AUTO\
+[D6] \Carro\
+[D13] \Conteo\
+[D14] (CONTEO_AUTOS) \=COUNTA(D17:D1048576)\
+[D16] \AUTO\
+[D17] \No sabe fallar\
+[D18] \Zameid\
+[E16] \DATO\
+[E17] \?\
+[E18] \--\
+[G1] \Consideraciones\
+[G3] \Los Rangos Nombrados que define la celda [Metacat.Rango_Nombrado] deben de ser globales.\
+[G4] \El Combo de Autos siempre apunta a la segunda columna de la zona de resultados de auto. \
 
-@ J10 [1x1]
-> Zona de Búsquedas
+[N]
+[A1] \Catálogo N\
+[A3] \MARCA\
+[A4] \Honda\
+[A5] \Honda\
+[A6] \Nissan\
+[A7] \Nissan\
+[A8] \Honda\
+[A9] \Toyota\
+[A10] \Baic\
+[A11] \Honda\
+[A12] \Honda\
+[A13] \Baic\
+[B3] \AUTO\
+[B4] \Accord\
+[B5] \Civic\
+[B6] \Sentra\
+[B7] \Ventra\
+[B8] \CRV\
+[B9] \TuHoyota\
+[B10] \Zameid\
+[B11] \Fit\
+[B12] \Civic\
+[B13] \No sabe fallar\
+[C3] \DATO\
+[C4] \a\
+[N]
+[C5] \b\
+[C6] \c\
+[C7] \d\
+[C8] \e\
+[C9] \g\
+[C10] \--\
+[C11] \x\
+[C12] \b\
+[C13] \?\
 
-@ Q10 [1x1]
-> Meta Catálogo
-
-@ A12 [1x1]
-> Catálogo N
-
-@ E12 [1x1]
-> Catálogo S
-
-@ J12 [1x1]
-> Marcas
-
-@ L12 [1x1]
-> Autos
-
-@ A14 [11x3]
-(HEADER_MARCA) > MARCA
-> Honda
-> Honda
-> Nissan
-> Nissan
-> Honda
-> Toyota
-> Baic
-> Honda
-> Honda
-> Baic
-> AUTO
-> Accord
-> Civic
-> Sentra
-> Ventra
-> CRV
-> TuHoyota
-> Zameid
-> Fit
-> Civic
-> No sabe fallar
-> DATO
-> a
-> b
-> c
-> d
-> e
-> g
-> --
-> x
-> b
-> ?
-
-@ E14 [7x4]
-> Brand
-> Hummer
-> Hummer
-> Ford
-> Ford
-> Chevrolet
-> Chevrolet
-> Carro
-> H3
-> H2
-> Ka
-> Exploter
-> Spank
-> Chevy
-> Campo
-> 8.81063830658396
-> 7.26757075058705
-> 1.17157911971267
-> 4.03875095145369
-> 6.13038631666927
-> 6.21706932805607
-> Traviesa
-> 6.30113621112
-> 4.33891429727652
-> 4.98945367454637
-> 3.33697476316045
-> 6.10761154948007
-> 7.30097305044152
-
-@ L17 [3x4]
-(DESTINO_AUTOS) > Brand
-> Chevrolet
-> Chevrolet
-> Carro
-> Chevy
-> Spank
-> Campo
-> 6.21706932805607
-> 6.13038631666927
-> Traviesa
-> 7.30097305044152
-> 6.10761154948007
-
-@ J17 [4x1]
-(DESTINO_MARCAS) > Brand
-> Chevrolet
-> Ford
-> Hummer
-
-@ Q13 [4x4]
-(Metacat.Catálogo) > =SELECCION_TIPO
-> Catálogo
-> N
-> S
-(Metacat.Rango_Nombrado) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
-> Rango Nombrado
-> CATALOGO_N
-> CATALOGO_S
-(Metacat.Campo_Marca) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
-> Campo Marca
-> MARCA
-> Brand
-(Metacat.Campo_Auto) > =VLOOKUP(Metacat.Catálogo,METACAT,COLUMN()-COLUMN(Metacat.Catálogo)+1,0)
-> Campo Auto
-> AUTO
-> Carro
-
-@ L14 [2x2]
-> =Metacat.Campo_Marca
-> =SELECCION_MARCA
-> Conteo
-(CONTEO_AUTOS) > =COUNTA(M18:M1048576)
-
-@ J14 [2x1]
-> Conteo
-(CONTEO_MARCAS) > =COUNTA(J18:J1048576)
-
+[S]
+[A1] \Catálogo S\
+[A3] \Brand\
+[A4] \Hummer\
+[A5] \Hummer\
+[A6] \Ford\
+[A7] \Ford\
+[A8] \Chevrolet\
+[A9] \Chevrolet\
+[B3] \Carro\
+[B4] \H3\
+[B5] \H2\
+[B6] \Ka\
+[B7] \Exploter\
+[B8] \Spank\
+[B9] \Chevy\
+[C3] \Campo\
+[C4] \8.81063830658396\
+[C5] \7.26757075058705\
+[C6] \1.17157911971267\
+[C7] \4.03875095145369\
+[C8] \6.13038631666927\
+[C9] \6.21706932805607\
+[D3] \Traviesa\
+[D4] \6.30113621112\
+[D5] \4.33891429727652\
+[S]
+[D6] \4.98945367454637\
+[D7] \3.33697476316045\
+[D8] \6.10761154948007\
+[D9] \7.30097305044152\
 
 Nombres:
- [Catálogo!_FilterDatabase] =Catálogo!$E$14:$H$20
- [CATALOGO_N] =Catálogo!$A$14:$C$24
- [CATALOGO_S] =Catálogo!$E$14:$H$20
- [CONDICION_MARCA] =Catálogo!$L$14:$L$15
- [CONTEO_AUTOS] =Catálogo!$M$15
- [CONTEO_MARCAS] =Catálogo!$J$15
- [Catálogo!Criteria] =Catálogo!$L$14:$L$15
- [DESTINO_AUTOS] =Catálogo!$L$17
- [DESTINO_MARCAS] =Catálogo!$J$17
- [Catálogo!Extract] =Catálogo!$L$17:$O$17
- [HEADER_MARCA] =Catálogo!$A$14
- [INPUT_CELLS] =Catálogo!$B$3,Catálogo!$B$5,Catálogo!$B$7
- [METACAT] =Catálogo!$Q$15:$T$16
- [Metacat.Campo_Auto] =Catálogo!$T$13
- [Metacat.Campo_Marca] =Catálogo!$S$13
- [Metacat.Catálogo] =Catálogo!$Q$13
- [Metacat.Rango_Nombrado] =Catálogo!$R$13
- [SELECCION_AUTO] =Catálogo!$B$7
- [SELECCION_MARCA] =Catálogo!$B$5
- [SELECCION_TIPO] =Catálogo!$B$3
+ [Captura!_FilterDatabase] =S!$A$3:$D$9
+ [Listados!_FilterDatabase] =N!$A$3:$C$13
+ [N!_FilterDatabase] =N!$A$3:$C$13
+ [S!_FilterDatabase] =S!$A$3:$D$9
+ [CATALOGO_N] =N!$A$3:$C$13
+ [CATALOGO_S] =S!$A$3:$D$9
+ [CONDICION_MARCA] =Listados!$C$13:$C$14
+ [CONTEO_AUTOS] =Listados!$D$14
+ [CONTEO_MARCAS] =Listados!$A$14
+ [Listados!Criteria] =Listados!$C$13:$C$14
+ [DESTINO_AUTOS] =Listados!$C$16
+ [DESTINO_MARCAS] =Listados!$A$16
+ [Listados!Extract] =Listados!$C$16:$E$16
+ [INPUT_CELLS] =Captura!$B$3,Captura!$B$5,Captura!$B$7
+ [METACAT] =Listados!$A$5:$D$6
+ [Metacat.Campo_Auto] =Listados!$D$3
+ [Metacat.Campo_Marca] =Listados!$C$3
+ [Metacat.Catálogo] =Listados!$A$3
+ [Metacat.Rango_Nombrado] =Listados!$B$3
+ [SELECCION_AUTO] =Captura!$B$7
+ [SELECCION_MARCA] =Captura!$B$5
+ [SELECCION_TIPO] =Captura!$B$3
 
 Nombre del proyecto VB: [VBAProject]
 
@@ -212,6 +188,9 @@ Módulos VBA:
  [Sheet1] Tipo: 100
  [Module1] Tipo: 1
  [Module2] Tipo: 1
+ [Sheet2] Tipo: 100
+ [Sheet3] Tipo: 100
+ [Sheet4] Tipo: 100
 
 Codigo:
 [ThisWorkbook] 0 líneas de código.
@@ -337,6 +316,18 @@ Sub ValidarComboDV(AValidar As Range)
 End Sub
 \\\--- END OF MODULE ---
 
+[Sheet2] 0 líneas de código.
+///--- BEGINNING OF MODULE ---
+\\\--- END OF MODULE ---
 
-** Fin del proceso de exportación. Proceso realizado en 0.02 minutos. **
+[Sheet3] 0 líneas de código.
+///--- BEGINNING OF MODULE ---
+\\\--- END OF MODULE ---
+
+[Sheet4] 0 líneas de código.
+///--- BEGINNING OF MODULE ---
+\\\--- END OF MODULE ---
+
+
+** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
 ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
