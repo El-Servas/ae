@@ -1,5 +1,5 @@
-Representación Textual del archivo de Excel: "Filtros Catálogo.xlsm"
-Fecha y hora de generación: 30/07/2016 04:30:04 p.m.
+Representación Textual del archivo de Excel: "Completo.xlsm"
+Fecha y hora de generación: 30/07/2016 05:51:33 p.m.
 
 Resumen
 =======
@@ -29,19 +29,19 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B5] (SELECCION_MARCA) \Honda\
+[B5] (SELECCION_MARCA) \Baic\
  DataValidation: Lista. [Fuente:"=FUENTE_MARCAS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B7] (SELECCION_AUTO) \CRV\
+[B7] (SELECCION_AUTO) \No sabe fallar\
  DataValidation: Lista. [Fuente:"=FUENTE_AUTOS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[D1] (Captura!Listado.Catálogo) \=SELECCION_TIPO\
+[D1] (Listado.Catálogo) \=SELECCION_TIPO\
 [D2] \Catálogo\
 [D3] \Niu\
 [D4] \Siu\
@@ -146,7 +146,7 @@ Contenido:
 [D10] \Cálculos\
 [D12] \Nivel 1\
 [D16] \Conteo\
-[D17] (FILTRO2N!o.Conteo_Nivel_1) \=COUNTA(D20:D23)\
+[D17] (FILTRO2N!o.Conteo_Nivel_1) \=COUNTA(D20:D1000000)\
 [D19] (FILTRO2N!_DESTINO_NIVEL_1_VBA) \MARCA\
 [D20] (FILTRO2N!o.Elementos_Nivel_1) \Baic\
 [D21] \Honda\
@@ -156,39 +156,32 @@ Contenido:
 [FILTRO2N]
 [F14] \Parte 2\
 [F16] \Conteo\
-[F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F23)\
+[F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F1000000)\
 [F19] (FILTRO2N!Extract) \AUTO\
-[F20] (FILTRO2N!o.Elementos_Nivel_2) \Accord\
-[F21] \Civic\
-[F22] \CRV\
-[F23] \Fit\
+[F20] (FILTRO2N!o.Elementos_Nivel_2) \No sabe fallar\
+[F21] \Zameid\
 [H14] \Parte 1\
 [H16] \=i.Campo_Nivel_1\
-[H17] \=SELECCION_MARCA\
+[H17] \=i.Nivel_1\
 [H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \MARCA\
-[H20] \Honda\
-[H21] \Honda\
-[H22] \Honda\
-[H23] \Honda\
+[H20] \Baic\
+[H21] \Baic\
 [I19] \AUTO\
-[I20] \Fit\
-[I21] \Civic\
-[I22] \CRV\
-[I23] \Accord\
+[I20] \Zameid\
+[I21] \No sabe fallar\
 [J4] \Resultados (descripción)\
 [J5] \o.Elementos_Nivel_1\
 [J6] \o.Conteo_Nivel_1\
 [J7] \o.Elementos_Nivel_2\
-[FILTRO2N]
 [J8] \o.Conteo_Nivel_2\
 [J10] \Fórmulas para DV\
 [J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
 [J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
+[J13] \(Usar el nombre de la hoja)\
 [J19] \DATO\
-[J20] \a\
-[J21] \b\
-[J22] \e\
-[J23] \x\
+[FILTRO2N]
+[J20] \--\
+[J21] \?\
 [K5] \Celda inicial del listado.\
 [K6] \Número de elementos en el listado.\
 [K7] \Celda inicial del listado.\
@@ -198,24 +191,24 @@ Nombres:
  [FILTRO2N!_DESTINO_NIVEL_1_VBA] =FILTRO2N!$D$19
  [FILTRO2N!_DESTINO_NIVEL_2_VBA] =FILTRO2N!$H$19
  [Captura!_FilterDatabase] =S!$A$3:$D$9
- [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$23
+ [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$21
  [N!_FilterDatabase] =N!$A$3:$C$13
  [S!_FilterDatabase] =S!$A$3:$D$9
  [CATALOGO_N] =N!$A$3:$C$13
  [CATALOGO_S] =S!$A$3:$D$9
  [FILTRO2N!Extract] =FILTRO2N!$F$19
  [FILTRO2N!FILTRO_NIVEL_2] =FILTRO2N!$H$16:$H$17
- [FUENTE_AUTOS] =OFFSET(FILTRO2N!o.Elementos_Nivel_2,0,0,FILTRO2N!o.Conteo_Nivel_2,1)
- [FUENTE_MARCAS] =OFFSET(FILTRO2N!o.Elementos_Nivel_1,0,0,FILTRO2N!o.Conteo_Nivel_1,1)
+ [FUENTE_AUTOS] =OFFSET( FILTRO2N!o.Elementos_Nivel_2,0,0, FILTRO2N!o.Conteo_Nivel_2,1)
+ [FUENTE_MARCAS] =OFFSET( FILTRO2N!o.Elementos_Nivel_1,0,0, FILTRO2N!o.Conteo_Nivel_1,1)
  [FILTRO2N!i.Campo_Nivel_1] =FILTRO2N!$B$6
  [FILTRO2N!i.Campo_Nivel_2] =FILTRO2N!$B$7
  [FILTRO2N!i.Nivel_1] =FILTRO2N!$B$8
  [FILTRO2N!i.Ubicación] =FILTRO2N!$B$5
  [INPUT_CELLS] =Captura!$B$3,Captura!$B$5,Captura!$B$7
- [Captura!Listado] =Captura!$D$3:$G$4
+ [Listado] =Captura!$D$3:$G$4
  [Listado.Campo_Auto] =Captura!$G$1
  [Listado.Campo_Marca] =Captura!$F$1
- [Captura!Listado.Catálogo] =Captura!$D$1
+ [Listado.Catálogo] =Captura!$D$1
  [Listado.Ubicación] =Captura!$E$1
  [FILTRO2N!o.Conteo_Nivel_1] =FILTRO2N!$D$17
  [FILTRO2N!o.Conteo_Nivel_2] =FILTRO2N!$F$17
@@ -231,11 +224,11 @@ Módulos VBA:
  [ThisWorkbook] Tipo: 100
  [Sheet1] Tipo: 100
  [Module2] Tipo: 1
- [Filtro2N] Tipo: 100
  [Sheet3] Tipo: 100
  [Sheet4] Tipo: 100
  [EventHandlers] Tipo: 1
  [Filtro2N_Support] Tipo: 1
+ [Filtro2N] Tipo: 100
 
 Codigo:
 [ThisWorkbook] 0 líneas de código.
@@ -274,66 +267,6 @@ Sub ValidarComboDV(AValidar As Range)
         Debug.Print "...Válido"
     End If
 End Sub
-\\\--- END OF MODULE ---
-
-[Filtro2N] 56 líneas de código.
-///--- BEGINNING OF MODULE ---
-Option Explicit
-
-Public Sub Actualizar_Nivel_1()
-    ExtraerÚnicosPorColumna [i.Ubicación], _
-                            [i.Campo_Nivel_1], _
-                            Me.Name & "!_Destino_Nivel_1_VBA"
-                            
-    OrdenarFilasPorNombreDeColumna [_Destino_Nivel_1_VBA], [i.Campo_Nivel_1]
-End Sub
-
-Public Sub Actualizar_Nivel_2()
-    'Parte 1
-    ExtraerPorCriteria [i.Ubicación], _
-                       [Filtro_Nivel_2], _
-                       [_Destino_Nivel_2_VBA]
-    
-    'Parte 2
-    ExtraerÚnicosPorColumna Me.Name & "!" & "_Destino_Nivel_2_VBA", _
-                            [i.Campo_Nivel_2], _
-                            Me.Name & "!" & [_Destino_Nivel_2_VBA].Offset(0, -2).Address()
-    
-    OrdenarFilasPorNombreDeColumna [_Destino_Nivel_2_VBA].Offset(0, -2), [i.Campo_Nivel_2]
-End Sub
-
-Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
-    Set rgAOrdenar = rgAOrdenar.CurrentRegion
-    'Determinar la columna de ordenamiento
-    Dim rgHeader: Set rgHeader = rgAOrdenar.Rows(1).Find(NomColumna)
-        
-    If rgHeader Is Nothing Then Exit Sub 'No existe la columna? Nothing to do.
-    
-    'Determinar el Rango (Columna sin encabezado)
-    Dim rgKey As Range
-    Set rgKey = Intersect(rgHeader.EntireColumn, _
-                          rgAOrdenar, _
-                          rgAOrdenar.Offset(1, 0))
-    
-    If rgKey Is Nothing Then Exit Sub 'No hay filas?
-    
-    With rgAOrdenar.Parent.Sort
-        .SortFields.Clear
-        
-        .SortFields.Add Key:=rgKey, _
-                        SortOn:=xlSortOnValues, _
-                        Order:=xlAscending, _
-                        DataOption:=xlSortNormal
-                             
-        .SetRange rgAOrdenar
-        .Header = xlYes
-        .MatchCase = False
-        .Orientation = xlTopToBottom
-        .SortMethod = xlPinYin
-        .Apply
-    End With
-End Sub
-
 \\\--- END OF MODULE ---
 
 [Sheet3] 0 líneas de código.
@@ -413,6 +346,66 @@ End Sub
 
 
 
+
+\\\--- END OF MODULE ---
+
+[Filtro2N] 56 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+Public Sub Actualizar_Nivel_1()
+    ExtraerÚnicosPorColumna [i.Ubicación], _
+                            [i.Campo_Nivel_1], _
+                            Me.Name & "!_Destino_Nivel_1_VBA"
+                            
+    OrdenarFilasPorNombreDeColumna [_Destino_Nivel_1_VBA], [i.Campo_Nivel_1]
+End Sub
+
+Public Sub Actualizar_Nivel_2()
+    'Parte 1
+    ExtraerPorCriteria [i.Ubicación], _
+                       [Filtro_Nivel_2], _
+                       [_Destino_Nivel_2_VBA]
+    
+    'Parte 2
+    ExtraerÚnicosPorColumna Me.Name & "!" & "_Destino_Nivel_2_VBA", _
+                            [i.Campo_Nivel_2], _
+                            Me.Name & "!" & [_Destino_Nivel_2_VBA].Offset(0, -2).Address()
+    
+    OrdenarFilasPorNombreDeColumna [_Destino_Nivel_2_VBA].Offset(0, -2), [i.Campo_Nivel_2]
+End Sub
+
+Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
+    Set rgAOrdenar = rgAOrdenar.CurrentRegion
+    'Determinar la columna de ordenamiento
+    Dim rgHeader: Set rgHeader = rgAOrdenar.Rows(1).Find(NomColumna)
+        
+    If rgHeader Is Nothing Then Exit Sub 'No existe la columna? Nothing to do.
+    
+    'Determinar el Rango (Columna sin encabezado)
+    Dim rgKey As Range
+    Set rgKey = Intersect(rgHeader.EntireColumn, _
+                          rgAOrdenar, _
+                          rgAOrdenar.Offset(1, 0))
+    
+    If rgKey Is Nothing Then Exit Sub 'No hay filas?
+    
+    With rgAOrdenar.Parent.Sort
+        .SortFields.Clear
+        
+        .SortFields.Add Key:=rgKey, _
+                        SortOn:=xlSortOnValues, _
+                        Order:=xlAscending, _
+                        DataOption:=xlSortNormal
+                             
+        .SetRange rgAOrdenar
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
 
 \\\--- END OF MODULE ---
 
