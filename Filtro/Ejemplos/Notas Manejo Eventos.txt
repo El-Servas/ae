@@ -1,0 +1,32 @@
+Si se está manejando el Evento, es porque YA CAMBIÓ EL VALOR.
+
+## Status de la Selección
+
+La Selección, o Valor de un combo puede ser:
+A) Válido.
+B) Inválido:
+	1. Por asignación arbitraria:
+	   Se asigna un valor que no está en la lista (vacío).
+
+	2. Por dependencia:
+	   Se invalida el valor actual debido a un cambio en una dependencia.
+
+Ejemplos:
+Auto:
+B.1 - Al borrar el valor del Auto.
+B.2 - Se selecciona otra Marca.
+
+Marca:
+A - Se cambia el Tipo (dependencia), pero la marca actual existe en los dos Catálogos. Sigue siendo válida.
+B1 - Borrar el valor de la celda de Marca.
+B2 - Se cambia el Tipo (dependencia) y la marca actual no existe en el nuevo catálogo.
+
+
+## Otras consideraciones
+
+Las verificaciones de validez de un valor son baratas.
+
+Los cambios en los combos son mas caros mientras más dependientes tengan, si el cambio hace que se muevan.
+
+Un cambio en una dependencia no implica una invalidación automática (Aunque el costo de asumir que sí, no es mucho)
+

@@ -1,16 +1,12 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 12:22:51 p.m.
+Fecha y hora de generación: 01/08/2016 04:15:06 p.m.
 
 Resumen
 =======
-
  * Hojas: 4
-
  * Nombres Definidos: 29
-
  * Módulos de Visual Basic: 8
-
- * Líneas de código VB: 178
+ * Líneas de código VB: 237
 
 Detalle
 =======
@@ -239,7 +235,7 @@ Nombre del proyecto VB: [VBAProject]
 Módulos VBA:
  [ThisWorkbook] Tipo: 100
  [Sheet1] Tipo: 100
- [Module2] Tipo: 1
+ [ComboDV] Tipo: 1
  [Sheet3] Tipo: 100
  [Sheet4] Tipo: 100
  [EventHandlers] Tipo: 1
@@ -259,14 +255,47 @@ End Sub
 
 \\\--- END OF MODULE ---
 
-[Module2] 14 líneas de código.
+[ComboDV] 47 líneas de código.
 ///--- BEGINNING OF MODULE ---
+'========================================================================================
+'Módulo con rutinas auxiliares para trabajar con "Combos" implementados '
+'con la funcionalidad de Data Validation - List de Excel.
+'========================================================================================
+
 Option Explicit
+
+'Indica si el valor actual de un combo DV es válido o no.
+Function ComboDV_SelecciónEsVálida(AValidar As Range) As Boolean
+    ComboDV_SelecciónEsVálida = AValidar.Validation.Value
+End Function
+
+'Indica si el rango que contiene la lista de opciones, es válida.
+Function ComboDV_ListaDeOpcionesEsVálida(AValidar As Range) As Boolean
+    ComboDV_ListaDeOpcionesEsVálida = True
+    On Error GoTo invalid
+    Dim rg: Set rg = Range(AValidar.Validation.Formula1)
+    Exit Function
+invalid:
+    ComboDV_ListaDeOpcionesEsVálida = False
+End Function
+
+'Selecciona la primera de las Opciones válidas.
+Function ComboDV_AsignaPrimera(AValidar As Range) As Boolean
+    ComboDV_AsignaÍndice AValidar, 1
+End Function
+
+'Le asigna el elemento número <Índice> de la Lista de Opciones.
+Function ComboDV_AsignaÍndice(AValidar As Range, ix As Integer) As Boolean
+    AValidar.Value = Range(AValidar.Validation.Formula1).Cells(ix)
+End Function
+
+'========================================================================================
+' DEPRECAR
 
 'Si la selección de la celda no es válida, seleccionar la primera disponible.
 Function ComboDV_EsValido(AValidar As Range) As Boolean
     Debug.Print "Validando " & AValidar.Name.Name & " [" & AValidar.Value & "]"
-    
+
     If Not AValidar.Validation.Value Then
         Debug.Print "...No Válido. Asignado [" & Range(AValidar.Validation.Formula1).Cells(1) & "]"
         AValidar.Value = Range(AValidar.Validation.Formula1).Cells(1)
@@ -285,7 +314,7 @@ End Function
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 72 líneas de código.
+[EventHandlers] 98 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -302,17 +331,20 @@ On Error GoTo ErrHan
     
     '----------------------------------------------------------------------
     If Not Application.Intersect(Target, [SELECCION_TIPO]) Is Nothing Then
-        Call Validar_Tipo
+        'Call Validar_Tipo
     End If
     
     '----------------------------------------------------------------------
     If Not Application.Intersect(Target, [SELECCION_MARCA]) Is Nothing Then
-        Call Validar_Marcas
+        'Call Validar_Marcas
     End If
     
     '----------------------------------------------------------------------
     If Not Application.Intersect(Target, [SELECCION_AUTO]) Is Nothing Then
-        Call Validar_Autos
+        'Call Validar_Autos
+        
+        Manejar_Opción [SELECCION_AUTO]
+        
     End If
     
     Debug.Print NestedEventCount & ": FIN " & Target.Name.Name
@@ -359,6 +391,29 @@ Function Validar_Autos() As Boolean
         Validar_Autos = True
     End If
 End Function
+
+'==========
+Sub Manejar_Opción(rgCombo As Range)
+    If Not ComboDV_SelecciónEsVálida(rgCombo) Then
+        Debug.Print "Seleccion inválida. Se ajustará."
+        ComboDV_AsignaPrimera rgCombo
+    Else
+        Debug.Print "Seleccion Válida. Se notifica dependientes."
+        Notificar_Dependientes rgCombo
+    End If
+End Sub
+
+Sub Notificar_Dependientes(rgCombo As Range)
+    Select Case rgCombo.Name.Name
+        Case "SELECCION_AUTO"
+            'Sin Dependientes
+        Case "SELECCION_MARCA"
+            Manejar_Opción [SELECCION_AUTO]
+        Case "SELECCION_TIPO"
+            Manejar_Opción [SELECCION_MARCA]
+            Manejar_Opción [SELECCION_AUTO]
+    End Select
+End Sub
 \\\--- END OF MODULE ---
 
 [Filtro2N_Support] 32 líneas de código.
@@ -458,5 +513,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 00 sec.  **
-Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
+** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
+ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
