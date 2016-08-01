@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 06:27:52 p.m.
+Fecha y hora de generación: 01/08/2016 06:48:28 p.m.
 
 Resumen
 =======
  * Hojas: 4
  * Nombres Definidos: 29
  * Módulos de Visual Basic: 8
- * Líneas de código VB: 217
+ * Líneas de código VB: 224
 
 Detalle
 =======
@@ -306,7 +306,7 @@ End Function
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 78 líneas de código.
+[EventHandlers] 85 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -328,8 +328,6 @@ On Error GoTo ErrHan
         Manejar_Opción Target
     'End If
     
-    Debug.Print NestedEventCount & ": FIN " & Target.Name.Name
-    
 ErrHan:
     If Err.Number <> 0 Then _
         Debug.Print Err.Number & " - " & Err.Description
@@ -339,7 +337,7 @@ End Sub
 
 'Sigue los pasos para manejar el cambio de la selección en un ComboDV
 Sub Manejar_Opción(rgCombo As Range)
-    Debug.Print NestedEventCount & ": Manejando cambio en " & rgCombo.Name.Name & " a [" & rgCombo.Value & "]"
+    PrintNested NestedEventCount & ": Manejando cambio en " & rgCombo.Name.Name & " a [" & rgCombo.Value & "]"
     
     'Primer paso: Refrescar la lista de las opciones posibles contra la que se va a validar la opción actual.
     Actualizar_BD rgCombo
@@ -347,18 +345,20 @@ Sub Manejar_Opción(rgCombo As Range)
     'Posteriormense se revisa si el valor actual está contenido en la lista de opciones.
     If Not ComboDV_SelecciónEsVálida(rgCombo) Then
         'Si no está, entonces se le asigna la primera opción disponible.
-        Debug.Print "Seleccion inválida. Se ajustará."
+        PrintNested "Seleccion inválida. Se ajustará."
         ComboDV_AsignaPrimera rgCombo
     Else
         'Si sí está, entonces se notifica a los dependientes para que hagan lo propio.
-        Debug.Print "Seleccion Válida. Se notifica dependientes."
+        PrintNested "Seleccion Válida. Se notifica dependientes."
         Notificar_Dependientes rgCombo
     End If
+    
+    PrintNested NestedEventCount & ": FIN " & rgCombo.Name.Name
 End Sub
 
 'Manda a llamar las rutinas de actualización de las listas de opciones de un ComboDV.
 Sub Actualizar_BD(rgCombo As Range)
-    Debug.Print "Actualizando BD de " & rgCombo.Name.Name
+    PrintNested "Actualizando BD de " & rgCombo.Name.Name
     Select Case rgCombo.Name.Name
         Case "SELECCION_TIPO"
             'Nothing to do
@@ -376,15 +376,22 @@ End Sub
 Sub Notificar_Dependientes(rgCombo As Range)
     Select Case rgCombo.Name.Name
         Case "SELECCION_TIPO"
-            Manejar_Opción [SELECCION_MARCA]
-            Manejar_Opción [SELECCION_AUTO]
+            'Manejar_Opción [SELECCION_MARCA]
+            'Manejar_Opción [SELECCION_AUTO]
+            Captura_Change [SELECCION_MARCA]
+            Captura_Change [SELECCION_AUTO]
         
         Case "SELECCION_MARCA"
-            Manejar_Opción [SELECCION_AUTO]
+            'Manejar_Opción [SELECCION_AUTO]
+            Captura_Change [SELECCION_AUTO]
         
         Case "SELECCION_AUTO"
             'Sin Dependientes
     End Select
+End Sub
+
+Sub PrintNested(msg As String)
+    Debug.Print Replace(Space(NestedEventCount - 1), " ", vbTab) & msg
 End Sub
 \\\--- END OF MODULE ---
 
