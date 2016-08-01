@@ -1,12 +1,16 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 30/07/2016 05:51:33 p.m.
+Fecha y hora de generación: 01/08/2016 12:22:51 p.m.
 
 Resumen
 =======
+
  * Hojas: 4
+
  * Nombres Definidos: 29
+
  * Módulos de Visual Basic: 8
- * Líneas de código VB: 146
+
+ * Líneas de código VB: 178
 
 Detalle
 =======
@@ -29,13 +33,13 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B5] (SELECCION_MARCA) \Baic\
+[B5] (SELECCION_MARCA) \Honda\
  DataValidation: Lista. [Fuente:"=FUENTE_MARCAS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B7] (SELECCION_AUTO) \No sabe fallar\
+[B7] (SELECCION_AUTO) \Accord\
  DataValidation: Lista. [Fuente:"=FUENTE_AUTOS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -104,6 +108,7 @@ Contenido:
 [A7] \Ford\
 [A8] \Chevrolet\
 [A9] \Chevrolet\
+[A10] \Honda\
 [B3] \Carro\
 [B4] \H3\
 [B5] \H2\
@@ -111,6 +116,7 @@ Contenido:
 [B7] \Exploter\
 [B8] \Spank\
 [B9] \Chevy\
+[B10] \USADO\
 [C3] \Campo\
 [C4] \8.81063830658396\
 [C5] \7.26757075058705\
@@ -118,14 +124,16 @@ Contenido:
 [C7] \4.03875095145369\
 [C8] \6.13038631666927\
 [C9] \6.21706932805607\
+[C10] \4.03875095145369\
+[S]
 [D3] \Traviesa\
 [D4] \6.30113621112\
 [D5] \4.33891429727652\
-[S]
 [D6] \4.98945367454637\
 [D7] \3.33697476316045\
 [D8] \6.10761154948007\
 [D9] \7.30097305044152\
+[D10] \4.98945367454637\
 
 [FILTRO2N]
 [A1] \Filtro de Catálogos a 2 Niveles\
@@ -158,30 +166,38 @@ Contenido:
 [F16] \Conteo\
 [F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F1000000)\
 [F19] (FILTRO2N!Extract) \AUTO\
-[F20] (FILTRO2N!o.Elementos_Nivel_2) \No sabe fallar\
-[F21] \Zameid\
+[F20] (FILTRO2N!o.Elementos_Nivel_2) \Accord\
+[F21] \Civic\
+[F22] \CRV\
+[F23] \Fit\
 [H14] \Parte 1\
 [H16] \=i.Campo_Nivel_1\
 [H17] \=i.Nivel_1\
 [H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \MARCA\
-[H20] \Baic\
-[H21] \Baic\
+[H20] \Honda\
+[H21] \Honda\
+[H22] \Honda\
+[H23] \Honda\
 [I19] \AUTO\
-[I20] \Zameid\
-[I21] \No sabe fallar\
+[I20] \Fit\
+[I21] \Civic\
+[I22] \CRV\
+[I23] \Accord\
 [J4] \Resultados (descripción)\
 [J5] \o.Elementos_Nivel_1\
 [J6] \o.Conteo_Nivel_1\
 [J7] \o.Elementos_Nivel_2\
+[FILTRO2N]
 [J8] \o.Conteo_Nivel_2\
 [J10] \Fórmulas para DV\
 [J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
 [J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
 [J13] \(Usar el nombre de la hoja)\
 [J19] \DATO\
-[FILTRO2N]
-[J20] \--\
-[J21] \?\
+[J20] \a\
+[J21] \b\
+[J22] \e\
+[J23] \x\
 [K5] \Celda inicial del listado.\
 [K6] \Número de elementos en el listado.\
 [K7] \Celda inicial del listado.\
@@ -191,11 +207,11 @@ Nombres:
  [FILTRO2N!_DESTINO_NIVEL_1_VBA] =FILTRO2N!$D$19
  [FILTRO2N!_DESTINO_NIVEL_2_VBA] =FILTRO2N!$H$19
  [Captura!_FilterDatabase] =S!$A$3:$D$9
- [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$21
+ [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$23
  [N!_FilterDatabase] =N!$A$3:$C$13
- [S!_FilterDatabase] =S!$A$3:$D$9
+ [S!_FilterDatabase] =S!$A$3:$D$10
  [CATALOGO_N] =N!$A$3:$C$13
- [CATALOGO_S] =S!$A$3:$D$9
+ [CATALOGO_S] =S!$A$3:$D$10
  [FILTRO2N!Extract] =FILTRO2N!$F$19
  [FILTRO2N!FILTRO_NIVEL_2] =FILTRO2N!$H$16:$H$17
  [FUENTE_AUTOS] =OFFSET( FILTRO2N!o.Elementos_Nivel_2,0,0, FILTRO2N!o.Conteo_Nivel_2,1)
@@ -243,30 +259,22 @@ End Sub
 
 \\\--- END OF MODULE ---
 
-[Module2] 22 líneas de código.
+[Module2] 14 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
 'Si la selección de la celda no es válida, seleccionar la primera disponible.
-Sub ValidarComboDV(AValidar As Range)
-    
+Function ComboDV_EsValido(AValidar As Range) As Boolean
     Debug.Print "Validando " & AValidar.Name.Name & " [" & AValidar.Value & "]"
     
     If Not AValidar.Validation.Value Then
-        
-        On Error Resume Next 'Si no hay un rango válido, ocurre un error y el objeto 'Is Nothing'
-        Dim rgOpcionesVálidas As Range: Set rgOpcionesVálidas = Range(AValidar.Validation.Formula1)
-        On Error GoTo 0
-        
-        Dim NewValue: NewValue = ""
-        If Not rgOpcionesVálidas Is Nothing Then _
-            NewValue = rgOpcionesVálidas.Cells(1)
-        Debug.Print "...No Válido. Asignado [" & NewValue & "]"
-        AValidar.Value = NewValue
+        Debug.Print "...No Válido. Asignado [" & Range(AValidar.Validation.Formula1).Cells(1) & "]"
+        AValidar.Value = Range(AValidar.Validation.Formula1).Cells(1)
     Else
         Debug.Print "...Válido"
+        ComboDV_EsValido = True
     End If
-End Sub
+End Function
 \\\--- END OF MODULE ---
 
 [Sheet3] 0 líneas de código.
@@ -277,40 +285,80 @@ End Sub
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 32 líneas de código.
+[EventHandlers] 72 líneas de código.
 ///--- BEGINNING OF MODULE ---
+Option Explicit
+
+Dim NestedEventCount As Integer
+
 Sub Captura_Change(ByVal Target As Range)
 On Error GoTo ErrHan
     If Application.Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
     
-    Debug.Print "Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
+    NestedEventCount = NestedEventCount + 1
+    Debug.Print NestedEventCount & ": Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
     
-    ValidarComboDV [SELECCION_TIPO]
-        
-    Call Actualizar_Marcas
+    If NestedEventCount = 1 Then Application.ScreenUpdating = False
     
-    Call Actualizar_Autos
+    '----------------------------------------------------------------------
+    If Not Application.Intersect(Target, [SELECCION_TIPO]) Is Nothing Then
+        Call Validar_Tipo
+    End If
+    
+    '----------------------------------------------------------------------
+    If Not Application.Intersect(Target, [SELECCION_MARCA]) Is Nothing Then
+        Call Validar_Marcas
+    End If
+    
+    '----------------------------------------------------------------------
+    If Not Application.Intersect(Target, [SELECCION_AUTO]) Is Nothing Then
+        Call Validar_Autos
+    End If
+    
+    Debug.Print NestedEventCount & ": FIN " & Target.Name.Name
     
 ErrHan:
     If Err.Number <> 0 Then _
         Debug.Print Err.Number & " - " & Err.Description
+    If NestedEventCount = 1 Then Application.ScreenUpdating = True
+    NestedEventCount = NestedEventCount - 1
 End Sub
 
-Sub Actualizar_Marcas()
+'Las rutinas Actualizar_* regresan el valor de la llamada de validación.
+Function Actualizar_Marcas() As Boolean
     Debug.Print "Actualizando Marcas..."
-    
     Call Filtro2N.Actualizar_Nivel_1
-    
-    ValidarComboDV [SELECCION_MARCA]
-End Sub
+    Actualizar_Marcas = Validar_Marcas()
+End Function
 
-Sub Actualizar_Autos()
+Function Actualizar_Autos() As Boolean
     Debug.Print "Actualizando Autos..."
-    
     Call Filtro2N.Actualizar_Nivel_2
-    
-    ValidarComboDV [SELECCION_AUTO]
-End Sub
+    Actualizar_Autos = Validar_Autos()
+End Function
+
+'Las rutinas Validar_* Regresan: TRUE si el valor revisado fué válido.
+Function Validar_Tipo() As Boolean
+    If ComboDV_EsValido([SELECCION_TIPO]) Then
+        Validar_Tipo = True
+        If Actualizar_Marcas() Then
+            Call Actualizar_Autos
+        End If
+    End If
+End Function
+
+Function Validar_Marcas() As Boolean
+    If ComboDV_EsValido([SELECCION_MARCA]) Then
+        Validar_Marcas = True
+        Call Actualizar_Autos
+    End If
+End Function
+
+Function Validar_Autos() As Boolean
+    If ComboDV_EsValido([SELECCION_AUTO]) Then
+        Validar_Autos = True
+    End If
+End Function
 \\\--- END OF MODULE ---
 
 [Filtro2N_Support] 32 líneas de código.
@@ -410,5 +458,5 @@ End Sub
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
-ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
+** Fin del proceso de exportación. Proceso realizado en 00 sec.  **
+Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
