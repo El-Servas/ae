@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 04:15:06 p.m.
+Fecha y hora de generación: 01/08/2016 04:34:43 p.m.
 
 Resumen
 =======
  * Hojas: 4
  * Nombres Definidos: 29
  * Módulos de Visual Basic: 8
- * Líneas de código VB: 237
+ * Líneas de código VB: 259
 
 Detalle
 =======
@@ -29,13 +29,13 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B5] (SELECCION_MARCA) \Honda\
+[B5] (SELECCION_MARCA) \Baic\
  DataValidation: Lista. [Fuente:"=FUENTE_MARCAS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B7] (SELECCION_AUTO) \Accord\
+[B7] (SELECCION_AUTO) \No sabe fallar\
  DataValidation: Lista. [Fuente:"=FUENTE_AUTOS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -162,38 +162,30 @@ Contenido:
 [F16] \Conteo\
 [F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F1000000)\
 [F19] (FILTRO2N!Extract) \AUTO\
-[F20] (FILTRO2N!o.Elementos_Nivel_2) \Accord\
-[F21] \Civic\
-[F22] \CRV\
-[F23] \Fit\
+[F20] (FILTRO2N!o.Elementos_Nivel_2) \No sabe fallar\
+[F21] \Zameid\
 [H14] \Parte 1\
 [H16] \=i.Campo_Nivel_1\
 [H17] \=i.Nivel_1\
 [H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \MARCA\
-[H20] \Honda\
-[H21] \Honda\
-[H22] \Honda\
-[H23] \Honda\
+[H20] \Baic\
+[H21] \Baic\
 [I19] \AUTO\
-[I20] \Fit\
-[I21] \Civic\
-[I22] \CRV\
-[I23] \Accord\
+[I20] \Zameid\
+[I21] \No sabe fallar\
 [J4] \Resultados (descripción)\
 [J5] \o.Elementos_Nivel_1\
 [J6] \o.Conteo_Nivel_1\
 [J7] \o.Elementos_Nivel_2\
-[FILTRO2N]
 [J8] \o.Conteo_Nivel_2\
 [J10] \Fórmulas para DV\
 [J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
 [J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
 [J13] \(Usar el nombre de la hoja)\
 [J19] \DATO\
-[J20] \a\
-[J21] \b\
-[J22] \e\
-[J23] \x\
+[FILTRO2N]
+[J20] \--\
+[J21] \?\
 [K5] \Celda inicial del listado.\
 [K6] \Número de elementos en el listado.\
 [K7] \Celda inicial del listado.\
@@ -203,7 +195,7 @@ Nombres:
  [FILTRO2N!_DESTINO_NIVEL_1_VBA] =FILTRO2N!$D$19
  [FILTRO2N!_DESTINO_NIVEL_2_VBA] =FILTRO2N!$H$19
  [Captura!_FilterDatabase] =S!$A$3:$D$9
- [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$23
+ [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$21
  [N!_FilterDatabase] =N!$A$3:$C$13
  [S!_FilterDatabase] =S!$A$3:$D$10
  [CATALOGO_N] =N!$A$3:$C$13
@@ -314,7 +306,7 @@ End Function
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 98 líneas de código.
+[EventHandlers] 120 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -325,18 +317,24 @@ On Error GoTo ErrHan
     If Application.Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
     
     NestedEventCount = NestedEventCount + 1
-    Debug.Print NestedEventCount & ": Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
+    'Debug.Print NestedEventCount & ": Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
     
     If NestedEventCount = 1 Then Application.ScreenUpdating = False
     
     '----------------------------------------------------------------------
     If Not Application.Intersect(Target, [SELECCION_TIPO]) Is Nothing Then
         'Call Validar_Tipo
+        
+        Manejar_Opción [SELECCION_TIPO]
+        
     End If
     
     '----------------------------------------------------------------------
     If Not Application.Intersect(Target, [SELECCION_MARCA]) Is Nothing Then
         'Call Validar_Marcas
+        
+        Manejar_Opción [SELECCION_MARCA]
+        
     End If
     
     '----------------------------------------------------------------------
@@ -394,6 +392,10 @@ End Function
 
 '==========
 Sub Manejar_Opción(rgCombo As Range)
+    Debug.Print NestedEventCount & ": Manejando cambio en " & rgCombo.Name.Name & " a [" & rgCombo.Value & "]"
+    
+    Actualizar_BD rgCombo
+    
     If Not ComboDV_SelecciónEsVálida(rgCombo) Then
         Debug.Print "Seleccion inválida. Se ajustará."
         ComboDV_AsignaPrimera rgCombo
@@ -412,6 +414,18 @@ Sub Notificar_Dependientes(rgCombo As Range)
         Case "SELECCION_TIPO"
             Manejar_Opción [SELECCION_MARCA]
             Manejar_Opción [SELECCION_AUTO]
+    End Select
+End Sub
+
+Sub Actualizar_BD(rgCombo As Range)
+    Debug.Print "Actualizando BD de " & rgCombo.Name.Name
+    Select Case rgCombo.Name.Name
+        Case "SELECCION_AUTO"
+            Call Filtro2N.Actualizar_Nivel_2
+        Case "SELECCION_MARCA"
+            Call Filtro2N.Actualizar_Nivel_1
+        Case "SELECCION_TIPO"
+            'Nothing to do
     End Select
 End Sub
 \\\--- END OF MODULE ---
