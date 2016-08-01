@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 06:48:28 p.m.
+Fecha y hora de generación: 01/08/2016 06:57:24 p.m.
 
 Resumen
 =======
@@ -317,7 +317,11 @@ On Error GoTo ErrHan
     If Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
     
     NestedEventCount = NestedEventCount + 1
-    If NestedEventCount = 1 Then Application.ScreenUpdating = False
+    If NestedEventCount = 1 Then
+        Debug.Print
+        Application.ScreenUpdating = False
+    End If
+    PrintNested NestedEventCount & ": Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
     
     'Con las nuevas rutinas, todos los CombosDV se manejan igual:
     'If Not Intersect(Target, _
@@ -328,6 +332,8 @@ On Error GoTo ErrHan
         Manejar_Opción Target
     'End If
     
+    PrintNested NestedEventCount & ": FIN " & Target.Name.Name
+    
 ErrHan:
     If Err.Number <> 0 Then _
         Debug.Print Err.Number & " - " & Err.Description
@@ -336,30 +342,27 @@ ErrHan:
 End Sub
 
 'Sigue los pasos para manejar el cambio de la selección en un ComboDV
-Sub Manejar_Opción(rgCombo As Range)
-    PrintNested NestedEventCount & ": Manejando cambio en " & rgCombo.Name.Name & " a [" & rgCombo.Value & "]"
+Sub Manejar_Opción(Target As Range)
     
     'Primer paso: Refrescar la lista de las opciones posibles contra la que se va a validar la opción actual.
-    Actualizar_BD rgCombo
+    Actualizar_BD Target
     
     'Posteriormense se revisa si el valor actual está contenido en la lista de opciones.
-    If Not ComboDV_SelecciónEsVálida(rgCombo) Then
+    If Not ComboDV_SelecciónEsVálida(Target) Then
         'Si no está, entonces se le asigna la primera opción disponible.
         PrintNested "Seleccion inválida. Se ajustará."
-        ComboDV_AsignaPrimera rgCombo
+        ComboDV_AsignaPrimera Target
     Else
         'Si sí está, entonces se notifica a los dependientes para que hagan lo propio.
         PrintNested "Seleccion Válida. Se notifica dependientes."
-        Notificar_Dependientes rgCombo
+        Notificar_Dependientes Target
     End If
-    
-    PrintNested NestedEventCount & ": FIN " & rgCombo.Name.Name
 End Sub
 
 'Manda a llamar las rutinas de actualización de las listas de opciones de un ComboDV.
-Sub Actualizar_BD(rgCombo As Range)
-    PrintNested "Actualizando BD de " & rgCombo.Name.Name
-    Select Case rgCombo.Name.Name
+Sub Actualizar_BD(Target As Range)
+    PrintNested "Actualizando BD de " & Target.Name.Name
+    Select Case Target.Name.Name
         Case "SELECCION_TIPO"
             'Nothing to do
             
@@ -372,18 +375,15 @@ Sub Actualizar_BD(rgCombo As Range)
     End Select
 End Sub
 
-'Notifica a los dependientes de un combo para que se validen.
-Sub Notificar_Dependientes(rgCombo As Range)
-    Select Case rgCombo.Name.Name
+'Notifica a los dependientes de un combo para que se validen: Envía un aviso de cambio (artificial), que desencadena el proceso de validación.
+Sub Notificar_Dependientes(Target As Range)
+    Select Case Target.Name.Name
         Case "SELECCION_TIPO"
-            'Manejar_Opción [SELECCION_MARCA]
-            'Manejar_Opción [SELECCION_AUTO]
-            Captura_Change [SELECCION_MARCA]
-            Captura_Change [SELECCION_AUTO]
-        
+            Captura_Change [SELECCION_MARCA]    'Manejar_Opción [SELECCION_MARCA]
+            Captura_Change [SELECCION_AUTO]     'Manejar_Opción [SELECCION_AUTO]
+            
         Case "SELECCION_MARCA"
-            'Manejar_Opción [SELECCION_AUTO]
-            Captura_Change [SELECCION_AUTO]
+            Captura_Change [SELECCION_AUTO]     'Manejar_Opción [SELECCION_AUTO]
         
         Case "SELECCION_AUTO"
             'Sin Dependientes
