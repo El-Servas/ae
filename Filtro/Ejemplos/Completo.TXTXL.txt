@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 04:34:43 p.m.
+Fecha y hora de generación: 01/08/2016 06:27:52 p.m.
 
 Resumen
 =======
  * Hojas: 4
  * Nombres Definidos: 29
  * Módulos de Visual Basic: 8
- * Líneas de código VB: 259
+ * Líneas de código VB: 217
 
 Detalle
 =======
@@ -306,7 +306,7 @@ End Function
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 120 líneas de código.
+[EventHandlers] 78 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -314,36 +314,19 @@ Dim NestedEventCount As Integer
 
 Sub Captura_Change(ByVal Target As Range)
 On Error GoTo ErrHan
-    If Application.Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
+    If Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
     
     NestedEventCount = NestedEventCount + 1
-    'Debug.Print NestedEventCount & ": Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
-    
     If NestedEventCount = 1 Then Application.ScreenUpdating = False
     
-    '----------------------------------------------------------------------
-    If Not Application.Intersect(Target, [SELECCION_TIPO]) Is Nothing Then
-        'Call Validar_Tipo
-        
-        Manejar_Opción [SELECCION_TIPO]
-        
-    End If
-    
-    '----------------------------------------------------------------------
-    If Not Application.Intersect(Target, [SELECCION_MARCA]) Is Nothing Then
-        'Call Validar_Marcas
-        
-        Manejar_Opción [SELECCION_MARCA]
-        
-    End If
-    
-    '----------------------------------------------------------------------
-    If Not Application.Intersect(Target, [SELECCION_AUTO]) Is Nothing Then
-        'Call Validar_Autos
-        
-        Manejar_Opción [SELECCION_AUTO]
-        
-    End If
+    'Con las nuevas rutinas, todos los CombosDV se manejan igual:
+    'If Not Intersect(Target, _
+                     Union([SELECCION_TIPO], _
+                           [SELECCION_MARCA], _
+                           [SELECCION_AUTO]) _
+                     ) Is Nothing Then
+        Manejar_Opción Target
+    'End If
     
     Debug.Print NestedEventCount & ": FIN " & Target.Name.Name
     
@@ -354,78 +337,53 @@ ErrHan:
     NestedEventCount = NestedEventCount - 1
 End Sub
 
-'Las rutinas Actualizar_* regresan el valor de la llamada de validación.
-Function Actualizar_Marcas() As Boolean
-    Debug.Print "Actualizando Marcas..."
-    Call Filtro2N.Actualizar_Nivel_1
-    Actualizar_Marcas = Validar_Marcas()
-End Function
-
-Function Actualizar_Autos() As Boolean
-    Debug.Print "Actualizando Autos..."
-    Call Filtro2N.Actualizar_Nivel_2
-    Actualizar_Autos = Validar_Autos()
-End Function
-
-'Las rutinas Validar_* Regresan: TRUE si el valor revisado fué válido.
-Function Validar_Tipo() As Boolean
-    If ComboDV_EsValido([SELECCION_TIPO]) Then
-        Validar_Tipo = True
-        If Actualizar_Marcas() Then
-            Call Actualizar_Autos
-        End If
-    End If
-End Function
-
-Function Validar_Marcas() As Boolean
-    If ComboDV_EsValido([SELECCION_MARCA]) Then
-        Validar_Marcas = True
-        Call Actualizar_Autos
-    End If
-End Function
-
-Function Validar_Autos() As Boolean
-    If ComboDV_EsValido([SELECCION_AUTO]) Then
-        Validar_Autos = True
-    End If
-End Function
-
-'==========
+'Sigue los pasos para manejar el cambio de la selección en un ComboDV
 Sub Manejar_Opción(rgCombo As Range)
     Debug.Print NestedEventCount & ": Manejando cambio en " & rgCombo.Name.Name & " a [" & rgCombo.Value & "]"
     
+    'Primer paso: Refrescar la lista de las opciones posibles contra la que se va a validar la opción actual.
     Actualizar_BD rgCombo
     
+    'Posteriormense se revisa si el valor actual está contenido en la lista de opciones.
     If Not ComboDV_SelecciónEsVálida(rgCombo) Then
+        'Si no está, entonces se le asigna la primera opción disponible.
         Debug.Print "Seleccion inválida. Se ajustará."
         ComboDV_AsignaPrimera rgCombo
     Else
+        'Si sí está, entonces se notifica a los dependientes para que hagan lo propio.
         Debug.Print "Seleccion Válida. Se notifica dependientes."
         Notificar_Dependientes rgCombo
     End If
 End Sub
 
-Sub Notificar_Dependientes(rgCombo As Range)
-    Select Case rgCombo.Name.Name
-        Case "SELECCION_AUTO"
-            'Sin Dependientes
-        Case "SELECCION_MARCA"
-            Manejar_Opción [SELECCION_AUTO]
-        Case "SELECCION_TIPO"
-            Manejar_Opción [SELECCION_MARCA]
-            Manejar_Opción [SELECCION_AUTO]
-    End Select
-End Sub
-
+'Manda a llamar las rutinas de actualización de las listas de opciones de un ComboDV.
 Sub Actualizar_BD(rgCombo As Range)
     Debug.Print "Actualizando BD de " & rgCombo.Name.Name
     Select Case rgCombo.Name.Name
-        Case "SELECCION_AUTO"
-            Call Filtro2N.Actualizar_Nivel_2
-        Case "SELECCION_MARCA"
-            Call Filtro2N.Actualizar_Nivel_1
         Case "SELECCION_TIPO"
             'Nothing to do
+            
+        Case "SELECCION_MARCA"
+            Call Filtro2N.Actualizar_Nivel_1
+            
+        Case "SELECCION_AUTO"
+            Call Filtro2N.Actualizar_Nivel_2
+            
+    End Select
+End Sub
+
+'Notifica a los dependientes de un combo para que se validen.
+Sub Notificar_Dependientes(rgCombo As Range)
+    Select Case rgCombo.Name.Name
+        Case "SELECCION_TIPO"
+            Manejar_Opción [SELECCION_MARCA]
+            Manejar_Opción [SELECCION_AUTO]
+        
+        Case "SELECCION_MARCA"
+            Manejar_Opción [SELECCION_AUTO]
+        
+        Case "SELECCION_AUTO"
+            'Sin Dependientes
     End Select
 End Sub
 \\\--- END OF MODULE ---
