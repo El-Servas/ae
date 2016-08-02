@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 06:59:32 p.m.
+Fecha y hora de generación: 01/08/2016 08:04:21 p.m.
 
 Resumen
 =======
  * Hojas: 4
  * Nombres Definidos: 29
  * Módulos de Visual Basic: 8
- * Líneas de código VB: 224
+ * Líneas de código VB: 215
 
 Detalle
 =======
@@ -306,7 +306,7 @@ End Function
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 85 líneas de código.
+[EventHandlers] 76 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -318,10 +318,12 @@ On Error GoTo ErrHan
     
     NestedEventCount = NestedEventCount + 1
     If NestedEventCount = 1 Then
-        Debug.Print
+        Debug.Print "================================================================================"
         Application.ScreenUpdating = False
     End If
-    PrintNested NestedEventCount & ": Manejando cambio en " & Target.Name.Name & " a [" & Target.Value & "]"
+    
+    Debug.Print
+    PrintNested NestedEventCount & ": Manejando valor en " & Target.Name.Name & " [" & Target.Value & "]"
     
     'Con las nuevas rutinas, todos los CombosDV se manejan igual:
     'If Not Intersect(Target, _
@@ -343,46 +345,33 @@ End Sub
 
 'Sigue los pasos para manejar el cambio de la selección en un ComboDV
 Sub Manejar_Opción(Target As Range)
-    
-    'Primer paso: Refrescar la lista de las opciones posibles contra la que se va a validar la opción actual.
-    Actualizar_BD Target
-    
-    'Posteriormense se revisa si el valor actual está contenido en la lista de opciones.
+
+    'El valor actual está contenido en la lista de opciones?
     If Not ComboDV_SelecciónEsVálida(Target) Then
         'Si no está, entonces se le asigna la primera opción disponible.
         PrintNested "Seleccion inválida. Se ajustará."
         ComboDV_AsignaPrimera Target
     Else
         'Si sí está, entonces se notifica a los dependientes para que hagan lo propio.
-        PrintNested "Seleccion Válida. Se notifica dependientes."
+        PrintNested "Seleccion Válida. Se notifica a los dependientes."
         Notificar_Dependientes Target
     End If
-End Sub
-
-'Manda a llamar las rutinas de actualización de las listas de opciones de un ComboDV.
-Sub Actualizar_BD(Target As Range)
-    PrintNested "Actualizando BD de " & Target.Name.Name
-    Select Case Target.Name.Name
-        Case "SELECCION_TIPO"
-            'Nothing to do
-            
-        Case "SELECCION_MARCA"
-            Call Filtro2N.Actualizar_Nivel_1
-            
-        Case "SELECCION_AUTO"
-            Call Filtro2N.Actualizar_Nivel_2
-            
-    End Select
 End Sub
 
 'Notifica a los dependientes de un combo para que se validen: Envía un aviso de cambio (artificial), que desencadena el proceso de validación.
 Sub Notificar_Dependientes(Target As Range)
     Select Case Target.Name.Name
         Case "SELECCION_TIPO"
+            PrintNested " (Actualizando BD de Marcas)"
+            Call Filtro2N.Actualizar_Nivel_1
             [SELECCION_MARCA] = [SELECCION_MARCA]
+            PrintNested " (Actualizando BD de Autos)"
+            Call Filtro2N.Actualizar_Nivel_2
             [SELECCION_AUTO] = [SELECCION_AUTO]
             
         Case "SELECCION_MARCA"
+            PrintNested " (Actualizando BD de Autos)"
+            Call Filtro2N.Actualizar_Nivel_2
             [SELECCION_AUTO] = [SELECCION_AUTO]
         
         Case "SELECCION_AUTO"
@@ -393,6 +382,8 @@ End Sub
 Sub PrintNested(msg As String)
     Debug.Print Replace(Space(NestedEventCount - 1), " ", vbTab) & msg
 End Sub
+
+
 \\\--- END OF MODULE ---
 
 [Filtro2N_Support] 32 líneas de código.
