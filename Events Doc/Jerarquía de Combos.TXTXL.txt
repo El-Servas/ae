@@ -1,15 +1,11 @@
 Representación Textual del archivo de Excel: "Jerarquía de Combos.xlsx"
-Fecha y hora de generación: 02/08/2016 10:36:09 a.m.
+Fecha y hora de generación: 02/08/2016 03:10:13 p.m.
 
 Resumen
 =======
-
  * Hojas: 1
-
  * Nombres Definidos: 0
-
  * Módulos de Visual Basic: 2
-
  * Líneas de código VB: 4
 
 Detalle
@@ -22,53 +18,54 @@ Contenido:
 [Sheet1]
 [B1] \Captura\
 [B2] \Producto\
-[B6] \Frecuencia\
-[B8] \Tipo Persona\
-[B11] \Tipo Tarifa\
-[B14] \Porcentaje Enganche\
-[B17] \Garantía Extendida\
-[B19] \Condición Auto\
-[B30] \Modelo\
-[B34] \Marca\
-[B36] \Auto\
-[B40] \Cálculo Seguro\
-[B42] \Auto Substituto\
-[B44] \Incremento RC\
-[B46] \Indemnización VF\
-[B48] \Servicio Premium\
-[B50] \Plazo\
-[B52] \Monto Enganche\
+[B6] \Tipo Persona\
+[B10] \Tipo Tarifa\
+[B13] \Condición Auto\
+[B23] \Modelo\
+[B27] \Marca\
+[B29] \Auto\
+[B33] \Cálculo Seguro\
+[B35] \Indemnización VF\
+[B37] \Auto Substituto\
+[B39] \Incremento RC\
+[B41] \Servicio Premium\
+[B43] \Plazo\
+[B45] \Porcentaje Enganche\
+[B47] \Frecuencia\
+[B49] \Garantía Extendida\
+[B51] \Monto Enganche\
 [C1] \Dependientes\
 [C2] \Frecuencia\
 [C3] \Tipo Persona\
 [C4] \Tipo Tarifa\
-[C8] \Porcentaje Enganche\
-[C9] \Garantía Extendida\
-[C11] \Porcentaje Enganche\
+[C6] \Porcentaje Enganche\
+[C7] \Garantía Extendida\
+[C8] \Plazo\
 [Sheet1]
-[C12] \Comisión Apertura\
-[C17] \Valor Garantía Extendida\
-[C19] \Modelo\
-[C20] \Marca\
-[C21] \Auto\
-[C22] \Porcentaje Enganche\
-[C23] \Cálculo Seguro\
-[C24] \Auto Substituto\
-[C25] \Incremento RC\
-[C26] \Indemnización VF\
-[C27] \Plazo\
-[C28] \Garantía Extendida\
-[C30] \Plazo\
-[C31] \Marca\
-[C32] \Auto\
-[C34] \Auto\
-[C36] \Auto Substituto\
-[C37] \Indemnización VF\
-[C38] \Servicio Premium\
-[C40] \Plazo\
+[C10] \Porcentaje Enganche\
+[C11] \Comisión Apertura\
+[C13] \Modelo\
+[C14] \Marca\
+[C15] \Auto\
+[C16] \Porcentaje Enganche\
+[C17] \Cálculo Seguro\
+[C18] \Incremento RC\
+[C19] \Indemnización VF\
+[C20] \Plazo\
+[C21] \Garantía Extendida\
+[C23] \Plazo\
+[C24] \Marca\
+[C25] \Auto\
+[C27] \Auto\
+[C29] \Auto Substituto\
+[C30] \Indemnización VF\
+[C31] \Servicio Premium\
+[C33] \Plazo\
+[C35] \Plazo\
 [D1] \Réplicas/Cálculo\
-[D6] \Frecuencia Tabla Cliente\
-[D52] \Porcentaje Enganche\
+[D47] \Frecuencia Tabla Cliente\
+[D49] \Valor Garantía Extendida ?\
+[D51] \Porcentaje Enganche\
 
 Nombres:
 
@@ -92,5 +89,5 @@ Option Explicit
 \\\--- END OF MODULE ---
 
 
-** Fin del proceso de exportación. Proceso realizado en 01 sec.  **
-Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
+** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
+ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
