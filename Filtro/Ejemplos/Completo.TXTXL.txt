@@ -1,5 +1,5 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 06:57:24 p.m.
+Fecha y hora de generación: 01/08/2016 06:59:32 p.m.
 
 Resumen
 =======
@@ -379,11 +379,11 @@ End Sub
 Sub Notificar_Dependientes(Target As Range)
     Select Case Target.Name.Name
         Case "SELECCION_TIPO"
-            Captura_Change [SELECCION_MARCA]    'Manejar_Opción [SELECCION_MARCA]
-            Captura_Change [SELECCION_AUTO]     'Manejar_Opción [SELECCION_AUTO]
+            [SELECCION_MARCA] = [SELECCION_MARCA]
+            [SELECCION_AUTO] = [SELECCION_AUTO]
             
         Case "SELECCION_MARCA"
-            Captura_Change [SELECCION_AUTO]     'Manejar_Opción [SELECCION_AUTO]
+            [SELECCION_AUTO] = [SELECCION_AUTO]
         
         Case "SELECCION_AUTO"
             'Sin Dependientes
