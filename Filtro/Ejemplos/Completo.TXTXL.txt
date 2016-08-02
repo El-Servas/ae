@@ -1,12 +1,12 @@
 Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 08:14:23 p.m.
+Fecha y hora de generación: 01/08/2016 08:23:17 p.m.
 
 Resumen
 =======
  * Hojas: 4
  * Nombres Definidos: 29
  * Módulos de Visual Basic: 8
- * Líneas de código VB: 204
+ * Líneas de código VB: 206
 
 Detalle
 =======
@@ -23,19 +23,19 @@ Contenido:
 [A3] \TIPO\
 [A5] \MARCA\
 [A7] \AUTO\
-[B3] (SELECCION_TIPO) \Siu\
+[B3] (SELECCION_TIPO) \Niu\
  DataValidation: Lista. [Fuente:"=$D$3:$D$4" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B5] (SELECCION_MARCA) \Chevrolet\
+[B5] (SELECCION_MARCA) \Baic\
  DataValidation: Lista. [Fuente:"=FUENTE_MARCAS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
-[B7] (SELECCION_AUTO) \Chevy\
+[B7] (SELECCION_AUTO) \No sabe fallar\
  DataValidation: Lista. [Fuente:"=FUENTE_AUTOS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
@@ -151,28 +151,28 @@ Contenido:
 [D12] \Nivel 1\
 [D16] \Conteo\
 [D17] (FILTRO2N!o.Conteo_Nivel_1) \=COUNTA(D20:D1000000)\
-[D19] (FILTRO2N!_DESTINO_NIVEL_1_VBA) \Brand\
-[D20] (FILTRO2N!o.Elementos_Nivel_1) \Chevrolet\
-[D21] \Ford\
-[D22] \Honda\
-[D23] \Hummer\
+[D19] (FILTRO2N!_DESTINO_NIVEL_1_VBA) \MARCA\
+[D20] (FILTRO2N!o.Elementos_Nivel_1) \Baic\
+[D21] \Honda\
+[D22] \Nissan\
+[D23] \Toyota\
 [F12] \Nivel 2\
 [FILTRO2N]
 [F14] \Parte 2\
 [F16] \Conteo\
 [F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F1000000)\
-[F19] (FILTRO2N!Extract) \Carro\
-[F20] (FILTRO2N!o.Elementos_Nivel_2) \Chevy\
-[F21] \Spank\
+[F19] (FILTRO2N!Extract) \AUTO\
+[F20] (FILTRO2N!o.Elementos_Nivel_2) \No sabe fallar\
+[F21] \Zameid\
 [H14] \Parte 1\
 [H16] \=i.Campo_Nivel_1\
 [H17] \=i.Nivel_1\
-[H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \Brand\
-[H20] \Chevrolet\
-[H21] \Chevrolet\
-[I19] \Carro\
-[I20] \Spank\
-[I21] \Chevy\
+[H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \MARCA\
+[H20] \Baic\
+[H21] \Baic\
+[I19] \AUTO\
+[I20] \Zameid\
+[I21] \No sabe fallar\
 [J4] \Resultados (descripción)\
 [J5] \o.Elementos_Nivel_1\
 [J6] \o.Conteo_Nivel_1\
@@ -182,17 +182,14 @@ Contenido:
 [J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
 [J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
 [J13] \(Usar el nombre de la hoja)\
-[J19] \Campo\
+[J19] \DATO\
 [FILTRO2N]
-[J20] \6.13038631666927\
-[J21] \6.21706932805607\
+[J20] \--\
+[J21] \?\
 [K5] \Celda inicial del listado.\
 [K6] \Número de elementos en el listado.\
 [K7] \Celda inicial del listado.\
 [K8] \Número de elementos en el listado.\
-[K19] \Traviesa\
-[K20] \6.10761154948007\
-[K21] \7.30097305044152\
 
 Nombres:
  [FILTRO2N!_DESTINO_NIVEL_1_VBA] =FILTRO2N!$D$19
@@ -293,7 +290,7 @@ End Function
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 81 líneas de código.
+[EventHandlers] 83 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -330,7 +327,7 @@ ErrHan:
     NestedEventCount = NestedEventCount - 1
 End Sub
 
-'Sigue los pasos para manejar el cambio de la selección en un ComboDV
+'Maneja el valor actual de un ComboDV
 Sub Manejar_Opción(Target As Range)
 
     'El valor actual está contenido en la lista de opciones?
@@ -345,7 +342,9 @@ Sub Manejar_Opción(Target As Range)
     End If
 End Sub
 
-'Notifica a los dependientes de un combo para que se validen: Envía un aviso de cambio (artificial), que desencadena el proceso de validación.
+'Notifica a los dependientes de un combo para que se validen:
+' Envía un aviso de cambio (artificial) que desencadena el proceso de validación.
+' Si los dependientes lo requieren, éste es el lugar recomendado para actualizar sus listas.
 Sub Notificar_Dependientes(Target As Range)
     Select Case Target.Name.Name
         Case "SELECCION_TIPO"
