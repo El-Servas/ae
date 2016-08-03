@@ -1,12 +1,12 @@
-Representación Textual del archivo de Excel: "Completo.xlsm"
-Fecha y hora de generación: 01/08/2016 08:23:17 p.m.
+Representación Textual del archivo de Excel: "Completo - Simple.xlsm"
+Fecha y hora de generación: 03/08/2016 06:49:43 p.m.
 
 Resumen
 =======
  * Hojas: 4
- * Nombres Definidos: 29
+ * Nombres Definidos: 30
  * Módulos de Visual Basic: 8
- * Líneas de código VB: 206
+ * Líneas de código VB: 214
 
 Detalle
 =======
@@ -35,6 +35,7 @@ Contenido:
  Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
  OmitirBlancos:False DatoActualEsVálido:True 
 
+[B6] \ \
 [B7] (SELECCION_AUTO) \No sabe fallar\
  DataValidation: Lista. [Fuente:"=FUENTE_AUTOS" ListaEnCelda:True ]
  Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
@@ -47,7 +48,7 @@ Contenido:
 [D4] \Siu\
 [E1] (Listado.Ubicación) \=VLOOKUP(Listado.Catálogo,Listado,COLUMN()-COLUMN(Listado.Catálogo)+1,0)\
 [E2] \Ubicación\
-[E3] \N!A3:C13\
+[E3] \N!A3:C14\
 [E4] \CATALOGO_S\
 [F1] (Listado.Campo_Marca) \=VLOOKUP(Listado.Catálogo,Listado,COLUMN()-COLUMN(Listado.Catálogo)+1,0)\
 [F2] \Campo Marca\
@@ -61,39 +62,51 @@ Contenido:
 [N]
 [A1] \Catálogo N\
 [A3] \MARCA\
-[A4] \Honda\
 [A5] \Honda\
-[A6] \Nissan\
+[A6] \Honda\
 [A7] \Nissan\
-[A8] \Honda\
-[A9] \Toyota\
-[A10] \Baic\
-[A11] \Honda\
+[A8] \Nissan\
+[A9] \Honda\
+[A10] \Toyota\
+[A11] \Baic\
 [A12] \Honda\
-[A13] \Baic\
+[A13] \Honda\
+[A14] \Baic\
 [B3] \AUTO\
-[B4] \Fit\
-[B5] \Civic\
-[B6] \Sentra\
-[B7] \Ventra\
-[B8] \CRV\
-[B9] \TuHoyota\
-[B10] \Zameid\
-[B11] \Accord\
-[B12] \Civic\
-[B13] \No sabe fallar\
+[B5] \Fit\
+[B6] \Civic\
+[B7] \Sentra\
+[B8] \Ventra\
+[B9] \CRV\
+[B10] \TuHoyota\
+[B11] \Zameid\
+[B12] \Accord\
+[B13] \Civic\
+[B14] \No sabe fallar\
 [C3] \DATO\
-[C4] \a\
+[C5] \a\
 [N]
-[C5] \b\
-[C6] \c\
-[C7] \d\
-[C8] \e\
-[C9] \g\
-[C10] \--\
-[C11] \x\
-[C12] \b\
-[C13] \?\
+[C6] \b\
+[C7] \c\
+[C8] \d\
+[C9] \e\
+[C10] \g\
+[C11] \--\
+[C12] \x\
+[C13] \b\
+[C14] \?\
+[D3] \Id\
+[D4] \0\
+[D5] \1\
+[D6] \2\
+[D7] \3\
+[D8] \4\
+[D9] \6\
+[D10] \7\
+[D11] \8\
+[D12] \9\
+[D13] \10\
+[D14] \11\
 
 [S]
 [A1] \Catálogo S\
@@ -144,6 +157,8 @@ Contenido:
 [B6] (FILTRO2N!i.Campo_Nivel_1) \=Listado.Campo_Marca\
 [B7] (FILTRO2N!i.Campo_Nivel_2) \=Listado.Campo_Auto\
 [B8] (FILTRO2N!i.Nivel_1) \=SELECCION_MARCA\
+[B16] \=i.Campo_Nivel_1\
+[B17] \<>\
 [D4] \Métodos\
 [D6] \Actualizar Nivel 1\
 [D8] \Actualizar Nivel 2\
@@ -155,9 +170,9 @@ Contenido:
 [D20] (FILTRO2N!o.Elementos_Nivel_1) \Baic\
 [D21] \Honda\
 [D22] \Nissan\
+[FILTRO2N]
 [D23] \Toyota\
 [F12] \Nivel 2\
-[FILTRO2N]
 [F14] \Parte 2\
 [F16] \Conteo\
 [F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F1000000)\
@@ -181,9 +196,9 @@ Contenido:
 [J10] \Fórmulas para DV\
 [J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
 [J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
+[FILTRO2N]
 [J13] \(Usar el nombre de la hoja)\
 [J19] \DATO\
-[FILTRO2N]
 [J20] \--\
 [J21] \?\
 [K5] \Celda inicial del listado.\
@@ -196,11 +211,12 @@ Nombres:
  [FILTRO2N!_DESTINO_NIVEL_2_VBA] =FILTRO2N!$H$19
  [Captura!_FilterDatabase] =S!$A$3:$D$9
  [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$21
- [N!_FilterDatabase] =N!$A$3:$C$13
+ [N!_FilterDatabase] =N!$A$3:$C$14
  [S!_FilterDatabase] =S!$A$3:$D$10
- [CATALOGO_N] =N!$A$3:$C$13
+ [CATALOGO_N] =N!$A$3:$C$14
  [CATALOGO_S] =S!$A$3:$D$10
  [FILTRO2N!Extract] =FILTRO2N!$F$19
+ [FILTRO2N!FILTRO_NIVEL_1] =FILTRO2N!$B$16:$B$17
  [FILTRO2N!FILTRO_NIVEL_2] =FILTRO2N!$H$16:$H$17
  [FUENTE_AUTOS] =OFFSET( FILTRO2N!o.Elementos_Nivel_2,0,0, FILTRO2N!o.Conteo_Nivel_2,1)
  [FUENTE_MARCAS] =OFFSET( FILTRO2N!o.Elementos_Nivel_1,0,0, FILTRO2N!o.Conteo_Nivel_1,1)
@@ -290,7 +306,7 @@ End Function
 ///--- BEGINNING OF MODULE ---
 \\\--- END OF MODULE ---
 
-[EventHandlers] 83 líneas de código.
+[EventHandlers] 82 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
@@ -349,10 +365,9 @@ Sub Notificar_Dependientes(Target As Range)
     Select Case Target.Name.Name
         Case "SELECCION_TIPO"
             Call Notificar_Marcas
-            Call Notificar_Autos
             
         Case "SELECCION_MARCA"
-            Notificar_Autos
+            Call Notificar_Autos
         
         Case "SELECCION_AUTO"
             'Sin Dependientes
@@ -377,11 +392,11 @@ Sub Notificar_Autos()
 End Sub
 \\\--- END OF MODULE ---
 
-[Filtro2N_Support] 32 líneas de código.
+[Filtro2N_Support] 40 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
-Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, NomDestino As String)
+Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, NomDestino As String, Optional NomCriteria As String)
     'Ajuste por no poder recibir objeto Range desde un Módulo de Objeto:
     Dim RgDestino As Range: Set RgDestino = Range(NomDestino)
     
@@ -391,11 +406,19 @@ Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, No
     'Determinamos la columna a extraer los valores únicos
     Dim rgHeader: Set rgHeader = Range(NomRangoNombrado).CurrentRegion.Rows(1).Find(NomColumna)
     
-    Intersect(rgHeader.CurrentRegion, _
-              rgHeader.EntireColumn).AdvancedFilter Action:=xlFilterCopy, _
-                                                    CopyToRange:=RgDestino, _
-                                                    Unique:=True, _
-                                                    criteriaRange:=""
+    Dim RgAFiltrar As Range: Set RgAFiltrar = Intersect(rgHeader.CurrentRegion, rgHeader.EntireColumn)
+    
+    If NomCriteria = "" Then
+        RgAFiltrar.AdvancedFilter Action:=xlFilterCopy, _
+                              CopyToRange:=RgDestino, _
+                              Unique:=True, _
+                              criteriaRange:="" 'Si lo omito, no funciona. :S
+    Else
+        RgAFiltrar.AdvancedFilter Action:=xlFilterCopy, _
+                              CopyToRange:=RgDestino, _
+                              Unique:=True, _
+                              criteriaRange:=Range(NomCriteria)
+    End If
 End Sub
 
 Sub ExtraerPorCriteria(NomRangoNombrado As String, RgCriteria As Range, RgDestino As Range)
@@ -413,14 +436,15 @@ End Sub
 
 \\\--- END OF MODULE ---
 
-[Filtro2N] 56 líneas de código.
+[Filtro2N] 57 líneas de código.
 ///--- BEGINNING OF MODULE ---
 Option Explicit
 
 Public Sub Actualizar_Nivel_1()
     ExtraerÚnicosPorColumna [i.Ubicación], _
                             [i.Campo_Nivel_1], _
-                            Me.Name & "!_Destino_Nivel_1_VBA"
+                            Me.Name & "!_Destino_Nivel_1_VBA", _
+                            Me.Name & "!FILTRO_NIVEL_1"
                             
     OrdenarFilasPorNombreDeColumna [_Destino_Nivel_1_VBA], [i.Campo_Nivel_1]
 End Sub
