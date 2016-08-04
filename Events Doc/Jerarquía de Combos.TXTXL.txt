@@ -1,0 +1,127 @@
+Representación Textual del archivo de Excel: "Jerarquía de Combos.xlsx"
+Fecha y hora de generación: 03/08/2016 10:26:07 a.m.
+
+Resumen
+=======
+
+ * Hojas: 2
+
+ * Nombres Definidos: 1
+
+ * Módulos de Visual Basic: 3
+
+ * Líneas de código VB: 6
+
+Detalle
+=======
+
+Hojas:
+ [Arbol]
+ [Lista]
+
+Contenido:
+[Arbol]
+[B1] \Arbol\
+[B3] \Producto\
+[B9] \Condición Auto\
+[C4] \Frecuencia\
+[C5] \Tipo Tarifa\
+[C6] \Tipo Persona\
+[C10] \Modelo\
+[C17] \Calculo Seguro\
+[C19] \Incremento RC\
+[C20] \Garantía Extendida\
+[D7] \Plazo\
+[D8] \Garantía Extendida\
+[D11] \Marca\
+[D18] \Plazo\
+[E12] \Auto\
+[F13] \Auto Substituto\
+[F14] \Servicio Premium\
+[F15] \Indemnización VF\
+[G16] \Plazo\
+
+[Lista]
+[B1] \Captura\
+[B2] \Producto\
+[B6] \Tipo Persona\
+[B10] \Tipo Tarifa\
+[B13] \Condición Auto\
+[B23] \Modelo\
+[B27] \Marca\
+[B29] \Auto\
+[B33] \Cálculo Seguro\
+[B35] \Indemnización VF\
+[B37] \Auto Substituto\
+[B39] \Incremento RC\
+[B41] \Servicio Premium\
+[B43] \Plazo\
+[B45] \Porcentaje Enganche\
+[B47] \Frecuencia\
+[B49] \Garantía Extendida\
+[B51] \Monto Enganche\
+[C1] \Dependientes\
+[C2] \Frecuencia\
+[C3] \Tipo Persona\
+[C4] \Tipo Tarifa\
+[C6] \Porcentaje Enganche\
+[C7] \Garantía Extendida\
+[C8] \Plazo\
+[Lista]
+[C10] \Porcentaje Enganche\
+[C11] \Comisión Apertura\
+[C13] \Modelo\
+[C14] \Marca\
+[C15] \Auto\
+[C16] \Porcentaje Enganche\
+[C17] \Cálculo Seguro\
+[C18] \Incremento RC\
+[C19] \Indemnización VF\
+[C20] \Plazo\
+[C21] \Garantía Extendida\
+[C23] \Plazo\
+[C24] \Marca\
+[C25] \Auto\
+[C27] \Auto\
+[C29] \Auto Substituto\
+[C30] \Indemnización VF\
+[C31] \Servicio Premium\
+[C33] \Plazo\
+[C35] \Plazo\
+[D1] \Réplicas/Cálculo\
+[D47] \Frecuencia Tabla Cliente\
+[D49] \Valor Garantía Extendida ?\
+[D51] \Porcentaje Enganche\
+
+Nombres:
+ [Arbol!Print_Area] =Arbol!$B$1:$G$20
+
+Nombre del proyecto VB: [VBAProject]
+
+Módulos VBA:
+ [ThisWorkbook] Tipo: 100
+ [Sheet1] Tipo: 100
+ [Sheet2] Tipo: 100
+
+Codigo:
+[ThisWorkbook] 2 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+\\\--- END OF MODULE ---
+
+[Sheet1] 2 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+\\\--- END OF MODULE ---
+
+[Sheet2] 2 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+\\\--- END OF MODULE ---
+
+
+** Fin del proceso de exportación. Proceso realizado en 00 sec.  **
+Lib_ExportToTxt [ExportToTxt.xls] v2.13.1
