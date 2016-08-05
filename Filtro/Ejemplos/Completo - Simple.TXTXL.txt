@@ -1,0 +1,502 @@
+Representación Textual del archivo de Excel: "Completo - Simple.xlsm"
+Fecha y hora de generación: 03/08/2016 06:49:43 p.m.
+
+Resumen
+=======
+ * Hojas: 4
+ * Nombres Definidos: 30
+ * Módulos de Visual Basic: 8
+ * Líneas de código VB: 214
+
+Detalle
+=======
+
+Hojas:
+ [Captura]
+ [N]
+ [S]
+ [FILTRO2N]
+
+Contenido:
+[Captura]
+[A1] \Captura\
+[A3] \TIPO\
+[A5] \MARCA\
+[A7] \AUTO\
+[B3] (SELECCION_TIPO) \Niu\
+ DataValidation: Lista. [Fuente:"=$D$3:$D$4" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:False DatoActualEsVálido:True 
+
+[B5] (SELECCION_MARCA) \Baic\
+ DataValidation: Lista. [Fuente:"=FUENTE_MARCAS" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:False DatoActualEsVálido:True 
+
+[B6] \ \
+[B7] (SELECCION_AUTO) \No sabe fallar\
+ DataValidation: Lista. [Fuente:"=FUENTE_AUTOS" ListaEnCelda:True ]
+ Mensaje=[Mostrar:True Titulo:"" Mensaje:"" ] 
+ Advertencia=[Mostrar:True Titulo:"" Mensaje:"" Estilo:Grave ] 
+ OmitirBlancos:False DatoActualEsVálido:True 
+
+[D1] (Listado.Catálogo) \=SELECCION_TIPO\
+[D2] \Catálogo\
+[D3] \Niu\
+[D4] \Siu\
+[E1] (Listado.Ubicación) \=VLOOKUP(Listado.Catálogo,Listado,COLUMN()-COLUMN(Listado.Catálogo)+1,0)\
+[E2] \Ubicación\
+[E3] \N!A3:C14\
+[E4] \CATALOGO_S\
+[F1] (Listado.Campo_Marca) \=VLOOKUP(Listado.Catálogo,Listado,COLUMN()-COLUMN(Listado.Catálogo)+1,0)\
+[F2] \Campo Marca\
+[F3] \MARCA\
+[F4] \Brand\
+[G1] (Listado.Campo_Auto) \=VLOOKUP(Listado.Catálogo,Listado,COLUMN()-COLUMN(Listado.Catálogo)+1,0)\
+[G2] \Campo Auto\
+[G3] \AUTO\
+[G4] \Carro\
+
+[N]
+[A1] \Catálogo N\
+[A3] \MARCA\
+[A5] \Honda\
+[A6] \Honda\
+[A7] \Nissan\
+[A8] \Nissan\
+[A9] \Honda\
+[A10] \Toyota\
+[A11] \Baic\
+[A12] \Honda\
+[A13] \Honda\
+[A14] \Baic\
+[B3] \AUTO\
+[B5] \Fit\
+[B6] \Civic\
+[B7] \Sentra\
+[B8] \Ventra\
+[B9] \CRV\
+[B10] \TuHoyota\
+[B11] \Zameid\
+[B12] \Accord\
+[B13] \Civic\
+[B14] \No sabe fallar\
+[C3] \DATO\
+[C5] \a\
+[N]
+[C6] \b\
+[C7] \c\
+[C8] \d\
+[C9] \e\
+[C10] \g\
+[C11] \--\
+[C12] \x\
+[C13] \b\
+[C14] \?\
+[D3] \Id\
+[D4] \0\
+[D5] \1\
+[D6] \2\
+[D7] \3\
+[D8] \4\
+[D9] \6\
+[D10] \7\
+[D11] \8\
+[D12] \9\
+[D13] \10\
+[D14] \11\
+
+[S]
+[A1] \Catálogo S\
+[A3] \Brand\
+[A4] \Hummer\
+[A5] \Hummer\
+[A6] \Ford\
+[A7] \Ford\
+[A8] \Chevrolet\
+[A9] \Chevrolet\
+[A10] \Honda\
+[B3] \Carro\
+[B4] \H3\
+[B5] \H2\
+[B6] \Ka\
+[B7] \Exploter\
+[B8] \Spank\
+[B9] \Chevy\
+[B10] \USADO\
+[C3] \Campo\
+[C4] \8.81063830658396\
+[C5] \7.26757075058705\
+[C6] \1.17157911971267\
+[C7] \4.03875095145369\
+[C8] \6.13038631666927\
+[C9] \6.21706932805607\
+[C10] \4.03875095145369\
+[S]
+[D3] \Traviesa\
+[D4] \6.30113621112\
+[D5] \4.33891429727652\
+[D6] \4.98945367454637\
+[D7] \3.33697476316045\
+[D8] \6.10761154948007\
+[D9] \7.30097305044152\
+[D10] \4.98945367454637\
+
+[FILTRO2N]
+[A1] \Filtro de Catálogos a 2 Niveles\
+[A2] \v1.0-SNAPSHOT\
+[A4] \Parámetros\
+[A5] \i.Ubicación\
+[A6] \i.Campo Nivel 1\
+[A7] \i.Campo Nivel 2\
+[A8] \i.Nivel 1\
+[A12] \ \
+[B5] (FILTRO2N!i.Ubicación) \=Listado.Ubicación\
+[B6] (FILTRO2N!i.Campo_Nivel_1) \=Listado.Campo_Marca\
+[B7] (FILTRO2N!i.Campo_Nivel_2) \=Listado.Campo_Auto\
+[B8] (FILTRO2N!i.Nivel_1) \=SELECCION_MARCA\
+[B16] \=i.Campo_Nivel_1\
+[B17] \<>\
+[D4] \Métodos\
+[D6] \Actualizar Nivel 1\
+[D8] \Actualizar Nivel 2\
+[D10] \Cálculos\
+[D12] \Nivel 1\
+[D16] \Conteo\
+[D17] (FILTRO2N!o.Conteo_Nivel_1) \=COUNTA(D20:D1000000)\
+[D19] (FILTRO2N!_DESTINO_NIVEL_1_VBA) \MARCA\
+[D20] (FILTRO2N!o.Elementos_Nivel_1) \Baic\
+[D21] \Honda\
+[D22] \Nissan\
+[FILTRO2N]
+[D23] \Toyota\
+[F12] \Nivel 2\
+[F14] \Parte 2\
+[F16] \Conteo\
+[F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F1000000)\
+[F19] (FILTRO2N!Extract) \AUTO\
+[F20] (FILTRO2N!o.Elementos_Nivel_2) \No sabe fallar\
+[F21] \Zameid\
+[H14] \Parte 1\
+[H16] \=i.Campo_Nivel_1\
+[H17] \=i.Nivel_1\
+[H19] (FILTRO2N!_DESTINO_NIVEL_2_VBA) \MARCA\
+[H20] \Baic\
+[H21] \Baic\
+[I19] \AUTO\
+[I20] \Zameid\
+[I21] \No sabe fallar\
+[J4] \Resultados (descripción)\
+[J5] \o.Elementos_Nivel_1\
+[J6] \o.Conteo_Nivel_1\
+[J7] \o.Elementos_Nivel_2\
+[J8] \o.Conteo_Nivel_2\
+[J10] \Fórmulas para DV\
+[J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
+[J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
+[FILTRO2N]
+[J13] \(Usar el nombre de la hoja)\
+[J19] \DATO\
+[J20] \--\
+[J21] \?\
+[K5] \Celda inicial del listado.\
+[K6] \Número de elementos en el listado.\
+[K7] \Celda inicial del listado.\
+[K8] \Número de elementos en el listado.\
+
+Nombres:
+ [FILTRO2N!_DESTINO_NIVEL_1_VBA] =FILTRO2N!$D$19
+ [FILTRO2N!_DESTINO_NIVEL_2_VBA] =FILTRO2N!$H$19
+ [Captura!_FilterDatabase] =S!$A$3:$D$9
+ [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$21
+ [N!_FilterDatabase] =N!$A$3:$C$14
+ [S!_FilterDatabase] =S!$A$3:$D$10
+ [CATALOGO_N] =N!$A$3:$C$14
+ [CATALOGO_S] =S!$A$3:$D$10
+ [FILTRO2N!Extract] =FILTRO2N!$F$19
+ [FILTRO2N!FILTRO_NIVEL_1] =FILTRO2N!$B$16:$B$17
+ [FILTRO2N!FILTRO_NIVEL_2] =FILTRO2N!$H$16:$H$17
+ [FUENTE_AUTOS] =OFFSET( FILTRO2N!o.Elementos_Nivel_2,0,0, FILTRO2N!o.Conteo_Nivel_2,1)
+ [FUENTE_MARCAS] =OFFSET( FILTRO2N!o.Elementos_Nivel_1,0,0, FILTRO2N!o.Conteo_Nivel_1,1)
+ [FILTRO2N!i.Campo_Nivel_1] =FILTRO2N!$B$6
+ [FILTRO2N!i.Campo_Nivel_2] =FILTRO2N!$B$7
+ [FILTRO2N!i.Nivel_1] =FILTRO2N!$B$8
+ [FILTRO2N!i.Ubicación] =FILTRO2N!$B$5
+ [INPUT_CELLS] =Captura!$B$3,Captura!$B$5,Captura!$B$7
+ [Listado] =Captura!$D$3:$G$4
+ [Listado.Campo_Auto] =Captura!$G$1
+ [Listado.Campo_Marca] =Captura!$F$1
+ [Listado.Catálogo] =Captura!$D$1
+ [Listado.Ubicación] =Captura!$E$1
+ [FILTRO2N!o.Conteo_Nivel_1] =FILTRO2N!$D$17
+ [FILTRO2N!o.Conteo_Nivel_2] =FILTRO2N!$F$17
+ [FILTRO2N!o.Elementos_Nivel_1] =FILTRO2N!$D$20
+ [FILTRO2N!o.Elementos_Nivel_2] =FILTRO2N!$F$20
+ [SELECCION_AUTO] =Captura!$B$7
+ [SELECCION_MARCA] =Captura!$B$5
+ [SELECCION_TIPO] =Captura!$B$3
+
+Nombre del proyecto VB: [VBAProject]
+
+Módulos VBA:
+ [ThisWorkbook] Tipo: 100
+ [Sheet1] Tipo: 100
+ [ComboDV] Tipo: 1
+ [Sheet3] Tipo: 100
+ [Sheet4] Tipo: 100
+ [EventHandlers] Tipo: 1
+ [Filtro2N_Support] Tipo: 1
+ [Filtro2N] Tipo: 100
+
+Codigo:
+[ThisWorkbook] 0 líneas de código.
+///--- BEGINNING OF MODULE ---
+\\\--- END OF MODULE ---
+
+[Sheet1] 4 líneas de código.
+///--- BEGINNING OF MODULE ---
+Private Sub Worksheet_Change(ByVal Target As Range)
+    Captura_Change Target
+End Sub
+
+\\\--- END OF MODULE ---
+
+[ComboDV] 31 líneas de código.
+///--- BEGINNING OF MODULE ---
+'========================================================================================
+'Módulo con rutinas auxiliares para trabajar con "Combos" implementados '
+'con la funcionalidad de Data Validation - List de Excel.
+'========================================================================================
+
+Option Explicit
+
+'Indica si el valor actual de un combo DV es válido o no.
+Function ComboDV_SelecciónEsVálida(AValidar As Range) As Boolean
+    ComboDV_SelecciónEsVálida = AValidar.Validation.Value
+End Function
+
+'Indica si el rango que contiene la lista de opciones, es válida.
+Function ComboDV_ListaDeOpcionesEsVálida(AValidar As Range) As Boolean
+    ComboDV_ListaDeOpcionesEsVálida = True
+    On Error GoTo invalid
+    Dim rg: Set rg = Range(AValidar.Validation.Formula1)
+    Exit Function
+invalid:
+    ComboDV_ListaDeOpcionesEsVálida = False
+End Function
+
+'Selecciona la primera de las Opciones válidas.
+Function ComboDV_AsignaPrimera(AValidar As Range) As Boolean
+    ComboDV_AsignaÍndice AValidar, 1
+End Function
+
+'Le asigna el elemento número <Índice> de la Lista de Opciones.
+Function ComboDV_AsignaÍndice(AValidar As Range, ix As Integer) As Boolean
+    AValidar.Value = Range(AValidar.Validation.Formula1).Cells(ix)
+End Function
+\\\--- END OF MODULE ---
+
+[Sheet3] 0 líneas de código.
+///--- BEGINNING OF MODULE ---
+\\\--- END OF MODULE ---
+
+[Sheet4] 0 líneas de código.
+///--- BEGINNING OF MODULE ---
+\\\--- END OF MODULE ---
+
+[EventHandlers] 82 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+Dim NestedEventCount As Integer
+
+Sub Captura_Change(ByVal Target As Range)
+On Error GoTo ErrHan
+    If Intersect(Target, [INPUT_CELLS]) Is Nothing Then Exit Sub
+    
+    NestedEventCount = NestedEventCount + 1
+    If NestedEventCount = 1 Then
+        Debug.Print "================================================================================"
+        Application.ScreenUpdating = False
+    End If
+    
+    Debug.Print
+    PrintNested NestedEventCount & ": Manejando valor en " & Target.Name.Name & " [" & Target.Value & "]"
+    
+    'Con las nuevas rutinas, todos los CombosDV se manejan igual:
+    'If Not Intersect(Target, _
+                     Union([SELECCION_TIPO], _
+                           [SELECCION_MARCA], _
+                           [SELECCION_AUTO]) _
+                     ) Is Nothing Then
+        Manejar_Opción Target
+    'End If
+    
+    PrintNested NestedEventCount & ": FIN " & Target.Name.Name
+    
+ErrHan:
+    If Err.Number <> 0 Then _
+        Debug.Print Err.Number & " - " & Err.Description
+    If NestedEventCount = 1 Then Application.ScreenUpdating = True
+    NestedEventCount = NestedEventCount - 1
+End Sub
+
+'Maneja el valor actual de un ComboDV
+Sub Manejar_Opción(Target As Range)
+
+    'El valor actual está contenido en la lista de opciones?
+    If Not ComboDV_SelecciónEsVálida(Target) Then
+        'Si no está, entonces se le asigna la primera opción disponible.
+        PrintNested "Seleccion inválida. Se ajustará."
+        ComboDV_AsignaPrimera Target
+    Else
+        'Si sí está, entonces se notifica a los dependientes para que hagan lo propio.
+        PrintNested "Seleccion Válida. Se notifica a los dependientes."
+        Notificar_Dependientes Target
+    End If
+End Sub
+
+'Notifica a los dependientes de un combo para que se validen:
+' Envía un aviso de cambio (artificial) que desencadena el proceso de validación.
+' Si los dependientes lo requieren, éste es el lugar recomendado para actualizar sus listas.
+Sub Notificar_Dependientes(Target As Range)
+    Select Case Target.Name.Name
+        Case "SELECCION_TIPO"
+            Call Notificar_Marcas
+            
+        Case "SELECCION_MARCA"
+            Call Notificar_Autos
+        
+        Case "SELECCION_AUTO"
+            'Sin Dependientes
+    End Select
+End Sub
+
+'Ayudante que indenta los mensajes de los eventos según la anidación.
+Sub PrintNested(msg As String)
+    Debug.Print Replace(Space(NestedEventCount - 1), " ", vbTab) & msg
+End Sub
+
+Sub Notificar_Marcas()
+    PrintNested " (Actualizando BD de Marcas)"
+    Call Filtro2N.Actualizar_Nivel_1
+    [SELECCION_MARCA] = [SELECCION_MARCA]
+End Sub
+
+Sub Notificar_Autos()
+    PrintNested " (Actualizando BD de Autos)"
+    Call Filtro2N.Actualizar_Nivel_2
+    [SELECCION_AUTO] = [SELECCION_AUTO]
+End Sub
+\\\--- END OF MODULE ---
+
+[Filtro2N_Support] 40 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, NomDestino As String, Optional NomCriteria As String)
+    'Ajuste por no poder recibir objeto Range desde un Módulo de Objeto:
+    Dim RgDestino As Range: Set RgDestino = Range(NomDestino)
+    
+    'Limpiamos resultados previos
+    RgDestino.CurrentRegion.ClearContents
+    
+    'Determinamos la columna a extraer los valores únicos
+    Dim rgHeader: Set rgHeader = Range(NomRangoNombrado).CurrentRegion.Rows(1).Find(NomColumna)
+    
+    Dim RgAFiltrar As Range: Set RgAFiltrar = Intersect(rgHeader.CurrentRegion, rgHeader.EntireColumn)
+    
+    If NomCriteria = "" Then
+        RgAFiltrar.AdvancedFilter Action:=xlFilterCopy, _
+                              CopyToRange:=RgDestino, _
+                              Unique:=True, _
+                              criteriaRange:="" 'Si lo omito, no funciona. :S
+    Else
+        RgAFiltrar.AdvancedFilter Action:=xlFilterCopy, _
+                              CopyToRange:=RgDestino, _
+                              Unique:=True, _
+                              criteriaRange:=Range(NomCriteria)
+    End If
+End Sub
+
+Sub ExtraerPorCriteria(NomRangoNombrado As String, RgCriteria As Range, RgDestino As Range)
+    RgDestino.CurrentRegion.ClearContents
+    
+    Range(NomRangoNombrado).AdvancedFilter Action:=xlFilterCopy, _
+                                           criteriaRange:=RgCriteria, _
+                                           CopyToRange:=RgDestino, _
+                                           Unique:=True
+End Sub
+
+
+
+
+
+\\\--- END OF MODULE ---
+
+[Filtro2N] 57 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+Public Sub Actualizar_Nivel_1()
+    ExtraerÚnicosPorColumna [i.Ubicación], _
+                            [i.Campo_Nivel_1], _
+                            Me.Name & "!_Destino_Nivel_1_VBA", _
+                            Me.Name & "!FILTRO_NIVEL_1"
+                            
+    OrdenarFilasPorNombreDeColumna [_Destino_Nivel_1_VBA], [i.Campo_Nivel_1]
+End Sub
+
+Public Sub Actualizar_Nivel_2()
+    'Parte 1
+    ExtraerPorCriteria [i.Ubicación], _
+                       [Filtro_Nivel_2], _
+                       [_Destino_Nivel_2_VBA]
+    
+    'Parte 2
+    ExtraerÚnicosPorColumna Me.Name & "!" & "_Destino_Nivel_2_VBA", _
+                            [i.Campo_Nivel_2], _
+                            Me.Name & "!" & [_Destino_Nivel_2_VBA].Offset(0, -2).Address()
+    
+    OrdenarFilasPorNombreDeColumna [_Destino_Nivel_2_VBA].Offset(0, -2), [i.Campo_Nivel_2]
+End Sub
+
+Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
+    Set rgAOrdenar = rgAOrdenar.CurrentRegion
+    'Determinar la columna de ordenamiento
+    Dim rgHeader: Set rgHeader = rgAOrdenar.Rows(1).Find(NomColumna)
+        
+    If rgHeader Is Nothing Then Exit Sub 'No existe la columna? Nothing to do.
+    
+    'Determinar el Rango (Columna sin encabezado)
+    Dim rgKey As Range
+    Set rgKey = Intersect(rgHeader.EntireColumn, _
+                          rgAOrdenar, _
+                          rgAOrdenar.Offset(1, 0))
+    
+    If rgKey Is Nothing Then Exit Sub 'No hay filas?
+    
+    With rgAOrdenar.Parent.Sort
+        .SortFields.Clear
+        
+        .SortFields.Add Key:=rgKey, _
+                        SortOn:=xlSortOnValues, _
+                        Order:=xlAscending, _
+                        DataOption:=xlSortNormal
+                             
+        .SetRange rgAOrdenar
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
+
+\\\--- END OF MODULE ---
+
+
+** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
+ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)

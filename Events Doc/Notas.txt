@@ -1,0 +1,8 @@
+
+## Consideraciones a revisar al finalizar un ciclo de eventos:
+
+- Cambia el número de pagos? Habría que actualizar las filas de la Tabla Cliente
+- Generar la Tabla de Pagos en la carátula.
+
+
+

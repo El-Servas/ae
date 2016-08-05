@@ -1,0 +1,183 @@
+Representación Textual del archivo de Excel: "Filtro de Catálogos a 2 Niveles.xlsm"
+Fecha y hora de generación: 30/07/2016 04:45:40 p.m.
+
+Resumen
+=======
+ * Hojas: 1
+ * Nombres Definidos: 13
+ * Módulos de Visual Basic: 3
+ * Líneas de código VB: 90
+
+Detalle
+=======
+
+Hojas:
+ [FILTRO2N]
+
+Contenido:
+[FILTRO2N]
+[A1] \Filtro de Catálogos a 2 Niveles\
+[A2] \v1.0-SNAPSHOT\
+[A4] \Parámetros\
+[A5] \i.Ubicación\
+[A6] \i.Campo Nivel 1\
+[A7] \i.Campo Nivel 2\
+[A8] \i.Nivel 1\
+[A12] \ \
+[D4] \Métodos\
+[D6] \Actualizar Nivel 1\
+[D8] \Actualizar Nivel 2\
+[D10] \Cálculos\
+[D12] \Nivel 1\
+[D16] \Conteo\
+[D17] (FILTRO2N!o.Conteo_Nivel_1) \=COUNTA(D20:D1000000)\
+[F12] \Nivel 2\
+[F14] \Parte 2\
+[F16] \Conteo\
+[F17] (FILTRO2N!o.Conteo_Nivel_2) \=COUNTA(F20:F1000000)\
+[H14] \Parte 1\
+[H16] \=i.Campo_Nivel_1\
+[H17] \=i.Nivel_1\
+[J4] \Resultados (descripción)\
+[J5] \o.Elementos_Nivel_1\
+[J6] \o.Conteo_Nivel_1\
+[FILTRO2N]
+[J7] \o.Elementos_Nivel_2\
+[J8] \o.Conteo_Nivel_2\
+[J10] \Fórmulas para DV\
+[J11] \=OFFSET( FILTRO2N!o.Elementos_Nivel_1 ,0,0, FILTRO2N!o.Conteo_Nivel_1 ,1)\
+[J12] \=OFFSET( FILTRO2N!o.Elementos_Nivel_2 ,0,0, FILTRO2N!o.Conteo_Nivel_2 ,1)\
+[J13] \(Usar el nombre de la hoja)\
+[K5] \Celda inicial del listado.\
+[K6] \Número de elementos en el listado.\
+[K7] \Celda inicial del listado.\
+[K8] \Número de elementos en el listado.\
+
+Nombres:
+ [FILTRO2N!_DESTINO_NIVEL_1_VBA] =FILTRO2N!$D$19
+ [FILTRO2N!_DESTINO_NIVEL_2_VBA] =FILTRO2N!$H$19
+ [FILTRO2N!_FilterDatabase] =FILTRO2N!$I$19:$I$23
+ [FILTRO2N!Extract] =FILTRO2N!$F$19
+ [FILTRO2N!FILTRO_NIVEL_2] =FILTRO2N!$H$16:$H$17
+ [FILTRO2N!i.Campo_Nivel_1] =FILTRO2N!$B$6
+ [FILTRO2N!i.Campo_Nivel_2] =FILTRO2N!$B$7
+ [FILTRO2N!i.Nivel_1] =FILTRO2N!$B$8
+ [FILTRO2N!i.Ubicación] =FILTRO2N!$B$5
+ [FILTRO2N!o.Conteo_Nivel_1] =FILTRO2N!$D$17
+ [FILTRO2N!o.Conteo_Nivel_2] =FILTRO2N!$F$17
+ [FILTRO2N!o.Elementos_Nivel_1] =FILTRO2N!$D$20
+ [FILTRO2N!o.Elementos_Nivel_2] =FILTRO2N!$F$20
+
+Nombre del proyecto VB: [VBAProject]
+
+Módulos VBA:
+ [Filtro2N] Tipo: 100
+ [ThisWorkbook] Tipo: 100
+ [Filtro2N_Support] Tipo: 1
+
+Codigo:
+[Filtro2N] 56 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+Public Sub Actualizar_Nivel_1()
+    ExtraerÚnicosPorColumna [i.Ubicación], _
+                            [i.Campo_Nivel_1], _
+                            Me.Name & "!_Destino_Nivel_1_VBA"
+                            
+    OrdenarFilasPorNombreDeColumna [_Destino_Nivel_1_VBA], [i.Campo_Nivel_1]
+End Sub
+
+Public Sub Actualizar_Nivel_2()
+    'Parte 1
+    ExtraerPorCriteria [i.Ubicación], _
+                       [Filtro_Nivel_2], _
+                       [_Destino_Nivel_2_VBA]
+    
+    'Parte 2
+    ExtraerÚnicosPorColumna Me.Name & "!" & "_Destino_Nivel_2_VBA", _
+                            [i.Campo_Nivel_2], _
+                            Me.Name & "!" & [_Destino_Nivel_2_VBA].Offset(0, -2).Address()
+    
+    OrdenarFilasPorNombreDeColumna [_Destino_Nivel_2_VBA].Offset(0, -2), [i.Campo_Nivel_2]
+End Sub
+
+Sub OrdenarFilasPorNombreDeColumna(rgAOrdenar As Range, NomColumna As String)
+    Set rgAOrdenar = rgAOrdenar.CurrentRegion
+    'Determinar la columna de ordenamiento
+    Dim rgHeader: Set rgHeader = rgAOrdenar.Rows(1).Find(NomColumna)
+        
+    If rgHeader Is Nothing Then Exit Sub 'No existe la columna? Nothing to do.
+    
+    'Determinar el Rango (Columna sin encabezado)
+    Dim rgKey As Range
+    Set rgKey = Intersect(rgHeader.EntireColumn, _
+                          rgAOrdenar, _
+                          rgAOrdenar.Offset(1, 0))
+    
+    If rgKey Is Nothing Then Exit Sub 'No hay filas?
+    
+    With rgAOrdenar.Parent.Sort
+        .SortFields.Clear
+        
+        .SortFields.Add Key:=rgKey, _
+                        SortOn:=xlSortOnValues, _
+                        Order:=xlAscending, _
+                        DataOption:=xlSortNormal
+                             
+        .SetRange rgAOrdenar
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
+
+\\\--- END OF MODULE ---
+
+[ThisWorkbook] 2 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+\\\--- END OF MODULE ---
+
+[Filtro2N_Support] 32 líneas de código.
+///--- BEGINNING OF MODULE ---
+Option Explicit
+
+Sub ExtraerÚnicosPorColumna(NomRangoNombrado As String, NomColumna As String, NomDestino As String)
+    'Ajuste por no poder recibir objeto Range desde un Módulo de Objeto:
+    Dim RgDestino As Range: Set RgDestino = Range(NomDestino)
+    
+    'Limpiamos resultados previos
+    RgDestino.CurrentRegion.ClearContents
+    
+    'Determinamos la columna a extraer los valores únicos
+    Dim rgHeader: Set rgHeader = Range(NomRangoNombrado).CurrentRegion.Rows(1).Find(NomColumna)
+    
+    Intersect(rgHeader.CurrentRegion, _
+              rgHeader.EntireColumn).AdvancedFilter Action:=xlFilterCopy, _
+                                                    CopyToRange:=RgDestino, _
+                                                    Unique:=True, _
+                                                    criteriaRange:=""
+End Sub
+
+Sub ExtraerPorCriteria(NomRangoNombrado As String, RgCriteria As Range, RgDestino As Range)
+    RgDestino.CurrentRegion.ClearContents
+    
+    Range(NomRangoNombrado).AdvancedFilter Action:=xlFilterCopy, _
+                                           criteriaRange:=RgCriteria, _
+                                           CopyToRange:=RgDestino, _
+                                           Unique:=True
+End Sub
+
+
+
+
+
+\\\--- END OF MODULE ---
+
+
+** Fin del proceso de exportación. Proceso realizado en 0.00 minutos. **
+ExportToTxt [ExportToTxt.xls] v3.0.0-SNAPSHOT (Standalone)
